@@ -1,7 +1,7 @@
 {
-  "name": "sankgao.github.io",
+  "name": "sankgao-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "使用 VuePress-v2 搭建的个人博客",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
@@ -10,5 +10,10 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/client": "2.0.0-beta.61",
+    "vue": "^3.2.47",
+    "vuepress": "2.0.0-beta.61"
+  }
 }
