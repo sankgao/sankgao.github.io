@@ -1,10 +1,10 @@
 import { defineUserConfig } from "vuepress";
-import theme from "./theme.js";
+import theme from "./theme.ts";
 
 export default defineUserConfig({
   // 默认站点配置
   lang: 'zh-CN',  // 站点的语言
-  dest: "dist",  // 指定 vuepress build 命令的输出目录
+  dest: "docs/.vuepress/dist",  // 指定 vuepress build 命令的输出目录
   
   head: [  // 在最终渲染出的 HTML 的 <head> 标签内加入的额外标签
     ["link", { rel: "icon", href: "/logo.png" }]

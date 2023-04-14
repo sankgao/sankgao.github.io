@@ -1,7 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope/perf";
 
-import { enNavbarConfig, zhNavbarConfig } from "./navbar/index.js";
-import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.js";
+import { enNavbarConfig, zhNavbarConfig } from "./navbar/index.ts";
+import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.ts";
 
 export default hopeTheme({
   // hopeTheme 主题配置
