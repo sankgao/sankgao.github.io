@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://sankgao.github.io/en/atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+  <id>https://sankgao.github.io/en/</id>
+  <title>Sankgao Blog</title>
+  <subtitle>A personal blog built using VuePress v2</subtitle>
+  <icon>https://sankgao.github.io/favicon.ico</icon>
+  <rights>MIT Licensed, © 2023-present Sankgao</rights>
+  <updated>2023-04-14T02:02:34.340Z</updated>
+  <generator>vuepress-plugin-feed2</generator>
+  <link rel="self" href="https://sankgao.github.io/en/atom.xml"/>
+  <link rel="alternate" href="https://sankgao.github.io/en/"/>
+</feed>
