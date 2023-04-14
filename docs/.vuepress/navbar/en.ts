@@ -50,3 +50,4 @@ export const enNavbarConfig = navbar([
     link: "https://theme-hope.vuejs.press/",
   },
 ]);
+

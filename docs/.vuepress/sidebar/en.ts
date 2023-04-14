@@ -5,9 +5,9 @@ export const enSidebarConfig = sidebar({
   // "/": ["", "note/", "code/", "software/", "about/"],
 
   // 侧边栏配置
-  // "/computer/": "structure",
-  // "/computer/base/": "structure",
-  // "/computer/windows/": "structure",
+  "/en/computer/": "structure",
+  "/en/computer/base/": "structure",
+  "/en/computer/windows/": "structure",
   "/en/computer/linux/": "structure",
 
   // "/operations/": "structure",
@@ -52,3 +52,4 @@ export const enSidebarConfig = sidebar({
   // "/index/my/": "structure",
   // "/index/my/about/": "structure",
 });
+

@@ -5,9 +5,9 @@ export const zhSidebarConfig = sidebar({
   // "/": ["", "note/", "code/", "software/", "about/"],
   
   // 侧边栏配置
-  // "/computer/": "structure",
-  // "/computer/base/": "structure",
-  // "/computer/windows/": "structure",
+  "/computer/": "structure",
+  "/computer/base/": "structure",
+  "/computer/windows/": "structure",
   "/computer/linux/": "structure",
   
   // "/operations/": "structure",
@@ -52,3 +52,4 @@ export const zhSidebarConfig = sidebar({
   // "/index/my/": "structure",
   // "/index/my/about/": "structure",
 });
+
