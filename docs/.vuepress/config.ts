@@ -3,6 +3,7 @@ import theme from "./theme.ts";
 
 export default defineUserConfig({
   // 默认站点配置
+  base: '/',  // 站点的基础路径
   lang: 'zh-CN',  // 站点的语言
   dest: "docs/.vuepress/dist",  // 指定 vuepress build 命令的输出目录
   
