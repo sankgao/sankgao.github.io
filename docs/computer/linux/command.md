@@ -474,7 +474,9 @@ systemd─┬─NetworkManager───2*[{NetworkManager}]
 
 example：
 
-`nice -n -20 sshd`
+```bash
+nice -n -20 sshd
+```
 
 ### pidof
 
@@ -489,7 +491,9 @@ example：
 
 example：
 
-`pidof sshd`
+```bash
+pidof sshd
+```
 
 ### kill
 
@@ -559,7 +563,9 @@ linux 的 kill 命令是向进程发送信号，kill 不是杀死的意思，`-9
 
 example：
 
-`kill -9 1050`
+```bash
+kill -9 1050
+```
 
 ### killall
 
@@ -583,7 +589,9 @@ example：
 
 example：
 
-`killall sshd`
+```bash
+killall sshd
+```
 
 ### ln
 
@@ -604,7 +612,9 @@ example：
 
 example：
 
-`ln -s aaa.txt bbb.txt`
+```bash
+ln -s aaa.txt bbb.txt
+```
 
 ### tee
 
@@ -905,7 +915,9 @@ mount -t ext4 /dev/sdb2 /backup
 
 example：
 
-`umount /dev/sdb2`
+```bash
+umount /dev/sdb2
+```
 
 ### blkid
 
@@ -1661,8 +1673,8 @@ cat anaconda-ks.cfg
 
 |  选项  |  作用  |
 |  :----:  |  :----  |
-|  **+<number>**  |  从第 n 行开始显示  |
-|  **-<number>**  |  定义屏幕大小为 n 行  |
+|  **+\<number\>**  |  从第 n 行开始显示  |
+|  **-\<number\>**  |  定义屏幕大小为 n 行  |
 |  **+/pattern**  |  在每个档案显示前搜寻该字串（pattern），然后从该字串前两行之后开始显示   |
 |  **-c**  |  从顶部清屏，然后显示  |
 |  **-d**  |  提示 “Press space to continue，’q’ to quit（按空格键继续，按 q 键退出）”，禁用响铃功能  |
