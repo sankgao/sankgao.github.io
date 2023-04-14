@@ -1,49 +1,52 @@
 ---
 title: 系统根目录
-icon: service
+icon: directory
 date: 2023-4-12
 category: Computer
 tag:
-  - Linux
+    - Linux
 ---
 
 ## Linux 系统根目录文件存放内容
 
 在 Linux 系统中，目录、字符设备、套接字、硬盘、光驱、打印机等都会被抽象成了文件形式，即 “Linux 系统中一切皆为文件”。
 
-路径：分为绝对路径和相对路径，绝对路径指的是从根目录 <kbd>/</kbd> 开始写起文件名称，例如：查找 `aaa.txt` 文件位置 `/home/zhangsan/test/aaa.txt`，而相对路径指的是从当前目录开始写起文件名称，例如：当前在 `/home/zhangsan` 目录中，`aaa.txt` 文件位置就是 `test/aaa.txt`。
+**路径**：分为绝对路径和相对路径
 
-> 以下目录文件存放的内容为通常放置文件的位置，可以根据自己的情况更改文件位置
+- **绝对路径**：指的是从根目录 <kbd>/</kbd> 开始写起文件名称，例如：查找 `aaa.txt` 文件位置 `/home/zhangsan/test/aaa.txt`
+- **相对路径**：指的是从当前目录开始写起文件名称，例如：当前在 `/home/zhangsan` 目录中，`aaa.txt` 文件位置就是 `test/aaa.txt`
+
+以下目录文件存放的内容为通常放置文件的位置，可以根据自己的情况更改文件位置
 
 |  目录名称  |  应放置文件的内容  |
 |  :----:  |  :----  |
-|  /boot  |  开机所需文件，如：内核文件  |
-|  /dev  |  设备与接口文件，如：硬盘  |
-|  /etc  |  软件的配置文件  |
-|  /home  |  用户家目录文件  |
-|  /bin  |  系统命令  |
-|  /lib  |  开机用的函数库  |
-|  /sbin  |  系统命令  |
-|  /media  |  挂载设备文件  |
-|  /opt  |  第三方软件  |
-|  /root  |  系统管理员家目录  |
-|  /srv  |  网络服务的数据文件  |
-|  /tmp  |  “共享” 临时目录  |
-|  /proc  |  虚拟文件目录  |
-|  /usr/local  |  用户自行安装的软件  |
-|  /usr/share  |  帮助说明文件  |
-|  /var  |  经常变化的文件，如：日志  |
-|  /lost+found  |  文件系统发生错误，存放一些丢失的文件片段  |
+|  `/boot`  |  开机所需文件，如：内核文件  |
+|  `/dev`  |  设备与接口文件，如：硬盘  |
+|  `/etc`  |  软件的配置文件  |
+|  `/home`  |  用户家目录文件  |
+|  `/bin`  |  系统命令  |
+|  `/lib`  |  开机用的函数库  |
+|  `/sbin`  |  系统命令  |
+|  `/media`  |  挂载设备文件  |
+|  `/opt`  |  第三方软件  |
+|  `/root`  |  系统管理员家目录  |
+|  `/srv`  |  网络服务的数据文件  |
+|  `/tmp`  |  “共享” 临时目录  |
+|  `/proc`  |  虚拟文件目录  |
+|  `/usr/local`  |  用户自行安装的软件  |
+|  `/usr/share`  |  帮助说明文件  |
+|  `/var`  |  经常变化的文件，如：日志  |
+|  `/lost+found`  |  文件系统发生错误，存放一些丢失的文件片段  |
 
 ```bash
-ls /boot    # /boot 目录，开机所需文件，如：内核文件
+ls /boot  # /boot 目录，开机所需文件，如：内核文件
 
 config-4.18.0-408.el8.x86_64  initramfs-0-rescue-e310191fcb7f4ceea3c545b74256e19f.img  loader                            vmlinuz-0-rescue-e310191fcb7f4ceea3c545b74256e19f
 efi                           initramfs-4.18.0-408.el8.x86_64.img                      symvers-4.18.0-408.el8.x86_64.gz  vmlinuz-4.18.0-408.el8.x86_64
 grub2                         initramfs-4.18.0-408.el8.x86_64kdump.img                 System.map-4.18.0-408.el8.x86_64
 
 
-ls /dev    # /dev 目录，设备与接口文件，如：硬盘
+ls /dev  # /dev 目录，设备与接口文件，如：硬盘
 autofs   core             dm-2    hidraw0    log           net        nvram   rtc       stderr  tty11  tty18  tty24  tty30  tty37  tty43  tty5   tty56  tty62  ttyS2    usbmon2  vcs6   vcsa6        vsock
 block    cpu              dmmidi  hpet       loop-control  ng0n1      port    rtc0      stdin   tty12  tty19  tty25  tty31  tty38  tty44  tty50  tty57  tty63  ttyS3    vcs      vcsa   vfio         zero
 bsg      cpu_dma_latency  dri     hugepages  mapper        null       ppp     sg0       stdout  tty13  tty2   tty26  tty32  tty39  tty45  tty51  tty58  tty7   uhid     vcs1     vcsa1  vga_arbiter
@@ -53,7 +56,7 @@ char     dm-0             full    input      midi          nvme0n1p1  random  sn
 console  dm-1             fuse    kmsg       mqueue        nvme0n1p2  raw     sr0       tty10   tty17  tty23  tty3   tty36  tty42  tty49  tty55  tty61  ttyS1  usbmon1  vcs5     vcsa5  vmci
 
 
-ls /etc    # /etc 目录，软件的配置文件
+ls /etc  # /etc 目录，软件的配置文件
 
 adjtime                 crontab                  firewalld     idmapd.conf    libaudit.conf             modprobe.d         passwd-         request-key.conf  ssh                 unbound
 aliases                 cron.weekly              fonts         init.d         libibverbs.d              modules-load.d     pesign          request-key.d     ssl                 updatedb.conf
@@ -73,12 +76,12 @@ chrony.conf             DIR_COLORS.lightbgcolor  grub2.cfg     kdump          ma
 ......省略部分内容
 
 
-ls /home    # /home 目录，用户家目录文件
+ls /home  # /home 目录，用户家目录文件
 
 lisi  zhangshan
 
 
-ls /bin    # /bin 目录，系统命令
+ls /bin  # /bin 目录，系统命令
 
 '['                                   domainname                    gxl2gv                 nl-classid-lookup          secret-tool                      taskset
  a2x                                  dos2unix                      gzexe                  nl-class-list              sed                              tbl
@@ -101,14 +104,14 @@ ls /bin    # /bin 目录，系统命令
 ......省略部分内容
 
 
-ls /lib    # /lib 目录，开机用的函数库
+ls /lib  # /lib 目录，开机用的函数库
 
 binfmt.d  dracut         firewalld   games  java         jvm-private  kernel  modprobe.d      motd.d          polkit-1   rpm       sysimage    tmpfiles.d
 cpp       eclipse        firmware    gcc    jvm          kbd          locale  modules         NetworkManager  python3.6  sse2      systemd     tuned
 debug     environment.d  fontconfig  grub   jvm-commmon  kdump        mdadm   modules-load.d  os-release      realmd     sysctl.d  sysusers.d  udev
 
 
-ls /sbin    # /sbin 目录，系统命令
+ls /sbin  # /sbin 目录，系统命令
 
 accessdb              ctstat               fsck.fat                     iprconfig                   lvresize                    poweroff                   setenforce            vgcfgrestore
 accton                dcb                  fsck.minix                   iprdbg                      lvs                         pvchange                   setfiles              vgchange
@@ -121,17 +124,17 @@ alternatives          dmeventd             fuse2fs                      ipset   
 ......省略部分内容
 
 
-ls /root    # /root 主目录
+ls /root  # /root 主目录
 
 aaa.txt  anaconda-ks.cfg  bb
 
 
-ls /tmp    # /tmp “共享” 临时目录
+ls /tmp  # /tmp “共享” 临时目录
 
 systemd-private-386ad6947a9b433b98e730020c0dc889-chronyd.service-Nk7yLj
 
 
-ls /proc    # /proc 虚拟文件目录
+ls /proc  # /proc 虚拟文件目录
 
 1     17    18   188  196  203  212  26     35219  38  508  527  6    644  784  857  911  940   asound     diskstats    ioports      kpageflags  net           stat           version
 10    1728  180  189  197  204  213  27     35221  39  509  528  603  646  785  860  913  944   buddyinfo  dma          irq          loadavg     pagetypeinfo  swaps          vmallocinfo
@@ -144,12 +147,12 @@ ls /proc    # /proc 虚拟文件目录
 16    1755  187  195  202  211  25   35     37     45  526  535  643  783  856  910  939  acpi  devices    iomem        kpagecount   mtrr        softirqs      uptime
 
 
-ls /usr/local    # /usr/local 用户自行安装的软件
+ls /usr/local  # /usr/local 用户自行安装的软件
 
 bin  etc  games  include  lib  lib64  libexec  sbin  share  src
 
 
-ls /usr/share    # /usr/share 帮助说明文件，如：help
+ls /usr/share  # /usr/share 帮助说明文件，如：help
 
 aclocal       autoconf         cracklib             file        gettext         grub     intltool     libdrm        makedumpfile    nano           pki             smartmontools     themes            zsh
 aclocal-1.16  automake-1.16    crypto-policies      firstboot   gettext-0.19.8  gtk-2.0  ivy-xmls     libgpg-error  man             nmap           plymouth        sounds            thumbnailers
@@ -163,7 +166,7 @@ augeas        cockpit          empty                gdb         graphviz        
 authselect    config.site      factory              GeoIP       groff           info     keyutils     magic         misc            pkgconfig      sgml            testpage          zoneinfo
 
 
-ls /var    # /var 经常变化的文件，如：log
+ls /var  # /var 经常变化的文件，如：log
 
 account  adm  cache  crash  db  empty  ftp  games  gopher  kerberos  lib  local  lock  log  mail  nis  opt  preserve  run  spool  tmp  www  yp
 ```

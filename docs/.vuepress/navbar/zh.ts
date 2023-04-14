@@ -26,5 +26,24 @@ export const zhNavbarConfig = navbar([
       },
     ],
   },
+  {
+    text: "索引",
+    icon: "index",
+    children: [
+      {
+        text: "索引",
+        link: "/index/",
+        activeMatch: "^/index/$",
+      },
+      {
+        text: "本站",
+        children: ["/category/", "/tag/", "/timeline/"],
+      },
+      {
+        text: "关于",
+        children: ["/index/my/about/"],
+      },
+    ],
+  },
 ]);
 

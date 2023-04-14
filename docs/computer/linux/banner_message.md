@@ -1,13 +1,11 @@
 ---
-title: 使用 SSH 登录之前显示横幅消息
+title: SSH 登录之前显示横幅消息
 icon: banner
 date: 2023-4-12
 category: Computer
 tag:
-  - Linux
+    - Linux
 ---
-
-## Linux 使用 SSH 登录之前显示横幅消息
 
 `OpenSSH` 有一个名为 `Banner` 的内置选项。在允许身份验证之前，将指定文件的内容发送给远程用户。如果 `Banner` 选项设置为 `none`，那么在 ssh 登录时就不会显示任何 `Banner` 消息。默认情况下不显示横幅，并且禁用该选项。
 
@@ -18,10 +16,6 @@ tag:
     在配置文件末尾添加 `Banner /etc/ssh/my_banner` 这一行内容
 
     ```bash
-    vim /etc/ssh/sshd_config
-
-    或
-
     echo "Banner /etc/ssh/my_banner" >> /etc/ssh/sshd_config
     ```
 
@@ -39,18 +33,19 @@ tag:
     systemctl restart sshd
     ```
 
-## 设置 SSH 登录之前显示横幅消息
+## 设置横幅消息
 
-1. 设置横幅消息
+1. 横幅消息文字
+    
+    安装 `figlet` 命令并生成普通字符的放大版。
 
-    可以在网上搜索 `ASCII art`，会有许多生成 ascii 艺术字的网站。还可以将图片转换成 ASCII 类型的。或使用 figlet 命令生成普通字符的放大版。在 centos 中需要安装 epel 源，然后安装 figlet 程序。
+    ::: tip
+    在 centos 中需要安装 epel 源，然后才可以安装 figlet 程序
+    :::
 
-    `ASCII art` 网站：
-    - https://asciiart.website/
-    - http://1lineart.kulaone.com/#/
-
-    ```shell
+    ```bash
     yum -y install figlet
+    
     figlet test
 
      _            _
@@ -59,6 +54,12 @@ tag:
     | ||  __/\__ \ |_
      \__\___||___/\__|
     ```
+
+    还可以在网上搜索 `ASCII art`，会有许多生成 ascii 艺术字的网站，还可以将图片转换成 ASCII 类型的。
+    
+    `ASCII art` 网站：
+    - <https://asciiart.website/>
+    - <http://1lineart.kulaone.com/#/>
 
 2. 将 figlet 生成的艺术字体写入 `/etc/ssh/my_banner` 文件中
 

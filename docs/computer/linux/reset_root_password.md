@@ -4,12 +4,12 @@ icon: passwd
 date: 2023-4-12
 category: Computer
 tag:
-  - Linux
+    - Linux
 ---
 
 ## Linux 系统重置 root 密码
 
-1. 重启 Linux 系统主机并出现引导界面时，按下键盘上的 “e” 键进入内核编辑界面
+1. 重启 Linux 系统主机并出现引导界面时，按下键盘上的 `e` 键进入内核编辑界面
 
     ```bash
     Red Hat Enterprise Linux (4.18.0-80.el8.x86_64) 8.0 (Ootpa)
@@ -22,7 +22,7 @@ tag:
     Press 'e' to edit the selected item, or 'c' for a command prompt.
     ```
 
-2. 在 Linux 参数这行的最后面追加 “rd.break” 参数，然后按下 “Ctrl + x” 组合键来运行修改过的内核程序
+2. 在 `Linux` 参数这行的最后面追加 `rd.break` 参数，然后按下 `Ctrl + x` 组合键来运行修改过的内核程序
 
     ```bash
     load_video
@@ -46,7 +46,7 @@ tag:
     switch_root:/# 
     ```
 
-4. 依次输入以下命令，再连续按下两次 “Ctrl + d” 组合键来退出并重启，等待系统再次重启完毕后便可以使用新密码来登录 Linux 系统
+4. 依次输入以下命令，再连续按下两次 `Ctrl + d` 组合键来退出并重启，等待系统再次重启完毕后便可以使用新密码来登录 Linux 系统
 
     ```bash
     switch_root:/# mount -o remount,rw /sysroot
