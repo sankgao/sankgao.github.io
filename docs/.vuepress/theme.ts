@@ -5,12 +5,6 @@ import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.ts";
 
 export default hopeTheme({
   // hopeTheme 主题配置
-  // 作者信息
-  author: {
-    name: "Sankgao",
-    url: "https://sankgao.github.io",
-  },
-  
   favicon: "/favicon.ico",  // 站点图标
   hostname: "https://sankgao.github.io",  // 当前网站部署到的域名
   
@@ -18,10 +12,16 @@ export default hopeTheme({
   logoDark: "/logo.png",  // 夜间模式下导航栏图标
   repo: "sankgao/sankgao.github.io",  // 在导航栏中显示仓库链接
   docsDir: "docs",  // 文档在仓库中的目录
+
+  // 作者信息
+  author: {
+    name: "Sankgao",
+    url: "https://sankgao.github.io",
+  },
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_sa0ekg91kcc.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_2naiz1bkyqo.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
