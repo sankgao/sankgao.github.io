@@ -31,9 +31,9 @@ export default hopeTheme({
   // 主题色选择器
   themeColor: {
     cyan: "#71e9e9",
-    red: "#f26d6d",
+    red: "#e73f3f",
     green: "#3eaf7c",
-    pink: "#f37d96",
+    pink: "#ffc0cb",
   },
   
   // 主题多语言配置
