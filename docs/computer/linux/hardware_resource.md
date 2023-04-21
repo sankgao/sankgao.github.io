@@ -1,7 +1,7 @@
 ---
 title: 硬件资源管理
 icon: hardware
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -9,7 +9,7 @@ tag:
 
 ## 查看系统 PCI 设备
 
-`lspci` 用于列出所有的 PCI 设备，比如主板、声卡、显卡和网卡等，也会把 USB 接口设备显示出来，语法格式：`lspci [参数]`
+`lspci` 用于列出所有的 PCI 设备，比如主板、声卡、显卡和网卡等，也会把 USB 接口设备显示出来。语法格式：`lspci [参数]`
 
 基本显示模式：
 

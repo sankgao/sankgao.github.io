@@ -1,7 +1,7 @@
 ---
 title: 安装软件的方法
 icon: install
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -9,7 +9,7 @@ tag:
 
 ## RPM 安装
 
-常用的 RPM 命令：
+**常用的 RPM 命令：**
 
 |  命令  |  作用  |
 |  :----:  |  :----:  |
@@ -22,7 +22,7 @@ tag:
 
 ## YUM 安装
 
-常用的 YUM 命令：
+**常用的 YUM 命令：**
 
 |  命令  |  作用  |
 |  :----:  |  :----:  |

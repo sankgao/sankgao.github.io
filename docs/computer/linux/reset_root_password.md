@@ -1,7 +1,7 @@
 ---
 title: 重置 root 密码
 icon: passwd
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -56,3 +56,15 @@ tag:
     sh-4.4# exit
     switch_root:/# logout
     ```
+
+    :::tip
+    重新挂载已经挂载了的文件系统（以读写权限挂载），需要注意的是，挂载点必须是一个已经存在的目录，这个目录可以不为空
+    :::
+
+    **mount -o remount,rw /sysroot**：重新以可读可写的方式挂载 `/sysroot`
+    **chroot /sysroot**：改变根目录为 `/sysroot`
+    **passwd**：按提示修改 root 密码
+    **touch /.autorelabel**：查看当前目录下是否有 **.autorelabel** 文件，如果没有必须创建该文件，否则将无法正常启动系统
+    **exit**：退出
+    **logout**：重启系统
+

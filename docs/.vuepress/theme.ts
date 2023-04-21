@@ -1,4 +1,4 @@
-import { hopeTheme } from "vuepress-theme-hope/perf";
+import { hopeTheme } from "vuepress-theme-hope";
 
 import { enNavbarConfig, zhNavbarConfig } from "./navbar/index.ts";
 import { enSidebarConfig, zhSidebarConfig } from "./sidebar/index.ts";
@@ -21,7 +21,7 @@ export default hopeTheme({
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_2naiz1bkyqo.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_40k1t587moj.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
@@ -30,10 +30,10 @@ export default hopeTheme({
   
   // 主题色选择器
   themeColor: {
-    blue: "#2196f3",
+    cyan: "#71e9e9",
     red: "#f26d6d",
     green: "#3eaf7c",
-    orange: "#fb9b5f",
+    pink: "#f37d96",
   },
   
   // 主题多语言配置
@@ -41,9 +41,10 @@ export default hopeTheme({
     "/": {
       navbar: zhNavbarConfig,  // 导航栏配置
       sidebar: zhSidebarConfig,  // 侧边栏配置
+      headerDepth: 5,  // 侧边栏嵌套的标题深度
       
       footer:
-        "主题使用 <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='https://mrhope.site/about/site.html' target='_blank'>关于网站</a>",  // 页脚的默认内容
+        "主题使用 <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='https://sankgao.github.io/about/site.html' target='_blank'>关于网站</a>",  // 页脚的默认内容
       
       copyright: "基于 MIT 协议，© 2023-至今 Sankgao",  // 版权信息
       
@@ -51,7 +52,7 @@ export default hopeTheme({
       blog: {
         name: "Sankgao",  // 博主姓名
         avatar: "/favicon.ico",  // 博主头像
-        description: "理论物理硕士在读，前端开发者，开源项目贡献者",  // 口号、座右铭或介绍语
+        description: "目之所及，皆是回忆；心之所向，皆是过往；眼之所看，皆是遗憾。",  // 口号、座右铭或介绍语
         intro: "/about/",  // 博主的个人介绍地址
         
         // 博主的社交媒体链接配置
@@ -74,15 +75,16 @@ export default hopeTheme({
     "/en/": {
       navbar: enNavbarConfig,
       sidebar: enSidebarConfig,
+      headerDepth: 5,
       
       footer:
-        "Theme by <a href='https://theme-hope.vuejs.press'>vuepress-theme-hope</a> | <a href='https://mrhope.site/about/site.html' target='_blank'>About websites</a>",
+        "Theme by <a href='https://theme-hope.vuejs.press'>vuepress-theme-hope</a> | <a href='https://sankgao.github.io/about/site.html' target='_blank'>About websites</a>",
       
       copyright: "MIT Licensed, © 2023-present Sankgao",
       
       blog: {
         description:
-          "VuePress project member, front-end developer, studying for a master's degree in theoretical physics",
+          "As far as the eye can see, it is all memories; The direction of the heart is all in the past; All that one sees is regret.",
         intro: "/en/about/",
         
         medias: {
@@ -102,6 +104,7 @@ export default hopeTheme({
     },
   },
   
+  // 主题插件配置
   plugins: {
     // 博客配置
     blog: {
@@ -124,9 +127,12 @@ export default hopeTheme({
     // MdEnhance 插件配置
     mdEnhance: {
       align: true,  // 启用自定义对齐格式支持
+      card: true,  // 添加卡片
+      chart: true,  // 支持 Chart 图表
       codetabs: true,  // 启用代码组
       container: true,  // 启用自定义容器支持
       demo: true,  // 启用代码案例支持
+      echarts: true,  // 支持 EChart 图表
       figure: true,  // 启用 figure
       flowchart: true,  // 启用流程图支持
       footnote: true,  // 启用脚注格式支持
@@ -140,13 +146,30 @@ export default hopeTheme({
       presentation: true,  // 启用幻灯片支持
       sub: true,  // 启用下角标格式支持
       sup: true,  // 启用上角标格式支持
+      tabs: true,  // 启用选项卡支持
       tasklist: true,  // 启用任务列表格式支持
       vPre: true,  // 启用 v-pre 容器
+    },
+
+    // 可用组件
+    components: {
+      // 你想使用的组件
+      components: [
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "StackBlitz",
+        "VideoPlayer",
+        "YouTube",
+      ],
     },
     
     // PWA 插件配置
     pwa: {
-      themeColor: "#5c92d1",  // 主题颜色
+      themeColor: "#2196f3",  // 主题颜色
       cacheHTML: false,  // 是否缓存主页和 404 错误页之外的 HTML 文件
       maxSize: 3072,  // 允许缓存的最大大小（以 KB 为单位）
       apple: {  // 针对苹果的特殊设置
@@ -161,7 +184,7 @@ export default hopeTheme({
         name: "Sankgao 的个人博客",
         short_name: "Sankgao Blog",
         description: "Sankgao 的个人博客",
-        theme_color: "#5c92d1",
+        theme_color: "#2196f3",
         
         // 声明多个图标
         icons: [

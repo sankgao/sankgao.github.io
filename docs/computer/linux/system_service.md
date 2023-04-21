@@ -1,7 +1,7 @@
 ---
 title: 系统服务命令
 icon: service
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -23,7 +23,7 @@ tag:
 ## 服务启动等常用命令
 
 :::tip
-RHEL 5/6 系统使用 `service`、`chkconfig` 等命令来管理系统服务，RHEL 7/8 系统使用 `systemctl` 命令来管理系统服务
+`RHEL 5/6` 系统使用 `service`、`chkconfig` 等命令来管理系统服务；`RHEL 7/8` 系统使用 `systemctl` 命令来管理系统服务
 :::
 
 |  RHEL 5/6 系统  |  RHEL 7/8 系统  |  作用  |

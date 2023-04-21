@@ -1,7 +1,7 @@
 ---
 title: 使用 sudo 时报错
 icon: error
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -11,9 +11,9 @@ tag:
 
 Linux 普通用户执行 `sudo` 命令时，提示：`sudo: no tty present and no askpass program specified`，原因是默认新建的用户不在 `sudo` 组，没有开启免密，需要编辑 `/etc/sudoers` 文件将用户或用户组加入。
 
-解决方法：
+**解决方法：**
 
-切换到 root 用户，执行命令 `visudo` 或者 `vim /etc/sudoers`，打开 `sudoers` 文件，在最下面一行添加
+切换到 root 用户，执行命令 `visudo` 或者 `vim /etc/sudoers`，打开 `sudoers` 文件，在最下面一行添加以下内容：
 
 ```bash
 build-admin ALL=(ALL:ALL) NOPASSWD:ALL

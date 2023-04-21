@@ -6,18 +6,9 @@ title: Home
 heroImage: /logo.svg
 heroImageDark: /logo.png
 heroText: Sankgao Blog
-tagline: Where there is light, there is hope
+tagline: As far as the eye can see, it is all memories; The direction of the heart is all in the past; All that one sees is regret.
 bgImage: http://file.mo7.cc/api/public/bz
 heroFullScreen: true
-
-# actions:
-#   - text: Get started quickly
-#     link: /zh/guide/getting-started.html
-#     type: primary
-#
-#   - text: Project Introduction
-#     link: /guide/
-#     type: secondary
 
 projects:
   - title: VuePress

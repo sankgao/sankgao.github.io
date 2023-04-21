@@ -1,12 +1,16 @@
 ---
 title: VuePress 问题
 icon: problem
-date: 2023-4-12
+date: 2023-04-12
 category: VuePress
 tag:
     - VuePress
     - Problem
 ---
+
+使用 VuePress 遇到的一些问题。
+
+<!-- more -->
 
 ## Node 内存泄漏耗尽
 

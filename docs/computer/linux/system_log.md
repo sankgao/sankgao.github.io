@@ -1,7 +1,7 @@
 ---
 title: 系统日志
 icon: log
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -42,7 +42,7 @@ tag:
 
 ## journalctl
 
-journalctl 用于检索个管理系统日志信息，可以根据事件、类型、服务名等信息进行信息检索，大大的提高了日常排错的效率，语法格式：`journalctl [参数]`
+`journalctl` 用于检索个管理系统日志信息，可以根据事件、类型、服务名等信息进行信息检索，大大的提高了日常排错的效率。语法格式：`journalctl [参数]`
 
 |  参数  |  作用  |
 |  :----:  |  :----  |

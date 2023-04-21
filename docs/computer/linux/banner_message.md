@@ -1,7 +1,7 @@
 ---
 title: SSH 登录之前显示横幅消息
 icon: banner
-date: 2023-4-12
+date: 2023-04-12
 category: Computer
 tag:
     - Linux
@@ -13,7 +13,7 @@ tag:
 
 1. 打开 `/etc/ssh/sshd_config` 配置文件
 
-    在配置文件末尾添加 `Banner /etc/ssh/my_banner` 这一行内容
+    在配置文件末尾添加 `Banner /etc/ssh/my_banner` 这一行内容。
 
     ```bash
     echo "Banner /etc/ssh/my_banner" >> /etc/ssh/sshd_config

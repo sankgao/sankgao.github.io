@@ -1,7 +1,7 @@
 ---
 title: Markdown 语法
 icon: markdown
-date: 2023-4-12
+date: 2023-04-12
 category: Markdown
 tag:
     - Markdown
@@ -61,10 +61,8 @@ tag:
 - **Markdown 书写软件** 推荐：**Typora** 优秀的 Markdown 网页文章书写软件
     - [点击跳转下载地址](https://www.typora.io/ "Typora 编辑器")
         - 以前是免费的，现在收费了，不过是买断制
-
 - **Markdown 笔记软件** 推荐：**Obsidian** 笔记软件
     - [点击跳转下载地址](https://obsidian.md/ "Obsidian 笔记软件")
-
 - **VS Code**：运行代码
     - [点击跳转下载地址](https://code.visualstudio.com/ "VS Code 软件")
 
@@ -94,7 +92,6 @@ Markdown 标题共有 **六级。**
 - 目录的格式
     - 在文档的顶部输入 `[TOC]`，会根据 **标题** 自动生成目录（**Table of Content**）
     - 如果您想要在您的 `[TOC]` 中排除一个标题，请在您的标题 **后面** 添加 `{ignore=true}` 即可
-
 - 不是所有 **Markdown 编辑器** 都支持目录生成
     - **Obsidian** 就不支持，不过 **OB** 是自带大纲的，就是目录的效果
 
@@ -1063,8 +1060,8 @@ $\ce{2Mg + O2 ->[燃烧] 2 MgO}$
 
 - $x^2 + 2x + 5 + \sqrt x = 0$
 - $e^{i\pi} + 1 = 0$
-- $\\ce{CO2 + C -> 2 CO}$
-- $\\ce{2Mg + O2 ->[燃烧] 2 MgO}$
+- $\ce{CO2 + C -> 2 CO}$
+- $\ce{2Mg + O2 ->[\text{燃}\text{烧}] 2 MgO}$
 
 #### 公式块
 
@@ -1089,8 +1086,8 @@ $$
 % 麦克斯韦方程组
 $$
 \begin{array}{lll}
-\nabla\times E &=& -\;\frac{\partial{B}}{\partial{t}}
-\ \nabla\times H &=& \frac{\partial{D}}{\partial{t}}+J
+\nabla\times E &=& -\;\frac{\partial{B}}{\partial{t}}   
+\ \nabla\times H &=& \frac{\partial{D}}{\partial{t}}+J   
 \ \nabla\cdot D &=& \rho
 \ \nabla\cdot B &=& 0
 \ \end{array}
@@ -1116,8 +1113,8 @@ $$
 $$
 % 麦克斯韦方程组
 \begin{array}{lll}
-\nabla\times E &=& -\;\frac{\partial{B}}{\partial{t}}
-\ \nabla\times H &=& \frac{\partial{D}}{\partial{t}}+J
+\nabla\times E &=& -\;\frac{\partial{B}}{\partial{t}}   
+\ \nabla\times H &=& \frac{\partial{D}}{\partial{t}}+J   
 \ \nabla\cdot D &=& \rho
 \ \nabla\cdot B &=& 0
 \ \end{array}

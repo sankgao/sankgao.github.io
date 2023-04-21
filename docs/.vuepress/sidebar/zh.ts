@@ -9,6 +9,10 @@ export const zhSidebarConfig = sidebar({
   "/computer/base/": "structure",
   "/computer/windows/": "structure",
   "/computer/linux/": "structure",
+
+  "/about/": "structure",
+  "/about/my/": "structure",
+  "/about/blog/": "structure",
   
   // "/operations/": "structure",
   // "/operations/virtualization/": "structure",

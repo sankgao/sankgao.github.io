@@ -6,18 +6,9 @@ title: 主页  # 设置页面标题，会用于路径导航、页面增强等
 heroImage: /logo.svg  # 首页 Logo 图
 heroImageDark: /logo.png  # 夜间模式中使用的首页 Logo 图
 heroText: Sankgao Blog  # 首页标题
-tagline: Where there is light, there is hope  # 首页的标语
+tagline: 目之所及，皆是回忆；心之所向，皆是过往；眼之所看，皆是遗憾。  # 首页的标语
 bgImage: http://file.mo7.cc/api/public/bz  # 背景图片
 heroFullScreen: true  # 背景图片全屏展示
-
-# actions:  # 配置首页按钮
-#   - text: 快速上手  # 按钮标题
-#     link: /zh/guide/getting-started.html  # 按钮链接
-#     type: primary  # 按钮类型
-#
-#   - text: 项目简介
-#     link: /guide/
-#     type: secondary
 
 projects:  # 首页特性列表
   - title: VuePress  # 列表标题
