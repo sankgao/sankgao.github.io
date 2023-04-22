@@ -114,7 +114,7 @@ export default hopeTheme({
     // 评论插件配置
     comment: {
       provider: "Waline",
-      serverURL: "https://comment.mrhope.site",
+      serverURL: "https://vercel-blog-roan.vercel.app/",
     },
     
     // Feed 插件配置
