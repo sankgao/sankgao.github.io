@@ -892,38 +892,38 @@ export default {
 ````md
 ```card
 title: Sankgao
-desc: Where there is light, there is hope
-logo: https://sankgao.github.io/logo.svg
+desc: 给时间一些时间，让过去的过去，让开始的开始
+logo: https://sankgao.github.io/logo.png
 link: https://sankgao.github.io
-color: rgba(93, 175, 241, 0.5)
+color: rgba(93, 175, 241, 0.15)
 ```
 
 ```card:json
 {
   "title": "Sankgao",
-  "desc": "Where there is light, there is hope",
-  "logo": "https://sankgao.github.io/logo.svg",
+  "desc": "给时间一些时间，让过去的过去，让开始的开始",
+  "logo": "https://sankgao.github.io/logo.png",
   "link": "https://sankgao.github.io",
-  "color": "rgba(93, 175, 241, 0.5)"
+  "color": "rgba(93, 175, 241, 0.15)"
 }
 ```
 ````
 
 ```card
 title: Sankgao
-desc: Where there is light, there is hope
-logo: https://sankgao.github.io/logo.svg
+desc: 给时间一些时间，让过去的过去，让开始的开始
+logo: https://sankgao.github.io/logo.png
 link: https://sankgao.github.io
-color: rgba(93, 175, 241, 0.5)
+color: rgba(93, 175, 241, 0.15)
 ```
 
 ```card:json
 {
   "title": "Sankgao",
-  "desc": "Where there is light, there is hope",
-  "logo": "https://sankgao.github.io/logo.svg",
+  "desc": "给时间一些时间，让过去的过去，让开始的开始",
+  "logo": "https://sankgao.github.io/logo.png",
   "link": "https://sankgao.github.io",
-  "color": "rgba(93, 175, 241, 0.5)"
+  "color": "rgba(93, 175, 241, 0.15)"
 }
 ```
 
@@ -2303,7 +2303,6 @@ export default {
 ```
 
 评论功能默认全局启用，通过主题选项中的 `plugins.comment.comment` 控制
-
 
 `vuepress-plugin-comment2` 目前支持 `4` 种评论服务:
 
