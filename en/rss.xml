@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="https://sankgao.github.io/en/rss.xml" rel="self" type="application/rss+xml"/>
-    <title>Sankgao Blog</title>
+    <title>Sankgao</title>
     <link>https://sankgao.github.io/en/</link>
     <description>A personal blog built using VuePress v2</description>
     <language>en-US</language>
-    <pubDate>Sat, 22 Apr 2023 12:40:59 GMT</pubDate>
-    <lastBuildDate>Sat, 22 Apr 2023 12:40:59 GMT</lastBuildDate>
+    <pubDate>Tue, 25 Apr 2023 08:36:54 GMT</pubDate>
+    <lastBuildDate>Tue, 25 Apr 2023 08:36:54 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>MIT Licensed, © 2023-present Sankgao</copyright>
