@@ -8,8 +8,7 @@ export default hopeTheme({
   favicon: "/favicon.ico",  // 站点图标
   hostname: "https://sankgao.github.io",  // 当前网站部署到的域名
   
-  logo: "/hero.png",  // 导航栏图标
-  logoDark: "/logo.png",  // 夜间模式下导航栏图标
+  logo: "/logo.png",  // 导航栏图标
   repo: "sankgao/sankgao.github.io",  // 在导航栏中显示仓库链接
   docsDir: "docs",  // 文档在仓库中的目录
 
@@ -21,7 +20,7 @@ export default hopeTheme({
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_40k1t587moj.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_mzjmcqhm0r.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
@@ -44,7 +43,7 @@ export default hopeTheme({
       headerDepth: 5,  // 侧边栏嵌套的标题深度
       
       footer:
-        "主题使用 <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='https://sankgao.github.io/about/site.html' target='_blank'>关于网站</a>",  // 页脚的默认内容
+        "主题使用 <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='/about/my/site.html' target='_blank'>关于网站</a>",  // 页脚的默认内容
       
       copyright: "基于 MIT 协议，© 2023-至今 Sankgao",  // 版权信息
       
@@ -53,7 +52,7 @@ export default hopeTheme({
         name: "Sankgao",  // 博主姓名
         avatar: "/favicon.ico",  // 博主头像
         description: "目之所及，皆是回忆；心之所向，皆是过往；眼之所看，皆是遗憾。",  // 口号、座右铭或介绍语
-        intro: "/about/",  // 博主的个人介绍地址
+        intro: "/about/my/personal_info.html",  // 博主的个人介绍地址
         
         // 博主的社交媒体链接配置
         medias: {
@@ -61,11 +60,10 @@ export default hopeTheme({
           BiliBili: "https://space.bilibili.com/501802215",
           QQ: "http://wpa.qq.com/msgrd?v=3&uin=2036461812&site=qq&menu=yes",
           Qzone: "https://2036461812.qzone.qq.com/",
-          Gmail: "mailto:mister-hope@outlook.com",
+          Gmail: "sankgao@163.com",
           Zhihu: "https://www.zhihu.com/people/57-8-73-75-16",
           Steam: "https://steamcommunity.com/id/Mr-Hope/",
           Weibo: "https://weibo.com/u/6709450808",
-          Gitee: "https://gitee.com/Mister-Hope",
           Twitter: "https://twitter.com/Mister_Hope",
           Telegram: "https://t.me/Mister_Hope",
         },
@@ -78,25 +76,24 @@ export default hopeTheme({
       headerDepth: 5,
       
       footer:
-        "Theme by <a href='https://theme-hope.vuejs.press'>vuepress-theme-hope</a> | <a href='https://sankgao.github.io/about/site.html' target='_blank'>About websites</a>",
+        "Theme by <a href='https://theme-hope.vuejs.press'>vuepress-theme-hope</a> | <a href='/en/about/my/site.html' target='_blank'>About websites</a>",
       
       copyright: "MIT Licensed, © 2023-present Sankgao",
       
       blog: {
         description:
           "As far as the eye can see, it is all memories; The direction of the heart is all in the past; All that one sees is regret.",
-        intro: "/en/about/",
+        intro: "/en/about/my/personal_info.html",
         
         medias: {
           GitHub: "https://github.com/sankgao",
           BiliBili: "https://space.bilibili.com/501802215",
           QQ: "http://wpa.qq.com/msgrd?v=3&uin=2036461812&site=qq&menu=yes",
           Qzone: "https://2036461812.qzone.qq.com/",
-          Gmail: "mailto:mister-hope@outlook.com",
+          Gmail: "mailto:sankgao@163.com",
           Zhihu: "https://www.zhihu.com/people/57-8-73-75-16",
           Steam: "https://steamcommunity.com/id/Mr-Hope/",
           Weibo: "https://weibo.com/u/6709450808",
-          Gitee: "https://gitee.com/Mister-Hope",
           Twitter: "https://twitter.com/Mister_Hope",
           Telegram: "https://t.me/Mister_Hope",
         },
@@ -113,8 +110,13 @@ export default hopeTheme({
     
     // 评论插件配置
     comment: {
-      provider: "Waline",
-      serverURL: "https://vercel-blog-roan.vercel.app/",
+      // provider: "Waline",
+      // serverURL: "https://vercel-blog-roan.vercel.app/",
+      provider: "Giscus",
+      repo: "sankgao/sankgao.github.io",
+      repoId: "R_kgDOJWT44A",
+      category: "Announcements",
+      categoryId: "DIC_kwDOJWT44M4CV-wc",
     },
     
     // Feed 插件配置
@@ -267,7 +269,7 @@ export default hopeTheme({
                 type: "image/png",
               },
             ],
-            url: "/about/",
+            url: "/about/my/personal_info.html",
             description: "个人介绍",
           },
         ],
