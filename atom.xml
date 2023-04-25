@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-04-25T08:36:54.672Z</updated>
+  <updated>2023-04-25T08:54:04.706Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -3163,7 +3163,7 @@ Vue 驱动的静态网站生成器</p>
     <title type="text">VuePress 插件</title>
     <id>https://sankgao.github.io/about/blog/theme_plugins.html</id>
     <link href="https://sankgao.github.io/about/blog/theme_plugins.html"/>
-    <updated>2023-04-21T09:21:18.000Z</updated>
+    <updated>2023-04-25T08:52:12.000Z</updated>
     <summary type="html"><![CDATA[<p>博客自带的一些插件和添加的 VuePress 插件。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>博客自带的一些插件和添加的 VuePress 插件。</p>
