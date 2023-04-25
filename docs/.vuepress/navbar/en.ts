@@ -2,52 +2,76 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbarConfig = navbar([
   "/en",
-  { text: "Demo", icon: "discover", link: "/demo/" },
   {
-    text: "Posts",
-    icon: "edit",
-    prefix: "/posts/",
+    text: "computer",
+    icon: "computer",
+    prefix: "/en/computer/",
     children: [
       {
-        text: "Apple",
-        icon: "edit",
-        prefix: "apple/",
-        children: [
-          { text: "Apple1", icon: "edit", link: "1" },
-          { text: "Apple2", icon: "edit", link: "2" },
-          "3",
-          "4",
-        ],
+        text: "base",
+        icon: "base",
+        link: "base/",
+        activeMatch: "^base/$",
       },
       {
-        text: "Banana",
-        icon: "edit",
-        prefix: "banana/",
-        children: [
-          {
-            text: "Banana 1",
-            icon: "edit",
-            link: "1",
-          },
-          {
-            text: "Banana 2",
-            icon: "edit",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
+        text: "Windows",
+        icon: "windows",
+        link: "windows/",
       },
-      { text: "Cherry", icon: "edit", link: "cherry" },
-      { text: "Dragon Fruit", icon: "edit", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
+      {
+        text: "Linux",
+        icon: "linux",
+        link: "linux/",
+      },
     ],
   },
   {
-    text: "V2 Docs",
-    icon: "note",
-    link: "https://theme-hope.vuejs.press/",
+    text: "index",
+    icon: "index",
+    children: [
+      {
+        text: "site",
+        children: [
+          {
+            text: "category",
+            icon: "categoryselected",
+            link: "/en/category/",
+            activeMatch: "^/en/category/$",
+          },
+          {
+            text: "tag",
+            icon: "tag",
+            link: "/en/tag/",
+          },
+          {
+            text: "timeline",
+            icon: "time",
+            link: "/en/timeline/",
+          },
+        ],
+      },
+      {
+        text: "about",
+        prefix: "/en/about/",
+        children: [
+          {
+            text: "my",
+            icon: "my",
+            link: "my/",
+          },
+          {
+            text: "link",
+            icon: "link",
+            link: "link/",
+          },
+          {
+            text: "tools",
+            icon: "tools",
+            link: "tools/",
+          },
+        ],
+      },
+    ],
   },
 ]);
 

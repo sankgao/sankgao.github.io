@@ -57,7 +57,7 @@ export const zhNavbarConfig = navbar([
           {
             text: "我的",
             icon: "my",
-            link: "",
+            link: "my/",
           },
           {
             text: "友链",
