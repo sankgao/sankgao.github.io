@@ -10,9 +10,37 @@ export const zhSidebarConfig = sidebar({
   "/computer/windows/": "structure",
   "/computer/linux/": "structure",
 
-  "/about/": "structure",
-  "/about/my/": "structure",
-  "/about/blog/": "structure",
+  "/about/": [
+    {
+      text: "笔记",
+      icon: "notes",
+      prefix: "notes/",
+      collapsible: true,
+      children: [
+        "markdown_syntax.md",
+        "resources.md",
+      ],
+    },
+    {
+      text: "博客",
+      icon: "blog",
+      prefix: "blog/",
+      collapsible: true,
+      children: [
+        "build.md",
+        "config.md",
+        "theme_config.md",
+        "theme_plugins.md",
+        "problem.md",
+        "blog_notes.md",
+        "blog_typeset.md",
+      ],
+    },
+  ],
+  
+  "/about/my": [ "personal_info.md", "site.md"],
+  // "/about/my/": "structure",
+  // "/about/blog/": "structure",
   
   // "/operations/": "structure",
   // "/operations/virtualization/": "structure",
