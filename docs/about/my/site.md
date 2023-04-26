@@ -1,6 +1,6 @@
 ---
 title: 关于网站
-icon: site
+icon: website
 date: 2023-04-23
 index: false
 article: false
