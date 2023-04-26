@@ -57,12 +57,12 @@ export const enNavbarConfig = navbar([
           {
             text: "my",
             icon: "my",
-            link: "my/",
+            link: "",
           },
           {
             text: "link",
             icon: "link",
-            link: "link/",
+            link: "link.md",
           },
           {
             text: "tools",

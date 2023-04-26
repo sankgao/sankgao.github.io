@@ -57,12 +57,12 @@ export const zhNavbarConfig = navbar([
           {
             text: "我的",
             icon: "my",
-            link: "my/",
+            link: "",
           },
           {
             text: "友链",
             icon: "link",
-            link: "link/",
+            link: "link.md",
           },
           {
             text: "工具",
