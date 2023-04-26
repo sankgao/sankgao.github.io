@@ -2,10 +2,10 @@
 title: 博客排版
 icon: typeset
 date: 2023-04-19
-category: blog
+category: Blog
 tag:
-    - blog
-    - typeset
+    - Blog
+    - Typeset
 ---
 
 :::: info

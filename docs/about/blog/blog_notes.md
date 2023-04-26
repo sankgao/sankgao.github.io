@@ -2,10 +2,9 @@
 title: 博客笔记
 icon: notes
 date: 2023-04-12
-category: blog
+category: Blog
 tag:
-    - blog
-    - notes
+    - Blog
 ---
 
 :::: info
