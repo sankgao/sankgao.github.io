@@ -5,17 +5,55 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-04-26T10:58:41.295Z</updated>
+  <updated>2023-04-27T09:36:36.114Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
-  <category term="Info"/>
   <category term="Link"/>
+  <category term="Tools"/>
+  <category term="Info"/>
   <category term="Markdown"/>
   <category term="Notes"/>
   <category term="Blog"/>
   <category term="VuePress"/>
   <category term="Computer"/>
+  <entry>
+    <title type="text">友联</title>
+    <id>https://sankgao.github.io/links.html</id>
+    <link href="https://sankgao.github.io/links.html"/>
+    <updated>2023-04-27T09:29:13.000Z</updated>
+    <summary type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
+<!-- more -->
+<h2> 我的友联</h2>
+]]></content>
+    <category term="Link"/>
+    <published>2023-04-26T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">工具</title>
+    <id>https://sankgao.github.io/tools.html</id>
+    <link href="https://sankgao.github.io/tools.html"/>
+    <updated>2023-04-27T09:29:13.000Z</updated>
+    <summary type="html"><![CDATA[<p>记录一些常用工具。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>记录一些常用工具。</p>
+<!-- more -->
+<h2> 备忘清单</h2>
+<p>为开发人员分享快速参考备忘清单(速查表)</p>
+<ul>
+<li><a href="https://wangchujiang.com/reference/index.html" target="_blank" rel="noopener noreferrer">备忘清单</a></li>
+</ul>
+<h2> Linux 命令</h2>
+<p>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。</p>
+<ul>
+<li><a href="https://wangchujiang.com/linux-command/" target="_blank" rel="noopener noreferrer">Linux 命令</a></li>
+</ul>
+]]></content>
+    <category term="Tools"/>
+    <published>2023-04-27T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">关于</title>
     <id>https://sankgao.github.io/about/</id>
