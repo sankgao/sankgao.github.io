@@ -7,22 +7,9 @@ export const enNavbarConfig = navbar([
     icon: "computer",
     prefix: "/en/computer/",
     children: [
-      {
-        text: "base",
-        icon: "base",
-        link: "base/",
-        activeMatch: "^base/$",
-      },
-      {
-        text: "Windows",
-        icon: "windows",
-        link: "windows/",
-      },
-      {
-        text: "Linux",
-        icon: "linux",
-        link: "linux/",
-      },
+      { text: "base", icon: "base", link: "base/" },
+      { text: "Windows", icon: "windows", link: "windows/" },
+      { text: "Linux", icon: "linux", link: "linux/" },
     ],
   },
   {
@@ -32,43 +19,17 @@ export const enNavbarConfig = navbar([
       {
         text: "site",
         children: [
-          {
-            text: "category",
-            icon: "categoryselected",
-            link: "/en/category/",
-            activeMatch: "^/en/category/$",
-          },
-          {
-            text: "tag",
-            icon: "tag",
-            link: "/en/tag/",
-          },
-          {
-            text: "timeline",
-            icon: "time",
-            link: "/en/timeline/",
-          },
+          { text: "category", icon: "categoryselected", link: "/en/category/" },
+          { text: "tag", icon: "tag", link: "/en/tag/" },
+          { text: "timeline", icon: "time", link: "/en/timeline/" },
         ],
       },
       {
         text: "about",
-        prefix: "/en/about/",
         children: [
-          {
-            text: "my",
-            icon: "my",
-            link: "",
-          },
-          {
-            text: "link",
-            icon: "link",
-            link: "link.md",
-          },
-          {
-            text: "tools",
-            icon: "tools",
-            link: "tools/",
-          },
+          { text: "my", icon: "my", link: "/en/about/" },
+          { text: "links", icon: "link", link: "/en/links" },
+          { text: "tools", icon: "tools", link: "/en/tools" },
         ],
       },
     ],
