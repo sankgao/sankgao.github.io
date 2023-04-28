@@ -13,6 +13,11 @@ export const zhNavbarConfig = navbar([
     ],
   },
   {
+    text: "前端",
+    icon: "website",
+    link: "/frontend/",
+  },
+  {
     text: "索引",
     icon: "index",
     children: [
