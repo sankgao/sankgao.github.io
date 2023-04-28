@@ -9,7 +9,58 @@ export const zhSidebarConfig = sidebar({
   "/computer/base/": "structure",
   "/computer/windows/": "structure",
   "/computer/linux/": "structure",
-
+  
+  "/frontend/": [
+    {
+      text: "html5",
+      icon: "html5",
+      prefix: "html/",
+      collapsible: true,
+      children: [
+        "HTML_简介.md",
+        "HTML_基础.md",
+        "HTML_表单.md",
+        "HTML5_图形.md",
+        "HTML_多媒体.md",
+        "HTML5_简介.md",
+        "HTML5_语义元素.md",
+        "HTML5_新元素.md",
+        "HTML5_全局属性参考手册.md",
+        "HTML_事件参考手册.md",
+        "HTML_颜色.md",
+        "HTML5_标签参考手册.md",
+        "HTML_状态消息.md",
+        "HTML_请求方法.md",
+      ],
+    },
+    {
+      text: "css3",
+      icon: "css3",
+      prefix: "css/",
+      collapsible: true,
+      children: [
+        "CSS_简介.md",
+        "CSS_基础.md",
+      ],
+    },
+    {
+      text: "vue3",
+      icon: "vue",
+      prefix: "vue3/",
+      collapsible: true,
+      children: [
+        "introduction.md",
+        "quick_start.md",
+        "application.md",
+        "template_syntax.md",
+        "responsive_base.md",
+        "computed.md",
+        "class_and_style_bind.md",
+        "ways_of_using_vue.md",
+      ],
+    },
+  ],
+  
   "/about/": [
     {
       text: "笔记",
