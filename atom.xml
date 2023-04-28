@@ -5,10 +5,11 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-04-27T09:36:36.114Z</updated>
+  <updated>2023-04-28T10:35:09.669Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
+  <category term="Frontend"/>
   <category term="Link"/>
   <category term="Tools"/>
   <category term="Info"/>
@@ -17,6 +18,569 @@
   <category term="Blog"/>
   <category term="VuePress"/>
   <category term="Computer"/>
+  <entry>
+    <title type="text">前端</title>
+    <id>https://sankgao.github.io/frontend/</id>
+    <link href="https://sankgao.github.io/frontend/"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>记录一些前端知识。</p>
+<ul>
+<li><a href="/frontend/html/" target="blank">HTML</a></li>
+<li><a href="/frontend/css/" target="blank">CSS</a></li>
+<li><a href="/frontend/vue3/" target="blank">Vue3</a></li>
+</ul>
+<h2> 关于前端的学习地址</h2>
+<ul>
+<li><a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">W3school</a></li>
+<li><a href="http://www.codebaoku.com/" target="_blank" rel="noopener noreferrer">编程宝库</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener noreferrer">MDN Web</a></li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>记录一些前端知识。</p>
+<ul>
+<li><a href="/frontend/html/" target="blank">HTML</a></li>
+<li><a href="/frontend/css/" target="blank">CSS</a></li>
+<li><a href="/frontend/vue3/" target="blank">Vue3</a></li>
+</ul>
+<h2> 关于前端的学习地址</h2>
+<ul>
+<li><a href="https://www.w3school.com.cn/" target="_blank" rel="noopener noreferrer">W3school</a></li>
+<li><a href="http://www.codebaoku.com/" target="_blank" rel="noopener noreferrer">编程宝库</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener noreferrer">MDN Web</a></li>
+</ul>
+<h2> 在线编辑器工具</h2>
+<ul>
+<li><a href="https://www.w3school.com.cn/tiy/t.asp" target="_blank" rel="noopener noreferrer">W3school</a></li>
+<li><a href="http://www.codebaoku.com/try/js" target="_blank" rel="noopener noreferrer">编程宝库</a></li>
+<li><a href="https://jsfiddle.net/yyx990803/2ke1ab0z/" target="_blank" rel="noopener noreferrer">StackBlitz</a></li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">创建一个 Vue 应用</title>
+    <id>https://sankgao.github.io/frontend/vue3/application.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/application.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 应用实例</h2>
+<p>每个 Vue 应用都是通过 <code>createApp</code> 函数创建一个新的 <strong>应用实例：</strong></p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">/* 根组件选项 */</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> 应用实例</h2>
+<p>每个 Vue 应用都是通过 <code>createApp</code> 函数创建一个新的 <strong>应用实例：</strong></p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 根组件</h2>
+<p>传入 <code>createApp</code> 的对象实际上是一个组件，每个应用都需要一个 <strong>根组件</strong>，其他组件将作为其子组件。</p>
+<p>如果你使用的是单文件组件，我们可以直接从另一个文件中导入根组件。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>大多数真实的应用都是由一棵 <strong>嵌套的</strong>、<strong>可重用的</strong> 组件树组成的。例如：一个待办事项（Todos）应用的组件树可能是这样的：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 挂载应用</h2>
+<p>应用实例必须在调用了 <code>.mount()</code> 方法后才会渲染出来。该方法接收一个 “容器” 参数，可以是一个实际的 DOM 元素或是一个 CSS 选择器字符串：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>应用根组件的内容将会被渲染在容器元素里面。容器元素自己将 <strong>不会</strong> 被视为应用的一部分。</p>
+<p><code>.mount()</code> 方法应该始终在整个应用配置和资源注册完成后被调用。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>.mount()</code> 方法不同于其他资源注册方法，它的返回值是 <strong>根组件实例</strong> 而非 <strong>应用实例</strong></p>
+</div>
+<h3> DOM 中的根组件模板</h3>
+<p>当在未采用构建流程的情况下使用 Vue 时，可以在挂载容器中直接书写根组件模板：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当根组件没有设置 <code>template</code> 选项时，Vue 将自动使用容器的 <code>innerHTML</code> 作为模板。</p>
+<h2> 应用配置</h2>
+<p>应用实例会暴露一个 <code>.config</code> 对象，用于配置一些应用级的选项。例如：定义一个应用级的错误处理器，用来捕获所有子组件上的错误。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>应用实例还提供了一些方法来注册应用范围内可用的资源。例如：注册一个组件。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这使得 <code>TodoDeleteButton</code> 在应用的任何地方都是可用的。</p>
+<p>确保在挂载应用实例之前完成所有应用配置！</p>
+<h2> 多个应用实例</h2>
+<p>应用实例并不只限于一个。<code>createApp</code> API 函数允许你在同一个页面中创建多个共存的 Vue 应用，而且每个应用都拥有自己的用于配置和全局资源的 <strong>作用域。</strong></p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>如果你正在使用 Vue 来增强服务端渲染 HTML，并且只想要 Vue 去控制一个大型页面中特殊的一小部分，应避免将一个单独的 Vue 应用实例挂载到整个页面上，而是应该创建多个小的应用实例，将它们分别挂载到所需的元素上去</p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Class 与 Style 绑定</title>
+    <id>https://sankgao.github.io/frontend/vue3/class_and_style_bind.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/class_and_style_bind.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>数据绑定的一个常见需求场景是操纵元素的 CSS <strong>class 列表</strong> 和 <strong>内联样式</strong>。因为 <code>class</code> 和 <code>style</code> 都是 attribute，我们可以和其他 attribute 一样使用 <code>v-bind</code> 将它们和动态的字符串绑定。但是，在处理比较复杂的绑定时，通过拼接生成字符串是麻烦且易出错的。因此，Vue 专门为 <code>class</code> 和 <code>style</code> 的 <code>v-bind</code> 用法提供了特殊的功能增强。除了字符串外，<strong>表达式</strong> 的值也可以是对象或数组。</p>]]></summary>
+    <content type="html"><![CDATA[<p>数据绑定的一个常见需求场景是操纵元素的 CSS <strong>class 列表</strong> 和 <strong>内联样式</strong>。因为 <code>class</code> 和 <code>style</code> 都是 attribute，我们可以和其他 attribute 一样使用 <code>v-bind</code> 将它们和动态的字符串绑定。但是，在处理比较复杂的绑定时，通过拼接生成字符串是麻烦且易出错的。因此，Vue 专门为 <code>class</code> 和 <code>style</code> 的 <code>v-bind</code> 用法提供了特殊的功能增强。除了字符串外，<strong>表达式</strong> 的值也可以是对象或数组。</p>
+<h2> 绑定 HTML class</h2>
+<h3> 绑定对象</h3>
+<p>给 <code>:class</code>（<code>v-bind:class</code> 的缩写）传递一个对象来动态切换 class：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>上面的语法表示 <code>active</code> 是否存在取决于数据属性 <code>isActive</code> 的 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy" target="_blank" rel="noopener noreferrer">真假值</a>。</p>
+<p>你可以在对象中写多个字段来操作多个 class。此外，<code>:class</code> 指令也可以和一般的 <code>class</code> attribute 共存。例如：下面这样的状态：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>配合以下模板：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>渲染的结果会是：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>当 <code>isActive</code> 或者 <code>hasError</code> 改变时，class 列表会随之更新。例如：如果 <code>hasError</code> 变为 <code>true</code>，class 列表也会变成 <code>"static active text-danger"</code>。</p>
+<p>绑定的对象并不一定需要写成内联字面量的形式，也可以直接绑定一个对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这也会渲染出相同的结果。也可以绑定一个返回对象的 <a href="/frontend/vue3/computed.html" target="blank">计算属性</a>。这是一个常见且很有用的技巧：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 绑定数组</h3>
+<p>给 <code>:class</code> 绑定一个数组来渲染多个 CSS class：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>渲染的结果是：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果你也想在数组中有条件地渲染某个 class，你可以使用三元表达式：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>errorClass</code> 会一直存在，但 <code>activeClass</code> 只会在 <code>isActive</code> 为真时才存在。</p>
+<p>然而，这可能在有多个依赖条件的 class 时会有些冗长。因此也可以在数组中嵌套对象：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 在组件上使用</h3>
+<p>对于只有一个根元素的组件，当你使用了 <code>class</code> attribute 时，这些 class 会被添加到根元素上，并与该元素上已有的 class 合并。</p>
+<p>例如：如果你声明了一个组件名叫 <code>MyComponent</code>，模板如下：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>在使用时添加一些 class：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>渲染出的 HTML 为：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>Class 的绑定也是同样的：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>当 <code>isActive</code> 为真时，被渲染的 HTML 会是：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果你的组件有多个根元素，你将需要指定哪个根元素来接收这个 class。你可以通过组件的 <code>$attrs</code> 属性来实现指定：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这将被渲染为：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>你可以在 <a href="">透传 Attribute</a> 中了解更多组件的 attribute 继承的细节。</p>
+<h2> 绑定内联样式</h2>
+<h3> 绑定对象</h3>
+<p><code>:style</code> 支持绑定 JavaScript 对象值，对应的是 <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style" target="_blank" rel="noopener noreferrer">HTML 元素的 <code>style</code> 属性</a>：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>尽管推荐使用 <code>camelCase</code>，但 <code>:style</code> 也支持 <code>kebab-cased</code> 形式的 CSS 属性 key（对应其 CSS 中的实际名称）。例如：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>直接绑定一个样式对象通常是一个好主意，这样可以使模板更加简洁：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>同样的，如果样式对象需要更复杂的逻辑，也可以使用返回样式对象的计算属性。</p>
+<h3> 绑定数组</h3>
+<p>给 <code>:style</code> 绑定一个包含多个样式对象的数组。这些对象会被合并后渲染到同一元素上：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> 自动前缀</h3>
+<p>当你在 <code>:style</code> 中使用了需要 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target="_blank" rel="noopener noreferrer">浏览器特殊前缀</a> 的 CSS 属性时，Vue 会自动为他们加上相应的前缀。Vue 是在运行时检查该属性是否支持在当前浏览器中使用。如果浏览器不支持某个属性，那么将尝试加上各个浏览器特殊前缀，以找到哪一个是被支持的。</p>
+<h3> 样式多值</h3>
+<p>你可以对一个样式属性提供多个（不同前缀的）值。例如：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>数组仅会渲染浏览器支持的最后一个值。在这个示例中，在支持不需要特别前缀的浏览器中都会渲染为 <code>display: flex</code>。</p>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">计算属性</title>
+    <id>https://sankgao.github.io/frontend/vue3/computed.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/computed.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 基础示例</h2>
+<p>模板中的表达式虽然方便，但也只能用来做简单的操作。如果在模板中写太多逻辑，会让模板变得臃肿，难以维护。例如：有这样一个包含嵌套数组的对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">const</span> author <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'John Doe'</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">books</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">'Vue 2 - Advanced Guide'</span><span class="token punctuation">,</span>
+    <span class="token string">'Vue 3 - Basic Guide'</span><span class="token punctuation">,</span>
+    <span class="token string">'Vue 4 - The Mystery'</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> 基础示例</h2>
+<p>模板中的表达式虽然方便，但也只能用来做简单的操作。如果在模板中写太多逻辑，会让模板变得臃肿，难以维护。例如：有这样一个包含嵌套数组的对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>根据 <code>author</code> 是否已有一些书籍来展示不同的信息：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>这里的模板看起来有些复杂。必须认真看好一会儿才能明白它的计算依赖于 <code>author.books</code>。更重要的是，如果在模板中需要不止一次这样的计算，又不想将这样的代码在模板里重复好多遍。</p>
+<p>因此推荐使用 <strong>计算属性</strong> 来描述依赖响应式状态的复杂逻辑。这是重构后的示例：</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlYWN0aXZlLCBjb21wdXRlZCB9IGZyb20gJ3Z1ZSdcblxuY29uc3QgYXV0aG9yID0gcmVhY3RpdmUoe1xuICBuYW1lOiAnSm9obiBEb2UnLFxuICBib29rczogW1xuICAgICdWdWUgMiAtIEFkdmFuY2VkIEd1aWRlJyxcbiAgICAnVnVlIDMgLSBCYXNpYyBHdWlkZScsXG4gICAgJ1Z1ZSA0IC0gVGhlIE15c3RlcnknXG4gIF1cbn0pXG5cbi8vIGEgY29tcHV0ZWQgcmVmXG5jb25zdCBwdWJsaXNoZWRCb29rc01lc3NhZ2UgPSBjb21wdXRlZCgoKSA9PiB7XG4gIHJldHVybiBhdXRob3IuYm9va3MubGVuZ3RoID4gMCA/ICdZZXMnIDogJ05vJ1xufSlcbjwvc2NyaXB0PlxuXG48dGVtcGxhdGU+XG4gIDxwPkhhcyBwdWJsaXNoZWQgYm9va3M6PC9wPlxuICA8c3Bhbj57eyBwdWJsaXNoZWRCb29rc01lc3NhZ2UgfX08L3NwYW4+XG48L3RlbXBsYXRlPiIsImltcG9ydC1tYXAuanNvbiI6IntcbiAgXCJpbXBvcnRzXCI6IHtcbiAgICBcInZ1ZVwiOiBcImh0dHBzOi8vc2ZjLnZ1ZWpzLm9yZy92dWUucnVudGltZS5lc20tYnJvd3Nlci5qc1wiXG4gIH1cbn0ifQ==" target="_blank" rel="noopener noreferrer">在演练场中尝试一下</a></p>
+<p>在这里定义了一个计算属性 <code>publishedBooksMessage</code>。<code>computed()</code> 方法期望接收一个 <code>getter</code> 函数，返回值为一个 <strong>计算属性 ref</strong>。和其他一般的 ref 类似，通过 <code>publishedBooksMessage.value</code> 访问计算结果。计算属性 ref 也会在模板中自动解包，因此在模板表达式中引用时无需添加 <code>.value</code>。</p>
+<p>Vue 的计算属性会自动追踪响应式依赖。它会检测到 <code>publishedBooksMessage</code> 依赖于 <code>author.books</code>，所以当 <code>author.books</code> 改变时，任何依赖于 <code>publishedBooksMessage</code> 的绑定都会同时更新。</p>
+<p>也可参考：<a href="">为计算属性标注类型</a> <sup class="vt-badge ts"></sup></p>
+<h2> 计算属性缓存 VS 方法</h2>
+<p>在表达式中像这样调用一个函数也会获得和计算属性相同的结果：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>若将同样的函数定义为一个方法而不是计算属性，两种方式在结果上确实是完全相同的，然而，不同之处在于 <strong>计算属性值会基于其响应式依赖被缓存</strong>。一个计算属性仅会在其响应式依赖更新时才重新计算。这意味着只要 <code>author.books</code> 不改变，无论多少次访问 <code>publishedBooksMessage</code> 都会立即返回先前的计算结果，而不用重复执行 <code>getter</code> 函数。</p>
+<p>这也解释了为什么下面的计算属性永远不会更新，因为 <code>Date.now()</code> 并不是一个响应式依赖：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>相比之下，方法调用 <strong>总是</strong> 会在重渲染发生时再次执行函数。</p>
+<p>为什么需要缓存呢？想象一下如果有一个非常耗性能的计算属性 <code>list</code>，需要循环一个巨大的数组并做许多计算逻辑，并且可能也有其他计算属性依赖于 <code>list</code>。没有缓存的话，会重复执行非常多次 <code>list</code> 的 <code>getter</code>，然而这实际上没有必要！如果您确定不需要缓存，那么也可以使用方法调用。</p>
+<h2> 可写计算属性</h2>
+<p>计算属性默认是只读的。当您尝试修改一个计算属性时，您会收到一个运行时警告。只在某些特殊场景中您可能才需要用到 “可写” 的属性，您可以通过同时提供 <code>getter</code> 和 <code>setter</code> 来创建：</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>现在当您再运行 <code>fullName.value = 'John Doe'</code> 时，setter 会被调用而 <code>firstName</code> 和 <code>lastName</code> 会随之更新。</p>
+<h2> 最佳实践</h2>
+<h3> Getter 不应有副作用</h3>
+<p>计算属性的 <code>getter</code> 应只做计算而没有任何其他的副作用，这一点非常重要，请务必牢记。举例来说，<strong>不要在 getter 中做异步请求或者更改 DOM</strong>！</p>
+<p>一个计算属性的声明中描述的是如何根据其他值派生一个值。因此 <code>getter</code> 的职责应该仅为计算和返回该值。</p>
+<h3> 避免直接修改计算属性值</h3>
+<p>从计算属性返回的值是派生状态。可以把它看作是一个 “临时快照”，每当源状态发生变化时，就会创建一个新的快照。更改快照是没有意义的，因此计算属性的返回值应该被视为只读的，并且永远不应该被更改——应该更新它所依赖的源状态以触发新的计算。</p>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">简介</title>
+    <id>https://sankgao.github.io/frontend/vue3/introduction.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/introduction.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 什么是 Vue</h2>
+<p>Vue（发音为 <code>/vjuː/</code>，类似 view）是一款用于构建用户界面的 JavaScript 框架。它基于标准 <code>HTML</code>、<code>CSS</code> 和 <code>JavaScript</code> 构建，并提供了一套 <strong>声明式的</strong>、<strong>组件化的</strong> 编程模型，可以帮助您高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。</p>
+<p>下面是一个最基本的示例：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token function">createApp</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> 什么是 Vue</h2>
+<p>Vue（发音为 <code>/vjuː/</code>，类似 view）是一款用于构建用户界面的 JavaScript 框架。它基于标准 <code>HTML</code>、<code>CSS</code> 和 <code>JavaScript</code> 构建，并提供了一套 <strong>声明式的</strong>、<strong>组件化的</strong> 编程模型，可以帮助您高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。</p>
+<p>下面是一个最基本的示例：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>结果展示</strong></p>
+<div class="demo">
+  <button @click="count++">
+    Count is: {{ count }}
+  </button>
+</div>
+<p>上面的示例展示了 Vue 的两个 <strong>核心功能：</strong></p>
+<ul>
+<li><strong>声明式渲染</strong>：Vue 基于标准 HTML 拓展了一套模板语法，可以声明式地描述最终输出的 HTML 和 JavaScript 状态之间的关系</li>
+<li><strong>响应性</strong>：Vue 会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM</li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">预备知识</p>
+<p>接下来的内容会假设您对 <code>HTML</code>、<code>CSS</code> 和 <code>JavaScript</code> 已经基本熟悉。如果您对前端开发完全陌生，最好不要直接从一个框架开始进行入门学习——最好是掌握了基础知识再回到这里。您可以通过这篇 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript" target="_blank" rel="noopener noreferrer">JavaScript 概述</a> 来检验您的 <code>JavaScript</code> 知识水平。如果之前有其他框架的经验会很有帮助，但也不是必须的。</p>
+</div>
+<h2> 渐进式框架​</h2>
+<p>Vue 是一个 <strong>框架</strong>，也是一个 <strong>生态</strong>。其功能覆盖了大部分前端开发常见的需求。但 Web 世界是十分多样化的，不同的开发者在 Web 上构建的东西可能在形式和规模上会有很大的不同。考虑到这一点，Vue 的设计非常注重 <strong>灵活性</strong> 和 <strong>可以被逐步集成</strong> 这个特点。根据您的需求场景，您可以用不同的方式使用 Vue：</p>
+<ul>
+<li>无需构建步骤，渐进式增强静态的 HTML</li>
+<li>在任何页面中作为 <code>Web Components</code> 嵌入</li>
+<li>单页应用（SPA）</li>
+<li>全栈/服务端渲染（SSR）</li>
+<li>Jamstack/静态站点生成（SSG）</li>
+<li>开发桌面端、移动端、WebGL，甚至是命令行终端中的界面</li>
+</ul>
+<p>如果您是初学者，可能会觉得这些概念有些复杂。别担心！以下的内容只需要具备基础的 HTML 和 JavaScript 知识。即使您不是这些方面的专家，也能够跟得上。</p>
+<p>如果您是有经验的开发者，希望了解如何以最合适的方式在项目中引入 Vue，或者是对上述的这些概念感到好奇，在 <a href="/frontend/vue3/ways_of_using_vue.html" target="blank">使用 Vue 的多种方式</a> 中讨论了有关它们的更多细节。</p>
+<p>无论再怎么灵活，Vue 的核心知识在所有这些用例中都是通用的。即使您现在只是一个初学者，随着您的不断成长，到未来有能力实现更复杂的项目时，这一路上获得的知识依然会适用。如果您已经是一个老手，您可以根据实际场景来选择使用 Vue 的最佳方式，在各种场景下都可以保持同样的开发效率。这就是为什么将 Vue 称为 <strong>渐进式框架</strong>：它是一个可以与您共同成长、适应您不同需求的框架。</p>
+<h2> 单文件组件​</h2>
+<p>在大多数启用了构建工具的 Vue 项目中，可以使用一种类似 HTML 格式的文件来书写 Vue 组件，它被称为 <strong>单文件组件</strong>（也被称为 <code>*.vue</code> 文件，英文 Single-File Components，缩写为 <code>SFC</code>）。顾名思义，Vue 的单文件组件会将一个组件的逻辑（JavaScript），模板（HTML）和样式（CSS）封装在同一个文件里。</p>
+<p>下面将用 <strong>单文件组件</strong> 的格式重写上面的计数器示例：</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>单文件组件是 Vue 的标志性功能。如果您的用例需要进行 <strong>构建</strong>，则推荐用它来编写 Vue 组件。您可以在后续 <a href="">单文件组件的用法及用途</a> 中了解更多。但您暂时只需要知道 Vue 会帮忙处理所有这些构建工具的配置就好。</p>
+<h2> API 风格​</h2>
+<p>Vue 的组件可以按两种不同的风格书写：<strong>选项式 API</strong> 和 <strong>组合式 API。</strong></p>
+<h3> 选项式 API（Options API）</h3>
+<p>选项式 API 可以用包含多个选项的对象来描述组件的逻辑，例如：<code>data</code>、<code>methods</code> 和 <code>mounted</code>。选项所定义的属性都会暴露在函数内部的 <code>this</code> 上，它会指向当前的组件实例。</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdD5cbmV4cG9ydCBkZWZhdWx0IHtcbiAgLy8gcmVhY3RpdmUgc3RhdGVcbiAgZGF0YSgpIHtcbiAgICByZXR1cm4ge1xuICAgICAgY291bnQ6IDBcbiAgICB9XG4gIH0sXG5cbiAgLy8gZnVuY3Rpb25zIHRoYXQgbXV0YXRlIHN0YXRlIGFuZCB0cmlnZ2VyIHVwZGF0ZXNcbiAgbWV0aG9kczoge1xuICAgIGluY3JlbWVudCgpIHtcbiAgICAgIHRoaXMuY291bnQrK1xuICAgIH1cbiAgfSxcblxuICAvLyBsaWZlY3ljbGUgaG9va3NcbiAgbW91bnRlZCgpIHtcbiAgICBjb25zb2xlLmxvZyhgVGhlIGluaXRpYWwgY291bnQgaXMgJHt0aGlzLmNvdW50fS5gKVxuICB9XG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPkNvdW50IGlzOiB7eyBjb3VudCB9fTwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4ifQ==" target="_blank" rel="noopener noreferrer">在演练场中尝试一下</a></p>
+<h3> 组合式 API（Composition API）</h3>
+<p>组合式 API 可以使用导入的 <strong>API 函数</strong> 来描述组件逻辑。在单文件组件中，组合式 API 通常会与 <code>&lt;script setup&gt;</code> 搭配使用。这个 <code>setup</code> 属性是一个标识，告诉 Vue 需要在编译时进行一些处理，可以更简洁地使用组合式 API。比如：<code>&lt;script setup&gt;</code> 中的导入和顶层变量/函数都能够在模板中直接使用。</p>
+<p>下面是使用了组合式 API 与 <code>&lt;script setup&gt;</code> 改造后和上面的模板完全一样的组件：</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlZiwgb25Nb3VudGVkIH0gZnJvbSAndnVlJ1xuXG4vLyByZWFjdGl2ZSBzdGF0ZVxuY29uc3QgY291bnQgPSByZWYoMClcblxuLy8gZnVuY3Rpb25zIHRoYXQgbXV0YXRlIHN0YXRlIGFuZCB0cmlnZ2VyIHVwZGF0ZXNcbmZ1bmN0aW9uIGluY3JlbWVudCgpIHtcbiAgY291bnQudmFsdWUrK1xufVxuXG4vLyBsaWZlY3ljbGUgaG9va3Ncbm9uTW91bnRlZCgoKSA9PiB7XG4gIGNvbnNvbGUubG9nKGBUaGUgaW5pdGlhbCBjb3VudCBpcyAke2NvdW50LnZhbHVlfS5gKVxufSlcbjwvc2NyaXB0PlxuXG48dGVtcGxhdGU+XG4gIDxidXR0b24gQGNsaWNrPVwiaW5jcmVtZW50XCI+Q291bnQgaXM6IHt7IGNvdW50IH19PC9idXR0b24+XG48L3RlbXBsYXRlPiJ9" target="_blank" rel="noopener noreferrer">在演练场中尝试一下</a></p>
+<h2> 该选哪一个</h2>
+<p>两种 API 风格都能够覆盖大部分的应用场景。它们只是 <strong>同一个底层系统</strong> 所提供的 <strong>两套不同的接口</strong>。实际上，选项式 API 是在组合式 API 的 <strong>基础上</strong> 实现的！关于 Vue 的基础概念和知识在它们之间都是通用的。</p>
+<p>选项式 API 以 <strong>组件实例</strong> 的概念为中心（即上述例子中的 <code>this</code>），对于有面向对象语言背景的用户来说，这通常与基于类的心智模型更为一致。同时，它将响应性相关的细节抽象出来，并强制按照选项来组织代码，从而对初学者而言更为友好。</p>
+<p>组合式 API 的核心思想是直接在 <strong>函数作用域内</strong> 定义响应式状态变量，并将从多个函数中得到的状态组合起来处理复杂问题。这种形式更加自由，也需要您对 Vue 的响应式系统有更深的理解才能高效使用。相应的，它的灵活性也使得组织和重用逻辑的模式变得更加强大。</p>
+<p>在 <a href="">组合式 API FAQ</a> 中，您可以了解更多关于这两种 API 风格的对比以及组合式 API 所带来的潜在收益。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>如果您是使用 Vue 的新手，这里是我的大致建议：</p>
+<ul>
+<li>
+<p>在学习的过程中，推荐采用更易于自己理解的风格。再强调一下，大部分的核心概念在这两种风格之间都是通用的。熟悉了一种风格以后，您也能够很快地理解另一种风格。</p>
+</li>
+<li>
+<p>在生产项目中：</p>
+<ul>
+<li>当您不需要使用构建工具，或者打算主要在低复杂度的场景中使用 Vue，例如：渐进增强的应用场景，推荐采用选项式 API</li>
+<li>当您打算用 Vue 构建完整的单页应用，推荐采用组合式 API + 单文件组件</li>
+</ul>
+</li>
+</ul>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">快速上手</title>
+    <id>https://sankgao.github.io/frontend/vue3/quick_start.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/quick_start.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 线上尝试 Vue​</h2>
+<ul>
+<li>想要快速体验 Vue，您可以直接试试 Vue 官网的 <a href="https://sfc.vuejs.org/#eNo9j01qAzEMha+iapMWOjbdDm6gu96gG2/cjJJM8B+2nBaGuXvlpBMwtj4/JL234EfO6toIRzT1UObMexvpN6fCMNHRNc+w2AgwOXbPL/caoBC3EjcCCPU0wu6TvE/wlYqfnnZ3ae2PXHKMfiwQYArZOyYhAHN+2y9LnwLrarTQ7XeOuTFch5Am8u8WRbcoktGPbnzFOXS3Q3BZXWqKkuRmy/4L1eK4GbUoUTtbPDPnOmpdj4ee/1JVKictlSot8hxIUQ3Dd0k/lYoMtrglwfUPkXdoJg==" target="_blank" rel="noopener noreferrer">演练场</a></li>
+<li>如果您更喜欢不用任何构建的原始 HTML，可以使用 <a href="https://jsfiddle.net/yyx990803/2ke1ab0z/" target="_blank" rel="noopener noreferrer">JSFiddle</a> 入门</li>
+<li>如果您已经比较熟悉 <code>Node.js</code> 和构建工具等概念，还可以直接在浏览器中打开 <a href="https://vite.new/vue" target="_blank" rel="noopener noreferrer">StackBlitz</a> 来尝试完整的构建设置</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<h2> 线上尝试 Vue​</h2>
+<ul>
+<li>想要快速体验 Vue，您可以直接试试 Vue 官网的 <a href="https://sfc.vuejs.org/#eNo9j01qAzEMha+iapMWOjbdDm6gu96gG2/cjJJM8B+2nBaGuXvlpBMwtj4/JL234EfO6toIRzT1UObMexvpN6fCMNHRNc+w2AgwOXbPL/caoBC3EjcCCPU0wu6TvE/wlYqfnnZ3ae2PXHKMfiwQYArZOyYhAHN+2y9LnwLrarTQ7XeOuTFch5Am8u8WRbcoktGPbnzFOXS3Q3BZXWqKkuRmy/4L1eK4GbUoUTtbPDPnOmpdj4ee/1JVKictlSot8hxIUQ3Dd0k/lYoMtrglwfUPkXdoJg==" target="_blank" rel="noopener noreferrer">演练场</a></li>
+<li>如果您更喜欢不用任何构建的原始 HTML，可以使用 <a href="https://jsfiddle.net/yyx990803/2ke1ab0z/" target="_blank" rel="noopener noreferrer">JSFiddle</a> 入门</li>
+<li>如果您已经比较熟悉 <code>Node.js</code> 和构建工具等概念，还可以直接在浏览器中打开 <a href="https://vite.new/vue" target="_blank" rel="noopener noreferrer">StackBlitz</a> 来尝试完整的构建设置</li>
+</ul>
+<h2> 创建一个 Vue 应用​</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">前提条件</p>
+<ul>
+<li>熟悉命令行</li>
+<li>已安装 16.0 或更高版本的 Node.js</li>
+</ul>
+</div>
+<p>在本节中，将介绍如何在本地搭建 Vue <a href="/frontend/vue3/ways_of_using_vue.html#%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8spa" target="blank">单页应用</a>。创建的项目将使用基于 <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite</a> 的构建设置，并允许使用 Vue 的 <a href="">单文件组件</a>（SFC）。</p>
+<p>确保您安装了最新版本的 <a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">Node.js</a>，然后在命令行中运行以下命令：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这一指令将会安装并执行 <a href="https://github.com/vuejs/create-vue" target="_blank" rel="noopener noreferrer">create-vue</a>，它是 Vue 官方的项目脚手架工具。您将会看到一些诸如 TypeScript 和测试支持之类的可选功能提示：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果不确定是否要开启某个功能，您可以直接按下回车键选择 <code>No</code>。在项目被创建后，通过以下步骤安装依赖并启动开发服务器：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>您现在应该已经运行起来了您的第一个 Vue 项目！请注意，生成的项目中的示例组件使用的是 <strong>组合式 API</strong> 和 <code>&lt;script setup&gt;</code>，而非 <strong>选项式 API</strong>。下面是一些补充提示：</p>
+<ul>
+<li>推荐的 IDE 配置是 <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> + <a href="https://marketplace.visualstudio.com/items?itemName=Vue.volar" target="_blank" rel="noopener noreferrer">Volar 扩展</a>。如果使用其他编辑器，参考 <a href="">IDE 支持</a></li>
+<li>更多工具细节，包括与后端框架的整合，请查看 <a href="">工具链指南</a></li>
+<li>要了解构建工具 Vite 更多背后的细节，请查看 <a href="https://cn.vitejs.dev/" target="_blank" rel="noopener noreferrer">Vite 文档</a></li>
+<li>如果您选择使用 TypeScript，请阅读 <a href="https://cn.vuejs.org/guide/typescript/overview.html" target="_blank" rel="noopener noreferrer">TypeScript 使用指南</a></li>
+</ul>
+<p>当您准备将应用发布到生产环境时，请运行：</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>此命令会在 <code>./dist</code> 文件夹中为您的应用创建一个生产环境的构建版本。关于将应用上线生产环境的更多内容，请阅读 <a href="">生产环境部署指南</a>。</p>
+<h2> 通过 CDN 使用 Vue​</h2>
+<p>您可以借助 <code>script</code> 标签直接通过 <code>CDN</code> 来使用 Vue：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这里我们使用了 <a href="https://unpkg.com/" target="_blank" rel="noopener noreferrer">unpkg</a>，但您也可以使用任何提供 npm 包服务的 <code>CDN</code>，例如：<a href="https://www.jsdelivr.com/package/npm/vue" target="_blank" rel="noopener noreferrer">jsdelivr</a> 或 <a href="https://cdnjs.com/libraries/vue" target="_blank" rel="noopener noreferrer">cdnjs</a>。当然，您也可以下载此文件并自行提供服务。</p>
+<p>通过 CDN 使用 Vue 时，<strong>不涉及</strong> 构建步骤。这使得设置更加简单，并且可以用于增强静态的 HTML 或与后端框架集成。但是，您将 <strong>无法使用</strong> 单文件组件（SFC）语法。</p>
+<h3> 使用全局构建版本​</h3>
+<p>上面的例子使用了全局构建版本的 Vue，该版本的所有顶层 API 都以属性的形式暴露在了全局的 Vue 对象上。</p>
+<p>这里有一个使用全局构建版本的例子：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://jsfiddle.net/yyx990803/nw1xg8Lj/" target="_blank" rel="noopener noreferrer">JSFiddle 中的示例</a></p>
+<h3> 使用 ES 模块构建版本​</h3>
+<p>在本文档的其余部分我们使用的主要是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener noreferrer">ES 模块</a> 语法。</p>
+<p>现代浏览器大多都已原生支持 ES 模块。因此可以像这样通过 CDN 以及原生 ES 模块使用 Vue：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="highlight-lines"><br><br><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>示例中使用了 <code>&lt;script type="module"&gt;</code>，且导入的 CDN URL 指向的是 Vue 的 <strong>ES 模块构建版本</strong></p>
+</div>
+<p><a href="https://jsfiddle.net/yyx990803/vo23c470/" target="_blank" rel="noopener noreferrer">JSFiddle 中的示例</a></p>
+<h3> 启用 Import maps​</h3>
+<p>在上面的示例中，使用了完整的 CDN URL 来导入，但在文档的其余部分中，您将看到如下代码：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>还可以使用 <a href="https://caniuse.com/import-maps" target="_blank" rel="noopener noreferrer">导入映射表（Import Maps）</a> 来告诉浏览器如何定位到导入的 <code>vue</code>：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="highlight-lines"><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><br><br><br><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://jsfiddle.net/yyx990803/2ke1ab0z/" target="_blank" rel="noopener noreferrer">JSFiddle 中的示例</a></p>
+<p>您也可以在映射表中添加其他的依赖——但请务必确保您使用的是该库的 ES 模块版本。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">导入映射表的浏览器支持情况</p>
+<p>目前只有基于 Chromium 的浏览器支持导入映射表，所以推荐您在学习过程中使用 Chrome 或 Edge 浏览器</p>
+<p>如果您使用的是 Firefox 浏览器，则该功能默认在 108+ 版本或通过启用 <code>about:config</code> 中的 <code>dom.importMaps.enabled</code> 选项支持</p>
+<p>如果您更喜欢那些还不支持导入映射表的浏览器，您可以使用 <a href="https://github.com/guybedford/es-module-shims" target="_blank" rel="noopener noreferrer">es-module-shims</a> 来进行 polyfill</p>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">生产环境中的注意事项</p>
+<p>到目前为止示例中使用的都是 Vue 的开发构建版本——如果您打算在生产中通过 CDN 使用 Vue，请务必查看 <a href="">生产环境部署指南</a></p>
+</div>
+<h3> 拆分模块</h3>
+<p>随着逐步深入，可能需要将代码分割成单独的 JavaScript 文件，以便更容易管理。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果直接在浏览器中打开了上面的 <code>index.html</code>，您会发现它抛出了一个错误，因为 ES 模块不能通过 <code>file://</code> 协议工作。为了使其工作，您需要使用本地 HTTP 服务器通过 <code>http://</code> 协议提供 <code>index.html</code>。</p>
+<p>要启动一个本地的 HTTP 服务器，请先安装 <a href="https://nodejs.org/zh/" target="_blank" rel="noopener noreferrer">Node.js</a>，然后通过命令行在 HTML 文件所在文件夹下运行 <code>npx serve</code>。您也可以使用其他任何可以基于正确的 MIME 类型服务静态文件的 HTTP 服务器。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>这里导入的组件模板是内联的 JavaScript 字符串。如果您正在使用 VSCode，您可以安装 <a href="https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html" target="_blank" rel="noopener noreferrer">es6-string-html</a> 扩展，然后在字符串前加上一个前缀注释 <code>/*html*/</code> 以高亮语法</p>
+</div>
+<h3> 无需构建的组合式 API 用法</h3>
+<p>组合式 API 的许多示例将使用 <code>&lt;script setup&gt;</code> 语法。如果您想在无需构建的情况下使用组合式 API，请参阅 <a href="">setup() 选项</a>。</p>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">响应式基础</title>
+    <id>https://sankgao.github.io/frontend/vue3/responsive_base.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/responsive_base.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 声明响应式状态</h2>
+<p>使用 <code>reactive()</code> 函数创建一个响应式对象或数组：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> reactive <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">count</span><span class="token operator">:</span> <span class="token number">0</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> 声明响应式状态</h2>
+<p>使用 <code>reactive()</code> 函数创建一个响应式对象或数组：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>响应式对象其实是 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" rel="noopener noreferrer">JavaScript Proxy</a>，其行为表现与一般对象相似。不同之处在于 Vue 能够跟踪对响应式对象属性的访问与更改操作。如果你对这其中的细节感到好奇，将在 <a href="">深入响应式系统</a> 中会进行解释。</p>
+<p>TypeScript 用户请参阅：<a href="">为响应式对象标注类型</a> <sup class="vt-badge ts"></sup></p>
+<p>要在组件模板中使用响应式状态，需要在 <code>setup()</code> 函数中定义并返回。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="highlight-lines"><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>也可以在同一个作用域下定义更新响应式状态的函数，并将它们作为方法与状态一起暴露出去：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="highlight-lines"><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><div class="highlight-line">&nbsp;</div><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>暴露的方法通常会被用作事件监听器：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> &lt;script setup&gt;</h3>
+<p>在 <code>setup()</code> 函数中手动暴露大量的状态和方法非常繁琐。幸运的是，可以通过使用构建工具来简化该操作。当使用单文件组件（SFC）时，可以使用 <code>&lt;script setup&gt;</code> 来大幅度地简化代码。</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlYWN0aXZlIH0gZnJvbSAndnVlJ1xuXG5jb25zdCBzdGF0ZSA9IHJlYWN0aXZlKHsgY291bnQ6IDAgfSlcblxuZnVuY3Rpb24gaW5jcmVtZW50KCkge1xuICBzdGF0ZS5jb3VudCsrXG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPlxuICAgIHt7IHN0YXRlLmNvdW50IH19XG4gIDwvYnV0dG9uPlxuPC90ZW1wbGF0ZT4iLCJpbXBvcnQtbWFwLmpzb24iOiJ7XG4gIFwiaW1wb3J0c1wiOiB7XG4gICAgXCJ2dWVcIjogXCJodHRwczovL3NmYy52dWVqcy5vcmcvdnVlLnJ1bnRpbWUuZXNtLWJyb3dzZXIuanNcIlxuICB9XG59In0=" target="_blank" rel="noopener noreferrer">在演练场中尝试一下</a></p>
+<p><code>&lt;script setup&gt;</code> 中的顶层的导入和变量声明可在同一组件的模板中直接使用。你可以理解为模板中的表达式和 <code>&lt;script setup&gt;</code> 中的代码处在同一个作用域中。</p>
+<h3> DOM 更新时机</h3>
+<p>当你更改响应式状态后，DOM 会自动更新。然而，你得注意 DOM 的更新并不是同步的。相反，Vue 将缓冲它们直到更新周期的 “下个时机” 以确保无论你进行了多少次状态更改，每个组件都只更新一次。</p>
+<p>若要等待一个状态改变后的 DOM 更新完成，你可以使用 <a href="">nextTick()</a> 这个全局 API：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 深层响应性</h3>
+<p>在 Vue 中，状态都是默认深层响应式的。这意味着即使在更改深层次的对象或数组，你的改动也能被检测到。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>你也可以直接创建一个 <a href="">浅层响应式对象</a>。它们仅在顶层具有响应性，一般仅在某些特殊场景中需要。</p>
+<h3> 响应式代理 VS 原始对象</h3>
+<p>值得注意的是，<code>reactive()</code> 返回的是一个原始对象的 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy" target="_blank" rel="noopener noreferrer">Proxy</a>，它和原始对象是不相等的：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>只有代理对象是响应式的，更改原始对象不会触发更新。因此，使用 Vue 的响应式系统的最佳实践是 <strong>仅使用你声明对象的代理版本</strong>。</p>
+<p>为保证访问代理的一致性，对同一个原始对象调用 <code>reactive()</code> 会总是返回同样的代理对象，而对一个已存在的代理对象调用 <code>reactive()</code> 会返回其本身：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个规则对嵌套对象也适用。依靠深层响应性，响应式对象内的嵌套对象依然是代理：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> reactive() 的局限性</h3>
+<p><code>reactive()</code> API 有两条限制：</p>
+<ol>
+<li>
+<p>仅对对象类型有效（对象、数组和 <code>Map</code>、<code>Set</code> 这样的 <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects#%E4%BD%BF%E7%94%A8%E9%94%AE%E7%9A%84%E9%9B%86%E5%90%88%E5%AF%B9%E8%B1%A1" target="_blank" rel="noopener noreferrer">集合类型</a>），而对 <code>string</code>、<code>number</code> 和 <code>boolean</code> 这样的 <a href="https://developer.mozilla.org/zh-CN/docs/Glossary/Primitive" target="_blank" rel="noopener noreferrer">原始类型</a> 无效。</p>
+</li>
+<li>
+<p>因为 Vue 的响应式系统是通过属性访问进行追踪的，因此必须始终保持对该响应式对象的相同引用。这意味着不可以随意地 “替换” 一个响应式对象，因为这将导致对初始引用的响应性连接丢失：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+<p>同时这也意味着当我们将响应式对象的属性赋值或解构至本地变量时，或是将该属性传入一个函数时，我们会失去响应性：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> 用 ref() 定义响应式变量</h2>
+<p><code>reactive()</code> 的种种限制归根结底是因为 JavaScript 没有可以作用于所有值类型的 “引用” 机制。为此，Vue 提供了一个 <a href="">ref()</a> 方法来允许我们创建可以使用任何值类型的响应式 <strong>ref</strong>：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ref()</code> 将传入参数的值包装为一个带 <code>.value</code> 属性的 ref 对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>TypeScript 用户请参阅：<a href="">为 ref 标注类型</a> <sup class="vt-badge ts"></sup></p>
+<p>和响应式对象的属性类似，<code>ref</code> 的 <code>.value</code> 属性也是响应式的。同时，当值为对象类型时，会用 <code>reactive()</code> 自动转换它的 <code>.value</code>。</p>
+<p>一个包含对象类型值的 <code>ref</code> 可以响应式地替换整个对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>ref</code> 被传递给函数或是从一般对象上被解构时，不会丢失响应性：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>简言之，<code>ref()</code> 能创造一种对任意值的 “引用”，并能够在 <strong>不丢失响应性</strong> 的前提下传递这些引用。这个功能很重要，因为它经常用于将逻辑提取到 <a href="">组合函数</a> 中。</p>
+<h3> ref 在模板中的解包</h3>
+<p>当 ref 在模板中作为顶层属性被访问时，它们会被自动 “解包”，所以不需要使用 <code>.value</code>。下面是之前的计数器例子，用 <code>ref()</code> 代替：</p>
+<div class="language-vue line-numbers-mode" data-ext="vue"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlight-line">&nbsp;</div><br><br></div><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><a href="https://sfc.vuejs.org/#eyJBcHAudnVlIjoiPHNjcmlwdCBzZXR1cD5cbmltcG9ydCB7IHJlZiB9IGZyb20gJ3Z1ZSdcblxuY29uc3QgY291bnQgPSByZWYoMClcblxuZnVuY3Rpb24gaW5jcmVtZW50KCkge1xuICBjb3VudC52YWx1ZSsrXG59XG48L3NjcmlwdD5cblxuPHRlbXBsYXRlPlxuICA8YnV0dG9uIEBjbGljaz1cImluY3JlbWVudFwiPnt7IGNvdW50IH19PC9idXR0b24+XG48L3RlbXBsYXRlPiIsImltcG9ydC1tYXAuanNvbiI6IntcbiAgXCJpbXBvcnRzXCI6IHtcbiAgICBcInZ1ZVwiOiBcImh0dHBzOi8vc2ZjLnZ1ZWpzLm9yZy92dWUucnVudGltZS5lc20tYnJvd3Nlci5qc1wiXG4gIH1cbn0ifQ==" target="_blank" rel="noopener noreferrer">在演练场中尝试一下</a></p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>仅当 ref 是模板渲染上下文的 <strong>顶层属性</strong> 时才适用自动 “解包”。例如：<code>object</code> 是顶层属性，但 <code>object.foo</code> 不是</p>
+</div>
+<p>所以我们给出以下 object：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>下面的表达式将 <strong>不会</strong> 像预期的那样工作：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>渲染的结果会是一个 <code>[object Object]1</code>，因为 <code>object.foo</code> 是一个 ref 对象。可以通过将 <code>foo</code> 改成顶层属性来解决这个问题：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>现在渲染结果将是 <code>2</code>。</p>
+<p>需要注意的是，如果一个 ref 是文本插值（即一个 <code>{{ }}</code> 符号）计算的最终值，它也将被解包。因此下面的渲染结果将为 <code>1</code>：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这只是文本插值的一个方便功能，相当于 <code>{{ object.foo.value }}</code>。</p>
+<h3> ref 在响应式对象中的解包</h3>
+<p>当一个 <code>ref</code> 被嵌套在一个响应式对象中，作为属性被访问或更改时，它会自动解包，因此会表现得和一般的属性一样：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>如果将一个新的 ref 赋值给一个关联了已有 ref 的属性，那么它会替换掉旧的 ref：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>只有当嵌套在一个深层响应式对象内时，才会发生 ref 解包。当其作为 <a href="">浅层响应式对象</a> 的属性被访问时不会解包。</p>
+<h4> 数组和集合类型的 ref 解包</h4>
+<p>跟响应式对象不同，当 ref 作为响应式数组或像 <code>Map</code> 这种原生集合类型的元素被访问时，不会进行解包。</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">模板语法</title>
+    <id>https://sankgao.github.io/frontend/vue3/template_syntax.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/template_syntax.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>Vue 使用一种基于 HTML 的模板语法，能够 <strong>声明式</strong> 地将其组件实例的数据绑定到呈现的 DOM 上。所有的 Vue 模板都是语法层面合法的 HTML，可以被符合规范的浏览器和 HTML 解析器解析。</p>
+<p>在底层机制中，Vue 会将模板编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。</p>
+<p>如果您对虚拟 DOM 的概念比较熟悉，并且偏好直接使用 JavaScript，您也可以结合可选的 JSX 支持 <a href="">直接手写渲染函数</a> 而不采用模板。但请注意，这将不会享受到和模板同等级别的编译时优化。</p>]]></summary>
+    <content type="html"><![CDATA[<p>Vue 使用一种基于 HTML 的模板语法，能够 <strong>声明式</strong> 地将其组件实例的数据绑定到呈现的 DOM 上。所有的 Vue 模板都是语法层面合法的 HTML，可以被符合规范的浏览器和 HTML 解析器解析。</p>
+<p>在底层机制中，Vue 会将模板编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。</p>
+<p>如果您对虚拟 DOM 的概念比较熟悉，并且偏好直接使用 JavaScript，您也可以结合可选的 JSX 支持 <a href="">直接手写渲染函数</a> 而不采用模板。但请注意，这将不会享受到和模板同等级别的编译时优化。</p>
+<h2> 文本插值</h2>
+<p>最基本的数据绑定形式是文本插值，它使用的是 “Mustache” 语法（即双大括号）：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>双大括号标签会被替换为 <a href="">相应组件实例中</a> <code>msg</code> 属性的值。同时每次 <code>msg</code> 属性更改时它也会同步更新。</p>
+<h2> 原始 HTML</h2>
+<p>双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，您需要使用 <code>v-html</code> 指令：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p class="demo">
+  </p><p>Using text interpolation: {{ rawHtml }}</p>
+  <p>Using v-html directive: <span v-html="rawHtml"></span></p>
+<p></p>
+<p>这里看到的 <code>v-html</code> 属性被称为一个 <strong>指令</strong>。指令由 <code>v-</code> 作为前缀，表明它们是一些由 Vue 提供的特殊属性，它们将为渲染的 DOM 应用特殊的响应式行为。这里做的事情简单来说就是：在当前组件实例上，将此元素的 innerHTML 与 <code>rawHtml</code> 属性保持同步。</p>
+<p><code>span</code> 的内容将会被替换为 <code>rawHtml</code> 属性的值，插值为纯 HTML——数据绑定将会被忽略。<strong>注意</strong>，您不能使用 <code>v-html</code> 来拼接组合模板，因为 Vue 不是一个基于字符串的模板引擎。在使用 Vue 时，应当使用组件作为 UI 重用和组合的基本单元。</p>
+<div class="hint-container warning">
+<p class="hint-container-title">安全警告</p>
+<p>在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 <a href="https://en.wikipedia.org/wiki/Cross-site_scripting" target="_blank" rel="noopener noreferrer">XSS 漏洞</a>。请仅在内容安全可信时再使用 <code>v-html</code>，并且 <strong>永远不要</strong> 使用用户提供的 HTML 内容</p>
+</div>
+<h2> Attribute 绑定</h2>
+<p>双大括号不能在 HTML 属性中使用。想要响应式地绑定一个 <code>attribute</code>，应该使用 <code>v-bind</code> 指令：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><code>v-bind</code> 指令指示 Vue 将元素的 <code>id</code> attribute 与组件的 <code>dynamicId</code> 属性保持一致。如果绑定的值是 <code>null</code> 或者 <code>undefined</code>，那么该 attribute 将会从渲染的元素上移除。</p>
+<h3> 简写</h3>
+<p>因为 <code>v-bind</code> 非常常用，特意提供了一个特定的简写语法：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>开头为 <code>:</code> 的 attribute 可能和一般的 HTML attribute 看起来不太一样，但它的确是合法的 attribute 名称字符，并且所有支持 Vue 的浏览器都能正确解析它。此外，他们不会出现在最终渲染的 DOM 中。简写语法是可选的。</p>
+<h3> 布尔型 Attribute</h3>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Attributes#%E5%B8%83%E5%B0%94%E5%80%BC%E5%B1%9E%E6%80%A7" target="_blank" rel="noopener noreferrer">布尔型 attribute</a> 依据 <code>true/false</code> 值来决定 attribute 是否应该存在于该元素上。<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled" target="_blank" rel="noopener noreferrer">disabled</a> 就是最常见的例子之一。</p>
+<p><code>v-bind</code> 在这种场景下的行为略有不同：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>当 <code>isButtonDisabled</code> 为 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy" target="_blank" rel="noopener noreferrer">真值</a> 或一个空字符串（即 <code>&lt;button disabled=""&gt;</code>）时，元素会包含这个 <code>disabled</code> attribute。而当其为其他 <a href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy" target="_blank" rel="noopener noreferrer">假值</a> 时 attribute 将被忽略。</p>
+<h3> 动态绑定多个值</h3>
+<p>如果您有像这样的一个包含多个 attribute 的 JavaScript 对象：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>通过不带参数的 <code>v-bind</code>，您可以将它们绑定到单个元素上：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 使用 JavaScript 表达式</h2>
+<p>至此仅在模板中绑定了一些简单的属性名。但是 Vue 实际上在所有的数据绑定中都支持完整的 JavaScript 表达式：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这些表达式都会被作为 JavaScript ，以当前组件实例为作用域解析执行。</p>
+<p>在 Vue 模板内，JavaScript 表达式可以被使用在如下场景上：</p>
+<ul>
+<li>在文本插值中（双大括号）</li>
+<li>在任何 Vue 指令（以 <code>v-</code> 开头的特殊 attribute）attribute 的值中</li>
+</ul>
+<h3> 仅支持表达式</h3>
+<p>每个绑定仅支持 <strong>单一表达式</strong>，也就是一段能够被求值的 JavaScript 代码。一个简单的判断方法是是否可以合法地写在 <code>return</code> 后面。</p>
+<p>因此，下面的例子都是 <strong>无效</strong> 的：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 调用函数</h3>
+<p>可以在绑定的表达式中使用一个组件暴露的方法：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>绑定在表达式中的方法在组件每次更新时都会被重新调用，因此 <strong>不</strong> 应该产生任何副作用。比如：改变数据或触发异步操作</p>
+</div>
+<h3> 受限的全局访问</h3>
+<p>模板中的表达式将被沙盒化，仅能够访问到 <a href="https://github.com/vuejs/core/blob/main/packages/shared/src/globalsWhitelist.ts#L3" target="_blank" rel="noopener noreferrer">有限的全局对象列表</a>。该列表中会暴露常用的内置全局对象。比如：<code>Math</code> 和 <code>Date</code>。</p>
+<p>没有显式包含在列表中的全局对象将不能在模板内表达式中访问，例如：用户附加在 <code>window</code> 上的属性。然而，您也可以自行在 <a href=""><code>app.config.globalProperties</code></a> 上显式地添加它们，供所有的 Vue 表达式使用。</p>
+<h2> 指令 Directives</h2>
+<p>指令是带有 <code>v-</code> 前缀的特殊 attribute。Vue 提供了许多 <a href="">内置指令</a>，包括上面所介绍的 <code>v-bind</code> 和 <code>v-html</code>。</p>
+<p>指令 attribute 的期望值为一个 JavaScript 表达式（除了少数几个例外，即之后要讨论到的 <code>v-for</code>、<code>v-on</code> 和 <code>v-slot</code>）。一个指令的任务是在其表达式的值变化时响应式地更新 DOM。以 <a href=""><code>v-if</code></a> 为例：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>这里，<code>v-if</code> 指令会基于表达式 <code>seen</code> 的值的真假来移除/插入该 <code>&lt;p&gt;</code> 元素。</p>
+<h3> 参数 Arguments</h3>
+<p>某些指令会需要一个 “参数”，在指令名后通过一个冒号隔开做标识。例如：用 <code>v-bind</code> 指令来响应式地更新一个 HTML attribute：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里 <code>href</code> 就是一个参数，它告诉 <code>v-bind</code> 指令将表达式 <code>url</code> 的值绑定到元素的 <code>href</code> attribute 上。在简写中，参数前的一切（例如 <code>v-bind:</code>）都会被缩略为一个 <code>:</code> 字符。</p>
+<p>另一个例子是 <code>v-on</code> 指令，它将监听 DOM 事件：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里的参数是要监听的事件名称：<code>click</code>。<code>v-on</code> 有一个相应的缩写，即 <code>@</code> 字符。</p>
+<h3> 动态参数</h3>
+<p>同样在指令参数上也可以使用一个 JavaScript 表达式，需要包含在一对方括号内：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里的 <code>attributeName</code> 会作为一个 JavaScript 表达式被动态执行，计算得到的值会被用作最终的参数。例如：如果您的组件实例有一个数据属性 <code>attributeName</code>，其值为 <code>"href"</code>，那么这个绑定就等价于 <code>v-bind:href</code>。</p>
+<p>相似地，您还可以将一个函数绑定到动态的事件名称上：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在此示例中，当 <code>eventName</code> 的值是 <code>"focus"</code> 时，<code>v-on:[eventName]</code> 就等价于 <code>v-on:focus</code>。</p>
+<h4> 动态参数值的限制</h4>
+<p>动态参数中表达式的值应当是一个字符串，或者是 <code>null</code>。特殊值 <code>null</code> 意为显式移除该绑定。其他非字符串的值会触发警告。</p>
+<h4> 动态参数语法的限制</h4>
+<p>动态参数表达式因为某些字符的缘故有一些语法限制，比如：空格和引号，在 HTML attribute 名称中都是不合法的。例如下面的示例：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>如果您需要传入一个复杂的动态参数，推荐使用 <a href="./computed">计算属性</a> 替换复杂的表达式，也是 Vue 最基础的概念之一。</p>
+<p>当使用 DOM 内嵌模板（直接写在 HTML 文件里的模板）时，需要避免在名称中使用大写字母，因为浏览器会强制将其转换为小写：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>上面的例子将会在 DOM 内嵌模板中被转换为 <code>:[someattr]</code>。如果您的组件拥有 <code>someAttr</code> 属性而非 <code>someattr</code>，这段代码将不会工作。单文件组件内的模板 <strong>不</strong> 受此限制。</p>
+<h3> 修饰符 Modifiers</h3>
+<p>修饰符是以点开头的特殊后缀，表明指令需要以一些特殊的方式被绑定。例如：<code>.prevent</code> 修饰符会告知 <code>v-on</code> 指令对触发的事件调用 <code>event.preventDefault()</code>：</p>
+<div class="language-vue-html line-numbers-mode" data-ext="vue-html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>最后，在这里您可以直观地看到完整的指令语法：</p>
+<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/frontend/vue3/directive.png" alt="指令语法图" tabindex="0" loading="lazy"><figcaption>指令语法图</figcaption></figure>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">使用 Vue 的多种方式</title>
+    <id>https://sankgao.github.io/frontend/vue3/ways_of_using_vue.html</id>
+    <link href="https://sankgao.github.io/frontend/vue3/ways_of_using_vue.html"/>
+    <updated>2023-04-28T10:28:29.000Z</updated>
+    <summary type="html"><![CDATA[<p>我们相信在 Web 的世界里没有一种方案可以解决所有问题。正因如此，Vue 被设计成一个灵活的、可以渐进式集成的框架。根据使用场景的不同需要，相应地有多种不同的方式来使用 Vue，以此在技术栈复杂度、开发体验和性能表现间取得最佳平衡。</p>
+<h2> 独立脚本</h2>
+<p>Vue 可以以一个单独 JS 文件的形式使用，无需构建步骤！如果您的后端框架已经渲染了大部分的 HTML，或者您的前端逻辑并不复杂，不需要构建步骤，这是最简单的使用 Vue 的方式。在这些场景中您可以将 Vue 看作一个更加声明式的 jQuery <strong>替代品。</strong></p>
+<p>Vue 也提供了另一个更适用于此类无构建步骤场景的版本 <a href="https://github.com/vuejs/petite-vue" target="_blank" rel="noopener noreferrer">petite-vue</a>。它为渐进式增强已有的 HTML 作了特别的优化，功能更加精简，十分轻量。</p>]]></summary>
+    <content type="html"><![CDATA[<p>我们相信在 Web 的世界里没有一种方案可以解决所有问题。正因如此，Vue 被设计成一个灵活的、可以渐进式集成的框架。根据使用场景的不同需要，相应地有多种不同的方式来使用 Vue，以此在技术栈复杂度、开发体验和性能表现间取得最佳平衡。</p>
+<h2> 独立脚本</h2>
+<p>Vue 可以以一个单独 JS 文件的形式使用，无需构建步骤！如果您的后端框架已经渲染了大部分的 HTML，或者您的前端逻辑并不复杂，不需要构建步骤，这是最简单的使用 Vue 的方式。在这些场景中您可以将 Vue 看作一个更加声明式的 jQuery <strong>替代品。</strong></p>
+<p>Vue 也提供了另一个更适用于此类无构建步骤场景的版本 <a href="https://github.com/vuejs/petite-vue" target="_blank" rel="noopener noreferrer">petite-vue</a>。它为渐进式增强已有的 HTML 作了特别的优化，功能更加精简，十分轻量。</p>
+<h2> 作为 Web Component 嵌入</h2>
+<p>您可以用 Vue 来 <a href="">构建标准的 Web Component</a>，这些 <code>Web Component</code> 可以嵌入到任何 HTML 页面中，无论它们是如何被渲染的。这个方式让您能够在不需要顾虑最终使用场景的情况下使用 Vue。因为生成的 Web Component 可以 <strong>嵌入</strong> 到旧应用、静态 HTML，甚至用其他框架构建的应用中。</p>
+<h2> 单页面应用（SPA）</h2>
+<p>一些应用在前端需要具有丰富的 <strong>交互性</strong>、<strong>较深的会话</strong> 和 <strong>复杂的状态逻辑</strong>。构建这类应用的最佳方法是使用这样一种架构。Vue 不仅控制整个页面，还负责处理抓取新数据，并在无需重新加载的前提下处理页面切换。这种类型的应用通常称为 <strong>单页应用</strong>（Single-Page application，缩写为 <code>SPA</code>）。</p>
+<p>Vue 提供了核心功能库和<a href="">全面的工具链支持</a>，为现代 SPA 提供了极佳的开发体验，覆盖以下方面：</p>
+<ul>
+<li>客户端路由</li>
+<li>极其快速的构建工具</li>
+<li>IDE 支持</li>
+<li>浏览器开发工具</li>
+<li>TypeScript 支持</li>
+<li>测试工具</li>
+</ul>
+<p>SPA 一般要求后端提供 API 数据接口，但您也可以将 Vue 和如：<a href="https://inertiajs.com" target="_blank" rel="noopener noreferrer">Inertia.js</a> 之类的解决方案搭配使用，在保留侧重服务端的开发模型的同时获得 SPA 的益处。</p>
+<h2> 全栈/SSR</h2>
+<p>纯客户端的 SPA 在首屏加载和 SEO 方面有显著的问题，因为浏览器会收到一个巨大的 HTML 空页面，只有等到 JavaScript 加载完毕才会渲染出内容。</p>
+<p>Vue 提供了一系列 API，支持将一个 Vue 应用在服务端渲染成 HTML 字符串。这能让服务器 <strong>直接返回</strong> 渲染好的 HTML，让用户在 JavaScript 下载完毕前就看到页面内容。Vue 之后会在客户端对应用进行 <strong>激活（hydrate）</strong> 使其重获可交互性。这被称为 <a href="">服务端渲染（SSR）</a>，它能够极大地改善应用在 Web 核心指标上的性能表现，如：<a href="https://web.dev/lcp/" target="_blank" rel="noopener noreferrer">最大内容绘制 (LCP)</a>。</p>
+<p>Vue 生态中有一些针对此类场景的、基于 Vue 的上层框架，比如：<a href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">NuxtJS</a>，能让您用 Vue 和 JavaScript 开发一个全栈应用。</p>
+<h2> JAMStack/SSG</h2>
+<p>如果所需的数据是静态的，那么服务端渲染可以提前完成。这意味着我们可以将整个应用预渲染为 HTML，并将其作为静态文件部署。这增强了站点的性能表现，也使部署变得更容易，因为我们无需根据请求动态地渲染页面。Vue 仍可通过激活在客户端提供交互。这一技术通常被称为静态站点生成（SSG），也被称为 <a href="https://jamstack.org/what-is-jamstack/" target="_blank" rel="noopener noreferrer">JAMStack</a>。</p>
+<p>SSG 有两种风格：<strong>单页</strong> 和 <strong>多页</strong>。这两种风格都能将站点 <strong>预渲染</strong> 为静态 HTML，区别在于：</p>
+<ul>
+<li><strong>单页 SSG</strong>：在初始页面加载后将其 “激活” 为 SPA。这需要更多的前期 JS 加载和激活成本，但后续的导航将更快，因为它只需要部分地更新页面内容，而无需重新加载整个页面</li>
+<li><strong>多页 SSG</strong>：每次导航都会加载一个新页面。好处是它可以仅需最少的 JS——或者如果页面无需交互则根本不需要 JS！一些多页面 SSG 框架，如：<a href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro</a> 也支持 “部分激活”——它允许您通过 Vue 组件在静态 HTML 中创建交互式的 “孤岛”。</li>
+</ul>
+<p>单页 SSG 更适合于 <strong>重交互</strong>、<strong>深会话</strong> 的场景，或需要在导航之间持久化元素或状态。否则，多页 SSG 将是更好的选择。</p>
+<p>Vue 团队也维护了一个名为 <a href="https://vitepress.vuejs.org/" target="_blank" rel="noopener noreferrer">VitePress</a> 的静态站点生成器，VitePress 支持两种形式的 SSG。另外，<a href="https://nuxt.com/" target="_blank" rel="noopener noreferrer">NuxtJS</a> 也支持 SSG。您甚至可以在同一个 Nuxt 应用中通过不同的路由提供 SSR 和 SSG。</p>
+<h2> Web 之外...</h2>
+<p>尽管 Vue 主要是为构建 Web 应用而设计的，但它绝不仅仅局限于浏览器。您还可以：</p>
+<ul>
+<li>配合 <a href="https://www.electronjs.org/" target="_blank" rel="noopener noreferrer">Electron</a> 或 <a href="https://tauri.studio/en/" target="_blank" rel="noopener noreferrer">Tauri</a> 构建桌面应用</li>
+<li>配合 <a href="https://ionicframework.com/docs/vue/overview" target="_blank" rel="noopener noreferrer">Ionic Vue</a> 构建移动端应用</li>
+<li>使用 <a href="https://quasar.dev/" target="_blank" rel="noopener noreferrer">Quasar</a> 用同一套代码同时开发桌面端和移动端应用</li>
+<li>使用 Vue 的 <a href="">自定义渲染 API</a> 来构建不同目标的渲染器，比如：<a href="https://troisjs.github.io/" target="_blank" rel="noopener noreferrer">WebGL</a> 甚至是 <a href="https://github.com/vue-terminal/vue-termui" target="_blank" rel="noopener noreferrer">终端命令行</a></li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-04-28T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">友联</title>
     <id>https://sankgao.github.io/links.html</id>
@@ -81,20 +645,6 @@
 </ul>
 ]]></content>
     <category term="Info"/>
-    <published>2023-04-26T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">友联</title>
-    <id>https://sankgao.github.io/about/link.html</id>
-    <link href="https://sankgao.github.io/about/link.html"/>
-    <updated>2023-04-26T10:56:04.000Z</updated>
-    <summary type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
-<!-- more -->
-<h2> 我的友联</h2>
-]]></content>
-    <category term="Link"/>
     <published>2023-04-26T00:00:00.000Z</published>
   </entry>
   <entry>
