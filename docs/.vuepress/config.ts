@@ -18,13 +18,13 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",  // 站点的语言
-      title: "Sankgao",  // 站点的标题
+      title: "Sank's blog",  // 站点的标题
       description: "使用 VuePress-v2 搭建的个人博客",  // 站点的描述
     },
     
     "/en/": {
       lang: "en-US",
-      title: "Sankgao",
+      title: "Sank's blog",
       description: "A personal blog built using VuePress v2",
     },
   },
