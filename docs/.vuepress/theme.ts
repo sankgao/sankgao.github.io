@@ -20,7 +20,7 @@ export default hopeTheme({
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_9buxdoqvpol.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_hj8jasa3ruw.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
@@ -49,23 +49,20 @@ export default hopeTheme({
       
       // 博客功能配置
       blog: {
-        name: "Sankgao",  // 博主姓名
+        name: "Sank Gao",  // 博主姓名
         avatar: "/favicon.ico",  // 博主头像
-        description: "目之所及，皆是回忆；心之所向，皆是过往；眼之所看，皆是遗憾。",  // 口号、座右铭或介绍语
+        description: "我是世界上的独一无二，百句空言不如一个行动。",  // 口号、座右铭或介绍语
         intro: "/about/my/personal_info.html",  // 博主的个人介绍地址
         
         // 博主的社交媒体链接配置
         medias: {
           GitHub: "https://github.com/sankgao",
           BiliBili: "https://space.bilibili.com/501802215",
-          QQ: "http://wpa.qq.com/msgrd?v=3&uin=2036461812&site=qq&menu=yes",
-          Qzone: "https://2036461812.qzone.qq.com/",
-          Gmail: "sankgao@163.com",
+          Gmail: "mailto:sankgao@outlook.com",
           Zhihu: "https://www.zhihu.com/people/57-8-73-75-16",
-          Steam: "https://steamcommunity.com/id/Mr-Hope/",
+          Steam: "https://steamcommunity.com/id/sankgao/",
           Weibo: "https://weibo.com/u/6709450808",
-          Twitter: "https://twitter.com/Mister_Hope",
-          Telegram: "https://t.me/Mister_Hope",
+          Twitter: "https://twitter.com/sankgao",
         },
       },
     },
@@ -82,7 +79,7 @@ export default hopeTheme({
       
       blog: {
         description:
-          "As far as the eye can see, it is all memories; The direction of the heart is all in the past; All that one sees is regret.",
+          "I am unique in the world, a hundred empty words are not worth one action.",
         intro: "/en/about/my/personal_info.html",
         
         medias: {
