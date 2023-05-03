@@ -34,7 +34,6 @@ export const zhNavbarConfig = navbar([
         children: [
           { text: "我的", icon: "my", link: "/about/" },
           { text: "友链", icon: "link", link: "/links" },
-          { text: "工具", icon: "tools", link: "/tools" },
         ],
       },
     ],
