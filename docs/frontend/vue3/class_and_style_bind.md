@@ -15,7 +15,7 @@ tag:
 
 给 `:class`（`v-bind:class` 的缩写）传递一个对象来动态切换 class：
 
-```vue-html
+```template
 <div :class="{ active: isActive }"></div>
 ```
 
@@ -30,7 +30,7 @@ const hasError = ref(false)
 
 配合以下模板：
 
-```vue-html
+```template
 <div
   class="static"
   :class="{ active: isActive, 'text-danger': hasError }"
@@ -39,7 +39,7 @@ const hasError = ref(false)
 
 渲染的结果会是：
 
-```vue-html
+```template
 <div class="static active"></div>
 ```
 
@@ -54,7 +54,7 @@ const classObject = reactive({
 })
 ```
 
-```vue-html
+```template
 <div :class="classObject"></div>
 ```
 
@@ -70,7 +70,7 @@ const classObject = computed(() => ({
 }))
 ```
 
-```vue-html
+```template
 <div :class="classObject"></div>
 ```
 
@@ -83,19 +83,19 @@ const activeClass = ref('active')
 const errorClass = ref('text-danger')
 ```
 
-```vue-html
+```template
 <div :class="[activeClass, errorClass]"></div>
 ```
 
 渲染的结果是：
 
-```vue-html
+```template
 <div class="active text-danger"></div>
 ```
 
 如果你也想在数组中有条件地渲染某个 class，你可以使用三元表达式：
 
-```vue-html
+```template
 <div :class="[isActive ? activeClass : '', errorClass]"></div>
 ```
 
@@ -103,7 +103,7 @@ const errorClass = ref('text-danger')
 
 然而，这可能在有多个依赖条件的 class 时会有些冗长。因此也可以在数组中嵌套对象：
 
-```vue-html
+```template
 <div :class="[{ active: isActive }, errorClass]"></div>
 ```
 
@@ -113,45 +113,45 @@ const errorClass = ref('text-danger')
 
 例如：如果你声明了一个组件名叫 `MyComponent`，模板如下：
 
-```vue-html
+```template
 <!-- 子组件模板 -->
 <p class="foo bar">Hi!</p>
 ```
 
 在使用时添加一些 class：
 
-```vue-html
+```template
 <!-- 在使用组件时 -->
 <MyComponent class="baz boo" />
 ```
 
 渲染出的 HTML 为：
 
-```vue-html
+```template
 <p class="foo bar baz boo">Hi!</p>
 ```
 
 Class 的绑定也是同样的：
 
-```vue-html
+```template
 <MyComponent :class="{ active: isActive }" />
 ```
 
 当 `isActive` 为真时，被渲染的 HTML 会是：
 
-```vue-html
+```template
 <p class="foo bar active">Hi!</p>
 ```
 
 如果你的组件有多个根元素，你将需要指定哪个根元素来接收这个 class。你可以通过组件的 `$attrs` 属性来实现指定：
 
-```vue-html
+```template
 <!-- MyComponent 模板使用 $attrs 时 -->
 <p :class="$attrs.class">Hi!</p>
 <span>This is a child component</span>
 ```
 
-```vue-html
+```template
 <MyComponent class="baz" />
 ```
 
@@ -175,13 +175,13 @@ const activeColor = ref('red')
 const fontSize = ref(30)
 ```
 
-```vue-html
+```template
 <div :style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
 ```
 
 尽管推荐使用 `camelCase`，但 `:style` 也支持 `kebab-cased` 形式的 CSS 属性 key（对应其 CSS 中的实际名称）。例如：
 
-```vue-html
+```template
 <div :style="{ 'font-size': fontSize + 'px' }"></div>
 ```
 
@@ -194,7 +194,7 @@ const styleObject = reactive({
 })
 ```
 
-```vue-html
+```template
 <div :style="styleObject"></div>
 ```
 
@@ -204,7 +204,7 @@ const styleObject = reactive({
 
 给 `:style` 绑定一个包含多个样式对象的数组。这些对象会被合并后渲染到同一元素上：
 
-```vue-html
+```template
 <div :style="[baseStyles, overridingStyles]"></div>
 ```
 
@@ -216,7 +216,7 @@ const styleObject = reactive({
 
 你可以对一个样式属性提供多个（不同前缀的）值。例如：
 
-```vue-html
+```template
 <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }"></div>
 ```
 

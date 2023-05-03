@@ -39,7 +39,7 @@ export default {
 }
 ```
 
-```vue-html
+```template
 <div>{{ state.count }}</div>
 ```
 
@@ -67,7 +67,7 @@ export default {
 
 暴露的方法通常会被用作事件监听器：
 
-```vue-html
+```template
 <button @click="increment">
   {{ state.count }}
 </button>
@@ -298,7 +298,7 @@ const object = { foo: ref(1) }
 
 下面的表达式将 **不会** 像预期的那样工作：
 
-```vue-html
+```template
 {{ object.foo + 1 }}
 ```
 
@@ -308,7 +308,7 @@ const object = { foo: ref(1) }
 const { foo } = object
 ```
 
-```vue-html
+```template
 {{ foo + 1 }}
 ```
 
@@ -316,7 +316,7 @@ const { foo } = object
 
 需要注意的是，如果一个 ref 是文本插值（即一个 <code v-pre>{{ }}</code> 符号）计算的最终值，它也将被解包。因此下面的渲染结果将为 `1`：
 
-```vue-html
+```template
 {{ object.foo }}
 ```
 

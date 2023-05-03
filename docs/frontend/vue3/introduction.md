@@ -25,7 +25,7 @@ createApp({
 }).mount('#app')
 ```
 
-```vue-html
+```template
 <div id="app">
   <button @click="count++">
     Count is: {{ count }}

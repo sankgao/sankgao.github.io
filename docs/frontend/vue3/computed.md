@@ -24,7 +24,7 @@ const author = reactive({
 
 根据 `author` 是否已有一些书籍来展示不同的信息：
 
-```vue-html
+```template
 <p>Has published books:</p>
 <span>{{ author.books.length > 0 ? 'Yes' : 'No' }}</span>
 ```
@@ -70,7 +70,7 @@ Vue 的计算属性会自动追踪响应式依赖。它会检测到 `publishedBo
 
 在表达式中像这样调用一个函数也会获得和计算属性相同的结果：
 
-```vue-html
+```template
 <p>{{ calculateBooksMessage() }}</p>
 ```
 

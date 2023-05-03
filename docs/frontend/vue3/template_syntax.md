@@ -17,7 +17,7 @@ Vue 使用一种基于 HTML 的模板语法，能够 **声明式** 地将其组�
 
 最基本的数据绑定形式是文本插值，它使用的是 “Mustache” 语法（即双大括号）：
 
-```vue-html
+```template
 <span>Message: {{ msg }}</span>
 ```
 
@@ -27,7 +27,7 @@ Vue 使用一种基于 HTML 的模板语法，能够 **声明式** 地将其组�
 
 双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，您需要使用 `v-html` 指令：
 
-```vue-html
+```template
 <p>Using text interpolation: {{ rawHtml }}</p>
 <p>Using v-html directive: <span v-html="rawHtml"></span></p>
 ```
@@ -53,7 +53,7 @@ Vue 使用一种基于 HTML 的模板语法，能够 **声明式** 地将其组�
 
 双大括号不能在 HTML 属性中使用。想要响应式地绑定一个 `attribute`，应该使用 `v-bind` 指令：
 
-```vue-html
+```template
 <div v-bind:id="dynamicId"></div>
 ```
 
@@ -63,7 +63,7 @@ Vue 使用一种基于 HTML 的模板语法，能够 **声明式** 地将其组�
 
 因为 `v-bind` 非常常用，特意提供了一个特定的简写语法：
 
-```vue-html
+```template
 <div :id="dynamicId"></div>
 ```
 
@@ -75,7 +75,7 @@ Vue 使用一种基于 HTML 的模板语法，能够 **声明式** 地将其组�
 
 `v-bind` 在这种场景下的行为略有不同：
 
-```vue-html
+```template
 <button :disabled="isButtonDisabled">Button</button>
 ```
 
@@ -94,7 +94,7 @@ const objectOfAttrs = {
 
 通过不带参数的 `v-bind`，您可以将它们绑定到单个元素上：
 
-```vue-html
+```template
 <div v-bind="objectOfAttrs"></div>
 ```
 
@@ -102,7 +102,7 @@ const objectOfAttrs = {
 
 至此仅在模板中绑定了一些简单的属性名。但是 Vue 实际上在所有的数据绑定中都支持完整的 JavaScript 表达式：
 
-```vue-html
+```template
 {{ number + 1 }}
 
 {{ ok ? 'YES' : 'NO' }}
@@ -125,7 +125,7 @@ const objectOfAttrs = {
 
 因此，下面的例子都是 **无效** 的：
 
-```vue-html
+```template
 <!-- 这是一个语句，而非表达式 -->
 {{ var a = 1 }}
 
@@ -137,7 +137,7 @@ const objectOfAttrs = {
 
 可以在绑定的表达式中使用一个组件暴露的方法：
 
-```vue-html
+```template
 <span :title="toTitleDate(date)">
   {{ formatDate(date) }}
 </span>
@@ -159,7 +159,7 @@ const objectOfAttrs = {
 
 指令 attribute 的期望值为一个 JavaScript 表达式（除了少数几个例外，即之后要讨论到的 `v-for`、`v-on` 和 `v-slot`）。一个指令的任务是在其表达式的值变化时响应式地更新 DOM。以 [`v-if`]() 为例：
 
-```vue-html
+```template
 <p v-if="seen">Now you see me</p>
 ```
 
@@ -169,7 +169,7 @@ const objectOfAttrs = {
 
 某些指令会需要一个 “参数”，在指令名后通过一个冒号隔开做标识。例如：用 `v-bind` 指令来响应式地更新一个 HTML attribute：
 
-```vue-html
+```template
 <a v-bind:href="url"> ... </a>
 
 <!-- 简写 -->
@@ -180,7 +180,7 @@ const objectOfAttrs = {
 
 另一个例子是 `v-on` 指令，它将监听 DOM 事件：
 
-```vue-html
+```template
 <a v-on:click="doSomething"> ... </a>
 
 <!-- 简写 -->
@@ -193,7 +193,7 @@ const objectOfAttrs = {
 
 同样在指令参数上也可以使用一个 JavaScript 表达式，需要包含在一对方括号内：
 
-```vue-html
+```template
 <!--
 注意，参数表达式有一些约束，
 参见下面 “动态参数值的限制” 与 “动态参数语法的限制” 的解释
@@ -208,7 +208,7 @@ const objectOfAttrs = {
 
 相似地，您还可以将一个函数绑定到动态的事件名称上：
 
-```vue-html
+```template
 <a v-on:[eventName]="doSomething"> ... </a>
 
 <!-- 简写 -->
@@ -225,7 +225,7 @@ const objectOfAttrs = {
 
 动态参数表达式因为某些字符的缘故有一些语法限制，比如：空格和引号，在 HTML attribute 名称中都是不合法的。例如下面的示例：
 
-```vue-html
+```template
 <!-- 这会触发一个编译器警告 -->
 <a :['foo' + bar]="value"> ... </a>
 ```
@@ -234,7 +234,7 @@ const objectOfAttrs = {
 
 当使用 DOM 内嵌模板（直接写在 HTML 文件里的模板）时，需要避免在名称中使用大写字母，因为浏览器会强制将其转换为小写：
 
-```vue-html
+```template
 <a :[someAttr]="value"> ... </a>
 ```
 
@@ -244,7 +244,7 @@ const objectOfAttrs = {
 
 修饰符是以点开头的特殊后缀，表明指令需要以一些特殊的方式被绑定。例如：`.prevent` 修饰符会告知 `v-on` 指令对触发的事件调用 `event.preventDefault()`：
 
-```vue-html
+```template
 <form @submit.prevent="onSubmit">...</form>
 ```
 
