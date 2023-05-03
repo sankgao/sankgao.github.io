@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "Sankgao",
+  "title": "Sank's blog",
   "home_page_url": "https://sankgao.github.io/en/",
   "feed_url": "https://sankgao.github.io/en/feed.json",
   "description": "A personal blog built using VuePress v2",
