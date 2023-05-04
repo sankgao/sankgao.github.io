@@ -18,6 +18,11 @@ export const zhNavbarConfig = navbar([
     link: "/frontend/",
   },
   {
+    text: "运维",
+    icon: "operations",
+    link: "/operations/",
+  },
+  {
     text: "索引",
     icon: "index",
     children: [

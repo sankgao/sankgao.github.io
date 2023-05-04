@@ -13,6 +13,16 @@ export const enNavbarConfig = navbar([
     ],
   },
   {
+    text: "frontend",
+    icon: "website",
+    link: "/en/frontend/",
+  },
+  {
+    text: "operations",
+    icon: "operations",
+    link: "/en/operations/",
+  },
+  {
     text: "index",
     icon: "index",
     children: [
@@ -29,7 +39,6 @@ export const enNavbarConfig = navbar([
         children: [
           { text: "my", icon: "my", link: "/en/about/" },
           { text: "links", icon: "link", link: "/en/links" },
-          { text: "tools", icon: "tools", link: "/en/tools" },
         ],
       },
     ],
