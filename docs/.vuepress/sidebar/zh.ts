@@ -62,6 +62,8 @@ export const zhSidebarConfig = sidebar({
       ],
     },
   ],
+
+  "/operations/": [],
   
   "/about/": [
     {
