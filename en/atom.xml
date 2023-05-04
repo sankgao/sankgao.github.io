@@ -5,8 +5,377 @@
   <subtitle>A personal blog built using VuePress v2</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>MIT Licensed, © 2023-present Sankgao</rights>
-  <updated>2023-05-03T16:15:07.903Z</updated>
+  <updated>2023-05-04T10:58:28.636Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/en/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/en/"/>
+  <category term="Operations"/>
+  <entry>
+    <title type="text">Operations</title>
+    <id>https://sankgao.github.io/en/operations/</id>
+    <link href="https://sankgao.github.io/en/operations/"/>
+    <updated>2023-05-04T10:55:09.000Z</updated>
+    <summary type="html"><![CDATA[<ul>
+<li>Personal Recommendation / Opinion</li>
+<li>Alternative Option - select this option or yellow</li>
+<li>Order in roadmap not strict (Learn anytime)</li>
+</ul>
+<div class="hint-container info">
+<p class="hint-container-title">Info</p>
+<p>Find the detailed version of this <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">roadmap</a> along with resources and other roadmaps</p>
+</div>]]></summary>
+    <content type="html"><![CDATA[<ul>
+<li>Personal Recommendation / Opinion</li>
+<li>Alternative Option - select this option or yellow</li>
+<li>Order in roadmap not strict (Learn anytime)</li>
+</ul>
+<div class="hint-container info">
+<p class="hint-container-title">Info</p>
+<p>Find the detailed version of this <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">roadmap</a> along with resources and other roadmaps</p>
+</div>
+<h2> Learn a Programming Language</h2>
+<p>Pick any language for automation.</p>
+<ul>
+<li>
+<p>Python</p>
+</li>
+<li>
+<p>Ruby</p>
+</li>
+<li>
+<p>JavaScript/Node.js</p>
+</li>
+<li>
+<p>Go</p>
+</li>
+<li>
+<p>Rust</p>
+</li>
+</ul>
+<h2> Understand different OS Concepts</h2>
+<ul>
+<li>
+<p>I/O Management</p>
+</li>
+<li>
+<p>Virtualization</p>
+</li>
+<li>
+<p>Memory/Storage</p>
+</li>
+<li>
+<p>File Systems</p>
+</li>
+<li>
+<p>Networking</p>
+</li>
+<li>
+<p>Sockets</p>
+</li>
+<li>
+<p>POSIX</p>
+</li>
+<li>
+<p>Processes</p>
+</li>
+<li>
+<p>Startup Management(initd)</p>
+</li>
+<li>
+<p>Service Mgmt(systemd)</p>
+</li>
+<li>
+<p>Threads and Concurrency</p>
+</li>
+</ul>
+<h2> Learn about Managing Servers</h2>
+<p>Get some administration knowledge in some OS. Go with any Linux distro. Pick Ubuntu if you have a little to no experience with Linux.</p>
+<h3> Operating System</h3>
+<ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Linux</p>
+<ul>
+<li>Ubuntu/Debian</li>
+<li>SUSE Linux</li>
+<li>RHEL/Derivatives</li>
+</ul>
+</li>
+<li>
+<p>Unix</p>
+<ul>
+<li>FreeBSD</li>
+<li>OpenBSD</li>
+<li>NetBSD</li>
+</ul>
+</li>
+</ul>
+<h3> Learn to live in Terminal</h3>
+<ul>
+<li>
+<p>Learn Bash Scripting</p>
+</li>
+<li>
+<p>Vim/Nano/PowerShell/Emacs</p>
+</li>
+<li>
+<p>Compiling apps from source(gcc, make and other related stu!)</p>
+</li>
+<li>
+<p>Text Manipulation Tools</p>
+<ul>
+<li><code>awk</code></li>
+<li><code>sed</code></li>
+<li><code>grep</code></li>
+<li><code>sort</code></li>
+<li><code>cut</code></li>
+<li><code>uniq</code></li>
+<li><code>cat</code></li>
+<li><code>echo</code></li>
+<li><code>fmt</code></li>
+<li><code>tr</code></li>
+<li><code>nl</code></li>
+<li><code>wc</code></li>
+</ul>
+</li>
+<li>
+<p>Others</p>
+<ul>
+<li><code>strace</code></li>
+<li><code>dtrace</code></li>
+<li><code>systemtap</code></li>
+<li><code>uname</code></li>
+<li><code>df</code></li>
+<li><code>history</code></li>
+<li><code>du</code></li>
+</ul>
+</li>
+<li>
+<p>terminal multiplexers</p>
+<ul>
+<li><code>screen</code></li>
+<li><code>tmux</code></li>
+</ul>
+</li>
+<li>
+<p>Process Monitoring</p>
+<ul>
+<li><code>ps</code></li>
+<li><code>top</code></li>
+<li><code>htop</code></li>
+<li><code>atop</code></li>
+<li><code>lsof</code></li>
+</ul>
+</li>
+<li>
+<p>System Performance</p>
+<ul>
+<li><code>nmon</code></li>
+<li><code>iostat</code></li>
+<li><code>sar</code></li>
+<li><code>vmstat</code></li>
+</ul>
+</li>
+<li>
+<p>Network Tools</p>
+<ul>
+<li><code>traceroute</code></li>
+<li><code>mtr</code></li>
+<li><code>ping</code></li>
+<li><code>nmap</code></li>
+<li><code>netstat</code></li>
+<li><code>ufw/firewalld</code></li>
+<li><code>tcpdump</code></li>
+<li><code>iptables/nftables</code></li>
+<li><code>dig</code></li>
+<li><code>scp</code></li>
+</ul>
+</li>
+</ul>
+<h2> Networking, Security and Protocols</h2>
+<ul>
+<li>
+<p>OSI Mode</p>
+</li>
+<li>
+<p><code>DNS</code></p>
+</li>
+<li>
+<p><code>HTTP</code></p>
+</li>
+<li>
+<p><code>HTTPS</code></p>
+</li>
+<li>
+<p><code>FTP/SFTP</code></p>
+</li>
+<li>
+<p><code>SSL/TLS</code></p>
+</li>
+<li>
+<p><code>SSH</code></p>
+</li>
+<li>
+<p>Port Forwarding</p>
+</li>
+<li>
+<p>Emails</p>
+<ul>
+<li><code>White/Grey Listing</code></li>
+<li><code>SMTP</code></li>
+<li><code>IMAPS</code></li>
+<li><code>POP3S</code></li>
+<li><code>DMARC</code></li>
+<li><code>SPF</code></li>
+<li><code>Domain Keys</code></li>
+</ul>
+</li>
+</ul>
+<h2> What is and how to setup</h2>
+<ul>
+<li>
+<p>Reverse Proxy</p>
+</li>
+<li>
+<p>Forward Proxy</p>
+</li>
+<li>
+<p>Firewall</p>
+</li>
+<li>
+<p>Caching Server</p>
+</li>
+<li>
+<p>Load Balancer</p>
+</li>
+<li>
+<p>Web Server</p>
+<ul>
+<li><code>Nginx</code></li>
+<li><code>Apache</code></li>
+<li><code>Tomcat</code></li>
+<li><code>IIS</code></li>
+</ul>
+</li>
+</ul>
+<h2> Infrastructure as Code</h2>
+<ul>
+<li>
+<p>GitOps</p>
+<ul>
+<li><code>ArgoCD</code></li>
+<li><code>FluxCD</code></li>
+</ul>
+</li>
+<li>
+<p>Service Mesh</p>
+<ul>
+<li><code>Istio</code></li>
+<li><code>Consul</code></li>
+<li><code>Linkerd</code></li>
+<li><code>Envoy</code></li>
+</ul>
+</li>
+<li>
+<p>Secret Management</p>
+<ul>
+<li><code>Vault</code></li>
+<li><code>SOPS</code></li>
+<li><code>Sealed Secrets</code></li>
+<li><code>Cloud Specific Tools</code></li>
+</ul>
+</li>
+<li>
+<p>Container Orchestration</p>
+<ul>
+<li><code>Kubernetes</code></li>
+<li><code>Docker Swarm</code></li>
+<li><code>Nomad</code></li>
+</ul>
+</li>
+<li>
+<p>Configuration Mgmt</p>
+<ul>
+<li><code>Ansible</code></li>
+<li><code>SaltStack</code></li>
+<li><code>Puppet</code></li>
+<li><code>Chef</code></li>
+</ul>
+</li>
+</ul>
+<h3> Containers</h3>
+<ul>
+<li>Docker</li>
+<li>LXC</li>
+</ul>
+<h3> Infrastructure Provisioning</h3>
+<ul>
+<li>Terraform</li>
+<li>AWS CDK</li>
+<li>CloudFormatio</li>
+<li>Pulumi</li>
+</ul>
+<h2> Learn some CI/CD Tool</h2>
+<ul>
+<li>Gitlab CI</li>
+<li>GitHub Actions</li>
+<li>Jenkins</li>
+<li>Travis CI</li>
+<li>TeamCity</li>
+<li>Azure DevOps 服务</li>
+<li>Circle CI</li>
+<li>Drone</li>
+</ul>
+<h2> Learn how to monitor software and infrastructure</h2>
+<h3> Logs Management</h3>
+<ul>
+<li>Elastic Stack</li>
+<li>Graylog</li>
+<li>Splunk</li>
+<li>Papertrail</li>
+<li>Loki</li>
+</ul>
+<h3> Infrastructure Monitoring</h3>
+<ul>
+<li>Prometheus</li>
+<li>Nagios</li>
+<li>Grafana</li>
+<li>Zabbix</li>
+<li>Monit</li>
+<li>Datadog</li>
+</ul>
+<h3> Application Monitoring</h3>
+<ul>
+<li>Jaeger</li>
+<li>New Relic</li>
+<li>AppDynamics</li>
+<li>Instana</li>
+<li>OpenTelemetry</li>
+</ul>
+<h2> Cloud Providers</h2>
+<ul>
+<li>AWS</li>
+<li>Alilbaba Cloud</li>
+<li>Goole Cloud</li>
+<li>Digital Ocean</li>
+<li>Azure</li>
+<li>Linode</li>
+<li>Heroku</li>
+<li>Vultr</li>
+</ul>
+<h2> Cloud Design Patterns</h2>
+<p><a href="http://bit.ly/cloud-arch-patterns" target="_blank" rel="noopener noreferrer">http://bit.ly/cloud-arch-patterns</a></p>
+<ul>
+<li>Availability</li>
+<li>Data Management</li>
+<li>Design and Implementation</li>
+<li>Management and Monitoring</li>
+</ul>
+<p>Keep Learning</p>
+]]></content>
+    <category term="Operations"/>
+    <published>2023-05-04T00:00:00.000Z</published>
+  </entry>
 </feed>

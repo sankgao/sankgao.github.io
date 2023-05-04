@@ -6,11 +6,12 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 03 May 2023 16:15:07 GMT</pubDate>
-    <lastBuildDate>Wed, 03 May 2023 16:15:07 GMT</lastBuildDate>
+    <pubDate>Thu, 04 May 2023 10:58:28 GMT</pubDate>
+    <lastBuildDate>Thu, 04 May 2023 10:58:28 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
+    <category>Operations</category>
     <category>Frontend</category>
     <category>Tools</category>
     <category>Link</category>
@@ -20,6 +21,366 @@
     <category>Blog</category>
     <category>VuePress</category>
     <category>Computer</category>
+    <item>
+      <title>运维</title>
+      <link>https://sankgao.github.io/operations/</link>
+      <guid>https://sankgao.github.io/operations/</guid>
+      <source url="https://sankgao.github.io/rss.xml">运维</source>
+      <description>个人建议/意见; 可选-选择此项或黄色; 路线图中的顺序不严格（随时学习）; 查找此 路线图 (https://roadmap.sh) 的详细版本以及资源和其他路线图 学习编程语言 选择任何用于自动化的语言。 Python; Ruby; JavaScript/Node.js; Go; Rust; 了解不同的操作系统概念 I/O 管理; 虚拟化; 内存/...</description>
+      <category>Operations</category>
+      <pubDate>Thu, 04 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<ul>
+<li>个人建议/意见</li>
+<li>可选-选择此项或黄色</li>
+<li>路线图中的顺序不严格（随时学习）</li>
+</ul>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>查找此 <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">路线图</a> 的详细版本以及资源和其他路线图</p>
+</div>
+<h2> 学习编程语言</h2>
+<p>选择任何用于自动化的语言。</p>
+<ul>
+<li>
+<p>Python</p>
+</li>
+<li>
+<p>Ruby</p>
+</li>
+<li>
+<p>JavaScript/Node.js</p>
+</li>
+<li>
+<p>Go</p>
+</li>
+<li>
+<p>Rust</p>
+</li>
+</ul>
+<h2> 了解不同的操作系统概念</h2>
+<ul>
+<li>
+<p>I/O 管理</p>
+</li>
+<li>
+<p>虚拟化</p>
+</li>
+<li>
+<p>内存/存储</p>
+</li>
+<li>
+<p>文件系统</p>
+</li>
+<li>
+<p>网络</p>
+</li>
+<li>
+<p>Sockets</p>
+</li>
+<li>
+<p>消息队列</p>
+</li>
+<li>
+<p>进程</p>
+</li>
+<li>
+<p>启动管理（initd）</p>
+</li>
+<li>
+<p>服务管理（systemd）</p>
+</li>
+<li>
+<p>线程和并发</p>
+</li>
+</ul>
+<h2> 了解管理服务器</h2>
+<p>在一些操作系统中获得一些管理知识。去使用任何 Linux 发行版。如果你有一点 Ubuntu 没有使用 Linux 的经验</p>
+<h3> 操作系统</h3>
+<ul>
+<li>
+<p>Windows</p>
+</li>
+<li>
+<p>Linux</p>
+<ul>
+<li>Ubuntu/Debian</li>
+<li>SUSE Linux</li>
+<li>RHEL/Derivatives</li>
+</ul>
+</li>
+<li>
+<p>Unix</p>
+<ul>
+<li>FreeBSD</li>
+<li>OpenBSD</li>
+<li>NetBSD</li>
+</ul>
+</li>
+</ul>
+<h3> 学会在终端生活</h3>
+<ul>
+<li>
+<p>学习 Bash 脚本</p>
+</li>
+<li>
+<p>Vim/Nano/PowerShell/Emacs</p>
+</li>
+<li>
+<p>从源代码编译应用程序（gcc、make 和其他相关的 stu！）</p>
+</li>
+<li>
+<p>文本操作工具</p>
+<ul>
+<li><code>awk</code></li>
+<li><code>sed</code></li>
+<li><code>grep</code></li>
+<li><code>sort</code></li>
+<li><code>cut</code></li>
+<li><code>uniq</code></li>
+<li><code>cat</code></li>
+<li><code>echo</code></li>
+<li><code>fmt</code></li>
+<li><code>tr</code></li>
+<li><code>nl</code></li>
+<li><code>wc</code></li>
+</ul>
+</li>
+<li>
+<p>其他</p>
+<ul>
+<li><code>strace</code></li>
+<li><code>dtrace</code></li>
+<li><code>systemtap</code></li>
+<li><code>uname</code></li>
+<li><code>df</code></li>
+<li><code>history</code></li>
+<li><code>du</code></li>
+</ul>
+</li>
+<li>
+<p>终端多路复用器</p>
+<ul>
+<li><code>screen</code></li>
+<li><code>tmux</code></li>
+</ul>
+</li>
+<li>
+<p>进程监控</p>
+<ul>
+<li><code>ps</code></li>
+<li><code>top</code></li>
+<li><code>htop</code></li>
+<li><code>atop</code></li>
+<li><code>lsof</code></li>
+</ul>
+</li>
+<li>
+<p>系统性能</p>
+<ul>
+<li><code>nmon</code></li>
+<li><code>iostat</code></li>
+<li><code>sar</code></li>
+<li><code>vmstat</code></li>
+</ul>
+</li>
+<li>
+<p>网络工具</p>
+<ul>
+<li><code>traceroute</code></li>
+<li><code>mtr</code></li>
+<li><code>ping</code></li>
+<li><code>nmap</code></li>
+<li><code>netstat</code></li>
+<li><code>ufw/firewalld</code></li>
+<li><code>tcpdump</code></li>
+<li><code>iptables/nftables</code></li>
+<li><code>dig</code></li>
+<li><code>scp</code></li>
+</ul>
+</li>
+</ul>
+<h2> 网络、安全和协议</h2>
+<ul>
+<li>
+<p>OSI 模式</p>
+</li>
+<li>
+<p><code>DNS</code></p>
+</li>
+<li>
+<p><code>HTTP</code></p>
+</li>
+<li>
+<p><code>HTTPS</code></p>
+</li>
+<li>
+<p><code>FTP/SFTP</code></p>
+</li>
+<li>
+<p><code>SSL/TLS</code></p>
+</li>
+<li>
+<p><code>SSH</code></p>
+</li>
+<li>
+<p>端口转发</p>
+</li>
+<li>
+<p>电子邮件</p>
+<ul>
+<li><code>White/Grey Listing</code></li>
+<li><code>SMTP</code></li>
+<li><code>IMAPS</code></li>
+<li><code>POP3S</code></li>
+<li><code>DMARC</code></li>
+<li><code>SPF</code></li>
+<li><code>Domain Keys</code></li>
+</ul>
+</li>
+</ul>
+<h2> 以下是什么以及如何设置</h2>
+<ul>
+<li>
+<p>反向代理</p>
+</li>
+<li>
+<p>转发代理</p>
+</li>
+<li>
+<p>防火墙</p>
+</li>
+<li>
+<p>高速缓存服务器</p>
+</li>
+<li>
+<p>负载平衡器</p>
+</li>
+<li>
+<p>Web 服务器</p>
+<ul>
+<li><code>Nginx</code></li>
+<li><code>Apache</code></li>
+<li><code>Tomcat</code></li>
+<li><code>IIS</code></li>
+</ul>
+</li>
+</ul>
+<h2> 基础设施作为代码</h2>
+<ul>
+<li>
+<p>GitOps</p>
+<ul>
+<li><code>ArgoCD</code></li>
+<li><code>FluxCD</code></li>
+</ul>
+</li>
+<li>
+<p>Service Mesh</p>
+<ul>
+<li><code>Istio</code></li>
+<li><code>Consul</code></li>
+<li><code>Linkerd</code></li>
+<li><code>Envoy</code></li>
+</ul>
+</li>
+<li>
+<p>Secret Management</p>
+<ul>
+<li><code>Vault</code></li>
+<li><code>SOPS</code></li>
+<li><code>Sealed Secrets</code></li>
+<li><code>Cloud Specific Tools</code></li>
+</ul>
+</li>
+<li>
+<p>容器编排</p>
+<ul>
+<li><code>Kubernetes</code></li>
+<li><code>Docker Swarm</code></li>
+<li><code>Nomad</code></li>
+</ul>
+</li>
+<li>
+<p>配置管理</p>
+<ul>
+<li><code>Ansible</code></li>
+<li><code>SaltStack</code></li>
+<li><code>Puppet</code></li>
+<li><code>Chef</code></li>
+</ul>
+</li>
+</ul>
+<h3> 容器</h3>
+<ul>
+<li>Docker</li>
+<li>LXC</li>
+</ul>
+<h3> 基础架构资源调配</h3>
+<ul>
+<li>Terraform</li>
+<li>AWS CDK</li>
+<li>CloudFormatio</li>
+<li>Pulumi</li>
+</ul>
+<h2> 学习一些 CI/CD 工具</h2>
+<ul>
+<li>Gitlab CI</li>
+<li>GitHub Actions</li>
+<li>Jenkins</li>
+<li>Travis CI</li>
+<li>TeamCity</li>
+<li>Azure DevOps 服务</li>
+<li>Circle CI</li>
+<li>Drone</li>
+</ul>
+<h2> 了解监控软件和基础架构</h2>
+<h3> 日志管理</h3>
+<ul>
+<li>Elastic Stack</li>
+<li>Graylog</li>
+<li>Splunk</li>
+<li>Papertrail</li>
+<li>Loki</li>
+</ul>
+<h3> 基础设施监控</h3>
+<ul>
+<li>Prometheus</li>
+<li>Nagios</li>
+<li>Grafana</li>
+<li>Zabbix</li>
+<li>Monit</li>
+<li>Datadog</li>
+</ul>
+<h3> 应用程序监控</h3>
+<ul>
+<li>Jaeger</li>
+<li>New Relic</li>
+<li>AppDynamics</li>
+<li>Instana</li>
+<li>OpenTelemetry</li>
+</ul>
+<h2> 云提供商</h2>
+<ul>
+<li>AWS</li>
+<li>Alilbaba Cloud</li>
+<li>Goole Cloud</li>
+<li>Digital Ocean</li>
+<li>Azure</li>
+<li>Linode</li>
+<li>Heroku</li>
+<li>Vultr</li>
+</ul>
+<h2> 云设计模式</h2>
+<p><a href="http://bit.ly/cloud-arch-patterns" target="_blank" rel="noopener noreferrer">http://bit.ly/cloud-arch-patterns</a></p>
+<ul>
+<li>可用性</li>
+<li>数据管理</li>
+<li>设计和实施</li>
+<li>管理和监控</li>
+</ul>
+<p>继续学习</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>条件渲染</title>
       <link>https://sankgao.github.io/frontend/vue3/conditional.html</link>
