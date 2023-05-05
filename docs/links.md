@@ -4,9 +4,9 @@ icon: link
 date: 2023-04-26
 sidebar: false
 star: true
-category: Link
+category: Links
 tag:
-    - Link
+    - Links
 ---
 
 记录一些友联，并给出我的友联信息。
@@ -21,7 +21,7 @@ tag:
   url="https://xugaoyi.com/"
   logo="https://cdn.staticaly.com/gh/xugaoyi/image_store@master/blog/20200103123203.jpg"
   repo="https://github.com/xugaoyi/vuepress-theme-vdoing"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/evanxu.jpg"
+  preview="/links/evanxu.jpg"
 />
 
 <SiteInfo
@@ -30,7 +30,7 @@ tag:
   url="https://mrhope.site"
   logo="https://mrhope.site/logo.svg"
   repo="https://github.com/Kele-Bingtang/Kele-Bingtang.github.io"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/mrhope.jpg"
+  preview="/links/mrhope.jpg"
 />
 
 <SiteInfo
@@ -39,7 +39,7 @@ tag:
   url="https://wiki.eryajf.net/"
   logo="https://wiki.eryajf.net/img/logo.png"
   repo="https://github.com/eryajf/eryajf.github.io"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/eryajf.jpg"
+  preview="/links/eryajf.jpg"
 />
 
 <SiteInfo
@@ -48,7 +48,7 @@ tag:
   url="https://notes.youngkbt.cn/"
   logo="https://cdn.staticaly.com/gh/Kele-Bingtang/static@master/user/avatar2.png"
   repo="https://github.com/Kele-Bingtang/Kele-Bingtang.github.io"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/youngkbt.jpg"
+  preview="/links/youngkbt.jpg"
 />
 
 <SiteInfo
@@ -57,7 +57,7 @@ tag:
   url="http://www.04007.cn/"
   logo="https://avatars.githubusercontent.com/u/9959109?v=4"
   repo="https://github.com/KermitCode"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/04007.jpg"
+  preview="/links/04007.jpg"
 />
 
 <SiteInfo
@@ -66,7 +66,7 @@ tag:
   url="https://haiyong.site/"
   logo="https://haiyong.site/img/favicon.png"
   repo="https://github.com/wanghao221/wanghao221.github.io"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/haiyong.jpg"
+  preview="/links/haiyong.jpg"
 />
 
 <SiteInfo
@@ -75,7 +75,7 @@ tag:
   url="https://cuiqingcai.com/"
   logo="https://cuiqingcai.com/images/avatar.png"
   repo="https://github.com/wanghao221/wanghao221.github.io"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/cuiqingcai.jpg"
+  preview="/links/cuiqingcai.jpg"
 />
 
 <SiteInfo
@@ -84,14 +84,14 @@ tag:
   url="https://wangchujiang.com/"
   logo="https://wangchujiang.com/imgs/favicon.ico"
   repo="https://github.com/jaywcjlove"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/wangchujiang.jpg"
+  preview="/links/wangchujiang.jpg"
 />
 
 <SiteInfo
   name="全栈程序员"
   desc="全栈程序员必看"
   url="https://javaforall.cn/"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/userim.jpg"
+  preview="/links/userim.jpg"
 />
 
 <SiteInfo
@@ -100,7 +100,7 @@ tag:
   url="https://zswei.xyz/"
   logo="https://zswei.xyz/favicon.ico"
   repo="https://github.com/001monster/monster_blog"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/zswei.jpg"
+  preview="/links/zswei.jpg"
 />
 
 <SiteInfo
@@ -109,7 +109,7 @@ tag:
   url="https://clay-wangzhi.com/"
   logo="https://clay-wangzhi.com/lufei.jpg"
   repo="https://github.com/clay-wangzhi/wiki"
-  preview="https://raw.githubusercontent.com/sankgao/images/main/link/claywangzhi.jpg"
+  preview="/links/claywangzhi.jpg"
 />
 
 ## 友联信息
