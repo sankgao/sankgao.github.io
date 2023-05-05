@@ -250,5 +250,5 @@ const objectOfAttrs = {
 
 最后，在这里您可以直观地看到完整的指令语法：
 
-![指令语法图](https://raw.githubusercontent.com/sankgao/images/main/frontend/vue3/directive.png)
+![指令语法图](./images/directive.png)
 
