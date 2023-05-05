@@ -12,16 +12,18 @@ export const zhSidebarConfig = sidebar({
   
   "/frontend/": [
     {
-      text: "html5",
+      text: "HTML5",
       icon: "html5",
-      prefix: "html/",
+      prefix: "html5/",
       collapsible: true,
       children: [
-        "HTML_简介.md",
-        "HTML_基础.md",
-        "HTML_表单.md",
-        "HTML5_图形.md",
-        "HTML_多媒体.md",
+        "introduction.md",
+        "base.md",
+        "elements.md",
+        "attributes.md",
+        "title.md",
+        "paragraph.md",
+        "style.md",
         "HTML5_简介.md",
         "HTML5_语义元素.md",
         "HTML5_新元素.md",
