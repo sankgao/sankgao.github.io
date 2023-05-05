@@ -5,20 +5,687 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-04T10:58:28.636Z</updated>
+  <updated>2023-05-05T11:09:53.968Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
-  <category term="Operations"/>
   <category term="Frontend"/>
+  <category term="Operations"/>
   <category term="Tools"/>
-  <category term="Link"/>
+  <category term="Links"/>
   <category term="Info"/>
   <category term="Markdown"/>
   <category term="Notes"/>
   <category term="Blog"/>
   <category term="VuePress"/>
   <category term="Computer"/>
+  <entry>
+    <title type="text">属性</title>
+    <id>https://sankgao.github.io/frontend/html5/attributes.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/attributes.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。</p>
+<ul>
+<li>
+<p>属性总是以 <strong>名称=值</strong> 对的形式出现。例如：<code>name="value"</code></p>
+</li>
+<li>
+<p>属性总是在 HTML 元素的 <strong>开始标签</strong> 中规定。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.baidu.com.cn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>HTML 链接由 <code>&lt;a&gt;</code> 标签定义，链接的地址在 <code>href</code> 属性中指定</p>
+</div>
+</li>
+<li>
+<p>属性和属性值对大小写 <strong>不敏感</strong>。推荐使用 <strong>小写的</strong> 属性和属性值</p>
+</li>
+<li>
+<p>始终为属性值加 <strong>引号</strong>，双引号是最常用的，不过使用单引号也没有问题</p>
+<ul>
+<li>在某些个别的情况下，比如：属性值本身就 <strong>含有双引号</strong>，那么您必须使用 <strong>单引号</strong>，例如：<code>name='Bill "HelloWorld" Gates'</code></li>
+</ul>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。</p>
+<ul>
+<li>
+<p>属性总是以 <strong>名称=值</strong> 对的形式出现。例如：<code>name="value"</code></p>
+</li>
+<li>
+<p>属性总是在 HTML 元素的 <strong>开始标签</strong> 中规定。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>HTML 链接由 <code>&lt;a&gt;</code> 标签定义，链接的地址在 <code>href</code> 属性中指定</p>
+</div>
+</li>
+<li>
+<p>属性和属性值对大小写 <strong>不敏感</strong>。推荐使用 <strong>小写的</strong> 属性和属性值</p>
+</li>
+<li>
+<p>始终为属性值加 <strong>引号</strong>，双引号是最常用的，不过使用单引号也没有问题</p>
+<ul>
+<li>在某些个别的情况下，比如：属性值本身就 <strong>含有双引号</strong>，那么您必须使用 <strong>单引号</strong>，例如：<code>name='Bill "HelloWorld" Gates'</code></li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">基础</title>
+    <id>https://sankgao.github.io/frontend/html5/base.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/base.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<h2> HTML 基础结构</h2>
+<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>IE=edge<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<h2> HTML 基础结构</h2>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>&lt;!DOCTYPE html&gt;</strong>：声明文档的解析类型（document.compatMode），避免浏览器用 <strong>怪异模式</strong>（浏览器使用自己的怪异模式解析渲染页面，会导致不同浏览器渲染的效果不一样）来解析渲染页面。添加 <code>&lt;!DOCTYPE html&gt;</code> 这个声明将文档解析类型设置为 <strong>标准模式</strong>（浏览器使用 W3C 的标准解析渲染页面）。<code>&lt;!DOCTYPE html&gt;</code> 声明必须是 HTML 文档的第一行，位于 <code>&lt;html&gt;</code> 标签之前</li>
+<li><strong>lang="en"</strong>：设置网页站点为英文站点，中文为 <code>zh</code>。这个主要是给搜索引擎看的，搜索引擎会去判断该站点是中文站点还是英文站点，如果 <code>lang</code> 设置为 <code>en</code> 或其他语言，无论网页中是什么语言，在访问页面的时候都会提示您是否需要翻译，可以不设置 <code>lang</code> 属性</li>
+<li><strong>charset="UTF-8"</strong>：设置文档字符编码为 <code>utf-8</code>，如果不写可能中文会出现乱码</li>
+<li><strong>http-equiv="X-UA-Compatible" content="IE=edge"</strong>：<code>Edge</code> 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，这实际上破坏了 “锁定” 模式。即如果您有 <code>IE9</code> 的话说明您有 <code>IE7</code>、<code>IE8</code>、<code>IE9</code>，那么就调用高版本也就是 <code>IE9</code></li>
+<li><strong>name="viewport"</strong>：<code>name</code> 指定了 <code>meta</code> 元素的类型，说明该元素包含了什么类型的信息。<code>viewport</code> 就是设备的屏幕上能用来显示网页的那一块区域。<code>viewport</code> 标记，用于指定用户是否可以缩放 Web 页面，并对相关的选项进行设定</li>
+<li><strong>content="width=device-width, initial-scale=1.0"</strong>：<code>content</code> 指定了实际的元数据内容。<code>width</code> 和 <code>height</code> 指令分别指定视区的逻辑宽度和高度。它们的值可以是以 <strong>像素</strong> 为单位的数字，也可以是一个特殊的标记符号。如上文代码中 <code>device-width</code> 即表示视区宽度应为设备的屏幕宽度，<code>device-height</code> 即表示设备的屏幕高度；<code>initial-scale</code> 用于设置 Web 页面的初始缩放比例。默认的初始缩放比例值因智能手机浏览器的不同而有所差异，通常情况下，设备会在浏览器中呈现出整个 Web 页面。设为 <code>1.0</code> 则显示未经缩放的 Web 页面</li>
+<li><strong>&lt;title&gt;Document&lt;/title&gt;</strong>：定义浏览器工具栏中的标题</li>
+</ul>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>以下为 HTML 常用的标签</p>
+</div>
+<h2> HTML 标题</h2>
+<p>HTML 标题（Heading）是通过 <code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code> 标签进行定义的。例如：</p>
+
+<h2> HTML 段落</h2>
+<p>HTML 段落是通过 <code>&lt;p&gt;</code> 标签进行定义的。例如：</p>
+
+<h2> HTML 链接</h2>
+<p>HTML 链接是通过 <code>&lt;a&gt;</code> 标签进行定义的。例如：</p>
+
+<ul>
+<li><strong>href</strong>：指定链接到页面的 URL</li>
+</ul>
+<h2> HTML 图像</h2>
+<p>HTML 图像是通过 <code>&lt;img&gt;</code> 标签进行定义的。例如：</p>
+
+<ul>
+<li><strong>src</strong>：图像地址</li>
+<li><strong>width</strong>：图像宽度</li>
+<li><strong>height</strong>：图像高度</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">元素</title>
+    <id>https://sankgao.github.io/frontend/html5/elements.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/elements.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">开始标签</th>
+<th style="text-align:left">元素内容</th>
+<th style="text-align:center">结束标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;p&gt;</td>
+<td style="text-align:left">This is a paragraph</td>
+<td style="text-align:center">&lt;/p&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;a href="default.html" &gt;</td>
+<td style="text-align:left">This is a link</td>
+<td style="text-align:center">&lt;/a&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;br /&gt;</td>
+<td style="text-align:left"><em>none</em></td>
+<td style="text-align:center"><em>none</em></td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">开始标签</th>
+<th style="text-align:left">元素内容</th>
+<th style="text-align:center">结束标签</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;p&gt;</td>
+<td style="text-align:left">This is a paragraph</td>
+<td style="text-align:center">&lt;/p&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;a href="default.html" &gt;</td>
+<td style="text-align:left">This is a link</td>
+<td style="text-align:center">&lt;/a&gt;</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;br /&gt;</td>
+<td style="text-align:left"><em>none</em></td>
+<td style="text-align:center"><em>none</em></td>
+</tr>
+</tbody>
+</table>
+<h2> HTML 元素语法</h2>
+<ul>
+<li>HTML 元素以开始标签 <strong>起始</strong></li>
+<li>HTML 元素以结束标签 <strong>终止</strong></li>
+<li>元素的内容是开始标签与结束标签 <strong>之间</strong> 的内容</li>
+<li>某些 HTML 元素具有空内容（empty content）称为 <strong>空元素</strong></li>
+<li>空元素没有 <strong>结束标签</strong>，空元素在 <strong>开始标签</strong> 中进行关闭（以开始标签的结束而结束）。例如：<code>&lt;br /&gt;</code></li>
+<li>大多数 HTML 元素可拥有属性</li>
+</ul>
+<h2> 嵌套的 HTML 元素</h2>
+<p>大多数 HTML 元素可以嵌套（可以包含其他 HTML 元素）。HTML 文档由嵌套的 HTML 元素构成。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>&lt;html&gt;</strong>：<code>&lt;html&gt;</code> 元素定义了整个 HTML 文档</li>
+<li><strong>&lt;body&gt;</strong>：<code>&lt;body&gt;</code> 元素定义了 HTML 文档的主体</li>
+<li><strong>&lt;p&gt;</strong>：<code>&lt;p&gt;</code> 元素定义了 HTML 文档中的一个段落</li>
+</ul>
+<h2> 不要忘记结束标签</h2>
+<p>不要忘记结束标签 <code>&lt;/p&gt;</code>。即时忘记结束标签，在大多数浏览器中也会正确显示，但在未来的 HTML 版本中，<strong>不允许省略</strong> 结束标签</p>
+<h2> 空的 HTML 元素</h2>
+<p>没有内容的 HTML 元素被称为 <strong>空元素</strong>。空元素是在开始标签中关闭的。</p>
+<p>例如：<code>&lt;br /&gt;</code> 就是没有关闭标签的空元素（<code>&lt;br /&gt;</code> 标签定义换行）。</p>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">格式化</title>
+    <id>https://sankgao.github.io/frontend/html5/formatting.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/formatting.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 可定义很多供格式化输出的元素，比如 <strong>粗体</strong> 和 <strong>斜体字。</strong></p>
+<p>下面有很多例子，您可以亲自试试：</p>
+<h2> HTML 文本格式化实例</h2>
+<ul>
+<li>
+<p>文本格式化</p>
+<p>在一个 HTML 文件中对文本进行格式化。</p>
+
+<ul>
+<li><strong>&lt;b&gt;</strong>：定义粗体字</li>
+<li><strong>&lt;strong&gt;</strong>：定义强调文本</li>
+<li><strong>&lt;big&gt;</strong>：定义大号文本。HTML5 中不支持。请使用 CSS 代替</li>
+<li><strong>&lt;em&gt;</strong>：定义强调文本</li>
+<li><strong>&lt;i&gt;</strong>：定义斜体字</li>
+<li><strong>&lt;small&gt;</strong>：定义小号文本</li>
+<li><strong>&lt;sub&gt;</strong>：定义下标文本</li>
+<li><strong>&lt;sup&gt;</strong>：定义上标文本</li>
+</ul>
+</li>
+<li>
+<p>预格式文本</p>
+<p>使用 <code>&lt;pre&gt;</code> 标签对空行和空格进行控制。</p>
+
+<ul>
+<li><strong>&lt;pre&gt;</strong>：定义预格式文本</li>
+</ul>
+</li>
+<li>
+<p>计算机输出标签</p>
+<p>不同的 “计算机输出” 标签的显示效果。</p>
+
+<ul>
+<li><strong>&lt;code&gt;</strong>：定义计算机代码文本</li>
+<li><strong>&lt;kbd&gt;</strong>：定义键盘文本</li>
+<li><strong>&lt;tt&gt;</strong>：定义打字机文本。HTML5 中不支持。请使用 CSS 代替</li>
+<li><strong>&lt;samp&gt;</strong>：定义计算机代码样本</li>
+<li><strong>&lt;var&gt;</strong>：定义文本的变量部分</li>
+</ul>
+</li>
+<li>
+<p>地址</p>
+<p>在 HTML 文件中写地址。</p>
+
+<ul>
+<li><strong>&lt;address&gt;</strong>：定义文档作者或拥有者的联系信息</li>
+</ul>
+</li>
+<li>
+<p>缩写和首字母缩写</p>
+<p>对文本缩写或首字母缩写。</p>
+
+<ul>
+<li><strong>&lt;abbr&gt;</strong>：定义缩写</li>
+<li><strong>&lt;acronym&gt;</strong>：定义只取首字母的缩写。HTML5 中不支持。请使用 <code>&lt;abbr&gt;</code> 代替</li>
+</ul>
+</li>
+<li>
+<p>文字方向</p>
+<p>改变文字的方向。</p>
+
+<ul>
+<li><strong>&lt;bdo&gt;</strong>：定义文字方向
+<ul>
+<li><strong>ltr</strong>：定义文字从左向右输出</li>
+<li><strong>rtl</strong>：定义文字从右向左输出</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>块引用</p>
+<p>实现长短不一的引用语。</p>
+
+<ul>
+<li><strong>&lt;blockquote&gt;</strong>：定义长的引用</li>
+<li><strong>&lt;q&gt;</strong>：定义短的引用</li>
+</ul>
+</li>
+<li>
+<p>删除字效果和插入字效果</p>
+<p>标记删除文本和插入文本。</p>
+
+<ul>
+<li><strong>&lt;del&gt;</strong>：定义被删除文本</li>
+<li><strong>&lt;ins&gt;</strong>：定义被插入文本</li>
+</ul>
+</li>
+<li>
+<p>特殊术语或短语的定义</p>
+<p>标记那些对特殊术语或短语的定义。</p>
+
+<ul>
+<li><strong>&lt;dfn&gt;</strong>：定义特殊术语或短语</li>
+</ul>
+</li>
+<li>
+<p>著作的标题</p>
+<p>通常表示它所包含的文本对某个参考文献的引用。</p>
+
+<ul>
+<li><strong>&lt;cite&gt;</strong>：定义引用（citation）</li>
+</ul>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 可定义很多供格式化输出的元素，比如 <strong>粗体</strong> 和 <strong>斜体字。</strong></p>
+<p>下面有很多例子，您可以亲自试试：</p>
+<h2> HTML 文本格式化实例</h2>
+<ul>
+<li>
+<p>文本格式化</p>
+<p>在一个 HTML 文件中对文本进行格式化。</p>
+
+<ul>
+<li><strong>&lt;b&gt;</strong>：定义粗体字</li>
+<li><strong>&lt;strong&gt;</strong>：定义强调文本</li>
+<li><strong>&lt;big&gt;</strong>：定义大号文本。HTML5 中不支持。请使用 CSS 代替</li>
+<li><strong>&lt;em&gt;</strong>：定义强调文本</li>
+<li><strong>&lt;i&gt;</strong>：定义斜体字</li>
+<li><strong>&lt;small&gt;</strong>：定义小号文本</li>
+<li><strong>&lt;sub&gt;</strong>：定义下标文本</li>
+<li><strong>&lt;sup&gt;</strong>：定义上标文本</li>
+</ul>
+</li>
+<li>
+<p>预格式文本</p>
+<p>使用 <code>&lt;pre&gt;</code> 标签对空行和空格进行控制。</p>
+
+<ul>
+<li><strong>&lt;pre&gt;</strong>：定义预格式文本</li>
+</ul>
+</li>
+<li>
+<p>计算机输出标签</p>
+<p>不同的 “计算机输出” 标签的显示效果。</p>
+
+<ul>
+<li><strong>&lt;code&gt;</strong>：定义计算机代码文本</li>
+<li><strong>&lt;kbd&gt;</strong>：定义键盘文本</li>
+<li><strong>&lt;tt&gt;</strong>：定义打字机文本。HTML5 中不支持。请使用 CSS 代替</li>
+<li><strong>&lt;samp&gt;</strong>：定义计算机代码样本</li>
+<li><strong>&lt;var&gt;</strong>：定义文本的变量部分</li>
+</ul>
+</li>
+<li>
+<p>地址</p>
+<p>在 HTML 文件中写地址。</p>
+
+<ul>
+<li><strong>&lt;address&gt;</strong>：定义文档作者或拥有者的联系信息</li>
+</ul>
+</li>
+<li>
+<p>缩写和首字母缩写</p>
+<p>对文本缩写或首字母缩写。</p>
+
+<ul>
+<li><strong>&lt;abbr&gt;</strong>：定义缩写</li>
+<li><strong>&lt;acronym&gt;</strong>：定义只取首字母的缩写。HTML5 中不支持。请使用 <code>&lt;abbr&gt;</code> 代替</li>
+</ul>
+</li>
+<li>
+<p>文字方向</p>
+<p>改变文字的方向。</p>
+
+<ul>
+<li><strong>&lt;bdo&gt;</strong>：定义文字方向
+<ul>
+<li><strong>ltr</strong>：定义文字从左向右输出</li>
+<li><strong>rtl</strong>：定义文字从右向左输出</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>块引用</p>
+<p>实现长短不一的引用语。</p>
+
+<ul>
+<li><strong>&lt;blockquote&gt;</strong>：定义长的引用</li>
+<li><strong>&lt;q&gt;</strong>：定义短的引用</li>
+</ul>
+</li>
+<li>
+<p>删除字效果和插入字效果</p>
+<p>标记删除文本和插入文本。</p>
+
+<ul>
+<li><strong>&lt;del&gt;</strong>：定义被删除文本</li>
+<li><strong>&lt;ins&gt;</strong>：定义被插入文本</li>
+</ul>
+</li>
+<li>
+<p>特殊术语或短语的定义</p>
+<p>标记那些对特殊术语或短语的定义。</p>
+
+<ul>
+<li><strong>&lt;dfn&gt;</strong>：定义特殊术语或短语</li>
+</ul>
+</li>
+<li>
+<p>著作的标题</p>
+<p>通常表示它所包含的文本对某个参考文献的引用。</p>
+
+<ul>
+<li><strong>&lt;cite&gt;</strong>：定义引用（citation）</li>
+</ul>
+</li>
+</ul>
+<h2> 查看 HTML 源码</h2>
+<p>鼠标右键单击浏览器页面，选择 “查看网页源代码” 即可。随后你会看到一个弹出的窗口，窗口内就是实际的 HTML 代码。</p>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">简介</title>
+    <id>https://sankgao.github.io/frontend/html5/introduction.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/introduction.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p><strong>超文本标记语言</strong>（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
+<p>HTML 不是一门编程语言，而是一种用于定义内容结构的标记语言。HTML 由一系列的元素组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。一对标签可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。</p>]]></summary>
+    <content type="html"><![CDATA[<p><strong>超文本标记语言</strong>（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
+<p>HTML 不是一门编程语言，而是一种用于定义内容结构的标记语言。HTML 由一系列的元素组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。一对标签可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。</p>
+<h2> HTML 发展史</h2>
+<p>1990 年，由于对 Web 未来发展的远见，Tim Berners-Lee 提出了 <strong>超文本</strong>（Hypertext）的概念，<code>Hypertext</code> 包含了指向其他文本的链接，而不是像小说中的单一线性流。并在第二年在 <code>SGML</code>（en-US）的基础上将其正式定义为一个标记语言。<code>IETF</code>（en-US）于 1993 年正式开始制定 <strong>HTML 规范</strong>，并在经历了几个版本的草案后于 1995 年发布了 HTML2.0 版本。1994 年，Berners-Lee 为了 Web 发展而成立了 <code>W3C</code>（en-US）。1996 年，W3C 接管了 HTML 的标准化工作，并在一年后发布了 HTML3.2 推荐标准。1999 年，HTML4.0 发布，并在 2000 年成为 <code>ISO</code>（en-US）标准。</p>
+<p>自那以后，W3C 几乎放弃了 HTML 而转向 XHTML，并于 2004 年成立了另一个独立的小组 WHATWG。幸运的是，WHATWG 后来又转回来参与了 HTML5 标准的制定，两个组织（译注：即 W3C 和 WHATWG）在 2008 年发布了第一份草案，并在 2014 年发布了 HTML5 标准的最终版。</p>
+<h2> HTML 标签</h2>
+<p>HTML 标记标签通常被称为 HTML 标签（HTML tag）。</p>
+<ul>
+<li>HTML 标签是由 <strong>尖括号包围</strong> 的关键词。比如：&lt;html&gt;</li>
+<li>HTML 标签通常是 <strong>成对出现</strong> 的称为 <strong>双标签</strong>。比如：&lt;b&gt; 和 &lt;/b&gt;</li>
+<li>HTML 标签只有一个尖括号的称为 <strong>单标签</strong>。比如：&lt;br /&gt;</li>
+<li>标签对中的第一个标签是 <strong>开始标签</strong>，第二个标签是 <strong>结束标签</strong></li>
+</ul>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>开始标签常被称为 <strong>开放标签</strong>（opening tag），结束标签常称为 <strong>闭合标签</strong>（closing tag）</p>
+</div>
+<h2> HTML 元素</h2>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>HTML 元素指的是从开始标签（start tag）到结束标签（end tag）的所有代码。</p>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>一些 HTML 元素没有内容（如 <code>&lt;br /&gt;</code> 元素）。这些元素称为 <strong>空元素</strong>。空元素没有 <strong>结束标签</strong></p>
+</div>
+<h2> HTML 属性</h2>
+<p>HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。</p>
+<ul>
+<li>属性总是以 <strong>名称=值</strong> 对的形式出现。比如：<code>name="value"</code></li>
+<li>属性总是在 HTML 元素的开始标签中规定</li>
+</ul>
+<h2> 语法规范</h2>
+<ul>
+<li>始终在文档的 <strong>首行</strong> 声明文档类型</li>
+<li>不要忘记 <strong>结束标签</strong></li>
+<li>没有内容的 HTML 元素被称为 <strong>空元素</strong>。空元素是在开始标签中关闭的。比如：&lt;br /&gt;</li>
+<li>使用 <strong>小写</strong> 标签</li>
+<li>使用 <strong>小写</strong> 属性和属性值，始终为属性值加 <strong>引号</strong></li>
+<li>使用 <strong>小写</strong> 元素名</li>
+<li>添加必需的属性</li>
+<li>等号两边尽量 <strong>不要有空格</strong></li>
+<li>属性间用 <strong>空格</strong> 分隔</li>
+<li>避免 <strong>长代码行</strong></li>
+<li>增加空行来分隔大型或逻辑代码块。增加 <strong>两个空格</strong> 的缩进。请 <strong>勿使用</strong> <kbd>Tab</kbd> 键</li>
+<li>HTML 文件名应该使用扩展名 <code>.html</code>（而不是 <code>.htm</code>）</li>
+</ul>
+<h2> HTML 文档声明</h2>
+<ul>
+<li>
+<p>XHTML1.0</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>HTML4.01</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>HTML5</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">段落</title>
+    <id>https://sankgao.github.io/frontend/html5/paragraph.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/paragraph.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p>段落是通过 <code>&lt;p&gt;</code> 标签定义的。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>浏览器会自动地在段落的前后添加空行。（<code>&lt;p&gt;</code> 是块级元素）</p>
+<p>不要忘记结束标签 <code>&lt;/p&gt;</code>。即时忘记结束标签，在大多数浏览器中也会正确显示，但在未来的 HTML 版本中，<strong>不允许省略</strong> 结束标签</p>
+</div>
+<h2> HTML 折行</h2>]]></summary>
+    <content type="html"><![CDATA[<p>段落是通过 <code>&lt;p&gt;</code> 标签定义的。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>浏览器会自动地在段落的前后添加空行。（<code>&lt;p&gt;</code> 是块级元素）</p>
+<p>不要忘记结束标签 <code>&lt;/p&gt;</code>。即时忘记结束标签，在大多数浏览器中也会正确显示，但在未来的 HTML 版本中，<strong>不允许省略</strong> 结束标签</p>
+</div>
+<h2> HTML 折行</h2>
+<p>使用空的段落标记 <code>&lt;p&gt;&lt;/p&gt;</code> 去插入一个空行是个坏习惯，应该使用 <code>&lt;br /&gt;</code> 标签代替。</p>
+<p>如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 <code>&lt;br /&gt;</code> 标签。例如：</p>
+
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p><code>&lt;br /&gt;</code> 元素是一个空的 HTML 元素。由于关闭标签没有任何意义，因此它没有结束标签</p>
+</div>
+<h2> &lt;br&gt; 还是 &lt;br /&gt;</h2>
+<p>即使 <code>&lt;br&gt;</code> 在大多数浏览器中也会正确显示，但使用 <code>&lt;br /&gt;</code> 是更长远的保障。</p>
+<h2> HTML 输出</h2>
+<p>当显示页面时，浏览器会移除源代码中 <strong>多余的</strong> 空格和空行。所有连续的空格或空行都会被算作 <strong>一个空格</strong>。需要注意的是，HTML 代码中的所有连续的空行（换行）也被显示为一个空格。</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">样式</title>
+    <id>https://sankgao.github.io/frontend/html5/style.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/style.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>style</code> 属性用于改变 HTML 元素的样式。</p>
+<h2> HTML 的 style 属性</h2>
+<p>提供了一种改变所有 HTML 元素的样式的通用方法。</p>
+<h2> 不赞成使用的标签和属性</h2>
+<p>在 HTML4 中，有若干的标签和属性是被 <strong>废弃的</strong>。在未来版本的 HTML 和 XHTML 中将不支持这些标签和属性。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;center&gt;</td>
+<td style="text-align:left">定义居中的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;font&gt; 和 &lt;basefont&gt;</td>
+<td style="text-align:left">定义 HTML 字体</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;s&gt; 和 &lt;strike&gt;</td>
+<td style="text-align:left">定义删除线文本</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;u&gt;</td>
+<td style="text-align:left">定义下划线文本</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<p><code>style</code> 属性用于改变 HTML 元素的样式。</p>
+<h2> HTML 的 style 属性</h2>
+<p>提供了一种改变所有 HTML 元素的样式的通用方法。</p>
+<h2> 不赞成使用的标签和属性</h2>
+<p>在 HTML4 中，有若干的标签和属性是被 <strong>废弃的</strong>。在未来版本的 HTML 和 XHTML 中将不支持这些标签和属性。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;center&gt;</td>
+<td style="text-align:left">定义居中的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;font&gt; 和 &lt;basefont&gt;</td>
+<td style="text-align:left">定义 HTML 字体</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;s&gt; 和 &lt;strike&gt;</td>
+<td style="text-align:left">定义删除线文本</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;u&gt;</td>
+<td style="text-align:left">定义下划线文本</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">align</td>
+<td style="text-align:left">定义文本的对齐方式</td>
+</tr>
+<tr>
+<td style="text-align:center">bgcolor</td>
+<td style="text-align:left">定义背景颜色</td>
+</tr>
+<tr>
+<td style="text-align:center">color</td>
+<td style="text-align:left">定义文本颜色</td>
+</tr>
+</tbody>
+</table>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>对于以上这些标签和属性请使用 CSS 样式代替</p>
+</div>
+<h2> HTML 背景颜色</h2>
+<p><code>background-color</code> 属性为元素定义了背景颜色。例如：</p>
+
+<h2> HTML 字体、颜色和尺寸</h2>
+<p><code>font-family</code>、<code>color</code> 以及 <code>font-size</code> 属性分别定义元素中文本的字体系列、颜色和字体尺寸。例如：</p>
+
+<h2> HTML 文本对齐</h2>
+<p><code>text-align</code> 属性规定了元素中文本的水平对齐方式例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">标题</title>
+    <id>https://sankgao.github.io/frontend/html5/title.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/title.html"/>
+    <updated>2023-05-05T11:06:55.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 标题（Heading）是通过 <code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code> 标签进行定义的。</p>
+<p><code>&lt;h1&gt;</code> 定义最大的标题，<code>&lt;h6&gt;</code> 定义最小的标题。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>浏览器会自动地在标题的前后添加空行</p>
+<p>默认情况下，HTML 会自动地在块级元素前后添加一个额外的空行。比如：段落、标题元素前后</p>
+</div>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 标题（Heading）是通过 <code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code> 标签进行定义的。</p>
+<p><code>&lt;h1&gt;</code> 定义最大的标题，<code>&lt;h6&gt;</code> 定义最小的标题。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>浏览器会自动地在标题的前后添加空行</p>
+<p>默认情况下，HTML 会自动地在块级元素前后添加一个额外的空行。比如：段落、标题元素前后</p>
+</div>
+<h2> 标题很重要</h2>
+<p>请确保将 <code>&lt;h1&gt;</code>~<code>&lt;h6&gt;</code> 标签只用于标题。不要仅仅是为了产生粗体或大号的文本而使用标题。</p>
+<p>搜索引擎使用标题为您网页的结构和内容编制索引。</p>
+<p>通过标题可以快速浏览您的网页，所以用标题来呈现文档结构是很重要的。</p>
+<p>应该将 <code>&lt;h1&gt;</code> 用作主标题（最重要的），其后是 <code>&lt;h2&gt;</code>（次重要的），再其次是 <code>&lt;h3&gt;</code>，以此类推。</p>
+<h2> HTML 水平线</h2>
+<p><code>&lt;hr /&gt;</code> 标签在 HTML 页面中创建水平线。例如：</p>
+
+<h2> HTML 注释</h2>
+<p>将注释（<code>&lt;!-- 注释 --&gt;</code>）插入 HTML 代码中，这样可以提高其 <strong>可读性</strong>，使代码更易被人理解。浏览器会忽略注释，也不会显示它们。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>这里不显示 This is a comment 这句话，通过 <code>&lt;!-- This is a comment --&gt;</code> 语法进行注释</p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-05T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">运维</title>
     <id>https://sankgao.github.io/operations/</id>
@@ -541,7 +1208,7 @@
     <title type="text">PicGo 图床</title>
     <id>https://sankgao.github.io/about/tools/picgo.html</id>
     <link href="https://sankgao.github.io/about/tools/picgo.html"/>
-    <updated>2023-05-03T16:07:01.000Z</updated>
+    <updated>2023-05-05T11:05:09.000Z</updated>
     <summary type="html"><![CDATA[<ul>
 <li><a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener noreferrer">GitHub 仓库地址</a></li>
 <li><a href="https://molunerfinn.com/PicGo/" target="_blank" rel="noopener noreferrer">PicGo 官网地址</a></li>
@@ -589,7 +1256,7 @@
 <li><strong>设定分支名</strong>：指定上传的分支名。例如：<code>main</code>。<strong>必须配置</strong></li>
 <li><strong>设定 Token</strong>：指定刚才生成的 Token。<strong>必须配置</strong></li>
 <li><strong>设定存储路径</strong>：指定存储到仓库的哪个路径下。<strong>默认存储到 <code>/</code>（根）目录下</strong></li>
-<li><strong>设定自定义域名</strong>：指定 CDN 加速。图片上传后，PicGo 会按照 <strong>自定义域名+上传的图片名</strong> 的方式生成访问链接，例如：填写 <a href="http://www.jsdelivr.com/" target="_blank" rel="noopener noreferrer">jsDelivr</a> 的 CDN 加速地址，格式：<code>https://cdn.staticaly.com/gh/&lt;用户名&gt;/&lt;仓库名&gt;</code></li>
+<li><strong>设定自定义域名</strong>：指定 CDN 加速。图片上传后，PicGo 会按照 <strong>自定义域名+上传的图片名</strong> 的方式生成访问链接，例如：填写 <a href="http://www.jsdelivr.com/" target="_blank" rel="noopener noreferrer">jsDelivr</a> 的 CDN 加速地址，格式：<code>https://cdn.jsdelivr.com/gh/&lt;用户名&gt;/&lt;仓库名&gt;</code></li>
 </ul>
 <h2> 使用插件</h2>
 <p>您可以在 PicGo 官方的 <a href="https://github.com/PicGo/Awesome-PicGo" target="_blank" rel="noopener noreferrer">Awesome-PicGo</a> 里找到超棒的 PicGo 插件和应用了 PicGo 的应用或者项目</p>
@@ -663,7 +1330,7 @@
     <title type="text">前端</title>
     <id>https://sankgao.github.io/frontend/</id>
     <link href="https://sankgao.github.io/frontend/"/>
-    <updated>2023-04-28T10:28:29.000Z</updated>
+    <updated>2023-05-05T11:06:55.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些前端知识。</p>
 <ul>
 <li><a href="/frontend/html/" target="blank">HTML</a></li>
@@ -693,6 +1360,7 @@
 <li><a href="https://www.w3school.com.cn/tiy/t.asp" target="_blank" rel="noopener noreferrer">W3school</a></li>
 <li><a href="http://www.codebaoku.com/try/js" target="_blank" rel="noopener noreferrer">编程宝库</a></li>
 <li><a href="https://jsfiddle.net/yyx990803/2ke1ab0z/" target="_blank" rel="noopener noreferrer">StackBlitz</a></li>
+<li><a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">Codepen</a></li>
 </ul>
 ]]></content>
     <category term="Frontend"/>
@@ -1086,7 +1754,7 @@
     <title type="text">模板语法</title>
     <id>https://sankgao.github.io/frontend/vue3/template_syntax.html</id>
     <link href="https://sankgao.github.io/frontend/vue3/template_syntax.html"/>
-    <updated>2023-05-03T16:08:42.000Z</updated>
+    <updated>2023-05-05T11:06:55.000Z</updated>
     <summary type="html"><![CDATA[<p>Vue 使用一种基于 HTML 的模板语法，能够 <strong>声明式</strong> 地将其组件实例的数据绑定到呈现的 DOM 上。所有的 Vue 模板都是语法层面合法的 HTML，可以被符合规范的浏览器和 HTML 解析器解析。</p>
 <p>在底层机制中，Vue 会将模板编译成高度优化的 JavaScript 代码。结合响应式系统，当应用状态变更时，Vue 能够智能地推导出需要重新渲染的组件的最少数量，并应用最少的 DOM 操作。</p>
 <p>如果您对虚拟 DOM 的概念比较熟悉，并且偏好直接使用 JavaScript，您也可以结合可选的 JSX 支持 <a href="">直接手写渲染函数</a> 而不采用模板。但请注意，这将不会享受到和模板同等级别的编译时优化。</p>]]></summary>
@@ -1165,7 +1833,7 @@
 <h3> 修饰符 Modifiers</h3>
 <p>修饰符是以点开头的特殊后缀，表明指令需要以一些特殊的方式被绑定。例如：<code>.prevent</code> 修饰符会告知 <code>v-on</code> 指令对触发的事件调用 <code>event.preventDefault()</code>：</p>
 <div class="language-template line-numbers-mode" data-ext="template"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>最后，在这里您可以直观地看到完整的指令语法：</p>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/frontend/vue3/directive.png" alt="指令语法图" tabindex="0" loading="lazy"><figcaption>指令语法图</figcaption></figure>
+<figure><figcaption>指令语法图</figcaption></figure>
 ]]></content>
     <category term="Frontend"/>
     <published>2023-04-28T00:00:00.000Z</published>
@@ -1226,14 +1894,14 @@
     <title type="text">友联</title>
     <id>https://sankgao.github.io/links.html</id>
     <link href="https://sankgao.github.io/links.html"/>
-    <updated>2023-04-27T09:29:13.000Z</updated>
+    <updated>2023-05-05T11:07:21.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
 <!-- more -->
 <h2> 我的友联</h2>
 ]]></content>
-    <category term="Link"/>
+    <category term="Links"/>
     <published>2023-04-26T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -4418,7 +5086,7 @@ Vue 驱动的静态网站生成器</p>
     <title type="text">VuePress 搭建</title>
     <id>https://sankgao.github.io/about/blog/build.html</id>
     <link href="https://sankgao.github.io/about/blog/build.html"/>
-    <updated>2023-04-21T09:21:18.000Z</updated>
+    <updated>2023-05-05T11:04:29.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">相关信息</p>
 <p>本博客使用的是 <a href="https://v2.vuepress.vuejs.org/zh/" target="_blank" rel="noopener noreferrer">VuePress-v2</a> 版本加 <a href="https://theme-hope.vuejs.press/zh/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 主题</a> 搭建</p>
@@ -4515,7 +5183,7 @@ Vue 驱动的静态网站生成器</p>
 </ol>
 <p>VuePress 会在 <code>http://localhost:8080</code> 启动一个热重载的开发服务器。当您修改您的 Markdown 文件时，浏览器中的内容也会自动更新。</p>
 <p><strong>效果：</strong></p>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/vuepress/build.png" alt="build" tabindex="0" loading="lazy"><figcaption>build</figcaption></figure>
+<figure><figcaption>build</figcaption></figure>
 <h2> 配置</h2>
 <h3> 配置文件</h3>
 <p>如果没有任何配置，您的 VuePress 站点仅有一些 <strong>最基础</strong> 的功能。为了更好地自定义您的网站，让我们首先在您的文档目录下创建一个 <code>.vuepress</code> 目录，所有 VuePress 相关的文件都将会被放在这里。您的项目结构可能是这样：</p>
@@ -5629,7 +6297,7 @@ Vue 驱动的静态网站生成器</p>
     <title type="text">vuepress-theme-hope 主题</title>
     <id>https://sankgao.github.io/about/blog/theme_config.html</id>
     <link href="https://sankgao.github.io/about/blog/theme_config.html"/>
-    <updated>2023-04-26T10:54:20.000Z</updated>
+    <updated>2023-05-05T11:04:29.000Z</updated>
     <summary type="text">vuepress-theme-hope 主题 (https://theme-hope.vuejs.press/zh/) 在 VuePress 中，有三种配置概念： 站点配置：这是您在配置文件中直接导出的对象; 主题配置：传递给 hopeTheme 的第一个对象; 页面配置：由在页面顶部基于 YAML 语法的 Frontmatter 提供; 使用主题 t...</summary>
     <content type="html"><![CDATA[<!-- more -->
 <p><a href="https://theme-hope.vuejs.press/zh/" target="_blank" rel="noopener noreferrer">vuepress-theme-hope 主题</a></p>
@@ -6303,14 +6971,14 @@ Vue 驱动的静态网站生成器</p>
 <li>设置可以辨识的项目名称 <code>FontClass/Symbol 前缀</code> 填入 <code>icon-</code>（您也可以根据自己喜好填写，但需要将此值设置额外前缀 <code>iconfont</code> 并设置到在主题选项中的 <code>iconPrefix</code>）</li>
 <li><code>Font Family</code> 请保持 <code>iconfont</code></li>
 </ul>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/vuepress/icon_new_project.png" alt="新建项目" tabindex="0" loading="lazy"><figcaption>新建项目</figcaption></figure>
+<figure><figcaption>新建项目</figcaption></figure>
 </li>
 <li>
 <p>导入图标</p>
 <ul>
 <li>请自行在 <code>iconfont</code> 自由搜索寻找您想要使用的图标，并点击图标上的 <strong>添加入库</strong> 按钮</li>
 </ul>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/vuepress/icon_import.png" alt="添加入库" tabindex="0" loading="lazy"><figcaption>添加入库</figcaption></figure>
+<figure><figcaption>添加入库</figcaption></figure>
 <ul>
 <li>在寻找完所有图标后，请点击右上角的 <strong>添加入库</strong> 图标，点击下方的 <strong>添加至项目</strong> 并选择您刚刚创建好的项目进行确定</li>
 </ul>
@@ -6318,14 +6986,14 @@ Vue 驱动的静态网站生成器</p>
 <li>
 <p>编辑图标</p>
 <p>在项目页面，您可以对项目内的图标进行简单的编辑，包括位置、缩放、旋转、颜色以及 Unicode 编号与 Font Class/Symbol 的调整。</p>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/vuepress/icon_edit.png" alt="编辑图标" tabindex="0" loading="lazy"><figcaption>编辑图标</figcaption></figure>
+<figure><figcaption>编辑图标</figcaption></figure>
 </li>
 <li>
 <p>生成图标文件</p>
 <ul>
 <li>请点击项目上方的 <strong>Font Class</strong> 按钮，并点击生成</li>
 </ul>
-<figure><img src="https://raw.githubusercontent.com/sankgao/images/main/vuepress/icon_generate.png" alt="添加入库" tabindex="0" loading="lazy"><figcaption>添加入库</figcaption></figure>
+<figure><figcaption>添加入库</figcaption></figure>
 <ul>
 <li>将 <strong>css 地址</strong> 设置到主题选项的 <code>iconAssets</code> 中</li>
 </ul>
