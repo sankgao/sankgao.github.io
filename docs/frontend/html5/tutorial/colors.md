@@ -17,6 +17,9 @@ tag:
 
 以下表格给出了由三种颜色混合而成的具体效果：
 
+::: normal-demo 演示
+
+```html
 <style>
   table,
   td,
@@ -90,6 +93,9 @@ tag:
     <td>rgb(255,0,255)</td>
   </tr>
 </table>
+```
+
+:::
 
 ## 颜色名
 
@@ -102,6 +108,26 @@ aqua（水绿色）、black（黑色）、blue（蓝色）、fuchsia（紫红色
 :::
 
 如果需要使用其它的颜色，需要使用十六进制的颜色值。
+
+::: normal-demo 演示
+
+```html
+<style>
+  table,
+  td,
+  th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    text-align: center;
+    width: 50%;
+  }
+</style>
 
 <table>
   <tr>
@@ -207,6 +233,9 @@ aqua（水绿色）、black（黑色）、blue（蓝色）、fuchsia（紫红色
     <td>rgb(255,255,0)</td>
   </tr>
 </table>
+```
+
+:::
 
 ## Web 安全色
 
@@ -217,6 +246,26 @@ Web 安全颜色由 **红色**、**绿色** 和 **蓝色**（RGB）十六进制�
 如今越来越多的计算机有能力处理数百万种颜色，不必只使用这些颜色。
 
 最初 **web 安全色** 被用来确保，当计算机使用 `256` 色调色板时，所有的计算机能够正确地显示所有的颜色。
+
+::: normal-demo 演示
+
+```html
+<style>
+  table,
+  td,
+  th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    text-align: center;
+    width: 50%;
+  }
+</style>
 
 <table>
   <tr>
@@ -1305,3 +1354,4 @@ Web 安全颜色由 **红色**、**绿色** 和 **蓝色**（RGB）十六进制�
     <td>rgb(255,255,255)</td>
   </tr>
 </table>
+```
