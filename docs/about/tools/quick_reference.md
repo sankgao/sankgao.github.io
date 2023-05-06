@@ -10,3 +10,4 @@ tag:
 为开发人员分享快速参考备忘清单（速查表）
 
 - [备忘清单](https://wangchujiang.com/reference/index.html)
+- [快速表](https://www.rapidtables.com/)
