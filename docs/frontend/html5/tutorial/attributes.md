@@ -13,7 +13,7 @@ HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信
 - 属性总是在 HTML 元素的 **开始标签** 中规定。例如：
 
     ```html
-    <a href="http://www.baidu.com.cn">This is a link</a>
+    <a href="https://www.baidu.com.cn/">This is a link</a>
     ```
 
     ::: tip

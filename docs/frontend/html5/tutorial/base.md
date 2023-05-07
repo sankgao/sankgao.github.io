@@ -80,7 +80,7 @@ HTML 链接是通过 `<a>` 标签进行定义的。例如：
 ::: normal-demo 演示
 
 ```html
-<a href="http://www.w3school.com.cn">This is a link</a>
+<a href="https://www.w3school.com.cn/">This is a link</a>
 ```
 
 :::
@@ -94,7 +94,7 @@ HTML 图像是通过 `<img>` 标签进行定义的。例如：
 ::: normal-demo 演示
 
 ```html
-<img src="https://sankgao.github.io/background.png" width="104" height="42" />
+<img src="/background.png" width="104" height="42" />
 ```
 
 :::
