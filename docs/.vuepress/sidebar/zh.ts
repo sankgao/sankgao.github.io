@@ -34,6 +34,7 @@ export const zhSidebarConfig = sidebar({
             "comments.md",
             "colors.md",
             "css.md",
+            "links.md",
           ],
         },
         {
