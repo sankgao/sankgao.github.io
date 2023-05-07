@@ -371,19 +371,6 @@
       ]
     },
     {
-      "title": "工具",
-      "url": "https://sankgao.github.io/tools.html",
-      "id": "https://sankgao.github.io/tools.html",
-      "summary": "记录一些常用工具。",
-      "content_html": "<p>记录一些常用工具。</p>\n<!-- more -->\n<h2> 备忘清单</h2>\n<p>为开发人员分享快速参考备忘清单(速查表)</p>\n<ul>\n<li><a href=\"https://wangchujiang.com/reference/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">备忘清单</a></li>\n</ul>\n<h2> Linux 命令</h2>\n<p>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。</p>\n<ul>\n<li><a href=\"https://wangchujiang.com/linux-command/\" target=\"_blank\" rel=\"noopener noreferrer\">Linux 命令</a></li>\n</ul>\n",
-      "date_published": "2023-04-27T00:00:00.000Z",
-      "date_modified": "2023-04-27T09:29:13.000Z",
-      "authors": [],
-      "tags": [
-        "Tools"
-      ]
-    },
-    {
       "title": "关于",
       "url": "https://sankgao.github.io/about/",
       "id": "https://sankgao.github.io/about/",

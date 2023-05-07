@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Sat, 06 May 2023 12:30:48 GMT</pubDate>
-    <lastBuildDate>Sat, 06 May 2023 12:30:48 GMT</lastBuildDate>
+    <pubDate>Sun, 07 May 2023 02:32:16 GMT</pubDate>
+    <lastBuildDate>Sun, 07 May 2023 02:32:16 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -1693,28 +1693,6 @@
       <content:encoded><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
 <!-- more -->
 <h2> 我的友联</h2>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>工具</title>
-      <link>https://sankgao.github.io/tools.html</link>
-      <guid>https://sankgao.github.io/tools.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">工具</source>
-      <description>记录一些常用工具。</description>
-      <category>Tools</category>
-      <pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>记录一些常用工具。</p>
-<!-- more -->
-<h2> 备忘清单</h2>
-<p>为开发人员分享快速参考备忘清单(速查表)</p>
-<ul>
-<li><a href="https://wangchujiang.com/reference/index.html" target="_blank" rel="noopener noreferrer">备忘清单</a></li>
-</ul>
-<h2> Linux 命令</h2>
-<p>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。</p>
-<ul>
-<li><a href="https://wangchujiang.com/linux-command/" target="_blank" rel="noopener noreferrer">Linux 命令</a></li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
