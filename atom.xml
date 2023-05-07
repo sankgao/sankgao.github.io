@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-07T02:32:16.397Z</updated>
+  <updated>2023-05-07T13:39:10.969Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -20,10 +20,79 @@
   <category term="VuePress"/>
   <category term="Computer"/>
   <entry>
+    <title type="text">链接</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/links.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/links.html"/>
+    <updated>2023-05-07T13:36:19.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 使用 <strong>超级链接</strong> 与网络上的另一个文档相连。</p>
+<p>几乎可以在所有的网页中找到链接。点击链接可以从一张页面 <strong>跳转</strong> 到另一张页面。</p>
+<h2> HTML 超链接（链接）</h2>
+<p>超链接可以是 <strong>一个字</strong>、<strong>一个词</strong> 或者 <strong>一组词</strong>，也可以是 <strong>一幅图像</strong>，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+<p>当您把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。</p>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 使用 <strong>超级链接</strong> 与网络上的另一个文档相连。</p>
+<p>几乎可以在所有的网页中找到链接。点击链接可以从一张页面 <strong>跳转</strong> 到另一张页面。</p>
+<h2> HTML 超链接（链接）</h2>
+<p>超链接可以是 <strong>一个字</strong>、<strong>一个词</strong> 或者 <strong>一组词</strong>，也可以是 <strong>一幅图像</strong>，您可以点击这些内容来跳转到新的文档或者当前文档中的某个部分。</p>
+<p>当您把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。</p>
+<p>通过使用 <code>&lt;a&gt;</code> 标签在 HTML 中创建链接。有两种使用 <code>&lt;a&gt;</code> 标签的方式：</p>
+<ol>
+<li>通过使用 <code>href</code> 属性：创建指向另一个文档的链接</li>
+<li>通过使用 <code>name</code> 属性：创建文档内的书签</li>
+</ol>
+<h2> HTML 链接语法</h2>
+<p>链接的 HTML 代码很简单。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>href</strong>：规定链接的目标</li>
+</ul>
+<p>开始标签和结束标签 <strong>之间的文字</strong> 被作为超级链接来显示。</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><strong>链接文本</strong> 不必一定是文本。图片或其他 HTML 元素都可以成为链接</p>
+</div>
+<h2> HTML 链接 target 属性</h2>
+<p>使用 <code>target</code> 属性，您可以定义被链接的文档在何处显示。默认在 <strong>当前窗口</strong> 打开文档。</p>
+
+<ul>
+<li><strong>target</strong>：规定在何处打开链接文档
+<ul>
+<li><strong>_blank</strong>：在 <strong>新窗口</strong> 中打开链接文档</li>
+<li><strong>_parent</strong>：当前浏览环境的 <strong>父级浏览</strong> 上下文。如果没有父级框架，行为与 <code>_self</code> 相同</li>
+<li><strong>_self</strong>：在 <strong>当前窗口</strong> 中打开链接文档（默认）</li>
+<li><strong>_top</strong>：<strong>最顶级</strong> 的浏览上下文（当前浏览上下文中最 “高” 的祖先）。如果没有祖先，行为与 <code>_self</code> 相同</li>
+</ul>
+</li>
+</ul>
+<h2> HTML 链接 name 属性</h2>
+<p><code>name</code> 属性规定锚（anchor）的名称。</p>
+<p>您可以使用 <code>name</code> 属性创建 HTML 页面中的书签。</p>
+<p>书签不会以任何特殊方式显示，它对读者是不可见的。</p>
+<p>当使用命名锚（named anchors）时，可以创建直接跳至该命名锚（比如页面中某个小节）的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。</p>
+<p><strong>语法：</strong></p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li>
+<p>首先，在 HTML 文档中对锚进行命名（创建一个书签）：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p>然后，在同一个文档中创建指向该锚的链接：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>您也可以在其他页面中创建指向该锚的链接：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+</ul>
+<p>在上面的代码中，我们将 <code>#</code> 符号和锚名称添加到 URL 的末端，就可以直接链接到 <code>tips</code> 这个命名锚了。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>锚的名称可以是任何您喜欢的名字</p>
+<p>您可以使用 <code>id</code> 属性来替代 <code>name</code> 属性，命名锚同样有效</p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">属性</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/attributes.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/attributes.html"/>
-    <updated>2023-05-06T12:12:55.000Z</updated>
+    <updated>2023-05-07T13:36:51.000Z</updated>
     <summary type="html"><![CDATA[<p>HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信息。</p>
 <ul>
 <li>
@@ -31,7 +100,7 @@
 </li>
 <li>
 <p>属性总是在 HTML 元素的 <strong>开始标签</strong> 中规定。例如：</p>
-<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.baidu.com.cn<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.baidu.com.cn/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>This is a link<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="hint-container tip">
 <p class="hint-container-title">提示</p>
 <p>HTML 链接由 <code>&lt;a&gt;</code> 标签定义，链接的地址在 <code>href</code> 属性中指定</p>
@@ -77,7 +146,7 @@
     <title type="text">基础</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/base.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/base.html"/>
-    <updated>2023-05-06T12:12:55.000Z</updated>
+    <updated>2023-05-07T13:36:51.000Z</updated>
     <summary type="html"><![CDATA[<h2> HTML 基础结构</h2>
 <div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
@@ -206,7 +275,7 @@
     <title type="text">CSS</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/css.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/css.html"/>
-    <updated>2023-05-06T12:28:54.000Z</updated>
+    <updated>2023-05-07T13:36:51.000Z</updated>
     <summary type="html"><![CDATA[<p>通过使用 HTML4.0，所有的 <strong>格式化代码</strong> 均可移出 HTML 文档，然后移入一个独立的 <strong>样式表。</strong></p>
 <h2> 如何使用样式</h2>
 <p>当浏览器读到一个样式表，它就会按照这个样式表来对文档 <strong>进行格式化</strong>。有以下三种方式来插入样式表：</p>
