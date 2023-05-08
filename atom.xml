@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-07T13:39:10.969Z</updated>
+  <updated>2023-05-08T10:31:28.184Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -20,10 +20,801 @@
   <category term="VuePress"/>
   <category term="Computer"/>
   <entry>
+    <title type="text">块</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/blocks.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/blocks.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>可以通过 <code>&lt;div&gt;</code> 和 <code>&lt;span&gt;</code> 将 HTML 元素组合起来。</p>
+<h2> HTML 块元素</h2>
+<p>大多数 HTML 元素被定义为块级元素或内联元素。</p>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>“块级元素” 译为 block level element，“内联元素” 译为 inline element。</p>
+</div>
+<p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。</p>]]></summary>
+    <content type="html"><![CDATA[<p>可以通过 <code>&lt;div&gt;</code> 和 <code>&lt;span&gt;</code> 将 HTML 元素组合起来。</p>
+<h2> HTML 块元素</h2>
+<p>大多数 HTML 元素被定义为块级元素或内联元素。</p>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>“块级元素” 译为 block level element，“内联元素” 译为 inline element。</p>
+</div>
+<p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。</p>
+<p>例如：<code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;ul&gt;</code>、<code>&lt;table&gt;</code></p>
+<h2> HTML 内联元素</h2>
+<p>内联元素在显示时通常不会以新行开始。</p>
+<p>例子：<code>&lt;b&gt;</code>、<code>&lt;td&gt;</code>、<code>&lt;a&gt;</code>、<code>&lt;img&gt;</code></p>
+<h2> HTML &lt;div&gt; 元素</h2>
+<p>HTML <code>&lt;div&gt;</code> 元素是块级元素，可用于组合其他 HTML 元素的容器。</p>
+<p><code>&lt;div&gt;</code> 元素没有特定的含义。由于它属于块级元素，浏览器会在其前后显示折行。</p>
+<p>如果与 CSS 一同使用，<code>&lt;div&gt;</code> 元素可用于对大的内容块设置样式属性。</p>
+<p><code>&lt;div&gt;</code> 元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 <code>&lt;table&gt;</code> 元素进行文档布局不是表格的正确用法。<code>&lt;table&gt;</code> 元素的作用是显示表格化的数据。</p>
+
+<h2> HTML &lt;span&gt; 元素</h2>
+<p>HTML <code>&lt;span&gt;</code> 元素是内联元素，可用作文本的容器。</p>
+<p><code>&lt;span&gt;</code> 元素也没有特定的含义。用来组合文档中的行内元素。</p>
+<p>当与 CSS 一同使用时，<code>&lt;span&gt;</code> 元素可用于为部分文本设置样式属性。</p>
+
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>如果不对 <code>span</code> 应用 <strong>样式</strong>，那么 <code>span</code> 元素中的文本与其他文本不会感觉有任何视觉上的差异</p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">类</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/classes.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/classes.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>对 HTML 进行分类（设置类），使能够为元素的类定义 CSS 样式。</p>
+<p>为相同的类设置相同的样式，或者为不同的类设置不同的样式。</p>
+<p>类的语法是：写一个点号（<code>.</code>），后跟一个类名称。然后，在花括号 <code>{}</code> 中定义 CSS 属性</p>
+<p>在 HTML 元素中使用 <code>class</code> 应用类定义的 CSS 样式。</p>
+<h2> 分类块级元素</h2>
+<p>HTML <code>&lt;div&gt;</code> 元素是块级元素。它能够用作其他 HTML 元素的容器。</p>
+<p>设置 <code>&lt;div&gt;</code> 元素的类，使我们能够为相同的 <code>&lt;div&gt;</code> 元素设置相同的类。</p>]]></summary>
+    <content type="html"><![CDATA[<p>对 HTML 进行分类（设置类），使能够为元素的类定义 CSS 样式。</p>
+<p>为相同的类设置相同的样式，或者为不同的类设置不同的样式。</p>
+<p>类的语法是：写一个点号（<code>.</code>），后跟一个类名称。然后，在花括号 <code>{}</code> 中定义 CSS 属性</p>
+<p>在 HTML 元素中使用 <code>class</code> 应用类定义的 CSS 样式。</p>
+<h2> 分类块级元素</h2>
+<p>HTML <code>&lt;div&gt;</code> 元素是块级元素。它能够用作其他 HTML 元素的容器。</p>
+<p>设置 <code>&lt;div&gt;</code> 元素的类，使我们能够为相同的 <code>&lt;div&gt;</code> 元素设置相同的类。</p>
+
+<ul>
+<li><strong>class</strong>：应用额外的样式</li>
+</ul>
+<h2> 分类行内元素</h2>
+<p>HTML <code>&lt;span&gt;</code> 元素是行内元素，能够用作文本的容器。</p>
+<p>设置 <code>&lt;span&gt;</code> 元素的类，能够为相同的 <code>&lt;span&gt;</code> 元素设置相同的样式。</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">计算机代码</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/computercode.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/computercode.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 计算机代码格式：</p>
+<ul>
+<li>通常 HTML 使用 <strong>可变的</strong> 字母尺寸，以及可变的字母间距</li>
+<li>在显示计算机代码示例时，并不需要如此</li>
+<li><code>&lt;kbd&gt;</code>、<code>&lt;samp&gt;</code> 以及 <code>&lt;code&gt;</code> 元素全都支持固定的字母尺寸和间距</li>
+</ul>
+<h2> HTML 键盘格式</h2>
+<p>HTML <code>&lt;kbd&gt;</code> 元素定义键盘输入。例如：</p>
+
+<h2> HTML 输出示例</h2>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 计算机代码格式：</p>
+<ul>
+<li>通常 HTML 使用 <strong>可变的</strong> 字母尺寸，以及可变的字母间距</li>
+<li>在显示计算机代码示例时，并不需要如此</li>
+<li><code>&lt;kbd&gt;</code>、<code>&lt;samp&gt;</code> 以及 <code>&lt;code&gt;</code> 元素全都支持固定的字母尺寸和间距</li>
+</ul>
+<h2> HTML 键盘格式</h2>
+<p>HTML <code>&lt;kbd&gt;</code> 元素定义键盘输入。例如：</p>
+
+<h2> HTML 输出示例</h2>
+<p>HTML <code>&lt;samp&gt;</code> 元素定义计算机输出示例。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>&lt;samp&gt;</code> 元素不保留多余的空格和折行。如需解决该问题，您必须在 <code>&lt;pre&gt;</code> 元素中包围代码</p>
+
+</div>
+<h2> HTML 代码格式</h2>
+<p>HTML <code>&lt;code&gt;</code> 元素定义编程代码示例。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>&lt;code&gt;</code> 元素不保留多余的空格和折行。如需解决该问题，您必须在 <code>&lt;pre&gt;</code> 元素中包围代码</p>
+</div>
+<h2> HTML 变量格式化</h2>
+<ul>
+<li><code>&lt;var&gt;</code> 元素定义数学变量</li>
+<li><code>&lt;sup&gt;</code> 元素定义上标文本</li>
+</ul>
+<p>例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">文件路径</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/filepaths.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/filepaths.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>文件路径描述了网站文件夹结构中某个文件的位置。</p>
+<p>文件路径会在链接外部文件时被用到：</p>
+<ul>
+<li>网页</li>
+<li>图像</li>
+<li>样式表</li>
+<li>JavaScript</li>
+</ul>
+<h2> 绝对文件路径</h2>
+<p>绝对文件路径是指向一个因特网文件的完整 URL。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://www.w3school.com.cn/images/picture.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flower<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<p>文件路径描述了网站文件夹结构中某个文件的位置。</p>
+<p>文件路径会在链接外部文件时被用到：</p>
+<ul>
+<li>网页</li>
+<li>图像</li>
+<li>样式表</li>
+<li>JavaScript</li>
+</ul>
+<h2> 绝对文件路径</h2>
+<p>绝对文件路径是指向一个因特网文件的完整 URL。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> 相对路径</h2>
+<p>相对路径指向了相对于当前页面的文件。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li>使用相对路径是个好习惯（如果可能）</li>
+<li>如果使用了相对路径，那么您的网页就不会与当前的基准 URL 进行绑定。所有链接在您的电脑上（localhost）或未来的公共域中均可正常工作</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">头部</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/head.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/head.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<h2> HTML &lt;head&gt; 元素</h2>
+<p><code>&lt;head&gt;</code> 元素是所有头部元素的容器。<code>&lt;head&gt;</code> 内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。</p>
+<p>以下标签都可以添加到 head 部分：<code>&lt;title&gt;</code>、<code>&lt;base&gt;</code>、<code>&lt;link&gt;</code>、<code>&lt;meta&gt;</code>、<code>&lt;script&gt;</code> 以及 <code>&lt;style&gt;</code>。</p>]]></summary>
+    <content type="html"><![CDATA[<h2> HTML &lt;head&gt; 元素</h2>
+<p><code>&lt;head&gt;</code> 元素是所有头部元素的容器。<code>&lt;head&gt;</code> 内的元素可包含脚本，指示浏览器在何处可以找到样式表，提供元信息，等等。</p>
+<p>以下标签都可以添加到 head 部分：<code>&lt;title&gt;</code>、<code>&lt;base&gt;</code>、<code>&lt;link&gt;</code>、<code>&lt;meta&gt;</code>、<code>&lt;script&gt;</code> 以及 <code>&lt;style&gt;</code>。</p>
+<h2> HTML &lt;title&gt; 元素</h2>
+<p><code>&lt;title&gt;</code> 标签定义文档的标题。</p>
+<p><code>title</code> 元素在所有 HTML/XHTML 文档中都是必需的。</p>
+<p><code>title</code> 元素能够：</p>
+<ul>
+<li>定义浏览器工具栏中的标题</li>
+<li>提供页面被添加到收藏夹时显示的标题</li>
+<li>显示在搜索引擎结果中的页面标题</li>
+</ul>
+<p>例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> HTML &lt;base&gt; 元素</h2>
+<p><code>&lt;base&gt;</code> 标签为页面上的所有链接规定默认地址或默认目标。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>href</strong>：规定页面中所有相对链接的基准 URL</li>
+<li><strong>taget</strong>：在何处打开页面中所有的链接</li>
+</ul>
+<h2> HTML &lt;link&gt; 元素</h2>
+<p><code>&lt;link&gt;</code> 标签定义文档与外部资源之间的关系。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>rel</strong>：规定当前文档与被链接文档之间的关系</li>
+<li><strong>type</strong>：规定被链接文档的 MIME 类型</li>
+<li><strong>href</strong>：规定被链接文档的位置</li>
+</ul>
+<h2> HTML &lt;style&gt; 元素</h2>
+<p><code>&lt;style&gt;</code> 标签用于为 HTML 文档定义样式信息。</p>
+<p>分别定义 <code>&lt;body&gt;</code> 和 <code>&lt;p&gt;</code> 标签样式。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> HTML &lt;meta&gt; 元素</h2>
+<p>元数据（metadata）是关于数据的信息。</p>
+<ul>
+<li><code>&lt;meta&gt;</code> 标签提供关于 HTML 文档的元数据。元数据不会显示在页面上，但是对于机器是可读的</li>
+<li><code>&lt;meta&gt;</code> 标签始终位于 head 元素中</li>
+</ul>
+<p>典型的情况是，<code>meta</code> 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。</p>
+<p>元数据可用于浏览器（如何显示内容或重新加载页面）、搜索引擎（关键词）或其他 web 服务。</p>
+<p>针对搜索引擎的关键词，一些搜索引擎会利用 <code>meta</code> 元素的 <code>name</code> 和 <code>content</code> 属性来索引您的页面。</p>
+<p><code>name</code> 和 <code>content</code> 属性的作用是描述页面的内容。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2> HTML &lt;script&gt; 元素</h2>
+<p><code>&lt;script&gt;</code> 标签用于定义客户端脚本。例如：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Id 属性</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/id.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/id.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML <code>id</code> 属性用于为 HTML 元素指定唯一的 <code>id</code>。</p>
+<p>一个 HTML 文档中不能存在相同 <code>id</code> 的元素。</p>
+<h2> 使用 id 属性</h2>
+<ul>
+<li><code>id</code> 属性指定 HTML 元素的唯一 ID。<code>id</code> 属性的值在 HTML 文档中必须是唯一的</li>
+<li><code>id</code> 属性用于指向样式表中的特定样式声明。JavaScript 也可使用它来访问和操作拥有特定 ID 的元素</li>
+<li><code>id</code> 的语法是：写一个井号（<code>#</code>），后跟一个 id 名称。然后，在花括号 <code>{}</code> 中定义 CSS 属性</li>
+<li>在 HTML 元素中使用 <code>id</code> 应用 id 定义的 CSS 样式</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>HTML <code>id</code> 属性用于为 HTML 元素指定唯一的 <code>id</code>。</p>
+<p>一个 HTML 文档中不能存在相同 <code>id</code> 的元素。</p>
+<h2> 使用 id 属性</h2>
+<ul>
+<li><code>id</code> 属性指定 HTML 元素的唯一 ID。<code>id</code> 属性的值在 HTML 文档中必须是唯一的</li>
+<li><code>id</code> 属性用于指向样式表中的特定样式声明。JavaScript 也可使用它来访问和操作拥有特定 ID 的元素</li>
+<li><code>id</code> 的语法是：写一个井号（<code>#</code>），后跟一个 id 名称。然后，在花括号 <code>{}</code> 中定义 CSS 属性</li>
+<li>在 HTML 元素中使用 <code>id</code> 应用 id 定义的 CSS 样式</li>
+</ul>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>id</code> 名称对大小写敏感</p>
+<p><code>id</code> 必须包含至少一个字符，且不能包含空白字符（空格、制表符等）</p>
+</div>
+<h2> Class 与 ID 的差异</h2>
+<p><strong>同一个类名</strong> 可以由多个 HTML 元素使用，而一个 <code>id</code> 名称只能由页面中的 <strong>一个 HTML 元素</strong> 使用</p>
+
+<h2> 通过 ID 和链接实现 HTML 书签</h2>
+<p>HTML 书签用于让读者跳转至网页的特定部分，如果页面很长，那么书签可能很有用。</p>
+<p>要使用书签，您必须首先创建它，然后为它添加链接，然后，当单击链接时，页面将滚动到带有书签的位置。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>
+<h2> 在 JavaScript 中使用 id 属性</h2>
+<p>JavaScript 也可以使用 <code>id</code> 属性为特定元素执行某些任务。</p>
+<p>JavaScript 可以使用 <code>getElementById()</code> 方法访问拥有特定 <code>id</code> 的元素。</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">内联框架</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/iframe.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/iframe.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>iframe</code> 标签用于在网页内显示网页。</p>
+<h2> 语法</h2>
+<div class="language-html line-numbers-mode" data-ext="html"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>URL<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></summary>
+    <content type="html"><![CDATA[<p><code>iframe</code> 标签用于在网页内显示网页。</p>
+<h2> 语法</h2>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>src</strong>：指向隔离页面的位置</li>
+</ul>
+<h2> 设置高度和宽度</h2>
+<p><code>height</code> 和 <code>width</code> 属性用于规定 <code>iframe</code> 的 <strong>高度</strong> 和 <strong>宽度。</strong></p>
+<p>属性值的默认单位是像素，但也可以用百分比来设定（比如：<code>"80%"</code>）。例如：</p>
+
+<h2> 删除边框</h2>
+<p><code>frameborder</code> 属性规定是否显示 <code>iframe</code> 周围的 <strong>边框。</strong></p>
+<p>设置属性值为 <code>"0"</code> 就可以移除边框。例如：</p>
+
+<h2> 使用 iframe 作为链接的目标</h2>
+<p><code>iframe</code> 可用作链接的目标（target）。</p>
+<p>链接的 <code>target</code> 属性必须引用 <code>iframe</code> 的 <code>name</code> 属性。例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">图像</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/images.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/images.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 图像标签 &lt;img&gt; 和源属性 src</h2>
+<p>在 HTML 中，图像由 <code>&lt;img&gt;</code> 标签定义。</p>
+<p><code>&lt;img&gt;</code> 是 <strong>空标签</strong>，它只包含属性，并且 <strong>没有</strong> 闭合标签，在结尾记得添加 <code>/</code> 斜杠，如：<code>&lt;img /&gt;</code>。</p>
+<p>要在页面上显示图像，需要使用 <strong>源属性</strong> <code>src</code>。源属性的值是图像的 <strong>URL 地址。</strong></p>]]></summary>
+    <content type="html"><![CDATA[<h2> 图像标签 &lt;img&gt; 和源属性 src</h2>
+<p>在 HTML 中，图像由 <code>&lt;img&gt;</code> 标签定义。</p>
+<p><code>&lt;img&gt;</code> 是 <strong>空标签</strong>，它只包含属性，并且 <strong>没有</strong> 闭合标签，在结尾记得添加 <code>/</code> 斜杠，如：<code>&lt;img /&gt;</code>。</p>
+<p>要在页面上显示图像，需要使用 <strong>源属性</strong> <code>src</code>。源属性的值是图像的 <strong>URL 地址。</strong></p>
+<p><code>width</code> 和 <code>height</code> 可以调整图像的大小</p>
+<h2> 替换文本属性 alt</h2>
+<p>如果无法显示图像，将显示 <code>alt</code> 属性中的文本。</p>
+
+<h2> 图像实例</h2>
+<ul>
+<li>
+<p>插入图像</p>
+<p>在网页中显示图像。</p>
+
+</li>
+<li>
+<p>背景图片</p>
+<p>向 HTML 页面添加背景图片。</p>
+
+<ul>
+<li><strong>background</strong>：规定文档的背景图像。请使用 <strong>样式</strong> 取代它。</li>
+</ul>
+</li>
+<li>
+<p>排列图片</p>
+<p>在文字中排列图像。</p>
+
+<ul>
+<li><strong>bottom</strong>：文字底部对齐</li>
+<li><strong>middle</strong>：文字中间对齐</li>
+<li><strong>top</strong>：文字上部对齐</li>
+</ul>
+</li>
+<li>
+<p>浮动图像</p>
+<p>使图片浮动至段落的左边或右边。</p>
+
+<ul>
+<li><strong>left</strong>：图像将浮动到文本的左侧</li>
+<li><strong>right</strong>：图像将浮动到文本的右侧</li>
+</ul>
+</li>
+<li>
+<p>调整图像尺寸</p>
+<p>将图片调整到不同的尺寸。</p>
+
+<ul>
+<li><strong>width</strong>：改变图像的宽</li>
+<li><strong>height</strong>：改变图像的高</li>
+</ul>
+</li>
+<li>
+<p>创建图像映射</p>
+<p>创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。</p>
+
+<ul>
+<li>
+<p><strong>&lt;area&gt;</strong>：<code>&lt;area&gt;</code> 标签定义图像映射中的区域（注：图像映射指得是带有可点击区域的图像）</p>
+<p><code>area</code> 元素总是嵌套在 <code>&lt;map&gt;</code> 标签中。</p>
+<p><code>&lt;img&gt;</code> 标签中的 <code>usemap</code> 属性与 <code>map</code> 标签中的 <code>name</code> 属性相关联，创建图像与映射之间的联系</p>
+<ul>
+<li><strong>shape</strong>：定义区域的形状</li>
+<li><strong>coords</strong>：定义可点击区域（对鼠标敏感的区域）的坐标</li>
+<li><strong>href</strong>：定义此区域的目标 URL</li>
+<li><strong>target</strong>：规定在何处打开 href 属性指定的目标 URL</li>
+<li><strong>alt</strong>：定义此区域的替换文本</li>
+</ul>
+</li>
+<li>
+<p><strong>&lt;map&gt;</strong>：<code>&lt;map&gt;</code> 标签定义一个客户端图像映射。图像映射（image-map）指带有可点击区域的一幅图像</p>
+<p><code>&lt;img&gt;</code> 标签中的 <code>usemap</code> 属性可引用 <code>&lt;map&gt;</code> 标签中的 <code>id</code> 或 <code>name</code> 属性（取决于浏览器），所以应同时向 <code>&lt;map&gt;</code> 标签添加 <code>id</code> 和 <code>name</code> 属性</p>
+<ul>
+<li><strong>name</strong>：为图像映射（image-map）规定的名称</li>
+<li><strong>id</strong>：为 <code>map</code> 标签定义唯一的名称</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">JavaScript</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/javascript.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/javascript.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>JavaScript 使 HTML 页面更具动态性和交互性。</p>
+<h2> HTML &lt;script&gt; 标签</h2>
+<p>HTML <code>&lt;script&gt;</code> 标签用于定义客户端脚本（JavaScript）。</p>
+<p><code>&lt;script&gt;</code> 元素即可包含脚本语句，也可通过 <code>src</code> 属性指向外部脚本文件。</p>
+<p>JavaScript 的常见用途是图像处理、表单验证和内容的动态更改。</p>
+<p>如需选取 HTML 元素，JavaScript 最常用 <code>document.getElementById()</code> 方法。</p>]]></summary>
+    <content type="html"><![CDATA[<p>JavaScript 使 HTML 页面更具动态性和交互性。</p>
+<h2> HTML &lt;script&gt; 标签</h2>
+<p>HTML <code>&lt;script&gt;</code> 标签用于定义客户端脚本（JavaScript）。</p>
+<p><code>&lt;script&gt;</code> 元素即可包含脚本语句，也可通过 <code>src</code> 属性指向外部脚本文件。</p>
+<p>JavaScript 的常见用途是图像处理、表单验证和内容的动态更改。</p>
+<p>如需选取 HTML 元素，JavaScript 最常用 <code>document.getElementById()</code> 方法。</p>
+<p>例如：向 <code>id="demo"</code> 的 HTML 元素内写入 <code>"Hello JavaScript!"</code></p>
+
+<h2> HTML &lt;noscript&gt; 标签</h2>
+<p>HTML <code>&lt;noscript&gt;</code> 标签定义了 <strong>替代内容</strong>，这些内容将显示给在浏览器中禁用了脚本或浏览器不支持脚本的用户。</p>
+
+<h2> JavaScript 实例</h2>
+<ul>
+<li>
+<p>JavaScript 更改内容</p>
+
+</li>
+<li>
+<p>JavaScript 更改样式</p>
+
+</li>
+<li>
+<p>JavaScript 更改属性</p>
+
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">布局</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/layout.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/layout.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>网站常常以多列显示内容（就像杂志和报纸）。</p>
+<h2> 使用 &lt;div&gt; 元素的 HTML 布局</h2>
+<p><code>&lt;div&gt;</code> 元素常用作布局工具，因为能够轻松地通过 CSS 对其进行定位。例如：</p>
+
+<h2> 使用 HTML5 的网站布局</h2>
+<p>HTML5 提供的新语义元素定义了网页的不同部分。HTML5 语义元素如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">header</td>
+<td style="text-align:left">定义文档或节的页眉</td>
+</tr>
+<tr>
+<td style="text-align:center">nav</td>
+<td style="text-align:left">定义导航链接的容器</td>
+</tr>
+<tr>
+<td style="text-align:center">section</td>
+<td style="text-align:left">定义文档中的节</td>
+</tr>
+<tr>
+<td style="text-align:center">article</td>
+<td style="text-align:left">定义独立的自包含文章</td>
+</tr>
+<tr>
+<td style="text-align:center">aside</td>
+<td style="text-align:left">定义内容之外的内容（比如：侧栏）</td>
+</tr>
+<tr>
+<td style="text-align:center">footer</td>
+<td style="text-align:left">定义文档或节的页脚</td>
+</tr>
+<tr>
+<td style="text-align:center">details</td>
+<td style="text-align:left">定义额外的细节</td>
+</tr>
+<tr>
+<td style="text-align:center">summary</td>
+<td style="text-align:left">定义 <code>details</code> 元素的标题</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<p>网站常常以多列显示内容（就像杂志和报纸）。</p>
+<h2> 使用 &lt;div&gt; 元素的 HTML 布局</h2>
+<p><code>&lt;div&gt;</code> 元素常用作布局工具，因为能够轻松地通过 CSS 对其进行定位。例如：</p>
+
+<h2> 使用 HTML5 的网站布局</h2>
+<p>HTML5 提供的新语义元素定义了网页的不同部分。HTML5 语义元素如下：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签</th>
+<th style="text-align:left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">header</td>
+<td style="text-align:left">定义文档或节的页眉</td>
+</tr>
+<tr>
+<td style="text-align:center">nav</td>
+<td style="text-align:left">定义导航链接的容器</td>
+</tr>
+<tr>
+<td style="text-align:center">section</td>
+<td style="text-align:left">定义文档中的节</td>
+</tr>
+<tr>
+<td style="text-align:center">article</td>
+<td style="text-align:left">定义独立的自包含文章</td>
+</tr>
+<tr>
+<td style="text-align:center">aside</td>
+<td style="text-align:left">定义内容之外的内容（比如：侧栏）</td>
+</tr>
+<tr>
+<td style="text-align:center">footer</td>
+<td style="text-align:left">定义文档或节的页脚</td>
+</tr>
+<tr>
+<td style="text-align:center">details</td>
+<td style="text-align:left">定义额外的细节</td>
+</tr>
+<tr>
+<td style="text-align:center">summary</td>
+<td style="text-align:left">定义 <code>details</code> 元素的标题</td>
+</tr>
+</tbody>
+</table>
+
+<h2> 使用表格的 HTML 布局</h2>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>&lt;table&gt;</code> 元素不是作为布局工具而设计的</p>
+<p><code>&lt;table&gt;</code> 元素的作用是显示表格化的数据</p>
+</div>
+<p>使用 <code>&lt;table&gt;</code> 元素能够取得布局效果，因为能够通过 CSS 设置表格元素的样式。例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">列表</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/lists.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/lists.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 支持 <strong>有序</strong>、<strong>无序</strong> 和 <strong>自定义</strong> 列表</p>
+<h2> 无序列表</h2>
+<p>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。</p>
+<p>无序列表始于 <code>&lt;ul&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code>。列表还可以进行嵌套。</p>
+
+<ul>
+<li><strong>ul</strong>：定义无序列表</li>
+<li><strong>li</strong>：定义列表项目</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 支持 <strong>有序</strong>、<strong>无序</strong> 和 <strong>自定义</strong> 列表</p>
+<h2> 无序列表</h2>
+<p>无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。</p>
+<p>无序列表始于 <code>&lt;ul&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code>。列表还可以进行嵌套。</p>
+
+<ul>
+<li><strong>ul</strong>：定义无序列表</li>
+<li><strong>li</strong>：定义列表项目</li>
+</ul>
+<h2> 有序列表</h2>
+<p>同样，有序列表也是一列项目，列表项目使用数字进行标记。</p>
+<p>有序列表始于 <code>&lt;ol&gt;</code> 标签。每个列表项始于 <code>&lt;li&gt;</code> 标签。</p>
+
+<ul>
+<li><strong>ol</strong>：定义有序列表</li>
+<li><strong>start</strong>：规定有序列表的起始值</li>
+</ul>
+<h2> 自定义列表</h2>
+<p>自定义列表不仅仅是一列项目，而是项目及其注释的组合。</p>
+<p>自定义列表以 <code>&lt;dl&gt;</code> 标签开始。每个自定义列表项以 <code>&lt;dt&gt;</code> 开始。每个自定义列表项的定义以 <code>&lt;dd&gt;</code> 开始。</p>
+
+<ul>
+<li><strong>dl</strong>：定义自定义列表</li>
+<li><strong>dt</strong>：定义列表中的项目</li>
+<li><strong>dd</strong>：在定义列表中定义条目的定义部分</li>
+</ul>
+<h2> 列表实例</h2>
+<ul>
+<li>
+<p>不同类型的无序列表</p>
+
+<ul>
+<li><strong>type</strong>：规定列表的项目符号的类型。<strong>不推荐使用</strong>，被样式所代替
+<ul>
+<li><strong>disc</strong>：黑色圆形</li>
+<li><strong>circle</strong>：白色圆形</li>
+<li><strong>square</strong>：黑色正方形</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>不同类型的有序列表</p>
+
+<ul>
+<li><strong>type</strong>：规定在列表中使用的标记类型
+<ul>
+<li><strong>1</strong>：数字列表</li>
+<li><strong>A</strong>：大写字母列表</li>
+<li><strong>a</strong>：小写字母列表</li>
+<li><strong>I</strong>：大写罗马字母列表</li>
+<li><strong>i</strong>：小写罗马字母列表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">mercur</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/mercur.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/mercur.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<img src="/html5/eg_merglobe.gif">
+]]></summary>
+    <content type="html"><![CDATA[<img src="/html5/eg_merglobe.gif">
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">响应式</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/responsive.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/responsive.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>响应式网页设计是关于创建在所有设备上看起来都不错的网页！</p>
+<p>响应式网页设计将自动调整不同的屏幕尺寸和视口。</p>
+<h2> 什么是 RWD</h2>
+<ul>
+<li>RWD 指的是 <strong>响应式 Web 设计</strong>（Responsive Web Design）</li>
+<li>RWD 能够以可变尺寸传递网页</li>
+<li>RWD 对于平板和移动设备是必需的</li>
+</ul>
+<h2> 创建您自己的响应式设计</h2>
+<p>通过类样式创建响应式设计。例如：</p>
+
+<h2> 使用 Bootstrap</h2>
+<p>另一个创建响应式设计的方法，是使用现成的 CSS 框架。</p>]]></summary>
+    <content type="html"><![CDATA[<p>响应式网页设计是关于创建在所有设备上看起来都不错的网页！</p>
+<p>响应式网页设计将自动调整不同的屏幕尺寸和视口。</p>
+<h2> 什么是 RWD</h2>
+<ul>
+<li>RWD 指的是 <strong>响应式 Web 设计</strong>（Responsive Web Design）</li>
+<li>RWD 能够以可变尺寸传递网页</li>
+<li>RWD 对于平板和移动设备是必需的</li>
+</ul>
+<h2> 创建您自己的响应式设计</h2>
+<p>通过类样式创建响应式设计。例如：</p>
+
+<h2> 使用 Bootstrap</h2>
+<p>另一个创建响应式设计的方法，是使用现成的 CSS 框架。</p>
+<p><code>Bootstrap</code> 是最流行的开发响应式 web 的 HTML、CSS 和 JS 框架。</p>
+<p><code>Bootstrap</code> 帮助您开发在任何尺寸都外观出众的站点：显示器、笔记本电脑、平板电脑或手机。例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">sun</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/sun.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/sun.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<img src="/html5/eg_sun.gif">
+]]></summary>
+    <content type="html"><![CDATA[<img src="/html5/eg_sun.gif">
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">表格</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/tables.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/tables.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<p>表格由 <code>&lt;table&gt;</code> 标签来定义。每个表格均有若干行（由 <code>&lt;tr&gt;</code> 标签定义），每行被分割为若干单元格（由 <code>&lt;td&gt;</code> 标签定义）。字母 <code>td</code> 指表格数据（table data），即数据单元格的内容。</p>
+<p>数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
+
+<h2> 表格和边框属性</h2>
+<p>如果不定义 <strong>边框属性</strong>，表格将 <strong>不显示</strong> 边框。</p>]]></summary>
+    <content type="html"><![CDATA[<p>表格由 <code>&lt;table&gt;</code> 标签来定义。每个表格均有若干行（由 <code>&lt;tr&gt;</code> 标签定义），每行被分割为若干单元格（由 <code>&lt;td&gt;</code> 标签定义）。字母 <code>td</code> 指表格数据（table data），即数据单元格的内容。</p>
+<p>数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。</p>
+
+<h2> 表格和边框属性</h2>
+<p>如果不定义 <strong>边框属性</strong>，表格将 <strong>不显示</strong> 边框。</p>
+
+<ul>
+<li><strong>border</strong>：定义图像周围的边框。<strong>不推荐使用</strong>，被样式所代替</li>
+</ul>
+<h2> 表格的表头</h2>
+<p>表格的表头使用 <code>&lt;th&gt;</code> 标签进行定义。</p>
+
+<h2> 表格中的空单元格</h2>
+<p>如果某个单元格是 <strong>空的</strong>（没有内容），浏览器可能无法显示出这个单元格的边框，为了避免这种情况，在空单元格中添加一个 <strong>空格占位符</strong>（<code>&amp;nbsp;</code>），就可以将边框显示出来。</p>
+
+<h2> 表格实例</h2>
+<ul>
+<li>
+<p>带有标题的表格</p>
+<p>给表格设置一个标题。</p>
+
+<ul>
+<li><strong>caption</strong>：设置表格的标题</li>
+</ul>
+</li>
+<li>
+<p>跨行或跨列的表格单元格</p>
+
+<ul>
+<li><strong>colspan</strong>：设置单元格可横跨的列数</li>
+<li><strong>rowspan</strong>：设置单元格可横跨的行数</li>
+</ul>
+</li>
+<li>
+<p>表格内的标签</p>
+<p>在不同的元素内显示元素。</p>
+
+</li>
+<li>
+<p>单元格边距</p>
+<p>创建单元格内容与其边框之间的空白。</p>
+
+<ul>
+<li><strong>cellpadding</strong>：规定单元格内容与其边框之间的距离</li>
+</ul>
+</li>
+<li>
+<p>向表格添加背景颜色或背景图像</p>
+
+<ul>
+<li><strong>bgcolor</strong>：规定表格的背景颜色。<strong>不推荐使用</strong>，被样式所代替</li>
+<li><strong>background</strong>：规定表格的背景图像</li>
+</ul>
+</li>
+<li>
+<p>向表格单元添加背景颜色或者背景图像</p>
+
+</li>
+<li>
+<p>在表格单元中排列内容</p>
+
+<ul>
+<li><strong>align</strong>：规定表格相对周围元素的对齐方式。<strong>不推荐使用</strong>，被样式所代替
+<ul>
+<li><strong>left</strong>：向左对齐</li>
+<li><strong>center</strong>：中间对齐</li>
+<li><strong>right</strong>：向右对齐</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>框架属性</p>
+<p>控制围绕表格的边框。</p>
+
+<ul>
+<li><strong>frame</strong>：规定外侧边框的哪个部分是可见的
+<ul>
+<li><strong>void</strong>：外侧所有边框不可见</li>
+<li><strong>above</strong>：上边框可见</li>
+<li><strong>below</strong>：下边框可见</li>
+<li><strong>hsides</strong>：上下边框可见</li>
+<li><strong>lhs</strong>：左边框可见</li>
+<li><strong>rhs</strong>：右边框可见</li>
+<li><strong>vsides</strong>：左右边框可见</li>
+<li><strong>box</strong>：外侧所有边框可见</li>
+<li><strong>border</strong>：外侧所有边框可见</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-08T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">venus</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/venus.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/venus.html"/>
+    <updated>2023-05-08T10:29:35.000Z</updated>
+    <summary type="html"><![CDATA[<img src="/html5/eg_venus.gif">
+]]></summary>
+    <content type="html"><![CDATA[<img src="/html5/eg_venus.gif">
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-07T00:00:00.000Z</published>
+  </entry>
+  <entry>
     <title type="text">链接</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/links.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/links.html"/>
-    <updated>2023-05-07T13:36:19.000Z</updated>
+    <updated>2023-05-08T10:29:18.000Z</updated>
     <summary type="html"><![CDATA[<p>HTML 使用 <strong>超级链接</strong> 与网络上的另一个文档相连。</p>
 <p>几乎可以在所有的网页中找到链接。点击链接可以从一张页面 <strong>跳转</strong> 到另一张页面。</p>
 <h2> HTML 超链接（链接）</h2>
@@ -78,12 +869,36 @@
 <div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>您也可以在其他页面中创建指向该锚的链接：</p>
 <div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
 </ul>
-<p>在上面的代码中，我们将 <code>#</code> 符号和锚名称添加到 URL 的末端，就可以直接链接到 <code>tips</code> 这个命名锚了。</p>
+<p>在上面的代码中，将 <code>#</code> 符号和锚名称添加到 URL 的末端，就可以直接链接到 <code>tips</code> 这个命名锚了。</p>
+
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
 <p>锚的名称可以是任何您喜欢的名字</p>
 <p>您可以使用 <code>id</code> 属性来替代 <code>name</code> 属性，命名锚同样有效</p>
 </div>
+<h2> 链接实例</h2>
+<ul>
+<li>
+<p>将图像作为链接</p>
+<p>使用图像作为链接。</p>
+
+</li>
+<li>
+<p>创建电子邮件链接</p>
+<p>链接到一个邮件。</p>
+
+<ul>
+<li><strong>mailto</strong>：指定收件人（多人中间分号 <code>;</code> 间隔）</li>
+<li><strong>cc</strong>：指定抄送人员（多人中间分号间隔）</li>
+<li><strong>bcc</strong>：指定密送人员（多人中间分号间隔）</li>
+<li><strong>subject</strong>：指定邮件主题</li>
+<li><strong>body</strong>：指定邮件内容</li>
+<li><strong>?</strong>：在 <code>mailto</code> 紧贴着的区块写完之后加上问号，就可以使用 <code>key=value</code> 的方式来写其它属性</li>
+<li><strong>&amp;</strong>：对于其他属性来说，第一个必须和 <code>mailto</code> 区块之间使用 <code>?</code> 进行连接。而从第二个开始，需要指定其他属性的，必须使用 <code>&amp;</code> 符号分割</li>
+<li><strong>%20</strong>：来替换单词之间的空格，这样浏览器就可以正确地显示文本了</li>
+</ul>
+</li>
+</ul>
 ]]></content>
     <category term="Frontend"/>
     <published>2023-05-07T00:00:00.000Z</published>

@@ -1,0 +1,1 @@
+import{_ as e,Z as s,$ as t,a2 as _}from"./framework-714d3df7.js";const n="/html5/eg_venus.gif",c={},o=_("img",{src:n},null,-1),r=[o];function a(l,i){return s(),t("div",null,r)}const u=e(c,[["render",a],["__file","venus.html.vue"]]);export{u as default};
