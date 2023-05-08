@@ -102,11 +102,115 @@ HTML 使用 **超级链接** 与网络上的另一个文档相连。
     <a href="https://www.w3school.com.cn/html/html_links.asp#tips">有用的提示</a>
     ```
 
-在上面的代码中，我们将 `#` 符号和锚名称添加到 URL 的末端，就可以直接链接到 `tips` 这个命名锚了。
+在上面的代码中，将 `#` 符号和锚名称添加到 URL 的末端，就可以直接链接到 `tips` 这个命名锚了。
+
+::: normal-demo 演示
+
+```html
+<p>
+  <a href="#C7">查看 Chapter 7。</a>
+</p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 4</a></h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2><a name="C7">Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+```
+
+:::
 
 ::: tip
 锚的名称可以是任何您喜欢的名字
 
 您可以使用 `id` 属性来替代 `name` 属性，命名锚同样有效
 :::
+
+## 链接实例
+
+- 将图像作为链接
+
+    使用图像作为链接。
+
+    ::: normal-demo 演示
+
+    ```html
+    <p>
+      您也可以使用图像来作链接：
+      <a href="https://www.w3school.com.cn/">
+        <img src="/background.png" width="104" height="42" />
+      </a>
+    </p>
+    ```
+
+    :::
+
+- 创建电子邮件链接
+
+    链接到一个邮件。
+
+    ::: normal-demo 演示
+
+    ```html
+    <p>
+      这是邮件链接：
+      <a href="mailto:someone@microsoft.com;sometwo@microsoft.com?cc=somethree@microsoft.com&bcc=somefour@microsoft.com&subject=this%20is%20title&body=this%20is%20body">发送邮件</a>
+    </p>
+    ```
+
+    :::
+
+    - **mailto**：指定收件人（多人中间分号 `;` 间隔）
+    - **cc**：指定抄送人员（多人中间分号间隔）
+    - **bcc**：指定密送人员（多人中间分号间隔）
+    - **subject**：指定邮件主题
+    - **body**：指定邮件内容
+    - **?**：在 `mailto` 紧贴着的区块写完之后加上问号，就可以使用 `key=value` 的方式来写其它属性
+    - **&**：对于其他属性来说，第一个必须和 `mailto` 区块之间使用 `?` 进行连接。而从第二个开始，需要指定其他属性的，必须使用 `&` 符号分割
+    - **%20**：来替换单词之间的空格，这样浏览器就可以正确地显示文本了
 
