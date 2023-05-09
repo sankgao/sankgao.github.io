@@ -47,6 +47,7 @@ export const zhSidebarConfig = sidebar({
             "head.md",
             "layout.md",
             "responsive.md",
+            "computercode.md",
           ],
         },
         {
