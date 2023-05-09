@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-09T01:43:11.065Z</updated>
+  <updated>2023-05-09T10:57:02.996Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -19,6 +19,882 @@
   <category term="Blog"/>
   <category term="VuePress"/>
   <category term="Computer"/>
+  <entry>
+    <title type="text">背景</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/backgrounds.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/backgrounds.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>好的背景使站点看上去特别棒。</p>
+<h2> 背景</h2>
+<p><code>&lt;body&gt;</code> 拥有 <strong>两个</strong> 配置背景的标签。背景可以是 <strong>颜色</strong> 或 <strong>图像。</strong></p>
+<h3> 背景颜色（Bgcolor）</h3>
+<p>背景颜色属性将背景设置为某种颜色。属性值可以是 <strong>十六进制数</strong>、<strong>RGB 值</strong> 或 <strong>颜色名。</strong></p>
+<p>HTML5 中不支持。请使用 CSS 代替。</p>]]></summary>
+    <content type="html"><![CDATA[<p>好的背景使站点看上去特别棒。</p>
+<h2> 背景</h2>
+<p><code>&lt;body&gt;</code> 拥有 <strong>两个</strong> 配置背景的标签。背景可以是 <strong>颜色</strong> 或 <strong>图像。</strong></p>
+<h3> 背景颜色（Bgcolor）</h3>
+<p>背景颜色属性将背景设置为某种颜色。属性值可以是 <strong>十六进制数</strong>、<strong>RGB 值</strong> 或 <strong>颜色名。</strong></p>
+<p>HTML5 中不支持。请使用 CSS 代替。</p>
+
+<p>以上的代码均将背景颜色设置为黑色。</p>
+<h3> 背景（Background）</h3>
+<p>背景属性将背景设置为图像。属性值为图像的 URL。如果图像尺寸小于浏览器窗口，那么图像将在整个浏览器窗口进行复制。</p>
+<p>HTML5 中不支持。请使用 CSS 代替。</p>
+
+<p>URL 可以是相对地址，也可以使绝对地址。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>如果您打算使用背景图片，您需要紧记一下几点：</p>
+<ul>
+<li>背景图像是否增加了页面的加载时间。小贴士：图像文件不应超过 10k。</li>
+<li>背景图像是否与页面中的其他图象搭配良好。</li>
+<li>背景图像是否与页面中的文字颜色搭配良好。</li>
+<li>图像在页面中平铺后，看上去是否还可以</li>
+<li>对文字的注意力是否被背景图像喧宾夺主了</li>
+</ul>
+</div>
+<h2> 有用的提示</h2>
+<p><code>&lt;body&gt;</code> 标签中的背景颜色（bgcolor）、背景（background）和文本（text）属性在最新的 HTML 标准（HTML4 和 XHTML）中已被废弃。</p>
+<p>应该使用层叠样式表（CSS）来定义 HTML 元素的布局和显示属性。</p>
+<h2> 背景实例</h2>
+<ul>
+<li>
+<p>搭配良好的背景和颜色</p>
+<p>背景颜色和文字颜色搭配良好，使页面中的文字易于阅读。</p>
+
+</li>
+<li>
+<p>搭配得不好的背景和颜色</p>
+<p>背景颜色和文字颜色搭配得不好，使页面中的文字难于阅读。</p>
+
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">字符集</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/charset.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/charset.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>为了正确显示 HTML 页面，Web 浏览器必须知道要使用哪个字符集。</p>
+<h2> 从 ASCII 到 UTF-8</h2>
+<p><code>ASCII</code> 是 <strong>第一个</strong> 字符编码标准。<code>ASCII</code> 定义了 <code>128</code> 种可以在互联网上使用的字符：数字（0-9）、英文字母（A-Z）和一些特殊字符。比如：<code>!</code>、<code>$</code>、<code>+</code>、<code>-</code>、<code>(</code>、<code>)</code>、<code>@</code>、<code>&lt;</code>、<code>&gt;</code>。</p>]]></summary>
+    <content type="html"><![CDATA[<p>为了正确显示 HTML 页面，Web 浏览器必须知道要使用哪个字符集。</p>
+<h2> 从 ASCII 到 UTF-8</h2>
+<p><code>ASCII</code> 是 <strong>第一个</strong> 字符编码标准。<code>ASCII</code> 定义了 <code>128</code> 种可以在互联网上使用的字符：数字（0-9）、英文字母（A-Z）和一些特殊字符。比如：<code>!</code>、<code>$</code>、<code>+</code>、<code>-</code>、<code>(</code>、<code>)</code>、<code>@</code>、<code>&lt;</code>、<code>&gt;</code>。</p>
+<p><code>ISO-8859-1</code> 是 HTML4 的默认字符集。此字符集支持 <code>256</code> 个不同的字符代码。HTML4 同时支持 <code>UTF-8</code>。</p>
+<p><code>ANSI</code>（Windows-1252）是原始的 Windows 字符集。<code>ANSI</code> 与 <code>ISO-8859-1</code> <strong>相同</strong>，不同之处在于 <code>ANSI</code> 具有 <code>32</code> 个 <strong>额外</strong> 的字符。</p>
+<p>HTML5 规范鼓励 Web 开发人员使用 <code>UTF-8</code> 字符集，该字符集涵盖了世界上几乎所有的字符和符号。</p>
+<h2> HTML charset 属性</h2>
+<p>为了正确显示 HTML 页面，Web 浏览器必须知道页面中使用的字符集。</p>
+<p>这是在 <code>&lt;meta&gt;</code> 标签中规定的：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果未规定，<code>UTF-8</code> 则是 HTML 中的默认字符集。</p>
+<h2> ASCII 字符集</h2>
+<ul>
+<li>ASCII 使用 <code>0</code> 到 <code>31</code>（以及 <code>127</code>）之间的值作为控制字符</li>
+<li>ASCII 使用 <code>32</code> 到 <code>126</code> 的值表示字母、数字和符号</li>
+<li>ASCII 不使用 <code>128</code> 到 <code>255</code> 之间的值</li>
+</ul>
+<h2> ANSI 字符集（Windows-1252）</h2>
+<ul>
+<li>对于 <code>0</code> 到 <code>127</code> 的值，<code>ANSI</code> 与 <code>ASCII</code> 相同</li>
+<li><code>ANSI</code> 有一组专有的字符，其值从 <code>128</code> 到 <code>159</code></li>
+<li>对于 <code>160</code> 到 <code>255</code> 的值，<code>ANSI</code> 与 <code>UTF-8</code> 相同</li>
+</ul>
+<h2> ISO-8859-1 字符集</h2>
+<ul>
+<li>对于 <code>0</code> 到 <code>127</code> 的值，<code>8859-1</code> 与 <code>ASCII</code> 相同</li>
+<li><code>8859-1</code> 不使用 <code>128</code> 到 <code>159</code> 之间的值</li>
+<li>对于从 <code>160</code> 到 <code>255</code> 的值，<code>8859-1</code> 与 <code>UTF-8</code> 相同</li>
+</ul>
+<h2> UTF-8 字符集</h2>
+<ul>
+<li>对于 <code>0</code> 到 <code>127</code> 的值，<code>UTF-8</code> 与 <code>ASCII</code> 相同</li>
+<li><code>UTF-8</code> 不使用 <code>128</code> 到 <code>159</code> 之间的值</li>
+<li>对于 <code>160</code> 到 <code>255</code> 之间的值，<code>UTF-8</code> 与 <code>ANSI</code> 和 <code>8859-1</code> 相同</li>
+<li><code>UTF-8</code> 从值 <code>256</code> 继续，包含超过 <code>10000</code> 个不同字符</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">表情符号</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/emoji.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/emoji.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>表情符号（Emoji）是来自 <code>UTF-8</code> 字符集的字符。</p>
+<h2> 什么是 Emoji</h2>
+<p>表情符号（Emoji）类似图像或图标，但它们并不是。</p>
+<p>它们是来自 <code>UTF-8</code>（Unicode）字符集的字母（字符）。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>UTF-8</code> 几乎涵盖世界上所有字符和符号</p>
+</div>
+<h2> HTML charset 属性</h2>]]></summary>
+    <content type="html"><![CDATA[<p>表情符号（Emoji）是来自 <code>UTF-8</code> 字符集的字符。</p>
+<h2> 什么是 Emoji</h2>
+<p>表情符号（Emoji）类似图像或图标，但它们并不是。</p>
+<p>它们是来自 <code>UTF-8</code>（Unicode）字符集的字母（字符）。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>UTF-8</code> 几乎涵盖世界上所有字符和符号</p>
+</div>
+<h2> HTML charset 属性</h2>
+<p>为了正确显示 HTML 页面，Web 浏览器必须知道页面中使用的字符集。</p>
+<p>这是在 <code>&lt;meta&gt;</code> 标签中规定的：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>如果未规定，<code>UTF-8</code> 则是 HTML 中的默认字符集。</p>
+<h2> UTF-8 字符</h2>
+<p>很多 UTF-8 字符无法在键盘上键入，但始终可以使用数字（被称为实体编号）来显示它们。例如：</p>
+
+<ul>
+<li><strong>A</strong>：实体编号是 <code>65</code></li>
+<li><strong>B</strong>：实体编号是 <code>66</code></li>
+<li><strong>C</strong>：实体编号是 <code>67</code></li>
+</ul>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>为了让浏览器了解您正在显示字符，您必须以 <code>&amp;#</code> 开头并以 <code>;</code>（分号）结束实体编号</p>
+</div>
+<h2> Emoji 字符</h2>
+<p>表情符号也是来自 UTF-8 字母的字符。例如：</p>
+
+<ul>
+<li><strong>😄</strong>：实体编号是 <code>128516</code></li>
+<li><strong>😍</strong>：实体编号是 <code>128525</code></li>
+<li><strong>💗</strong>：实体编号是 <code>128151</code></li>
+</ul>
+<p>由于表情符号是字符，因此可以像 HTML 中的其他任何字符一样复制、显示和调整它们的大小。例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">实体</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/entities.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/entities.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 中的预留字符必须被替换为 <strong>字符实体。</strong>
+键盘上不存在的字符也可以由实体代替。
+如果不存在实体名称，则可使用 <strong>实体编号</strong>、<strong>十进制</strong> 或 <strong>十六进制</strong> 的引用。</p>
+<h2> HTML 实体</h2>
+<p>在 HTML 中某些字符是预留的。</p>
+<p>在 HTML 中不能使用小于号（<code>&lt;</code>）和大于号（<code>&gt;</code>），这是因为浏览器会误认为它们是标签。</p>
+<p>如果希望 <strong>正确地显示</strong> 预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。例如：</p>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 中的预留字符必须被替换为 <strong>字符实体。</strong>
+键盘上不存在的字符也可以由实体代替。
+如果不存在实体名称，则可使用 <strong>实体编号</strong>、<strong>十进制</strong> 或 <strong>十六进制</strong> 的引用。</p>
+<h2> HTML 实体</h2>
+<p>在 HTML 中某些字符是预留的。</p>
+<p>在 HTML 中不能使用小于号（<code>&lt;</code>）和大于号（<code>&gt;</code>），这是因为浏览器会误认为它们是标签。</p>
+<p>如果希望 <strong>正确地显示</strong> 预留字符，我们必须在 HTML 源代码中使用字符实体（character entities）。例如：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>显示小于号，必须这样写：<code>&amp;lt;</code>（实体名称） 或 <code>&amp;#60;</code>（实体数字）。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>使用实体名而不是数字的好处是，名称易于记忆。不过坏处是，浏览器也许并不支持所有实体名称（对实体数字的支持却很好）</p>
+</div>
+<h2> 不间断空格</h2>
+<p>HTML 中的常用字符实体是不间断空格 <code>&amp;nbsp;</code>（non-breaking space）。</p>
+<p>浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 <code>10 </code>个空格，在显示该页面之前，浏览器会删除它们中的 <code>9</code> 个。</p>
+<p>如需在页面中增加空格的数量，您需要使用 <code>&amp;nbsp;</code> 字符实体。</p>
+<h2> HTML 中有用的字符实体</h2>
+<p>实体名称对大小写敏感！</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">显示结果</th>
+<th style="text-align:center">描述</th>
+<th style="text-align:center">实体名称</th>
+<th style="text-align:center">实体编号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">空格</td>
+<td style="text-align:center"><code>&amp;nbsp;</code></td>
+<td style="text-align:center"><code>&amp;#160;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;</td>
+<td style="text-align:center">小于号</td>
+<td style="text-align:center"><code>&amp;lt;</code></td>
+<td style="text-align:center"><code>&amp;#60;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&gt;</td>
+<td style="text-align:center">大于号</td>
+<td style="text-align:center"><code>&amp;gt;</code></td>
+<td style="text-align:center"><code>&amp;#62;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">&amp;</td>
+<td style="text-align:center">和号</td>
+<td style="text-align:center"><code>&amp;amp;</code></td>
+<td style="text-align:center"><code>&amp;#38;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">"</td>
+<td style="text-align:center">引号</td>
+<td style="text-align:center"><code>&amp;quot;</code></td>
+<td style="text-align:center"><code>&amp;#34;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">'</td>
+<td style="text-align:center">撇号</td>
+<td style="text-align:center"><code>&amp;apos; (IE不支持)</code></td>
+<td style="text-align:center"><code>&amp;#39;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">￠</td>
+<td style="text-align:center">分（cent）</td>
+<td style="text-align:center"><code>&amp;cent;</code></td>
+<td style="text-align:center"><code>&amp;#162;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">£</td>
+<td style="text-align:center">镑（pound）</td>
+<td style="text-align:center"><code>&amp;pound;</code></td>
+<td style="text-align:center"><code>&amp;#163;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">¥</td>
+<td style="text-align:center">元（yen）</td>
+<td style="text-align:center"><code>&amp;yen;</code></td>
+<td style="text-align:center"><code>&amp;#165;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">€</td>
+<td style="text-align:center">欧元（euro）</td>
+<td style="text-align:center"><code>&amp;euro;</code></td>
+<td style="text-align:center"><code>&amp;#8364;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">§</td>
+<td style="text-align:center">小节</td>
+<td style="text-align:center"><code>&amp;sect;</code></td>
+<td style="text-align:center"><code>&amp;#167;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">©</td>
+<td style="text-align:center">版权（copyright）</td>
+<td style="text-align:center"><code>&amp;copy;</code></td>
+<td style="text-align:center"><code>&amp;#169;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">®</td>
+<td style="text-align:center">注册商标</td>
+<td style="text-align:center"><code>&amp;reg;</code></td>
+<td style="text-align:center"><code>&amp;#174;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">™</td>
+<td style="text-align:center">商标</td>
+<td style="text-align:center"><code>&amp;trade;</code></td>
+<td style="text-align:center"><code>&amp;#8482;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">×</td>
+<td style="text-align:center">乘号</td>
+<td style="text-align:center"><code>&amp;times;</code></td>
+<td style="text-align:center"><code>&amp;#215;</code></td>
+</tr>
+<tr>
+<td style="text-align:center">÷</td>
+<td style="text-align:center">除号</td>
+<td style="text-align:center"><code>&amp;divide;</code></td>
+<td style="text-align:center"><code>&amp;#247;</code></td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">表单属性</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/form_attributes.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/form_attributes.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>&lt;form&gt;</code> 元素的不同属性。</p>
+<h2> action 属性</h2>
+<p><code>action</code> 属性定义提交表单时要执行的操作。</p>
+<p>通常当用户单击 “提交” 按钮时，表单数据将发送到服务器上的文件中。</p>
+<p><code>&lt;label&gt;</code> 标签为 input 元素定义标注（标记）。例如：</p>
+
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>如果省略 <code>action</code> 属性，则将 <code>action</code> 设置为当前页面</p>
+<p><code>for</code> 属性可把 <code>label</code> 元素绑定到另外一个元素。请把 <code>for</code> 属性的值设置为相关元素的 <code>id</code> 属性的值</p>
+</div>]]></summary>
+    <content type="html"><![CDATA[<p><code>&lt;form&gt;</code> 元素的不同属性。</p>
+<h2> action 属性</h2>
+<p><code>action</code> 属性定义提交表单时要执行的操作。</p>
+<p>通常当用户单击 “提交” 按钮时，表单数据将发送到服务器上的文件中。</p>
+<p><code>&lt;label&gt;</code> 标签为 input 元素定义标注（标记）。例如：</p>
+
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>如果省略 <code>action</code> 属性，则将 <code>action</code> 设置为当前页面</p>
+<p><code>for</code> 属性可把 <code>label</code> 元素绑定到另外一个元素。请把 <code>for</code> 属性的值设置为相关元素的 <code>id</code> 属性的值</p>
+</div>
+<h2> Target 属性</h2>
+<p><code>target</code> 属性规定提交表单后在何处显示响应。</p>
+<p><code>target</code> 属性可设置以下值，默认值为 <code>_self</code>。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">_blank</td>
+<td style="text-align:left">响应显示在新窗口或选项卡中</td>
+</tr>
+<tr>
+<td style="text-align:center">_self</td>
+<td style="text-align:left">响应显示在当前窗口中</td>
+</tr>
+<tr>
+<td style="text-align:center">_parent</td>
+<td style="text-align:left">响应显示在父框架中</td>
+</tr>
+<tr>
+<td style="text-align:center">_top</td>
+<td style="text-align:left">响应显示在窗口的整个 body 中</td>
+</tr>
+<tr>
+<td style="text-align:center">framename</td>
+<td style="text-align:left">响应显示在命名的 iframe 中</td>
+</tr>
+</tbody>
+</table>
+<p>例如：</p>
+
+<h2> method 属性</h2>
+<p><code>method</code> 属性指定提交表单数据时要使用的 HTTP 方法。</p>
+<p>表单数据可以作为 URL 变量（使用 <code>method="get"</code>）或作为 HTTP post 事务（使用 <code>method="post"</code>）发送。</p>
+<p>提交表单数据时，默认的 HTTP 方法是 <code>GET</code>。</p>
+<ul>
+<li>
+<p>在提交表单数据时使用 <code>GET</code> 方法。例如：</p>
+
+</li>
+<li>
+<p>在提交表单数据时使用 <code>POST</code> 方法。例如：</p>
+
+</li>
+</ul>
+<p><strong>关于 GET 的注意事项：</strong></p>
+<ul>
+<li>以 <strong>名称/值</strong> 对的形式将表单数据追加到 <code>URL</code></li>
+<li>永远不要使用 GET 发送敏感数据！（提交的表单数据在 URL 中 <strong>可见</strong>！）</li>
+<li>URL 的长度受到限制（2048 个字符）</li>
+<li>对于用户希望将结果添加为书签的表单提交很有用</li>
+<li>GET 适用于非安全数据。例如：Google 中的查询字符串</li>
+</ul>
+<p><strong>关于 POST 的注意事项：</strong></p>
+<ul>
+<li>将表单数据附加在 HTTP 请求的正文中（提交的表单数据在 URL 中 <strong>不可见</strong>！）</li>
+<li>POST 没有大小限制，可用于发送大量数据</li>
+<li>带有 POST 的表单提交无法添加书签</li>
+</ul>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>如果表单数据包含敏感信息或个人信息，请务必使用 POST</p>
+</div>
+<h2> autocomplete 属性</h2>
+<p><code>autocomplete</code> 属性规定表单是否应打开自动完成功能。</p>
+<p>启用自动完成功能后，浏览器会根据用户之前输入的值自动填写值。例如：</p>
+
+<h2> novalidate 属性</h2>
+<p><code>novalidate</code> 属性是一个布尔属性。</p>
+<p>如果已设置，它规定提交时不应验证表单数据。例如：</p>
+
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>HTML5 中在 <code>input</code> 元素中使用 <code>formnovalidate</code> 覆盖 <code>form</code> 元素的 <code>novalidate</code> 属性。例如：</p>
+<p><code>&lt;input formnovalidate="formnovalidate"&gt;</code></p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">表单元素</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/form_elements.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/form_elements.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>&lt;form&gt;</code> 的不同元素。</p>
+<h2> &lt;input&gt; 元素</h2>
+<p>最重要的表单元素是 <code>&lt;input&gt;</code> 元素。</p>
+<p><code>&lt;input&gt;</code> 元素根据不同的 <code>type</code> 属性，可以变化为多种形态。</p>
+<h2> &lt;select&gt; 元素</h2>
+<p><code>&lt;select&gt;</code> 元素定义下拉列表。例如：</p>
+
+<ul>
+<li>
+<p><strong>&lt;select&gt;</strong>：元素定义下拉列表</p>
+<ul>
+<li><strong>name</strong>：属性规定下拉列表的名称</li>
+</ul>
+</li>
+<li>
+<p><strong>&lt;option&gt;</strong>：元素定义待选择的选项</p>
+<ul>
+<li><strong>value</strong>：属性定义送往服务器的选项值</li>
+<li><strong>selected</strong>：属性定义预定义选项</li>
+</ul>
+</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p><code>&lt;form&gt;</code> 的不同元素。</p>
+<h2> &lt;input&gt; 元素</h2>
+<p>最重要的表单元素是 <code>&lt;input&gt;</code> 元素。</p>
+<p><code>&lt;input&gt;</code> 元素根据不同的 <code>type</code> 属性，可以变化为多种形态。</p>
+<h2> &lt;select&gt; 元素</h2>
+<p><code>&lt;select&gt;</code> 元素定义下拉列表。例如：</p>
+
+<ul>
+<li>
+<p><strong>&lt;select&gt;</strong>：元素定义下拉列表</p>
+<ul>
+<li><strong>name</strong>：属性规定下拉列表的名称</li>
+</ul>
+</li>
+<li>
+<p><strong>&lt;option&gt;</strong>：元素定义待选择的选项</p>
+<ul>
+<li><strong>value</strong>：属性定义送往服务器的选项值</li>
+<li><strong>selected</strong>：属性定义预定义选项</li>
+</ul>
+</li>
+</ul>
+<h2> &lt;textarea&gt; 元素</h2>
+<p><code>&lt;textarea&gt;</code> 元素定义多行输入字段（文本域）。例如：</p>
+
+<ul>
+<li><strong>name</strong>：规定文本区的名称</li>
+<li><strong>rows</strong>：规定文本区内的可见行数</li>
+<li><strong>cols</strong>：规定文本区内的可见宽度</li>
+</ul>
+<h2> &lt;button&gt; 元素</h2>
+<p><code>&lt;button&gt;</code> 元素定义可点击的按钮。例如：</p>
+
+<h2> HTML5 新增加表单元素</h2>
+<ul>
+<li>
+<p>&lt;datalist&gt; 元素</p>
+<p><code>&lt;datalist&gt;</code> 元素为 <code>&lt;input&gt;</code> 元素规定预定义选项列表。</p>
+<p>用户会在他们输入数据时看到预定义选项的下拉列表。</p>
+<p><code>&lt;input&gt;</code> 元素的 <code>list</code> 属性必须引用 <code>&lt;datalist&gt;</code> 元素的 <code>id</code> 属性。例如：</p>
+
+</li>
+<li>
+<p>&lt;keygen&gt; 元素
+<code>&lt;keygen&gt;</code> 标签规定用于表单的密钥对生成器字段。</p>
+<p>当提交表单时，私钥存储在本地，公钥发送到服务器。例如：</p>
+
+</li>
+<li>
+<p>&lt;output&gt; 元素</p>
+<p><code>&lt;output&gt;</code> 标签定义不同类型的输出。比如：执行计算然后在 <code>&lt;output&gt;</code> 元素中显示结果。</p>
+
+</li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">输入类型</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/form_input_types.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/form_input_types.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>&lt;input&gt;</code> 元素的不同类型。</p>
+<h2> text</h2>
+<p><code>&lt;input type="text"&gt;</code> 定义供文本输入的单行输入字段。例如：</p>
+
+<h2> password</h2>
+<p><code>&lt;input type="password"&gt;</code> 定义密码字段。例如：</p>
+
+<h2> submit</h2>
+<p><code>&lt;input type="submit"&gt;</code> 定义提交表单数据至表单处理程序的按钮。</p>
+<p>表单处理程序（form-handler）通常是包含处理输入数据的脚本的服务器页面。例如：</p>]]></summary>
+    <content type="html"><![CDATA[<p><code>&lt;input&gt;</code> 元素的不同类型。</p>
+<h2> text</h2>
+<p><code>&lt;input type="text"&gt;</code> 定义供文本输入的单行输入字段。例如：</p>
+
+<h2> password</h2>
+<p><code>&lt;input type="password"&gt;</code> 定义密码字段。例如：</p>
+
+<h2> submit</h2>
+<p><code>&lt;input type="submit"&gt;</code> 定义提交表单数据至表单处理程序的按钮。</p>
+<p>表单处理程序（form-handler）通常是包含处理输入数据的脚本的服务器页面。例如：</p>
+
+<h2> radio</h2>
+<p><code>&lt;input type="radio"&gt;</code> 定义单选按钮。</p>
+<p>单选按钮允许用户仅从有限的选项中选择一个。例如：</p>
+
+<h2> checkbox</h2>
+<p><code>&lt;input type="checkbox"&gt;</code> 定义复选框。</p>
+<p>复选框允许用户在有限数量的选项中选择零个或多个选项。例如：</p>
+
+<h2> button</h2>
+<p><code>&lt;input type="button"&gt;</code> 定义按钮。例如：</p>
+
+<h2> HTML5 新增加的输入类型</h2>
+<ul>
+<li><strong>color</strong>：用于应该包含颜色的输入字段</li>
+<li><strong>date</strong>：用于应该包含日期的输入字段</li>
+<li><strong>datetime</strong>：允许用户选择日期和时间（有时区）</li>
+<li><strong>datetime-local</strong>：允许用户选择日期和时间（无时区）</li>
+<li><strong>email</strong>：用于应该包含电子邮件地址的输入字段</li>
+<li><strong>month</strong>：允许用户选择月份和年份</li>
+<li><strong>number</strong>：用于应该包含数字值的输入字段</li>
+<li><strong>range</strong>：用于应该包含一定范围内的值的输入字段</li>
+<li><strong>search</strong>：用于搜索字段（搜索字段的表现类似常规文本字段）</li>
+<li><strong>tel</strong>：用于应该包含电话号码的输入字段</li>
+<li><strong>time</strong>：允许用户选择时间（无时区）</li>
+<li><strong>url</strong>：用于应该包含 URL 地址的输入字段</li>
+<li><strong>week</strong>：允许用户选择周和年</li>
+</ul>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>老式 web 浏览器不支持的输入类型，会被视为输入类型 <code>text</code></p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">表单</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/forms.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/forms.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>HTML 表单用于搜集不同类型的用户输入。</p>
+<h2> &lt;form&gt; 元素</h2>
+<p>HTML 表单用于收集用户输入。<code>&lt;form&gt;</code> 元素定义 HTML 表单</p>
+<h2> HTML 表单包含表单元素</h2>
+<p>表单元素指的是不同类型的 <strong>input 元素</strong>、<strong>复选框</strong>、<strong>单选按钮</strong>、<strong>提交按钮</strong> 等等。</p>
+<h3> &lt;input&gt; 元素</h3>
+<p><code>&lt;input&gt;</code> 元素是最重要的表单元素。<code>&lt;input&gt;</code> 元素有很多形态，根据不同的 type 属性。</p>]]></summary>
+    <content type="html"><![CDATA[<p>HTML 表单用于搜集不同类型的用户输入。</p>
+<h2> &lt;form&gt; 元素</h2>
+<p>HTML 表单用于收集用户输入。<code>&lt;form&gt;</code> 元素定义 HTML 表单</p>
+<h2> HTML 表单包含表单元素</h2>
+<p>表单元素指的是不同类型的 <strong>input 元素</strong>、<strong>复选框</strong>、<strong>单选按钮</strong>、<strong>提交按钮</strong> 等等。</p>
+<h3> &lt;input&gt; 元素</h3>
+<p><code>&lt;input&gt;</code> 元素是最重要的表单元素。<code>&lt;input&gt;</code> 元素有很多形态，根据不同的 type 属性。</p>
+<h2> 文本输入</h2>
+<p><code>&lt;input type="text"&gt;</code> 定义用于文本输入的单行输入字段。例如：</p>
+
+<ul>
+<li>
+<p><strong>type</strong>：规定 input 元素的类型。<code>type</code> 属性常用类型：</p>
+<ul>
+<li><strong>text</strong>：定义常规文本输入</li>
+<li><strong>radio</strong>：定义单选按钮输入（选择多个选择之一）</li>
+<li><strong>submit</strong>：定义提交按钮（提交表单）</li>
+</ul>
+</li>
+<li>
+<p><strong>name</strong>：定义 input 元素的名称</p>
+</li>
+<li>
+<p><strong>checked</strong>：规定此 input 元素首次加载时应当被选中</p>
+</li>
+</ul>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>表单本身并不可见。还要注意文本字段的 <strong>默认宽度</strong> 是 20 个字符</p>
+</div>
+<h2> 单选按钮输入</h2>
+<p><code>&lt;input type="radio"&gt;</code> 定义单选按钮，允许用户在有限数量的选项中选择其中之一。例如：</p>
+
+<ul>
+<li><strong>value</strong>：规定 input 元素的值</li>
+</ul>
+<h2> 提交按钮</h2>
+<p><code>&lt;input type="submit"&gt;</code> 定义用于向表单处理程序（form-handler）提交表单的按钮。</p>
+<p><code>action</code> 属性规定当提交表单时向何处发送表单数据。</p>
+<p>表单处理程序通常是包含用来处理输入数据的脚本的服务器页面。例如：</p>
+
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">框架</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/frames.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/frames.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>通过使用框架，您可以在同一个浏览器窗口中显示不止一个页面。</p>
+<p>每份 HTML 文档称为一个框架，并且每个框架都独立于其他的框架。</p>
+<p>使用框架的坏处：</p>
+<ul>
+<li>开发人员必须同时跟踪更多的 HTML 文档</li>
+<li>很难打印整张页面</li>
+</ul>
+<h2> 框架结构标签 &lt;frameset&gt;</h2>
+<ul>
+<li>框架结构标签（<code>&lt;frameset&gt;</code>）定义一个框架集。它被用来组织多个窗口（框架）。HTML5 中不支持</li>
+<li>每个 <code>&lt;frameset&gt;</code> 定义了一系列 <strong>行</strong> 或 <strong>列</strong></li>
+<li><strong>rows</strong>、<strong>cols</strong> 的值规定了每行或每列占据屏幕的面积</li>
+</ul>]]></summary>
+    <content type="html"><![CDATA[<p>通过使用框架，您可以在同一个浏览器窗口中显示不止一个页面。</p>
+<p>每份 HTML 文档称为一个框架，并且每个框架都独立于其他的框架。</p>
+<p>使用框架的坏处：</p>
+<ul>
+<li>开发人员必须同时跟踪更多的 HTML 文档</li>
+<li>很难打印整张页面</li>
+</ul>
+<h2> 框架结构标签 &lt;frameset&gt;</h2>
+<ul>
+<li>框架结构标签（<code>&lt;frameset&gt;</code>）定义一个框架集。它被用来组织多个窗口（框架）。HTML5 中不支持</li>
+<li>每个 <code>&lt;frameset&gt;</code> 定义了一系列 <strong>行</strong> 或 <strong>列</strong></li>
+<li><strong>rows</strong>、<strong>cols</strong> 的值规定了每行或每列占据屏幕的面积</li>
+</ul>
+<h2> 框架标签 &lt;frame&gt;</h2>
+<p><code>&lt;frame&gt;</code> 标签定义 <code>&lt;frameset&gt;</code> 中的一个特定的窗口（框架）。HTML5 中不支持</p>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>不能将 <code>&lt;body&gt;&lt;/body&gt;</code> 标签与 <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如您添加包含一段文本的 <code>&lt;noframes&gt;</code> 标签，就必须将这段文字嵌套于 <code>&lt;body&gt;&lt;/body&gt;</code> 标签内</p>
+</div>
+<h2> 框架实例</h2>
+<ul>
+<li>
+<p>垂直框架</p>
+<p>使用三份不同的文档制作一个垂直框架。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>水平框架</p>
+<p>使用三份不同的文档制作一个水平框架。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>混合框架结构</p>
+<p>制作含有三份文档的框架结构，同时将他们混合置于行和列之中。</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ul>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">语义</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/semantic.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/semantic.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p>语义学（源自古希腊）可定义为对语言意义的研究。</p>
+<p>语义元素是拥有语义的元素。</p>
+<h2> 什么是语义元素</h2>
+<p>语义元素清楚地向浏览器和开发者描述其意义。</p>
+<p>非语义元素的例子：<code>&lt;div&gt;</code> 和 <code>&lt;span&gt;</code> 无法提供关于其内容的信息。</p>
+<p>语义元素的例子：<code>&lt;form&gt;</code>、<code>&lt;table&gt;</code> 以及 <code>&lt;img&gt;</code> 清晰地定义其内容。</p>
+<h2> HTML5 中新的语义元素</h2>]]></summary>
+    <content type="html"><![CDATA[<p>语义学（源自古希腊）可定义为对语言意义的研究。</p>
+<p>语义元素是拥有语义的元素。</p>
+<h2> 什么是语义元素</h2>
+<p>语义元素清楚地向浏览器和开发者描述其意义。</p>
+<p>非语义元素的例子：<code>&lt;div&gt;</code> 和 <code>&lt;span&gt;</code> 无法提供关于其内容的信息。</p>
+<p>语义元素的例子：<code>&lt;form&gt;</code>、<code>&lt;table&gt;</code> 以及 <code>&lt;img&gt;</code> 清晰地定义其内容。</p>
+<h2> HTML5 中新的语义元素</h2>
+<p>许多网站包含了 <strong>指示导航</strong>、<strong>页眉</strong> 以及 <strong>页脚</strong> 的 HTML 代码，例如这些：<code>&lt;div id="nav"&gt;</code>、<code>&lt;div class="header"&gt;</code>、<code>&lt;div id="footer"&gt;</code>。</p>
+<p>HTML5 提供了定义页面不同部分的新语义元素：</p>
+<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><table>
+<thead>
+<tr>
+<th style="text-align:center">标签</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">&lt;article&gt;</td>
+<td style="text-align:left">定义文章</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;aside&gt;</td>
+<td style="text-align:left">定义页面内容以外的内容</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;details&gt;</td>
+<td style="text-align:left">定义用户能够查看或隐藏的额外细节</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;figcaption&gt;</td>
+<td style="text-align:left">定义 <code>&lt;figure&gt;</code> 元素的标题</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;figure&gt;</td>
+<td style="text-align:left">规定自包含内容，比如：图示、图表、照片、代码清单等</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;footer&gt;</td>
+<td style="text-align:left">定义文档或节的页脚</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;header&gt;</td>
+<td style="text-align:left">规定文档或节的页眉</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;main&gt;</td>
+<td style="text-align:left">规定文档的主内容</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;mark&gt;</td>
+<td style="text-align:left">定义重要的或强调的文本</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;nav&gt;</td>
+<td style="text-align:left">定义导航链接</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;section&gt;</td>
+<td style="text-align:left">定义文档中的节</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;summary&gt;</td>
+<td style="text-align:left">定义 <code>&lt;details&gt;</code> 元素的可见标题</td>
+</tr>
+<tr>
+<td style="text-align:center">&lt;time&gt;</td>
+<td style="text-align:left">定义日期/时间</td>
+</tr>
+</tbody>
+</table>
+<h2> &lt;section&gt; 元素</h2>
+<p><code>&lt;section&gt;</code> 元素定义文档中的节。节（section）是有主题的内容组，通常具有标题。</p>
+<p>可以将网站首页划分为简介、内容、联系信息等节。例如：</p>
+
+<h2> &lt;article&gt; 元素</h2>
+<p><code>&lt;article&gt;</code> 元素规定独立的自包含内容。</p>
+<p>文档有其自身的意义，并且可以独立于网站其他内容进行阅读。</p>
+<p><code>&lt;article&gt;</code> 元素的应用场景：论坛、博客、新闻。例如：</p>
+
+<h3> 嵌套语义元素</h3>
+<p>在 HTML5 标准中，<code>&lt;article&gt;</code> 元素定义完整的相关元素自包含块，<code>&lt;section&gt;</code> 元素被定义为相关元素块。</p>
+<p><code>&lt;article&gt;</code> 和 <code>&lt;section&gt;</code> 元素可以随意嵌套</p>
+<ul>
+<li><code>&lt;section&gt;</code> 元素包含 <code>&lt;article&gt;</code> 元素</li>
+<li><code>&lt;article&gt;</code> 元素包含 <code>&lt;sections&gt;</code> 元素</li>
+<li><code>&lt;section&gt;</code> 元素包含 <code>&lt;section&gt;</code> 元素</li>
+<li><code>&lt;article&gt;</code> 元素包含 <code>&lt;article&gt;</code> 元素</li>
+</ul>
+<h2> &lt;header&gt; 元素</h2>
+<p><code>&lt;header&gt;</code> 元素为文档或节规定页眉。</p>
+<p><code>&lt;header&gt;</code> 元素应该被用作介绍性内容的容器。</p>
+<p>一个文档中可以有多个 <code>&lt;header&gt;</code> 元素。例如：</p>
+
+<h2> &lt;footer&gt; 元素</h2>
+<p><code>&lt;footer&gt;</code> 元素为文档或节规定页脚。</p>
+<p><code>&lt;footer&gt;</code> 元素应该提供有关其包含元素的信息。</p>
+<p>页脚通常包含文档的作者、版权信息、使用条款链接、联系信息等等。</p>
+<p>您可以在一个文档中使用多个 <code>&lt;footer&gt;</code> 元素。例如：</p>
+
+<h2> &lt;nav&gt; 元素</h2>
+<p><code>&lt;nav&gt;</code> 元素定义导航链接集合。</p>
+<p><code>&lt;nav&gt;</code> 元素旨在定义大型的导航链接块。</p>
+<div class="hint-container note">
+<p class="hint-container-title">注</p>
+<p>并非文档中所有链接都应该位于 <code>&lt;nav&gt;</code> 元素中</p>
+</div>
+<p>例如：</p>
+
+<h2> &lt;aside&gt; 元素</h2>
+<p><code>&lt;aside&gt;</code> 元素页面主内容之外的某些内容（比如：侧栏）。</p>
+<p>aside 内容应该与周围内容相关。例如：</p>
+
+<h2> &lt;figure&gt; 和 &lt;figcaption&gt; 元素</h2>
+<p>在书籍和报纸中，与图片搭配的标题很常见。</p>
+<p>标题（caption）的作用是为图片添加可见的解释。</p>
+<p>通过 HTML5，图片和标题能够被组合在 <code>&lt;figure&gt;</code> 元素中。例如：</p>
+
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p><code>&lt;img&gt;</code> 元素定义图像，<code>&lt;figcaption&gt;</code> 元素定义标题。</p>
+</div>
+<h2> 为何使用 HTML5 元素</h2>
+<p>如果使用 HTML4 的话，开发者会使用他们喜爱的属性名来设置页面元素的样式：</p>
+<p><code>header</code>、<code>top</code>、<code>bottom</code>、<code>footer</code>、<code>menu</code>、<code>navigation</code>、<code>main</code>、<code>container</code>、<code>content</code>、<code>article</code>、<code>sidebar</code>、<code>topnav</code> 等等</p>
+<p>如此，浏览器便无法识别正确的网页内容。</p>
+<p>而通过 HTML5 元素，比如：<code>&lt;header&gt;</code>、<code>&lt;footer&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;article&gt;</code>，此问题迎刃而解。</p>
+<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>根据 W3C，语义网：“允许跨应用程序、企业和团体对数据进行分享和重用。”</p>
+</div>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">URL</title>
+    <id>https://sankgao.github.io/frontend/html5/tutorial/url.html</id>
+    <link href="https://sankgao.github.io/frontend/html5/tutorial/url.html"/>
+    <updated>2023-05-09T10:53:24.000Z</updated>
+    <summary type="html"><![CDATA[<p><code>URL</code>（Uniform Resource Locator） <strong>统一资源定位符</strong> 也被称为网址。</p>
+<p>URL 可以由单词组成。比如：<code>w3school.com.cn</code>，或者是因特网协议（IP）地址：<code>192.168.1.253</code>。</p>
+<p>大多数人在网上冲浪时，会键入网址的域名，因为名称比数字容易记忆。</p>
+<h2> URL</h2>
+<p>当您点击 HTML 页面中的某个链接时，对应的 <code>&lt;a&gt;</code> 标签指向万维网上的一个地址。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p><code>URL</code>（Uniform Resource Locator） <strong>统一资源定位符</strong> 也被称为网址。</p>
+<p>URL 可以由单词组成。比如：<code>w3school.com.cn</code>，或者是因特网协议（IP）地址：<code>192.168.1.253</code>。</p>
+<p>大多数人在网上冲浪时，会键入网址的域名，因为名称比数字容易记忆。</p>
+<h2> URL</h2>
+<p>当您点击 HTML 页面中的某个链接时，对应的 <code>&lt;a&gt;</code> 标签指向万维网上的一个地址。</p>
+<p>统一资源定位器（URL）用于定位万维网上的文档（或其他数据）。</p>
+<p>比如网址：<a href="http://www.w3school.com.cn/html/index.asp" target="_blank" rel="noopener noreferrer">http://www.w3school.com.cn/html/index.asp</a>，遵守以下的语法规则：</p>
+<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li><strong>scheme</strong>：定义因特网服务的 <strong>类型</strong>。最常见的类型是 <code>http</code></li>
+<li><strong>host</strong>：定义 <strong>域主机</strong>（<code>http</code> 的默认主机是 <code>www</code>）</li>
+<li><strong>domain</strong>：定义因特网 <strong>域名</strong>。比如：<code>w3school.com.cn</code></li>
+<li><strong>:port</strong>：定义主机上的 <strong>端口号</strong>（<code>http</code> 的默认端口号是 <code>80</code>）</li>
+<li><strong>path</strong>：定义服务器上的 <strong>路径</strong>（如果省略，则文档必须位于网站的根目录中）</li>
+<li><strong>filename</strong>：定义 <strong>文档资源</strong> 的名称</li>
+</ul>
+<h2> URL Schemes</h2>
+<p>以下是其中一些最流行的 scheme：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Scheme</th>
+<th style="text-align:left">访问</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">http</td>
+<td style="text-align:left">超文本传输协议</td>
+<td style="text-align:left">以 <code>http://</code> 开头的普通网页。不加密</td>
+</tr>
+<tr>
+<td style="text-align:center">https</td>
+<td style="text-align:left">安全超文本传输协议</td>
+<td style="text-align:left">安全网页。加密所有信息交换</td>
+</tr>
+<tr>
+<td style="text-align:center">ftp</td>
+<td style="text-align:left">文件传输协议</td>
+<td style="text-align:left">用于将文件下载或上传至网站</td>
+</tr>
+<tr>
+<td style="text-align:center">file</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">您计算机上的文件</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <category term="Frontend"/>
+    <published>2023-05-09T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">块</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/blocks.html</id>
@@ -404,7 +1280,7 @@
     <title type="text">JavaScript</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/javascript.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/javascript.html"/>
-    <updated>2023-05-08T10:29:35.000Z</updated>
+    <updated>2023-05-09T10:53:00.000Z</updated>
     <summary type="html"><![CDATA[<p>JavaScript 使 HTML 页面更具动态性和交互性。</p>
 <h2> HTML &lt;script&gt; 标签</h2>
 <p>HTML <code>&lt;script&gt;</code> 标签用于定义客户端脚本（JavaScript）。</p>
@@ -1439,7 +2315,7 @@
     <title type="text">简介</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/introduction.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/introduction.html"/>
-    <updated>2023-05-06T12:12:55.000Z</updated>
+    <updated>2023-05-09T10:53:00.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>超文本标记语言</strong>（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
 <p>HTML 不是一门编程语言，而是一种用于定义内容结构的标记语言。HTML 由一系列的元素组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。一对标签可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。</p>]]></summary>
     <content type="html"><![CDATA[<p><strong>超文本标记语言</strong>（英语：HyperText Markup Language，简称：HTML）是一种用来结构化 Web 网页及其内容的标记语言。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。</p>
@@ -1482,8 +2358,10 @@
 <li>添加必需的属性</li>
 <li>等号两边尽量 <strong>不要有空格</strong></li>
 <li>属性间用 <strong>空格</strong> 分隔</li>
-<li>避免 <strong>长代码行</strong></li>
+<li>避免 <strong>长代码行</strong>，避免代码行超过 <code>80</code> 个字符</li>
 <li>增加空行来分隔大型或逻辑代码块。增加 <strong>两个空格</strong> 的缩进。请 <strong>勿使用</strong> <kbd>Tab</kbd> 键</li>
+<li><strong>不推荐</strong> 省略 <code>&lt;html&gt;</code> 和 <code>&lt;body&gt;</code> 标签</li>
+<li>可以省略 <code>&lt;head&gt;</code> 标签。默认地，浏览器会把 <code>&lt;body&gt;</code> 之前的所有元素添加到默认的 <code>&lt;head&gt;</code> 元素</li>
 <li>HTML 文件名应该使用扩展名 <code>.html</code>（而不是 <code>.htm</code>）</li>
 </ul>
 <h2> HTML 文档声明</h2>
@@ -5367,7 +6245,7 @@ get a <mark>bang</mark> out of</p>
     <title type="text">博客笔记</title>
     <id>https://sankgao.github.io/about/blog/blog_notes.html</id>
     <link href="https://sankgao.github.io/about/blog/blog_notes.html"/>
-    <updated>2023-04-26T10:54:20.000Z</updated>
+    <updated>2023-05-09T10:53:00.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container info">
 <p class="hint-container-title">相关信息</p>
 <p>如果想拥有更多丰富的笔记表现力，让自己阅读时，不处于大片黑白的世界里，本内容会让您的笔记句句深入记忆的深处😸</p>
@@ -5397,7 +6275,8 @@ get a <mark>bang</mark> out of</p>
 <ul>
 <li><a href="https://www.webfx.com/tools/emoji-cheat-sheet" target="_blank" rel="noopener noreferrer">emoji 表情备忘录</a>：有很多表情的格式(<code>:表情:</code>)</li>
 <li><a href="https://emojipedia.org/" target="_blank" rel="noopener noreferrer">emoji 表情</a>：有很多表情可以 copy</li>
-<li><a href="https://github.com/carloscuesta/gitmoji" target="_blank" rel="noopener noreferrer">gitmoji</a> 通过 emoji 表达 git 的操作内容</li>
+<li><a href="https://github.com/carloscuesta/gitmoji" target="_blank" rel="noopener noreferrer">gitmoji</a>：通过 emoji 表达 git 的操作内容</li>
+<li><a href="https://www.emojiall.com/zh-hans" target="_blank" rel="noopener noreferrer">EMOJI 中文网</a>：这是一本全面的 EMOJI 字典</li>
 </ul>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>
