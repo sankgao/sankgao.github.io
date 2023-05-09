@@ -84,11 +84,11 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
     ```html
     <p id="demo">JavaScript 可以更改 HTML 元素的样式。</p>
 
-    <button type="button" onclick="myFunction()">点击我！</button>
+    <button type="button" onclick="myFunction1()">点击我！</button>
     ```
 
     ```js
-    function myFunction() {
+    function myFunction1() {
       document.getElementById("demo").style.fontSize = "25px";
       document.getElementById("demo").style.color = "red";
       document.getElementById("demo").style.backgroundColor = "yellow";

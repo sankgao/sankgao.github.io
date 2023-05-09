@@ -38,7 +38,8 @@ tag:
 
 - [emoji 表情备忘录](https://www.webfx.com/tools/emoji-cheat-sheet)：有很多表情的格式(`:表情:`)
 - [emoji 表情](https://emojipedia.org/)：有很多表情可以 copy
-- [gitmoji](https://github.com/carloscuesta/gitmoji) 通过 emoji 表达 git 的操作内容
+- [gitmoji](https://github.com/carloscuesta/gitmoji)：通过 emoji 表达 git 的操作内容
+- [EMOJI 中文网](https://www.emojiall.com/zh-hans)：这是一本全面的 EMOJI 字典
 
 :::tip
 windows 系统下按 <kbd>Win</kbd> + <kbd>.</kbd> 快速打开表情选择框（不是右侧小键盘的 <kbd>.</kbd>）
