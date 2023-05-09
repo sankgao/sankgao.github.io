@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-08T10:31:28.184Z</updated>
+  <updated>2023-05-09T01:43:11.065Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -98,7 +98,7 @@
     <title type="text">计算机代码</title>
     <id>https://sankgao.github.io/frontend/html5/tutorial/computercode.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tutorial/computercode.html"/>
-    <updated>2023-05-08T10:29:35.000Z</updated>
+    <updated>2023-05-09T01:39:35.000Z</updated>
     <summary type="html"><![CDATA[<p>HTML 计算机代码格式：</p>
 <ul>
 <li>通常 HTML 使用 <strong>可变的</strong> 字母尺寸，以及可变的字母间距</li>

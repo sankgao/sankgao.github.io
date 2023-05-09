@@ -39,7 +39,7 @@
       "summary": "HTML 计算机代码格式： 通常 HTML 使用 可变的 字母尺寸，以及可变的字母间距; 在显示计算机代码示例时，并不需要如此; 、`` 以及 元素全都支持固定的字母尺寸和间距; HTML 键盘格式 HTML 元素定义键盘输入。例如： 演示 HTML 输出示例 HTML 元素定义计算机输出示例。例如： 演示 元素不保留多余的空格和折行。如需解决该问题，...",
       "content_html": "<p>HTML 计算机代码格式：</p>\n<ul>\n<li>通常 HTML 使用 <strong>可变的</strong> 字母尺寸，以及可变的字母间距</li>\n<li>在显示计算机代码示例时，并不需要如此</li>\n<li><code>&lt;kbd&gt;</code>、<code>&lt;samp&gt;</code> 以及 <code>&lt;code&gt;</code> 元素全都支持固定的字母尺寸和间距</li>\n</ul>\n<h2> HTML 键盘格式</h2>\n<p>HTML <code>&lt;kbd&gt;</code> 元素定义键盘输入。例如：</p>\n\n<h2> HTML 输出示例</h2>\n<p>HTML <code>&lt;samp&gt;</code> 元素定义计算机输出示例。例如：</p>\n\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p><code>&lt;samp&gt;</code> 元素不保留多余的空格和折行。如需解决该问题，您必须在 <code>&lt;pre&gt;</code> 元素中包围代码</p>\n\n</div>\n<h2> HTML 代码格式</h2>\n<p>HTML <code>&lt;code&gt;</code> 元素定义编程代码示例。例如：</p>\n\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p><code>&lt;code&gt;</code> 元素不保留多余的空格和折行。如需解决该问题，您必须在 <code>&lt;pre&gt;</code> 元素中包围代码</p>\n</div>\n<h2> HTML 变量格式化</h2>\n<ul>\n<li><code>&lt;var&gt;</code> 元素定义数学变量</li>\n<li><code>&lt;sup&gt;</code> 元素定义上标文本</li>\n</ul>\n<p>例如：</p>\n\n",
       "date_published": "2023-05-08T00:00:00.000Z",
-      "date_modified": "2023-05-08T10:29:35.000Z",
+      "date_modified": "2023-05-09T01:39:35.000Z",
       "authors": [],
       "tags": [
         "Frontend"
