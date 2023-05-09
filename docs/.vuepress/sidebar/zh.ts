@@ -48,6 +48,13 @@ export const zhSidebarConfig = sidebar({
             "layout.md",
             "responsive.md",
             "computercode.md",
+            "semantic.md",
+            "entities.md",
+            "emoji.md",
+            "charset.md",
+            "url.md",
+            "frames.md",
+            "backgrounds.md",
           ],
         },
         {
@@ -55,7 +62,12 @@ export const zhSidebarConfig = sidebar({
           icon: "form",
           prefix: "tutorial/",
           collapsible: true,
-          children: [],
+          children: [
+            "forms.md",
+            "form_attributes.md",
+            "form_elements.md",
+            "form_input_types.md",
+          ],
         },
         {
           text: "图形",
