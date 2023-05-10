@@ -26,7 +26,7 @@ tag:
 这是在 `<meta>` 标签中规定的：
 
 ```html
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 ```
 
 如果未规定，`UTF-8` 则是 HTML 中的默认字符集。
@@ -38,7 +38,7 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 
 <p>我将显示 A B C</p>
 <p>我将显示 &#65; &#66; &#67;</p>

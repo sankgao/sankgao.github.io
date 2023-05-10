@@ -104,7 +104,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!";
     ```html
     <p>在这里，JavaScript 更改了图像的 src 属性。</p>
 
-    <img id="myImage" src="/html5/eg_bulboff.gif" width="109" height="180">
+    <img id="myImage" src="/html5/eg_bulboff.gif" width="109" height="180" />
 
     <p>
       <button type="button" onclick="light(1)">开灯</button>

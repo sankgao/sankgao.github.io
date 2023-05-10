@@ -39,9 +39,9 @@ tag:
     ```html
     <frameset cols="25%,50%,25%">
 
-      <frame src="/example/html/frame_a.html">
-      <frame src="/example/html/frame_b.html">
-      <frame src="/example/html/frame_c.html">
+      <frame src="/example/html/frame_a.html" />
+      <frame src="/example/html/frame_b.html" />
+      <frame src="/example/html/frame_c.html" />
 
     </frameset>
     ```
@@ -53,9 +53,9 @@ tag:
     ```html
     <frameset rows="25%,50%,25%">
 
-      <frame src="/example/html/frame_a.html">
-      <frame src="/example/html/frame_b.html">
-      <frame src="/example/html/frame_c.html">
+      <frame src="/example/html/frame_a.html" />
+      <frame src="/example/html/frame_b.html" />
+      <frame src="/example/html/frame_c.html" />
 
     </frameset>
     ```
@@ -67,11 +67,11 @@ tag:
     ```html
     <frameset rows="50%,50%">
     
-      <frame src="/example/html/frame_a.html">
+      <frame src="/example/html/frame_a.html" />
     
         <frameset cols="25%,75%">
-          <frame src="/example/html/frame_b.html">
-            <frame src="/example/html/frame_c.html">
+          <frame src="/example/html/frame_b.html" />
+            <frame src="/example/html/frame_c.html" />
         </frameset>
     
     </frameset>

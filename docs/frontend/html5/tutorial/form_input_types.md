@@ -17,13 +17,13 @@ tag:
 
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname">
-  <br><br>
-  <input type="submit">
+  First name:<br />
+  <input type="text" name="firstname" />
+  <br />
+  Last name:<br />
+  <input type="text" name="lastname" />
+  <br /><br />
+  <input type="submit" />
 </form>
 ```
 
@@ -37,11 +37,11 @@ tag:
 
 ```html
 <form action="">
-  User name:<br>
-  <input type="text" name="userid">
-  <br>
-  User password:<br>
-  <input type="password" name="psw">
+  User name:<br />
+  <input type="text" name="userid" />
+  <br />
+  User password:<br />
+  <input type="password" name="psw" />
 </form>
 
 <p>密码字段中的字符被掩码（显示为星号或圆点）。</p>
@@ -60,12 +60,12 @@ tag:
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
   First name:<br />
-  <input type="text" name="firstname" value="Mickey">
+  <input type="text" name="firstname" value="Mickey" />
   <br />
   Last name:<br />
-  <input type="text" name="lastname" value="Mouse">
+  <input type="text" name="lastname" value="Mouse" />
   <br /><br />
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -81,11 +81,11 @@ tag:
 
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
-  <input type="radio" name="sex" value="male" checked>Male
+  <input type="radio" name="sex" value="male" checked />Male
   <br />
-  <input type="radio" name="sex" value="female">Female
+  <input type="radio" name="sex" value="female" />Female
   <br /><br />
-  <input type="submit">
+  <input type="submit" />
 </form>
 ```
 
@@ -101,11 +101,11 @@ tag:
 
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
-  <input type="checkbox" name="vehicle" value="Bike">I have a bike
+  <input type="checkbox" name="vehicle" value="Bike" />I have a bike
   <br />
-  <input type="checkbox" name="vehicle" value="Car">I have a car
+  <input type="checkbox" name="vehicle" value="Car" />I have a car
   <br /><br />
-  <input type="submit">
+  <input type="submit" />
 </form>
 ```
 

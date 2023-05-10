@@ -21,7 +21,7 @@ tag:
 绝对文件路径是指向一个因特网文件的完整 URL。
 
 ```html
-<img src="https://www.w3school.com.cn/images/picture.jpg" alt="flower">
+<img src="https://www.w3school.com.cn/images/picture.jpg" alt="flower" />
 ```
 
 ## 相对路径
@@ -30,13 +30,13 @@ tag:
 
 ```html
 <!-- 位于当前网站根目录中 images 文件夹里的一个文件 -->
-<img src="/images/picture.jpg" alt="flower">
+<img src="/images/picture.jpg" alt="flower" />
 
 <!-- 位于当前文件夹中 images 文件夹里的一个文件 -->
-<img src="images/picture.jpg" alt="flower">
+<img src="images/picture.jpg" alt="flower" />
 
 <!-- 位于当前文件夹的上一级文件夹中 images 文件夹里的一个文件 -->
-<img src="../images/picture.jpg" alt="flower">
+<img src="../images/picture.jpg" alt="flower" />
 ```
 
 - 使用相对路径是个好习惯（如果可能）

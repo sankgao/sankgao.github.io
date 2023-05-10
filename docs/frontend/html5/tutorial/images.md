@@ -24,7 +24,7 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<img src="boat.gif" alt="Big Boat">
+<img src="boat.gif" alt="Big Boat" />
 ```
 
 :::
@@ -82,16 +82,17 @@ tag:
     ::: normal-demo 演示
 
     ```html
-    <p>图像 <img src="/html5/eg_cute.gif" align="bottom"> 在文本中</p>
-    <p>图像 <img src ="/html5/eg_cute.gif" align="middle"> 在文本中</p>
-    <p>图像 <img src ="/html5/eg_cute.gif" align="top"> 在文本中</p>
+    <p>图像 <img src="/html5/eg_cute.gif" align="bottom" /> 在文本中</p>
+    <p>图像 <img src ="/html5/eg_cute.gif" align="middle" /> 在文本中</p>
+    <p>图像 <img src ="/html5/eg_cute.gif" align="top" /> 在文本中</p>
     ```
 
     :::
 
-    - **bottom**：文字底部对齐
-    - **middle**：文字中间对齐
-    - **top**：文字上部对齐
+    - **align**：不推荐使用，更好的方案是使用 CSS 样式
+      - **bottom**：文字底部对齐
+      - **middle**：文字中间对齐
+      - **top**：文字上部对齐
 
 - 浮动图像
 
@@ -101,12 +102,12 @@ tag:
 
     ```html
     <p>
-      <img src="/html5/eg_cute.gif" align="left">
+      <img src="/html5/eg_cute.gif" align="left" />
       带有图像的一个段落。图像的 align 属性设置为 "left"。图像将浮动到文本的左侧。
     </p>
 
     <p>
-      <img src="/html5/eg_cute.gif" align="right">
+      <img src="/html5/eg_cute.gif" align="right" />
       带有图像的一个段落。图像的 align 属性设置为 "right"。图像将浮动到文本的右侧。
     </p>
     ```
@@ -123,11 +124,11 @@ tag:
     ::: normal-demo 演示
 
     ```html
-    <img src="/html5/eg_mouse.jpg" width="50" height="50">
+    <img src="/html5/eg_mouse.jpg" width="50" height="50" />
     <br />
-    <img src="/html5/eg_mouse.jpg" width="100" height="100">
+    <img src="/html5/eg_mouse.jpg" width="100" height="100" />
     <br />
-    <img src="/html5/eg_mouse.jpg" width="200" height="200">
+    <img src="/html5/eg_mouse.jpg" width="200" height="200" />
     ```
 
     :::

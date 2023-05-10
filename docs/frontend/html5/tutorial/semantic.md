@@ -210,7 +210,7 @@ aside 内容应该与周围内容相关。例如：
 <p>The Epcot Center is a theme park in Disney World, Florida.</p>
 
 <figure>
-  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228" />
   <figcaption>Fig.1 - The Pulpit Rock, Norway.</figcaption>
 </figure>
 ```

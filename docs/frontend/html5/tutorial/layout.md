@@ -55,9 +55,9 @@ tag:
 </div>
 
 <div id="nav">
-  London<br>
-  Paris<br>
-  Tokyo<br>
+  London<br />
+  Paris<br />
+  Tokyo<br />
 </div>
 
 <div id="section">
@@ -136,9 +136,9 @@ HTML5 提供的新语义元素定义了网页的不同部分。HTML5 语义元�
 </header>
 
 <nav>
-  London<br>
-  Paris<br>
-  Tokyo<br>
+  London<br />
+  Paris<br />
+  Tokyo<br />
 </nav>
 
 <section>

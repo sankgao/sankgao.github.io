@@ -241,7 +241,7 @@ HTML 可定义很多供格式化输出的元素，比如 **粗体** 和 **斜体
     <p>HTML cite 元素定义著作的标题。</p>
     <p>浏览器通常会以斜体显示 cite 元素。</p>
 
-    <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+    <img src="img_the_scream.jpg" width="220" height="277" alt="The Scream" />
     <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
     ```
     

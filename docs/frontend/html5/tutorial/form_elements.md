@@ -29,8 +29,8 @@ tag:
     <option value="fiat">Fiat</option>
     <option value="audi">Audi</option>
   </select>
-  <br><br>
-  <input type="submit">
+  <br /><br />
+  <input type="submit" />
 </form>
 ```
 
@@ -54,8 +54,8 @@ tag:
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
   <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-  <br><br>
-  <input type="submit">
+  <br /><br />
+  <input type="submit" />
 </form>
 ```
 
@@ -100,7 +100,7 @@ tag:
         <option value="Opera">
         <option value="Safari">
       </datalist>
-      <input type="submit">
+      <input type="submit" />
     </form>
     ```
 
@@ -131,8 +131,8 @@ tag:
 
     ```html
     <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
-      <input type="range" id="a" value="50">100
-      +<input type="number" id="b" value="50">
+      <input type="range" id="a" value="50" />100
+      +<input type="number" id="b" value="50" />
       =<output name="x" for="a b"></output>
     </form>
     ```

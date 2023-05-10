@@ -19,7 +19,7 @@ tag:
 
 ```html
 <head>
-  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css" />
 </head>
 ```
 
@@ -121,7 +121,7 @@ tag:
     <html>
 
     <head>
-      <link rel="stylesheet" type="text/css" href="./csstest1.css">
+      <link rel="stylesheet" type="text/css" href="./csstest1.css" />
     </head>
 
     <body>

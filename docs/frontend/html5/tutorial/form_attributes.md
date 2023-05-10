@@ -22,10 +22,10 @@ tag:
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
   <label for="fname">First name:</label><br />
-  <input type="text" id="fname" name="fname" value="Bill"><br />
+  <input type="text" id="fname" name="fname" value="Bill" /><br />
   <label for="lname">Last name:</label><br />
-  <input type="text" id="lname" name="lname" value="Gates"><br /><br />
-  <input type="submit" value="Submit">
+  <input type="text" id="lname" name="lname" value="Gates" /><br /><br />
+  <input type="submit" value="Submit" />
 </form>
 ```
 
@@ -57,11 +57,11 @@ tag:
 
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php" target="_blank">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="Bill"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Gates"><br><br>
-  <input type="submit" value="Submit">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="Bill" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Gates" /><br /><br />
+  <input type="submit" value="Submit" />
 </form> 
 ```
 
@@ -81,11 +81,11 @@ tag:
 
     ```html
     <form action="https://www.w3school.com.cn/demo/html/action_page.php" target="_blank" method="get">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="Bill"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Gates"><br><br>
-      <input type="submit" value="Submit">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Bill" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Gates" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
     ```
 
@@ -97,11 +97,11 @@ tag:
 
     ```html
     <form action="https://www.w3school.com.cn/demo/html/action_page.php" target="_blank" method="post">
-      <label for="fname">First name:</label><br>
-      <input type="text" id="fname" name="fname" value="Bill"><br>
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" value="Gates"><br><br>
-      <input type="submit" value="Submit">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="Bill" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="Gates" /><br /><br />
+      <input type="submit" value="Submit" />
     </form>
     ```
 
@@ -136,10 +136,10 @@ tag:
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php" autocomplete="on">
   <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
+  <input type="text" id="fname" name="fname" /><br /><br />
   <label for="email">Email:</label>
-  <input type="text" id="email" name="email"><br><br>
-  <input type="submit">
+  <input type="text" id="email" name="email" /><br /><br />
+  <input type="submit" />
 </form>
 ```
 
@@ -156,8 +156,8 @@ tag:
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php" novalidate>
   <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email"><br><br>
-  <input type="submit">
+  <input type="email" id="email" name="email" /><br /><br />
+  <input type="submit" />
 </form>
 ```
 
@@ -166,6 +166,6 @@ tag:
 ::: note
 HTML5 中在 `input` 元素中使用 `formnovalidate` 覆盖 `form` 元素的 `novalidate` 属性。例如：
 
-`<input formnovalidate="formnovalidate">`
+`<input formnovalidate="formnovalidate" />`
 :::
 

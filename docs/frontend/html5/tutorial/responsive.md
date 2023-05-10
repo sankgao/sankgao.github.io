@@ -39,7 +39,7 @@ tag:
 
 <h1>W3School Demo</h1>
 <h2>Resize this responsive page!</h2>
-<br>
+<br />
 
 <div class="city">
   <h2>London</h2>

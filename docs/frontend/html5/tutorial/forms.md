@@ -30,10 +30,10 @@ HTML 表单用于收集用户输入。`<form>` 元素定义 HTML 表单
 ```html
 <form>
   First name:<br />
-  <input type="text" name="firstname">
+  <input type="text" name="firstname" />
   <br />
   Last name:<br />
-  <input type="text" name="lastname">
+  <input type="text" name="lastname" />
 </form>
 ```
 
@@ -60,9 +60,9 @@ HTML 表单用于收集用户输入。`<form>` 元素定义 HTML 表单
 
 ```html
 <form>
-  <input type="radio" name="sex" value="male" checked>Male
+  <input type="radio" name="sex" value="male" checked />Male
   <br />
-  <input type="radio" name="sex" value="female">Female
+  <input type="radio" name="sex" value="female" />Female
 </form>
 ```
 
@@ -82,13 +82,13 @@ HTML 表单用于收集用户输入。`<form>` 元素定义 HTML 表单
 
 ```html
 <form action="https://www.w3school.com.cn/demo/html/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" value="Mickey">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" value="Mouse">
-  <br><br>
-  <input type="submit" value="Submit">
+  First name:<br />
+  <input type="text" name="firstname" value="Mickey" />
+  <br />
+  Last name:<br />
+  <input type="text" name="lastname" value="Mouse" />
+  <br /><br />
+  <input type="submit" value="Submit" />
 </form>
 
 <p>如果您点击提交，表单数据会被发送到名为 demo_form.asp 的页面。</p>

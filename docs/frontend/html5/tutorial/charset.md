@@ -26,7 +26,7 @@ HTML5 规范鼓励 Web 开发人员使用 `UTF-8` 字符集，该字符集涵盖
 这是在 `<meta>` 标签中规定的：
 
 ```html
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 ```
 
 如果未规定，`UTF-8` 则是 HTML 中的默认字符集。

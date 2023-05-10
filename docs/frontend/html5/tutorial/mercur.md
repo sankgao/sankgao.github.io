@@ -7,5 +7,5 @@ tag:
     - HTML5
 ---
 
-<img src="/html5/eg_merglobe.gif">
+<img src="/html5/eg_merglobe.gif" />
 
