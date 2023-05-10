@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Tue, 09 May 2023 10:59:46 GMT</pubDate>
-    <lastBuildDate>Tue, 09 May 2023 10:59:46 GMT</lastBuildDate>
+    <pubDate>Wed, 10 May 2023 02:29:42 GMT</pubDate>
+    <lastBuildDate>Wed, 10 May 2023 02:29:42 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -393,7 +393,7 @@
 <div class="hint-container note">
 <p class="hint-container-title">注</p>
 <p>HTML5 中在 <code>input</code> 元素中使用 <code>formnovalidate</code> 覆盖 <code>form</code> 元素的 <code>novalidate</code> 属性。例如：</p>
-<p><code>&lt;input formnovalidate="formnovalidate"&gt;</code></p>
+<p><code>&lt;input formnovalidate="formnovalidate" /&gt;</code></p>
 </div>
 ]]></content:encoded>
     </item>
@@ -1086,9 +1086,13 @@
 <p>在文字中排列图像。</p>
 
 <ul>
+<li><strong>align</strong>：不推荐使用，更好的方案是使用 CSS 样式
+<ul>
 <li><strong>bottom</strong>：文字底部对齐</li>
 <li><strong>middle</strong>：文字中间对齐</li>
 <li><strong>top</strong>：文字上部对齐</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -1748,7 +1752,7 @@
 <td style="text-align:center">&lt;/p&gt;</td>
 </tr>
 <tr>
-<td style="text-align:center">&lt;a href="default.html" &gt;</td>
+<td style="text-align:center">&lt;a href="default.html"&gt;</td>
 <td style="text-align:left">This is a link</td>
 <td style="text-align:center">&lt;/a&gt;</td>
 </tr>
@@ -1914,9 +1918,9 @@
 <h2> HTML 标签</h2>
 <p>HTML 标记标签通常被称为 HTML 标签（HTML tag）。</p>
 <ul>
-<li>HTML 标签是由 <strong>尖括号包围</strong> 的关键词。比如：&lt;html&gt;</li>
-<li>HTML 标签通常是 <strong>成对出现</strong> 的称为 <strong>双标签</strong>。比如：&lt;b&gt; 和 &lt;/b&gt;</li>
-<li>HTML 标签只有一个尖括号的称为 <strong>单标签</strong>。比如：&lt;br /&gt;</li>
+<li>HTML 标签是由 <strong>尖括号包围</strong> 的关键词。比如：<code>&lt;html&gt;</code></li>
+<li>HTML 标签通常是 <strong>成对出现</strong> 的称为 <strong>双标签</strong>。比如：<code>&lt;b&gt;</code> 和 <code>&lt;/b&gt;</code></li>
+<li>HTML 标签只有一个尖括号的称为 <strong>单标签</strong>。比如：<code>&lt;br /&gt;</code></li>
 <li>标签对中的第一个标签是 <strong>开始标签</strong>，第二个标签是 <strong>结束标签</strong></li>
 </ul>
 <div class="hint-container note">
@@ -1939,7 +1943,7 @@
 <ul>
 <li>始终在文档的 <strong>首行</strong> 声明文档类型</li>
 <li>不要忘记 <strong>结束标签</strong></li>
-<li>没有内容的 HTML 元素被称为 <strong>空元素</strong>。空元素是在开始标签中关闭的。比如：&lt;br /&gt;</li>
+<li>没有内容的 HTML 元素被称为 <strong>空元素</strong>。空元素是在开始标签中关闭的。比如：<code>&lt;br /&gt;</code></li>
 <li>使用 <strong>小写</strong> 标签</li>
 <li>使用 <strong>小写</strong> 属性和属性值，始终为属性值加 <strong>引号</strong></li>
 <li>使用 <strong>小写</strong> 元素名</li>
