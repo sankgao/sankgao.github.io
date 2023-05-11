@@ -124,14 +124,14 @@ function clickCounter() {
 ::: normal-demo 演示
 
 ```html
-<p><button onclick="clickCounter()" type="button">请点击这里</button></p>
+<p><button onclick="clickCounter1()" type="button">请点击这里</button></p>
 <div id="result"></div>
 <p>请点击按钮使计数器递增。</p>
 <p>请关闭浏览器或标签页，然后再试一次，计数器会重置。</p>
 ```
 
 ```js
-function clickCounter() {
+function clickCounter1() {
   if (typeof Storage !== "undefined") {
     if (sessionStorage.clickcount) {
       sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
