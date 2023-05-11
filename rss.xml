@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 11 May 2023 11:07:19 GMT</pubDate>
-    <lastBuildDate>Thu, 11 May 2023 11:07:19 GMT</lastBuildDate>
+    <pubDate>Thu, 11 May 2023 11:14:21 GMT</pubDate>
+    <lastBuildDate>Thu, 11 May 2023 11:14:21 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -268,7 +268,7 @@
 <tr>
 <td style="text-align:center">onreset</td>
 <td style="text-align:center">script</td>
-<td style="text-align:left">当表单中的重置按钮被点击时触发</td>
+<td style="text-align:left">当表单中的重置按钮被点击时触发。⚠️ <span style="color: red">HTML5 中不支持</span></td>
 </tr>
 <tr>
 <td style="text-align:center">onselect</td>
