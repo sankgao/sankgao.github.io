@@ -49,7 +49,7 @@ HTML 有能力让事件 **触发** 浏览器中的动作。例如：当用户单
 |  onforminput  |  script  |  当表单获得用户输入时运行的脚本。:warning: <span style="color: red">HTML5 中添加的属性</span>  |
 |  oninput  |  script  |  当元素获得用户输入时运行的脚本。:warning: <span style="color: red">HTML5 中添加的属性</span>  |
 |  oninvalid  |  script  |  当元素无效时运行的脚本。:warning: <span style="color: red">HTML5 中添加的属性</span>  |
-|  onreset  |  script  |  当表单中的重置按钮被点击时触发  |
+|  onreset  |  script  |  当表单中的重置按钮被点击时触发。:warning: <span style="color: red">HTML5 中不支持</span>  |
 |  onselect  |  script  |  在元素中文本被选中后触发  |
 |  onsubmit  |  script  |  在提交表单时触发  |
 
