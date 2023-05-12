@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 12 May 2023 11:24:58 GMT</pubDate>
-    <lastBuildDate>Fri, 12 May 2023 11:24:58 GMT</lastBuildDate>
+    <pubDate>Fri, 12 May 2023 11:29:24 GMT</pubDate>
+    <lastBuildDate>Fri, 12 May 2023 11:29:24 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -4151,10 +4151,10 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>状态消息</title>
+      <title>请求方法</title>
       <link>https://sankgao.github.io/frontend/html5/tags/methods.html</link>
       <guid>https://sankgao.github.io/frontend/html5/tags/methods.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">状态消息</source>
+      <source url="https://sankgao.github.io/rss.xml">请求方法</source>
       <description>超文本传输协议（Hypertext Transfer Protocol，缩写 HTTP）旨在启用客户端和服务器之间的通信。 HTTP 充当客户端和服务器之间的请求响应协议。 例如：客户端（浏览器）向服务器发送 HTTP 请求；然后服务器将响应返回客户端。响应包含有关请求的状态信息，也可能包含所请求的内容。 HTTP 请求方法 GET; POST; PU...</description>
       <category>Frontend</category>
       <pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate>

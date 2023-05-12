@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-12T11:24:58.445Z</updated>
+  <updated>2023-05-12T11:29:24.182Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -6058,10 +6058,10 @@
     <published>2023-05-12T00:00:00.000Z</published>
   </entry>
   <entry>
-    <title type="text">状态消息</title>
+    <title type="text">请求方法</title>
     <id>https://sankgao.github.io/frontend/html5/tags/methods.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tags/methods.html"/>
-    <updated>2023-05-12T11:20:11.000Z</updated>
+    <updated>2023-05-12T11:26:53.000Z</updated>
     <summary type="html"><![CDATA[<p>超文本传输协议（Hypertext Transfer Protocol，缩写 HTTP）旨在启用客户端和服务器之间的通信。</p>
 <p>HTTP 充当客户端和服务器之间的请求响应协议。</p>
 <p>例如：客户端（浏览器）向服务器发送 HTTP 请求；然后服务器将响应返回客户端。响应包含有关请求的状态信息，也可能包含所请求的内容。</p>
