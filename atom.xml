@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-12T11:22:35.437Z</updated>
+  <updated>2023-05-12T11:24:58.445Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -6187,7 +6187,7 @@
     <title type="text">键盘快捷键</title>
     <id>https://sankgao.github.io/frontend/html5/tags/shortcuts.html</id>
     <link href="https://sankgao.github.io/frontend/html5/tags/shortcuts.html"/>
-    <updated>2023-05-12T11:20:11.000Z</updated>
+    <updated>2023-05-12T11:22:57.000Z</updated>
     <summary type="html"><![CDATA[<p>键盘快捷键通常用于现代操作系统和计算机软件程序中。</p>
 <p>使用键盘快捷键可以节省大量时间。</p>
 <h2> 基本快捷键</h2>
@@ -6910,13 +6910,47 @@
 </tbody>
 </table>
 <h2> 屏幕截图</h2>
-<p>|  描述  |  Windows  |  Mac OS  |
-|  将整个屏幕的屏幕截图保存为文件  |     |  Cmd + Shift + 3  |
-|  将整个屏幕的屏幕截图复制到剪贴板  |  PrtScr (Print Screen) 或 Ctrl + PrtScr  |  Cmd + Ctrl + Shift + 3  |
-|  将窗口的屏幕截图另存为文件  |     |  Cmd + Shift + 4，然后空格  |
-|  将窗口的屏幕截图复制到剪贴板  |  Alt + PrtScr  |  Cmd + Ctrl + Shift + 4，然后空格  |
-|  将所需区域的屏幕截图复制到剪贴板  |     |  Cmd + Ctrl + Shift + 4  |
-|  将所需区域的屏幕截图保存为文件  |     |  Cmd + Shift + 4  |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">描述</th>
+<th style="text-align:left">Windows</th>
+<th style="text-align:left">Mac OS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">将整个屏幕的屏幕截图保存为文件</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Cmd + Shift + 3</td>
+</tr>
+<tr>
+<td style="text-align:left">将整个屏幕的屏幕截图复制到剪贴板</td>
+<td style="text-align:left">PrtScr (Print Screen) 或 Ctrl + PrtScr</td>
+<td style="text-align:left">Cmd + Ctrl + Shift + 3</td>
+</tr>
+<tr>
+<td style="text-align:left">将窗口的屏幕截图另存为文件</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Cmd + Shift + 4，然后空格</td>
+</tr>
+<tr>
+<td style="text-align:left">将窗口的屏幕截图复制到剪贴板</td>
+<td style="text-align:left">Alt + PrtScr</td>
+<td style="text-align:left">Cmd + Ctrl + Shift + 4，然后空格</td>
+</tr>
+<tr>
+<td style="text-align:left">将所需区域的屏幕截图复制到剪贴板</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Cmd + Ctrl + Shift + 4</td>
+</tr>
+<tr>
+<td style="text-align:left">将所需区域的屏幕截图保存为文件</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Cmd + Shift + 4</td>
+</tr>
+</tbody>
+</table>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p>由于键盘设置不同，某些快捷方式可能不适用于所有用户</p>
