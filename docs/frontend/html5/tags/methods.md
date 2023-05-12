@@ -1,5 +1,5 @@
 ---
-title: 状态消息
+title: 请求方法
 icon: method
 date: 2023-05-12
 category: Frontend
