@@ -167,6 +167,7 @@ tag:
 ## 屏幕截图
 
 |  描述  |  Windows  |  Mac OS  |
+|  :----  |  :----  |  :----  |
 |  将整个屏幕的屏幕截图保存为文件  |     |  Cmd + Shift + 3  |
 |  将整个屏幕的屏幕截图复制到剪贴板  |  PrtScr (Print Screen) 或 Ctrl + PrtScr  |  Cmd + Ctrl + Shift + 3  |
 |  将窗口的屏幕截图另存为文件  |     |  Cmd + Shift + 4，然后空格  |
