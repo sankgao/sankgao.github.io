@@ -27,14 +27,6 @@ export default hopeTheme({
   
   fullscreen: true,  // 显示全屏按钮
   
-  // 主题色选择器
-  themeColor: {
-    cyan: "#71e9e9",
-    red: "#e73f3f",
-    green: "#3eaf7c",
-    pink: "#ffc0cb",
-  },
-  
   // 主题多语言配置
   locales: {
     "/": {
