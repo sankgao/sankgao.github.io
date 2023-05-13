@@ -19,10 +19,10 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress-denaro/vuepress-plugin-dynamic-title": "1.1.1-beta.0",
-    "@vuepress/client": "2.0.0-beta.61",
-    "@vuepress/plugin-docsearch": "2.0.0-beta.61",
-    "vue": "^3.2.47",
-    "vuepress": "2.0.0-beta.61",
-    "vuepress-theme-hope": "2.0.0-beta.208"
+    "@vuepress/client": "2.0.0-beta.62",
+    "@vuepress/plugin-docsearch": "2.0.0-beta.62",
+    "vue": "^3.3.2",
+    "vuepress": "2.0.0-beta.62",
+    "vuepress-theme-hope": "2.0.0-beta.210"
   }
 }
