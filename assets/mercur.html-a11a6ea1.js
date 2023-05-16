@@ -1,1 +1,0 @@
-import{_ as e,Z as t,$ as c,a2 as r}from"./framework-714d3df7.js";const _="/html5/eg_merglobe.gif",o={},s=r("img",{src:_},null,-1),n=[s];function l(a,m){return t(),c("div",null,n)}const f=e(o,[["render",l],["__file","mercur.html.vue"]]);export{f as default};
