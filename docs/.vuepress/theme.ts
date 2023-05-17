@@ -20,7 +20,7 @@ export default hopeTheme({
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_mvlcjpnrva.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_7m5o7b3qsc.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
@@ -35,7 +35,7 @@ export default hopeTheme({
       headerDepth: 5,  // 侧边栏嵌套的标题深度
       
       footer:
-        "主题使用 <a href='https://theme-hope.vuejs.press/zh/'>VuePress Theme Hope</a> | <a href='/about/my/site.html' target='_blank'>关于网站</a>",  // 页脚的默认内容
+        "主题使用 <a href='https://theme-hope.vuejs.press/zh/' target='_blank'>VuePress Theme Hope</a> | <a href='/about/my/site.html'>关于网站</a>",  // 页脚的默认内容
       
       copyright: "基于 MIT 协议，© 2023-至今 Sankgao",  // 版权信息
       
@@ -65,7 +65,7 @@ export default hopeTheme({
       headerDepth: 5,
       
       footer:
-        "Theme by <a href='https://theme-hope.vuejs.press'>vuepress-theme-hope</a> | <a href='/en/about/my/site.html' target='_blank'>About websites</a>",
+        "Theme by <a href='https://theme-hope.vuejs.press' target='_blank'>vuepress-theme-hope</a> | <a href='/en/about/my/site.html'>About websites</a>",
       
       copyright: "MIT Licensed, © 2023-present Sankgao",
       
