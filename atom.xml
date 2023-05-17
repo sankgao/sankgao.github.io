@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-17T05:54:37.898Z</updated>
+  <updated>2023-05-17T07:13:04.245Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -16,7 +16,7 @@
     <title type="text">背景</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/background.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/background.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<p>CSS 背景属性用于定义元素的背景效果。</p>
 <h2> CSS 指定元素的背景色</h2>
 <p><code>background-color</code> 属性指定元素的背景色。</p>
@@ -83,7 +83,8 @@
 <p>使用 <code>background-position</code> 属性可以指定图像的位置。例如：</p>
 
 <ul>
-<li><strong>background-position</strong>：属性用于指定背景图像的位置，值的位置 <strong>可以互换</strong>
+<li>
+<p><strong>background-position</strong>：属性用于指定背景图像的位置，值的位置 <strong>可以互换</strong></p>
 <ul>
 <li><strong>top left</strong>：上左角</li>
 <li><strong>top center</strong>：上中角</li>
@@ -96,7 +97,9 @@
 <li><strong>bottom right</strong>：下右角</li>
 </ul>
 </li>
-<li><strong>margin-right</strong>：属性设置元素的右外边距，使文本不会覆盖背景图片</li>
+<li>
+<p><strong>margin-right</strong>：属性设置元素的右外边距，使文本不会覆盖背景图片</p>
+</li>
 </ul>
 <h2> CSS 背景附着</h2>
 <h3> CSS 指定背景图像是否固定</h3>
@@ -133,7 +136,7 @@
     <title type="text">边框</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/border.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/border.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<h2> CSS 边框</h2>
 <h3> CSS 边框属性</h3>
 <p>CSS <code>border</code> 属性允许您指定元素边框的样式、宽度和颜色。</p>
@@ -259,7 +262,7 @@
     <title type="text">框模型</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/boxmodel.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/boxmodel.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<p>所有 HTML 元素都可以视为方框。在 CSS 中，在谈论设计和布局时，会使用术语 “盒模型” 或 “框模型”。</p>
 <p>CSS 框模型实质上是一个包围每个 HTML 元素的框。它包括：外边距、边框、内边距以及实际的内容。框模型如下所示：</p>
 <div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>      border
@@ -326,7 +329,7 @@
     <title type="text">颜色</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/colors.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/colors.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<p>指定颜色是通过使用预定义的颜色名称或 <code>RGB</code>、<code>HEX</code>、<code>HSL</code>、<code>RGBA</code>、<code>HSLA</code> 值。</p>
 <h2> CSS 颜色名</h2>
 <p>在 CSS 中，可以使用 <strong>颜色名称</strong> 来指定颜色</p>
@@ -387,7 +390,7 @@
 <ul>
 <li><strong>0%</strong>：表示不亮（黑色）</li>
 <li><strong>50%</strong>：表示 <code>50%</code> 亮（既不暗也不亮）</li>
-<li><strong>100%</strong>：·表示全明（白）</li>
+<li><strong>100%</strong>：表示全明（白）</li>
 </ul>
 <p>例如：</p>
 
@@ -505,7 +508,7 @@
     <title type="text">字体</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/font.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/font.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<h2> 字体选择很重要</h2>
 <p>使用易于阅读的字体很重要。字体为您的文本增加了价值。为字体选择正确的颜色和文本大小也很重要。</p>
 <h3> 通用字体族</h3>
@@ -661,7 +664,7 @@
     <title type="text">图标</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/icons.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/icons.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<h2> 如何添加图标</h2>
 <p>向 HTML 页面添加图标的最简单方法是使用图标库。比如：Font Awesome。</p>
 <p>将指定的图标类的名称添加到任何行内 HTML 元素（如：<code>&lt;i&gt;</code> 或 <code>&lt;span&gt;</code>）。</p>
@@ -841,7 +844,7 @@
     <title type="text">添加 CSS 方法</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/methods.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/methods.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<p>当浏览器读到样式表时，它将根据样式表中的信息来格式化 HTML 文档。</p>
 <p>有三种插入 CSS 样式表的方法：</p>
 <ul>
@@ -874,7 +877,7 @@
 <p class="hint-container-title">提示</p>
 <p>外部样式表可以在任何文本编辑器中编写，并且必须以 <code>.css</code> 扩展名保存</p>
 <p>外部 <code>.css</code> 文件不应包含任何 HTML 标签</p>
-<p>请勿在 <strong>属性值</strong> 和 <strong>单位</strong> 之间添加空格（例如：<code>margin-left: 20 px;</code>）。正确的写法是：（<code>margin-left: 20px;</code>）</p>
+<p>请勿在 <strong>属性值</strong> 和 <strong>单位</strong> 之间添加空格（例如：<code>margin-left: 20px;</code>）。正确的写法是：（<code>margin-left: 20px;</code>）</p>
 </div>
 <h2> 内部 CSS</h2>
 <p>如果一张 HTML 页面拥有 <strong>唯一</strong> 的样式，那么可以使用 <strong>内部样式表。</strong></p>
@@ -923,7 +926,7 @@
     <title type="text">轮廓</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/outline.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/outline.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<p><strong>轮廓</strong> 是在元素周围绘制的一条线，在边框之外，以凸显元素。</p>
 <p>CSS 拥有如下轮廓属性：</p>
 <ul>
@@ -964,7 +967,7 @@
 
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
-<p>除非设置了 outline-style 属性，否则其他轮廓属性（在下一章中将详细介绍）都不会有任何作用</p>
+<p>除非设置了 <code>outline-style</code> 属性，否则其他轮廓属性都不会有任何作用</p>
 </div>
 <h2> 轮廓宽度</h2>
 <p><code>outline-width</code> 属性指定轮廓的宽度，并可设置如下值之一：</p>
@@ -1201,7 +1204,7 @@
     <title type="text">文本</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/text.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/text.html"/>
-    <updated>2023-05-17T05:52:23.000Z</updated>
+    <updated>2023-05-17T07:10:32.000Z</updated>
     <summary type="html"><![CDATA[<h2> 文本颜色</h2>
 <p><code>color</code> 属性用于设置文本的颜色。颜色由以下值指定：</p>
 <ul>
@@ -1239,12 +1242,14 @@
 <p><code>direction</code> 和 <code>unicode-bidi</code> 属性可用于更改元素的文本方向。例如：</p>
 
 <ul>
-<li><strong>direction</strong>：属性规定文本的书写方向
+<li>
+<p><strong>direction</strong>：属性规定文本的书写方向</p>
 <ul>
 <li><strong>rtl</strong>：文本方向从右到左</li>
 </ul>
 </li>
-<li><strong>unicode-bidi</strong>：属性是否应重写文本
+<li>
+<p><strong>unicode-bidi</strong>：属性是否应重写文本</p>
 <ul>
 <li><strong>bidi-override</strong>：对于行内元素，该值会创建一个覆盖；对于块容器元素，该值将为不在另一个块容器元素内的行内级别的后代创建一个覆盖</li>
 </ul>

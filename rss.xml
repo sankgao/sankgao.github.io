@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 17 May 2023 05:54:37 GMT</pubDate>
-    <lastBuildDate>Wed, 17 May 2023 05:54:37 GMT</lastBuildDate>
+    <pubDate>Wed, 17 May 2023 07:13:04 GMT</pubDate>
+    <lastBuildDate>Wed, 17 May 2023 07:13:04 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -77,7 +77,8 @@
 <p>使用 <code>background-position</code> 属性可以指定图像的位置。例如：</p>
 
 <ul>
-<li><strong>background-position</strong>：属性用于指定背景图像的位置，值的位置 <strong>可以互换</strong>
+<li>
+<p><strong>background-position</strong>：属性用于指定背景图像的位置，值的位置 <strong>可以互换</strong></p>
 <ul>
 <li><strong>top left</strong>：上左角</li>
 <li><strong>top center</strong>：上中角</li>
@@ -90,7 +91,9 @@
 <li><strong>bottom right</strong>：下右角</li>
 </ul>
 </li>
-<li><strong>margin-right</strong>：属性设置元素的右外边距，使文本不会覆盖背景图片</li>
+<li>
+<p><strong>margin-right</strong>：属性设置元素的右外边距，使文本不会覆盖背景图片</p>
+</li>
 </ul>
 <h2> CSS 背景附着</h2>
 <h3> CSS 指定背景图像是否固定</h3>
@@ -341,7 +344,7 @@
 <ul>
 <li><strong>0%</strong>：表示不亮（黑色）</li>
 <li><strong>50%</strong>：表示 <code>50%</code> 亮（既不暗也不亮）</li>
-<li><strong>100%</strong>：·表示全明（白）</li>
+<li><strong>100%</strong>：表示全明（白）</li>
 </ul>
 <p>例如：</p>
 
@@ -755,7 +758,7 @@
 <p class="hint-container-title">提示</p>
 <p>外部样式表可以在任何文本编辑器中编写，并且必须以 <code>.css</code> 扩展名保存</p>
 <p>外部 <code>.css</code> 文件不应包含任何 HTML 标签</p>
-<p>请勿在 <strong>属性值</strong> 和 <strong>单位</strong> 之间添加空格（例如：<code>margin-left: 20 px;</code>）。正确的写法是：（<code>margin-left: 20px;</code>）</p>
+<p>请勿在 <strong>属性值</strong> 和 <strong>单位</strong> 之间添加空格（例如：<code>margin-left: 20px;</code>）。正确的写法是：（<code>margin-left: 20px;</code>）</p>
 </div>
 <h2> 内部 CSS</h2>
 <p>如果一张 HTML 页面拥有 <strong>唯一</strong> 的样式，那么可以使用 <strong>内部样式表。</strong></p>
@@ -837,7 +840,7 @@
 
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
-<p>除非设置了 outline-style 属性，否则其他轮廓属性（在下一章中将详细介绍）都不会有任何作用</p>
+<p>除非设置了 <code>outline-style</code> 属性，否则其他轮廓属性都不会有任何作用</p>
 </div>
 <h2> 轮廓宽度</h2>
 <p><code>outline-width</code> 属性指定轮廓的宽度，并可设置如下值之一：</p>
@@ -1079,12 +1082,14 @@
 <p><code>direction</code> 和 <code>unicode-bidi</code> 属性可用于更改元素的文本方向。例如：</p>
 
 <ul>
-<li><strong>direction</strong>：属性规定文本的书写方向
+<li>
+<p><strong>direction</strong>：属性规定文本的书写方向</p>
 <ul>
 <li><strong>rtl</strong>：文本方向从右到左</li>
 </ul>
 </li>
-<li><strong>unicode-bidi</strong>：属性是否应重写文本
+<li>
+<p><strong>unicode-bidi</strong>：属性是否应重写文本</p>
 <ul>
 <li><strong>bidi-override</strong>：对于行内元素，该值会创建一个覆盖；对于块容器元素，该值将为不在另一个块容器元素内的行内级别的后代创建一个覆盖</li>
 </ul>
