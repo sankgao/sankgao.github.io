@@ -1,3 +1,4 @@
+
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebarConfig = sidebar({
@@ -157,7 +158,6 @@ export const zhSidebarConfig = sidebar({
           text: "基础教程",
           icon: "tutorial",
           prefix: "tutorial/",
-          collapsible: true,
           children: [
             "introduction.md",
             "syntax.md",
@@ -175,8 +175,23 @@ export const zhSidebarConfig = sidebar({
             "text.md",
             "font.md",
             "icons.md",
+            "link.md",
+            "list.md",
+            "table.md",
           ],
         },
+        {
+            text: "中级教程",
+            icon: "tutorial",
+            prefix: "tutorial/",
+            children: [
+              "display_visibility.md",
+              "max_width.md",
+              "positioning.md",
+              "overflow.md",
+              "float.md",
+            ],
+          },
       ],
     },
     {
