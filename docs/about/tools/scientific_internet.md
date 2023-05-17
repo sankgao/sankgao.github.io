@@ -2,9 +2,9 @@
 title: 科学上网工具
 icon: Internetsafety
 date: 2023-05-03
-category: Tools
-tag:
-    - VPN
+article: false
+breadcrumb: false
+sidebar: false
 ---
 
 科学上网工具可以通过 VPN 的方式访问外网，加速访问速度，保护个人隐私。
