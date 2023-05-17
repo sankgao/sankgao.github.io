@@ -129,10 +129,9 @@ div {
 ::: normal-demo 演示
 
 ```html
-<img src="/background.png" width="350" height="263" alt="background">
+<img src="/background.png" width="350" height="263" alt="background" />
 
 <div>上面的图片宽 350 像素。此因素的总宽也是 350 像素。</div>
-
 ```
 
 ```css

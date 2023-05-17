@@ -27,7 +27,7 @@ tag:
 
 ```html
 <head>
-  <link rel="stylesheet" href="./mystyle.css">
+  <link rel="stylesheet" href="./mystyle.css" />
 </head>
 
 <h1>This is a heading</h1>
@@ -58,7 +58,7 @@ h1 {
 
 外部 `.css` 文件不应包含任何 HTML 标签
 
-请勿在 **属性值** 和 **单位** 之间添加空格（例如：`margin-left: 20 px;`）。正确的写法是：（`margin-left: 20px;`）
+请勿在 **属性值** 和 **单位** 之间添加空格（例如：`margin-left: 20px;`）。正确的写法是：（`margin-left: 20px;`）
 :::
 
 ## 内部 CSS
@@ -102,8 +102,8 @@ h1 {
 ::: normal-demo 演示
 
 ```html
-<h1 style="color:blue;text-align:center;">这是标题</h1>
-<p style="color:red;">这是一个段落。</p>
+<h1 style="color: blue; text-align: center;">这是标题</h1>
+<p style="color: red;">这是一个段落。</p>
 ```
 
 :::
@@ -140,7 +140,7 @@ h1 {
 
     ```html
     <head>
-      <link rel="stylesheet" type="text/css" href="./mystyle.css">
+      <link rel="stylesheet" type="text/css" href="./mystyle.css" />
       <style>
         h1 {
           color: orange;
@@ -165,7 +165,7 @@ h1 {
           color: orange;
         }
       </style>
-      <link rel="stylesheet" type="text/css" href="./mystyle.css">
+      <link rel="stylesheet" type="text/css" href="./mystyle.css" />
     </head>
     
     <h1>这是一个标题</h1>
@@ -200,7 +200,7 @@ h1 {
 ::: normal-demo 演示
 
 ```html
-<link rel="stylesheet" type="text/css" href="./mystyle.css">
+<link rel="stylesheet" type="text/css" href="./mystyle.css" />
 <style>
   h1 {
     color: orange;

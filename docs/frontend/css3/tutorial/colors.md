@@ -18,14 +18,14 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:Tomato;">番茄色</h1>
-<h1 style="background-color:Orange;">橙色</h1>
-<h1 style="background-color:DodgerBlue;">道奇蓝</h1>
-<h1 style="background-color:MediumSeaGreen;">中海绿色</h1>
-<h1 style="background-color:Gray;">灰色</h1>
-<h1 style="background-color:SlateBlue;">板岩蓝</h1>
-<h1 style="background-color:Violet;">紫色</h1>
-<h1 style="background-color:LightGray;">浅灰</h1>
+<h1 style="background-color: Tomato;">番茄色</h1>
+<h1 style="background-color: Orange;">橙色</h1>
+<h1 style="background-color: DodgerBlue;">道奇蓝</h1>
+<h1 style="background-color: MediumSeaGreen;">中海绿色</h1>
+<h1 style="background-color: Gray;">灰色</h1>
+<h1 style="background-color: SlateBlue;">板岩蓝</h1>
+<h1 style="background-color: Violet;">紫色</h1>
+<h1 style="background-color: LightGray;">浅灰</h1>
 ```
 
 :::
@@ -37,8 +37,8 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:Tomato;">标题背景色</h1>
-<p style="background-color:Orange;">段落背景色</p>
+<h1 style="background-color: Tomato;">标题背景色</h1>
+<p style="background-color: Orange;">段落背景色</p>
 ```
 
 :::
@@ -50,8 +50,8 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<h1 style="color:Tomato;">标题文本色</h1>
-<p style="color:DodgerBlue;">段落文本色</p>
+<h1 style="color: Tomato;">标题文本色</h1>
+<p style="color: DodgerBlue;">段落文本色</p>
 ```
 
 :::
@@ -87,9 +87,9 @@ tag:
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
-<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
-<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color: rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color: rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color: rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
 ```
 
 :::
@@ -105,9 +105,9 @@ RGBA 颜色值指定为：`rgba(red, green, blue, alpha)`
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
-<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.6)</h1>
-<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+<h1 style="background-color: rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color: rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color: rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
 ```
 
 :::
@@ -123,9 +123,9 @@ RGBA 颜色值指定为：`rgba(red, green, blue, alpha)`
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:#ff0000;">#ff0000</h1>
-<h1 style="background-color:#0000ff;">#0000ff</h1>
-<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color: #ff0000;">#ff0000</h1>
+<h1 style="background-color: #0000ff;">#0000ff</h1>
+<h1 style="background-color: #3cb371;">#3cb371</h1>
 ```
 
 :::
@@ -153,12 +153,12 @@ RGBA 颜色值指定为：`rgba(red, green, blue, alpha)`
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
-<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
-<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
-<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
-<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
-<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+<h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color: hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
 ```
 
 :::
@@ -169,19 +169,19 @@ RGBA 颜色值指定为：`rgba(red, green, blue, alpha)`
 
 - **0%**：表示不亮（黑色）
 - **50%**：表示 `50%` 亮（既不暗也不亮）
-- **100%**：·表示全明（白）
+- **100%**：表示全明（白）
 
 例如：
 
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
-<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 20%)</h1>
-<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
-<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
-<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
-<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+<h1 style="background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color: hsl(0, 100%, 25%);">hsl(0, 100%, 20%)</h1>
+<h1 style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
 ```
 
 :::
@@ -197,12 +197,12 @@ RGBA 颜色值指定为：`rgba(red, green, blue, alpha)`
 ::: normal-demo 演示
 
 ```html
-<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
-<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color: hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
 ```
 
 :::

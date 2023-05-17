@@ -32,7 +32,7 @@ tag:
 ```html
 <head>
   <title>Font Awesome Icons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!--Get your own code at fontawesome.com-->
 </head>
@@ -63,7 +63,7 @@ tag:
 
 ```html
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 ```
 
@@ -74,8 +74,8 @@ tag:
 ```html
 <head>
   <title>Bootstrap Icons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 
 <body class="container">
@@ -86,7 +86,7 @@ tag:
   <i class="glyphicon glyphicon-user"></i>
   <i class="glyphicon glyphicon-envelope"></i>
   <i class="glyphicon glyphicon-thumbs-up"></i>
-  <br><br>
+  <br /><br />
 
   <p>有样式的 Bootstrap 图标（尺寸和颜色）：</p>
   <i class="glyphicon glyphicon-cloud" style="font-size: 24px;"></i>
@@ -105,7 +105,7 @@ tag:
 
 ```html
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 ```
 
@@ -116,8 +116,8 @@ tag:
 ```html
 <head>
   <title>Google Icons</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 
 <body>
@@ -128,7 +128,7 @@ tag:
   <i class="material-icons">attachment</i>
   <i class="material-icons">computer</i>
   <i class="material-icons">traffic</i>
-  <br><br>
+  <br /><br />
 
   <p>有样式的 Google 图标（尺寸和颜色）：</p>
   <i class="material-icons" style="font-size: 24px;">cloud</i>

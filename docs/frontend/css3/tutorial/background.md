@@ -257,6 +257,7 @@ body {
 :::
 
 - **background-position**：属性用于指定背景图像的位置，值的位置 **可以互换**
+
     - **top left**：上左角
     - **top center**：上中角
     - **top right**：上右角
@@ -266,6 +267,7 @@ body {
     - **bottom left**：下左角
     - **bottom center**：下中角
     - **bottom right**：下右角
+
 - **margin-right**：属性设置元素的右外边距，使文本不会覆盖背景图片
 
 ## CSS 背景附着

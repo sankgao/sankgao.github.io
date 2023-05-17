@@ -379,7 +379,6 @@ p.one {
 
 ```html
 <p>border 属性是 border-width、border-style 以及 border-color 的简写属性。</p>
-
 ```
 
 ```css
