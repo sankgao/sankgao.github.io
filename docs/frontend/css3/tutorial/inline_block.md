@@ -1,6 +1,6 @@
 ---
 title: inline_block
-icon: float
+icon: inline-block
 date: 2023-05-18
 category: Frontend
 tag:
