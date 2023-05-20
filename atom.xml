@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-05-19T11:18:31.861Z</updated>
+  <updated>2023-05-20T14:26:01.505Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -25977,7 +25977,7 @@
     <title type="text">导航栏</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/navbar.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/navbar.html"/>
-    <updated>2023-05-19T11:14:56.000Z</updated>
+    <updated>2023-05-20T14:23:13.000Z</updated>
     <summary type="html"><![CDATA[<p>易用的导航对于任何网站都很重要。</p>
 <p>通过使用 CSS，您可以将无聊的 HTML 菜单转换为美观的导航栏。</p>
 <h2> 导航栏 = 链接列表</h2>
@@ -26071,7 +26071,7 @@
     <title type="text">透明度</title>
     <id>https://sankgao.github.io/frontend/css3/tutorial/transparency.html</id>
     <link href="https://sankgao.github.io/frontend/css3/tutorial/transparency.html"/>
-    <updated>2023-05-19T11:14:56.000Z</updated>
+    <updated>2023-05-20T14:23:13.000Z</updated>
     <summary type="html"><![CDATA[<p><code>opacity</code> 属性指定元素的透明度。</p>
 <h2> 透明图像</h2>
 <p><code>opacity</code> 属性的取值范围为 <code>0.0-1.0</code>。值越低，越透明。例如：</p>
