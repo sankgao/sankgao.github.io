@@ -58,37 +58,39 @@ img:hover {
 ::: normal-demo 演示
 
 ```html
-<div class="first">
-  <p>opacity 0.1</p>
-</div>
-<div class="second">
-  <p>opacity 0.3</p>
-</div>
-<div class="third">
-  <p>opacity 0.6</p>
-</div>
-<div>
+<div class="clearfix">
+  <p class="first">opacity 0.1</p>
+  <p class="second">opacity 0.3</p>
+  <p class="third">opacity 0.6</p>
   <p>opacity 1 (default)</p>
 </div>
 ```
 
 ```css
-div {
-  background-color: #4CAF50;
+p {
+  background-color: #4caf50;
   padding: 10px;
+  float: left;
 }
 
-div.first {
+p.first {
   opacity: 0.1;
 }
 
-div.second {
+p.second {
   opacity: 0.3;
 }
 
-div.third {
+p.third {
   opacity: 0.6;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 ```
 
 :::
@@ -102,36 +104,37 @@ div.third {
 ::: normal-demo 演示
 
 ```html
-<div class="first">
-  <p>opacity 0.1</p>
-</div>
-<div class="second">
-  <p>opacity 0.3</p>
-</div>
-<div class="third">
-  <p>opacity 0.6</p>
-</div>
-<div>
+<div class="clearfix">
+  <p class="first">opacity 0.1</p>
+  <p class="second">opacity 0.3</p>
+  <p class="third">opacity 0.6</p>
   <p>opacity 1 (default)</p>
 </div>
 ```
 
 ```css
-div {
+p {
   background: rgb(76, 175, 80);
   padding: 10px;
+  float: left;
 }
 
-div.first {
+p.first {
   background: rgba(76, 175, 80, 0.1);
 }
 
-div.second {
+p.second {
   background: rgba(76, 175, 80, 0.3);
 }
 
-div.third {
+p.third {
   background: rgba(76, 175, 80, 0.6);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 ```
 

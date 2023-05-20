@@ -80,14 +80,14 @@ ul {
   width: 200px;
   background-color: #f1f1f1;
 }
-​
+
 li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-​
+
 /* 悬停时更改链接颜色 */
 li a:hover {
   background-color: #555;
@@ -573,7 +573,9 @@ li a {
     ```
 
     ```css
-    body {margin:0;}
+    body {
+      margin: 0;
+    }
 
     ul {
       list-style-type: none;
