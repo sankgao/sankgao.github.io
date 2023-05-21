@@ -90,7 +90,7 @@ tag:
 <SiteInfo
   name="全栈程序员"
   desc="全栈程序员必看"
-  url="https://javaforall.cn/"
+  url="https://javaforall.cn/category/%e5%85%a8%e6%a0%88%e7%a8%8b%e5%ba%8f%e5%91%98"
   preview="/links/userim.jpg"
 />
 
