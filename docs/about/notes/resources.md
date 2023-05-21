@@ -1,5 +1,5 @@
 ---
-title: 各种资源
+title: 资源列表
 icon: resources
 date: 2023-04-19
 category: Notes
@@ -10,7 +10,199 @@ tag:
 
 资源列表。
 
-<!-- more -->
+## 个人博客
+
+- [辣子鸡](https://github-laziji.github.io/)
+
+    使用 GitHub API 搭建一个可动态发布文章的博客。
+
+- [04007](http://www.04007.cn/)
+
+    博客是一个程序员为了验证自己开发的框架而产生的，并提供一些个人技术分享。
+
+- [海拥](https://haiyong.site/)
+
+    一个乐于分享技术与快乐的博主，摸鱼小游戏，计算机技术分享。
+
+- [崔庆才](https://cuiqingcai.com/)
+
+    网络爬虫、机器学习、Web 开发等
+
+- [二丫讲梵](https://wiki.eryajf.net/)
+
+    💻学习📝记录🔗分享，分享一些个人在运维上遇到的问题。
+
+- [花开半夏](https://www.zhangshilong.cn/)
+
+    关注互联网前端技术，全栈技术分享。
+
+- [Young Kbt](https://notes.youngkbt.cn/)
+
+    Young Kbt 个人博客, VuePress 搭建, 使用了 Vdoing 主题, 学习 Java, Web, 框架, 微服务, 工具, 前端等相关知识, 记录生活和技术路程, 同时分享编程技巧。
+
+- [小弟调调](https://wangchujiang.com/)
+
+    (͡·̮̃·̃) 撸码的乐趣 💯 ，“人没了，™代码还在”。
+
+- [全栈程序员](https://javaforall.cn/category/%e5%85%a8%e6%a0%88%e7%a8%8b%e5%ba%8f%e5%91%98)
+
+    全栈程序员必看。
+
+- [Cui Jack](https://cuijiahua.com/)
+
+    分享人工智能相关知识的个人网站，主要涵盖了机器学习、深度学习、网络爬虫等经验教程。
+
+- [程序员欣宸](https://xinchen.blog.csdn.net/)
+
+    Java、Docker、Kubernetes 爱好者。
+
+- [BBSMAX](https://www.bbsmax.com/)
+
+    关于 Python、Java、PHP、IOS、Andorid、NodeJS、JavaScript、HTML5 个人技术分享。
+
+- [程序员大本营](https://www.pianshen.com/)
+
+    程序员大本营，技术文章内容聚合第一站。
+
+- [Java 程序员进阶之路](https://tobebetterjavaer.com/)
+
+    一份涵盖 Java、MySQL、Redis、C 语言、C++、Python、Go、操作系统、前端、数据结构与算法、蓝桥杯、大数据、Android、.NET的全方位编程学习路线！
+
+- [A 姐分享](https://www.ahhhhfs.com/)
+
+    分享资源、影视、软件和福利等有趣的东西。
+
+- [HelloGitHub](https://hellogithub.com/)
+
+    分享 GitHub 上有趣、入门级的开源项目。
+
+- [fullstack tutorial](https://frank-lam.github.io/fullstack-tutorial/#/)
+
+    全栈开发指南，架构师成长之路。操作系统、计算机网络、数据库与算法、Java 技术栈、微服务、分布式系统架构、Docker、Git工作流、正则表达式，from zero to hero。
+
+- [yhangf](https://yhangf.gitee.io/)
+
+    Hangfeng Yang，CS 本科生，对大数据安全和深度学习感兴趣。
+
+## 博客
+
+- [CSDN](https://www.csdn.net/)
+- [开源博客](https://www.oschina.net/)
+- [Gitee](https://gitee.com/explore)
+- [大白菜博客](https://cmsblogs.cn/)
+- [博客园](https://www.cnblogs.com/)
+- [51CTO](https://blog.51cto.com/)
+
+## 网站
+
+- [VuePress](https://v2.vuepress.vuejs.org/zh/)
+- [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
+- [在线学习，考证书](https://www.coursera.org/)
+- [资源分享](https://geekerline.com/)
+- [阿里云盘资源共享站](https://newxiaozhan.com/)
+- [蓝桥杯](http://lx.lanqiao.cn/)
+- [网站大全](https://newxiaozhan.com/d/39223)
+- [CXY521](http://www.cxy521.com/index.html)
+- [阿里云盘网](http://www.alypw.cn/)
+- [阿里云盘资源共享站](https://newxiaozhan.com/)
+- [个人收集资源2](https://newxiaozhan.com/d/164012-2)
+- [300T 网盘资源](https://newxiaozhan.com/d/199069-300t)
+- [ChatGPT](https://pan.quark.cn/s/278e6a2fa54e?entry=funletu#/list/share)
+- [阿里云盘 - 总盘分享 54T](https://www.aliyundrive.com/s/kWMsLqDVQnR)
+- [摸鱼指北](https://github.com/akira-cn/moyu)
+- [超多 B 站链接资源](https://newxiaozhan.com/d/99194-b)
+
+## 教程
+
+- [菜鸟教程](https://www.runoob.com/)
+- [编程宝库](http://www.codebaoku.com/)
+- [IT屋](https://www.it1352.com/)
+- [翼狐网](https://www.yiihuu.com/)
+- [编程字典](https://www.codingdict.com/)
+- [立地货 - 随时随地学编程](https://www.lidihuo.com/)
+- [DevOpsCube](https://devopscube.com/)
+- [DevOps 知识库](https://doc.devpod.cn/)
+- [tutorialspoint](https://www.tutorialspoint.com/index.htm)
+- [w3school](https://www.w3school.com.cn/)
+- [w3cschool](https://www.w3cschool.cn/)
+- [WIKI](https://iowiki.com/)
+- [C 语言中文网](http://c.biancheng.net/)
+- [OrcHome](https://www.orchome.com/)
+- [运维派](http://www.yunweipai.com/)
+- [廖雪峰](https://www.liaoxuefeng.com/)
+- [黑马人工智能 AI](https://pan.quark.cn/s/a8a9fc9117c7#/list/share)
+- [Java程序员的系列教程](https://github.com/crisxuan/bestJavaer)
+- [最新技术开发教程](https://geekerline.com/circle/13264.html)
+- [编程集教程](https://geekerline.com/circle/44550.html)
+- [综合资源教程](https://geekerline.com/circle/12921.html)
+- [阿里云盘 - Python 学习](https://www.aliyundrive.com/s/1cL1mT75gCR)
+- [阿里云盘 - B 站 Python 学习](https://www.aliyundrive.com/s/WDhtYQ5Z7tB)
+- [阿里云盘 - B 站 Java 学习](https://www.aliyundrive.com/s/AU8Fu91ffms)
+- [阿里云盘 - Python 电子书](https://www.aliyundrive.com/s/72Z79nCKCDU)
+- [阿里云盘 - 编程学习](https://www.aliyundrive.com/s/eFjn51jtfPT)
+- [阿里云盘 - 英语学习](https://www.aliyundrive.com/s/fwhZ52PPRZZ/folder/61939640dceb43ef04b14ba198d8259b4faef00f)
+- [阿里云盘 - 外语专区](https://www.aliyundrive.com/s/vdN2GZoBgvY)
+- [阿里云盘 - 兴趣类教程](https://www.aliyundrive.com/s/tnNaNzC4Zo4)
+- [阿里云盘 - 各类教程](https://www.aliyundrive.com/s/auijr4RoREU)
+- [阿里云盘 - 驾照](https://www.aliyundrive.com/s/NdY55k1aCHh)
+- [阿里云盘 - 武术体育健身](https://www.aliyundrive.com/s/t7THyHZAVWX)
+- [小学资料](https://newxiaozhan.com/d/206824-1t3)
+- [小学初高中学习资料](https://newxiaozhan.com/d/52968)
+- [幼儿到大学全套资源](https://geekerline.com/circle/57294.html)
+- [初级中药师网课](https://newxiaozhan.com/d/60818)
+
+## 书籍
+
+- [书栈网](https://www.bookstack.cn/)
+- [码农之家](https://www.xz577.com/)
+- [书格](https://new.shuge.org/)
+- [熊猫搜书](https://xmsoushu.com/#/)
+- [鸠摩搜书](https://www.jiumodiary.com/)
+- [阿里云盘 - 四大名著](https://www.aliyundrive.com/s/K7eMj7Kt8Rq)
+- [阿里云盘 - 6.1T 电子书](https://www.aliyundrive.com/s/KML4CF3ZdwK)
+- [阿里云盘 - Office 之光](https://www.aliyundrive.com/s/xkkEYJ3V2Ew)
+
+## 工具
+
+- [改图鸭](https://www.gaituya.com/)
+- [ILove PDF](https://www.ilovepdf.com/)
+- [epub 转 PDF](https://epubtopdf.com/zh/)
+- [epub 在线阅读](https://www.strerr.com/cn/epub/index.html#)
+- [免费素材下载](https://www.aigei.com/)
+- [在线工具集 图片 PS](https://www.qtool.net/)
+- [在线工具集](https://lwebapp.com/zh/tools)
+- [在线制作 ICO 图标](https://www.bitbug.net/)
+- [在线生成圆形图标](https://www.butterpig.top/imgcircle)
+- [ILove PDF](https://www.ilovepdf.com/)
+- [epub 转 PDF](https://epubtopdf.com/zh/)
+- [简单云 - 一站式 DevOps 工具链](https://ezone.work/)
+- [PDF 365](https://www.pdf365.cn/)
+- [快速搜索文件](https://www.voidtools.com/zh-cn/)
+- [B 站自动任务工具](https://github.com/RayWangQvQ/BiliBiliToolPro)
+- [文件类型转换器](https://convertio.co/zh/)
+- [Pixiv 第三方客户端](https://geekerline.com/circle/57483.html)
+- [阿里云盘每日签到脚本](https://github.com/mrabit/aliyundriveDailyCheck)
+- [阿里云盘 - 电脑软件库](https://www.aliyundrive.com/s/tm52PAwmy7s)
+- [某度网盘免会员下载](https://geekerline.com/newsflashes/54960.html)
+- [看板娘](https://zhangshuqiao.org/2018-07/%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98/)
+
+## 图片
+
+- [免版税图片](https://pixabay.com/)
+- [零域色彩头像](https://avatar.0skyu.cn/)
+- [wallhaven](https://wallhaven.cc/)
+- [wallhaven 桌面程序](https://github.com/leoFitz1024/wallhaven)
+
+## 视频
+
+- [茶杯狐](https://cupfox.app/)
+- [达达兔](https://www.dadatutvk.com/)
+- [西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)
+- [珍品小视频](https://geekerline.com/circle/57640.html)
+
+## 搜索
+
+- [云盘狗](https://www.yunpangou.com/)
 
 ## 个人博客
 
