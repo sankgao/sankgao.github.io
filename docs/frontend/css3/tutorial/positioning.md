@@ -190,9 +190,9 @@ Internet Explorer、Edge 15 以及更早的版本不支持粘性定位。Safari 
 ```html
 <h1>这是标题</h1>
 
-<img src="/html5/eg_sun.gif" />
+<img src="/background.png" alt="background" width="260" height="150" />
 
-<p>由于图像的 z-index 为 -1，它将被置于文本之后。</p>
+<p>由于图像的 z-index 为 1，它将被置于文本上面。</p>
 ```
 
 ```css
@@ -200,7 +200,7 @@ img {
   position: absolute;
   left: 0px;
   top: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 ```
 
