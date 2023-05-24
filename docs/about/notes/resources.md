@@ -28,6 +28,10 @@ tag:
 
     网络爬虫、机器学习、Web 开发等
 
+- [阮一峰](https://www.ruanyifeng.com/home.html)
+
+    关注网站制作，记录一些网络日志和各类文集，译作：《ECMAScript 6入门》、《软件随想录》、《黑客与画家》 等。
+
 - [二丫讲梵](https://wiki.eryajf.net/)
 
     💻学习📝记录🔗分享，分享一些个人在运维上遇到的问题。
@@ -38,7 +42,7 @@ tag:
 
 - [Young Kbt](https://notes.youngkbt.cn/)
 
-    Young Kbt 个人博客, VuePress 搭建, 使用了 Vdoing 主题, 学习 Java, Web, 框架, 微服务, 工具, 前端等相关知识, 记录生活和技术路程, 同时分享编程技巧。
+    Young Kbt 个人博客, VuePress 搭建，使用了 Vdoing 主题，学习 Java、Web、框架、微服务、工具、前端等相关知识, 记录生活和技术路程, 同时分享编程技巧。
 
 - [小弟调调](https://wangchujiang.com/)
 
@@ -66,7 +70,7 @@ tag:
 
 - [Java 程序员进阶之路](https://tobebetterjavaer.com/)
 
-    一份涵盖 Java、MySQL、Redis、C 语言、C++、Python、Go、操作系统、前端、数据结构与算法、蓝桥杯、大数据、Android、.NET的全方位编程学习路线！
+    一份涵盖 Java、MySQL、Redis、C 语言、C++、Python、Go、操作系统、前端、数据结构与算法、蓝桥杯、大数据、Android、.NET 的全方位编程学习路线！
 
 - [A 姐分享](https://www.ahhhhfs.com/)
 
@@ -78,7 +82,7 @@ tag:
 
 - [fullstack tutorial](https://frank-lam.github.io/fullstack-tutorial/#/)
 
-    全栈开发指南，架构师成长之路。操作系统、计算机网络、数据库与算法、Java 技术栈、微服务、分布式系统架构、Docker、Git工作流、正则表达式，from zero to hero。
+    全栈开发指南，架构师成长之路。操作系统、计算机网络、数据库与算法、Java 技术栈、微服务、分布式系统架构、Docker、Git 工作流、正则表达式，from zero to hero。
 
 - [yhangf](https://yhangf.gitee.io/)
 
