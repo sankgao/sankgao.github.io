@@ -141,7 +141,7 @@ tag:
 - [简法主页](http://www.jianfast.com/)
 - [KIM 主页](https://kim.plopco.com/)
 - [抓鱼鸭标签页](https://www.zhuayuya.com/)
-- [资源分享](https://geekerline.com/)
+- [圈子 – Geeker](https://geekerline.com/)
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://newxiaozhan.com/)
 - [个人收集资源2](https://newxiaozhan.com/d/164012-2)
