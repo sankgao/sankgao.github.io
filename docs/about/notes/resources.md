@@ -12,6 +12,14 @@ tag:
 
 ## 博客
 
+- [Summer](https://www.xswsym.online/)
+
+    Devops 运维技术博客，敏捷运维、自动化部署、微服务、运维面试题、技术文档、学习、面试等。
+
+- [村雨遥](https://cunyu1943.site/)
+
+    Java 最新干货分享，一个分享技术与生活的博客。
+
 - [辣子鸡](https://github-laziji.github.io/)
 
     使用 GitHub API 搭建一个可动态发布文章的博客。
@@ -128,6 +136,8 @@ tag:
 - [51CTO](https://blog.51cto.com/)
 - [bilibili](www.bilibili.com)
 - [知乎](https://www.zhihu.com/)
+- [QA Stack](https://qastack.cn/)
+- [技术分享平台](https://www.saoniuhuo.com/)
 - [VuePress](https://v2.vuepress.vuejs.org/zh/)
 - [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
 - [蓝桥杯](http://lx.lanqiao.cn/)
