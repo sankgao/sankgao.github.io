@@ -115,8 +115,8 @@ tag:
 ## 友联信息
 
 ```md
-title: Sankgao  # 昵称
-desc: 给时间一些时间，让过去的过去，让开始的开始  # 介绍
+title: Sank Gao  # 昵称
+desc: 我是世界上的独一无二，百句空言不如一个行动。  # 介绍
 logo: https://sankgao.github.io/logo.png  # 头像
 link: https://sankgao.github.io  # 链接
 color: rgba(93, 175, 241, 0.15)  # 卡片颜色
