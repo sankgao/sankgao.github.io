@@ -23,6 +23,14 @@ export const zhNavbarConfig = navbar([
     link: "/operations/",
   },
   {
+    text: "编程语言",
+    icon: "backstage",
+    prefix: "/languages/",
+    children: [
+      { text: "Python", icon: "python", link: "python/" },
+    ],
+  },
+  {
     text: "索引",
     icon: "index",
     children: [
