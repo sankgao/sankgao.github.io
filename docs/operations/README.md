@@ -20,13 +20,20 @@ tag:
 选择任何用于自动化的语言。
 
 - Python<Badge text="√" type="warning" />
+- Go<Badge text="√" type="warning" />
+- Rust<Badge text="√" type="tip" />
 - Ruby<Badge text="√" type="tip" />
 - JavaScript/Node.js<Badge text="√" type="tip" />
 
-- Go<Badge text="√" type="warning" />
-- Rust<Badge text="√" type="tip" />
+选择什么语言并不重要，但至少学习一门语言很重要。您将能够使用该语言编写自动化脚本。
+
+有许多可用的编程语言，但并非所有语言都与 `DevOps` 相关。我个人的建议是选择 `Python` 或 `Go`。两种语言都有不同的优点和用例，但它们都在 `DevOps` 社区中得到广泛使用。
+
+`Shell` 语言对于 DevOps 从业者至关重要，因为它们提供了一种自动化任务和运行脚本的方法。我个人的建议是选择 `Bash` 或 `PowerShell Core`。如果您使用 Linux 服务器，您可能会遇到 `Bash`，而 `PowerShell Core` 是由 Microsoft 开发的一种跨平台语言。
 
 ## 了解不同的操作系统概念
+
+操作系统是管理计算机资源的程序，尤其是这些资源在其他程序之间的分配。典型的资源包括中央处理器（CPU）、计算机内存、文件存储、输入/输出（I/O）设备和网络连接。
 
 - I/O 管理<Badge text="√" type="warning" />
 - 虚拟化<Badge text="√" type="warning" />
