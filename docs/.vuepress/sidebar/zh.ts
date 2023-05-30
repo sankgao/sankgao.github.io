@@ -250,6 +250,31 @@ export const zhSidebarConfig = sidebar({
   ],
 
   "/operations/": [],
+
+  "/languages/": [
+    {
+      text: "Python",
+      icon: "python",
+      prefix: "python/",
+      collapsible: true,
+      children: [
+        {
+          text: "基础教程",
+          icon: "tutorial",
+          prefix: "tutorial/",
+          collapsible: true,
+          children: [
+            "introduction.md",
+            "base.md",
+            "comments.md",
+            "variables.md",
+            "datatypes.md",
+            "operators.md",
+          ],
+        },
+      ],
+    },
+  ],
   
   "/about/": [
     {
