@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 31 May 2023 10:57:20 GMT</pubDate>
-    <lastBuildDate>Wed, 31 May 2023 10:57:20 GMT</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 11:09:10 GMT</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 11:09:10 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -1194,7 +1194,7 @@
       <link>https://sankgao.github.io/languages/python/tutorial/operators.html</link>
       <guid>https://sankgao.github.io/languages/python/tutorial/operators.html</guid>
       <source url="https://sankgao.github.io/rss.xml">运算符</source>
-      <description>运算符 算数运算符 算术运算符用于组织整数类型和浮点类型的数据，有 一元运算符 和 二元运算符 之分。 一元算术运算符有两个：+（正号）和 -（负号）。例如：+a 还是 a，`-a 是对 a` 的取反运算。 二元算术运算符如下表所示： 算数运算符 描述 :----: :---- ++ 依次相加 -- 依次相减 + 加 - 减 * 乘 / 除 % 取余或...</description>
+      <description>运算符 算数运算符 算术运算符用于组织整数类型和浮点类型的数据，有 一元运算符 和 二元运算符 之分。 一元算术运算符有两个：+（正号）和 -（负号）。例如：+a 还是 a，`-a 是对 a` 的取反运算。 二元算术运算符如下表所示： 算数运算符 描述 :----: :---- **++** 依次相加 -- 依次相减 **+** 加 - 减 **\**...</description>
       <category>Languages</category>
       <pubDate>Tue, 30 May 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<h2> 运算符</h2>
@@ -1211,39 +1211,39 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>++</code></td>
+<td style="text-align:center"><strong>++</strong></td>
 <td style="text-align:left">依次相加</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>--</code></td>
+<td style="text-align:center"><strong>--</strong></td>
 <td style="text-align:left">依次相减</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>+</code></td>
+<td style="text-align:center"><strong>+</strong></td>
 <td style="text-align:left">加</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>-</code></td>
+<td style="text-align:center"><strong>-</strong></td>
 <td style="text-align:left">减</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>*</code></td>
+<td style="text-align:center"><strong>*</strong></td>
 <td style="text-align:left">乘</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>/</code></td>
+<td style="text-align:center"><strong>/</strong></td>
 <td style="text-align:left">除</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>%</code></td>
+<td style="text-align:center"><strong>%</strong></td>
 <td style="text-align:left">取余或（求模）</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>**</code></td>
+<td style="text-align:center"><strong>**</strong></td>
 <td style="text-align:left">指数或（幂）</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>//</code></td>
+<td style="text-align:center"><strong>//</strong></td>
 <td style="text-align:left">取整除</td>
 </tr>
 </tbody>
@@ -1260,55 +1260,55 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>=</code></td>
+<td style="text-align:center"><strong>=</strong></td>
 <td style="text-align:left">普通赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>+=</code></td>
+<td style="text-align:center"><strong>+=</strong></td>
 <td style="text-align:left">加赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>-=</code></td>
+<td style="text-align:center"><strong>-=</strong></td>
 <td style="text-align:left">减赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>*=</code></td>
+<td style="text-align:center">*<strong>=</strong></td>
 <td style="text-align:left">乘赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>/=</code></td>
+<td style="text-align:center"><strong>/=</strong></td>
 <td style="text-align:left">除赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>%=</code></td>
+<td style="text-align:center"><strong>%=</strong></td>
 <td style="text-align:left">取余赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>**=</code></td>
+<td style="text-align:center"><strong>**=</strong></td>
 <td style="text-align:left">幂赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>//=</code></td>
+<td style="text-align:center"><strong>//=</strong></td>
 <td style="text-align:left">整除赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&amp;=</code></td>
+<td style="text-align:center"><strong>&amp;=</strong></td>
 <td style="text-align:left">位与赋值</td>
 </tr>
 <tr>
-<td style="text-align:center">`</td>
-<td style="text-align:left">=`</td>
+<td style="text-align:center"><strong>|=</strong></td>
+<td style="text-align:left">位或赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>^=</code></td>
+<td style="text-align:center"><strong>^=</strong></td>
 <td style="text-align:left">位异赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;&lt;=</code></td>
+<td style="text-align:center"><strong>&lt;&lt;=</strong></td>
 <td style="text-align:left">左移赋值</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&gt;&gt;=</code></td>
+<td style="text-align:center"><strong>&gt;&gt;=</strong></td>
 <td style="text-align:left">右移赋值</td>
 </tr>
 </tbody>
@@ -1329,27 +1329,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>&gt;</code></td>
+<td style="text-align:center"><strong>&gt;</strong></td>
 <td style="text-align:left">大于</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;</code></td>
+<td style="text-align:center"><strong>&lt;</strong></td>
 <td style="text-align:left">小于</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>==</code></td>
+<td style="text-align:center"><strong>==</strong></td>
 <td style="text-align:left">等于</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>!=</code></td>
+<td style="text-align:center"><strong>!=</strong></td>
 <td style="text-align:left">不等于</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&gt;=</code></td>
+<td style="text-align:center"><strong>&gt;=</strong></td>
 <td style="text-align:left">大于等于</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;=</code></td>
+<td style="text-align:center"><strong>&lt;=</strong></td>
 <td style="text-align:left">小于等于</td>
 </tr>
 </tbody>
@@ -1366,15 +1366,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>and</code></td>
+<td style="text-align:center"><strong>and</strong></td>
 <td style="text-align:left">逻辑与。如果两个语句都为真，则返回 True</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>or</code></td>
+<td style="text-align:center"><strong>or</strong></td>
 <td style="text-align:left">逻辑或。如果其中一个语句为真，则返回 True</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>not</code></td>
+<td style="text-align:center"><strong>not</strong></td>
 <td style="text-align:left">逻辑非。反转结果，如果结果为 true，则返回 False</td>
 </tr>
 </tbody>
@@ -1392,27 +1392,27 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>&amp;</code></td>
+<td style="text-align:center"><strong>&amp;</strong></td>
 <td style="text-align:left">位与：只有对应操作数位都是 1 时，结果位才是 1，否则为 0</td>
 </tr>
 <tr>
-<td style="text-align:center">`</td>
-<td style="text-align:left">`</td>
+<td style="text-align:center"><strong>|</strong></td>
+<td style="text-align:left">位或：只有对应操作数位都是 0 时，结果位才是 0，否则为 1</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>^</code></td>
+<td style="text-align:center"><strong>^</strong></td>
 <td style="text-align:left">位异：只有对应操作数位都是 0 或都是 1 时，结果位才是 0，否则位 1</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>~</code></td>
+<td style="text-align:center"><strong>~</strong></td>
 <td style="text-align:left">位反：将操作数中对应的二进制数 1 修改为 0；0 修改为 1</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&gt;&gt;</code></td>
+<td style="text-align:center"><strong>&gt;&gt;</strong></td>
 <td style="text-align:left">右移：将一个二进制操作数向右移动指定的位数，右边（低位端）溢出的位被丢弃，而在填充左边（高位端）的空位时，如果最高位是 0（正数），左侧空位填入 0；如果最高位是 1（负数），左侧空位填入 1。右移位运算相当于除以 2 的 n 次幂</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;&lt;</code></td>
+<td style="text-align:center"><strong>&lt;&lt;</strong></td>
 <td style="text-align:left">左移：将一个二进制操作数向左移动指定的位数，左边（高位端）溢出的位被丢弃，右边（低位端）的空位用 0 补充。左移位运算相当于乘以 2 的 n 次幂</td>
 </tr>
 </tbody>
@@ -1429,11 +1429,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>in</code></td>
+<td style="text-align:center"><strong>in</strong></td>
 <td style="text-align:left">如果对象中存在具有指定值的序列，则返回 True</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>not in</code></td>
+<td style="text-align:center"><strong>not in</strong></td>
 <td style="text-align:left">如果对象中不存在具有指定值的序列，则返回 True</td>
 </tr>
 </tbody>
@@ -1450,55 +1450,55 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>()</code></td>
+<td style="text-align:center"><strong>()</strong></td>
 <td style="text-align:left">小括号</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>**</code></td>
+<td style="text-align:center"><strong>**</strong></td>
 <td style="text-align:left">幂</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>~</code></td>
+<td style="text-align:center"><strong>~</strong></td>
 <td style="text-align:left">位反</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>+</code>、<code>-</code></td>
+<td style="text-align:center"><strong>+</strong>、<strong>-</strong></td>
 <td style="text-align:left">正负号</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>*</code>、<code>/</code>、<code>%</code>、<code>//</code></td>
+<td style="text-align:center"><strong>*</strong>、<strong>/</strong>、<strong>%</strong>、<strong>//</strong></td>
 <td style="text-align:left">乘、除、取余、取整</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>+</code>、<code>-</code></td>
+<td style="text-align:center"><strong>+</strong>、<strong>-</strong></td>
 <td style="text-align:left">加、减</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;&lt;</code>、<code>&gt;&gt;</code></td>
+<td style="text-align:center"><strong>&lt;&lt;</strong>、<strong>&gt;&gt;</strong></td>
 <td style="text-align:left">左位移、右位移</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&amp;</code></td>
+<td style="text-align:center"><strong>&amp;</strong></td>
 <td style="text-align:left">位与</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>^</code></td>
+<td style="text-align:center"><strong>^</strong></td>
 <td style="text-align:left">位异</td>
 </tr>
 <tr>
-<td style="text-align:center">`</td>
-<td style="text-align:left">`</td>
+<td style="text-align:center"><strong>|</strong></td>
+<td style="text-align:left">位或</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>&lt;</code>、<code>&lt;=</code>、<code>&gt;</code>、<code>&gt;=</code>、<code>!=</code>、<code>==</code></td>
+<td style="text-align:center"><strong>&lt;</strong>、<strong>&lt;=</strong>、<strong>&gt;</strong>、<strong>&gt;=</strong>、<strong>!=</strong>、<strong>==</strong></td>
 <td style="text-align:left">比较</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>not</code></td>
+<td style="text-align:center"><strong>no</strong></td>
 <td style="text-align:left">逻辑非</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>and</code>、<code>or</code></td>
+<td style="text-align:center"><strong>an</strong>、<strong>or</strong></td>
 <td style="text-align:left">逻辑与、逻辑或</td>
 </tr>
 </tbody>
@@ -1513,47 +1513,47 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>\</code></td>
+<td style="text-align:center"><strong>\</strong></td>
 <td style="text-align:left">续行符</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\n</code></td>
+<td style="text-align:center"><strong>\n</strong></td>
 <td style="text-align:left">换行符</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\0</code></td>
+<td style="text-align:center"><strong>\0</strong></td>
 <td style="text-align:left">空</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\t</code></td>
+<td style="text-align:center"><strong>\t</strong></td>
 <td style="text-align:left">水平制表符</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>"</code></td>
+<td style="text-align:center"><strong>"</strong></td>
 <td style="text-align:left">双引号</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>'</code></td>
+<td style="text-align:center"><strong>'</strong></td>
 <td style="text-align:left">单引号</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\\</code></td>
+<td style="text-align:center"><strong>\</strong></td>
 <td style="text-align:left">一个反斜杠</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\f</code></td>
+<td style="text-align:center"><strong>\f</strong></td>
 <td style="text-align:left">换页</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\0dd</code></td>
+<td style="text-align:center"><strong>\0dd</strong></td>
 <td style="text-align:left">八进制数，<code>dd</code> 代表字符。例如：<code>\012</code> 代表换行</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>\xhh</code></td>
+<td style="text-align:center"><strong>\xhh</strong></td>
 <td style="text-align:left">十六进制数，<code>hh</code> 代表字符。例如：<code>\x0a</code> 代表换行</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>r/R</code></td>
+<td style="text-align:center"><strong>r/R</strong></td>
 <td style="text-align:left">在字符串定界符引号前面添加字母 <code>r</code> 或 <code>R</code>，该字符串原样输出，其中的转义字符不进行转义</td>
 </tr>
 </tbody>
