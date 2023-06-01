@@ -188,6 +188,7 @@ tag:
 - [C 语言中文网](http://c.biancheng.net/)
 - [How2J 的 Java 教程](https://how2j.cn/)
 - [OrcHome](https://www.orchome.com/)
+- [17 分享资源网](https://www.17fenxiang.cn/)
 - [运维派](http://www.yunweipai.com/)
 - [廖雪峰](https://www.liaoxuefeng.com/)
 - [黑马人工智能 AI](https://pan.quark.cn/s/a8a9fc9117c7#/list/share)
