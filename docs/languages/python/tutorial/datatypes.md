@@ -156,21 +156,21 @@ print(a)  # 输出结果：2.0。True 被转换为浮点数 1.0
 除复数外，其他三种数字类型如：整数、浮点和布尔值都有自己的转换函数，分别是 `int()`、`float()` 和 `bool()` 函数。例如：
 
 ```python
-# int(False) 将布尔值 False 转换为整数 0
+# 将布尔值 False 转换为整数 0
 print(int(False))  # 输出结果：0
 
-# int(0.6) 将浮点数 0.6 转换为整数 0
+# 将浮点数 0.6 转换为整数 0
 print(int(0.6))  # 输出结果：0
 
 # float(5) 将整数 5 转换为浮点数 5.0
 print(float(5))  # 输出结果：5.0
 
-# float(False) 将布尔值 False 转换为浮点数 0.0
+# 将布尔值 False 转换为浮点数 0.0
 print(float(False))  # 输出结果：0.0
 
-# bool(5) 将整数 5 转换为布尔值 True
+# 将整数 5 转换为布尔值 True
 print(bool(5))  # 输出结果：True
 
-# bool(0.6) 将浮点数 0.6 转换为布尔值 True
+# 将浮点数 0.6 转换为布尔值 True
 print(bool(0.6))  # 输出结果：True
 ```

@@ -203,7 +203,9 @@ else:
 ```python
 a = 1
 b = 2
-c = a if a > b else b  # 如果 a > b，c 就等于 a；否则 c 就等于 b
+
+# 如果 a > b，c 就等于 a；否则 c 就等于 b
+c = a if a > b else b
 
 print(c)  # 输出结果：2
 ```
@@ -246,8 +248,10 @@ x = 1
 result = 0
 
 while x <= 100:
-    result += x  # result = result + x
-    x += 1  # x = x + 1
+    # result = result + x
+    result += x
+    # x = x + 1
+    x += 1
 
 print(result)  # 输出结果：5050
 
@@ -257,8 +261,10 @@ x = 1
 result = 0
 
 while x <= 100:
-    result += x  # result = result + x
-    x += 1  # x = x + 1
+    # result = result + x
+    result += x
+    # x = x + 1
+    x += 1
 else:
     print(result)  # 输出结果：5050
 ```
@@ -274,13 +280,16 @@ x = 1
 result = 0
 
 while x <= 100:
-    result += x  # result = result + x
-    x += 1  # x = x + 1
+    # result = result + x
+    result += x
+    # x = x + 1
+    x += 1
     
     if x == 20:
         print("x 值为 20 时中断")  # 输出结果：x 值为 20 时中断
         break
-else:  # 异常退出不执行 else 语句
+# 异常退出不执行 else 语句
+else:
     print(result)
 ```
 
@@ -341,7 +350,8 @@ for i in str1:
     if i == "e":
         print("i 等于 e 时中断")
         break
-else:  # 异常中断，else 语句不执行
+# 异常中断，else 语句不执行
+else:
     print("for over")
 ```
 

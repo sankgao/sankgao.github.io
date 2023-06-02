@@ -76,7 +76,11 @@ class Dog:
 
 ```python
 dog = Dog()
-print(dog())  # 输出结果：<__main__.Dog object at 0x000001DDBE67B310>。dog 是 Dog 类的实例对象
+print(dog())
+
+
+# 输出结果
+<__main__.Dog object at 0x000001DDBE67B310>。dog 是 Dog 类的实例对象
 ```
 
 ### 创建 \_\_init\_\_() 方法
@@ -85,14 +89,20 @@ print(dog())  # 输出结果：<__main__.Dog object at 0x000001DDBE67B310>。dog
 
 ```python
 class Dog:
-    def __init__(self, name, age):  # 构造方法
+    # 构造方法
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
 
-dog = Dog("球球", 2)  # 创建实例化对象，调用构造方法
+# 创建实例化对象，调用构造方法
+dog = Dog("球球", 2)
 
-print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  # 输出结果：我们家的狗狗叫：球球，2 岁了。
+print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))
+
+
+# 输出结果
+我们家的狗狗叫：球球，2 岁了。
 ```
 
 ### 访问限制
@@ -110,8 +120,13 @@ print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  
         def __init__(self):
             print("__init__：", Swan._neck_swan)
     
-    swan = Swan()  # 输出结果：__init__： 天鹅的脖子很长
-    print("直接访问：", swan._neck_swan)  # 输出结果：直接访问： 天鹅的脖子很长
+    swan = Swan()
+    print("直接访问：", swan._neck_swan)
+
+
+    # 输出结果
+    __init__： 天鹅的脖子很长
+    直接访问： 天鹅的脖子很长
     ```
 
 - **双下划线 __**：表示 private（私有）类型的成员，只允许定义该方法的类本身进行访问，而且也不能通过类的实例进行访问，但是可以使用 **类的实例名._类名__xx** 方式访问
@@ -125,9 +140,15 @@ print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  
         def __init__(self):
             print("__init__：", Swan.__neck_swan)
     
-    swan = Swan()  # 输出结果：__init__： 天鹅的脖子很长
-    print("加入类名访问：", swan._Swan__neck_swan)  # 输出结果：加入类名访问： 天鹅的脖子很长
-    print("直接访问：", swan.__neck_swan)  # 输出结果：AttributeError: 'Swan' object has no attribute '__neck_swan'。“Swan” 对象没有属性 “__neck_Swan”
+    swan = Swan()
+    print("加入类名访问：", swan._Swan__neck_swan)
+    print("直接访问：", swan.__neck_swan)
+
+
+    # 输出结果
+    __init__： 天鹅的脖子很长
+    加入类名访问： 天鹅的脖子很长
+    AttributeError: 'Swan' object has no attribute '__neck_swan'。“Swan” 对象没有属性 “__neck_Swan”
     ```
 
 - **首尾加双下划线 __**：表示定义特殊方法
@@ -161,14 +182,20 @@ print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  
 
 ```python
 class Dog:
-    def __init__(self, name, age):  # 构造方法
+    # 构造方法
+    def __init__(self, name, age):
         self.name = name
         self.age = age
 
 
-dog = Dog("球球", 2)  # 创建实例化对象，调用构造方法
+# 创建实例化对象，调用构造方法
+dog = Dog("球球", 2)
 
-print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  # 输出结果：我们家的狗狗叫：球球，2 岁了。
+print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))
+
+
+# 输出结果
+我们家的狗狗叫：球球，2 岁了。
 ```
 
 ### 实例方法
@@ -177,15 +204,18 @@ print("我们家的狗狗叫：{0}，{1} 岁了。".format(dog.name, dog.age))  
 
 ```python
 class Dog:
-    def __init__(self, name, age, sex="雌性"):  # 构造方法
+    # 构造方法
+    def __init__(self, name, age, sex="雌性"):
         self.name = name
         self.age = age
         self.sex = sex
 
-    def run(self):  # 实例方法
+    # 实例方法
+    def run(self):
         print("{}在跑...".format(self.name))
 
-    def speak(self, sound):  # 实例方法
+    # 实例方法
+    def speak(self, sound):
         print("{}在叫，{}！".format(self.name, sound))
 
 
@@ -228,8 +258,9 @@ class Account:
         self.owner = owner
         self.amount = amount
 
+    # 类方法，cls 表示类自身（即 Account 类），可用 Account 代替
     @classmethod
-    def interest_by(cls, amt):  # 类方法，cls 表示类自身（即 Account 类），可用 Account 代替
+    def interest_by(cls, amt):
         return cls.interest_rate * amt
 
 
@@ -254,22 +285,32 @@ print("计算利息：{0:.4f}".format(interest))  # 输出结果：计算利息�
 
 ```python
 class Account:
-    __interest_rate = 0.0568  # 定义私有变量
+    # 定义私有变量
+    __interest_rate = 0.0568
 
     def __init__(self, owner, amount):
         self.owner = owner
-        self.__amount = amount  # 定义私有变量
+        # 定义私有变量
+        self.__amount = amount
 
-    def desc(self):  # 在类的内部可以访问私有变量
+    def desc(self):
+        # 在类的内部可以访问私有变量
         print("{0} 金额：{1} 利率：{2}".format(self.owner, self.__amount, Account.__interest_rate))
 
 
 account = Account('Tony', 800000.0)
-account.desc()  # 输出结果：Tony 金额：800000.0 利率：0.0568
+account.desc()
 
-print("账户名：{}".format(account.owner))  # 输出结果：账户名：Tony
-print("账户金额：{}".format(account.__amount))  # 输出结果：AttributeError: 'Account' object has no attribute '__amount'。“Account” 对象没有 “__amount” 属性
-print("利率：{}".format(Account.__interest_rate))  # 输出结果：AttributeError: type object 'Account' has no attribute '__interest_rate'。类型对象 “Account” 没有属性 “__interest_rate”
+print("账户名：{}".format(account.owner))
+print("账户金额：{}".format(account.__amount))
+print("利率：{}".format(Account.__interest_rate))
+
+
+# 输出结果
+Tony 金额：800000.0 利率：0.0568
+账户名：Tony
+AttributeError: 'Account' object has no attribute '__amount'。“Account” 对象没有 “__amount” 属性
+AttributeError: type object 'Account' has no attribute '__interest_rate'。类型对象 “Account” 没有属性 “__interest_rate”
 ```
 
 ::: tip
@@ -288,16 +329,23 @@ class Account:
         self.owner = owner
         self.__amount = amount
 
-    def __get_info(self):  # 定义私有方法
+    # 定义私有方法
+    def __get_info(self):
         return "{0} 金额：{1} 利率：{2}".format(self.owner, self.__amount, Account.__interest_rate)
 
-    def desc(self):  # 在类的内部可以调用私有方法
+    def desc(self):
+        # 在类的内部可以调用私有方法
         print(self.__get_info())
 
 
 account = Account('Tony', 800000.0)
-account.desc()  # 输出结果：Tony 金额：800000.0 利率：0.0568
-account.__get_info()  # 输出结果：AttributeError: 'Account' object has no attribute '__get_info'。“Account” 对象没有属性 “__get_info”
+account.desc()
+account.__get_info()
+
+
+# 输出结果
+Tony 金额：800000.0 利率：0.0568
+AttributeError: 'Account' object has no attribute '__get_info'。“Account” 对象没有属性 “__get_info”
 ```
 
 ::: tip
@@ -317,10 +365,12 @@ class Dog:
     def run(self):
         print("{}在跑...".format(self.name))
 
-    def get_age(self):  # 定义 get() 方法，返回私有实例变量 __age
+    # 定义 get() 方法，返回私有实例变量 __age
+    def get_age(self):
         return self.__age
 
-    def set_age(self, age):  # 定义 set() 方法，通过 age 参数更新私有实例变量 __age
+    # 定义 set() 方法，通过 age 参数更新私有实例变量 __age
+    def set_age(self, age):
         self.__age = age
 
 
@@ -342,17 +392,22 @@ print("修改后狗狗的年龄：{}".format(dog.get_age()))  # 输出结果：�
 class Dog:
     def __init__(self, name, age, sex="雌性"):
         self.name = name
-        self.__age = age  # 私有变量 __age，对应的属性名应该去除前面双下划线之后的名称即 age
+        # 私有变量 __age，对应的属性名应该去除前面双下划线之后的名称即 age
+        self.__age = age
 
     def run(self):
         print("{}在跑...".format(self.name))
 
-    @property  # 类方法
-    def age(self):  # 定义 age 属性的 get() 方法，使用 @property 装饰器进行修饰，方法名就是属性名即 age
+    # 类方法
+    @property
+    # 定义 age 属性的 get() 方法，使用 @property 装饰器进行修饰，方法名就是属性名即 age
+    def age(self):
         return self.__age
 
-    @age.setter  # 类方法
-    def age(self, age):  # 定义 age 属性的 set() 方法，使用 @age.setter 装饰器进行修饰，方法名就是属性名即 age
+    # 类方法
+    @age.setter
+    # 定义 age 属性的 set() 方法，使用 @age.setter 装饰器进行修饰，方法名就是属性名即 age
+    def age(self, age):
         self.__age = age
 
 

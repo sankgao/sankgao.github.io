@@ -27,7 +27,11 @@ mystr = "我今天走了"
 num = 1234
 mystr01 = "步"
 
-print(mystr + num + mystr01)  # 输出结果：TypeError: can only concatenate str (not "int") to str。只能将 str 类型的连接到 str
+print(mystr + num + mystr01)
+
+
+# 输出结果
+TypeError: can only concatenate str (not "int") to str。只能将 str 类型的连接到 str
 ```
 
 将整数转换为字符串的方法输出。例如：
@@ -104,7 +108,8 @@ except IndexError:
     print("指定的索引不存在")
 
 
-指定的索引不存在  # 输出结果
+# 输出结果
+指定的索引不存在
 ```
 
 ## 分割、合并字符串
@@ -405,10 +410,17 @@ context01 = (1, 'zhangsan', 24)
 context02 = (2, 'lisi', 21)
 context03 = [3, 'zhangsan', 24]
 
-print(mystr % context01)  # 输出结果：id：01	 name：zhangsan	 age：24
-print(mystr % context02)  # 输出结果：id：02	 name：lisi	 age：21
-print(mystr % context03)  # 输出结果：TypeError: %d format: a real number is required, not list。找不到子字符串格式，需要元组，不是列表
-print("id：%02d\t name：%s\t age：%d" % (3, 'wangwu', 24))  # 输出结果：id：03	 name：wangwu	 age：24
+print(mystr % context01)
+print(mystr % context02)
+print(mystr % context03)
+print("id：%02d\t name：%s\t age：%d" % (3, 'wangwu', 24))
+
+
+# 输出结果
+id：01	 name：zhangsan	 age：24
+id：02	 name：lisi	 age：21
+TypeError: %d format: a real number is required, not list。找不到子字符串格式，需要元组，不是列表
+id：03	 name：wangwu	 age：24
 ```
 
 ### 使用 format() 方法进行字符串格式化
@@ -431,7 +443,7 @@ print("id：%02d\t name：%s\t age：%d" % (3, 'wangwu', 24))  # 输出结果：
 - **.precision**：指定保留的小数位数
 - **type**：指定类型
 
-**`format()` 方法中常用的格式化字符：**
+**format() 方法中常用的格式化字符：**
 
 |  格式化字符  |  说明  |
 |  :----:  |  :----  |
@@ -454,10 +466,17 @@ context01 = mystr.format(1, 'zhangsan', 24)
 context02 = mystr.format(2, 'lisi', 21)
 context03 = mystr.format[3, 'zhangsan', 24]
 
-print(context01)  # 输出结果：id：01	 name：zhangsan	 age：24
-print(context02)  # 输出结果：id：02	 name：lisi	 age：21
-print(context03)  # 输出结果：TypeError: 'builtin_function_or_method' object is not subscriptable。对象不可调用
-print("id: {:0>2}\t name: {:s}\t age: {:d}".format(3, 'wangwu', 24))  # 输出结果：id: 03	 name: wangwu	 age: 24
+print(context01)
+print(context02)
+print(context03)
+print("id: {:0>2}\t name: {:s}\t age: {:d}".format(3, 'wangwu', 24))
+
+
+# 输出结果
+id：01	 name：zhangsan	 age：24
+id：02	 name：lisi	 age：21
+TypeError: 'builtin_function_or_method' object is not subscriptable。对象不可调用
+id: 03	 name: wangwu	 age: 24
 ```
 
 将数值格式化为不同的形式。例如：
@@ -465,11 +484,19 @@ print("id: {:0>2}\t name: {:s}\t age: {:d}".format(3, 'wangwu', 24))  # 输出�
 ```python
 import math
 
-print("1234 + 4321 的结果是（以货币的形式显示）：￥{:,.2f} 元".format(1234 + 4321))  # 输出结果：1234 + 4321 的结果是（以货币的形式显示）：￥5,555.00 元
-print("{0:.1f} 用科学计数法表示：{0:E}".format(120000.1))  # 输出结果：120000.1 用科学计数法表示：1.200001E+05
-print("π 取 5 位小数：{:.5f}".format(math.pi))  # 输出结果：π 取 5 位小数：3.14159
-print("{0:d} 的十六进制结果是：{0:#x}".format(100))  # 输出结果：100 的十六进制结果是：0x64
-print("天才是由 {:.0%} 的灵感，加上 {:.0%} 的汗水".format(0.01, 0.99))  # 输出结果：天才是由 1% 的灵感，加上 99% 的汗水
+print("1234 + 4321 的结果是（以货币的形式显示）：￥{:,.2f} 元".format(1234 + 4321))
+print("{0:.1f} 用科学计数法表示：{0:E}".format(120000.1))
+print("π 取 5 位小数：{:.5f}".format(math.pi))
+print("{0:d} 的十六进制结果是：{0:#x}".format(100))
+print("天才是由 {:.0%} 的灵感，加上 {:.0%} 的汗水".format(0.01, 0.99))
+
+
+# 输出结果
+1234 + 4321 的结果是（以货币的形式显示）：￥5,555.00 元
+120000.1 用科学计数法表示：1.200001E+05
+π 取 5 位小数：3.14159
+100 的十六进制结果是：0x64
+天才是由 1% 的灵感，加上 99% 的汗水
 ```
 
 ::: tip
@@ -509,9 +536,15 @@ bytes 类型的数据是带有 b 前缀的字符串（用单引号或双引号�
 ```python
 mystr = "我喜欢用 Python"
 
-print(mystr.encode('UTF-8'))  # 输出结果：b'\xe6\x88\x91\xe5\x96\x9c\xe6\xac\xa2\xe7\x94\xa8 Python'
-print(mystr.encode('GB2312'))  # 输出结果：b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
-print(mystr.encode('GBK'))  # 输出结果：b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
+print(mystr.encode('UTF-8'))
+print(mystr.encode('GB2312'))
+print(mystr.encode('GBK'))
+
+
+# 输出结果
+b'\xe6\x88\x91\xe5\x96\x9c\xe6\xac\xa2\xe7\x94\xa8 Python'
+b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
+b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
 ```
 
 ### 二进制数据转换为字符串
@@ -535,9 +568,16 @@ mybytes01 = b'\xe6\x88\x91\xe5\x96\x9c\xe6\xac\xa2\xe7\x94\xa8 Python'
 mybytes02 = b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
 mybytes03 = b'\xce\xd2\xcf\xb2\xbb\xb6\xd3\xc3 Python'
 
-print(mybytes01.decode('UTF-8'))  # 输出结果：我喜欢用 Python
-print(mybytes01.decode('GB2312'))  # 输出结果：UnicodeDecodeError: 'gb2312' codec can't decode byte 0xe6 in position 0: illegal multibyte sequence。GB2312 解码器无法解码
-print(mybytes02.decode('GB2312'))  # 输出结果：我喜欢用 Python
-print(mybytes03.decode('GBK'))  # 输出结果：我喜欢用 Python
+print(mybytes01.decode('UTF-8'))
+print(mybytes01.decode('GB2312'))
+print(mybytes02.decode('GB2312'))
+print(mybytes03.decode('GBK'))
+
+
+# 输出结果
+我喜欢用 Python
+UnicodeDecodeError: 'gb2312' codec can't decode byte 0xe6 in position 0: illegal multibyte sequence。GB2312 解码器无法解码
+我喜欢用 Python
+我喜欢用 Python
 ```
 

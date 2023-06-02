@@ -64,7 +64,8 @@ def fun_bmi_upgrade(*person):
 例如：
 
 ```python
-import bmi   # 导入模块
+# 导入模块
+import bmi
 
 bmi.fun_bmi("张三", 1.75, 120)  # 执行模块中的 fun_bmi 函数
 ```
@@ -154,20 +155,32 @@ if __name__ == '__main__':
 创建 computc.py 文件，导入矩形模块和圆形模块
 """
 
-from rectangle import *  # 使用 from...import 导入
+# 使用 from...import 导入
+from rectangle import *
 from circular import *
 
 if __name__ == '__main__':
-    print("矩形的周长为；", girth(10, 20))  # 输出结果：TypeError: girth() takes 1 positional argument but 2 were given。参数为 1 个，但指定了 2 个参数
-    print("圆形的周长为：", girth(10))  # 输出结果：圆形的周长为： 62.83
+    print("矩形的周长为；", girth(10, 20))
+    print("圆形的周长为：", girth(10))
 
 
-import rectangle as r  # 使用 import 语句导入
+# 输出结果
+TypeError: girth() takes 1 positional argument but 2 were given。参数为 1 个，但指定了 2 个参数
+圆形的周长为： 62.83
+
+
+# 使用 import 语句导入
+import rectangle as r
 import circular as c
 
 if __name__ == '__main__':
-    print("矩形的周长为：", r.girth(10, 20))  # 输出结果：矩形的周长为： 60
-    print("圆形的周长为：", c.girth(10))  # 输出结果：圆形的周长为： 62.83
+    print("矩形的周长为：", r.girth(10, 20))
+    print("圆形的周长为：", c.girth(10))
+
+
+# 输出结果
+矩形的周长为： 60
+圆形的周长为： 62.83
 ```
 
 ### 模块搜索目录
@@ -183,7 +196,11 @@ if __name__ == '__main__':
 ```python
 import sys
 
-print(sys.path)  # 输出结果：['E:\\SourceCode\\Python\\PythonProject', 'E:\\SourceCode\\Python\\PythonProject', 'E:\\Software\\PyCharm\\PyCharm 2022.1.2\\plugins\\python\\helpers\\pycharm_display', 'E:\\Software\\Python3\\python310.zip', 'E:\\Software\\Python3\\DLLs', 'E:\\Software\\Python3\\lib', 'E:\\Software\\Python3', 'E:\\Software\\PyCharm\\pythonProject\\venv', 'E:\\Software\\PyCharm\\pythonProject\\venv\\lib\\site-packages', 'E:\\Software\\PyCharm\\PyCharm 2022.1.2\\plugins\\python\\helpers\\pycharm_matplotlib_backend']
+print(sys.path)
+
+
+# 输出结果
+['E:\\SourceCode\\Python\\PythonProject', 'E:\\SourceCode\\Python\\PythonProject', 'E:\\Software\\PyCharm\\PyCharm 2022.1.2\\plugins\\python\\helpers\\pycharm_display', 'E:\\Software\\Python3\\python310.zip', 'E:\\Software\\Python3\\DLLs', 'E:\\Software\\Python3\\lib', 'E:\\Software\\Python3', 'E:\\Software\\PyCharm\\pythonProject\\venv', 'E:\\Software\\PyCharm\\pythonProject\\venv\\lib\\site-packages', 'E:\\Software\\PyCharm\\PyCharm 2022.1.2\\plugins\\python\\helpers\\pycharm_matplotlib_backend']
 ```
 
 以下三种方法，添加指定模块目录到 `sys.path`：
@@ -250,7 +267,8 @@ import christmastree
 print(christmastree.pinetree)
 
 
-下雪了...  # 输出结果
+# 输出结果
+下雪了...
 -------------------- 开始做梦 --------------------
 挂上彩灯、礼物...我变成一颗圣诞树
 -------------------- 梦醒了... --------------------
@@ -278,7 +296,8 @@ def fun_christmastree():
     print(pinetree)
 
 
-if __name__ == '__main__'  # 使用此方法时，下面的语句在导入到其他文件中时不执行
+# 使用此方法时，下面的语句在导入到其他文件中时不执行
+if __name__ == '__main__'
     print("\n下雪了...\n")
     print(('-' * 20), "开始做梦", ('-' * 20))
     fun_christmastree()

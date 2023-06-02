@@ -18,8 +18,8 @@ tag:
 字符串变量可以使用单引号或双引号进行声明。例如：
 
 ```python
-my_name = 'TOM'  # 定义变量：TOM
-schoolName = "存储数据"  # 定义变量：存储数据
+my_name = 'TOM'
+schoolName = "存储数据"
 
 print(my_name)  # 输出结果：TOM
 print(schoolName)  # 输出结果：存储数据
@@ -55,10 +55,10 @@ x = "awesome"
 
 
 def myfunc():
-    print("Python is " + x)  # 输出结果：Python is awesome
+    print("Python is " + x)
 
 
-myfunc()
+myfunc()  # 输出结果：Python is awesome
 ```
 
 如果在函数内部创建具有相同名称的变量，则该变量将是局部变量，并且只能在函数内部使用。具有相同名称的全局变量将保留原样，并拥有原始值。
@@ -71,10 +71,10 @@ x = "awesome"
 
 def myfunc():
     x = "fantastic"
-    print("Python is " + x)  # 输出结果：Python is fantastic
+    print("Python is " + x)
 
 
-myfunc()
+myfunc()  # 输出结果：Python is fantastic
 
 print("Python is " + x)  # 输出结果：Python is awesome
 ```
