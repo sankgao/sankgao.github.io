@@ -145,6 +145,7 @@ tag:
 - [CXY521 导航](http://www.cxy521.com/index.html)
 - [it98k 导航](http://www.it98k.com/)
 - [Tbox 导航](https://www.tboxn.com/)
+- [分类别致](http://www.mvcat.com)
 - [犇生活导航](http://6.6soluo.com/)
 - [趣导航](https://qssily.com/)
 - [小呆导航](https://www.webjike.com/index.html)
@@ -367,6 +368,8 @@ tag:
 - [Logo 设计](https://www.logosc.cn/)
 - [在线视频剪辑](https://clipchamp.com/zh-hans/video-editor/)
 - [Excel 函数表](https://support.microsoft.com/zh-cn/office/excel-%E5%87%BD%E6%95%B0-%E6%8C%89%E7%B1%BB%E5%88%AB%E5%88%97%E5%87%BA-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb)
+- [极速矢量（在线游戏）](https://u.ali213.net/games/jisushiliang/index.html)
+- [Mk48.io 舰船战斗游戏](https://mk48.io/)
 
 ## 图片
 
@@ -389,99 +392,8 @@ tag:
 
 - [茶杯狐](https://cupfox.app/)
 - [达达兔](https://www.dadatutvk.com/)
+- [APP 影院](https://app.movie)
 - [西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)
-- [珍品小视频](https://geekerline.com/circle/57640.html)
 - [阿里云盘 - 四大名著](https://www.aliyundrive.com/s/K7eMj7Kt8Rq)
 - [tiktok 视频](https://tik.fail/)
-
-## 网站导航
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  秘迹搜索  |  https://mijisou.com/  |
-|  云盘精灵（资源搜索）  |  https://www.yunpanjingling.com/  |
-|  如风搜（资源搜索）  |  http://www.rufengso.net/  |
-|  爱扒  |  https://www.zyboe.com/  |
-|  聚聚搜  |  https://jujusou.com  |
-|  Phind 一个专门为程序员开发的搜索引擎  |  https://phind.com/  |
-|  国产漫画小站  |  http://www.aka.today/  |
-|  小森林导航  |  http://www.xsldh6.com/  |
-|  NiceTool.net 好工具网  |  http://www.nicetool.net/  |
-|  现实君工具箱（综合型在线工具集成网站）  |  http://tool.uixsj.cn/  |
-|  蓝调网站  |  http://lcoc.top/  |
-|  牛导航  |  http://www.ziliao6.com/  |
-|  聚BT  |  https://jubt.net/cn/index.html  |
-|  免费在线游戏网站平台Y8 Games  |  https://zh.y8.com/  |
-
-## 学习
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  猫咪论文  |  https://lunwen.im/  |
-|  iData（论文搜索）  |  www.cn-ki.net  |
-|  文泉考试  |  https://www.wqkaoshi.com  |
-
-## 找书籍
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  MJJ 小说 免费小说阅读网  |  https://mjjxs.com/  |
-|  云海电子图书馆  |  www.pdfbook.cn  |
-|  周读（书籍搜索）  |  ireadweek.com  |
-|  知轩藏书  |  http://www.zxcs.me/  |
-|  必看网（人生必看的书籍）  |  https://www.biikan.com/  |
-
-## 冷知识 / 黑科技
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  福利单词（一个不太正经的背单词网站）  |  http://dict.ftqq.com  |
-|  煎蛋  |  http://jandan.net/  |
-
-## 写代码
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  源码之家  |  https://www.mycodes.net/  |
-
-## 小工具
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  极速矢量（在线游戏）  |  https://u.ali213.net/games/jisushiliang/index.html  |
-|  云端超级应用空间（PS，PPT，Excel，Ai）  |  https://uzer.me/  |
-|  香当网（年终总结，个人简历，事迹材料，租赁合同，演讲稿）  |  https://www.xiangdang.net/  |
-|  拷贝兔  |  https://cp.anyknew.com/  |
-
-## 看视频
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  阿木影视  |  https://www.aosk.online/  |
-|  电影推荐（分类别致）  |  http://www.mvcat.com  |
-|  APP 影院  |  https://app.movie  |
-|  动漫视频网  |  http://www.zzzfun.com/  |
-|  NO视频官网  |  http://www.novipnoad.com/  |
-|  大数据导航  |  http://hao.199it.com/  |
-|  VideoFk 解析视频  |  http://www.videofk.com/  |
-
-## 学设计
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  免费音频素材  |  https://icons8.cn/music  |
-|  小图标下载  |  https://www.easyicon.net/  |
-
-## 文档
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  即书（在线制作PPT）  |  https://www.keysuper.com/  |
-|  UZER.ME（在线使用各种大应用，在线使用CAD，MATLAB，Office三件套）  |  uzer.me  |
-
-## 图片
-
-|  名称  |  地址  |
-|  :----:  |  :----:  |
-|  电脑壁纸  |  http://lcoc.top/bizhi/  |
 
