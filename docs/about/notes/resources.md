@@ -370,6 +370,7 @@ tag:
 - [Excel 函数表](https://support.microsoft.com/zh-cn/office/excel-%E5%87%BD%E6%95%B0-%E6%8C%89%E7%B1%BB%E5%88%AB%E5%88%97%E5%87%BA-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb)
 - [极速矢量（在线游戏）](https://u.ali213.net/games/jisushiliang/index.html)
 - [Mk48.io 舰船战斗游戏](https://mk48.io/)
+- [免费线上游戏](https://zh.y8.com/)
 
 ## 图片
 
