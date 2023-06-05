@@ -282,6 +282,8 @@ export const zhSidebarConfig = sidebar({
             "file_directory.md",
             "process_thread.md",
             "databases.md",
+            "responsive.md",
+            "game.md",
           ],
         },
       ],
