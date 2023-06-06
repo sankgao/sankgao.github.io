@@ -284,6 +284,17 @@ export const zhSidebarConfig = sidebar({
             "databases.md",
             "responsive.md",
             "game.md",
+            "web_crawler.md",
+          ],
+        },
+        {
+          text: "参考手册",
+          icon: "manual",
+          prefix: "references/",
+          collapsible: true,
+          children: [
+            "functions.md",
+            "methods.md",
           ],
         },
       ],
