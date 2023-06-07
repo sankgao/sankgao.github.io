@@ -297,6 +297,7 @@ export const zhSidebarConfig = sidebar({
             "methods.md",
           ],
         },
+        "cases.md"
       ],
     },
   ],
