@@ -124,6 +124,7 @@ tag:
 - [虫部落（资源搜索）](https://www.chongbuluo.com/)
 - [偷渡鱼](https://touduyu.com/)
 - [谷粉学术](https://gfsoso.99lb.net/scholar.html)
+- [QuickSo-快点搜](https://quickso.cn/)
 
 ## 网站
 
@@ -158,6 +159,7 @@ tag:
 - [个人收集资源2](https://newxiaozhan.com/d/164012-2)
 - [300T 网盘资源](https://newxiaozhan.com/d/199069-300t)
 - [ChatGPT](https://pan.quark.cn/s/278e6a2fa54e?entry=funletu#/list/share)
+- [国内可用的 ChatGPT 在线体验](https://chatgpt.quickso.cn/)
 - [阿里云盘 - 总盘分享 54T](https://www.aliyundrive.com/s/kWMsLqDVQnR)
 - [摸鱼指北](https://github.com/akira-cn/moyu)
 - [超多 B 站链接资源](https://newxiaozhan.com/d/99194-b)
@@ -198,6 +200,7 @@ tag:
 - [最新技术开发教程](https://geekerline.com/circle/13264.html)
 - [编程集教程](https://geekerline.com/circle/44550.html)
 - [综合资源教程](https://geekerline.com/circle/12921.html)
+- [多种语言的免费学习资源列表](https://ebookfoundation.github.io/free-programming-books/)
 - [码力全开（产品/设计师/独立开发者的资源库）](https://design.maliquankai.com/)
 - [doyoudosh 平面设计教程](https://www.doyoudo.com/)
 - [ChatGPT 注册教程](https://geekerline.com/circle/57672.html)
