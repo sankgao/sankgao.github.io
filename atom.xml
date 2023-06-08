@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-06-07T10:04:01.652Z</updated>
+  <updated>2023-06-08T10:17:05.137Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -5018,7 +5018,7 @@ mot_cn <span class="token operator">=</span> <span class="token string">"时间�
     <title type="text">运算符</title>
     <id>https://sankgao.github.io/languages/python/tutorial/operators.html</id>
     <link href="https://sankgao.github.io/languages/python/tutorial/operators.html"/>
-    <updated>2023-05-31T11:05:26.000Z</updated>
+    <updated>2023-06-08T10:12:58.000Z</updated>
     <summary type="html"><![CDATA[<h2> 运算符</h2>
 <h3> 算数运算符</h3>
 <p>算术运算符用于组织整数类型和浮点类型的数据，有 <strong>一元运算符</strong> 和 <strong>二元运算符</strong> 之分。</p>
@@ -5225,10 +5225,18 @@ mot_cn <span class="token operator">=</span> <span class="token string">"时间�
 <td style="text-align:center"><strong>&lt;=</strong></td>
 <td style="text-align:left">小于等于</td>
 </tr>
+<tr>
+<td style="text-align:center"><strong>is</strong></td>
+<td style="text-align:left">两个对象地址（<code>id</code>）为同一个对象地址（<code>id</code>）</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>is not</strong></td>
+<td style="text-align:left">两个对象地址（<code>id</code>）为不同对象地址（<code>id</code>）</td>
+</tr>
 </tbody>
 </table>
 <p>例如：</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 逻辑运算符</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 逻辑运算符</h3>
 <p>逻辑运算符用于对布尔型变量进行运算，其结果也是布尔型</p>
 <table>
 <thead>

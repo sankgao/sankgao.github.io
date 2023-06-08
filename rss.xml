@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 07 Jun 2023 10:04:01 GMT</pubDate>
-    <lastBuildDate>Wed, 07 Jun 2023 10:04:01 GMT</lastBuildDate>
+    <pubDate>Thu, 08 Jun 2023 10:17:05 GMT</pubDate>
+    <lastBuildDate>Thu, 08 Jun 2023 10:17:05 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -4899,10 +4899,18 @@
 <td style="text-align:center"><strong>&lt;=</strong></td>
 <td style="text-align:left">小于等于</td>
 </tr>
+<tr>
+<td style="text-align:center"><strong>is</strong></td>
+<td style="text-align:left">两个对象地址（<code>id</code>）为同一个对象地址（<code>id</code>）</td>
+</tr>
+<tr>
+<td style="text-align:center"><strong>is not</strong></td>
+<td style="text-align:left">两个对象地址（<code>id</code>）为不同对象地址（<code>id</code>）</td>
+</tr>
 </tbody>
 </table>
 <p>例如：</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 逻辑运算符</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 逻辑运算符</h3>
 <p>逻辑运算符用于对布尔型变量进行运算，其结果也是布尔型</p>
 <table>
 <thead>
