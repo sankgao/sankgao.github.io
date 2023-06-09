@@ -295,6 +295,7 @@ export const zhSidebarConfig = sidebar({
           children: [
             "functions.md",
             "methods.md",
+            "modules.md",
           ],
         },
         "cases.md"
