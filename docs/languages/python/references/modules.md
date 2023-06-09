@@ -2263,7 +2263,7 @@ print("pdf successfully rotated")
 
 `xlrd` 第三方模块，用于处理 Excel 文件。新版本只能处理以 `.xls` 后缀的文件，旧版本可以处理以 `.xlsx` 后缀的文件。
 
-- **xlrd.open_workbook(filename=None, \* , logfile=<_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>, verbosity=0, use_mmap=True, file_contents=None, encoding_override=None, formatting_info=False, on_demand=False, ragged_rows=False, ignore_workbook_corruption=False)**：全局加载数据和返回而不释放资源。在这个阶段，唯一的有关工作表的可用信息是 `Book.nsheets` 和 `Book.sheet_names()`，分别是工作簿文件中存在的工作表数和工作簿文件中所有工作表的名称列表
+- **xlrd.open_workbook(filename=None, \*, logfile=<_io.TextIOWrapper name='\<stdout\>' mode='w' encoding='utf-8'>, verbosity=0, use_mmap=True, file_contents=None, encoding_override=None, formatting_info=False, on_demand=False, ragged_rows=False, ignore_workbook_corruption=False)**：全局加载数据和返回而不释放资源。在这个阶段，唯一的有关工作表的可用信息是 `Book.nsheets` 和 `Book.sheet_names()`，分别是工作簿文件中存在的工作表数和工作簿文件中所有工作表的名称列表
 
     - **filename**：要打开的电子表格文件的路径
     - **logfile**：写入消息和诊断的打开文件
