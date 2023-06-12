@@ -207,6 +207,7 @@ tag:
 - [JIRA 产品指南](https://www.atlassian.com/zh/software/jira/guides/getting-started/introduction)
 - [JIRA 使用文档](https://confluence.atlassian.com/adminjiraserver/administering-jira-data-center-and-server-9-6-applications-938846803.html)
 - [Python 免费公开课](http://www.6staredu.com/sixpython2/index.html)
+- [蓝桥云课](https://www.lanqiao.cn/)
 - [黑马前端](https://newxiaozhan.com/d/136569-7065)
 - [阿里云盘 - linux 黑马程序员学习](https://www.aliyundrive.com/s/NLFdL9ue1MJ)
 - [阿里云盘 - Python 黑马程序员学习](https://www.aliyundrive.com/s/1cL1mT75gCR)
@@ -398,6 +399,7 @@ tag:
 
 - [茶杯狐](https://cupfox.app/)
 - [达达兔](https://www.dadatutvk.com/)
+- [动漫导航](https://jiejaitt.gitee.io/)
 - [APP 影院](https://app.movie)
 - [电视眼](http://www.tvyan.com/)
 - [西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)

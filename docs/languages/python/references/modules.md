@@ -519,6 +519,10 @@ print(sys.path)  # 输出结果：['E:\\SourceCode\\Python\\PythonProject', 'E:\
 
 [os 官网地址](https://docs.python.org/zh-cn/3/library/os.html#module-os)
 
+::: tip
+一定要使用 `import os` 而不是 `from os import *`。这将避免内建的 `open()` 函数被 `os.open()` 隐式替换掉，因为它们的使用方式大不相同
+:::
+
 `os` 内置模块，用于处理文件和目录。
 
 - **os.access(path, mode)**：判断文件或目录权限，`mode` 参数为：`os.F_OK`、`os.R_OK`、`os.W_OK`、`os.X_OK`，分别测试 `path` 的存在性、可读性、可写性和可执行性
