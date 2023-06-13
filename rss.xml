@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 12 Jun 2023 11:02:14 GMT</pubDate>
-    <lastBuildDate>Mon, 12 Jun 2023 11:02:14 GMT</lastBuildDate>
+    <pubDate>Tue, 13 Jun 2023 09:44:27 GMT</pubDate>
+    <lastBuildDate>Tue, 13 Jun 2023 09:44:27 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -379,7 +379,7 @@
 <p>上下文精度和舍入仅在算术运算期间发挥作用</p>
 </div>
 <ul>
-<li><strong>decimal.Decimal(obejct)</strong>：可以基于整数、字符串、浮点数或元组构造 Decimal 实例，Decimal 数字包括特殊值。例如 NaN 表示 “非数字”，正的和负的 Infinity 和 -0</li>
+<li><strong>decimal.Decimal(obejct)</strong>：可以基于整数、字符串、浮点数或元组构造 Decimal 实例，Decimal 数字包括特殊值。例如：<code>NaN</code> 表示 “非数字”，正的和负的 <code>Infinity</code> 和 <code>-0</code></li>
 <li><strong>getcontext().prec</strong>：设定有效数字</li>
 <li><strong>decimal.Decimal(obejct).quantize(exp[, rounding=None[, context=None]])</strong>：将数字舍入为固定指数。此方法对于将结果舍入到固定的位置的货币应用程序非常有用</li>
 </ul>
@@ -1172,7 +1172,7 @@
 <li><strong>str.lstrip()</strong>：去掉字符左边的空格和回车换行符</li>
 <li><strong>str.rstrip()</strong>：去掉字符右边的空格和回车换行符</li>
 <li><strong>str.strip()</strong>：去掉字符两边的空格和回车换行符</li>
-<li><strong>str.partition(substr)</strong>：从 <code>substr</code> 出现的第一个位置起，将 <code>str</code> 分割成一个 <code>3</code> 元组。</li>
+<li><strong>str.partition(substr)</strong>：从 <code>substr</code> 出现的第一个位置起，将 <code>str</code> 分割成一个 <code>3</code> 元组</li>
 <li><strong>str.replace(str1, str2, num)</strong>：查找 <code>str1</code> 替换成 <code>str2</code>，<code>num</code> 是替换次数</li>
 <li><strong>str.rfind(str[, beg, end])</strong>：从右边开始查询子字符串</li>
 <li><strong>str.rindex(str[, beg, end])</strong>：从右边开始查找子字符串位置</li>
@@ -1186,7 +1186,7 @@
 <p><code>getpass</code> 内置模块，用于对密码处理。</p>
 <ul>
 <li>
-<p><strong>getpass.getpass([prompt='Password: ', [stream=None]])</strong>：输入密码，且密码不会显示。</p>
+<p><strong>getpass.getpass([prompt='Password: ', [stream=None]])</strong>：输入密码，且密码不会显示</p>
 <ul>
 <li><strong>prompt</strong>：参数用于提示用户，默认值为 <code>Password</code></li>
 <li><strong>stream</strong>：参数用于如有必要提示会使用替换错误句柄写入到文件类对象 <code>stream</code>，默认值为 <code>None(/dev/tty)</code></li>
@@ -2513,9 +2513,9 @@
 </tr>
 </tbody>
 </table>
-<p>打开一个不存在的文件，例如：</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>以二进制形式打开文件，例如：</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>打开文件时指定编码方式，例如：</p>
+<p>打开一个不存在的文件。例如：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>以二进制形式打开文件。例如：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>打开文件时指定编码方式。例如：</p>
 <div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h2> iter()</h2>
 <p><code>iter()</code> 内置函数，用于返回一个迭代器，与 <code>__iter__()</code> 方法作用一样。</p>
 <p><strong>语法格式</strong>：<code>iter(object, [sentinel])</code></p>
@@ -2704,13 +2704,13 @@
 <td style="text-align:center">5</td>
 <td style="text-align:center"><strong>{:0&gt;2d}</strong></td>
 <td style="text-align:center">05</td>
-<td style="text-align:left">数字补零（填充左边, 宽度为 2）</td>
+<td style="text-align:left">数字补零（填充左边，宽度为 2）</td>
 </tr>
 <tr>
 <td style="text-align:center">5 或 10</td>
 <td style="text-align:center"><strong>{:x&lt;4d}</strong></td>
 <td style="text-align:center">5xxx 或 10xx</td>
-<td style="text-align:left">数字补 x （填充右边, 宽度为 4）</td>
+<td style="text-align:left">数字补 x（填充右边，宽度为 4）</td>
 </tr>
 <tr>
 <td style="text-align:center">1000000</td>
@@ -2734,19 +2734,19 @@
 <td style="text-align:center">13</td>
 <td style="text-align:center"><strong>{:&gt;5d}</strong></td>
 <td style="text-align:center">&nbsp;&nbsp;&nbsp;13</td>
-<td style="text-align:left">右对齐 (宽度为 5)</td>
+<td style="text-align:left">右对齐（宽度为 5）</td>
 </tr>
 <tr>
 <td style="text-align:center">13</td>
 <td style="text-align:center"><strong>{:&lt;5d}</strong></td>
 <td style="text-align:center">13&nbsp;&nbsp;&nbsp;</td>
-<td style="text-align:left">左对齐 (宽度为 5)</td>
+<td style="text-align:left">左对齐（宽度为 5）</td>
 </tr>
 <tr>
 <td style="text-align:center">13</td>
 <td style="text-align:center"><strong>{:^5d}</strong></td>
 <td style="text-align:center">&nbsp;13&nbsp;&nbsp;</td>
-<td style="text-align:left">中间对齐 (宽度为 5)</td>
+<td style="text-align:left">中间对齐（宽度为 5）</td>
 </tr>
 <tr>
 <td style="text-align:center">11</td>
