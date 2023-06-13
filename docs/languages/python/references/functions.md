@@ -795,7 +795,7 @@ print(ord('A'))  # 输出结果：65
 |  **a+**  |  读写、追加模式打开文件。如果该文件存在，文件指针将会放在文件的末尾，否则，创建新文件写入  |
 |  **ab+**  |  读写、追加模式以二进制格式打开文件。如果该文件存在，文件指针将会放在文件的末尾，否则，创建新文件写入  |
 
-打开一个不存在的文件，例如：
+打开一个不存在的文件。例如：
 
 ```python
 file = open('test.txt', 'w')
@@ -804,14 +804,14 @@ print("打开文件", file)
 # 输出结果：打开文件 <_io.TextIOWrapper name='test.txt' mode='w' encoding='cp936'>
 ```
 
-以二进制形式打开文件，例如：
+以二进制形式打开文件。例如：
 
 ```python
 file = open('picture.png', 'rb')
 print(file)  # 输出结果：<_io.BufferedReader name='picture.png'>
 ```
 
-打开文件时指定编码方式，例如：
+打开文件时指定编码方式。例如：
 
 ```python
 file = open('test.txt', 'r', encoding='utf-8')

@@ -333,7 +333,7 @@ print(result)  # 输出结果：['asfa', 'fdgsdg', 'agg']
 上下文精度和舍入仅在算术运算期间发挥作用
 :::
 
-- **decimal.Decimal(obejct)**：可以基于整数、字符串、浮点数或元组构造 Decimal 实例，Decimal 数字包括特殊值。例如 NaN 表示 “非数字”，正的和负的 Infinity 和 -0
+- **decimal.Decimal(obejct)**：可以基于整数、字符串、浮点数或元组构造 Decimal 实例，Decimal 数字包括特殊值。例如：`NaN` 表示 “非数字”，正的和负的 `Infinity` 和 `-0`
 - **getcontext().prec**：设定有效数字
 - **decimal.Decimal(obejct).quantize(exp[, rounding=None[, context=None]])**：将数字舍入为固定指数。此方法对于将结果舍入到固定的位置的货币应用程序非常有用
 
@@ -1162,7 +1162,7 @@ shutil.unpack_archive('myarchive.zip')  # 解压归档文件
 - **str.lstrip()**：去掉字符左边的空格和回车换行符
 - **str.rstrip()**：去掉字符右边的空格和回车换行符
 - **str.strip()**：去掉字符两边的空格和回车换行符
-- **str.partition(substr)**：从 `substr` 出现的第一个位置起，将 `str` 分割成一个 `3` 元组。
+- **str.partition(substr)**：从 `substr` 出现的第一个位置起，将 `str` 分割成一个 `3` 元组
 - **str.replace(str1, str2, num)**：查找 `str1` 替换成 `str2`，`num` 是替换次数
 - **str.rfind(str[, beg, end])**：从右边开始查询子字符串
 - **str.rindex(str[, beg, end])**：从右边开始查找子字符串位置
@@ -1179,7 +1179,7 @@ shutil.unpack_archive('myarchive.zip')  # 解压归档文件
 
 `getpass` 内置模块，用于对密码处理。
 
-- **getpass.getpass([prompt='Password: ', [stream=None]])**：输入密码，且密码不会显示。
+- **getpass.getpass([prompt='Password: ', [stream=None]])**：输入密码，且密码不会显示
 
     - **prompt**：参数用于提示用户，默认值为 `Password`
     - **stream**：参数用于如有必要提示会使用替换错误句柄写入到文件类对象 `stream`，默认值为 `None(/dev/tty)`
