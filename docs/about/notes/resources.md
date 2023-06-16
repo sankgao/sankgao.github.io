@@ -320,6 +320,8 @@ tag:
 - [摸鱼工具](https://geekerline.com/circle/56943.html)
 - [一网一匠（一起发现有趣的新产品）](https://ywyj.cn/)
 - [有趣的工具](http://www.koalastothemax.com/)
+- [test-image 生成文本图像](https://www.text-image.com/)
+- [杂项工具箱](http://www.atoolbox.net/)
 - [插件软件电子书等等合集](https://geekerline.com/circle/57757.html)
 - [宝藏插件](https://pan.quark.cn/s/93855654d203#/list/share)
 - [软件大全](https://newxiaozhan.com/d/91046)
