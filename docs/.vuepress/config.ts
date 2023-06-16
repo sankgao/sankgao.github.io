@@ -3,7 +3,7 @@ import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
-import { ohmylive2dPlugin } from 'vuepress-plugin-oh-my-live2d';
+import { ohmylive2dPlugin } from "vuepress-plugin-oh-my-live2d";
 
 import theme from "./theme.ts";
 
