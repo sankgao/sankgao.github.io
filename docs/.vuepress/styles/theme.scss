@@ -1,10 +1,15 @@
 :root,
-.sidebar,
-.footer-wrapper {
+.vp-sidebar,
+.vp-blogger-info,
+.vp-blog-infos,
+.vp-page,
+.vp-pagination,
+.vp-article-wrapper .vp-article-item,
+.vp-footer-wrapper {
   background: transparent !important;
 }
 
-.navbar {
+.vp-navbar {
   background: transparent !important;
   backdrop-filter: blur(8px) !important;
 }
@@ -14,6 +19,7 @@ div[class*='language-'] {
   backdrop-filter: blur(16px) !important;
 }
 
-.highlight-line {
+.vp-highlight-line {
   opacity: 0.5;
 }
+

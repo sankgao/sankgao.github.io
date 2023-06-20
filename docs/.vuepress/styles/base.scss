@@ -1,4 +1,4 @@
-body:before {
+body::before {
   top: 0;
   left: 0;
   right: 0;
@@ -8,6 +8,7 @@ body:before {
   content: '';
   position: fixed;
   background: url('https://api.armoe.cn/acg/random') center / cover;
+  background: url('/background.png') center / cover;
 }
 
 table {
@@ -29,6 +30,3 @@ table th {
   white-space: nowrap !important;
 }
 
-h2 {
-  border-color: transparent !important;
-}
