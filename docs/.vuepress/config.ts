@@ -115,7 +115,8 @@ export default defineUserConfig({
 
     // 看板娘
     ohmylive2dPlugin({
-      source: "/assets/live2d/vscode-live2d-models",
+      //source: "/assets/live2d/vscode-live2d-models",
+      source: "https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library",
       models: [
         {
           path: "/girls-frontline/G11/normal/model.json", scale: 0.4,
