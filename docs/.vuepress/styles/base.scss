@@ -7,7 +7,7 @@ body::before {
   z-index: -1;
   content: '';
   position: fixed;
-  background: url('https://api.armoe.cn/acg/random') center / cover;
+  //background: url('https://api.armoe.cn/acg/random') center / cover;
   background: url('/background.png') center / cover;
 }
 
