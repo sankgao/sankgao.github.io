@@ -62,3 +62,91 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
   "build": "node --max_old_space_size=4096 ./node_modules/vuepress/cli.js build docs",
 ```
 
+## useXXX() is called without provider
+
+此类错误通常是因为项目中错误的含有多个 `@vue/xxx`、`@vuepress/xxx`、`vue` 或 `vue-router` 版本引起的。
+
+请确保您正在使用最新的 `vuepress` 和 `vuepress-theme-hope` 版本：
+
+::: code-tabs#shell
+
+@tab pnpm
+
+```bash
+pnpm add @vuepress/client@next vuepress@next vuepress-theme-hope vue@latest -E
+```
+
+@tab yarn
+
+```bash
+yarn add vuepress@next vuepress-theme-hope@latest -E
+```
+
+@tab npm
+
+```bash
+npm i vuepress@next vuepress-theme-hope@latest -E
+```
+
+:::
+
+同时，升级依赖以确保您的项目只包含单个版本的相关包：
+
+::: code-tabs#shell
+
+@tab pnpm
+
+```bash
+pnpm dlx vp-update
+```
+
+@tab yarn
+
+```bash
+yarn dlx vp-update
+```
+
+@tab npm
+
+```bash
+npx vp-update
+```
+
+:::
+
+::: warning
+
+任何以 `@vuepress/` 开头的官方包应该和 VuePress 保持相同版本。
+
+比如：如果您正在使用 `@vuepress/plugin-search` 和 `@vuepress/utils`，您应该确保他们和 `vuepress` 版本相同。
+
+另外，`vuepress-theme-hope` 仓库的插件应与 `vuepress-theme-hope` 版本相同。
+
+此外，如果您使用了其他第三方插件，请确保它兼容您要升级到的 VuePress 版本。
+
+:::
+
+## 引入单个自定义组件不加 {}
+
+::: danger
+如果这是本机自定义元素，请确保通过 `compilerOptions.isCustomElement` 将其从组件解析中排除
+:::
+
+```bash
+If this is a native custom element, make sure to exclude it from component resolution via compilerOptions.isCustomElement.
+```
+
+### 解决办法
+
+**源代码：**
+
+```ts
+import { popperPlugin } from "./plugins/vuepress-plugin-popper";
+```
+
+**修改后的代码：**
+
+```ts
+import popperPlugin from "./plugins/vuepress-plugin-popper";
+```
+
