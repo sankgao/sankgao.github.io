@@ -115,71 +115,71 @@ export default defineUserConfig({
 
     // 看板娘
     ohmylive2dPlugin({
-      source: "/assets/live2d/vscode-live2d-models",
-      models: [
-        {
-          path: "/girls-frontline/G11/normal/model.json", scale: 0.4,
-        },
-        {
-          path: "/kesshouban/model.json", scale: 1.5, x: 70,
-        },
-        {
-          path: "/wanko/wanko.model.json", scale: 1.5, y: 130,
-        },
-        {
-          path: "/bilibili-22/index.json", scale: 2, x: 10,
-        },
-        {
-          path: "/potion-Maker-Pio/index.json", scale: 3.3,
-        },
-        {
-          path: "/haruto/haruto.model.json", scale: 1.5,
-        },
-        {
-          path: "/koharu/koharu.model.json", scale: 1.5,
-        },
-        {
-          path: "/hijiki/hijiki.model.json", scale: 1.5,
-        },
-        {
-          path: "/tororo/tororo.model.json", scale: 1.5,
-        },
-        {
-          path: "/kanzaki/kanzaki.model.json", scale: 2,
-          stageStyle: {
-            height: "330",
-          },
-        },
-        {
-          path: "/girls-frontline/AN94-2/normal/model.json", scale: 0.7,
-        },
-        {
-          path: "/girls-frontline/Kar98k/destroy/model.json", scale: 0.7,
-        },
-        {
-          path: "/girls-frontline/M4A1-2/destroy/model.json", scale: 0.5,
-        },
-        {
-          path: "/girls-frontline/M4-SOPMOD-II-2/destroy/model.json", scale: 0.7,
-        },
-        {
-          path: "/girls-frontline/WA2000-3/normal/model.json", scale: 0.7,
-        },
-        {
-          path: "/girls-frontline/WA2000-3/destroy/model.json", scale: 0.7,
-        },
-        {
-          path: "/girls-frontline/HK416-1/destroy/model.json", scale: 0.7, x: 10,
-        },
-      ],
-      tips: {
-        style: {
-          width: 150,
-          height: 70,
-          offsetX: 0,
-          offsetY: 70,
-        },
-      },
+      // source: "/assets/live2d/vscode-live2d-models",
+      // models: [
+      //   {
+      //     path: "/girls-frontline/G11/normal/model.json", scale: 0.4,
+      //   },
+      //   {
+      //     path: "/kesshouban/model.json", scale: 1.5, x: 70,
+      //   },
+      //   {
+      //     path: "/wanko/wanko.model.json", scale: 1.5, y: 130,
+      //   },
+      //   {
+      //     path: "/bilibili-22/index.json", scale: 2, x: 10,
+      //   },
+      //   {
+      //     path: "/potion-Maker-Pio/index.json", scale: 3.3,
+      //   },
+      //   {
+      //     path: "/haruto/haruto.model.json", scale: 1.5,
+      //   },
+      //   {
+      //     path: "/koharu/koharu.model.json", scale: 1.5,
+      //   },
+      //   {
+      //     path: "/hijiki/hijiki.model.json", scale: 1.5,
+      //   },
+      //   {
+      //     path: "/tororo/tororo.model.json", scale: 1.5,
+      //   },
+      //   {
+      //     path: "/kanzaki/kanzaki.model.json", scale: 2,
+      //     stageStyle: {
+      //       height: "330",
+      //     },
+      //   },
+      //   {
+      //     path: "/girls-frontline/AN94-2/normal/model.json", scale: 0.7,
+      //   },
+      //   {
+      //     path: "/girls-frontline/Kar98k/destroy/model.json", scale: 0.7,
+      //   },
+      //   {
+      //     path: "/girls-frontline/M4A1-2/destroy/model.json", scale: 0.5,
+      //   },
+      //   {
+      //     path: "/girls-frontline/M4-SOPMOD-II-2/destroy/model.json", scale: 0.7,
+      //   },
+      //   {
+      //     path: "/girls-frontline/WA2000-3/normal/model.json", scale: 0.7,
+      //   },
+      //   {
+      //     path: "/girls-frontline/WA2000-3/destroy/model.json", scale: 0.7,
+      //   },
+      //   {
+      //     path: "/girls-frontline/HK416-1/destroy/model.json", scale: 0.7, x: 10,
+      //   },
+      // ],
+      // tips: {
+      //   style: {
+      //     width: 150,
+      //     height: 70,
+      //     offsetX: 0,
+      //     offsetY: 70,
+      //   },
+      // },
     }),
   ],
 })
