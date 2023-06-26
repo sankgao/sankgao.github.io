@@ -19,7 +19,7 @@ tag:
 |  <kbd>Alt</kbd> + <kbd>DownArrow</kbd>  |  下移光标所在的单元格  |
 |  <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>UpArrow</kbd>  |  向上复制光标所在的单元格  |
 |  <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>DownArrow</kbd>  |  向下复制光标所在的单元格  |
-|  <kbd>Ctrl</kbd> + <kbd>\</kbd>  |  拆分编辑器  |
+|  <kbd>Ctrl</kbd> + <kbd>\\</kbd>  |  拆分编辑器  |
 |  <kbd>Ctrl</kbd> + <kbd>PgUp</kbd>  |  打开上一个编辑器  |
 |  <kbd>Ctrl</kbd> + <kbd>PgDn</kbd>  |  打开下一个编辑器  |
 |  <kbd>Ctrl</kbd> + <kbd>W</kbd>  |  关闭编辑器  |
@@ -28,7 +28,7 @@ tag:
 |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>RightArrow</kbd>  |  将编辑器移动到下一组  |
 |  <kbd>Ctrl</kbd> + <kbd>0</kbd>  |  将焦点置于主侧栏  |
 |  <kbd>Ctrl</kbd> + <kbd>Tab</kbd>  |  快速打开组中上一个最近使用过的编辑器  |
-|  <kbd>Ctrl</kbd> + <kbd>`</kbd>  |  切换终端  |
+|  <kbd>Ctrl</kbd> + <kbd>\`</kbd>  |  切换终端  |
 |  <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Z</kbd>  |  切换禅模式  |
 |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd>  |  切换辅助侧边栏可见性  |
 |  <kbd>F11</kbd>  |  切换全屏  |
