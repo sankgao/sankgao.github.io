@@ -5,12 +5,509 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-06-21T14:49:34.452Z</updated>
+  <updated>2023-06-26T09:00:12.696Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
+  <category term="Tools"/>
   <category term="Languages"/>
   <category term="Frontend"/>
+  <entry>
+    <title type="text">VS Code</title>
+    <id>https://sankgao.github.io/about/tools/vscode.html</id>
+    <link href="https://sankgao.github.io/about/tools/vscode.html"/>
+    <updated>2023-06-26T08:57:14.000Z</updated>
+    <summary type="html"><![CDATA[<h2> 常用快捷键</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">复制光标所在的整行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>V</kbd></td>
+<td style="text-align:left">粘贴到光标所在的上一行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">格式化文档</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">格式化文档</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">上移光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>DownArrow</kbd></td>
+<td style="text-align:left">下移光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">向上复制光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>DownArrow</kbd></td>
+<td style="text-align:left">向下复制光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>\</kbd></td>
+<td style="text-align:left">拆分编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>PgUp</kbd></td>
+<td style="text-align:left">打开上一个编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>PgDn</kbd></td>
+<td style="text-align:left">打开下一个编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+<td style="text-align:left">关闭编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+<td style="text-align:left">关闭所有编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">将编辑器移动到上一组</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">将编辑器移动到下一组</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>0</kbd></td>
+<td style="text-align:left">将焦点置于主侧栏</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Tab</kbd></td>
+<td style="text-align:left">快速打开组中上一个最近使用过的编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+<td style="text-align:left">切换终端</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Z</kbd></td>
+<td style="text-align:left">切换禅模式</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd></td>
+<td style="text-align:left">切换辅助侧边栏可见性</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>F11</kbd></td>
+<td style="text-align:left">切换全屏</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+<td style="text-align:left">切换主侧栏可见性</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>Z</kbd></td>
+<td style="text-align:left">切换自动换行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></td>
+<td style="text-align:left">显示资源管理器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>=</kbd></td>
+<td style="text-align:left">字体缩小</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+<td style="text-align:left">字体放大</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">查找</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>F3</kbd></td>
+<td style="text-align:left">查找下一个</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>F3</kbd></td>
+<td style="text-align:left">查找上一个</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+<td style="text-align:left">撤销</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>M</kbd></td>
+<td style="text-align:left">更改文本语言</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></td>
+<td style="text-align:left">切换垂直/水平编辑器布局</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd></td>
+<td style="text-align:left">切换块注释</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>/</kbd></td>
+<td style="text-align:left">切换行注释</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd></td>
+<td style="text-align:left">删除行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>H</kbd></td>
+<td style="text-align:left">替换</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">比较活动文件与剪贴板</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">在上面添加光标</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Downrrow</kbd></td>
+<td style="text-align:left">在下面添加光标</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标移动到单词左边</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标移动到单词右边</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标向左选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标向右选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标单词向左选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标单词向右选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+<td style="text-align:left">打开文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+<td style="text-align:left">打开文件夹</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">复制活动文件的路径</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></td>
+<td style="text-align:left">显示所有命令</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td>
+<td style="text-align:left">新建窗口</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>[</kbd></td>
+<td style="text-align:left">光标所在行减少缩进</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>]</kbd></td>
+<td style="text-align:left">光标所在行缩进</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+<td style="text-align:left">转到行/列</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<h2> 常用快捷键</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">快捷键</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">复制光标所在的整行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>V</kbd></td>
+<td style="text-align:left">粘贴到光标所在的上一行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">格式化文档</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">格式化文档</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">上移光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>DownArrow</kbd></td>
+<td style="text-align:left">下移光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">向上复制光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>DownArrow</kbd></td>
+<td style="text-align:left">向下复制光标所在的单元格</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>\</kbd></td>
+<td style="text-align:left">拆分编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>PgUp</kbd></td>
+<td style="text-align:left">打开上一个编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>PgDn</kbd></td>
+<td style="text-align:left">打开下一个编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+<td style="text-align:left">关闭编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+<td style="text-align:left">关闭所有编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">将编辑器移动到上一组</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">将编辑器移动到下一组</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>0</kbd></td>
+<td style="text-align:left">将焦点置于主侧栏</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Tab</kbd></td>
+<td style="text-align:left">快速打开组中上一个最近使用过的编辑器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+<td style="text-align:left">切换终端</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Z</kbd></td>
+<td style="text-align:left">切换禅模式</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>B</kbd></td>
+<td style="text-align:left">切换辅助侧边栏可见性</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>F11</kbd></td>
+<td style="text-align:left">切换全屏</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+<td style="text-align:left">切换主侧栏可见性</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Alt</kbd> + <kbd>Z</kbd></td>
+<td style="text-align:left">切换自动换行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></td>
+<td style="text-align:left">显示资源管理器</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>=</kbd></td>
+<td style="text-align:left">字体缩小</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+<td style="text-align:left">字体放大</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+<td style="text-align:left">查找</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>F3</kbd></td>
+<td style="text-align:left">查找下一个</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>F3</kbd></td>
+<td style="text-align:left">查找上一个</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+<td style="text-align:left">撤销</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>M</kbd></td>
+<td style="text-align:left">更改文本语言</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></td>
+<td style="text-align:left">切换垂直/水平编辑器布局</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd></td>
+<td style="text-align:left">切换块注释</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>/</kbd></td>
+<td style="text-align:left">切换行注释</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd></td>
+<td style="text-align:left">删除行</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>H</kbd></td>
+<td style="text-align:left">替换</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">比较活动文件与剪贴板</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>UpArrow</kbd></td>
+<td style="text-align:left">在上面添加光标</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Downrrow</kbd></td>
+<td style="text-align:left">在下面添加光标</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标移动到单词左边</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标移动到单词右边</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标向左选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标向右选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>LeftArrow</kbd></td>
+<td style="text-align:left">光标单词向左选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>RightArrow</kbd></td>
+<td style="text-align:left">光标单词向右选择</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+<td style="text-align:left">打开文件</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+<td style="text-align:left">打开文件夹</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd></td>
+<td style="text-align:left">复制活动文件的路径</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd></td>
+<td style="text-align:left">显示所有命令</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td>
+<td style="text-align:left">新建窗口</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>[</kbd></td>
+<td style="text-align:left">光标所在行减少缩进</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>]</kbd></td>
+<td style="text-align:left">光标所在行缩进</td>
+</tr>
+<tr>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+<td style="text-align:left">转到行/列</td>
+</tr>
+</tbody>
+</table>
+<h2> VS Code 工具插件</h2>
+<h3> Chinese (Simplified)</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans" target="_blank" rel="noopener noreferrer">Chinese (Simplified)</a> 用于更改 VS Code 本地语言为中文界面。</p>
+<h3> Makdown Preview Github Styling</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles" target="_blank" rel="noopener noreferrer">Makdown Preview Github Styling</a> 用于更改 VS Code 的内置 Markdown 预览以匹配 GitHub 的样式。</p>
+<h3> Markdown Preview Enhanced</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced" target="_blank" rel="noopener noreferrer">Markdown Preview Enhanced</a> 用于增强 Markdown 预览，提供许多有用的功能。例如：自动滚动同步、数学排版、mermaid、PlantUML、pandoc、PDF 导出、代码块、演示文稿编写器等。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">快捷键</th>
+<th style="text-align:left">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><kbd>ctrl</kbd> + <kbd>k</kbd> <kbd>v</kbd></td>
+<td style="text-align:left">打开侧面预览</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>v</kbd></td>
+<td style="text-align:left">打开预览</td>
+</tr>
+<tr>
+<td style="text-align:center"><kbd>Esc</kbd></td>
+<td style="text-align:left">切换侧边栏目录</td>
+</tr>
+</tbody>
+</table>
+<figure><figcaption>preview_enhanced</figcaption></figure>
+<h3> markdown-formatter</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=mervin.markdown-formatter" target="_blank" rel="noopener noreferrer">markdown-formatter</a> 对用户提供了相对统一的格式，还提供了一些代码片段。</p>
+<h3> background-cover</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=manasxx.background-cover" target="_blank" rel="noopener noreferrer">background-cover</a> 用于配置 Markdown 背景图。</p>
+<ul>
+<li>点击底部切换背景图按钮 / Click the bottom toggle background button</li>
+<li><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>P</kbd> &gt; "backgroundCover - start"</li>
+<li><kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>F7</kbd> &gt; "Random update background and restart"</li>
+<li>VS Code 更新版本时会导致背景图消失，需要手动重新设置</li>
+</ul>
+<figure><figcaption>switch_background_button</figcaption></figure>
+]]></content>
+    <category term="Tools"/>
+    <published>2023-06-26T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">模块使用</title>
     <id>https://sankgao.github.io/languages/python/references/modules.html</id>
@@ -49831,74 +50328,6 @@ schoolName <span class="token operator">=</span> <span class="token string">"存
 <p><code>novalidate</code> 属性是 <code>&lt;form&gt;</code> 属性。</p>
 <p>如果已设置，<code>novalidate</code> 属性规定在提交时不应验证所有表单数据。例如：</p>
 
-]]></content>
-    <category term="Frontend"/>
-    <published>2023-05-10T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">输入属性</title>
-    <id>https://sankgao.github.io/frontend/html5/tutorial/form_input_attributes.html</id>
-    <link href="https://sankgao.github.io/frontend/html5/tutorial/form_input_attributes.html"/>
-    <updated>2023-05-10T14:17:57.000Z</updated>
-    <summary type="html"><![CDATA[<p><code>&lt;input&gt;</code> 元素的不同属性。</p>
-<h2> value</h2>
-<p><code>value</code> 属性规定输入字段的初始值。例如：</p>
-
-<h2> readonly</h2>
-<p><code>readonly</code> 属性规定输入字段为只读（不能修改）。例如：</p>
-
-<h2> disabled</h2>
-<p><code>disabled</code> 属性规定输入字段是禁用的。</p>
-<p>被禁用的元素是不可用和不可点击的，且被禁用的元素不会被提交。例如：</p>
-
-<h2> size</h2>
-<p><code>size</code> 属性规定输入字段框的尺寸（以字符计）。例如：</p>]]></summary>
-    <content type="html"><![CDATA[<p><code>&lt;input&gt;</code> 元素的不同属性。</p>
-<h2> value</h2>
-<p><code>value</code> 属性规定输入字段的初始值。例如：</p>
-
-<h2> readonly</h2>
-<p><code>readonly</code> 属性规定输入字段为只读（不能修改）。例如：</p>
-
-<h2> disabled</h2>
-<p><code>disabled</code> 属性规定输入字段是禁用的。</p>
-<p>被禁用的元素是不可用和不可点击的，且被禁用的元素不会被提交。例如：</p>
-
-<h2> size</h2>
-<p><code>size</code> 属性规定输入字段框的尺寸（以字符计）。例如：</p>
-
-<h2> maxlength</h2>
-<p><code>maxlength</code> 属性规定输入字段允许的最大长度。例如：</p>
-
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>该属性不会提供任何反馈。如果需要提醒用户，则必须编写 <code>JavaScript</code> 代码</p>
-<p>输入限制并非万无一失。<code>JavaScript</code> 提供了很多方法来增加非法输入。如需安全地限制输入，则接受者（服务器）必须同时对限制进行检查</p>
-</div>
-<h2> HTML5 新增的输入属性</h2>
-<ul>
-<li><strong>autocomplete</strong>：属性规定表单或输入字段是否会基于用户之前的输入值自动填写值</li>
-<li><strong>autofocus</strong>：属性规定当页面加载时 <code>&lt;input&gt;</code> 元素应该自动获得焦点</li>
-<li><strong>form</strong>：属性规定 <code>&lt;input&gt;</code> 元素所属的一个或多个表单</li>
-<li><strong>formaction</strong>：属性规定当提交表单时处理该输入控件的文件的 URL</li>
-<li><strong>formenctype</strong>：属性规定当把表单数据（form-data）提交至服务器时如何对其进行编码（仅针对 <code>method="post"</code> 的表单）</li>
-<li><strong>formmethod</strong>：属性定义用以向 action URL 发送表单数据（form-data）的 HTTP 方法</li>
-<li><strong>formnovalidate</strong>：属性规定在提交表单时不对 <code>&lt;input&gt;</code> 元素进行验证</li>
-<li><strong>formtarget</strong>：属性规定的名称或关键词指示提交表单后在何处显示接收到的响应</li>
-<li><strong>height 和 width</strong>：属性规定 <code>&lt;input&gt;</code> 元素的高度和宽度</li>
-<li><strong>list</strong>：属性引用的 <code>&lt;datalist&gt;</code> 元素中包含了 <code>&lt;input&gt;</code> 元素的预定义选项</li>
-<li><strong>min 和 max</strong>：属性规定 <code>&lt;input&gt;</code> 元素的最小值和最大值</li>
-<li><strong>multiple</strong>：属性规定允许用户在 <code>&lt;input&gt;</code> 元素中输入一个以上的值</li>
-<li><strong>pattern (regexp)</strong>：属性规定用于检查 <code>&lt;input&gt;</code> 元素值的正则表达式</li>
-<li><strong>placeholder</strong>：属性规定用以描述输入字段预期值的提示（样本值或有关格式的简短描述）</li>
-<li><strong>required</strong>：属性规定在提交表单之前必须填写输入字段</li>
-<li><strong>step</strong>：属性规定 <code>&lt;input&gt;</code> 元素的合法数字间隔</li>
-</ul>
-<p>并为 <code>&lt;form&gt;</code> 增加属性：</p>
-<ul>
-<li><strong>autocomplete</strong>：属性规定表单或输入字段是否会基于用户之前的输入值自动填写值</li>
-<li><strong>novalidate</strong>：规定在提交表单时不对表单数据进行验证</li>
-</ul>
 ]]></content>
     <category term="Frontend"/>
     <published>2023-05-10T00:00:00.000Z</published>
