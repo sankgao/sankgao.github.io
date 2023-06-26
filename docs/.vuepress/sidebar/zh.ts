@@ -338,6 +338,7 @@ export const zhSidebarConfig = sidebar({
         "picgo.md",
         "quick_reference.md",
         "command.md",
+        "vscode.md",
       ],
     },
   ],
