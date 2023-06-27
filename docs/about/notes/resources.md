@@ -12,6 +12,10 @@ tag:
 
 ## 博客
 
+- [tansongchen](https://tansongchen.com/)
+
+    自诩为一位创造者，凡是将人类的心智外化于物、创造出本不属于这个世界的实体从而实现自我的活动都令我兴致勃勃，写文章、敲代码、玩音乐、拍视频……我想自古以来的文人墨客都要给自己的书斋、画室起个名号，我也不能免俗地依志趣把这个网站称作「众妙斋」。
+
 - [Summer](https://www.xswsym.online/)
 
     Devops 运维技术博客，敏捷运维、自动化部署、微服务、运维面试题、技术文档、学习、面试等。
@@ -142,7 +146,7 @@ tag:
 - [VuePress](https://v2.vuepress.vuejs.org/zh/)
 - [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
 - [蓝桥杯](http://lx.lanqiao.cn/)
-- [网站大全](https://newxiaozhan.com/d/39223)
+- [网站大全](https://pan666.net/d/39223)
 - [CXY521 导航](http://www.cxy521.com/index.html)
 - [it98k 导航](http://www.it98k.com/)
 - [Tbox 导航](https://www.tboxn.com/)
@@ -150,26 +154,30 @@ tag:
 - [犇生活导航](http://6.6soluo.com/)
 - [趣导航](https://qssily.com/)
 - [小呆导航](https://www.webjike.com/index.html)
+- [书签导航](https://nav.xybin.top/)
 - [简法主页](http://www.jianfast.com/)
 - [KIM 主页](https://kim.plopco.com/)
 - [抓鱼鸭标签页](https://www.zhuayuya.com/)
 - [圈子 – Geeker](https://geekerline.com/)
 - [阿里云盘网](http://www.alypw.cn/)
-- [阿里云盘资源共享站](https://newxiaozhan.com/)
-- [个人收集资源2](https://newxiaozhan.com/d/164012-2)
-- [300T 网盘资源](https://newxiaozhan.com/d/199069-300t)
+- [阿里云盘资源共享站](https://pan666.net/)
+- [个人收集资源2](https://pan666.net/d/164012-2)
+- [300T 网盘资源](https://pan666.net/d/199069-300t)
+- [全能型资源导航站](http://daxuesheng123.ysepan.com/)
+- [盘云社](https://geekerline.com/circle/61487.html)
 - [ChatGPT](https://pan.quark.cn/s/278e6a2fa54e?entry=funletu#/list/share)
 - [国内可用的 ChatGPT 在线体验](https://chatgpt.quickso.cn/)
 - [阿里云盘 - 总盘分享 54T](https://www.aliyundrive.com/s/kWMsLqDVQnR)
 - [摸鱼指北](https://github.com/akira-cn/moyu)
-- [超多 B 站链接资源](https://newxiaozhan.com/d/99194-b)
+- [超多 B 站链接资源](https://pan666.net/d/99194-b)
 - [白手创业网](https://www.heishou.org/)
 - [世界各国网址大全](http://www.world68.com/)
 - [程序员应该访问的最佳网站](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 - [网站盒子](https://www.miniits.com/)
 - [国内外 PT 站推荐汇总](https://geekerline.com/59497/.html)
-- [摸鱼客栈资源](https://newxiaozhan.com/u/7424/discussions)
+- [摸鱼客栈资源](https://pan666.net/u/7424/discussions)
 - [适合浪漫之夜听的 BGM](https://space.bilibili.com/596838597/channel/seriesdetail?sid=3039785)
+- [Lemmy – 一个联邦宇宙的链接聚合器和论坛](https://join-lemmy.org/)
 
 ## 教程
 
@@ -194,6 +202,7 @@ tag:
 - [17 分享资源网](https://www.17fenxiang.cn/)
 - [运维派](http://www.yunweipai.com/)
 - [廖雪峰](https://www.liaoxuefeng.com/)
+- [Egon 林海峰](https://egonlin.com/)
 - [黑马人工智能 AI](https://pan.quark.cn/s/a8a9fc9117c7#/list/share)
 - [编程开发](https://pan.quark.cn/s/d9abda715244#/list/share)
 - [Java 程序员的系列教程](https://github.com/crisxuan/bestJavaer)
@@ -208,7 +217,7 @@ tag:
 - [JIRA 使用文档](https://confluence.atlassian.com/adminjiraserver/administering-jira-data-center-and-server-9-6-applications-938846803.html)
 - [Python 免费公开课](http://www.6staredu.com/sixpython2/index.html)
 - [蓝桥云课](https://www.lanqiao.cn/)
-- [黑马前端](https://newxiaozhan.com/d/136569-7065)
+- [黑马前端](https://pan666.net/d/136569-7065)
 - [阿里云盘 - linux 黑马程序员学习](https://www.aliyundrive.com/s/NLFdL9ue1MJ)
 - [阿里云盘 - Python 黑马程序员学习](https://www.aliyundrive.com/s/1cL1mT75gCR)
 - [阿里云盘 - B 站 Python 学习](https://www.aliyundrive.com/s/WDhtYQ5Z7tB)
@@ -252,12 +261,12 @@ tag:
 - [我要自学网](https://www.51zxw.net/)
 - [学堂在线](https://www.xuetangx.com/)
 - [爱课程](https://www.icourses.cn/home/)
-- [小学资料](https://newxiaozhan.com/d/206824-1t3)
-- [小学初高中学习资料](https://newxiaozhan.com/d/52968)
+- [小学资料](https://pan666.net/d/206824-1t3)
+- [小学初高中学习资料](https://pan666.net/d/52968)
 - [幼儿到大学全套资源](https://geekerline.com/circle/57294.html)
 - [大学资源网](https://www.dxzy163.com/)
 - [简答题](https://www.jiandati.com/)
-- [初级中药师网课](https://newxiaozhan.com/d/60818)
+- [初级中药师网课](https://pan666.net/d/60818)
 
 ## 书籍
 
@@ -324,7 +333,7 @@ tag:
 - [杂项工具箱](http://www.atoolbox.net/)
 - [插件软件电子书等等合集](https://geekerline.com/circle/57757.html)
 - [宝藏插件](https://pan.quark.cn/s/93855654d203#/list/share)
-- [软件大全](https://newxiaozhan.com/d/91046)
+- [软件大全](https://pan666.net/d/91046)
 - [解决 GitHub 访问时图裂、加载慢的问题](https://github.com/521xueweihan/GitHub520)
 - [上班摸鱼必备（假装电脑系统升级）](http://fakeupdate.net/)
 - [PIECES 拼图](http://www.species-in-pieces.com/)
@@ -379,6 +388,9 @@ tag:
 - [极速矢量（在线游戏）](https://u.ali213.net/games/jisushiliang/index.html)
 - [Mk48.io 舰船战斗游戏](https://mk48.io/)
 - [免费线上游戏](https://zh.y8.com/)
+- [EhViewer 漫画官网-又叫 E 站](https://geekerline.com/circle/61505.html)
+- [一个复古夜间音乐广播电台小网站](https://plaza.one/)
+- [CoolAI - 免费 ChatGPT + MidJourney 网站](https://chat.coolai.vip/)
 
 ## 图片
 
