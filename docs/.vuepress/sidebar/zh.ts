@@ -288,6 +288,15 @@ export const zhSidebarConfig = sidebar({
           ],
         },
         {
+          text: "算法和数据结构",
+          icon: "algorithm",
+          prefix: "algorithm_data_structure/",
+          collapsible: true,
+          children: [
+            "algorithm_data_structure.md",
+          ],
+        },
+        {
           text: "参考手册",
           icon: "manual",
           prefix: "references/",
