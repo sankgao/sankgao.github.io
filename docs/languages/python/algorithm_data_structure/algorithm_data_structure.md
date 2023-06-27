@@ -231,25 +231,25 @@ tag:
 
     最高阶项为 `3n`，省去系数 `3`，则转化的时间复杂度为：**T(n)=O(n)。**
 
-    ![T(n)=O(n)](./assets/O(n).jpg)
+    ![T(n)=O(n)](./assets/O_linear.jpg)
 
 - **场景二**：**T(n)=5log~2~n**
 
     最高阶项为 **5log~2~n**，省去系数 `5`，则转化的时间复杂度为：**T(n)=O(log~2~n)。**
 
-    ![T(n)=O(log~2~n)](./assets/O(log~2~n).jpg)
+    ![T(n)=O(log~2~n)](./assets/O_logarithm.jpg)
 
 - **场景三**：**T(n)=2**
 
     只有常数量级，则转化的时间复杂度为：**T(n)=O(1)。**
 
-    ![T(n)=O(1)](./assets/O(1).jpg)
+    ![T(n)=O(1)](./assets/O_constant.jpg)
 
 - **场景四**：**T(n)=0.5n^2^ + 0.5n**
 
     最高阶项为 **0.5n^2^**，省去系数 `0.5`，则转化的时间复杂度为：**T(n)=O(n^2^)。**
 
-    ![T(n)=O(n^2^)](./assets/O(n^2^).jpg)
+    ![T(n)=O(n^2^)](./assets/O_polynomial.jpg)
 
 这四种时间复杂度对程度执行用时时间由低到高为：
 
