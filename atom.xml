@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-06-27T15:40:37.232Z</updated>
+  <updated>2023-06-28T10:00:29.312Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -16,7 +16,7 @@
     <title type="text">算法和数据结构</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/algorithm_data_structure.html</id>
     <link href="https://sankgao.github.io/languages/python/algorithm_data_structure/algorithm_data_structure.html"/>
-    <updated>2023-06-27T15:36:09.000Z</updated>
+    <updated>2023-06-28T09:55:44.000Z</updated>
     <summary type="html"><![CDATA[<h2> 什么是算法</h2>
 <p>算法，对应的英文单词是 <code>algorithm</code>，这是一个很古老的概念，最早来自数学领域。</p>
 <div class="hint-container info">
