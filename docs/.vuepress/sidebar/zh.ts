@@ -294,6 +294,7 @@ export const zhSidebarConfig = sidebar({
           collapsible: true,
           children: [
             "algorithm_data_structure.md",
+            "data_structure_base.md",
           ],
         },
         {
