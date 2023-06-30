@@ -295,6 +295,7 @@ export const zhSidebarConfig = sidebar({
           children: [
             "algorithm_data_structure.md",
             "data_structure_base.md",
+            "trees.md",
           ],
         },
         {
