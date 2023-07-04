@@ -296,6 +296,7 @@ export const zhSidebarConfig = sidebar({
             "algorithm_data_structure.md",
             "data_structure_base.md",
             "trees.md",
+            "sorting.md",
           ],
         },
         {
