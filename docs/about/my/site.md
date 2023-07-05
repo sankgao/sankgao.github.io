@@ -15,6 +15,7 @@ breadcrumb: false
 
 ## 样式
 
-- 修改字体大小，使 `code` 和 `code numbers` 在同一行
-- 修改页面显示大图背景
-
+- 修改字体大小，使 `code` 和 `code numbers` 在同一行 `./styles/index.scss`
+- 修改页面显示大图背景 `./styles/base.scss` `./styles/theme.scss`
+- 为页面图标添加鼠标悬停的跳动效果 `./styles/bounce-icon.scss`
+- 获取站点的运行时间 `.vuepress/client.ts`
