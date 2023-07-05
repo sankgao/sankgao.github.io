@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@moefy-canvas/theme-popper": "^0.5.2",
+    "@vueuse/core": "^10.2.1",
     "vuepress-plugin-oh-my-live2d": "0.6.0"
   }
 }
