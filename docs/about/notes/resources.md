@@ -159,6 +159,7 @@ tag:
 - [趣导航](https://qssily.com/)
 - [小呆导航](https://www.webjike.com/index.html)
 - [书签导航](https://nav.xybin.top/)
+- [192link](https://www.192link.com/)
 - [简法主页](http://www.jianfast.com/)
 - [KIM 主页](https://kim.plopco.com/)
 - [抓鱼鸭标签页](https://www.zhuayuya.com/)
@@ -188,6 +189,7 @@ tag:
 - [菜鸟教程](https://www.runoob.com/)
 - [编程宝库](http://www.codebaoku.com/)
 - [IT屋](https://www.it1352.com/)
+- [码农教程](http://www.manongjc.com/)
 - [翼狐网](https://www.yiihuu.com/)
 - [编程字典](https://www.codingdict.com/)
 - [立地货 - 随时随地学编程](https://www.lidihuo.com/)
@@ -412,6 +414,7 @@ tag:
 - [老照片大合集（上万张各时代老照片）](https://www.aliyundrive.com/s/ft55gz8SKQq)
 - [家具](https://visualhunt.com/)
 - [阿里云盘 - 漫画屋](https://www.aliyundrive.com/s/xgsJrfonUE8)
+- [在线漫画](https://www.xuewailx.com/)
 
 ## 视频
 
