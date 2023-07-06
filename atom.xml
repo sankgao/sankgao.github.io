@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-07-05T10:01:00.699Z</updated>
+  <updated>2023-07-06T11:25:14.407Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -522,7 +522,7 @@
     <title type="text">树</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/trees.html</id>
     <link href="https://sankgao.github.io/languages/python/algorithm_data_structure/trees.html"/>
-    <updated>2023-06-30T07:48:20.000Z</updated>
+    <updated>2023-07-06T11:20:36.000Z</updated>
     <summary type="html"><![CDATA[<h2> 树和二叉树</h2>
 <p>有许多逻辑关系并不是简单的 <strong>线性关系</strong>，在实际场景中，常常存在一对多，甚至多对多的情况。其中 <strong>树</strong> 和 <strong>图</strong> 就是典型的 <strong>非线性数据结构。</strong></p>
 <h3> 树</h3>
@@ -539,8 +539,8 @@
 </ul>
 <p><strong>标准的树结构如下所示：</strong></p>
 <figure><figcaption>tree_structure</figcaption></figure>
-<p>在上图中，节点1 是 <strong>根节点</strong>（<code>root</code>）；节点5、6、7、8、9 是树的末端，没有 “孩子节点”，被称为 <strong>叶子节点（leaf）</strong>。图中的虚线部分，是根节点1 的 <strong>其中一个子树。</strong></p>
-<p>同时，树的结构从根节点到叶子节点，分为不同的层级。节点4 的上一级节点（节点2）是节点4 的 <strong>父节点（parent）</strong>；从节点4 衍生出来的节点（节点7、8、9）是节点4 的 <strong>孩子节点（child）</strong>；和节点4 同级，由同一个父节点衍生出来的节点（节点5、6）是节点4 的 <strong>兄弟节点（sibling）。</strong></p>
+<p>在上图中，节点1 是 <strong>根节点</strong>（<code>root</code>）；节点5、6、7、8、9 是树的末端，没有 “孩子节点” 被称为 <strong>叶子节点（leaf）</strong>。图中的虚线部分，是根节点1 的 <strong>其中一个子树。</strong></p>
+<p>同时，树的结构从根节点到叶子节点，分为不同的层级。节点4 的上一级节点（节点2）是节点4 的 <strong>父节点（parent）</strong>；从节点4 衍生出来的节点（节点7、8、9）是节点4 的 <strong>孩子节点（child）</strong>；和节点4 同级，由同一个父节点2 衍生出来的节点5 是节点4 的 <strong>兄弟节点（sibling）。</strong></p>
 <p>树的最大层级数，称为 <strong>树的高度</strong> 或 <strong>深度。</strong></p>
 <h3> 二叉树</h3>
 <p><strong>二叉树（binary tree）</strong> 是树的一种特殊形式。<strong>二叉</strong> 顾名思义，这种树的每个节点最多有 <code>2</code> 个 <strong>孩子节点</strong>。注意，这里是最多有 <code>2</code> 个，也可能只有 <code>1</code> 个，或者没有 <strong>孩子节点。</strong></p>
@@ -1313,7 +1313,7 @@
     <title type="text">算法和数据结构</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/algorithm_data_structure.html</id>
     <link href="https://sankgao.github.io/languages/python/algorithm_data_structure/algorithm_data_structure.html"/>
-    <updated>2023-06-29T10:55:24.000Z</updated>
+    <updated>2023-07-06T11:20:36.000Z</updated>
     <summary type="html"><![CDATA[<h2> 算法</h2>
 <p><strong>算法（algorithm）</strong> 是一个很古老的概念，最早来自数学领域。</p>
 <div class="hint-container info">
@@ -1612,7 +1612,7 @@
 </li>
 </ul>
 <p>常见的空间复杂度按照从低到高的顺序为：</p>
-<p><strong>O(1)</strong> &lt; <strong>O(n)</strong> &lt; <strong>O(n2)</strong> 等。</p>
+<p><strong>O(1)</strong> &lt; <strong>O(n)</strong> &lt; <strong>O(n<sup>2</sup>)</strong> 等。</p>
 <p>其中递归算法的空间复杂度和递归深度成正比。</p>
 <h3> 时间与空间的取舍</h3>
 <p>在绝大多数时候，时间复杂度更为重要一些，宁可多分配一些内存空间，也要提升程序的执行速度。</p>
