@@ -1,11 +1,14 @@
 import { defineUserConfig } from "vuepress";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { getDirname, path } from "@vuepress/utils";
 import { dynamicTitlePlugin } from "@vuepress-denaro/vuepress-plugin-dynamic-title";
 import { PopperShape } from "@moefy-canvas/theme-popper";
 import { popperPlugin } from "./plugins/vuepress-plugin-popper";
 import { ohmylive2dPlugin } from "vuepress-plugin-oh-my-live2d";
 
 import theme from "./theme.ts";
+
+const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
   // 默认站点配置
@@ -30,6 +33,10 @@ export default defineUserConfig({
       title: "Sank's blog",
       description: "A personal blog built using VuePress v2",
     },
+  },
+
+  alias: {
+    "@BlogHero": path.resolve(__dirname, "./components/BlogHero.vue"),
   },
   
   theme,  // 主题配置
