@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-07-07T02:09:27.609Z</updated>
+  <updated>2023-07-07T06:08:56.623Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -58,7 +58,7 @@
     <title type="text">排序算法</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/sorting.html</id>
     <link href="https://sankgao.github.io/languages/python/algorithm_data_structure/sorting.html"/>
-    <updated>2023-07-04T10:31:27.000Z</updated>
+    <updated>2023-07-07T06:05:31.000Z</updated>
     <summary type="html"><![CDATA[<p>根据时间复杂度的不同，主流的排序算法可以分为三大类：</p>
 <ul>
 <li>
@@ -232,7 +232,7 @@
 <p>首先，选定基准元素 <code>pivot</code>，并且设置两个指针 <code>left</code> 和 <code>right</code>，指向数列的最左和最右两个元素。</p>
 <figure><figcaption>pivot</figcaption></figure>
 <p><strong>第一次循环</strong></p>
-<p>从 <code>right</code> 指针开始，让指针所指向的元素和基准元素做比较。如果大于或等于 <code>pivot</code>，则指针向左移动；如果小于 <code>pivot</code>，则 <code>right</code> 指针停止移动，切换到 <code>left</code> 指针。</p>
+<p>从 <code>right</code> 指针开始，让指针所指向的元素和基准元素做比较。如果 <strong>大于或等于</strong> <code>pivot</code>，则指针向左移动；如果 <strong>小于</strong> <code>pivot</code>，则 <code>right</code> 指针停止移动，切换到 <code>left</code> 指针。</p>
 <p>在当前数列中，<code>1 &lt; 4</code>，所以 <code>right</code> 直接停止移动，换到 <code>left</code> 指针，进行下一步行动。</p>
 <p>轮到 <code>left</code> 指针行动，让指针所指向的元素和基准元素做比较。如果 <strong>小于或等于</strong> <code>pivot</code>，则指针向右移动；如果 <strong>大于</strong> <code>pivot</code>，则 <code>left</code> 指针停止移动。</p>
 <p>由于 <code>left</code> 开始指向的是基准元素，判断肯定相等，所以 <code>left</code> 右移 <code>1</code> 位。</p>
@@ -298,7 +298,7 @@
 <p>堆排序的空间复杂度是 <strong>O(1)</strong>，因为并没有开辟额外的集合空间。</p>
 <p>堆排序的时间复杂度是 <strong>O(nlog<sub>2</sub>n)</strong>，分析如下：</p>
 <p>二叉堆的节点 “下沉” 调整（<code>down_adjust</code> 方法）是堆排序算法的基础，这个调节操作本身的时间复杂度是 <strong>O(log<sub>2</sub>n)。</strong></p>
-<p>根据堆排序算法的步骤，第 <code>1</code> 步，把无序数组构建成二叉堆，这一步的时间复杂度是 <strong>O(n)</strong>；第 2 步，需要进行 <code>n - 1</code> 次循环。每次循环调用一次 <code>down_adjust</code> 方法，所以第 2 步的计算规模是 <strong>(n - 1) × log<sub>1</sub>n</strong>，时间复杂度为 <strong>O(nlog<sub>2</sub>n)</strong>。两个步骤是并列关系，所以整体的时间复杂度是 <strong>O(nlog<sub>2</sub>n)。</strong></p>
+<p>根据堆排序算法的步骤，第 <code>1</code> 步，把无序数组构建成二叉堆，这一步的时间复杂度是 <strong>O(n)</strong>；第 <code>2</code> 步，需要进行 <code>n - 1</code> 次循环。每次循环调用一次 <code>down_adjust</code> 方法，所以第 2 步的计算规模是 <strong>(n - 1) × log<sub>1</sub>n</strong>，时间复杂度为 <strong>O(nlog<sub>2</sub>n)</strong>。两个步骤是并列关系，所以整体的时间复杂度是 <strong>O(nlog<sub>2</sub>n)。</strong></p>
 </div>
 <h2> 快速排序和堆排序对比</h2>
 <table>
@@ -443,7 +443,7 @@
 <details class="hint-container details"><summary>桶排序的代码</summary>
 <div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
 <p>在上述代码中，所有的桶都保存在 <code>bucket_list</code> 集合中，每个桶都是一个列表。</p>
-<p>同时，上述代码使用了 <code>sort</code> 方法对桶内元素进行排序。<code>sort</code> 方法底层采用的是 <code>Timsort</code> 排序算法，可以简单地理解为是一种时间复杂度为 O(nlog<sub>2</sub>n) 的排序。</p>
+<p>同时，上述代码使用了 <code>sort</code> 方法对桶内元素进行排序。<code>sort</code> 方法底层采用的是 <code>Timsort</code> 排序算法，可以简单地理解为是一种时间复杂度为 <strong>O(nlog<sub>2</sub>n)</strong> 的排序。</p>
 <div class="hint-container info">
 <p class="hint-container-title">相关信息</p>
 <p>假设原始数列有 <code>n</code> 个元素，分成 <code>n</code> 个桶。桶排序的时间复杂度如下：</p>
@@ -522,7 +522,7 @@
     <title type="text">树</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/trees.html</id>
     <link href="https://sankgao.github.io/languages/python/algorithm_data_structure/trees.html"/>
-    <updated>2023-07-06T11:20:36.000Z</updated>
+    <updated>2023-07-07T06:05:31.000Z</updated>
     <summary type="html"><![CDATA[<h2> 树和二叉树</h2>
 <p>有许多逻辑关系并不是简单的 <strong>线性关系</strong>，在实际场景中，常常存在一对多，甚至多对多的情况。其中 <strong>树</strong> 和 <strong>图</strong> 就是典型的 <strong>非线性数据结构。</strong></p>
 <h3> 树</h3>
@@ -661,12 +661,13 @@
 <details class="hint-container details"><summary>代码</summary>
 <div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></details>
 <p>这三种遍历方式的区别，仅仅是输出的执行位置不同：前序遍历的输出在前，中序遍历的输出在中间，后序遍历的输出在最后。</p>
-<p>::: waring 二叉树的构建
-二叉树的构建方法有很多，这里把一个线性的链表转化成非线性的二叉树，链表节点的顺序恰恰是二叉树前序遍历的顺序。链表中的空值，代表二叉树节点的左孩子或右孩子为空的情况。
-:::</p>
+<div class="hint-container warning">
+<p class="hint-container-title">二叉树的构建</p>
+<p>二叉树的构建方法有很多，这里把一个线性的链表转化成非线性的二叉树，链表节点的顺序恰恰是二叉树前序遍历的顺序。链表中的空值，代表二叉树节点的左孩子或右孩子为空的情况。</p>
+</div>
 <p>在代码中，通过 <code>{3, 2, 9, None, None, 10, None, None, 8, None, 4}</code> 这样一个线性序列，构建成的二叉树如下：</p>
 <figure><figcaption>binary_tree_export</figcaption></figure>
-<p>二叉树的深度优先遍历绝大多数可以用递归解决的问题，其实都可以用另一种数据结构来解决，这种数据结构就是 <strong>栈</strong>。因为递归和栈都有回溯的特性。例如：</p>
+<p>二叉树的深度优先遍历绝大多数可以用递归解决的问题，其实都可以用另一种数据结构来解决，这种数据结构就是 <strong>栈</strong>。因为递归和栈都有回溯的特性。例如：以二叉树的前序遍历为例。</p>
 <ol>
 <li>
 <p>首先遍历二叉树的根节点1，放入栈中。</p>
