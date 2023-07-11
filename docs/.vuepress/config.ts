@@ -36,7 +36,10 @@ export default defineUserConfig({
   },
 
   alias: {
-    "@BlogHero": path.resolve(__dirname, "./components/BlogHero.vue"),
+    "@theme-hope/modules/blog/components/BlogHero": path.resolve(
+      __dirname,
+      "./components/BlogHero.vue"
+    ),
   },
   
   theme,  // 主题配置
