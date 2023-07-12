@@ -133,6 +133,7 @@ tag:
 - [偷渡鱼](https://touduyu.com/)
 - [谷粉学术](https://gfsoso.99lb.net/scholar.html)
 - [QuickSo-快点搜](https://quickso.cn/)
+- [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
 
 ## 网站
 
@@ -397,6 +398,13 @@ tag:
 - [EhViewer 漫画官网-又叫 E 站](https://geekerline.com/circle/61505.html)
 - [一个复古夜间音乐广播电台小网站](https://plaza.one/)
 - [CoolAI - 免费 ChatGPT + MidJourney 网站](https://chat.coolai.vip/)
+- [AI GIRL – 一个专注 AI 生成女性角色的网站](https://geekerline.com/circle/61746.html)
+- [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
+- [生成式 AI 景观](https://ai-collection.org/zh-CN/)
+- [FilePursuit - 一个在线文件搜索引擎](https://filepursuit.com/)
+- [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
+- [BusinessAI - 在线 AI 人工智能对话和 AI 绘画工具](https://aichat.kqbusinessai.com/)
+- [Uncrop-在线创意AI图像自动补全工具](https://clipdrop.co/pricing)
 
 ## 图片
 
