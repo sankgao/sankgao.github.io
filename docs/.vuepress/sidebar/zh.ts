@@ -298,6 +298,7 @@ export const zhSidebarConfig = sidebar({
             "trees.md",
             "sorting.md",
             "algorithms_in_interviews.md",
+            "practical_application.md",
           ],
         },
         {
