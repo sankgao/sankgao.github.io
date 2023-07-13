@@ -204,6 +204,9 @@ tag:
 - [WIKI](https://iowiki.com/)
 - [FAUN](https://faun.dev/c/)
 - [C 语言中文网](http://c.biancheng.net/)
+- [Real Python 教程](https://realpython.com/)
+- [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
+- [在线学习 Python、ChatGPT、SQL、Power BI](https://www.datacamp.com/)
 - [How2J 的 Java 教程](https://how2j.cn/)
 - [OrcHome](https://www.orchome.com/)
 - [17 分享资源网](https://www.17fenxiang.cn/)
@@ -405,6 +408,9 @@ tag:
 - [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
 - [BusinessAI - 在线 AI 人工智能对话和 AI 绘画工具](https://aichat.kqbusinessai.com/)
 - [Uncrop-在线创意AI图像自动补全工具](https://clipdrop.co/pricing)
+- [阿里云盘自动每日签到](https://geekerline.com/circle/70022.html)
+- [免费使用 ChatGPT3.5/4](https://geekerline.com/circle/70021.html)
+- [AI - 虚拟主播](https://geekerline.com/circle/70011.html)
 
 ## 图片
 
