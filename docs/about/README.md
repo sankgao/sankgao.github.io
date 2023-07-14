@@ -18,9 +18,9 @@ tag:
 收集各种资源、笔记。
 
 - [各种资源](./notes/resources.md)
-- [备忘清单](./tools/quick_reference.md)
+- [备忘清单](./notes/quick_reference.md)
 - [Markdown 语法](./notes/markdown_syntax.md)
-- [Linux 命令](./tools/command.md)
+- [Linux 命令](./notes/command.md)
 
 ### 博客
 
