@@ -324,8 +324,10 @@ export const zhSidebarConfig = sidebar({
       prefix: "notes/",
       collapsible: true,
       children: [
-        "markdown_syntax.md",
         "resources.md",
+        "quick_reference.md",
+        "markdown_syntax.md",
+        "command.md",
       ],
     },
     {
@@ -350,9 +352,8 @@ export const zhSidebarConfig = sidebar({
       collapsible: true,
       children: [
         "picgo.md",
-        "quick_reference.md",
-        "command.md",
         "vscode.md",
+        "ali_cloud_disk.md",
       ],
     },
   ],
