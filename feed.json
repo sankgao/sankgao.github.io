@@ -7,6 +7,32 @@
   "favicon": "https://sankgao.github.io/favicon.ico",
   "items": [
     {
+      "title": "Linux 命令",
+      "url": "https://sankgao.github.io/about/notes/command.html",
+      "id": "https://sankgao.github.io/about/notes/command.html",
+      "summary": "Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。 Linux 命令 (https://wangchujiang.com/linux-command/);",
+      "content_html": "<p>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。</p>\n<ul>\n<li><a href=\"https://wangchujiang.com/linux-command/\" target=\"_blank\" rel=\"noopener noreferrer\">Linux 命令</a></li>\n</ul>\n",
+      "date_published": "2023-05-03T00:00:00.000Z",
+      "date_modified": "2023-07-14T09:47:24.000Z",
+      "authors": [],
+      "tags": [
+        "Tools"
+      ]
+    },
+    {
+      "title": "备忘清单",
+      "url": "https://sankgao.github.io/about/notes/quick_reference.html",
+      "id": "https://sankgao.github.io/about/notes/quick_reference.html",
+      "summary": "为开发人员分享快速参考备忘清单（速查表） 备忘清单 (https://wangchujiang.com/reference/index.html); 快速表 (https://www.rapidtables.com/);",
+      "content_html": "<p>为开发人员分享快速参考备忘清单（速查表）</p>\n<ul>\n<li><a href=\"https://wangchujiang.com/reference/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">备忘清单</a></li>\n<li><a href=\"https://www.rapidtables.com/\" target=\"_blank\" rel=\"noopener noreferrer\">快速表</a></li>\n</ul>\n",
+      "date_published": "2023-05-03T00:00:00.000Z",
+      "date_modified": "2023-07-14T09:47:24.000Z",
+      "authors": [],
+      "tags": [
+        "Tools"
+      ]
+    },
+    {
       "title": "阿里云盘自动签到",
       "url": "https://sankgao.github.io/about/tools/ali_cloud_disk.html",
       "id": "https://sankgao.github.io/about/tools/ali_cloud_disk.html",
@@ -1273,32 +1299,6 @@
       "id": "https://sankgao.github.io/frontend/html5/tags/applet.html",
       "summary": "示例 一个嵌入的 Java applet（插件）： 演示 某些浏览器中依然存在对 标签的一些支持，但是需要额外的插件和安装过程才能起作用。 定义和用法 HTML5 中不支持 标签。请使用 object 标签代替; HTML4.01 中不赞成使用 元素; 标签定义嵌入的 applet; 属性 属性 值 描述 :----: :---- :---- code...",
       "content_html": "<h2> 示例</h2>\n<p>一个嵌入的 Java applet（插件）：</p>\n\n<p>某些浏览器中依然存在对 <code>&lt;applet&gt;</code> 标签的一些支持，但是需要额外的插件和安装过程才能起作用。</p>\n<h2> 定义和用法</h2>\n<ul>\n<li>HTML5 中不支持 <code>&lt;applet&gt;</code> 标签。请使用 <code>object</code> 标签代替</li>\n<li>HTML4.01 中不赞成使用 <code>&lt;applet&gt;</code> 元素</li>\n<li><code>&lt;applet&gt;</code> 标签定义嵌入的 applet</li>\n</ul>\n<h2> 属性</h2>\n<table>\n<thead>\n<tr>\n<th style=\"text-align:center\">属性</th>\n<th style=\"text-align:left\">值</th>\n<th style=\"text-align:left\">描述</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align:center\">code</td>\n<td style=\"text-align:left\">URL</td>\n<td style=\"text-align:left\">规定 Java applet 的文件名</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">object</td>\n<td style=\"text-align:left\">name</td>\n<td style=\"text-align:left\">定义了包含该 applet 的一系列版本的资源名称</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">align</td>\n<td style=\"text-align:left\">left<br>right<br>top<br>bottom<br>middle<br>baseline<br>texttop<br>absmiddle<br>absbottom</td>\n<td style=\"text-align:left\">定义 applet 相对于周围元素的对齐方式</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">alt</td>\n<td style=\"text-align:left\">text</td>\n<td style=\"text-align:left\">规定 applet 的替换文本</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">archive</td>\n<td style=\"text-align:left\">URL</td>\n<td style=\"text-align:left\">规定档案文件的位置</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">codebase</td>\n<td style=\"text-align:left\">URL</td>\n<td style=\"text-align:left\">规定 code 属性中指定的 applet 的基准 URL</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">height</td>\n<td style=\"text-align:left\">pixels</td>\n<td style=\"text-align:left\">定义 applet 的高</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">hspace</td>\n<td style=\"text-align:left\">pixels</td>\n<td style=\"text-align:left\">定义围绕 applet 的水平间隔</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">name</td>\n<td style=\"text-align:left\">unique_name</td>\n<td style=\"text-align:left\">规定 applet 的名称（用在脚本中的）</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">vspace</td>\n<td style=\"text-align:left\">pixels</td>\n<td style=\"text-align:left\">定义围绕 applet 的垂直间隔</td>\n</tr>\n<tr>\n<td style=\"text-align:center\">width</td>\n<td style=\"text-align:left\">pixels</td>\n<td style=\"text-align:left\">定义 applet 的宽度</td>\n</tr>\n</tbody>\n</table>\n<h2> 全局属性</h2>\n<p><code>&lt;applet&gt;</code> 标签 <strong>支持</strong> HTML 中的 <a href=\"/frontend/html5/references/global_attribute.html\" target=\"blank\">全局属性</a>。</p>\n<h2> 事件属性</h2>\n<p><code>&lt;applet&gt;</code> 标签 <strong>支持</strong> HTML 中的 <a href=\"/frontend/html5/references/global_attribute.html\" target=\"blank\">事件属性</a>。</p>\n",
-      "date_published": "2023-05-15T00:00:00.000Z",
-      "date_modified": "2023-05-17T05:52:23.000Z",
-      "authors": [],
-      "tags": [
-        "Frontend"
-      ]
-    },
-    {
-      "title": "<!--...-->",
-      "url": "https://sankgao.github.io/frontend/html5/tags/comment.html",
-      "id": "https://sankgao.github.io/frontend/html5/tags/comment.html",
-      "summary": "示例 演示 所有浏览器都支持 注释 标签。 定义和用法 注释标签用于在源代码中插入注释。注释 不会显示 在浏览器中; 您可使用注释对您的代码进行解释，这样做有助于您在以后的时间对代码的编辑。当您编写了大量代码时尤其有用; 使用注释标签来隐藏浏览器不支持的脚本也是一个好习惯（这样就不会把脚本显示为纯文本）。例如： 注释行结尾处的两条斜杠（//）是 Jav...",
-      "content_html": "<h2> 示例</h2>\n\n<p>所有浏览器都支持 <strong>注释</strong> 标签。</p>\n<h2> 定义和用法</h2>\n<ul>\n<li>注释标签用于在源代码中插入注释。注释 <strong>不会显示</strong> 在浏览器中</li>\n<li>您可使用注释对您的代码进行解释，这样做有助于您在以后的时间对代码的编辑。当您编写了大量代码时尤其有用</li>\n</ul>\n<p>使用注释标签来隐藏浏览器不支持的脚本也是一个好习惯（这样就不会把脚本显示为纯文本）。例如：</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>注释行结尾处的两条斜杠（<code>//</code>）是 JavaScript 注释符号。这可以避免 JavaScript 执行 <code>--&gt;</code> 标签</p>\n</div>\n<h2> 全局属性</h2>\n<p><code>&lt;!--...--&gt;</code> 标签 <strong>不支持</strong> HTML 中的 <a href=\"/frontend/html5/references/global_attribute.html\" target=\"blank\">全局属性</a>。</p>\n<h2> 事件属性</h2>\n<p><code>&lt;!--...--&gt;</code> 标签 <strong>不支持</strong> HTML 中的 <a href=\"/frontend/html5/references/global_event.html\" target=\"blank\">事件属性</a>。</p>\n",
-      "date_published": "2023-05-15T00:00:00.000Z",
-      "date_modified": "2023-05-17T05:52:23.000Z",
-      "authors": [],
-      "tags": [
-        "Frontend"
-      ]
-    },
-    {
-      "title": "<!DOCTYPE>",
-      "url": "https://sankgao.github.io/frontend/html5/tags/doctype.html",
-      "id": "https://sankgao.github.io/frontend/html5/tags/doctype.html",
-      "summary": "示例 所有浏览器都支持 声明。 定义和用法 声明必须是 HTML 文档的第一行，位于 标签之前; 声明 不是 HTML 标签，它是指示 web 浏览器关于页面使用哪个 HTML 版本 进行编写的指令; 声明 没有 结束标签; 声明对 大小写 不敏感; 在 HTML4.01 中， 声明引用 DTD，因为 HTML4.01 基于 SGML。DTD 规定了标...",
-      "content_html": "<h2> 示例</h2>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><p>所有浏览器都支持 <code>&lt;!DOCTYPE&gt;</code> 声明。</p>\n<h2> 定义和用法</h2>\n<ul>\n<li><code>&lt;!DOCTYPE&gt;</code> 声明必须是 HTML 文档的第一行，位于 <code>&lt;html&gt;</code> 标签之前</li>\n<li><code>&lt;!DOCTYPE&gt;</code> 声明 <strong>不是 HTML 标签</strong>，它是指示 web 浏览器关于页面使用哪个 <strong>HTML 版本</strong> 进行编写的指令</li>\n<li><code>&lt;!DOCTYPE&gt;</code> 声明 <strong>没有</strong> 结束标签</li>\n<li><code>&lt;!DOCTYPE&gt;</code> 声明对 <strong>大小写</strong> 不敏感</li>\n</ul>\n<p>在 HTML4.01 中，<code>&lt;!DOCTYPE&gt;</code> 声明引用 <code>DTD</code>，因为 HTML4.01 基于 <code>SGML</code>。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</p>\n<p>HTML5 不基于 SGML，所以不需要引用 DTD。</p>\n<div class=\"hint-container note\">\n<p class=\"hint-container-title\">注</p>\n<p>请始终向 HTML 文档添加 <code>&lt;!DOCTYPE&gt;</code> 声明，这样浏览器才能获知文档类型</p>\n</div>\n<h2> 常用的 DOCTYPE 声明</h2>\n<h3> HTML5</h3>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h3> HTML4.01</h3>\n<h4> HTML4.01 Strict</h4>\n<p>该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h4> HTML4.01 Transitional</h4>\n<p>该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h4> HTML4.01 Frameset</h4>\n<p>该 DTD 等同于 HTML4.01 Transitional，但允许框架集内容。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h3> XHTML1.0</h3>\n<h4> XHTML1.0 Strict</h4>\n<p>该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h4> XHTML1.0 Transitional</h4>\n<p>该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h4> XHTML1.0 Frameset</h4>\n<p>该 DTD 等同于 XHTML 1.0 Transitional，但允许框架集内容。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div><h4> XHTML1.1</h4>\n<p>该 DTD 等同于 XHTML 1.0 Strict，但允许添加模型（例如提供对东亚语系的 ruby 支持）。</p>\n<div class=\"language-html line-numbers-mode\" data-ext=\"html\"><div class=\"line-numbers\" aria-hidden=\"true\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2023-05-15T00:00:00.000Z",
       "date_modified": "2023-05-17T05:52:23.000Z",
       "authors": [],

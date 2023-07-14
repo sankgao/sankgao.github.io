@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 14 Jul 2023 09:30:41 GMT</pubDate>
-    <lastBuildDate>Fri, 14 Jul 2023 09:30:41 GMT</lastBuildDate>
+    <pubDate>Fri, 14 Jul 2023 09:50:43 GMT</pubDate>
+    <lastBuildDate>Fri, 14 Jul 2023 09:50:43 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -15,6 +15,35 @@
     <category>Languages</category>
     <category>Computer</category>
     <category>Frontend</category>
+    <item>
+      <title>Linux 命令</title>
+      <link>https://sankgao.github.io/about/notes/command.html</link>
+      <guid>https://sankgao.github.io/about/notes/command.html</guid>
+      <source url="https://sankgao.github.io/rss.xml">Linux 命令</source>
+      <description>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。 Linux 命令 (https://wangchujiang.com/linux-command/);</description>
+      <category>Tools</category>
+      <pubDate>Wed, 03 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。</p>
+<ul>
+<li><a href="https://wangchujiang.com/linux-command/" target="_blank" rel="noopener noreferrer">Linux 命令</a></li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>备忘清单</title>
+      <link>https://sankgao.github.io/about/notes/quick_reference.html</link>
+      <guid>https://sankgao.github.io/about/notes/quick_reference.html</guid>
+      <source url="https://sankgao.github.io/rss.xml">备忘清单</source>
+      <description>为开发人员分享快速参考备忘清单（速查表） 备忘清单 (https://wangchujiang.com/reference/index.html); 快速表 (https://www.rapidtables.com/);</description>
+      <category>Tools</category>
+      <pubDate>Wed, 03 May 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>为开发人员分享快速参考备忘清单（速查表）</p>
+<ul>
+<li><a href="https://wangchujiang.com/reference/index.html" target="_blank" rel="noopener noreferrer">备忘清单</a></li>
+<li><a href="https://www.rapidtables.com/" target="_blank" rel="noopener noreferrer">快速表</a></li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>阿里云盘自动签到</title>
       <link>https://sankgao.github.io/about/tools/ali_cloud_disk.html</link>
@@ -36053,76 +36082,6 @@
 <h2> 事件属性</h2>
 <p><code>&lt;applet&gt;</code> 标签 <strong>支持</strong> HTML 中的 <a href="/frontend/html5/references/global_attribute.html" target="blank">事件属性</a>。</p>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>&amp;lt;!--...--&amp;gt;</title>
-      <link>https://sankgao.github.io/frontend/html5/tags/comment.html</link>
-      <guid>https://sankgao.github.io/frontend/html5/tags/comment.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">&amp;lt;!--...--&amp;gt;</source>
-      <description>示例 演示 所有浏览器都支持 注释 标签。 定义和用法 注释标签用于在源代码中插入注释。注释 不会显示 在浏览器中; 您可使用注释对您的代码进行解释，这样做有助于您在以后的时间对代码的编辑。当您编写了大量代码时尤其有用; 使用注释标签来隐藏浏览器不支持的脚本也是一个好习惯（这样就不会把脚本显示为纯文本）。例如： 注释行结尾处的两条斜杠（//）是 Jav...</description>
-      <category>Frontend</category>
-      <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 示例</h2>
-
-<p>所有浏览器都支持 <strong>注释</strong> 标签。</p>
-<h2> 定义和用法</h2>
-<ul>
-<li>注释标签用于在源代码中插入注释。注释 <strong>不会显示</strong> 在浏览器中</li>
-<li>您可使用注释对您的代码进行解释，这样做有助于您在以后的时间对代码的编辑。当您编写了大量代码时尤其有用</li>
-</ul>
-<p>使用注释标签来隐藏浏览器不支持的脚本也是一个好习惯（这样就不会把脚本显示为纯文本）。例如：</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>注释行结尾处的两条斜杠（<code>//</code>）是 JavaScript 注释符号。这可以避免 JavaScript 执行 <code>--&gt;</code> 标签</p>
-</div>
-<h2> 全局属性</h2>
-<p><code>&lt;!--...--&gt;</code> 标签 <strong>不支持</strong> HTML 中的 <a href="/frontend/html5/references/global_attribute.html" target="blank">全局属性</a>。</p>
-<h2> 事件属性</h2>
-<p><code>&lt;!--...--&gt;</code> 标签 <strong>不支持</strong> HTML 中的 <a href="/frontend/html5/references/global_event.html" target="blank">事件属性</a>。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>&amp;lt;!DOCTYPE&amp;gt;</title>
-      <link>https://sankgao.github.io/frontend/html5/tags/doctype.html</link>
-      <guid>https://sankgao.github.io/frontend/html5/tags/doctype.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">&amp;lt;!DOCTYPE&amp;gt;</source>
-      <description>示例 所有浏览器都支持 声明。 定义和用法 声明必须是 HTML 文档的第一行，位于 标签之前; 声明 不是 HTML 标签，它是指示 web 浏览器关于页面使用哪个 HTML 版本 进行编写的指令; 声明 没有 结束标签; 声明对 大小写 不敏感; 在 HTML4.01 中， 声明引用 DTD，因为 HTML4.01 基于 SGML。DTD 规定了标...</description>
-      <category>Frontend</category>
-      <pubDate>Mon, 15 May 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> 示例</h2>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>所有浏览器都支持 <code>&lt;!DOCTYPE&gt;</code> 声明。</p>
-<h2> 定义和用法</h2>
-<ul>
-<li><code>&lt;!DOCTYPE&gt;</code> 声明必须是 HTML 文档的第一行，位于 <code>&lt;html&gt;</code> 标签之前</li>
-<li><code>&lt;!DOCTYPE&gt;</code> 声明 <strong>不是 HTML 标签</strong>，它是指示 web 浏览器关于页面使用哪个 <strong>HTML 版本</strong> 进行编写的指令</li>
-<li><code>&lt;!DOCTYPE&gt;</code> 声明 <strong>没有</strong> 结束标签</li>
-<li><code>&lt;!DOCTYPE&gt;</code> 声明对 <strong>大小写</strong> 不敏感</li>
-</ul>
-<p>在 HTML4.01 中，<code>&lt;!DOCTYPE&gt;</code> 声明引用 <code>DTD</code>，因为 HTML4.01 基于 <code>SGML</code>。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</p>
-<p>HTML5 不基于 SGML，所以不需要引用 DTD。</p>
-<div class="hint-container note">
-<p class="hint-container-title">注</p>
-<p>请始终向 HTML 文档添加 <code>&lt;!DOCTYPE&gt;</code> 声明，这样浏览器才能获知文档类型</p>
-</div>
-<h2> 常用的 DOCTYPE 声明</h2>
-<h3> HTML5</h3>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> HTML4.01</h3>
-<h4> HTML4.01 Strict</h4>
-<p>该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> HTML4.01 Transitional</h4>
-<p>该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> HTML4.01 Frameset</h4>
-<p>该 DTD 等同于 HTML4.01 Transitional，但允许框架集内容。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h3> XHTML1.0</h3>
-<h4> XHTML1.0 Strict</h4>
-<p>该 DTD 包含所有 HTML 元素和属性，但不包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> XHTML1.0 Transitional</h4>
-<p>该 DTD 包含所有 HTML 元素和属性，包括展示性的和弃用的元素（比如：font）。不允许框架集（Framesets）。必须以格式正确的 XML 来编写标记。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> XHTML1.0 Frameset</h4>
-<p>该 DTD 等同于 XHTML 1.0 Transitional，但允许框架集内容。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4> XHTML1.1</h4>
-<p>该 DTD 等同于 XHTML 1.0 Strict，但允许添加模型（例如提供对东亚语系的 ruby 支持）。</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content:encoded>
     </item>
   </channel>
 </rss>
