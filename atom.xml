@@ -5,14 +5,201 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-07-13T13:26:14.198Z</updated>
+  <updated>2023-07-14T09:30:41.577Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
+  <category term="Tools"/>
   <category term="Languages"/>
   <category term="Computer"/>
-  <category term="Tools"/>
   <category term="Frontend"/>
+  <entry>
+    <title type="text">阿里云盘自动签到</title>
+    <id>https://sankgao.github.io/about/tools/ali_cloud_disk.html</id>
+    <link href="https://sankgao.github.io/about/tools/ali_cloud_disk.html"/>
+    <updated>2023-07-14T09:26:04.000Z</updated>
+    <summary type="html"><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>无需部署，无需服务器，每个月更新一次 token</p>
+<p>使用金山文档的每日定时任务，执行阿里云盘签到接口</p>
+</div>
+<h2> 新建表格</h2>
+<p>打开金山文档（网页版也可以），新建一个空表格。</p>
+<p>在表格中写入以下内容并保存：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">refresh_token</th>
+<th style="text-align:center">是否领取奖励</th>
+<th style="text-align:center">是否发送邮箱签到提醒</th>
+<th style="text-align:center">是</th>
+<th style="text-align:center">是否自定义发送邮箱</th>
+<th style="text-align:center">是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">23c63fea80cc0977052f55aad5</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">接收邮箱地址</td>
+<td style="text-align:center">sankgao@163.com</td>
+<td style="text-align:center">SMTP 服务器域名</td>
+<td style="text-align:center">smtp.163.com</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">port</td>
+<td style="text-align:center">465</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">发送邮箱地址</td>
+<td style="text-align:center">sankgao@163.com</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">邮箱 SMPT 密码</td>
+<td style="text-align:center">MRILGSPEYBQ</td>
+</tr>
+</tbody>
+</table>]]></summary>
+    <content type="html"><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>无需部署，无需服务器，每个月更新一次 token</p>
+<p>使用金山文档的每日定时任务，执行阿里云盘签到接口</p>
+</div>
+<h2> 新建表格</h2>
+<p>打开金山文档（网页版也可以），新建一个空表格。</p>
+<p>在表格中写入以下内容并保存：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">refresh_token</th>
+<th style="text-align:center">是否领取奖励</th>
+<th style="text-align:center">是否发送邮箱签到提醒</th>
+<th style="text-align:center">是</th>
+<th style="text-align:center">是否自定义发送邮箱</th>
+<th style="text-align:center">是</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">23c63fea80cc0977052f55aad5</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center">接收邮箱地址</td>
+<td style="text-align:center">sankgao@163.com</td>
+<td style="text-align:center">SMTP 服务器域名</td>
+<td style="text-align:center">smtp.163.com</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">port</td>
+<td style="text-align:center">465</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">发送邮箱地址</td>
+<td style="text-align:center">sankgao@163.com</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">邮箱 SMPT 密码</td>
+<td style="text-align:center">MRILGSPEYBQ</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p><strong>refresh_token</strong>：从浏览器中获取 <code>refresh_token</code> 值，可以写入多个账户的 <code>refresh_token</code>。获取 <code>refresh_token</code> 值步骤如下：</p>
+<ul>
+<li><strong>浏览器登陆阿里云盘</strong></li>
+<li>点击 <strong>F12</strong></li>
+<li>点击 <strong>应用（应用程序）</strong></li>
+<li>点击 <strong>本地缓存</strong></li>
+<li>点击 <strong>token</strong></li>
+<li>复制 <strong>refresh_token 对应的值</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>是否领取奖励</strong>：</p>
+<ul>
+<li><strong>是</strong>：自动领取签到奖励</li>
+<li><strong>否</strong>：只签到，需要自己手动领取签到奖励</li>
+</ul>
+</li>
+<li>
+<p><strong>是否发送邮箱签到提醒</strong>：如果需要发送邮箱通知，要写入对应的 <strong>接收邮箱地址</strong>，不发送就不用写（或者选择否）。支持发送到多个邮箱地址</p>
+</li>
+<li>
+<p><strong>是否自定义发送邮箱</strong>：如果需要写入以下 <strong>配置</strong>，不需要自定义就不用写（或者选择否）</p>
+<ul>
+<li>
+<p><strong>SMTP 服务器域名</strong>：根据自己的邮箱选择写入 SMTP 服务器域名</p>
+<ul>
+<li><strong>163.com</strong>：<code>smtp.163.com</code></li>
+<li><strong>QQ 邮箱</strong>：<code>smtp.qq.com</code></li>
+</ul>
+</li>
+<li>
+<p><strong>port</strong>：发送端口</p>
+</li>
+<li>
+<p><strong>发送邮箱地址</strong></p>
+</li>
+<li>
+<p><strong>邮箱 SMPT 密码</strong>：在设置中开启 SMPT 后，新增授权密码。非邮箱账户密码</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2> 创建 AirScript 脚本</h2>
+<p>在表格页面上方，依次点击 <strong>效率 -&gt; 高级开发 -&gt; AirScript脚本编辑器。</strong></p>
+<p>在 <strong>AirScript脚本编辑器</strong> 中，依次点击 <strong>创建脚本 -&gt; 文档共享脚本。</strong></p>
+<p>脚本中写入以下代码并保存：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>脚本中需要修改的地方：</p>
+<ul>
+<li><strong>var zdy_username = "sankgao@163.com";</strong>：修改为自己的邮箱</li>
+<li><strong>var zdy_pasd = "MRILGSPEYBQ";</strong>：修改为自己的 SMPT 服务器授权密码</li>
+</ul>
+<h2> 添加服务</h2>
+<p>在脚本页面点击 <strong>服务 -&gt; 添加服务</strong>，依次添加 <strong>云文档API</strong>、<strong>邮件API</strong>、<strong>网络API。</strong></p>
+<h2> 自动运行脚本</h2>
+<p><strong>手动运行</strong></p>
+<p>保存脚本后，手动点击 <strong>运行</strong>，运行消息在下方日志中显示。</p>
+<p><strong>自动运行</strong></p>
+<p>在上方的表格页面中，依次点击 <strong>效率 -&gt; 高级开发 -&gt; 定时任务。</strong></p>
+<p>表格右侧出现 <strong>定时任务</strong> 点击 <strong>创建任务</strong>，设置 <strong>每天触发时间</strong>，选择 <strong>刚刚创建的脚本</strong>，确定。</p>
+<h2> 快速获取 refresh_token 值</h2>
+<p>浏览器登陆阿里云盘并点击 <code>F12</code> 后，找到控制台界面，在控制台输入以下内容：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<ul>
+<li>原始内容为 <a href="https://zhuanlan.zhihu.com/p/629476969" target="_blank" rel="noopener noreferrer">小小猪​</a> 创作</li>
+<li>代码部分由 <a href="https://zhuanlan.zhihu.com/p/643179804" target="_blank" rel="noopener noreferrer">柒刻</a> 在原始内容上进行二次修改</li>
+</ul>
+</div>
+]]></content>
+    <category term="Tools"/>
+    <published>2023-07-14T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">算法的实际应用</title>
     <id>https://sankgao.github.io/languages/python/algorithm_data_structure/practical_application.html</id>
@@ -53083,83 +53270,5 @@ schoolName <span class="token operator">=</span> <span class="token string">"存
 <div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div>]]></content>
     <category term="Frontend"/>
     <published>2023-05-15T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">应用程序缓存</title>
-    <id>https://sankgao.github.io/frontend/html5/tutorial/app_cache.html</id>
-    <link href="https://sankgao.github.io/frontend/html5/tutorial/app_cache.html"/>
-    <updated>2023-05-11T11:05:16.000Z</updated>
-    <summary type="html"><![CDATA[<p>使用应用程序缓存，通过创建 <code>cache manifest</code> 文件，可轻松创建 web 应用的离线版本。</p>
-<h2> 什么是应用程序缓存</h2>
-<p>HTML5 引入了应用程序缓存（Application Cache），这意味着可对 web 应用进行缓存，并可在没有因特网连接时进行访问。</p>
-<p>应用程序缓存为应用带来三个优势：</p>
-<ul>
-<li><strong>离线浏览</strong>：用户可在应用离线时使用它们</li>
-<li><strong>速度</strong>：已缓存资源加载得更快</li>
-<li><strong>减少服务器负载</strong>：浏览器将只从服务器下载更新过或更改过的资源</li>
-</ul>]]></summary>
-    <content type="html"><![CDATA[<p>使用应用程序缓存，通过创建 <code>cache manifest</code> 文件，可轻松创建 web 应用的离线版本。</p>
-<h2> 什么是应用程序缓存</h2>
-<p>HTML5 引入了应用程序缓存（Application Cache），这意味着可对 web 应用进行缓存，并可在没有因特网连接时进行访问。</p>
-<p>应用程序缓存为应用带来三个优势：</p>
-<ul>
-<li><strong>离线浏览</strong>：用户可在应用离线时使用它们</li>
-<li><strong>速度</strong>：已缓存资源加载得更快</li>
-<li><strong>减少服务器负载</strong>：浏览器将只从服务器下载更新过或更改过的资源</li>
-</ul>
-<h2> HTML Cache Manifest 实例</h2>
-<p>带有 <code>cache manifest</code> 的 HTML 文档（供离线浏览）。例如：</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> Cache Manifest 基础</h2>
-<p>如需启用应用程序缓存，请在文档的 <code>&lt;html&gt;</code> 标签中包含 <code>manifest</code> 属性。例如：</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>每个指定了 <code>manifest</code> 的页面在用户对其访问时都会被缓存。如果未指定 <code>manifest</code> 属性，则页面不会被缓存（除非在 <code>manifest</code> 文件中直接指定了该页面）。</p>
-<p><code>manifest</code> 文件的建议文件扩展名是：“<code>.appcache</code>”。</p>
-<div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p><code>manifest</code> 文件需要设置正确的 <code>MIME-type</code>，即 <code>"text/cache-manifest"</code>。必须在 web 服务器上进行配置</p>
-</div>
-<h2> Manifest 文件</h2>
-<p><code>manifest</code> 文件是简单的文本文件，它告知浏览器被缓存的内容（以及不缓存的内容）。</p>
-<p><code>manifest</code> 文件有三个部分：</p>
-<ul>
-<li><strong>CACHE MANIFEST</strong>：在此标题下列出的文件将在首次下载后进行缓存</li>
-<li><strong>NETWORK</strong>：在此标题下列出的文件需要与服务器的连接，且不会被缓存</li>
-<li><strong>FALLBACK</strong>：在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面）</li>
-</ul>
-<h3> CACHE MANIFEST</h3>
-<p>第一行 <code>CACHE MANIFEST</code> 是必需的。例如：</p>
-<div class="language-appcache line-numbers-mode" data-ext="appcache"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面的 <code>manifest</code> 文件列出了三个资源：一个 CSS 文件，一个 GIF 图像，以及一个 JavaScript 文件。</p>
-<p>当 <code>manifest</code> 文件被加载后，浏览器会从网站的根目录下载这三个文件。然后，无论用户何时与因特网断开连接，这些资源依然可用。</p>
-<h3> NETWORK</h3>
-<p><code>NETWORK</code> 部分规定文件 “<code>login.php</code>” 永远不会被缓存，且离线时是不可用的。例如：</p>
-<div class="language-appcache line-numbers-mode" data-ext="appcache"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>可以使用星号来指示所有其他其他资源或文件都需要因特网连接。例如：</p>
-<div class="language-appcache line-numbers-mode" data-ext="appcache"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><h3> FALLBACK</h3>
-<p><code>FALLBACK</code> 部分规定如果无法建立因特网连接，则用 “<code>offline.html</code>” 替代 <code>/html/</code> 目录中的所有文件。例如：</p>
-<div class="language-text line-numbers-mode" data-ext="text"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>第一个 URI 是资源，第二个是替补</p>
-</div>
-<h2> 更新缓存</h2>
-<p>一旦应用被缓存，它就会保持缓存直到发生下列情况：</p>
-<ul>
-<li>用户清空浏览器缓存</li>
-<li><code>manifest</code> 文件被修改</li>
-<li>由程序来更新应用缓存</li>
-</ul>
-<h2> 实例</h2>
-<p>完整的 Cache Manifest 文件。例如：</p>
-<div class="language-appcache line-numbers-mode" data-ext="appcache"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">提示</p>
-<p>以 <code>#</code> 开头的是注释行，但也可满足其他用途。应用的缓存只会在其 <code>manifest</code> 文件改变时被更新。如果您编辑了一幅图像，或者修改了一个 JavaScript 函数，这些改变都不会被重新缓存。更新注释行中的日期和版本号是一种使浏览器重新缓存文件的办法</p>
-</div>
-<h2> 关于应用程序缓存的注意事项</h2>
-<p>请留心缓存的内容。</p>
-<p>一旦文件被缓存，则浏览器会继续展示已缓存的版本，即使您修改了服务器上的文件。为了确保浏览器更新缓存，您需要更新 <code>manifest</code> 文件。</p>
-<div class="hint-container note">
-<p class="hint-container-title">注</p>
-<p>浏览器对缓存数据的容量限制可能不太一样（某些浏览器的限制是每个站点 <code>5MB</code>）</p>
-</div>
-]]></content>
-    <category term="Frontend"/>
-    <published>2023-05-11T00:00:00.000Z</published>
   </entry>
 </feed>
