@@ -133,6 +133,7 @@ tag:
 - [偷渡鱼](https://touduyu.com/)
 - [谷粉学术](https://gfsoso.99lb.net/scholar.html)
 - [QuickSo-快点搜](https://quickso.cn/)
+- [趣盘搜](https://pan.funletu.com/#/)
 - [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
 
 ## 网站
@@ -209,11 +210,13 @@ tag:
 - [在线学习 Python、ChatGPT、SQL、Power BI](https://www.datacamp.com/)
 - [How2J 的 Java 教程](https://how2j.cn/)
 - [OrcHome](https://www.orchome.com/)
+- [教程列表 - Javatpoint](https://www.javatpoint.com/)
 - [17 分享资源网](https://www.17fenxiang.cn/)
 - [运维派](http://www.yunweipai.com/)
 - [廖雪峰](https://www.liaoxuefeng.com/)
 - [Egon 林海峰](https://egonlin.com/)
 - [黑马人工智能 AI](https://pan.quark.cn/s/a8a9fc9117c7#/list/share)
+- [一份在线 AI 知识库 - 通往 AGI 之路](https://ywh1bkansf.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
 - [编程开发](https://pan.quark.cn/s/d9abda715244#/list/share)
 - [Java 程序员的系列教程](https://github.com/crisxuan/bestJavaer)
 - [最新技术开发教程](https://geekerline.com/circle/13264.html)
@@ -408,9 +411,9 @@ tag:
 - [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
 - [BusinessAI - 在线 AI 人工智能对话和 AI 绘画工具](https://aichat.kqbusinessai.com/)
 - [Uncrop-在线创意AI图像自动补全工具](https://clipdrop.co/pricing)
-- [阿里云盘自动每日签到](https://geekerline.com/circle/70022.html)
 - [免费使用 ChatGPT3.5/4](https://geekerline.com/circle/70021.html)
 - [AI - 虚拟主播](https://geekerline.com/circle/70011.html)
+- [MindOS - 一个 0 门槛的自主人工智能系统](https://mindos.com/)
 
 ## 图片
 
