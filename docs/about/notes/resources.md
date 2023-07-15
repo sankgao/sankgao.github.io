@@ -414,6 +414,7 @@ tag:
 - [免费使用 ChatGPT3.5/4](https://geekerline.com/circle/70021.html)
 - [AI - 虚拟主播](https://geekerline.com/circle/70011.html)
 - [MindOS - 一个 0 门槛的自主人工智能系统](https://mindos.com/)
+- [吐司 ai 模型分享社区](https://tusi.art/)
 
 ## 图片
 
