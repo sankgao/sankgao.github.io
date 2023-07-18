@@ -108,6 +108,10 @@ tag:
 
     站长阿亮的 python 学习日记，技术分享。
 
+- [趣读](https://v.iread.life/)
+
+    挖掘鲜为人知的实用小技巧或小知识，并尽力分享给更多的人食用。
+
 - [爱码网](https://www.likecs.com/)
 
     分享推动技术的发展，全栈技术分享
@@ -204,6 +208,7 @@ tag:
 - [极客对极客](https://www.geeksforgeeks.org/)
 - [WIKI](https://iowiki.com/)
 - [FAUN](https://faun.dev/c/)
+- [代码学院](https://www.codecademy.com/learn)
 - [C 语言中文网](http://c.biancheng.net/)
 - [Real Python 教程](https://realpython.com/)
 - [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
