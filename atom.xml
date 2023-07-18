@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-07-15T07:54:07.029Z</updated>
+  <updated>2023-07-18T09:33:49.735Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -55,91 +55,77 @@
     <title type="text">阿里云盘自动签到</title>
     <id>https://sankgao.github.io/about/tools/ali_cloud_disk.html</id>
     <link href="https://sankgao.github.io/about/tools/ali_cloud_disk.html"/>
-    <updated>2023-07-14T09:26:04.000Z</updated>
+    <updated>2023-07-18T09:30:32.000Z</updated>
     <summary type="html"><![CDATA[<div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p>无需部署，无需服务器，每个月更新一次 token</p>
 <p>使用金山文档的每日定时任务，执行阿里云盘签到接口</p>
 </div>
 <h2> 新建表格</h2>
-<p>打开金山文档（网页版也可以），新建一个空表格。</p>
-<p>在表格中写入以下内容并保存：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">refresh_token</th>
-<th style="text-align:center">是否领取奖励</th>
-<th style="text-align:center">是否发送邮箱签到提醒</th>
-<th style="text-align:center">是</th>
-<th style="text-align:center">是否自定义发送邮箱</th>
-<th style="text-align:center">是</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">23c63fea80cc0977052f55aad5</td>
-<td style="text-align:center">是</td>
-<td style="text-align:center">接收邮箱地址</td>
-<td style="text-align:center">sankgao@163.com</td>
-<td style="text-align:center">SMTP 服务器域名</td>
-<td style="text-align:center">smtp.163.com</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">port</td>
-<td style="text-align:center">465</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">发送邮箱地址</td>
-<td style="text-align:center">sankgao@163.com</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center">邮箱 SMPT 密码</td>
-<td style="text-align:center">MRILGSPEYBQ</td>
-</tr>
-</tbody>
-</table>]]></summary>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>填写表格时需要注意的地方：<strong>是否领取奖励</strong> 和 <strong>邮箱</strong> 中间有一列空列，<strong>是否发送邮箱签到提醒</strong> 和 <strong>是否自定义发送邮箱</strong> 中间有一列空列。（可以直接复制下面的表格，然后进行修改）</p>
+<p><strong>refresh_token</strong> 填写自己账号在登陆后的阿里云盘网页中获取到的值</p>
+<p><strong>邮箱 SMPT 密码</strong> 获取的方法：</p>
+<ul>
+<li>在邮箱中打开设置</li>
+<li>找到 <strong>POP3/SMTP/IMAP</strong> 并开启服务</li>
+<li>找到 <strong>授权密码管理</strong> 点击 <strong>新增授权密码</strong>，然后根据提示操作。<strong>注意</strong> 授权密码只显示一次，需要提前复制保存到其它地方，以防忘记</li>
+</ul>
+</div>]]></summary>
     <content type="html"><![CDATA[<div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p>无需部署，无需服务器，每个月更新一次 token</p>
 <p>使用金山文档的每日定时任务，执行阿里云盘签到接口</p>
 </div>
 <h2> 新建表格</h2>
-<p>打开金山文档（网页版也可以），新建一个空表格。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>填写表格时需要注意的地方：<strong>是否领取奖励</strong> 和 <strong>邮箱</strong> 中间有一列空列，<strong>是否发送邮箱签到提醒</strong> 和 <strong>是否自定义发送邮箱</strong> 中间有一列空列。（可以直接复制下面的表格，然后进行修改）</p>
+<p><strong>refresh_token</strong> 填写自己账号在登陆后的阿里云盘网页中获取到的值</p>
+<p><strong>邮箱 SMPT 密码</strong> 获取的方法：</p>
+<ul>
+<li>在邮箱中打开设置</li>
+<li>找到 <strong>POP3/SMTP/IMAP</strong> 并开启服务</li>
+<li>找到 <strong>授权密码管理</strong> 点击 <strong>新增授权密码</strong>，然后根据提示操作。<strong>注意</strong> 授权密码只显示一次，需要提前复制保存到其它地方，以防忘记</li>
+</ul>
+</div>
+<p>打开 <a href="https://www.kdocs.cn/latest?from=docs" target="_blank" rel="noopener noreferrer">金山文档（网页版也可以）</a>，新建一个 <strong>Office文档</strong> 空表格。</p>
 <p>在表格中写入以下内容并保存：</p>
 <table>
 <thead>
 <tr>
 <th style="text-align:center">refresh_token</th>
+<th style="text-align:center">是否签到</th>
 <th style="text-align:center">是否领取奖励</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">邮箱</th>
+<th style="text-align:center">邮箱地址</th>
 <th style="text-align:center">是否发送邮箱签到提醒</th>
-<th style="text-align:center">是</th>
+<th style="text-align:center"></th>
 <th style="text-align:center">是否自定义发送邮箱</th>
 <th style="text-align:center">是</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">23c63fea80cc0977052f55aad5</td>
+<td style="text-align:center">23c63ea0cc43baf970525aad5</td>
 <td style="text-align:center">是</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
 <td style="text-align:center">接收邮箱地址</td>
 <td style="text-align:center">sankgao@163.com</td>
+<td style="text-align:center">是</td>
+<td style="text-align:center"></td>
 <td style="text-align:center">SMTP 服务器域名</td>
 <td style="text-align:center">smtp.163.com</td>
 </tr>
 <tr>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">接收邮箱地址</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
@@ -151,6 +137,10 @@
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
+<td style="text-align:center">接收邮箱地址</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 <td style="text-align:center">发送邮箱地址</td>
 <td style="text-align:center">sankgao@163.com</td>
 </tr>
@@ -159,7 +149,11 @@
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
-<td style="text-align:center">邮箱 SMPT 密码</td>
+<td style="text-align:center">接收邮箱地址</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">邮箱 SMTP 密码</td>
 <td style="text-align:center">MRILGSPEYBQ</td>
 </tr>
 </tbody>
@@ -203,7 +197,7 @@
 <p><strong>发送邮箱地址</strong></p>
 </li>
 <li>
-<p><strong>邮箱 SMPT 密码</strong>：在设置中开启 SMPT 后，新增授权密码。非邮箱账户密码</p>
+<p><strong>邮箱 SMPT 密码</strong>：SMPT 服务授权密码。并非邮箱账户登陆密码</p>
 </li>
 </ul>
 </li>
@@ -212,10 +206,11 @@
 <p>在表格页面上方，依次点击 <strong>效率 -&gt; 高级开发 -&gt; AirScript脚本编辑器。</strong></p>
 <p>在 <strong>AirScript脚本编辑器</strong> 中，依次点击 <strong>创建脚本 -&gt; 文档共享脚本。</strong></p>
 <p>脚本中写入以下代码并保存：</p>
-<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>脚本中需要修改的地方：</p>
+<div class="language-javascript line-numbers-mode" data-ext="js"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>脚本中需要修改的地方：</p>
 <ul>
-<li><strong>var zdy_username = "sankgao@163.com";</strong>：修改为自己的邮箱</li>
-<li><strong>var zdy_pasd = "MRILGSPEYBQ";</strong>：修改为自己的 SMPT 服务器授权密码</li>
+<li><strong>username: "sankgao@163.com"</strong>：修改为自己的邮箱</li>
+<li><strong>password: "MRILGSPEYBQ"</strong>：修改为自己的 SMPT 服务器授权密码</li>
+<li><strong>from: "阿里云盘签到&lt;sankgao@163.com&gt;"</strong>：修改为自己的邮箱</li>
 </ul>
 <h2> 添加服务</h2>
 <p>在脚本页面点击 <strong>服务 -&gt; 添加服务</strong>，依次添加 <strong>云文档API</strong>、<strong>邮件API</strong>、<strong>网络API。</strong></p>
