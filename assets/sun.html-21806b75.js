@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as t,d as _}from"./app-9ec853bf.js";const c="/html5/eg_sun.gif",n={},o=_("img",{src:c},null,-1),r=[o];function l(a,i){return s(),t("div",null,r)}const u=e(n,[["render",l],["__file","sun.html.vue"]]);export{u as default};
