@@ -170,6 +170,8 @@ tag:
 - [KIM 主页](https://kim.plopco.com/)
 - [抓鱼鸭标签页](https://www.zhuayuya.com/)
 - [圈子 – Geeker](https://geekerline.com/)
+- [酷库博客](https://www.zxki.cn/)
+- [小思科技](https://xiaosikeji.cn/)
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://pan666.net/)
 - [个人收集资源2](https://pan666.net/d/164012-2)
