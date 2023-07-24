@@ -12,6 +12,10 @@ tag:
 
 ## 博客
 
+- [勿埋我心](https://www.skyqian.com/)
+
+    Python、Java、兴趣分享、typecho、独立博客、文艺控。
+
 - [初之音](https://www.himiku.com/)
 
     聆听心中最初的声音。个人博客。
@@ -172,7 +176,6 @@ tag:
 - [圈子 – Geeker](https://geekerline.com/)
 - [酷库博客](https://www.zxki.cn/)
 - [小思科技](https://xiaosikeji.cn/)
-- [](https://www.skyqian.com/)
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://pan666.net/)
 - [个人收集资源2](https://pan666.net/d/164012-2)
