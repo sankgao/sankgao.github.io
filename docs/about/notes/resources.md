@@ -426,6 +426,10 @@ tag:
 - [AI - 虚拟主播](https://geekerline.com/circle/70011.html)
 - [MindOS - 一个 0 门槛的自主人工智能系统](https://mindos.com/)
 - [吐司 ai 模型分享社区](https://tusi.art/)
+- [司马阅 —— AI 文档阅读分析工具](https://smartread.cc/)
+- [易笺 —— txt 电脑在线阅读器](https://txt.xrl.app/)
+- [龙门影视 —— #Windows #Android #TV](https://www.looo.top/)
+- [Vega AI 绘画](https://rightbrain.art/)
 
 ## 图片
 
@@ -455,4 +459,3 @@ tag:
 - [西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)
 - [阿里云盘 - 四大名著](https://www.aliyundrive.com/s/K7eMj7Kt8Rq)
 - [tiktok 视频](https://tik.fail/)
-
