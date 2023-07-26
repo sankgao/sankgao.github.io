@@ -212,6 +212,7 @@ tag:
 - [w3school 中文](https://www.w3school.com.cn/)
 - [w3cschool](https://www.w3cschool.cn/)
 - [极客对极客](https://www.geeksforgeeks.org/)
+- [极客教程](https://geek-docs.com/)
 - [WIKI](https://iowiki.com/)
 - [FAUN](https://faun.dev/c/)
 - [代码学院](https://www.codecademy.com/learn)
