@@ -354,6 +354,7 @@ export const zhSidebarConfig = sidebar({
         "picgo.md",
         "vscode.md",
         "ali_cloud_disk.md",
+        "svn.md",
       ],
     },
   ],
