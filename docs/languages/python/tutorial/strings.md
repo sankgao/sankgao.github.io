@@ -423,6 +423,34 @@ TypeError: %d format: a real number is required, not list。找不到子字符�
 id：03	 name：wangwu	 age：24
 ```
 
+```python
+my_lists = [[1, 'zhangsan', 24], [2, 'lisi', 21], [3, 'wangwu', 24]]
+
+for my_list in my_lists:
+    print('id：%d name：%s age：%d' % (my_list[0], my_list[1], my_list[2]))
+
+# 左对齐输出
+for my_list in my_lists:
+    print('id：%-5s name：%-10s age：%-5s' % (my_list[0], my_list[1], my_list[2]))
+
+# 右对齐输出
+for my_list in my_lists:
+    # print('id：%+5s name：%+10s age：%+5s' % (my_list[0], my_list[1], my_list[2]))
+    print('id：%5s name：%10s age：%5s' % (my_list[0], my_list[1], my_list[2]))  # 省略 “+” 号
+
+
+# 输出结果
+id：1 name：zhangsan age：24
+id：2 name：lisi age：21
+id：3 name：wangwu age：24
+id：1     name：zhangsan   age：24
+id：2     name：lisi       age：21
+id：3     name：wangwu     age：24
+id：    1 name：  zhangsan age：   24
+id：    2 name：      lisi age：   21
+id：    3 name：    wangwu age：   24
+```
+
 ### 使用 format() 方法进行字符串格式化
 
 **语法格式**：`str.format(args)`
