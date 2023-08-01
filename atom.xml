@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-07-28T11:03:52.043Z</updated>
+  <updated>2023-08-01T10:27:00.640Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -10490,7 +10490,7 @@ bmi <span class="token operator">=</span> weight <span class="token operator">/<
     <title type="text">字符串</title>
     <id>https://sankgao.github.io/languages/python/tutorial/strings.html</id>
     <link href="https://sankgao.github.io/languages/python/tutorial/strings.html"/>
-    <updated>2023-06-12T10:58:35.000Z</updated>
+    <updated>2023-08-01T10:23:41.000Z</updated>
     <summary type="html"><![CDATA[<p>为了实现某项功能，经常需要对某些字符串进行特殊处理，如：拼接字符串、截取字符串、格式化字符串等。</p>
 <h2> 拼接字符串</h2>
 <p>使用 “<code>+</code>” 运算符可完成对多个字符串的拼接，“<code>+</code>” 运算符可以连接多个字符串并产生一个字符串对象。例如：</p>
@@ -10702,7 +10702,7 @@ mot_cn <span class="token operator">=</span> <span class="token string">"时间�
 </tbody>
 </table>
 <p>例如：</p>
-<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 使用 format() 方法进行字符串格式化</h3>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3> 使用 format() 方法进行字符串格式化</h3>
 <p><strong>语法格式</strong>：<code>str.format(args)</code></p>
 <ul>
 <li><strong>str</strong>：指定字符串的显示样式（模板）</li>
