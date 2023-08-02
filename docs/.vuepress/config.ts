@@ -114,7 +114,7 @@ export default defineUserConfig({
     }),
 
     // 看板娘
-    ohmylive2dPlugin({
+    // ohmylive2dPlugin({
       // source: "/assets/live2d/vscode-live2d-models",
       // models: [
       //   {
@@ -180,7 +180,7 @@ export default defineUserConfig({
       //     offsetY: 70,
       //   },
       // },
-    }),
+    // }),
   ],
 })
 
