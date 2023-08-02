@@ -243,6 +243,7 @@ tag:
 - [Python 免费公开课](http://www.6staredu.com/sixpython2/index.html)
 - [蓝桥云课](https://www.lanqiao.cn/)
 - [黑马前端](https://pan666.net/d/136569-7065)
+- [B 站网课资源](https://gitmind.cn/app/docs/mpa0m9v0)
 - [阿里云盘 - linux 黑马程序员学习](https://www.aliyundrive.com/s/NLFdL9ue1MJ)
 - [阿里云盘 - Python 黑马程序员学习](https://www.aliyundrive.com/s/1cL1mT75gCR)
 - [阿里云盘 - B 站 Python 学习](https://www.aliyundrive.com/s/WDhtYQ5Z7tB)
