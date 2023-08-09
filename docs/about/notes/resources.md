@@ -310,6 +310,7 @@ tag:
 - [全历史](https://www.allhistory.com/)
 - [HistoryMaps - 通过地图和时间线直观地学习历史](https://history-maps.com/zh)
 - [术语在线](http://www.termonline.cn/)
+- [一个全本小说网](https://www.quanben.io/)
 
 ## 工具
 
@@ -432,6 +433,7 @@ tag:
 - [易笺 —— txt 电脑在线阅读器](https://txt.xrl.app/)
 - [龙门影视 —— #Windows #Android #TV](https://www.looo.top/)
 - [Vega AI 绘画](https://rightbrain.art/)
+- [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
 
 ## 图片
 
