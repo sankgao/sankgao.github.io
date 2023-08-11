@@ -176,7 +176,7 @@ VuePress 会在 `http://localhost:8080` 启动一个热重载的开发服务器�
 
 **效果：**
 
-![build](./images/build.png)
+![build](./assets/build.png)
 
 ## 配置
 

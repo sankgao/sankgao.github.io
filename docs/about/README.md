@@ -7,15 +7,11 @@ tag:
     - Info
 ---
 
-记录一些博客、笔记、工具。
+记录一些笔记、博客、工具相关的信息。
 
 <!-- more -->
 
-## 目录
-
 ### 笔记
-
-收集各种资源、笔记。
 
 - [各种资源](./notes/resources.md)
 - [备忘清单](./notes/quick_reference.md)
@@ -23,8 +19,6 @@ tag:
 - [Linux 命令](./notes/command.md)
 
 ### 博客
-
-对本博客的搭建、配置、添加插件的一些记录。
 
 - [VuePress 搭建](./blog/build.md)
 - [VuePress 默认配置](./blog/config.md)
@@ -35,8 +29,6 @@ tag:
 - [博客排版](./blog/blog_typeset.md)
 
 ### 工具
-
-记录一些工具的使用方法。
 
 - [PicGo](./tools/picgo.md)
 - [VS Code](./tools/vscode.md)

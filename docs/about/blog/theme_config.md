@@ -1053,13 +1053,13 @@ export default defineUserConfig({
     - 设置可以辨识的项目名称 `FontClass/Symbol 前缀` 填入 `icon-`（您也可以根据自己喜好填写，但需要将此值设置额外前缀 `iconfont` 并设置到在主题选项中的 `iconPrefix`）
     - `Font Family` 请保持 `iconfont`
 
-    ![新建项目](./images/icon_new_project.png)
+    ![新建项目](./assets/icon_new_project.png)
 
 2. 导入图标
 
     - 请自行在 `iconfont` 自由搜索寻找您想要使用的图标，并点击图标上的 **添加入库** 按钮
 
-    ![添加入库](./images/icon_import.png)
+    ![添加入库](./assets/icon_import.png)
 
     - 在寻找完所有图标后，请点击右上角的 **添加入库** 图标，点击下方的 **添加至项目** 并选择您刚刚创建好的项目进行确定
 
@@ -1067,13 +1067,13 @@ export default defineUserConfig({
 
     在项目页面，您可以对项目内的图标进行简单的编辑，包括位置、缩放、旋转、颜色以及 Unicode 编号与 Font Class/Symbol 的调整。
 
-    ![编辑图标](./images/icon_edit.png)
+    ![编辑图标](./assets/icon_edit.png)
 
 4. 生成图标文件
 
     - 请点击项目上方的 **Font Class** 按钮，并点击生成
 
-    ![添加入库](./images/icon_generate.png)
+    ![添加入库](./assets/icon_generate.png)
 
     - 将 **css 地址** 设置到主题选项的 `iconAssets` 中
 

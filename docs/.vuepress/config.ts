@@ -25,11 +25,11 @@ export default defineUserConfig({
       description: "使用 VuePress-v2 搭建的个人博客",  // 站点的描述
     },
     
-    "/en/": {
-      lang: "en-US",
-      title: "Sank's blog",
-      description: "A personal blog built using VuePress v2",
-    },
+    // "/en/": {
+    //   lang: "en-US",
+    //   title: "Sank's blog",
+    //   description: "A personal blog built using VuePress v2",
+    // },
   },
   
   theme,  // 主题配置
