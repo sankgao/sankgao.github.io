@@ -311,6 +311,7 @@ tag:
 - [HistoryMaps - 通过地图和时间线直观地学习历史](https://history-maps.com/zh)
 - [术语在线](http://www.termonline.cn/)
 - [一个全本小说网](https://www.quanben.io/)
+- [小说电子书存档网站](https://beitai.cc/)
 
 ## 工具
 
