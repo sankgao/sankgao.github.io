@@ -195,6 +195,7 @@ tag:
 - [摸鱼客栈资源](https://pan666.net/u/7424/discussions)
 - [适合浪漫之夜听的 BGM](https://space.bilibili.com/596838597/channel/seriesdetail?sid=3039785)
 - [Lemmy – 一个联邦宇宙的链接聚合器和论坛](https://join-lemmy.org/)
+- [昆虫肖像](http://microsculpture.net/)
 
 ## 教程
 
