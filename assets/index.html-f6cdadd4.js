@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,a as c,b as n}from"./app-7cf85c05.js";const r={},a=n("p",null,"记录一些其它相关的信息。",-1);function s(_,l){return o(),t("div",null,[a,c(" more ")])}const i=e(r,[["render",s],["__file","index.html.vue"]]);export{i as default};
