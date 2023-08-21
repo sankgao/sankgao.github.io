@@ -436,6 +436,7 @@ tag:
 - [龙门影视 —— #Windows #Android #TV](https://www.looo.top/)
 - [Vega AI 绘画](https://rightbrain.art/)
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
+- [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
 
 ## 图片
 
@@ -459,6 +460,7 @@ tag:
 ## 视频
 
 - [茶杯狐](https://cupfox.app/)
+- [茶杯虎](https://www.725998.com/)
 - [达达兔](https://www.dadatutvk.com/)
 - [动漫导航](https://jiejaitt.gitee.io/)
 - [APP 影院](https://app.movie)
