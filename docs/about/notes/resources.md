@@ -214,6 +214,7 @@ tag:
 - [w3cschool](https://www.w3cschool.cn/)
 - [极客对极客](https://www.geeksforgeeks.org/)
 - [极客教程](https://geek-docs.com/)
+- [编程自学之路](https://www.r2coding.com/#/)
 - [WIKI](https://iowiki.com/)
 - [FAUN](https://faun.dev/c/)
 - [代码学院](https://www.codecademy.com/learn)
@@ -437,6 +438,7 @@ tag:
 - [Vega AI 绘画](https://rightbrain.art/)
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
 - [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
+- [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
 
 ## 图片
 
