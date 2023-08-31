@@ -2,7 +2,7 @@
 title: Linux
 icon: linux
 date: 2023-08-08
-category: computer
+category: Computer
 tag:
     - Linux
 ---

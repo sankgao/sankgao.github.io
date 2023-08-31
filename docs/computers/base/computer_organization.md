@@ -4,7 +4,6 @@ icon: directory
 date: 2023-08-25
 category: Computer
 tag:
-    - Computer
     - Base
 ---
 

@@ -2,7 +2,7 @@
 title: 计算机基础
 icon: base
 date: 2023-08-08
-category: computer
+category: Computer
 tag:
     - Base
 ---
