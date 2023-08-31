@@ -5,20 +5,53 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-08-25T09:58:28.313Z</updated>
+  <updated>2023-08-31T03:30:32.157Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
+  <category term="Computer"/>
   <category term="Links"/>
   <category term="DevOps"/>
   <category term="Languages"/>
   <category term="Others"/>
   <category term="Info"/>
-  <category term="computer"/>
-  <category term="Computer"/>
   <category term="Framework"/>
   <category term="Tools"/>
   <category term="Frontend"/>
+  <entry>
+    <title type="text">计算机</title>
+    <id>https://sankgao.github.io/computers/</id>
+    <link href="https://sankgao.github.io/computers/"/>
+    <updated>2023-08-31T03:27:20.000Z</updated>
+    <summary type="html"><![CDATA[<p>记录一些计算机相关的信息。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>记录一些计算机相关的信息。</p>
+<!-- more -->
+<h2> 计算机基础</h2>
+<ul>
+<li><a href="/computers/base/computer_organization.html" target="blank">计算机组成</a></li>
+</ul>
+<h2> Windows</h2>
+<ul>
+<li><a href="/computers/windows/site_not_secure.html" target="blank">网页提示此站点不安全</a></li>
+</ul>
+<h2> Linux</h2>
+<ul>
+<li><a href="/computers/linux/banner_message.html" target="blank">SSH 登录之前显示横幅消息</a></li>
+<li><a href="/computers/linux/command.html" target="blank">Linux 系统命令</a></li>
+<li><a href="/computers/linux/error_using_sudo.html" target="blank">使用 sudo 时报错</a></li>
+<li><a href="/computers/linux/hardware_resource.html" target="blank">硬件资源管理</a></li>
+<li><a href="/computers/linux/install_software.html" target="blank">安装软件的方法</a></li>
+<li><a href="/computers/linux/rebound_shell.html" target="blank">反弹 Shell</a></li>
+<li><a href="/computers/linux/reset_root_password.html" target="blank">重置 root 密码</a></li>
+<li><a href="/computers/linux/root_directory.html" target="blank">系统根目录</a></li>
+<li><a href="/computers/linux/system_log.html" target="blank">系统日志</a></li>
+<li><a href="/computers/linux/system_service.html" target="blank">系统服务命令</a></li>
+</ul>
+]]></content>
+    <category term="Computer"/>
+    <published>2023-08-08T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">友联</title>
     <id>https://sankgao.github.io/about/links.html</id>
@@ -178,7 +211,7 @@
     <title type="text">计算机基础</title>
     <id>https://sankgao.github.io/computers/base/</id>
     <link href="https://sankgao.github.io/computers/base/"/>
-    <updated>2023-08-11T10:06:20.000Z</updated>
+    <updated>2023-08-31T03:27:20.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些计算机基础相关的信息。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>记录一些计算机基础相关的信息。</p>
@@ -188,14 +221,14 @@
 <li><a href="/computers/base/computer_organization.html" target="blank">计算机组成</a></li>
 </ul>
 ]]></content>
-    <category term="computer"/>
+    <category term="Computer"/>
     <published>2023-08-08T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">计算机组成</title>
     <id>https://sankgao.github.io/computers/base/computer_organization.html</id>
     <link href="https://sankgao.github.io/computers/base/computer_organization.html"/>
-    <updated>2023-08-25T09:52:48.000Z</updated>
+    <updated>2023-08-31T03:27:20.000Z</updated>
     <summary type="html"><![CDATA[<h2> 计算机系统概述</h2>
 <h3> 发展历程</h3>
 <h4> 硬件的发展</h4>
@@ -3031,7 +3064,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
     <title type="text">Linux</title>
     <id>https://sankgao.github.io/computers/linux/</id>
     <link href="https://sankgao.github.io/computers/linux/"/>
-    <updated>2023-08-11T10:06:20.000Z</updated>
+    <updated>2023-08-31T03:27:20.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些 Linux 操作系统相关的信息。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>记录一些 Linux 操作系统相关的信息。</p>
@@ -3050,7 +3083,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <li><a href="/computers/linux/system_service.html" target="blank">系统服务命令</a></li>
 </ul>
 ]]></content>
-    <category term="computer"/>
+    <category term="Computer"/>
     <published>2023-08-08T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -7826,7 +7859,7 @@ switch_root:/<span class="token comment"># logout</span>
     <title type="text">Windows</title>
     <id>https://sankgao.github.io/computers/windows/</id>
     <link href="https://sankgao.github.io/computers/windows/"/>
-    <updated>2023-08-11T10:06:20.000Z</updated>
+    <updated>2023-08-31T03:27:20.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些 Windows 操作系统相关的信息。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>记录一些 Windows 操作系统相关的信息。</p>
@@ -7836,7 +7869,7 @@ switch_root:/<span class="token comment"># logout</span>
 <li><a href="/computers/windows/site_not_secure.html" target="blank">网页提示此站点不安全</a></li>
 </ul>
 ]]></content>
-    <category term="computer"/>
+    <category term="Computer"/>
     <published>2023-08-08T00:00:00.000Z</published>
   </entry>
   <entry>
@@ -47820,782 +47853,6 @@ bmi <span class="token operator">=</span> weight <span class="token operator">/<
 </tr>
 </tbody>
 </table>
-]]></content>
-    <category term="Frontend"/>
-    <published>2023-05-12T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">键盘快捷键</title>
-    <id>https://sankgao.github.io/languages/html5/references/shortcuts.html</id>
-    <link href="https://sankgao.github.io/languages/html5/references/shortcuts.html"/>
-    <updated>2023-08-11T10:06:20.000Z</updated>
-    <summary type="html"><![CDATA[<p>键盘快捷键通常用于现代操作系统和计算机软件程序中。</p>
-<p>使用键盘快捷键可以节省大量时间。</p>
-<h2> 基本快捷键</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">编辑菜单</td>
-<td style="text-align:left">Alt + E</td>
-<td style="text-align:left">Ctrl + F2 + F</td>
-</tr>
-<tr>
-<td style="text-align:left">文件菜单</td>
-<td style="text-align:left">Alt + F</td>
-<td style="text-align:left">Ctrl + F2 + E</td>
-</tr>
-<tr>
-<td style="text-align:left">查看菜单</td>
-<td style="text-align:left">Alt + V</td>
-<td style="text-align:left">Ctrl + F2 + V</td>
-</tr>
-<tr>
-<td style="text-align:left">选取所有文本</td>
-<td style="text-align:left">Ctrl + A</td>
-<td style="text-align:left">Cmd + A</td>
-</tr>
-<tr>
-<td style="text-align:left">复制文本</td>
-<td style="text-align:left">Ctrl + C</td>
-<td style="text-align:left">Cmd + C</td>
-</tr>
-<tr>
-<td style="text-align:left">查找文本</td>
-<td style="text-align:left">Ctrl + F</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-<tr>
-<td style="text-align:left">查找和替换文本</td>
-<td style="text-align:left">Ctrl + H</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-<tr>
-<td style="text-align:left">新建文档</td>
-<td style="text-align:left">Ctrl + N</td>
-<td style="text-align:left">Cmd + N</td>
-</tr>
-<tr>
-<td style="text-align:left">打开文件</td>
-<td style="text-align:left">Ctrl + O</td>
-<td style="text-align:left">Cmd + O</td>
-</tr>
-<tr>
-<td style="text-align:left">打印选项</td>
-<td style="text-align:left">Ctrl + P</td>
-<td style="text-align:left">Cmd + P</td>
-</tr>
-<tr>
-<td style="text-align:left">保存文件</td>
-<td style="text-align:left">Ctrl + S</td>
-<td style="text-align:left">Cmd + S</td>
-</tr>
-<tr>
-<td style="text-align:left">粘贴文本</td>
-<td style="text-align:left">Ctrl + V</td>
-<td style="text-align:left">Cmd + V</td>
-</tr>
-<tr>
-<td style="text-align:left">剪切文本</td>
-<td style="text-align:left">Ctrl + X</td>
-<td style="text-align:left">Cmd + X</td>
-</tr>
-<tr>
-<td style="text-align:left">重做文本</td>
-<td style="text-align:left">Ctrl + Y</td>
-<td style="text-align:left">Shift + Cmd + Z</td>
-</tr>
-<tr>
-<td style="text-align:left">撤销文本</td>
-<td style="text-align:left">Ctrl + Z</td>
-<td style="text-align:left">Cmd + Z</td>
-</tr>
-</tbody>
-</table>]]></summary>
-    <content type="html"><![CDATA[<p>键盘快捷键通常用于现代操作系统和计算机软件程序中。</p>
-<p>使用键盘快捷键可以节省大量时间。</p>
-<h2> 基本快捷键</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">编辑菜单</td>
-<td style="text-align:left">Alt + E</td>
-<td style="text-align:left">Ctrl + F2 + F</td>
-</tr>
-<tr>
-<td style="text-align:left">文件菜单</td>
-<td style="text-align:left">Alt + F</td>
-<td style="text-align:left">Ctrl + F2 + E</td>
-</tr>
-<tr>
-<td style="text-align:left">查看菜单</td>
-<td style="text-align:left">Alt + V</td>
-<td style="text-align:left">Ctrl + F2 + V</td>
-</tr>
-<tr>
-<td style="text-align:left">选取所有文本</td>
-<td style="text-align:left">Ctrl + A</td>
-<td style="text-align:left">Cmd + A</td>
-</tr>
-<tr>
-<td style="text-align:left">复制文本</td>
-<td style="text-align:left">Ctrl + C</td>
-<td style="text-align:left">Cmd + C</td>
-</tr>
-<tr>
-<td style="text-align:left">查找文本</td>
-<td style="text-align:left">Ctrl + F</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-<tr>
-<td style="text-align:left">查找和替换文本</td>
-<td style="text-align:left">Ctrl + H</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-<tr>
-<td style="text-align:left">新建文档</td>
-<td style="text-align:left">Ctrl + N</td>
-<td style="text-align:left">Cmd + N</td>
-</tr>
-<tr>
-<td style="text-align:left">打开文件</td>
-<td style="text-align:left">Ctrl + O</td>
-<td style="text-align:left">Cmd + O</td>
-</tr>
-<tr>
-<td style="text-align:left">打印选项</td>
-<td style="text-align:left">Ctrl + P</td>
-<td style="text-align:left">Cmd + P</td>
-</tr>
-<tr>
-<td style="text-align:left">保存文件</td>
-<td style="text-align:left">Ctrl + S</td>
-<td style="text-align:left">Cmd + S</td>
-</tr>
-<tr>
-<td style="text-align:left">粘贴文本</td>
-<td style="text-align:left">Ctrl + V</td>
-<td style="text-align:left">Cmd + V</td>
-</tr>
-<tr>
-<td style="text-align:left">剪切文本</td>
-<td style="text-align:left">Ctrl + X</td>
-<td style="text-align:left">Cmd + X</td>
-</tr>
-<tr>
-<td style="text-align:left">重做文本</td>
-<td style="text-align:left">Ctrl + Y</td>
-<td style="text-align:left">Shift + Cmd + Z</td>
-</tr>
-<tr>
-<td style="text-align:left">撤销文本</td>
-<td style="text-align:left">Ctrl + Z</td>
-<td style="text-align:left">Cmd + Z</td>
-</tr>
-</tbody>
-</table>
-<h2> 文本编辑</h2>
-<h3> 指针移动</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">转到右侧或下一个换行符的开头</td>
-<td style="text-align:left">Right Arrow</td>
-<td style="text-align:left">Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到左侧或上一个换行符的末尾</td>
-<td style="text-align:left">Left Arrow</td>
-<td style="text-align:left">Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">向上一行</td>
-<td style="text-align:left">Up Arrow</td>
-<td style="text-align:left">Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">向下一行</td>
-<td style="text-align:left">Down Arrow</td>
-<td style="text-align:left">Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到当前行的开头</td>
-<td style="text-align:left">Home</td>
-<td style="text-align:left">Cmd + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到当前行的末尾</td>
-<td style="text-align:left">End</td>
-<td style="text-align:left">Cmd + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到文档的开头</td>
-<td style="text-align:left">Ctrl + Home</td>
-<td style="text-align:left">Cmd + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到文档的末尾</td>
-<td style="text-align:left">Ctrl + End</td>
-<td style="text-align:left">Cmd + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">上移一帧</td>
-<td style="text-align:left">Page Up</td>
-<td style="text-align:left">Fn + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">下移一帧</td>
-<td style="text-align:left">Page Down</td>
-<td style="text-align:left">Fn + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到上一个单词的开头</td>
-<td style="text-align:left">Ctrl + Left Arrow</td>
-<td style="text-align:left">Option + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到下一个单词的开头</td>
-<td style="text-align:left">Ctrl + Right Arrow</td>
-<td style="text-align:left">Option + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到换行开始</td>
-<td style="text-align:left">Ctrl + Up Arrow</td>
-<td style="text-align:left">Cmd + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到换行末尾</td>
-<td style="text-align:left">Ctrl + Down Arrow</td>
-<td style="text-align:left">Cmd + Right Arrow</td>
-</tr>
-</tbody>
-</table>
-<h3> 文本选取</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">选择左侧的字符</td>
-<td style="text-align:left">Shift + Left Arrow</td>
-<td style="text-align:left">Shift + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择右侧的字符</td>
-<td style="text-align:left">Shift + Right Arrow</td>
-<td style="text-align:left">Shift + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">向上选择行</td>
-<td style="text-align:left">Shift + Up Arrow</td>
-<td style="text-align:left">Shift + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">向下选择行</td>
-<td style="text-align:left">Shift + Down Arrow</td>
-<td style="text-align:left">Shift + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择左侧的单词</td>
-<td style="text-align:left">Shift + Ctrl + Left</td>
-<td style="text-align:left">Shift + Opt + Left</td>
-</tr>
-<tr>
-<td style="text-align:left">选择右侧的单词</td>
-<td style="text-align:left">Shift + Ctrl + Right</td>
-<td style="text-align:left">Shift + Opt + Right</td>
-</tr>
-<tr>
-<td style="text-align:left">选择左侧的段落</td>
-<td style="text-align:left">Shift + Ctrl + Up</td>
-<td style="text-align:left">Shift + Opt + Up</td>
-</tr>
-<tr>
-<td style="text-align:left">选择右侧的段落</td>
-<td style="text-align:left">Shift + Ctrl + Down</td>
-<td style="text-align:left">Shift + Opt + Down</td>
-</tr>
-<tr>
-<td style="text-align:left">选择光标与当前行的开头之间的文本</td>
-<td style="text-align:left">Shift + Home</td>
-<td style="text-align:left">Cmd + Shift + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择光标和当前行的末尾之间的文本</td>
-<td style="text-align:left">Shift + End</td>
-<td style="text-align:left">Cmd + Shift + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择光标与文档开头之间文本</td>
-<td style="text-align:left">Shift + Ctrl + Home</td>
-<td style="text-align:left">Cmd + Shift + Up Arrow 或 Cmd + Shift + Fn + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择光标与文档末尾之间文本</td>
-<td style="text-align:left">Shift + Ctrl + End</td>
-<td style="text-align:left">Cmd + Shift + Down Arrow 或 Cmd + Shift + Fn + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">一次选择光标以上的文本的一帧</td>
-<td style="text-align:left">Shift + Page Up</td>
-<td style="text-align:left">Shift + Fn + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">一次选择光标以下的文本的一帧</td>
-<td style="text-align:left">Shift + Page Down</td>
-<td style="text-align:left">Shift + Fn + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">选择所有文本</td>
-<td style="text-align:left">Ctrl + A</td>
-<td style="text-align:left">Cmd + A</td>
-</tr>
-<tr>
-<td style="text-align:left">查找文本</td>
-<td style="text-align:left">Ctrl + F</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-</tbody>
-</table>
-<h3> 文本格式化</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">将所选文字设为粗体</td>
-<td style="text-align:left">Ctrl + B</td>
-<td style="text-align:left">Cmd + B</td>
-</tr>
-<tr>
-<td style="text-align:left">将所选文字设为斜体</td>
-<td style="text-align:left">Ctrl + I</td>
-<td style="text-align:left">Cmd + I</td>
-</tr>
-<tr>
-<td style="text-align:left">为所选文字添加下划线</td>
-<td style="text-align:left">Ctrl + U</td>
-<td style="text-align:left">Cmd + U</td>
-</tr>
-<tr>
-<td style="text-align:left">使所选文字成为上标</td>
-<td style="text-align:left">Ctrl + Shift + =</td>
-<td style="text-align:left">Cmd + Shift + =</td>
-</tr>
-<tr>
-<td style="text-align:left">使所选文字成为下标</td>
-<td style="text-align:left">Ctrl + =</td>
-<td style="text-align:left">Cmd + =</td>
-</tr>
-</tbody>
-</table>
-<h3> 文本编辑</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">删除左侧的字符</td>
-<td style="text-align:left">Backspace</td>
-<td style="text-align:left">Backspace</td>
-</tr>
-<tr>
-<td style="text-align:left">删除右侧的字符</td>
-<td style="text-align:left">Delete</td>
-<td style="text-align:left">Fn + Backspace</td>
-</tr>
-<tr>
-<td style="text-align:left">删除右侧的单词</td>
-<td style="text-align:left">Ctrl + Del</td>
-<td style="text-align:left">Cmd + Backspace</td>
-</tr>
-<tr>
-<td style="text-align:left">删除左侧的单词</td>
-<td style="text-align:left">Ctrl + Backspace</td>
-<td style="text-align:left">Cmd + Fn + Backspace</td>
-</tr>
-<tr>
-<td style="text-align:left">缩进</td>
-<td style="text-align:left">Tab</td>
-<td style="text-align:left">Tab</td>
-</tr>
-<tr>
-<td style="text-align:left">突出</td>
-<td style="text-align:left">Shift + Tab</td>
-<td style="text-align:left">Shift + Tab</td>
-</tr>
-<tr>
-<td style="text-align:left">复制文本</td>
-<td style="text-align:left">Ctrl + C</td>
-<td style="text-align:left">Cmd + C</td>
-</tr>
-<tr>
-<td style="text-align:left">查找并替换文字</td>
-<td style="text-align:left">Ctrl + H</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-<tr>
-<td style="text-align:left">粘贴文本</td>
-<td style="text-align:left">Ctrl + V</td>
-<td style="text-align:left">Cmd + V</td>
-</tr>
-<tr>
-<td style="text-align:left">剪切文本</td>
-<td style="text-align:left">Ctrl + X</td>
-<td style="text-align:left">Cmd + X</td>
-</tr>
-<tr>
-<td style="text-align:left">重制文本</td>
-<td style="text-align:left">Ctrl + Y</td>
-<td style="text-align:left">Shift + Cmd + Z</td>
-</tr>
-<tr>
-<td style="text-align:left">撤销文本</td>
-<td style="text-align:left">Ctrl + Z</td>
-<td style="text-align:left">Cmd + Z</td>
-</tr>
-</tbody>
-</table>
-<h2> Web 浏览器</h2>
-<h3> 导航</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">向下滚动一帧</td>
-<td style="text-align:left">Space 或 Page Down</td>
-<td style="text-align:left">Space 或 Fn + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">向上滚动一帧</td>
-<td style="text-align:left">Shift + Space 或 Page Up</td>
-<td style="text-align:left">Shift + Space 或 Fn + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到页面底部</td>
-<td style="text-align:left">End</td>
-<td style="text-align:left">Cmd + Down Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到页面顶部</td>
-<td style="text-align:left">Home</td>
-<td style="text-align:left">Cmd + Up Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">后退</td>
-<td style="text-align:left">Alt + Left Arrow 或 Backspace</td>
-<td style="text-align:left">Cmd + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">前进</td>
-<td style="text-align:left">Alt + Right Arrow 或 Shift + Backspace</td>
-<td style="text-align:left">Cmd + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">刷新网页</td>
-<td style="text-align:left">F5</td>
-<td style="text-align:left">Cmd + R</td>
-</tr>
-<tr>
-<td style="text-align:left">刷新网页（无缓存）</td>
-<td style="text-align:left">Ctrl + F5</td>
-<td style="text-align:left">Cmd + Shift + R</td>
-</tr>
-<tr>
-<td style="text-align:left">停止</td>
-<td style="text-align:left">Esc</td>
-<td style="text-align:left">Esc</td>
-</tr>
-<tr>
-<td style="text-align:left">切换全屏</td>
-<td style="text-align:left">F11</td>
-<td style="text-align:left">Cmd + Shift + F</td>
-</tr>
-<tr>
-<td style="text-align:left">放大</td>
-<td style="text-align:left">Ctrl + +</td>
-<td style="text-align:left">Cmd + +</td>
-</tr>
-<tr>
-<td style="text-align:left">缩小</td>
-<td style="text-align:left">Ctrl + -</td>
-<td style="text-align:left">Cmd + -</td>
-</tr>
-<tr>
-<td style="text-align:left">放大 100%（默认）</td>
-<td style="text-align:left">Ctrl + 0</td>
-<td style="text-align:left">Cmd + 0</td>
-</tr>
-<tr>
-<td style="text-align:left">打开首页</td>
-<td style="text-align:left">Alt + Home</td>
-<td style="text-align:left">Option + Home 或 Option + Fn + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">查找文本</td>
-<td style="text-align:left">Ctrl + F</td>
-<td style="text-align:left">Cmd + F</td>
-</tr>
-</tbody>
-</table>
-<h3> 标签页/窗口管理</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">打开新标签页</td>
-<td style="text-align:left">Ctrl + T</td>
-<td style="text-align:left">Cmd + T</td>
-</tr>
-<tr>
-<td style="text-align:left">关闭当前标签页</td>
-<td style="text-align:left">Ctrl + W</td>
-<td style="text-align:left">Cmd + W</td>
-</tr>
-<tr>
-<td style="text-align:left">关闭所有标签页</td>
-<td style="text-align:left">Ctrl + Shift + W</td>
-<td style="text-align:left">Cmd + Q</td>
-</tr>
-<tr>
-<td style="text-align:left">关闭除当前选项页以外的所有选项页</td>
-<td style="text-align:left">Ctrl + Alt + F4</td>
-<td style="text-align:left">Cmd + Opt + W Cmd + Shift + Right Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到上一个标签页</td>
-<td style="text-align:left">Ctrl + Shift + Tab</td>
-<td style="text-align:left">Shift + Control + Tab 或 Cmd + Shift + Left Arrow</td>
-</tr>
-<tr>
-<td style="text-align:left">转到特定的标签编号</td>
-<td style="text-align:left">Ctrl + 1-8</td>
-<td style="text-align:left">Cmd + 1-8</td>
-</tr>
-<tr>
-<td style="text-align:left">转到最后一个标签页</td>
-<td style="text-align:left">Ctrl + 9</td>
-<td style="text-align:left">Cmd + 9</td>
-</tr>
-<tr>
-<td style="text-align:left">重新打开上一个关闭的标签页</td>
-<td style="text-align:left">Ctrl + Shift + T</td>
-<td style="text-align:left">Cmd + Shift + T</td>
-</tr>
-<tr>
-<td style="text-align:left">打开新窗口</td>
-<td style="text-align:left">Ctrl + N</td>
-<td style="text-align:left">Cmd + N</td>
-</tr>
-<tr>
-<td style="text-align:left">关闭当前窗口</td>
-<td style="text-align:left">Alt + F4</td>
-<td style="text-align:left">Cmd + W</td>
-</tr>
-<tr>
-<td style="text-align:left">转到下一个窗口</td>
-<td style="text-align:left">Alt + Tab</td>
-<td style="text-align:left">Cmd + Tab</td>
-</tr>
-<tr>
-<td style="text-align:left">转到上一个窗口</td>
-<td style="text-align:left">Alt + Shift + Tab</td>
-<td style="text-align:left">Cmd + Shift + Tab</td>
-</tr>
-<tr>
-<td style="text-align:left">重新打开上一个关闭的窗口</td>
-<td style="text-align:left">Ctrl + Shift + N</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">在后台的新标签页中打开链接</td>
-<td style="text-align:left">Ctrl + Click</td>
-<td style="text-align:left">Cmd + Click</td>
-</tr>
-<tr>
-<td style="text-align:left">在前台的新标签页中打开链接</td>
-<td style="text-align:left">Ctrl + Shift + Click</td>
-<td style="text-align:left">Cmd + Shift + Click</td>
-</tr>
-<tr>
-<td style="text-align:left">打印当前网页</td>
-<td style="text-align:left">Ctrl + P</td>
-<td style="text-align:left">Cmd + P</td>
-</tr>
-<tr>
-<td style="text-align:left">保存当前网页</td>
-<td style="text-align:left">Ctrl + S</td>
-<td style="text-align:left">Cmd + S</td>
-</tr>
-</tbody>
-</table>
-<h3> 地址栏</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">在工具栏、搜索栏和页面元素之间循环</td>
-<td style="text-align:left">Tab</td>
-<td style="text-align:left">Tab</td>
-</tr>
-<tr>
-<td style="text-align:left">转到浏览器的地址栏</td>
-<td style="text-align:left">Ctrl + L 或 Alt + D</td>
-<td style="text-align:left">Cmd + L</td>
-</tr>
-<tr>
-<td style="text-align:left">聚焦并选择浏览器的搜索栏</td>
-<td style="text-align:left">Ctrl + E</td>
-<td style="text-align:left">Cmd + E / Cmd + K</td>
-</tr>
-<tr>
-<td style="text-align:left">在新标签页中打开地址栏的位置</td>
-<td style="text-align:left">Alt + Enter</td>
-<td style="text-align:left">Opt + Enter</td>
-</tr>
-<tr>
-<td style="text-align:left">显示以前输入的地址的列表</td>
-<td style="text-align:left">F4</td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:left">地址栏中键入的文本的开头添加 <code>www.</code> 结尾处添加 <code>.com</code>（例如：键入 <code>google</code>，然后按 Ctrl + Enter 将会打开 <code>www.google.com</code>）</td>
-<td style="text-align:left">Ctrl + Enter</td>
-<td style="text-align:left">Cmd + Enter 或 Control + Enter</td>
-</tr>
-</tbody>
-</table>
-<h3> 书签</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">打开书签菜单</td>
-<td style="text-align:left">Ctrl + B</td>
-<td style="text-align:left">Cmd + B</td>
-</tr>
-<tr>
-<td style="text-align:left">为当前页面添加书签</td>
-<td style="text-align:left">Ctrl + D</td>
-<td style="text-align:left">Cmd + Opt + B 或 Cmd + Shift + B</td>
-</tr>
-<tr>
-<td style="text-align:left">打开浏览记录</td>
-<td style="text-align:left">Ctrl + H</td>
-<td style="text-align:left">Cmd + Shift + H 或 Cmd + Y</td>
-</tr>
-<tr>
-<td style="text-align:left">打开下载记录</td>
-<td style="text-align:left">Ctrl + J</td>
-<td style="text-align:left">Cmd + J 或 Cmd + Shift + J</td>
-</tr>
-</tbody>
-</table>
-<h2> 屏幕截图</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">描述</th>
-<th style="text-align:left">Windows</th>
-<th style="text-align:left">Mac OS</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">将整个屏幕的屏幕截图保存为文件</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Cmd + Shift + 3</td>
-</tr>
-<tr>
-<td style="text-align:left">将整个屏幕的屏幕截图复制到剪贴板</td>
-<td style="text-align:left">PrtScr (Print Screen) 或 Ctrl + PrtScr</td>
-<td style="text-align:left">Cmd + Ctrl + Shift + 3</td>
-</tr>
-<tr>
-<td style="text-align:left">将窗口的屏幕截图另存为文件</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Cmd + Shift + 4，然后空格</td>
-</tr>
-<tr>
-<td style="text-align:left">将窗口的屏幕截图复制到剪贴板</td>
-<td style="text-align:left">Alt + PrtScr</td>
-<td style="text-align:left">Cmd + Ctrl + Shift + 4，然后空格</td>
-</tr>
-<tr>
-<td style="text-align:left">将所需区域的屏幕截图复制到剪贴板</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Cmd + Ctrl + Shift + 4</td>
-</tr>
-<tr>
-<td style="text-align:left">将所需区域的屏幕截图保存为文件</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Cmd + Shift + 4</td>
-</tr>
-</tbody>
-</table>
-<div class="hint-container warning">
-<p class="hint-container-title">注意</p>
-<p>由于键盘设置不同，某些快捷方式可能不适用于所有用户</p>
-</div>
 ]]></content>
     <category term="Frontend"/>
     <published>2023-05-12T00:00:00.000Z</published>
