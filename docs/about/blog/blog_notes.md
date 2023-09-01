@@ -16,23 +16,34 @@ tag:
 
 <!-- more -->
 
-本内容来自 [VuePress-v2 官网](https://v2.vuepress.vuejs.org/zh/) 和 [vuepress-theme-hope 主题官网](https://theme-hope.vuejs.press/zh/)，有部分是自己总结的
-
 ## 使用 emoji 表情
 
-阅读大片大片的文字难免产生视觉疲劳，而使用 `emoji` 表情，不仅缓解精神的渐眠，也会胜过千言。
+- **格式**
+    - `:语义化文本:`
 
-在 `Markdown` 里，使用 `:表情:` 输入表情，如：
+- **说明**
+    - 用一对 `:` 包裹，里面是 **Emoji** 符号的 **语义化文本**（**Typora 编辑器** 中，输入 `:` 就会带提示器）
+    - 不支持上述方式的 Markdown 编辑器或笔记软件，直接用 **输入法** 输入也是可以的
 
-``` md
-您好 :smile:，我喜欢 :dog:，我小时候经常拿 :100:分哦~~~，欢迎来到我的博客 :heart:，一起学习吧 :muscle:
+```md
+:smile:
+
+:sweat:
+
+:cat:
+
+:woman_cartwheeling:
 ```
 
 **效果：**
 
-> 您好 :smile:，我喜欢 :dog:，我小时候经常拿:100:分哦~~~，欢迎来到我的博客 :heart:，一起学习吧 :muscle:
+:smile:
 
-很多指令肯定是记不了的，我们可以也可以去特定的网站获取表情的格式。也可以 copy 一个表情过来，Markdown 自动解析表情。
+:sweat:
+
+:cat:
+
+:woman_cartwheeling:
 
 分享一些 emoji 网站：
 
@@ -41,35 +52,39 @@ tag:
 - [gitmoji](https://github.com/carloscuesta/gitmoji)：通过 emoji 表达 git 的操作内容
 - [EMOJI 中文网](https://www.emojiall.com/zh-hans)：这是一本全面的 EMOJI 字典
 
-:::tip
+::: tip
 windows 系统下按 <kbd>Win</kbd> + <kbd>.</kbd> 快速打开表情选择框（不是右侧小键盘的 <kbd>.</kbd>）
 :::
 
 ## 外部链接
 
-使用外部链接，文字会变色，并且可以点击跳转，格式如下：
+使用外部链接，文字会变色，并且可以点击跳转。**格式如下：**
+
+- []()
 
 ```
-[VuePress-v2 官网](https://v2.vuepress.vuejs.org/zh/)
+[vuepress-theme-hope 主题官网](https://theme-hope.vuejs.press/zh/)
 ```
 
 **效果：**
 
-[VuePress-v2 官网](https://v2.vuepress.vuejs.org/zh/)
+[vuepress-theme-hope 主题官网](https://theme-hope.vuejs.press/zh/)
 
 ## 文本高亮
 
-使用 `<mark>` 标签或者 `` ` `` 让文本高亮。
+使用 `` ` ``、`==文本内容==` 或 `<mark>` 标签让文本高亮。**格式如下：**
 
-`<mark>` 标签经常用于文字的突出；如果是一段字符串，用的是 `` ` `` 包裹起来。
+- `` `文本内容` ``
+- `==文本内容==`
+- `<mark>文本内容</mark>`
 
 ```md
-`Vdoing` 是一款简洁高效的 <mark>知识管理&博客</mark> 主题
+这是一段 `高亮` 文本，这是一段 <mark>高亮</mark> 文本
 ```
 
 **效果：**
 
-`Vdoing` 是一款简洁高效的 <mark>知识管理&博客</mark> 主题
+这是一段 `高亮` 文本，这是一段 <mark>高亮</mark> 文本
 
 ## 代码块
 
@@ -139,7 +154,7 @@ const line3 = 'This is line 3'
 ```
 ````
 
-输出
+**效果：**
 
 ```ts
 // 行号默认是启用的
@@ -176,7 +191,7 @@ const line3 = 'This is line 3'
 @[code js](../foo.js)
 ```
 
-实际上，`[]`内的第二部分会被作为代码块标记来处理，因此在上面 [代码块](#代码块) 中提到的语法在这里都可以支持：
+实际上，`[]` 内的第二部分会被作为代码块标记来处理，因此在上面 [代码块](#代码块) 中提到的语法在这里都可以支持：
 
 ```md
 <!-- 行高亮 -->
@@ -220,24 +235,30 @@ export default {
 
 ### 内置
 
-官方自带。详细使用可前往官网 [Badge](https://vuepress.vuejs.org/zh/guide/using-vue.html#badge)。
-
 ```md
-#### 《沁园春·雪》 <Badge text="摘"/>
-北国风光<Badge text="注释" type="warning"/>，千里冰封，万里雪飘。
+《沁园春·雪》<Badge text="摘"/>
+北国风光<Badge text="注释" type="note"/>，千里冰封，万里雪飘。
 
-> <Badge text="译文" type="error" vertical="middle"/>: 北方的风光。
+> <Badge text="译文" type="note" vertical="middle"/>: 北方的风光。
 ```
 
-- type 有三个参数：`tip`、`warning`、`error`。默认是 `tip`
-- vertical 有两个参数：`top`、`middle`。默认是 `top`
+- **type** 默认是 `info`
+    - `info`
+    - `note`
+    - `tip`
+    - `warning`
+    - `danger`
 
-直接在 Markdown 文件使用，效果如下：
+- **vertical** 默认是 `top`
+    - `top`
+    - `middle`
 
-#### 《沁园春·雪》 <Badge text="摘"/>
-北国风光<Badge text="注释" type="warning"/>，千里冰封，万里雪飘。
+**效果：**
 
-> <Badge text="译文" type="error" vertical="middle"/>: 北方的风光。
+《沁园春·雪》<Badge text="摘"/>
+北国风光<Badge text="注释" type="note"/>，千里冰封，万里雪飘。
+
+> <Badge text="译文" type="note" vertical="middle"/>: 北方的风光。
 
 ### 外置
 
@@ -255,38 +276,15 @@ export default {
 
 ## 信息框容器
 
-以下一些内容是 Vdoing 主题提供，并非官方提供。
-
-输入：
+添加信息、注释、提示、注意、警告和详情自定义容器的支持。
 
 ````md
-::: tip
-这是一条提示
-:::
-
-::: warning
-这是一条注意
-:::
-
-::: danger
-这是一条警告
-:::
-
-::: note
-这是笔记容器，主题自带，官方没有
-:::
-
-::: tip 我的自定义标题
-自定义标题的提示框
-:::
-
-
 ::: info
-信息容器。
+信息容器
 :::
 
 ::: note
-注释容器。
+注释容器
 :::
 
 ::: tip
@@ -306,7 +304,7 @@ export default {
 :::
 
 ::: info 自定义标题
-一个有 `代码` 和 [链接](#演示) 的信息容器。
+一个有 `代码` 的信息容器。
 
 ```js
 const a = 1;
@@ -315,200 +313,151 @@ const a = 1;
 :::
 ````
 
-输出：
+**效果：**
 
-::: tip
-这是一条提示
-:::
-
-::: warning
-这是一条注意
-:::
-
-::: danger
-这是一条警告
+::: info
+信息容器
 :::
 
 ::: note
-这是笔记容器，主题自带，官方没有
+注释容器
 :::
 
-::: tip 我的自定义标题
-自定义标题的提示框
+::: tip
+提示容器
 :::
 
-如果想要折叠的容器，如下：<mark>也可以自定义标题</mark>
-
-````md
-::: details
-这是一个详情块，在 IE/Edge 中不生效
-
-```js
-console.log('这是一个详情块')
-```
+::: warning
+警告容器
 :::
-````
+
+::: danger
+危险容器
+:::
 
 ::: details
-这是一个详情块，在 IE / Edge 中不生效
+详情容器
+:::
+
+::: info 自定义标题
+一个有 `代码` 的信息容器。
 
 ```js
-console.log('这是一个详情块')
+const a = 1;
 ```
+
 :::
 
 ## 布局容器
 
 ```md
 ::: center
-### 我是居中的内容
-（可用于标题、图片等的居中）
+居中的内容
 :::
 
 ::: right
-我是右浮动的内容
+右对齐的内容
 :::
 
-::: theorem VuePress
-Vue 驱动的静态网站生成器
-::: right
-来自 [官网](https://vuepress.vuejs.org/zh/)
+::: justify
+两端对齐的内容
 :::
+
+嵌套容器：
+
+:::: center
+居中的内容
+::: right
+右对齐的内容
+:::
+居中的内容
+::::
 ```
 
+**效果：**
+
 ::: center
-### 我是居中的内容
-（可用于标题、图片等的居中）
+居中的内容
 :::
 
 ::: right
-我是右浮动的内容
+右对齐的内容
 :::
 
-::: theorem VuePress
-Vue 驱动的静态网站生成器
+::: justify
+两端对齐的内容
+:::
+
+嵌套容器：
+
+:::: center
+居中的内容
 ::: right
-来自 [VuePress 官网](https://vuepress.vuejs.org/zh/)
+右对齐的内容
 :::
+居中的内容
+::::
 
-::: warning 提示
-没有 left 和 top、bottom
-:::
+## 代码块选项卡
 
-## 代码块选项卡<Badge text="v1.8.0+"></Badge>
+将选项卡包装在 `code-tabs` 容器中。
 
-在 `<code-group>` 中嵌套 `<code-block>` 来配合使用。在 `<code-block>` 标签添加 `title` 来指定 tab 标题，`active` 指定当前 tab：
+在 `code-tabs` 容器中添加一个 `id` 后缀，该后缀将用作选项卡 `id`。所有具有相同 `id` 的选项卡将共享相同的切换事件。
+
+在这个容器内，使用 `@tab` 标记来标记和分隔选项卡内容。
+
+在 `@tab` 标记后，可以添加文本 `:active` 默认激活选项卡，之后的文本将被解析为此选项卡标题。
 
 ````md
-<code-group>
-  <code-block title="YARN" active>
-  ```bash
-  yarn add vuepress-theme-vdoing -D
-  ```
-  </code-block>
+安装 VuePress Theme Hope:
 
-  <code-block title="NPM">
-  ```bash
-  npm install vuepress-theme-vdoing -D
-  ```
-  </code-block>
-</code-group>
+::: code-tabs#language
+
+@tab pnpm
+
+```bash
+pnpm add -D vuepress-theme-hope
+```
+
+@tab yarn
+
+```bash
+yarn add -D vuepress-theme-hope
+```
+
+@tab:active npm
+
+```bash
+npm i -D vuepress-theme-hope
+```
+
+:::
 ````
 
-效果：
+**效果：**
 
-<code-group>
-  <code-block title="YARN" active>
-  ```bash
-  yarn add vuepress-theme-vdoing -D
-  ```
-  </code-block>
+安装 VuePress Theme Hope:
 
-  <code-block title="NPM">
-  ```bash
-  npm install vuepress-theme-vdoing -D
-  ```
-  </code-block>
-</code-group>
+::: code-tabs#shell
 
-::: warning
-请在 `<code-group>` 标签与 Markdown 内容之间使用空行隔开，否则可能会解析不出来
-:::
+@tab pnpm
 
-::: tip
-`Vdoing` 解释该组件仅适用于放置代码块，放其他内容在体验上并不友好。经过测试，我放入文字也是可以的
+```bash
+pnpm add -D vuepress-theme-hope
+```
 
-而且 `<code-block>` 放在 `<code-group>`; 里时，**首行需要缩进两个空格**，经过测试，四个空格出问题
-:::
+@tab yarn
 
-如果您喜欢 `::: tabs` 代替 `<code-group>`，那么我们可以下载 `vuepress-plugin-tabs` 插件。[点击跳到 Tabs 插件安装](#tabs插件)。
+```bash
+yarn add -D vuepress-theme-hope
+```
 
-在 `<CodeGroup>` 中嵌套 `<CodeGroupItem>` 来配合使用。在 `<CodeGroupItem>` 标签添加 `title` 来指定 `tab` 标题，`active` 指定当前 `tab`：
+@tab:active npm
 
-````md
-<CodeGroup>
-  <CodeGroupItem title="PNPM" active>
-  
-  ```bash
-  pnpm install
-  ```
-  
-  </CodeGroupItem>
-  
-  <CodeGroupItem title="YARN">
-  
-  ```bash
-  yarn install
-  ```
-  
-  </CodeGroupItem>
-  
-  <CodeGroupItem title="NPM">
-  
-  ```bash
-  npm install
-  ```
-  
-  </CodeGroupItem>
-</CodeGroup>
-````
+```bash
+npm i -D vuepress-theme-hope
+```
 
-效果：
-
-<CodeGroup>
-  <CodeGroupItem title="PNPM" active>
-  
-  ```bash
-  pnpm install
-  ```
-  
-  </CodeGroupItem>
-  
-  <CodeGroupItem title="YARN">
-  
-  ```bash
-  yarn install
-  ```
-  
-  </CodeGroupItem>
-  
-  <CodeGroupItem title="NPM">
-  
-  ```bash
-  npm install
-  ```
-  
-  </CodeGroupItem>
-</CodeGroup>
-
-::: warning
-您必须在 `<CodeGroupItem>` 的开始标签和代码块之间添加一个空行，否则代码块无法被 Markdown 正确解析
-
-所有内容首先都必须是合法的 Markdown，然后才是一个 `Vue SFC`。
-
-了解更多：[Cookbook > Markdown 与 Vue SFC](https://v2.vuepress.vuejs.org/zh/advanced/cookbook/markdown-and-vue-sfc.html)
-
-或者您可以选择使用自定义容器
 :::
 
 ## 普通卡片列表

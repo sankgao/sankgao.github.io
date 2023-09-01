@@ -8,21 +8,11 @@ tag:
     - Typeset
 ---
 
-:::: info
-统一中文文案、排版的相关用法，降低团队成员之间的沟通成本，增强网站气质
-
-::: right
-2023-04-19 @Sankgao
-:::
-::::
-
-<!-- more -->
+统一中文文案、排版的相关用法，增强网站气质。
 
 ## 空格
 
-:::: info
-如果您跟我一样，每次看到网页上的中文字和英文、数字、符号挤在一块，就会坐立难安，忍不住想在它们之间加个空格。这个外挂（支持 Chrome 和 Firefox）正是您在网络世界走跳所需要的东西，它会自动替您在网页中所有的中文字和半角的英文、数字、符号之间插入空白。
-
+:::: info 空格
 汉学家称这个空白字元为「盘古之白」，因为它劈开了全形字和半角字之间的混沌。另有研究显示，打字的时候不喜欢在中文和英文之间加空格的人，感情路都走得很辛苦，有七成的比例会在 34 岁的时候跟自己不爱的人结婚，而其余三成的人最后只能把遗产留给自己的猫。毕竟爱情跟书写都需要适时地留白。
 
 与大家共勉之。
@@ -34,17 +24,17 @@ tag:
 
 ### 中英文之间需要增加空格
 
-正确：
+**正确：**
 
-> 在 LeanCloud 上，数据存储是围绕 `AVObject` 进行的。
+> 在 LeanCloud 上，数据存储是围绕 AVObject 进行的。
 
-错误：
+**错误：**
 
 > 在LeanCloud上，数据存储是围绕`AVObject`进行的。
 > 
 > 在 LeanCloud上，数据存储是围绕`AVObject` 进行的。
 
-完整的正确用法：
+**完整的正确用法：**
 
 > 在 LeanCloud 上，数据存储是围绕 `AVObject` 进行的。每个 `AVObject` 都包含了与 JSON 兼容的 key-value 对应的数据。数据是 schema-free 的，您不需要在每个 `AVObject` 上提前指定存在哪些键，只要直接设定对应的 key-value 即可。
 
@@ -52,11 +42,11 @@ tag:
 
 ### 中文与数字之间需要增加空格
 
-正确：
+**正确：**
 
 > 今天出去买菜花了 5000 元。
 
-错误：
+**错误：**
 
 > 今天出去买菜花了 5000元。
 > 
@@ -64,23 +54,23 @@ tag:
 
 ### 数字与单位之间无需增加空格
 
-正确：
+**正确：**
 
 > 我家的光纤入户宽带有 10Gbps，SSD 一共有 10TB。
 
-错误：
+**错误：**
 
 > 我家的光纤入户宽带有 10 Gbps，SSD 一共有 20 TB。
 
-另外，度／百分比与数字之间不需要增加空格：
+另外，度/百分比与数字之间不需要增加空格：
 
-正确：
+**正确：**
 
 > 今天是 233° 的高温。
 > 
 > 新 MacBook Pro 有 15% 的 CPU 性能提升。
 
-错误：
+**错误：**
 
 > 今天是 233 ° 的高温。
 > 
@@ -88,11 +78,11 @@ tag:
 
 ### 全角标点与其他字符之间不加空格
 
-正确：
+**正确：**
 
 > 刚刚买了一部 iPhone，好开心！
 
-错误：
+**错误：**
 
 > 刚刚买了一部 iPhone ，好开心！
 
@@ -104,13 +94,13 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 不重复使用标点符号
 
-正确：
+**正确：**
 
 > 德国队竟然战胜了巴西队！
 > 
 > 她竟然对您说「喵」？！
 
-错误：
+**错误：**
 
 > 德国队竟然战胜了巴西队！！
 > 
@@ -126,29 +116,21 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 简单介绍：
 
-「**全角**」指一个字符占用两个标准字符位置的状态，如中文模式下的逗号、句号等：，。？「」
+「**全角**」指一个字符占用两个标准字符位置的状态，如：中文模式下的逗号、句号等 `：，。？「」`
 
-「**半角**」就是 ASCII 方式的字符，在没有中文输入法起作用的时候输入的字母数字和字符都是半角的，如英文模式下的逗号、句号等: , . ; ? ""
-
-### 直角符号
-
-英文单词使用 "" 或者 ''；
-
-中文词语使用 「」或者『』，不使用弯角符号 “” 和 ‘’，弯角符号更适用于手写。
-
-其中 "" 对应「」，'' 对应『』
+「**半角**」就是 ASCII 方式的字符，在没有中文输入法起作用的时候输入的字母数字和字符都是半角的，如：英文模式下的逗号、句号等 `: , . ; ? ""`
 
 ### 使用全角中文标点
 
-正确：
+**正确：**
 
-> 嗨！您知道嘛？今天前台的小妹跟我说「喵」了哎！
+> 嗨！您知道嘛？今天前台的小妹跟我说：“喵” 了哎！
 > 
 > 核磁共振成像（NMRI）是什么原理都不知道？JFGI！
 
-错误：
+**错误：**
 
-> 嗨! 您知道嘛? 今天前台的小妹跟我说 "喵" 了哎!
+> 嗨! 您知道嘛? 今天前台的小妹跟我说： "喵" 了哎!
 > 
 > 嗨!您知道嘛?今天前台的小妹跟我说"喵"了哎!
 > 
@@ -158,11 +140,11 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 数字使用半角字符
 
-正确：
+**正确：**
 
 > 这件蛋糕只卖 1000 元。
 
-错误：
+**错误：**
 
 > 这件蛋糕只卖 １０００ 元。
 
@@ -170,13 +152,13 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 遇到完整的英文整句、特殊名词，其內容使用半角标点
 
-正确：
+**正确：**
 
 > 乔布斯那句话是怎么说的？「Stay hungry, stay foolish.」
 > 
 > 推荐您阅读《Hackers & Painters: Big Ideas from the Computer Age》，非常的有趣。
 
-错误：
+**错误：**
 
 > 乔布斯那句话是怎么说的？「Stay hungry，stay foolish。」
 > 
@@ -186,15 +168,15 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 专有名词使用正确的大小写
 
-大小写相关用法原属于英文书写范畴，不属于本 wiki 讨论內容，在这里只对部分易错用法进行简述。
+大小写相关用法原属于英文书写范畴，在这里只对部分易错用法进行简述。
 
-正确：
+**正确：**
 
 > 使用 GitHub 登录
 > 
 > 我们的客户有 GitHub、Foursquare、Microsoft Corporation、Google、Facebook, Inc.。
 
-错误：
+**错误：**
 
 > 使用 github 登录
 > 
@@ -216,17 +198,17 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 > 
 > 我们的客户有 gｲんĤЦ8、ｷouЯƧquﾑгє、๓เςг๏ร๏Ŧt ς๏гק๏гคtเ๏ภn、900913、ƒ4ᄃëв๏๏к, IПᄃ.。
 
-注意：当网页中需要配合整体视觉风格而出现全部大写／小写的情形，HTML 中请使用标准的大小写规范进行书写；并通过 `text-transform: uppercase;`／`text-transform: lowercase;` 对表现形式进行定义。
+注意：当网页中需要配合整体视觉风格而出现全部大写/小写的情形，HTML 中请使用标准的大小写规范进行书写；并通过 `text-transform: uppercase;`／`text-transform: lowercase;` 对表现形式进行定义。
 
 ### 不要使用不地道的缩写
 
-正确：
+**正确：**
 
 > 我们需要一位熟悉 JavaScript、HTML5，至少理解一种框架（如：Backbone.js、AngularJS、React 等）的前端开发者。
 
-错误：
+**错误：**
 
-> 我们需要一位熟悉 Js、h5，至少理解一种框架（如:backbone、angular、RJS 等）的 FED。
+> 我们需要一位熟悉 Js、h5，至少理解一种框架（如：backbone、angular、RJS 等）的 FED。
 
 ## 争议
 
@@ -234,13 +216,13 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 链接之间增加空格
 
-用法：
+**用法：**
 
 > 请 [提交一个 issue](https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md#) 并分配给相关同事。
 > 
 > 访问我们网站的最新动态，请 [点击这里](https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md#) 进行订阅！
 
-对比用法：
+**对比用法：**
 
 > 请[提交一个 issue](https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md#) 并分配给相关同事。
 > 
@@ -248,11 +230,11 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 简体中文使用直角引号
 
-用法：
+**用法：**
 
 > 「老师，『有条不紊』的『紊』是什么意思？」
 
-对比用法：
+**对比用法：**
 
 > “老师，‘有条不紊’的‘紊’是什么意思？”
 
@@ -260,15 +242,11 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 文档命名规范
 
-正确：
+**正确：**
 
-> 关于-技巧
-> 
-> 笔记-技巧
-> 
-> 排版-技巧
+> 关于_技巧
 
-错误：
+**错误：**
 
 > 关于技巧
 > 
@@ -278,11 +256,11 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 ### 加粗文字增加空格
 
-正确：
+**正确：**
 
 > 一个好的 **排版** 彰显好的文档。
 
-错误：
+**错误：**
 
 > 一个好的**排版**彰显好的文档。
 
@@ -292,13 +270,13 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 加粗的文字如果后面还有文字，则加粗范围不包括标点符号。
 
-正确：
+**正确：**
 
 > 欢迎来到我的博客，**请慢慢食用。**
 > 
 > **欢迎来到我的博客**，请慢慢食用。
 
-错误：
+**错误：**
 
 > 欢迎来到我的博客，**请慢慢食用**。
 > 
@@ -307,7 +285,6 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 可能看不太清楚，这里解释一下：
 
 - 错误的例子中，句号在加粗范围外面，逗号在加粗范围里面
-
 - 正确的例子中，句号在加粗范围里面，逗号在加粗范围外面
 
 ### 加粗标题使用引号（可选）
@@ -316,29 +293,29 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 
 这里的引号指的是 Markdown 的引号，即开头添加的 `>` 符号，特征是左侧有阴影竖条块，如本内容的例子都是通过引号突出。
 
-正确：
+**正确：**
 
 > > **什么是 Young**
 > 
-> Young 代表年轻、朝气、希望、活力 ......
+> Young 代表年轻、朝气、希望、活力……
 
-错误：
+**错误：**
 
 > **什么是 Young**
 > 
-> Young 代表年轻、朝气、希望、活力 ......
+> Young 代表年轻、朝气、希望、活力……
 
 ### 体系化文档开头添加目录
 
 生成可以跳转的目录，方便他人阅读和选择。
 
-如 VuePress 可以解析 `[[TOC]]` 字符串从而生成目录。
+如：VuePress 可以解析 `[[TOC]]` 字符串从而生成目录。
 
 ### 有序/无序列表末尾不加标点符合
 
-因为开头的符号已经代表句号/感叹号/问号了。
+因为开头的符号已经代表句号、感叹号、问号了。
 
-正确：
+**正确：**
 
 > - 欢迎来到我的博客
 > 
@@ -348,7 +325,7 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 > 
 > 2. 文章内容不恰当，可以在评论区留言
 
-错误：
+**错误：**
 
 > - 欢迎来到我的博客。
 > 
@@ -395,24 +372,7 @@ Microsoft 有个 [-ms-text-autospace](http://msdn.microsoft.com/en-us/library/ie
 |  [少数派](http://sspai.com/)  | Yes  |  N/A  |
 |  [力扣 LeetCode](https://leetcode-cn.com/)  |  Yes  |  Yes  |
 
-## 本文转载
-
-添加了一些自己的理解
-
-[中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md)
-[技巧-排版](https://notes.youngkbt.cn/about/typesetting/)
-
 ## 参考文献
 
-- [Guidelines for Using Capital Letters](http://grammar.about.com/od/punctuationandmechanics/a/Guidelines-For-Using-Capital-Letters.htm)
-- [Letter case - Wikipedia](http://en.wikipedia.org/wiki/Letter_case)
-- [Punctuation - Oxford Dictionaries](http://www.oxforddictionaries.com/words/punctuation)
-- [Punctuation - The Purdue OWL](https://owl.english.purdue.edu/owl/section/1/6/)
-- [How to Use English Punctuation Corrently - wikiHow](http://www.wikihow.com/Use-English-Punctuation-Correctly)
-- [格式 - openSUSE](https://zh.opensuse.org/index.php?title=Help:格式)
-- [全角和半角 - 维基百科](http://zh.wikipedia.org/wiki/全形和半形)
-- [引号 - 维基百科](http://zh.wikipedia.org/wiki/引號)
-- [疑问惊叹号 - 维基百科](http://zh.wikipedia.org/wiki/疑問驚嘆號)
-- [全角 - 百度百科](https://baike.baidu.com/item/%E5%85%A8%E8%A7%92/9323113?fr=aladdin)
-- [半角 - 百度百科](https://baike.baidu.com/item/%E5%8D%8A%E8%A7%92)
-
+- [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines/blob/Simplified/README.md)
+- [技巧-排版](https://notes.youngkbt.cn/about/typesetting/)

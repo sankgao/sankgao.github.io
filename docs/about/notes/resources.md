@@ -441,6 +441,7 @@ tag:
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
 - [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
 - [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
+- [在线 Latex 工具](https://latex.91maths.com/)
 
 ## 图片
 
