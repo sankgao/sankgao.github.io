@@ -2,7 +2,7 @@
 title: 我的
 icon: my
 date: 2023-08-08
-category: Info
+category: About
 tag:
     - My
 ---

@@ -2,9 +2,9 @@
 title: VuePress 默认配置
 icon: config
 date: 2023-04-17
-category: VuePress
+category: About
 tag:
-    - VuePress
+    - Blog
 ---
 
 [VuePress 官网配置](https://v2.vuepress.vuejs.org/zh/reference/default-theme/config.html)

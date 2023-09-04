@@ -2,9 +2,9 @@
 title: vuepress-theme-hope 主题
 icon: config
 date: 2023-04-17
-category: VuePress
+category: About
 tag:
-    - VuePress
+    - Blog
 ---
 
 <!-- more -->

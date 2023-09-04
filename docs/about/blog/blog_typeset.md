@@ -2,10 +2,9 @@
 title: 博客排版
 icon: typeset
 date: 2023-04-19
-category: Blog
+category: About
 tag:
     - Blog
-    - Typeset
 ---
 
 统一中文文案、排版的相关用法，增强网站气质。

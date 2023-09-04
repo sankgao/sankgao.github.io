@@ -2,9 +2,9 @@
 title: 备忘清单
 icon: quick_reference_all
 date: 2023-05-03
-category: Tools
+category: About
 tag:
-    - Reference
+    - Notes
 ---
 
 为开发人员分享快速参考备忘清单（速查表）

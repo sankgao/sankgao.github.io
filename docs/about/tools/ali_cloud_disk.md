@@ -2,9 +2,9 @@
 title: 阿里云盘自动签到
 icon: semantic
 date: 2023-07-14
-category: Tools
+category: About
 tag:
-    - Scripts
+    - Tools
 ---
 
 ::: warning

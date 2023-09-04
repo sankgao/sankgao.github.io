@@ -2,7 +2,7 @@
 title: 博客
 icon: blog
 date: 2023-08-08
-category: Info
+category: About
 tag:
     - Blog
 ---

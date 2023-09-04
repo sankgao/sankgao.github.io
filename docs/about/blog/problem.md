@@ -2,9 +2,9 @@
 title: VuePress 问题
 icon: problem
 date: 2023-04-12
-category: VuePress
+category: About
 tag:
-    - VuePress
+    - Blog
     - Problem
 ---
 

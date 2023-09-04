@@ -2,9 +2,9 @@
 title: 关于
 icon: info
 date: 2023-04-26
-category: Info
+category: About
 tag:
-    - Info
+    - About
 ---
 
 记录一些笔记、博客、工具相关的信息。

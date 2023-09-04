@@ -2,9 +2,9 @@
 title: VuePress 插件
 icon: plugins
 date: 2023-04-19
-category: VuePress
+category: About
 tag:
-    - VuePress
+    - Blog
 ---
 
 为博客主题添加一些额外的 VuePress 插件。

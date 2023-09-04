@@ -2,9 +2,9 @@
 title: Linux 命令
 icon: command
 date: 2023-05-03
-category: Tools
+category: About
 tag:
-    - Linux
+    - Notes
 ---
 
 Linux 命令大全搜索工具，内容包含 Linux 命令手册、详解、学习、搜集。

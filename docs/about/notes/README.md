@@ -2,7 +2,7 @@
 title: 笔记
 icon: notes
 date: 2023-08-08
-category: Info
+category: About
 tag:
     - Notes
 ---

@@ -2,9 +2,9 @@
 title: VuePress 搭建
 icon: build
 date: 2023-04-17
-category: VuePress
+category: About
 tag:
-    - VuePress
+    - Blog
 ---
 
 ::: info

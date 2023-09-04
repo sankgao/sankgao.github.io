@@ -2,10 +2,9 @@
 title: 资源列表
 icon: resources
 date: 2023-04-19
-category: Notes
+category: About
 tag:
     - Notes
-    - Resources
 ---
 
 资源列表。

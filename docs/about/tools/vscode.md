@@ -2,9 +2,9 @@
 title: VS Code
 icon: vscode
 date: 2023-06-26
-category: Tools
+category: About
 tag:
-    - VSCode
+    - Tools
 ---
 
 ## VS Code 教程

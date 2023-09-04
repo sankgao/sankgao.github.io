@@ -2,7 +2,7 @@
 title: 工具
 icon: tools
 date: 2023-08-08
-category: Info
+category: About
 tag:
     - Tools
 ---
