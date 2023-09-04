@@ -26,10 +26,10 @@
       "summary": "记录一些友联，并给出我的友联信息。",
       "content_html": "<p>记录一些友联，并给出我的友联信息。</p>\n<!-- more -->\n<h2> 我的友联</h2>\n",
       "date_published": "2023-04-26T00:00:00.000Z",
-      "date_modified": "2023-08-11T10:06:20.000Z",
+      "date_modified": "2023-09-04T07:24:43.000Z",
       "authors": [],
       "tags": [
-        "Links"
+        "About"
       ]
     },
     {
@@ -78,10 +78,10 @@
       "summary": "记录一些博客相关的信息。",
       "content_html": "<p>记录一些博客相关的信息。</p>\n<!-- more -->\n<h2> 博客</h2>\n<ul>\n<li><a href=\"/about/blog/build.html\" target=\"blank\">VuePress 搭建</a></li>\n<li><a href=\"/about/blog/config.html\" target=\"blank\">VuePress 默认配置</a></li>\n<li><a href=\"/about/blog/theme_config.html\" target=\"blank\">vuepress-theme-hope 主题</a></li>\n<li><a href=\"/about/blog/theme_plugins.html\" target=\"blank\">VuePress 插件</a></li>\n<li><a href=\"/about/blog/problem.html\" target=\"blank\">VuePress 问题</a></li>\n<li><a href=\"/about/blog/blog_notes.html\" target=\"blank\">博客笔记</a></li>\n<li><a href=\"/about/blog/blog_typeset.html\" target=\"blank\">博客排版</a></li>\n</ul>\n",
       "date_published": "2023-08-08T00:00:00.000Z",
-      "date_modified": "2023-08-11T10:06:20.000Z",
+      "date_modified": "2023-09-04T07:24:43.000Z",
       "authors": [],
       "tags": [
-        "Info"
+        "About"
       ]
     },
     {
@@ -91,10 +91,10 @@
       "summary": "记录一些我的相关的信息。",
       "content_html": "<p>记录一些我的相关的信息。</p>\n<!-- more -->\n<h2> 我的</h2>\n<ul>\n<li><a href=\"/about/my/personal_info.html\" target=\"blank\">个人信息</a></li>\n<li><a href=\"/about/my/site.html\" target=\"blank\">关于网站</a></li>\n</ul>\n",
       "date_published": "2023-08-08T00:00:00.000Z",
-      "date_modified": "2023-08-11T10:06:20.000Z",
+      "date_modified": "2023-09-04T07:24:43.000Z",
       "authors": [],
       "tags": [
-        "Info"
+        "About"
       ]
     },
     {
@@ -104,10 +104,10 @@
       "summary": "记录一些笔记相关的信息。",
       "content_html": "<p>记录一些笔记相关的信息。</p>\n<!-- more -->\n<h2> 笔记</h2>\n<ul>\n<li><a href=\"/about/notes/resources.html\" target=\"blank\">各种资源</a></li>\n<li><a href=\"/about/notes/quick_reference.html\" target=\"blank\">备忘清单</a></li>\n<li><a href=\"/about/notes/markdown_syntax.html\" target=\"blank\">Markdown 语法</a></li>\n<li><a href=\"/about/notes/command.html\" target=\"blank\">Linux 命令</a></li>\n</ul>\n",
       "date_published": "2023-08-08T00:00:00.000Z",
-      "date_modified": "2023-08-11T10:06:20.000Z",
+      "date_modified": "2023-09-04T07:24:43.000Z",
       "authors": [],
       "tags": [
-        "Info"
+        "About"
       ]
     },
     {
@@ -117,10 +117,10 @@
       "summary": "记录一些工具相关的信息。",
       "content_html": "<p>记录一些工具相关的信息。</p>\n<!-- more -->\n<h2> 工具</h2>\n<ul>\n<li><a href=\"/about/tools/picgo.html\" target=\"blank\">PicGo</a></li>\n<li><a href=\"/about/tools/vscode.html\" target=\"blank\">VS Code</a></li>\n<li><a href=\"/about/tools/ali_cloud_disk.html\" target=\"blank\">阿里云盘自动签到</a></li>\n</ul>\n",
       "date_published": "2023-08-08T00:00:00.000Z",
-      "date_modified": "2023-08-11T10:06:20.000Z",
+      "date_modified": "2023-09-04T07:24:43.000Z",
       "authors": [],
       "tags": [
-        "Info"
+        "About"
       ]
     },
     {

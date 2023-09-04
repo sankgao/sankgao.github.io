@@ -6,17 +6,16 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Mon, 04 Sep 2023 07:11:57 GMT</pubDate>
-    <lastBuildDate>Mon, 04 Sep 2023 07:11:57 GMT</lastBuildDate>
+    <pubDate>Mon, 04 Sep 2023 07:36:02 GMT</pubDate>
+    <lastBuildDate>Mon, 04 Sep 2023 07:36:02 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
     <category>Computer</category>
-    <category>Links</category>
+    <category>About</category>
     <category>DevOps</category>
     <category>Languages</category>
     <category>Others</category>
-    <category>Info</category>
     <category>Framework</category>
     <category>Tools</category>
     <category>Frontend</category>
@@ -59,7 +58,7 @@
       <guid>https://sankgao.github.io/about/links.html</guid>
       <source url="https://sankgao.github.io/rss.xml">友联</source>
       <description>记录一些友联，并给出我的友联信息。</description>
-      <category>Links</category>
+      <category>About</category>
       <pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
 <!-- more -->
@@ -130,7 +129,7 @@
       <guid>https://sankgao.github.io/about/blog/</guid>
       <source url="https://sankgao.github.io/rss.xml">博客</source>
       <description>记录一些博客相关的信息。</description>
-      <category>Info</category>
+      <category>About</category>
       <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些博客相关的信息。</p>
 <!-- more -->
@@ -152,7 +151,7 @@
       <guid>https://sankgao.github.io/about/my/</guid>
       <source url="https://sankgao.github.io/rss.xml">我的</source>
       <description>记录一些我的相关的信息。</description>
-      <category>Info</category>
+      <category>About</category>
       <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些我的相关的信息。</p>
 <!-- more -->
@@ -169,7 +168,7 @@
       <guid>https://sankgao.github.io/about/notes/</guid>
       <source url="https://sankgao.github.io/rss.xml">笔记</source>
       <description>记录一些笔记相关的信息。</description>
-      <category>Info</category>
+      <category>About</category>
       <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些笔记相关的信息。</p>
 <!-- more -->
@@ -188,7 +187,7 @@
       <guid>https://sankgao.github.io/about/tools/</guid>
       <source url="https://sankgao.github.io/rss.xml">工具</source>
       <description>记录一些工具相关的信息。</description>
-      <category>Info</category>
+      <category>About</category>
       <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些工具相关的信息。</p>
 <!-- more -->
