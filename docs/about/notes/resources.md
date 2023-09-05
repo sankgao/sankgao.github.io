@@ -441,6 +441,7 @@ tag:
 - [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
 - [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
 - [在线 Latex 工具](https://latex.91maths.com/)
+- [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
 
 ## 图片
 
