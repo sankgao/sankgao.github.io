@@ -2,9 +2,9 @@
 title: PicGo 图床
 icon: pic
 date: 2023-05-03
-category: Tools
+category: About
 tag:
-    - 图床
+    - Tools
 ---
 
 - [GitHub 仓库地址](https://github.com/Molunerfinn/PicGo)
