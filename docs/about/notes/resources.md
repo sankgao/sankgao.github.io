@@ -156,6 +156,7 @@ tag:
 - [知乎](https://www.zhihu.com/)
 - [QA Stack](https://qastack.cn/)
 - [技术分享平台](https://www.saoniuhuo.com/)
+- [计算机面试求职网站](https://top.interviewguide.cn/)
 - [VuePress](https://v2.vuepress.vuejs.org/zh/)
 - [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
 - [蓝桥杯](http://lx.lanqiao.cn/)
