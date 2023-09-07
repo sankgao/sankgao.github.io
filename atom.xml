@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-09-06T09:25:30.966Z</updated>
+  <updated>2023-09-07T10:35:31.753Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -55,7 +55,7 @@
     <title type="text">友联</title>
     <id>https://sankgao.github.io/about/links.html</id>
     <link href="https://sankgao.github.io/about/links.html"/>
-    <updated>2023-09-04T07:24:43.000Z</updated>
+    <updated>2023-09-07T10:31:42.000Z</updated>
     <summary type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
 ]]></summary>
     <content type="html"><![CDATA[<p>记录一些友联，并给出我的友联信息。</p>
