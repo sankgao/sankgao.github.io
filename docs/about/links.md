@@ -29,7 +29,7 @@ tag:
   desc="理论物理硕士在读，前端开发者，开源项目贡献者"
   url="https://mrhope.site"
   logo="https://mrhope.site/logo.svg"
-  repo="https://github.com/Kele-Bingtang/Kele-Bingtang.github.io"
+  repo="https://github.com/Mister-Hope/Mister-Hope.github.io"
   preview="/links/mrhope.jpg"
 />
 

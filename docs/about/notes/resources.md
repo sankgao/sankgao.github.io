@@ -299,12 +299,14 @@ tag:
 ## 书籍
 
 - [书栈网](https://www.bookstack.cn/)
+- [码农书籍网](https://www.manongbook.com/)
 - [码农之家](https://www.xz577.com/)
 - [书格](https://new.shuge.org/)
 - [熊猫搜书](https://xmsoushu.com/#/)
 - [鸠摩搜书](https://www.jiumodiary.com/)
 - [阅读去吧](https://read678.com)
 - [脚本之家](https://www.jb51.net/books/)
+- [电子书资源收录](https://www.yeeach.com/post/1732)
 - [阿里云盘 - 6.1T 电子书](https://www.aliyundrive.com/s/KML4CF3ZdwK)
 - [阿里云盘 - Office 之光](https://www.aliyundrive.com/s/xkkEYJ3V2Ew)
 - [阿里云盘 - Python 电子书](https://www.aliyundrive.com/s/72Z79nCKCDU)
