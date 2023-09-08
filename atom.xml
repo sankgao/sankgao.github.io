@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-09-07T10:35:31.753Z</updated>
+  <updated>2023-09-08T11:12:45.584Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -3032,32 +3032,6 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 ]]></content>
     <category term="Computer"/>
     <published>2023-08-25T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">架构</title>
-    <id>https://sankgao.github.io/computers/framework/</id>
-    <link href="https://sankgao.github.io/computers/framework/"/>
-    <updated>2023-08-11T10:06:20.000Z</updated>
-    <summary type="html"><![CDATA[<p>记录一些架构相关的信息。</p>
-]]></summary>
-    <content type="html"><![CDATA[<p>记录一些架构相关的信息。</p>
-<!-- more -->
-<h2> Vue3</h2>
-<ul>
-<li><a href="/computers/framework/vue3/introduction.html" target="blank">简介</a></li>
-<li><a href="/computers/framework/vue3/quick_start.html" target="blank">快速上手</a></li>
-<li><a href="/computers/framework/vue3/application.html" target="blank">创建一个 Vue 应用</a></li>
-<li><a href="/computers/framework/vue3/template_syntax.html" target="blank">模板语法</a></li>
-<li><a href="/computers/framework/vue3/responsive_base.html" target="blank">响应式基础</a></li>
-<li><a href="/computers/framework/vue3/computed.html" target="blank">计算属性</a></li>
-<li><a href="/computers/framework/vue3/class_and_style_bind.html" target="blank">Class 与 Style 绑定</a></li>
-<li><a href="/computers/framework/vue3/ways_of_using_vue.html" target="blank">使用 Vue 的多种方式</a></li>
-<li><a href="/computers/framework/vue3/conditional.html" target="blank">条件渲染</a></li>
-<li><a href="/computers/framework/vue3/list.html" target="blank">列表渲染</a></li>
-</ul>
-]]></content>
-    <category term="Framework"/>
-    <published>2023-08-08T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">Linux</title>
@@ -7911,6 +7885,32 @@ switch_root:/<span class="token comment"># logout</span>
 ]]></content>
     <category term="Computer"/>
     <published>2023-07-04T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">架构</title>
+    <id>https://sankgao.github.io/computers/framework/</id>
+    <link href="https://sankgao.github.io/computers/framework/"/>
+    <updated>2023-08-11T10:06:20.000Z</updated>
+    <summary type="html"><![CDATA[<p>记录一些架构相关的信息。</p>
+]]></summary>
+    <content type="html"><![CDATA[<p>记录一些架构相关的信息。</p>
+<!-- more -->
+<h2> Vue3</h2>
+<ul>
+<li><a href="/computers/framework/vue3/introduction.html" target="blank">简介</a></li>
+<li><a href="/computers/framework/vue3/quick_start.html" target="blank">快速上手</a></li>
+<li><a href="/computers/framework/vue3/application.html" target="blank">创建一个 Vue 应用</a></li>
+<li><a href="/computers/framework/vue3/template_syntax.html" target="blank">模板语法</a></li>
+<li><a href="/computers/framework/vue3/responsive_base.html" target="blank">响应式基础</a></li>
+<li><a href="/computers/framework/vue3/computed.html" target="blank">计算属性</a></li>
+<li><a href="/computers/framework/vue3/class_and_style_bind.html" target="blank">Class 与 Style 绑定</a></li>
+<li><a href="/computers/framework/vue3/ways_of_using_vue.html" target="blank">使用 Vue 的多种方式</a></li>
+<li><a href="/computers/framework/vue3/conditional.html" target="blank">条件渲染</a></li>
+<li><a href="/computers/framework/vue3/list.html" target="blank">列表渲染</a></li>
+</ul>
+]]></content>
+    <category term="Framework"/>
+    <published>2023-08-08T00:00:00.000Z</published>
   </entry>
   <entry>
     <title type="text">SVN</title>

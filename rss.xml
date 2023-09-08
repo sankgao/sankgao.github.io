@@ -6,8 +6,8 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 07 Sep 2023 10:35:31 GMT</pubDate>
-    <lastBuildDate>Thu, 07 Sep 2023 10:35:31 GMT</lastBuildDate>
+    <pubDate>Fri, 08 Sep 2023 11:12:45 GMT</pubDate>
+    <lastBuildDate>Fri, 08 Sep 2023 11:12:45 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
@@ -2981,31 +2981,6 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 </ul>
 </li>
 </ol>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>架构</title>
-      <link>https://sankgao.github.io/computers/framework/</link>
-      <guid>https://sankgao.github.io/computers/framework/</guid>
-      <source url="https://sankgao.github.io/rss.xml">架构</source>
-      <description>记录一些架构相关的信息。</description>
-      <category>Framework</category>
-      <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>记录一些架构相关的信息。</p>
-<!-- more -->
-<h2> Vue3</h2>
-<ul>
-<li><a href="/computers/framework/vue3/introduction.html" target="blank">简介</a></li>
-<li><a href="/computers/framework/vue3/quick_start.html" target="blank">快速上手</a></li>
-<li><a href="/computers/framework/vue3/application.html" target="blank">创建一个 Vue 应用</a></li>
-<li><a href="/computers/framework/vue3/template_syntax.html" target="blank">模板语法</a></li>
-<li><a href="/computers/framework/vue3/responsive_base.html" target="blank">响应式基础</a></li>
-<li><a href="/computers/framework/vue3/computed.html" target="blank">计算属性</a></li>
-<li><a href="/computers/framework/vue3/class_and_style_bind.html" target="blank">Class 与 Style 绑定</a></li>
-<li><a href="/computers/framework/vue3/ways_of_using_vue.html" target="blank">使用 Vue 的多种方式</a></li>
-<li><a href="/computers/framework/vue3/conditional.html" target="blank">条件渲染</a></li>
-<li><a href="/computers/framework/vue3/list.html" target="blank">列表渲染</a></li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -7609,6 +7584,31 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <p class="hint-container-title">提示</p>
 <p>按 <kbd>F5</kbd> 键刷新网页，只对当前页面进行刷新，只刷新本地缓存；按 <kbd>Ctrl</kbd> + <kbd>F5</kbd> 键强制刷新网页，会把本地缓存文件删除再重新从服务器下载</p>
 </div>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>架构</title>
+      <link>https://sankgao.github.io/computers/framework/</link>
+      <guid>https://sankgao.github.io/computers/framework/</guid>
+      <source url="https://sankgao.github.io/rss.xml">架构</source>
+      <description>记录一些架构相关的信息。</description>
+      <category>Framework</category>
+      <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>记录一些架构相关的信息。</p>
+<!-- more -->
+<h2> Vue3</h2>
+<ul>
+<li><a href="/computers/framework/vue3/introduction.html" target="blank">简介</a></li>
+<li><a href="/computers/framework/vue3/quick_start.html" target="blank">快速上手</a></li>
+<li><a href="/computers/framework/vue3/application.html" target="blank">创建一个 Vue 应用</a></li>
+<li><a href="/computers/framework/vue3/template_syntax.html" target="blank">模板语法</a></li>
+<li><a href="/computers/framework/vue3/responsive_base.html" target="blank">响应式基础</a></li>
+<li><a href="/computers/framework/vue3/computed.html" target="blank">计算属性</a></li>
+<li><a href="/computers/framework/vue3/class_and_style_bind.html" target="blank">Class 与 Style 绑定</a></li>
+<li><a href="/computers/framework/vue3/ways_of_using_vue.html" target="blank">使用 Vue 的多种方式</a></li>
+<li><a href="/computers/framework/vue3/conditional.html" target="blank">条件渲染</a></li>
+<li><a href="/computers/framework/vue3/list.html" target="blank">列表渲染</a></li>
+</ul>
 ]]></content:encoded>
     </item>
     <item>
