@@ -6,19 +6,72 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 15 Sep 2023 08:19:17 GMT</pubDate>
-    <lastBuildDate>Fri, 15 Sep 2023 08:19:17 GMT</lastBuildDate>
+    <pubDate>Fri, 15 Sep 2023 09:17:42 GMT</pubDate>
+    <lastBuildDate>Fri, 15 Sep 2023 09:17:42 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
+    <category>其它</category>
     <category>About</category>
     <category>Computer</category>
     <category>DevOps</category>
     <category>Languages</category>
-    <category>Others</category>
     <category>Framework</category>
     <category>Tools</category>
     <category>Frontend</category>
+    <item>
+      <title>书籍</title>
+      <link>https://sankgao.github.io/others/books.html</link>
+      <guid>https://sankgao.github.io/others/books.html</guid>
+      <source url="https://sankgao.github.io/rss.xml">书籍</source>
+      <description>以下均为电子书籍。 计算机 [x] 《王道 2024 计算机组成原理》; [x] 《王道 2024 操作系统》; [ ] 《王道 2024 计算机网络》; [ ] 《王道 2024 数据结构》; [x] 《零基础学 Python（全彩版）》; [x] 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》; [x] 《漫画算法：小灰的算法之旅（P...</description>
+      <category>其它</category>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>以下均为电子书籍。</p>
+<h2> 计算机</h2>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> 《王道 2024 计算机组成原理》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> 《王道 2024 操作系统》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 《王道 2024 计算机网络》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 《王道 2024 数据结构》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 《零基础学 Python（全彩版）》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> 《漫画算法：小灰的算法之旅（Python 篇）》</label></li>
+</ul>
+<h2> 文学</h2>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> 《活着》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> 《许三观卖血记》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-9" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-9"> 《在细雨中呼喊》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-10" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-10"> 《兄弟》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-11" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-11"> 《酒国》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-12" disabled="disabled"><label class="task-list-item-label" for="task-item-12"> 《朝花夕拾》</label></li>
+</ul>
+<h2> 小说</h2>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-13" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-13"> 《斗罗大陆》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-14" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-14"> 《斗罗大陆Ⅱ绝世唐门》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-15" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-15"> 《斗罗大陆Ⅲ龙王传说》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-16" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-16"> 《斗罗大陆Ⅳ终极斗罗》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-17" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-17"> 《斗罗大陆Ⅴ重生唐三》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-18" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-18"> 《天珠变》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-19" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-19"> 《善良的死神》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-20" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-20"> 《遮天》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-21" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-21"> 《完美世界》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-22" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-22"> 《圣墟》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-23" disabled="disabled"><label class="task-list-item-label" for="task-item-23"> 《神墓》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-24" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-24"> 《凡人修仙传》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-25" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-25"> 《凡人修仙之仙界篇》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-26" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-26"> 《斗破苍穹》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-27" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-27"> 《武动乾坤》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-28" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-28"> 《大主宰》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-29" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-29"> 《元尊》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-30" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-30"> 《仙逆》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-31" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-31"> 《一念永恒》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-32" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-32"> 《绝世武神》</label></li>
+</ul>
+]]></content:encoded>
+    </item>
     <item>
       <title>百度收录 GitHub Pages 博客</title>
       <link>https://sankgao.github.io/about/blog/baidu_seo.html</link>
@@ -3191,10 +3244,12 @@
       <guid>https://sankgao.github.io/others/</guid>
       <source url="https://sankgao.github.io/rss.xml">其它</source>
       <description>记录一些其它相关的信息。</description>
-      <category>Others</category>
+      <category>其它</category>
       <pubDate>Tue, 08 Aug 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>记录一些其它相关的信息。</p>
 <!-- more -->
+<h2> 书籍</h2>
+<p>记录一些看过的 <a href="/others/books.html" target="blank">各类书籍</a>，例如：计算机、文学、小说。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -33182,432 +33237,6 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <tr>
 <td style="text-align:center">translate</td>
 <td style="text-align:left">规定是否应该翻译元素内容。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-</tbody>
-</table>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>全局事件</title>
-      <link>https://sankgao.github.io/languages/html5/references/global_event.html</link>
-      <guid>https://sankgao.github.io/languages/html5/references/global_event.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">全局事件</source>
-      <description>HTML 有能力让事件 触发 浏览器中的动作。例如：当用户单击元素时启动 JavaScript。 以下是可添加到 HTML 元素以定义事件操作的 全局事件属性。 Window 事件属性 针对 window 对象 触发的事件（应用到 \ 标签）： 属性 值 描述 :----: :----: :---- onafterprint script 文档打印之后...</description>
-      <category>Frontend</category>
-      <pubDate>Thu, 11 May 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>HTML 有能力让事件 <strong>触发</strong> 浏览器中的动作。例如：当用户单击元素时启动 JavaScript。</p>
-<p>以下是可添加到 HTML 元素以定义事件操作的 <strong>全局事件属性。</strong></p>
-<h2> Window 事件属性</h2>
-<p>针对 <strong>window 对象</strong> 触发的事件（应用到 &lt;body&gt; 标签）：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">属性</th>
-<th style="text-align:center">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">onafterprint</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">文档打印之后运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onbeforeprint</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">文档打印之前运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onbeforeunload</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">文档卸载之前运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onerror</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在错误发生时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onhaschange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当文档已改变时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onload</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">页面结束加载之后触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmessage</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在消息被触发时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onoffline</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当文档离线时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ononline</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当文档上线时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onpagehide</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当窗口隐藏时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onpageshow</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当窗口成为可见时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onpopstate</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当窗口历史记录改变时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onredo</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当文档执行撤销（redo）时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onresize</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当浏览器窗口被调整大小时触发。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onstorage</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在 Web Storage 区域更新后运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onundo</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在文档执行 undo 时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onunload</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">一旦页面已下载时触发（或者浏览器窗口已被关闭）</td>
-</tr>
-</tbody>
-</table>
-<h2> Form 事件</h2>
-<p>由 <strong>HTML 表单内</strong> 的动作触发的事件（应用到几乎所有 HTML 元素，但最常用在 <code>form</code> 元素中）：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">属性</th>
-<th style="text-align:center">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">onblur</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">元素失去焦点时运行的脚本</td>
-</tr>
-<tr>
-<td style="text-align:center">onchange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在元素值被改变时运行的脚本</td>
-</tr>
-<tr>
-<td style="text-align:center">oncontextmenu</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当上下文菜单被触发时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onfocus</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素获得焦点时运行的脚本</td>
-</tr>
-<tr>
-<td style="text-align:center">onformchange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在表单改变时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onforminput</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当表单获得用户输入时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">oninput</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素获得用户输入时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">oninvalid</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素无效时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onreset</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当表单中的重置按钮被点击时触发。⚠️ <span style="color: red">HTML5 中不支持</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onselect</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在元素中文本被选中后触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onsubmit</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在提交表单时触发</td>
-</tr>
-</tbody>
-</table>
-<h2> Keyboard 事件</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">属性</th>
-<th style="text-align:center">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">onkeydown</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在用户按下按键时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onkeypress</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在用户敲击按钮时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onkeyup</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当用户释放按键时触发</td>
-</tr>
-</tbody>
-</table>
-<h2> Mouse 事件</h2>
-<p>由 <strong>鼠标</strong> 或类似 <strong>用户动作</strong> 触发的事件</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">属性</th>
-<th style="text-align:center">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">onclick</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">元素上发生鼠标点击时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">ondblclick</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">元素上发生鼠标双击时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">ondrag</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">元素被拖动时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondragend</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在拖动操作末端运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondragenter</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素元素已被拖动到有效拖放区域时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondragleave</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素离开有效拖放目标时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondragover</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素在有效拖放目标上正在被拖动时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondragstart</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在拖动操作开端运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondrop</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当被拖元素正在被拖放时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onmousedown</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素上按下鼠标按钮时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmousemove</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当鼠标指针移动到元素上时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmouseout</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当鼠标指针移出元素时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmouseover</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当鼠标指针移动到元素上时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmouseup</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当在元素上释放鼠标按钮时触发</td>
-</tr>
-<tr>
-<td style="text-align:center">onmousewheel</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当鼠标滚轮正在被滚动时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onscroll</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元素滚动条被滚动时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-</tbody>
-</table>
-<h2> Media 事件</h2>
-<p>由 **媒介（比如视频、图像和音频）**触发的事件（适用于所有 HTML 元素，但常见于媒介元素中，比如：<code>&lt;audio&gt;</code>、<code>&lt;embed&gt;</code>、<code>&lt;img&gt;</code>、<code>&lt;object&gt;</code> 以及 <code>&lt;video&gt;</code>）:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">属性</th>
-<th style="text-align:center">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">onabort</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在退出时运行的脚本</td>
-</tr>
-<tr>
-<td style="text-align:center">oncanplay</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当文件就绪可以开始播放时运行的脚本（缓冲已足够开始时）。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">oncanplaythrough</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介能够无需因缓冲而停止即可播放至结尾时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ondurationchange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介长度改变时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onemptied</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当发生故障并且文件突然不可用时运行的脚本（比如连接意外断开时）。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onended</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介已到达结尾时运行的脚本（可发送类似 “感谢观看” 之类的消息）。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onerror</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当在文件加载期间发生错误时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onloadeddata</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介数据已加载时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onloadedmetadata</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当元数据（比如分辨率和时长）被加载时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onloadstart</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在文件开始加载且未实际加载任何数据前运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onpause</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介被用户或程序暂停时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onplay</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介已就绪可以开始播放时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onplaying</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介已开始播放时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onprogress</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当浏览器正在获取媒介数据时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onratechange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">每当回放速率改变时运行的脚本（比如当用户切换到慢动作或快进模式）。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onreadystatechange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">每当就绪状态改变时运行的脚本（就绪状态监测媒介数据的状态）。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onseeked</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当 seeking 属性设置为 false（指示定位已结束）时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onseeking</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当 seeking 属性设置为 true（指示定位是活动的）时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onstalled</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在浏览器不论何种原因未能取回媒介数据时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onsuspend</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">在媒介数据完全加载之前不论何种原因终止取回媒介数据时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">ontimeupdate</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当播放位置改变时（比如当用户快进到媒介中一个不同的位置时）运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onvolumechange</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">每当音量改变时（包括将音量设置为静音）时运行的脚本。⚠️ <span style="color: red">HTML5 中添加的属性</span></td>
-</tr>
-<tr>
-<td style="text-align:center">onwaiting</td>
-<td style="text-align:center">script</td>
-<td style="text-align:left">当媒介已停止播放但打算继续播放时（比如当媒介暂停已缓冲更多数据）运行脚本</td>
 </tr>
 </tbody>
 </table>
