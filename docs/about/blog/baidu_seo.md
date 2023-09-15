@@ -1,6 +1,6 @@
 ---
 title: 百度收录 GitHub Pages 博客
-icon: build
+icon: seo
 date: 2023-09-15
 category: About
 tag:
