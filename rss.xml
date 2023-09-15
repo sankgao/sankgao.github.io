@@ -6,19 +6,71 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Fri, 15 Sep 2023 07:00:02 GMT</pubDate>
-    <lastBuildDate>Fri, 15 Sep 2023 07:00:02 GMT</lastBuildDate>
+    <pubDate>Fri, 15 Sep 2023 08:19:17 GMT</pubDate>
+    <lastBuildDate>Fri, 15 Sep 2023 08:19:17 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
-    <category>Computer</category>
     <category>About</category>
+    <category>Computer</category>
     <category>DevOps</category>
     <category>Languages</category>
     <category>Others</category>
     <category>Framework</category>
     <category>Tools</category>
     <category>Frontend</category>
+    <item>
+      <title>百度收录 GitHub Pages 博客</title>
+      <link>https://sankgao.github.io/about/blog/baidu_seo.html</link>
+      <guid>https://sankgao.github.io/about/blog/baidu_seo.html</guid>
+      <source url="https://sankgao.github.io/rss.xml">百度收录 GitHub Pages 博客</source>
+      <description>由于本博客部署在 GitHub Pages 上，而 Github 禁止了百度爬取。故将博客添加到百度收录 SEO 中，增强网站的访问 查看网站是否收录 在百度中输入 site: 查看网站是否收录。 例如：site:sankgao.github.io 添加网站 1. 登陆 百度资源搜索平台 (https://ziyuan.baidu.com/) 2. 点...</description>
+      <category>About</category>
+      <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<div class="hint-container info">
+<p class="hint-container-title">相关信息</p>
+<p>由于本博客部署在 GitHub Pages 上，而 Github 禁止了百度爬取。故将博客添加到百度收录 SEO 中，增强网站的访问</p>
+</div>
+<h2> 查看网站是否收录</h2>
+<p>在百度中输入 <code>site:&lt;域名&gt;</code> 查看网站是否收录。</p>
+<p>例如：<code>site:sankgao.github.io</code></p>
+<h2> 添加网站</h2>
+<ol>
+<li>
+<p>登陆 <a href="https://ziyuan.baidu.com/" target="_blank" rel="noopener noreferrer">百度资源搜索平台</a></p>
+</li>
+<li>
+<p>点击 <strong>用户中心 -&gt; 站点管理</strong> 添加网站</p>
+<figure><figcaption>添加网站</figcaption></figure>
+</li>
+<li>
+<p>选择站点属性</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>站点验证成功后，站点领域信息 30 天内只能修改一次，请谨慎设置！</p>
+</div>
+</li>
+<li>
+<p>验证网站</p>
+<p>验证网站有两种方式，选择一个验证方式，根据提示完成验证。</p>
+<ul>
+<li>
+<p><strong>文件验证</strong></p>
+<figure><figcaption>文件验证</figcaption></figure>
+</li>
+<li>
+<p><strong>HTML 标签验证</strong></p>
+<figure><figcaption>HTML 标签验证</figcaption></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h2> 博客中添加验证代码</h2>
+<p>本人选择的是 HTML 标签验证，在博客中添加上述代码。</p>
+<p><a href="https://theme-hope.vuejs.press/zh/guide/advanced/seo.html#%E7%9B%B4%E6%8E%A5%E6%B7%BB%E5%8A%A0-head-%E6%A0%87%E7%AD%BE" target="_blank" rel="noopener noreferrer">博客主题</a> 提供了在页面的 <code>frontmatter</code> 中配置 <code>head</code> 选项，自主添加特定标签到页面 <code>&lt;head&gt;</code>，会自动注入 <code>&lt;meta name="keywords" content="SEO plugin" /&gt;</code>。</p>
+<p>所以将下面代码添加到网站根目录下的 <code>README</code> 文件中（docs/README.md）：</p>
+<div class="language-markdown line-numbers-mode" data-ext="md"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
+    </item>
     <item>
       <title>操作系统</title>
       <link>https://sankgao.github.io/computers/base/operating_system.html</link>
@@ -3164,6 +3216,7 @@
 <li><a href="/about/blog/problem.html" target="blank">VuePress 问题</a></li>
 <li><a href="/about/blog/blog_notes.html" target="blank">博客笔记</a></li>
 <li><a href="/about/blog/blog_typeset.html" target="blank">博客排版</a></li>
+<li><a href="/about/blog/baidu_seo.html" target="blank">百度收录 GitHub Pages 博客</a></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -33555,664 +33608,6 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <td style="text-align:center">onwaiting</td>
 <td style="text-align:center">script</td>
 <td style="text-align:left">当媒介已停止播放但打算继续播放时（比如当媒介暂停已缓冲更多数据）运行脚本</td>
-</tr>
-</tbody>
-</table>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>语言代码</title>
-      <link>https://sankgao.github.io/languages/html5/references/language_codes.html</link>
-      <guid>https://sankgao.github.io/languages/html5/references/language_codes.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">语言代码</source>
-      <description>ISO 语言代码 HTML 的 lang 属性可用于网页或部分 网页的语言。这对 搜索引擎 和 浏览器 是有帮助的。 根据 W3C 推荐标准，您应该通过 标签中的 lang 属性对每张页面中的主要语言进行声明。例如： 在 XHTML 中，采用如下方式在 标签中对语言进行声明： ISO 639-1 语言代码 ISO 639-1 定义了语言的缩写。 语言 ...</description>
-      <category>Frontend</category>
-      <pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2> ISO 语言代码</h2>
-<p>HTML 的 <code>lang</code> 属性可用于网页或部分 <strong>网页的语言</strong>。这对 <strong>搜索引擎</strong> 和 <strong>浏览器</strong> 是有帮助的。</p>
-<p>根据 W3C 推荐标准，您应该通过 <code>&lt;html&gt;</code> 标签中的 <code>lang</code> 属性对每张页面中的主要语言进行声明。例如：</p>
-<div class="language-html line-numbers-mode" data-ext="html"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>在 XHTML 中，采用如下方式在 <code>&lt;html&gt;</code> 标签中对语言进行声明：</p>
-<div class="language-xhtml line-numbers-mode" data-ext="xhtml"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2> ISO 639-1 语言代码</h2>
-<p>ISO 639-1 定义了语言的缩写。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">语言</th>
-<th style="text-align:center">ISO 代码</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Abkhazian</td>
-<td style="text-align:center">ab</td>
-</tr>
-<tr>
-<td style="text-align:center">Afar</td>
-<td style="text-align:center">aa</td>
-</tr>
-<tr>
-<td style="text-align:center">Afrikaans</td>
-<td style="text-align:center">af</td>
-</tr>
-<tr>
-<td style="text-align:center">Albanian</td>
-<td style="text-align:center">sq</td>
-</tr>
-<tr>
-<td style="text-align:center">Amharic</td>
-<td style="text-align:center">am</td>
-</tr>
-<tr>
-<td style="text-align:center">Arabic</td>
-<td style="text-align:center">ar</td>
-</tr>
-<tr>
-<td style="text-align:center">Armenian</td>
-<td style="text-align:center">hy</td>
-</tr>
-<tr>
-<td style="text-align:center">Assamese</td>
-<td style="text-align:center">as</td>
-</tr>
-<tr>
-<td style="text-align:center">Aymara</td>
-<td style="text-align:center">ay</td>
-</tr>
-<tr>
-<td style="text-align:center">Azerbaijani</td>
-<td style="text-align:center">az</td>
-</tr>
-<tr>
-<td style="text-align:center">Bashkir</td>
-<td style="text-align:center">ba</td>
-</tr>
-<tr>
-<td style="text-align:center">Basque</td>
-<td style="text-align:center">eu</td>
-</tr>
-<tr>
-<td style="text-align:center">Bengali (Bangla)</td>
-<td style="text-align:center">bn</td>
-</tr>
-<tr>
-<td style="text-align:center">Bhutani</td>
-<td style="text-align:center">dz</td>
-</tr>
-<tr>
-<td style="text-align:center">Bihari</td>
-<td style="text-align:center">bh</td>
-</tr>
-<tr>
-<td style="text-align:center">Bislama</td>
-<td style="text-align:center">bi</td>
-</tr>
-<tr>
-<td style="text-align:center">Breton</td>
-<td style="text-align:center">br</td>
-</tr>
-<tr>
-<td style="text-align:center">Bulgarian</td>
-<td style="text-align:center">bg</td>
-</tr>
-<tr>
-<td style="text-align:center">Burmese</td>
-<td style="text-align:center">my</td>
-</tr>
-<tr>
-<td style="text-align:center">Byelorussian (Belarusian)</td>
-<td style="text-align:center">be</td>
-</tr>
-<tr>
-<td style="text-align:center">Cambodian</td>
-<td style="text-align:center">km</td>
-</tr>
-<tr>
-<td style="text-align:center">Catalan</td>
-<td style="text-align:center">ca</td>
-</tr>
-<tr>
-<td style="text-align:center">Cherokee</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Chewa</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Chinese (Simplified)</td>
-<td style="text-align:center">zh</td>
-</tr>
-<tr>
-<td style="text-align:center">Chinese (Traditional)</td>
-<td style="text-align:center">zh</td>
-</tr>
-<tr>
-<td style="text-align:center">Corsican</td>
-<td style="text-align:center">co</td>
-</tr>
-<tr>
-<td style="text-align:center">Croatian</td>
-<td style="text-align:center">hr</td>
-</tr>
-<tr>
-<td style="text-align:center">Czech</td>
-<td style="text-align:center">cs</td>
-</tr>
-<tr>
-<td style="text-align:center">Danish</td>
-<td style="text-align:center">da</td>
-</tr>
-<tr>
-<td style="text-align:center">Divehi</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Dutch</td>
-<td style="text-align:center">nl</td>
-</tr>
-<tr>
-<td style="text-align:center">Edo</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">English</td>
-<td style="text-align:center">en</td>
-</tr>
-<tr>
-<td style="text-align:center">Esperanto</td>
-<td style="text-align:center">eo</td>
-</tr>
-<tr>
-<td style="text-align:center">Estonian</td>
-<td style="text-align:center">et</td>
-</tr>
-<tr>
-<td style="text-align:center">Faeroese</td>
-<td style="text-align:center">fo</td>
-</tr>
-<tr>
-<td style="text-align:center">Farsi</td>
-<td style="text-align:center">fa</td>
-</tr>
-<tr>
-<td style="text-align:center">Fiji</td>
-<td style="text-align:center">fj</td>
-</tr>
-<tr>
-<td style="text-align:center">Finnish</td>
-<td style="text-align:center">fi</td>
-</tr>
-<tr>
-<td style="text-align:center">Flemish</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">French</td>
-<td style="text-align:center">fr</td>
-</tr>
-<tr>
-<td style="text-align:center">Frisian</td>
-<td style="text-align:center">fy</td>
-</tr>
-<tr>
-<td style="text-align:center">Fulfulde</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Galician</td>
-<td style="text-align:center">gl</td>
-</tr>
-<tr>
-<td style="text-align:center">Gaelic (Scottish)</td>
-<td style="text-align:center">gd</td>
-</tr>
-<tr>
-<td style="text-align:center">Gaelic (Manx)</td>
-<td style="text-align:center">gv</td>
-</tr>
-<tr>
-<td style="text-align:center">Georgian</td>
-<td style="text-align:center">ka</td>
-</tr>
-<tr>
-<td style="text-align:center">German</td>
-<td style="text-align:center">de</td>
-</tr>
-<tr>
-<td style="text-align:center">Greek</td>
-<td style="text-align:center">el</td>
-</tr>
-<tr>
-<td style="text-align:center">Greenlandic</td>
-<td style="text-align:center">kl</td>
-</tr>
-<tr>
-<td style="text-align:center">Guarani</td>
-<td style="text-align:center">gn</td>
-</tr>
-<tr>
-<td style="text-align:center">Gujarati</td>
-<td style="text-align:center">gu</td>
-</tr>
-<tr>
-<td style="text-align:center">Hausa</td>
-<td style="text-align:center">ha</td>
-</tr>
-<tr>
-<td style="text-align:center">Hawaiian</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Hebrew</td>
-<td style="text-align:center">he, iw</td>
-</tr>
-<tr>
-<td style="text-align:center">Hindi</td>
-<td style="text-align:center">hi</td>
-</tr>
-<tr>
-<td style="text-align:center">Hungarian</td>
-<td style="text-align:center">hu</td>
-</tr>
-<tr>
-<td style="text-align:center">Ibibio</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Icelandic</td>
-<td style="text-align:center">is</td>
-</tr>
-<tr>
-<td style="text-align:center">Igbo</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Indonesian</td>
-<td style="text-align:center">id, in</td>
-</tr>
-<tr>
-<td style="text-align:center">Interlingua</td>
-<td style="text-align:center">ia</td>
-</tr>
-<tr>
-<td style="text-align:center">Interlingue</td>
-<td style="text-align:center">ie</td>
-</tr>
-<tr>
-<td style="text-align:center">Inuktitut</td>
-<td style="text-align:center">iu</td>
-</tr>
-<tr>
-<td style="text-align:center">Inupiak</td>
-<td style="text-align:center">ik</td>
-</tr>
-<tr>
-<td style="text-align:center">Irish</td>
-<td style="text-align:center">ga</td>
-</tr>
-<tr>
-<td style="text-align:center">Italian</td>
-<td style="text-align:center">it</td>
-</tr>
-<tr>
-<td style="text-align:center">Japanese</td>
-<td style="text-align:center">ja</td>
-</tr>
-<tr>
-<td style="text-align:center">Javanese</td>
-<td style="text-align:center">jv</td>
-</tr>
-<tr>
-<td style="text-align:center">Kannada</td>
-<td style="text-align:center">kn</td>
-</tr>
-<tr>
-<td style="text-align:center">Kanuri</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Kashmiri</td>
-<td style="text-align:center">ks</td>
-</tr>
-<tr>
-<td style="text-align:center">Kazakh</td>
-<td style="text-align:center">kk</td>
-</tr>
-<tr>
-<td style="text-align:center">Kinyarwanda (Ruanda)</td>
-<td style="text-align:center">rw</td>
-</tr>
-<tr>
-<td style="text-align:center">Kirghiz</td>
-<td style="text-align:center">ky</td>
-</tr>
-<tr>
-<td style="text-align:center">Kirundi (Rundi)</td>
-<td style="text-align:center">rn</td>
-</tr>
-<tr>
-<td style="text-align:center">Konkani</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Korean</td>
-<td style="text-align:center">ko</td>
-</tr>
-<tr>
-<td style="text-align:center">Kurdish</td>
-<td style="text-align:center">ku</td>
-</tr>
-<tr>
-<td style="text-align:center">Laothian</td>
-<td style="text-align:center">lo</td>
-</tr>
-<tr>
-<td style="text-align:center">Latin</td>
-<td style="text-align:center">la</td>
-</tr>
-<tr>
-<td style="text-align:center">Latvian (Lettish)</td>
-<td style="text-align:center">lv</td>
-</tr>
-<tr>
-<td style="text-align:center">Limburgish ( Limburger)</td>
-<td style="text-align:center">li</td>
-</tr>
-<tr>
-<td style="text-align:center">Lingala</td>
-<td style="text-align:center">ln</td>
-</tr>
-<tr>
-<td style="text-align:center">Lithuanian</td>
-<td style="text-align:center">lt</td>
-</tr>
-<tr>
-<td style="text-align:center">Macedonian</td>
-<td style="text-align:center">mk</td>
-</tr>
-<tr>
-<td style="text-align:center">Malagasy</td>
-<td style="text-align:center">mg</td>
-</tr>
-<tr>
-<td style="text-align:center">Malay</td>
-<td style="text-align:center">ms</td>
-</tr>
-<tr>
-<td style="text-align:center">Malayalam</td>
-<td style="text-align:center">ml</td>
-</tr>
-<tr>
-<td style="text-align:center">Maltese</td>
-<td style="text-align:center">mt</td>
-</tr>
-<tr>
-<td style="text-align:center">Maori</td>
-<td style="text-align:center">mi</td>
-</tr>
-<tr>
-<td style="text-align:center">Marathi</td>
-<td style="text-align:center">mr</td>
-</tr>
-<tr>
-<td style="text-align:center">Moldavian</td>
-<td style="text-align:center">mo</td>
-</tr>
-<tr>
-<td style="text-align:center">Mongolian</td>
-<td style="text-align:center">mn</td>
-</tr>
-<tr>
-<td style="text-align:center">Nauru</td>
-<td style="text-align:center">na</td>
-</tr>
-<tr>
-<td style="text-align:center">Nepali</td>
-<td style="text-align:center">ne</td>
-</tr>
-<tr>
-<td style="text-align:center">Norwegian</td>
-<td style="text-align:center">no</td>
-</tr>
-<tr>
-<td style="text-align:center">Occitan</td>
-<td style="text-align:center">oc</td>
-</tr>
-<tr>
-<td style="text-align:center">Oriya</td>
-<td style="text-align:center">or</td>
-</tr>
-<tr>
-<td style="text-align:center">Oromo (Afan, Galla)</td>
-<td style="text-align:center">om</td>
-</tr>
-<tr>
-<td style="text-align:center">Papiamentu</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Pashto (Pushto)</td>
-<td style="text-align:center">ps</td>
-</tr>
-<tr>
-<td style="text-align:center">Polish</td>
-<td style="text-align:center">pl</td>
-</tr>
-<tr>
-<td style="text-align:center">Portuguese</td>
-<td style="text-align:center">pt</td>
-</tr>
-<tr>
-<td style="text-align:center">Punjabi</td>
-<td style="text-align:center">pa</td>
-</tr>
-<tr>
-<td style="text-align:center">Quechua</td>
-<td style="text-align:center">qu</td>
-</tr>
-<tr>
-<td style="text-align:center">Rhaeto-Romance</td>
-<td style="text-align:center">rm</td>
-</tr>
-<tr>
-<td style="text-align:center">Romanian</td>
-<td style="text-align:center">ro</td>
-</tr>
-<tr>
-<td style="text-align:center">Russian</td>
-<td style="text-align:center">ru</td>
-</tr>
-<tr>
-<td style="text-align:center">Sami (Lappish)</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Samoan</td>
-<td style="text-align:center">sm</td>
-</tr>
-<tr>
-<td style="text-align:center">Sangro</td>
-<td style="text-align:center">sg</td>
-</tr>
-<tr>
-<td style="text-align:center">Sanskrit</td>
-<td style="text-align:center">sa</td>
-</tr>
-<tr>
-<td style="text-align:center">Serbian</td>
-<td style="text-align:center">sr</td>
-</tr>
-<tr>
-<td style="text-align:center">Serbo-Croatian</td>
-<td style="text-align:center">sh</td>
-</tr>
-<tr>
-<td style="text-align:center">Sesotho</td>
-<td style="text-align:center">st</td>
-</tr>
-<tr>
-<td style="text-align:center">Setswana</td>
-<td style="text-align:center">tn</td>
-</tr>
-<tr>
-<td style="text-align:center">Shona</td>
-<td style="text-align:center">sn</td>
-</tr>
-<tr>
-<td style="text-align:center">Sindhi</td>
-<td style="text-align:center">sd</td>
-</tr>
-<tr>
-<td style="text-align:center">Sinhalese</td>
-<td style="text-align:center">si</td>
-</tr>
-<tr>
-<td style="text-align:center">Siswati</td>
-<td style="text-align:center">ss</td>
-</tr>
-<tr>
-<td style="text-align:center">Slovak</td>
-<td style="text-align:center">sk</td>
-</tr>
-<tr>
-<td style="text-align:center">Slovenian</td>
-<td style="text-align:center">sl</td>
-</tr>
-<tr>
-<td style="text-align:center">Somali</td>
-<td style="text-align:center">so</td>
-</tr>
-<tr>
-<td style="text-align:center">Spanish</td>
-<td style="text-align:center">es</td>
-</tr>
-<tr>
-<td style="text-align:center">Sundanese</td>
-<td style="text-align:center">su</td>
-</tr>
-<tr>
-<td style="text-align:center">Swahili (Kiswahili)</td>
-<td style="text-align:center">sw</td>
-</tr>
-<tr>
-<td style="text-align:center">Swedish</td>
-<td style="text-align:center">sv</td>
-</tr>
-<tr>
-<td style="text-align:center">Syriac</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Tagalog</td>
-<td style="text-align:center">tl</td>
-</tr>
-<tr>
-<td style="text-align:center">Tajik</td>
-<td style="text-align:center">tg</td>
-</tr>
-<tr>
-<td style="text-align:center">Tamazight</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Tamil</td>
-<td style="text-align:center">ta</td>
-</tr>
-<tr>
-<td style="text-align:center">Tatar</td>
-<td style="text-align:center">tt</td>
-</tr>
-<tr>
-<td style="text-align:center">Telugu</td>
-<td style="text-align:center">te</td>
-</tr>
-<tr>
-<td style="text-align:center">Thai</td>
-<td style="text-align:center">th</td>
-</tr>
-<tr>
-<td style="text-align:center">Tibetan</td>
-<td style="text-align:center">bo</td>
-</tr>
-<tr>
-<td style="text-align:center">Tigrinya</td>
-<td style="text-align:center">ti</td>
-</tr>
-<tr>
-<td style="text-align:center">Tonga</td>
-<td style="text-align:center">to</td>
-</tr>
-<tr>
-<td style="text-align:center">Tsonga</td>
-<td style="text-align:center">ts</td>
-</tr>
-<tr>
-<td style="text-align:center">Turkish</td>
-<td style="text-align:center">tr</td>
-</tr>
-<tr>
-<td style="text-align:center">Turkmen</td>
-<td style="text-align:center">tk</td>
-</tr>
-<tr>
-<td style="text-align:center">Twi</td>
-<td style="text-align:center">tw</td>
-</tr>
-<tr>
-<td style="text-align:center">Uighur</td>
-<td style="text-align:center">ug</td>
-</tr>
-<tr>
-<td style="text-align:center">Ukrainian</td>
-<td style="text-align:center">uk</td>
-</tr>
-<tr>
-<td style="text-align:center">Urdu</td>
-<td style="text-align:center">ur</td>
-</tr>
-<tr>
-<td style="text-align:center">Uzbek</td>
-<td style="text-align:center">uz</td>
-</tr>
-<tr>
-<td style="text-align:center">Venda</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Vietnamese</td>
-<td style="text-align:center">vi</td>
-</tr>
-<tr>
-<td style="text-align:center">Volapuk</td>
-<td style="text-align:center">vo</td>
-</tr>
-<tr>
-<td style="text-align:center">Welsh</td>
-<td style="text-align:center">cy</td>
-</tr>
-<tr>
-<td style="text-align:center">Wolof</td>
-<td style="text-align:center">wo</td>
-</tr>
-<tr>
-<td style="text-align:center">Xhosa</td>
-<td style="text-align:center">xh</td>
-</tr>
-<tr>
-<td style="text-align:center">Yi</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">Yiddish</td>
-<td style="text-align:center">yi, ji</td>
-</tr>
-<tr>
-<td style="text-align:center">Yoruba</td>
-<td style="text-align:center">yo</td>
-</tr>
-<tr>
-<td style="text-align:center">Zulu</td>
-<td style="text-align:center">zu</td>
 </tr>
 </tbody>
 </table>
