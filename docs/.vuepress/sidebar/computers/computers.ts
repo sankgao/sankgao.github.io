@@ -8,6 +8,7 @@ export const computers = arraySidebar([
     prefix: "base/",
     children: [
       "computer_organization",
+      "operating_system",
     ],
   },
   {

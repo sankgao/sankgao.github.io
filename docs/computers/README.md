@@ -14,6 +14,7 @@ tag:
 ## 计算机基础
 
 - [计算机组成](./base/computer_organization.md)
+- [操作系统](./base/operating_system.md)
 
 ## Windows
 

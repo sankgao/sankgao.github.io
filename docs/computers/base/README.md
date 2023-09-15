@@ -14,3 +14,4 @@ tag:
 ## 计算机基础
 
 - [计算机组成](./computer_organization.md)
+- [操作系统](./operating_system.md)
