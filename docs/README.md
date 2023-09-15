@@ -9,6 +9,11 @@ tagline: 我是世界上的独一无二，百句空言不如一个行动。  # �
 bgImage: /background.png  # 背景图片
 heroFullScreen: true  # 背景图片全屏展示
 
+head:  # 自主添加特定标签到页面 <head> 中
+  - - meta
+    - name: baidu-site-verification
+      content: codeva-jJHuz4vkzL
+
 projects:  # 首页特性列表
   - name: VuePress  # 列表标题
     desc: 基于 Vue 的静态文档构建器  # 列表详情
