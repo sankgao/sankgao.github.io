@@ -28,6 +28,7 @@ export const about = arraySidebar([
       "problem.md",
       "blog_notes.md",
       "blog_typeset.md",
+      "baidu_seo",
     ],
   },
   {

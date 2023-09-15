@@ -20,3 +20,4 @@ tag:
 - [VuePress 问题](./problem.md)
 - [博客笔记](./blog_notes.md)
 - [博客排版](./blog_typeset.md)
+- [百度收录 GitHub Pages 博客](./baidu_seo.md)

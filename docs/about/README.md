@@ -27,6 +27,7 @@ tag:
 - [VuePress 问题](./blog/problem.md)
 - [博客笔记](./blog/blog_notes.md)
 - [博客排版](./blog/blog_typeset.md)
+- [百度收录 GitHub Pages 博客](./blog/baidu_seo.md)
 
 ### 工具
 
