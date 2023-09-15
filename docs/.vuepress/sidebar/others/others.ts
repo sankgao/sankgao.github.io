@@ -6,6 +6,8 @@ export const others = arraySidebar([
     icon: "other",
     // link: "others/",
     // prefix: "others/",
-    children: [ "", ],
+    children: [
+      "books",
+    ],
   },
 ]);
