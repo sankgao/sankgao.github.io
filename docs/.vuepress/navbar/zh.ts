@@ -58,6 +58,7 @@ export const zhNavbarConfig = navbar([
         children: [
           { text: "我的", icon: "my", link: "", activeMatch: "^/about/$" },
           { text: "友链", icon: "link", link: "links" },
+          { text: "开往", icon: "random", link: "https://www.travellings.cn/go.html"},
         ],
       },
     ],
