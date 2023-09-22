@@ -446,6 +446,7 @@ tag:
 - [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
 - [在线 Latex 工具](https://latex.91maths.com/)
 - [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
+- [Memword - 在线单词记忆工具](https://danci.0231019.top/)
 
 ## 图片
 
