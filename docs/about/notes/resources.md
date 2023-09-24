@@ -447,6 +447,7 @@ tag:
 - [在线 Latex 工具](https://latex.91maths.com/)
 - [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
 - [Memword - 在线单词记忆工具](https://danci.0231019.top/)
+- [m3u8在线播放器](https://m3u8-player.com/)
 
 ## 图片
 
