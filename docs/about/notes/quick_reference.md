@@ -3,6 +3,7 @@ title: 备忘清单
 icon: quick_reference_all
 date: 2023-05-03
 category: About
+star: true
 tag:
     - Notes
 ---

@@ -3,6 +3,7 @@ title: 资源列表
 icon: resources
 date: 2023-04-19
 category: About
+star: true
 tag:
     - Notes
 ---
