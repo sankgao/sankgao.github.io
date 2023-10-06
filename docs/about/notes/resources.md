@@ -319,6 +319,8 @@ tag:
 - [术语在线](http://www.termonline.cn/)
 - [一个全本小说网](https://www.quanben.io/)
 - [小说电子书存档网站](https://beitai.cc/)
+- [寻书 - 电子书综合搜索平台](https://xunshu.xyz/)
+- [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
 
 ## 工具
 
@@ -449,6 +451,7 @@ tag:
 - [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
 - [Memword - 在线单词记忆工具](https://danci.0231019.top/)
 - [m3u8在线播放器](https://m3u8-player.com/)
+- [方格音乐 - 免费的无损音乐播放器：安卓需要激活码，目前安卓端激活码为：2080](http://fonger.top/)
 
 ## 图片
 
