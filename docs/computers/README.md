@@ -20,6 +20,7 @@ tag:
 ## Windows
 
 - [网页提示此站点不安全](./windows/site_not_secure.md)
+- [加载 GitHub 问题](./windows/github_loading.md)
 
 ## Linux
 

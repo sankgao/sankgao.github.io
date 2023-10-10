@@ -19,6 +19,7 @@ export const computers = arraySidebar([
     prefix: "windows/",
     children: [
       "site_not_secure",
+      "github_loading",
     ],
   },
   {
