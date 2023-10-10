@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-10-10T03:10:12.513Z</updated>
+  <updated>2023-10-10T09:42:25.602Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -6413,7 +6413,7 @@
     <title type="text">计算机组成</title>
     <id>https://sankgao.github.io/computers/base/computer_organization.html</id>
     <link href="https://sankgao.github.io/computers/base/computer_organization.html"/>
-    <updated>2023-08-31T03:27:20.000Z</updated>
+    <updated>2023-10-10T09:39:03.000Z</updated>
     <summary type="html"><![CDATA[<h2> 计算机系统概述</h2>
 <h3> 发展历程</h3>
 <h4> 硬件的发展</h4>
@@ -7000,7 +7000,7 @@ x, \hspace{2.6cm} 0 \leq x \lt 1 \\
 <p class="hint-container-title">相关信息</p>
 <p>由于字长为 <code>8</code> 位，所以将负数的反码最高位去掉</p>
 </div>
-<p>若字长为 <code>n + 1</code>，则反码整数的表示范围为 -(1 - 2<sup>-n</sup>) ≤ x ≤ 1 - 2<sup>-n</sup>，关于原点对称（与原码相同）。</p>
+<p>若字长为 <code>n + 1</code>，则反码小数的表示范围为 -(1 - 2<sup>-n</sup>) ≤ x ≤ 1 - 2<sup>-n</sup>（关于原点对称），与原码相同。</p>
 <p><strong>纯整数的反码定义：</strong></p>
 <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><msub><mo stretchy="false">]</mo><mtext>反</mtext></msub><mo>=</mo><mrow><mo fence="true">{</mo><mtable rowspacing="0.36em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mn>0</mn><mo separator="true">,</mo><mi>x</mi><mo separator="true">,</mo><mspace width="7.2555em"></mspace><mn>0</mn><mo>≤</mo><mi>x</mi><mo>&lt;</mo><msup><mn>2</mn><mi>n</mi></msup></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo stretchy="false">(</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mi>x</mi><mo separator="true">,</mo><mspace width="1.4226em"></mspace><mo>−</mo><msup><mn>2</mn><mi>n</mi></msup><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mn>0</mn></mrow></mstyle></mtd></mtr></mtable></mrow><mo stretchy="false">(</mo><mi>m</mi><mi>o</mi><mi>d</mi><mtext>&nbsp;</mtext><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">
 [x]_\text{反} =
@@ -7016,7 +7016,7 @@ x, \hspace{2.6cm} 0 \leq x \lt 1 \\
 <li>[x<sub>1</sub>]<sub>反</sub> = 0,0001010</li>
 <li>[x<sub>2</sub>]<sub>反</sub> = (2<sup>(7+1)</sup> - 1) + (-1101) = 2<sup>8</sup> - 1 - 1101 = 100000000 - 00000001 - 00001101 = 11111111 - 00001101 = 1,1110011</li>
 </ul>
-<p>若字长为 <code>n + 1</code>，则反码整数的表示范围为 -(2<sup>n</sup> - 1) ≤ x ≤ 2<sup>n</sup> - 1，关于原点对称（与原码相同）。</p>
+<p>若字长为 <code>n + 1</code>，则反码整数的表示范围为 -(2<sup>n</sup> - 1) ≤ x ≤ 2<sup>n</sup> - 1（关于原点对称），与原码相同。</p>
 <p><strong>反码表示存在以下几个方面的不足：</strong></p>
 <ul>
 <li><code>0</code> 的表示不唯一（即存在正负 0），[+0]<sub>反</sub> = <strong>0</strong>0000；[-0]<sub>反</sub> = <strong>1</strong>1111</li>
@@ -7192,7 +7192,7 @@ C_4 = G_4 + P_4C_3 = G_4 + P_4G_3 + P_4P_3G_2 + P_4P_3P_2G_1 + P_4P_3P_2P_1C_0
 <li>按二进制运算规则运算，逢二进一</li>
 <li>若做加法，两数的补码直接相加；若做减法，则将被减数与减数的机器负数相加</li>
 <li>符号位与数值位一起参与运算，加、减运算结果的符号位也在运算中直接得出</li>
-<li>最终运算结果的高位丢弃，保留 <code>n+1</code> 位，运算结果亦为补码</li>
+<li>最终运算结果的高位丢弃，保留 <code>n + 1</code> 位，运算结果亦为补码</li>
 </ul>
 <p>例如：设机器字长为 <code>8</code> 位（含 <code>1</code> 位符号位），<em>A = 15，B = 24</em>，求 <em>[A + B]<sub>补</sub></em> 和 <em>[A - B]<sub>补</sub>。</em></p>
 <p><em>A = +15 = +0001111，B = +24 = +0011000</em>；得 <em>[A]<sub>补</sub> = 00001111，[B]<sub>补</sub> = 00011000，[-B]<sub>补</sub> = 11101000</em>。所以</p>
