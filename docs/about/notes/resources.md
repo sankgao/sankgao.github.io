@@ -165,6 +165,7 @@ tag:
 - [CXY521 导航](http://www.cxy521.com/index.html)
 - [it98k 导航](http://www.it98k.com/)
 - [Tbox 导航](https://www.tboxn.com/)
+- [余生运营书签导航](https://yunyingdh.cn/)
 - [分类别致](http://www.mvcat.com)
 - [犇生活导航](http://6.6soluo.com/)
 - [趣导航](https://qssily.com/)
