@@ -440,6 +440,7 @@ tag:
 - [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
 - [BusinessAI - 在线 AI 人工智能对话和 AI 绘画工具](https://aichat.kqbusinessai.com/)
 - [Uncrop-在线创意AI图像自动补全工具](https://clipdrop.co/pricing)
+- [智能AI照片衣服处理机器人 - BraUndress](https://t.me/bra_undress_bot?start=CpqKLUni)
 - [免费使用 ChatGPT3.5/4](https://geekerline.com/circle/70021.html)
 - [AI - 虚拟主播](https://geekerline.com/circle/70011.html)
 - [MindOS - 一个 0 门槛的自主人工智能系统](https://mindos.com/)
@@ -449,12 +450,13 @@ tag:
 - [龙门影视 —— #Windows #Android #TV](https://www.looo.top/)
 - [Vega AI 绘画](https://rightbrain.art/)
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
+- [m3u8 在线播放器](https://m3u8-player.com/)
+- [MAGNET VIP - 好用的磁力转种子工具](https://magnet-vip.com/)
 - [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
 - [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
 - [在线 Latex 工具](https://latex.91maths.com/)
 - [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
 - [Memword - 在线单词记忆工具](https://danci.0231019.top/)
-- [m3u8在线播放器](https://m3u8-player.com/)
 - [方格音乐 - 免费的无损音乐播放器：安卓需要激活码，目前安卓端激活码为：2080](http://fonger.top/)
 
 ## 图片
