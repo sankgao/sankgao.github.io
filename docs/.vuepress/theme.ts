@@ -134,7 +134,7 @@ export default hopeTheme({
       mark: true,  // 启用标记格式支持
       mathjax: true,  // 使用 mathjax 启用 TeX 语法支持
       mermaid: true,  // 启用 Mermaid 支持
-      presentation: true,  // 启用幻灯片支持
+      revealJs: true,  // 启用幻灯片支持
       sub: true,  // 启用下角标格式支持
       sup: true,  // 启用上角标格式支持
       tabs: true,  // 启用选项卡支持
