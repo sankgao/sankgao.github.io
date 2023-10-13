@@ -5,7 +5,7 @@
   <subtitle>使用 VuePress-v2 搭建的个人博客</subtitle>
   <icon>https://sankgao.github.io/favicon.ico</icon>
   <rights>基于 MIT 协议，© 2023-至今 Sankgao</rights>
-  <updated>2023-10-12T11:11:22.853Z</updated>
+  <updated>2023-10-13T09:42:00.826Z</updated>
   <generator>vuepress-plugin-feed2</generator>
   <link rel="self" href="https://sankgao.github.io/atom.xml"/>
   <link rel="alternate" href="https://sankgao.github.io/"/>
@@ -6413,7 +6413,7 @@
     <title type="text">计算机组成</title>
     <id>https://sankgao.github.io/computers/base/computer_organization.html</id>
     <link href="https://sankgao.github.io/computers/base/computer_organization.html"/>
-    <updated>2023-10-11T09:13:05.000Z</updated>
+    <updated>2023-10-13T09:38:46.000Z</updated>
     <summary type="html"><![CDATA[<h2> 计算机系统概述</h2>
 <h3> 发展历程</h3>
 <h4> 硬件的发展</h4>
@@ -7611,8 +7611,8 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 </ul>
 </li>
 </ol>
-<h3> 主存储器与 CPU 的理解</h3>
-<h4> 理解原理</h4>
+<h3> 主存储器与 CPU 的连接</h3>
+<h4> 连接原理</h4>
 <ol>
 <li>主存储器通过数据总线、地址总线和控制总线与 CPU 连接</li>
 <li>数据总线的位数与工作频率的乘积正比于数据传输率</li>
@@ -7732,10 +7732,22 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <li>
 <p><strong>磁盘的性能指标</strong></p>
 <ul>
-<li><strong>记录密度</strong>：是指盘片单位面积上记录的二进制信息量，通常以道密度、位密度和面密度表示。道密度是沿磁盘半径方向单位长度上的磁道数；位密度是磁道单位长度上能记录的二进制代码位数；面密度是位密度和道密度的乘积</li>
-<li><strong>磁盘的容量</strong>：有非格式化容量和格式化容量之分。非格式化容量是指磁记录表面可利用的磁化单元总数，它由道密度和位密度计算而来；格式化容量是指按照某种特定的记录格式所能存储信息的总量。格式化后的容量比非格式化容量要小。</li>
-<li><strong>平均存取时间</strong>：平均存取时间由寻道时间（磁头移动到目的磁道的时间）、旋转延迟时间（磁头定位到要读写扇区的时间）和传输时间（传输数据所花费的时间）三部分构成。由于寻道和找扇区的距离远近不一，故寻道时间和旋转延迟时间通常取平均值。</li>
-<li><strong>数据传输率</strong>：磁盘存储器在单位时间内向主机传送数据的字节数，称为数据传输率。假设磁盘转数为 <code>r</code> 转/秒，每条磁道容量为 <code>N</code> 字节，则数据传输率为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>r</mi></msub><mo>=</mo><mi>r</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">D_r = rN</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span></li>
+<li>
+<p><strong>记录密度</strong>：是指盘片单位面积上记录的二进制信息量，通常以道密度、位密度和面密度表示。道密度是沿磁盘半径方向单位长度上的磁道数；位密度是磁道单位长度上能记录的二进制代码位数；面密度是位密度和道密度的乘积</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>磁盘所有磁道记录的信息量一定是相等的，并不是圆越大信息越多，故每个磁道的位密度都不同</p>
+</div>
+</li>
+<li>
+<p><strong>磁盘的容量</strong>：有非格式化容量和格式化容量之分。非格式化容量是指磁记录表面可利用的磁化单元总数，它由道密度和位密度计算而来；格式化容量是指按照某种特定的记录格式所能存储信息的总量。格式化后的容量比非格式化容量要小</p>
+</li>
+<li>
+<p><strong>平均存取时间</strong>：平均存取时间由寻道时间（磁头移动到目的磁道的时间）、旋转延迟时间（磁头定位到要读写扇区的时间）和传输时间（传输数据所花费的时间）三部分构成。由于寻道和找扇区的距离远近不一，故寻道时间和旋转延迟时间通常取平均值</p>
+</li>
+<li>
+<p><strong>数据传输率</strong>：磁盘存储器在单位时间内向主机传送数据的字节数，称为数据传输率。假设磁盘转数为 <code>r</code> 转/秒，每条磁道容量为 <code>N</code> 字节，则数据传输率为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>r</mi></msub><mo>=</mo><mi>r</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">D_r = rN</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span></p>
+</li>
 </ul>
 </li>
 <li>
@@ -7793,15 +7805,27 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <p><strong>直接映射</strong></p>
 <p>主存中的每一块只能装入 Cache 中的唯一位置。若这个位置已有内容，则产生块冲突，原来的块将无条件地被替换出去（无须使用替换算法）。直接映射实现简单，但不够灵活，即使 Cache 的其他许多地址空着也不能占用，这使得直接映射的块冲突概率最高，空间利用率最低。</p>
 <p>直接映射的关系可定义为：<em>Cache 行号 = 主存块号 mod Cache 总行数</em></p>
+<p>直接相联映射的地址结构为：<em>标记 - Cache 行号 - 块内地址</em></p>
 </li>
 <li>
 <p><strong>全相联映射</strong></p>
 <p>主存中的每一块可以装入 Cache 中的任何位置，每行的标记用于指出该行取自主存的哪一块，所以 CPU 访存时需要与所有 Cache 行的标记进行比较。<strong>全相联映射方式的优点</strong>：比较灵活，Cache 块的冲突概率低，空间利用率高，命中率也高；<strong>缺点</strong>：标记的比较速度较慢，实现成本较高，通常需要采用昂贵的按内容寻址的相联存储器进行地址映射。</p>
+<p>全相联映射的地址结构为：<em>标记 - 块内地址</em></p>
+</li>
+<li>
+<p><strong>组相联映射</strong></p>
 <p>将 Cache 分成 <code>Q</code> 个大小相等的组，每个主存块可以装入固定组中的任意一行，即组间采用直接映射、而组内采用全相联映射的方式。它是对直接映射和全相联映射的一种折中，当 <code>Q = 1</code> 时变为全相联映射，当 <code>Q = Cache</code> 行数时变为直接映射。假设每组有 <code>r</code> 个 Cache 行，则称之为 <code>r</code> 路组相联。例如：每组有 <code>2</code> 个 Cache 行，因此称为二路组相联。</p>
 <p>组相联映射的关系可以定义为：<em>Cache 组号 = 主存块号 mod Cache 组数（Q）</em></p>
 <p>路数越大，即每组 Cache 行的数量越大，发生块冲突的概率越低，但相联比较电路也越复杂。选定适当的数量，可使组相联映射的成本接近直接映射，而性能上仍接近全相联映射。</p>
+<p>组相联映射的地址结构为：<em>标记 - 组号 - 块内地址</em></p>
 </li>
 </ol>
+<p>三种映射方式中，直接映射的每个主存块只能映射到 Cache 中的某一固定行；全相联映射可以映射到所有 Cache 行；N 路组相联映射可以映射到 N 行。当 Cache 大小、主存块大小一定时：</p>
+<ul>
+<li>直接映射的命中率最低，全相联映射的命中率最高</li>
+<li>直接映射的判断开销最小、所需时间最短，全相联映射的判断开销最大、所需时间最长</li>
+<li>直接映射标记所占的额外空间开销最少，全相联映射标记所占的额外空间开销最大</li>
+</ul>
 <h4> Cache 中主存块的替换算法</h4>
 <p>在采用全相联映射或组相联映射方式时，从主存向 Cache 传送一个新块，当 Cache 或 Cache 组中的空间已被占满时，就需要使用替换算法置换 Cache 行。而采用直接映射时，一个给定的主存块只能放到唯一的固定 Cache 行中，所以在对应 Cache 行已有一个主存块的情况下，新的主存块毫无选择地把原先已有的那个主存块替换掉，因而无须考虑替换算法。</p>
 <p><strong>常用的替换算法</strong> 有随机（RAND）算法、先进先出（FIFO）算法、近期最少使用（LRU）算法和最不经常使用（LFU）算法。</p>
@@ -7958,7 +7982,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <p>给出 <strong>操作码 OP</strong>，三个地址码 A<sub>1</sub>、A<sub>2</sub> 和 A<sub>3</sub>（结果）。</p>
 <ul>
 <li>指令含义：(A<sub>1</sub>)OP(A<sub>2</sub>)→A<sub>3</sub></li>
-<li>若指令字长为 <code>32</code> 位，操作码占 <code>8</code> 位，三个地址码字段各占 <code>8</code> 位，则指令操作数的直接寻址范围为 <code>28 = 256</code>。若地址字段均为主存地址，则完成一条三地址需要 <code>4</code> 次访问存储器（取指令 <code>1</code> 次，取两个操作数 <code>2</code> 次，存放结果 <code>1</code> 次）。</li>
+<li>若指令字长为 <code>32</code> 位，操作码占 <code>8</code> 位，三个地址码字段各占 <code>8</code> 位，则指令操作数的直接寻址范围为 <code>28 = 256</code>。若地址字段均为主存地址，则完成一条三地址需要 <code>4</code> 次访问存储器（取指令 <code>1</code> 次，取两个操作数 <code>2</code> 次，存放结果 <code>1</code> 次）</li>
 </ul>
 </li>
 <li>
@@ -8054,7 +8078,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 </li>
 <li>
 <p><strong>寄存器寻址</strong></p>
-<p>指在指令字中直接给出操作数所在的寄存器编号，即 EA = R<sub>i</sub>，其操作数在由 R<sub>i</sub>，所指的寄存器内。</p>
+<p>指在指令字中直接给出操作数所在的寄存器编号，即 EA = R<sub>i</sub>，其操作数在由 R<sub>i</sub> 所指的寄存器内。</p>
 <p><strong>优点</strong> 是指令在执行阶段不访问主存，只访问寄存器，因寄存器数量较少，对应地址码长度较小，使得指令字短且因不用访存，所以执行速度快，支持向量/矩阵运算；<strong>缺点</strong> 是寄存器价格昂贵，计算机中的寄存器个数有限。</p>
 </li>
 <li>
@@ -8064,7 +8088,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 </li>
 <li>
 <p><strong>相对寻址</strong></p>
-<p>把 PC 的内容加上指令格式中的形式地址 A 而形成操作数的有效地址，即 <code>EA = (PC) + A</code>，其中 A 是相对于当前 PC 值的位移量，可正可负，补码表示。</p>
+<p>把 PC 的内容加上指令格式中的形式地址 A 而形成操作数的有效地址，即 <code>EA = (PC) + A</code>，其中 A 是相对于 PC 所指地址的位移量，可正可负，补码表示。</p>
 <p><strong>优点</strong> 是操作数的地址不是固定的，它随 PC 值的变化而变化，且与指令地址之间总是相差一个固定值，因此便于程序浮动。相对寻址广泛应用于转移指令（JMPA）。</p>
 </li>
 <li>
@@ -8150,20 +8174,20 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 </li>
 <li>
 <p><strong>汇编指令格式</strong></p>
-<p>使用不同的编程工具开发程序时，用到的汇编程序也不同，一般有两种不同的汇编格式：</p>
-</li>
-</ol>
+<p>使用不同的编程工具开发程序时，用到的汇编程序也不同，一般有两种不同的汇编格式，<code>AT&amp;T</code>（Unix、Linux 常用格式）和 <code>Inter</code>（Windows 常用格式）。区别如下：</p>
 <ul>
 <li><code>AT&amp;T</code> 格式的指令只能用小写字母，而 <code>Intel</code> 格式的指令对大小写不敏感</li>
 <li>在 <code>AT&amp;T</code> 格式中，第一个为源操作数，第二个为目的操作数，方向从左到右，合乎自然；在 <code>Intel</code> 格式中，第一个为目的操作数，第二个为源操作数，方向从右向左</li>
 <li>在 <code>AT&amp;T</code> 格式中，寄存器需要加前缀 <code>%</code>，立即数需要加前缀 <code>$</code>；在 <code>Intel</code> 格式中，寄存器和立即数都不需要加前缀</li>
 <li>在内存寻址方面，<code>AT&amp;T</code> 格式使用 <code>(</code> 和 <code>)</code>，而 <code>Intel</code> 格式使用 <code>[</code> 和 <code>]</code>。在处理复杂寻址方式时，例如：<code>AT&amp;T</code> 格式的内存操作数 <code>disp(base, index, scale)</code> 分别表示偏移量、基址寄存器、变址寄存器和比例因子，如 <code>8(%edx, %eax, 2)</code> 表示操作数为 <code>M[R[edx] + R[eax]*2 + 8]</code>，其对应的 <code>Intel</code> 格式的操作数为 <code>[edx + eax*2 + 8]</code></li>
-<li>在指定数据长度方面，<code>AT&amp;T</code> 格式指令操作码的后面紧跟一个字符，表明操作数大小，<code>b</code> 表示 byte（字节）、<code>w</code> 表示 word（字）或 <code>l</code> 表示 long（双字）。<code>Intel</code> 格式也有类似的语法，它在操作码后面显式地注明byte ptr、word ptr 或 dword ptr</li>
+<li>在指定数据长度方面，<code>AT&amp;T</code> 格式指令操作码的后面紧跟一个字符，表明操作数大小，<code>b</code> 表示 byte（字节）、<code>w</code> 表示 word（字）或 <code>l</code> 表示 long（双字）。<code>Intel</code> 格式也有类似的语法，它在操作码后面显式地注明 byte ptr、word ptr 或 dword ptr</li>
 </ul>
 <div class="hint-container warning">
 <p class="hint-container-title">注意</p>
 <p>由于 <code>32</code> 或 <code>64</code> 位体系结构都是由 <code>16</code> 位扩展而来的，因此用 word（字）表示 <code>16</code> 位</p>
 </div>
+</li>
+</ol>
 <h4> 选择语句的机器级表示</h4>
 <p>常见的选择结构语句有 <code>if-then</code>、<code>if-then-else</code>、<code>case</code>（或 <code>switch</code>）等。编译器通过条件码（标志位）设置指令和各类转移指令来实现程序中的选择结构语句。</p>
 <h4> 循环语句的机器级表示</h4>
@@ -8912,7 +8936,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <li><strong>优点</strong>：总线周期长度可变，能保证两个工作速度相差很大的部件或设备之间可靠地进行信息交换，自动适应时间的配合</li>
 <li><strong>缺点</strong>：比同步控制方式稍复杂一些，速度比同步定时方式慢</li>
 </ul>
-<p>根据 “请求” 和 “回答” 信号的撤销是否互锁，异<strong>步定时方式又分为以下三种类型：</strong></p>
+<p>根据 “请求” 和 “回答” 信号的撤销是否互锁，<strong>异步定时方式又分为以下三种类型：</strong></p>
 <ul>
 <li><strong>不互锁方式</strong>：主设备发出 “请求” 信号后，不必等到接到从设备的 “回答” 信号，而是经过一段时间便撤销 “请求” 信号。而从设备在接到 “请求” 信号后，发出 “回答” 信号，并经过一段时间后自动撤销 “回答” 信号。双方不存在互锁关系</li>
 <li><strong>半互锁方式</strong>：主设备发出 “请求” 信号后，必须在接到从设备的 “回答” 信号后，才撤销 “请求” 信号，有互锁的关系。而从设备在接到 “请求” 信号后，发出 “回答” 信号，但不必等待获知主设备的 “请求” 信号已经撤销，而是隔一段时间后自动撤销 “回答” 信号，不存在互锁关系</li>
@@ -9199,7 +9223,7 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <ul>
 <li><strong>预处理</strong>：由 CPU 完成一些必要的准备工作。首先，CPU 执行几条 <code>I/O</code> 指令，用以测试 <code>I/O</code> 设备状态，初始化 DMA 控制器中的有关寄存器、设置传送方向、启动该设备等。然后，CPU 继续执行原来的程序，直到 <code>I/O</code> 设备准备好发送的数据（输入情况）或接收的数据（输出情况）时，<code>I/O</code> 设备向 DMA 控制器发送 DMA 请求，再由 DMA 控制器向 CPU 发送总线请求（有时将这两个过程统称为 DMA 请求），用以传输数据</li>
 <li><strong>数据传送</strong>：DMA 的数据传输可以以单字节（或字）为基本单位，也可以以数据块为基本单位。对于以数据块为单位的传送（如：硬盘），DMA 占用总线后的数据输入和输出操作都是通过循环来实现的。需要指出的是，这一循环也是由 DMA 控制器（而非通过 CPU 执行程序）实现的，即数据传送阶段完全由 DMA（硬件）控制</li>
-<li><strong>后处理</strong>：DMA 控制器向 CPU 发送中断请求，CPU 执行中断服务程序做 DMA 结束处理，包括校验送入主存的数据是否正确、测试传送过程中是否出错（错误则转诊断程序）及决定是否继续使用 DMA 传送其他数据等。</li>
+<li><strong>后处理</strong>：DMA 控制器向 CPU 发送中断请求，CPU 执行中断服务程序做 DMA 结束处理，包括校验送入主存的数据是否正确、测试传送过程中是否出错（错误则转诊断程序）及决定是否继续使用 DMA 传送其他数据等</li>
 </ul>
 </li>
 <li>
