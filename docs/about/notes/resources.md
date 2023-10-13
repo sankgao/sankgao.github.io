@@ -12,6 +12,10 @@ tag:
 
 ## 博客
 
+- [安娜的博客](https://annas-blog.org/)
+
+    创建了安娜档案馆，世界上最大的影子图书馆。这是我的个人博客，我和我的队友在其中撰写有关盗版、数字保存等内容的文章。
+
 - [勿埋我心](https://www.skyqian.com/)
 
     Python、Java、兴趣分享、typecho、独立博客、文艺控。
@@ -179,6 +183,7 @@ tag:
 - [网罗灯下黑-爱折腾 不将就](https://wldxh.com/)
 - [酷库博客](https://www.zxki.cn/)
 - [小思科技](https://xiaosikeji.cn/)
+- [鸭先知 - 坚持以不付费的伟大原则获取资源](https://www.yxzhi.com/)
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://pan666.net/)
 - [个人收集资源2](https://pan666.net/d/164012-2)
@@ -322,7 +327,7 @@ tag:
 - [术语在线](http://www.termonline.cn/)
 - [一个全本小说网](https://www.quanben.io/)
 - [小说电子书存档网站](https://beitai.cc/)
-- [寻书 - 电子书综合搜索平台](https://xunshu.xyz/)
+- [寻书 - 电子书综合搜索平台](https://www.xunshu.xyz/#/)
 - [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
 
 ## 工具
