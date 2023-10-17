@@ -205,6 +205,7 @@ tag:
 - [适合浪漫之夜听的 BGM](https://space.bilibili.com/596838597/channel/seriesdetail?sid=3039785)
 - [Lemmy – 一个联邦宇宙的链接聚合器和论坛](https://join-lemmy.org/)
 - [昆虫肖像](http://microsculpture.net/)
+- [视频、书籍、图片网站合集](https://geekerline.com/circle/74567.html)
 
 ## 教程
 
@@ -454,6 +455,8 @@ tag:
 - [易笺 —— txt 电脑在线阅读器](https://txt.xrl.app/)
 - [龙门影视 —— #Windows #Android #TV](https://www.looo.top/)
 - [Vega AI 绘画](https://rightbrain.art/)
+- [搜索磁力资源](https://b5rjqeypid8k5ll3.xyz/)
+- [磁力链](http://www.cilil.cn/)
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
 - [m3u8 在线播放器](https://m3u8-player.com/)
 - [MAGNET VIP - 好用的磁力转种子工具](https://magnet-vip.com/)
@@ -463,6 +466,9 @@ tag:
 - [Hitomi - 用于从各种网站下载文本视频](https://github.com/KurtBestor/Hitomi-Downloader)
 - [Memword - 在线单词记忆工具](https://danci.0231019.top/)
 - [方格音乐 - 免费的无损音乐播放器：安卓需要激活码，目前安卓端激活码为：2080](http://fonger.top/)
+- [在线搭建 3D 乐高积木](https://www.mecabricks.com/en)
+- [AutoPager - 油猴脚本 一键打包下载图片](https://geekerline.com/circle/74447.html)
+- [跳过付费墙网页工具 解锁各种付费内容](https://geekerline.com/circle/74449.html)
 
 ## 图片
 
@@ -493,4 +499,5 @@ tag:
 - [电视眼](http://www.tvyan.com/)
 - [西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)
 - [阿里云盘 - 四大名著](https://www.aliyundrive.com/s/K7eMj7Kt8Rq)
+- [爽文短剧合集（在线播放）](https://docs.qq.com/document/DT3hLYnpta3ZGSlpZ)
 - [tiktok 视频](https://tik.fail/)
