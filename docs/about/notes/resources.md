@@ -231,6 +231,7 @@ tag:
 - [代码学院](https://www.codecademy.com/learn)
 - [C 语言中文网](http://c.biancheng.net/)
 - [Real Python 教程](https://realpython.com/)
+- [Python 技术站](https://pythonjishu.com/)
 - [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 - [在线学习 Python、ChatGPT、SQL、Power BI](https://www.datacamp.com/)
 - [How2J 的 Java 教程](https://how2j.cn/)
@@ -263,6 +264,7 @@ tag:
 - [阿里云盘 - 马哥教育 Python 全栈](https://www.aliyundrive.com/s/nKfSf9ZC5y3)
 - [阿里云盘 - Kubernetes 应用实战](https://www.aliyundrive.com/s/UAfY8SfWjHb)
 - [阿里云盘 - 51CTO 学堂 Kubernetes 学习](https://www.aliyundrive.com/s/UAfY8SfWjHb)
+- [阿里云盘 - 51CTO 学堂 python 网络爬虫 学习](https://www.aliyundrive.com/s/VU9xZvwqdnk)
 - [阿里云盘 - B 站 Java 黑马程序员学习](https://www.aliyundrive.com/s/AU8Fu91ffms)
 - [阿里云盘 - B 站 Java 架构学习](https://www.aliyundrive.com/s/L6PQUe3CKN3)
 - [阿里云盘 - B 站 Git 实战](https://www.aliyundrive.com/s/EpaPhrhXHht)
@@ -309,6 +311,7 @@ tag:
 
 ## 书籍
 
+- [寻书 - 电子书综合搜索平台](https://www.xunshu.xyz/#/)
 - [书栈网](https://www.bookstack.cn/)
 - [码农书籍网](https://www.manongbook.com/)
 - [码农之家](https://www.xz577.com/)
@@ -328,7 +331,6 @@ tag:
 - [术语在线](http://www.termonline.cn/)
 - [一个全本小说网](https://www.quanben.io/)
 - [小说电子书存档网站](https://beitai.cc/)
-- [寻书 - 电子书综合搜索平台](https://www.xunshu.xyz/#/)
 - [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
 
 ## 工具
@@ -469,6 +471,7 @@ tag:
 - [在线搭建 3D 乐高积木](https://www.mecabricks.com/en)
 - [AutoPager - 油猴脚本 一键打包下载图片](https://geekerline.com/circle/74447.html)
 - [跳过付费墙网页工具 解锁各种付费内容](https://geekerline.com/circle/74449.html)
+- [WinKawaks 街机游戏合集](https://mp.weixin.qq.com/s/hqYDl42hf_hou88sjg3XMQ)
 
 ## 图片
 
