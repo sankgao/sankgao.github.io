@@ -474,6 +474,7 @@ tag:
 - [跳过付费墙网页工具 解锁各种付费内容](https://geekerline.com/circle/74449.html)
 - [WinKawaks 街机游戏合集](https://mp.weixin.qq.com/s/hqYDl42hf_hou88sjg3XMQ)
 - [国外匿名多人文件共享空间](https://geekerline.com/circle/74613.html)
+- [中国亲戚关系计算器](https://passer-by.com/relationship/)
 
 ## 图片
 
