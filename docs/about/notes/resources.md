@@ -12,6 +12,10 @@ tag:
 
 ## 博客
 
+- [Java 全栈知识体系](https://www.pdai.tech/)
+
+    包含：Java 基础, Java 部分源码, JVM, Spring, Spring Boot, Spring Cloud, 数据库原理, MySQL, ElasticSearch, MongoDB, Docker, k8s, CI&CD, Linux, DevOps, 分布式, 中间件, 开发工具, Git, IDE, 源码阅读，读书笔记, 开源项目...
+
 - [安娜的博客](https://annas-blog.org/)
 
     创建了安娜档案馆，世界上最大的影子图书馆。这是我的个人博客，我和我的队友在其中撰写有关盗版、数字保存等内容的文章。
@@ -162,6 +166,7 @@ tag:
 - [QA Stack](https://qastack.cn/)
 - [技术分享平台](https://www.saoniuhuo.com/)
 - [计算机面试求职网站](https://top.interviewguide.cn/)
+- [学习路线图](https://roadmap.sh/)
 - [VuePress](https://v2.vuepress.vuejs.org/zh/)
 - [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
 - [蓝桥杯](http://lx.lanqiao.cn/)
@@ -244,8 +249,10 @@ tag:
 - [Egon 林海峰](https://egonlin.com/)
 - [黑马人工智能 AI](https://pan.quark.cn/s/a8a9fc9117c7#/list/share)
 - [一份在线 AI 知识库 - 通往 AGI 之路](https://ywh1bkansf.feishu.cn/wiki/QPe5w5g7UisbEkkow8XcDmOpn8e)
+- [人工智能教程](https://www.captainai.net/)
 - [编程开发](https://pan.quark.cn/s/d9abda715244#/list/share)
 - [Java 程序员的系列教程](https://github.com/crisxuan/bestJavaer)
+- [Java 全栈知识体系](https://www.pdai.tech/)
 - [最新技术开发教程](https://geekerline.com/circle/13264.html)
 - [编程集教程](https://geekerline.com/circle/44550.html)
 - [综合资源教程](https://geekerline.com/circle/12921.html)
