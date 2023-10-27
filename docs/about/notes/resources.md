@@ -482,6 +482,8 @@ tag:
 - [WinKawaks 街机游戏合集](https://mp.weixin.qq.com/s/hqYDl42hf_hou88sjg3XMQ)
 - [国外匿名多人文件共享空间](https://geekerline.com/circle/74613.html)
 - [中国亲戚关系计算器](https://passer-by.com/relationship/)
+- [V2free 翻墙](https://w1.v2free.top/)
+- [ComicTv - 摸鱼](http://neos55555.gitee.io/comictv/)
 
 ## 图片
 
