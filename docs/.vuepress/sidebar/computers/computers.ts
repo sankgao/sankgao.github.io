@@ -10,6 +10,7 @@ export const computers = arraySidebar([
       "computer_organization",
       "operating_system",
       "computer_network",
+      "data_structure",
     ],
   },
   {
