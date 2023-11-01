@@ -7,7 +7,7 @@ article: false
 breadcrumb: false
 ---
 
-网站使用 [VuePress v2](https://vuejs.press/zh) 构建，使用主题 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/)。
+网站使用 [VuePress v2](https://v2.vuepress.vuejs.org/zh/) 构建，使用主题 [VuePress Theme Hope](https://theme-hope.vuejs.press/zh/)。
 
 ## 插件
 
