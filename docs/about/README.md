@@ -34,3 +34,4 @@ tag:
 - [PicGo](./tools/picgo.md)
 - [VS Code](./tools/vscode.md)
 - [阿里云盘自动签到](./tools/ali_cloud_disk.md)
+- [MobaXterm](./tools/mobaxterm.md)

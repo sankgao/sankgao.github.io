@@ -41,6 +41,7 @@ export const about = arraySidebar([
       "picgo.md",
       "vscode.md",
       "ali_cloud_disk.md",
+      "mobaxterm.md",
     ],
   },
 ]);
