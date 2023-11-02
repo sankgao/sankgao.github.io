@@ -6,19 +6,164 @@
     <link>https://sankgao.github.io/</link>
     <description>使用 VuePress-v2 搭建的个人博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 01 Nov 2023 06:52:17 GMT</pubDate>
-    <lastBuildDate>Wed, 01 Nov 2023 06:52:17 GMT</lastBuildDate>
+    <pubDate>Thu, 02 Nov 2023 10:58:02 GMT</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2023 10:58:02 GMT</lastBuildDate>
     <generator>vuepress-plugin-feed2</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <copyright>基于 MIT 协议，© 2023-至今 Sankgao</copyright>
+    <category>About</category>
     <category>Computer</category>
     <category>其它</category>
-    <category>About</category>
     <category>DevOps</category>
     <category>Languages</category>
     <category>Framework</category>
     <category>Tools</category>
     <category>Frontend</category>
+    <item>
+      <title>MobaXterm</title>
+      <link>https://sankgao.github.io/about/tools/mobaxterm.html</link>
+      <guid>https://sankgao.github.io/about/tools/mobaxterm.html</guid>
+      <source url="https://sankgao.github.io/rss.xml">MobaXterm</source>
+      <description>官网下载 MobaXterm (https://mobaxterm.mobatek.net/download.html) 基本使用 连接主机 打开软件，右上角点击 Session 选择 SSH，如下图所示： 连接主机 Remote host：连接的 IP 地址; Specif username：用户名; Port：连接的端口号; 上传下载 连接主机后，...</description>
+      <category>About</category>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<p>官网下载 <a href="https://mobaxterm.mobatek.net/download.html" target="_blank" rel="noopener noreferrer">MobaXterm</a></p>
+<h2> 基本使用</h2>
+<h3> 连接主机</h3>
+<p>打开软件，右上角点击 <code>Session</code> 选择 <code>SSH</code>，如下图所示：</p>
+<figure><figcaption>连接主机</figcaption></figure>
+<ul>
+<li><strong>Remote host</strong>：连接的 IP 地址</li>
+<li><strong>Specif username</strong>：用户名</li>
+<li><strong>Port</strong>：连接的端口号</li>
+</ul>
+<h3> 上传下载</h3>
+<p>连接主机后，在软件左侧选择 <code>xftp</code> 可以直接上传下载文件。</p>
+<h3> 左下角功能</h3>
+<p>连接主机后，在软件左下角有两个选项 <code>Remote monitoring</code> 和 <code>Follow terminal folder</code>，如下图所示：</p>
+<figure><figcaption>左下角</figcaption></figure>
+<ul>
+<li><strong>Remote monitoring</strong>：可以在终端最下面显示连接主机的主机名、CPU、内存等</li>
+<li><strong>Follow terminal folder</strong>：可以使 Sftp 目录与会话窗口所在目录同步</li>
+</ul>
+<h3> 默认复制</h3>
+<p>在会话窗口中鼠标选中的内容，默认已经复制到粘贴板中，可以使用 <kbd>Ctrl</kbd> + <kbd>V</kbd> 复制到其他地方</p>
+<h3> 多个窗口执行相同命令</h3>
+<p>连接多台主机，在工具栏中选择 <code>MultiExec</code> 选项，会话窗口变成多个窗口，并在其中一个会话窗口中输入命令，其他窗口也会输入相同命令。</p>
+<p>如果想让某台主机不自动输入，在会话窗口中勾选 <code>exclude &lt;localhost&gt; from MultiExec mode</code> 选项。</p>
+<p>点击右上角 <code>Exit multi-execution mode</code> 退出。</p>
+<h2> 常用设置</h2>
+<h3> 设置字体大小</h3>
+<ul>
+<li>
+<p><strong>方法一</strong>：工具栏依次点击 <code>Settings -&gt; Configuration -&gt; Terminal</code>，选择 <code>Default terminal font settings</code>，设置 <code>Size</code></p>
+<ul>
+<li>MobaXterm 低版本 <code>Size</code> 选项在 <code>Settings -&gt; Configuration -&gt; Terminal</code> 页面中</li>
+</ul>
+</li>
+<li>
+<p><strong>方法二</strong>：使用 <kbd>Ctrl</kbd> + <kbd>鼠标滚轮</kbd></p>
+</li>
+</ul>
+<h3> 打开右键粘贴功能</h3>
+<p>工具栏依次点击 <code>Settings -&gt; Configuration -&gt; Terminal</code>，勾选 <code>Paste using right-click</code>，如下图所示：</p>
+<figure><figcaption>使用右键单击粘贴</figcaption></figure>
+<h3> SSH 保持连接</h3>
+<p>SSH 远程连接会在无操作时自动断开。</p>
+<p>工具栏依次点击 <code>Settings -&gt; Configuration -&gt; SSH</code>，勾选 <code>SSH keepalive</code> 避免 SSH 断开连接。</p>
+<h3> 保存密码</h3>
+<p>工具栏依次点击 <code>Settings -&gt; Configuration -&gt; General</code>，选择 <code>MobaXterm passwords management</code>。</p>
+<p>这个页面可以管理密码，还可以设置保存会话密码。</p>
+<ul>
+<li><strong>Always</strong>：连接终端时，总是保存密码，不进行提示</li>
+<li><strong>Never</strong>：连接终端时，总是不保存密码，不进行提示</li>
+<li><strong>Ask</strong>：连接终端时，提示是否保存密码</li>
+</ul>
+<h3> 创建目录分类管理</h3>
+<p>当连接的终端较多时，可以创建目录，分类管理终端。</p>
+<p>右键点击 <code>User sessions</code>，选择 <code>New folder</code> 创建目录。</p>
+<p>创建目录后，可以 <strong>右键点击目录</strong>，进行新建终端；也可以将终端 <strong>通过鼠标直接拖</strong> 到指定目录下。</p>
+<h2> 解除最多保存 14 个会话的限制</h2>
+<p>最多只能保存 14 个会话，再新增会话时不会保存，导致后续远程连接每次必须重新输入会话信息。</p>
+<p><strong>解决方法如下：</strong></p>
+<ol>
+<li>
+<p><strong>克隆 <a href="https://github.com/flygon2018/MobaXterm-keygen" target="_blank" rel="noopener noreferrer">GitHub 仓库</a></strong></p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></li>
+<li>
+<p><strong>查看 MobaXterm 版本</strong></p>
+<p>例如 MobaXterm 版本为：<code>v22.0</code></p>
+</li>
+<li>
+<p><strong>查看当前计算机的用户名</strong></p>
+<p>例如当前计算机的用户名为：<code>Administrator</code></p>
+</li>
+<li>
+<p><strong>生成 Custom.mxtpro 文件</strong></p>
+<p>在 Windows 中按 <kbd>Win</kbd> + <kbd>R</kbd> 键，在运行中输入 <code>cmd</code> 打开终端控制器，并进入到刚克隆的 <code>MobaXterm-keygen</code> 目录中，执行以下命令：</p>
+<div class="language-python line-numbers-mode" data-ext="py"><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>执行完成后，会在当前目录下生成 <code>Custom.mxtpro</code> 文件。</p>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>只支持 Python2.x，不支持 Python3.x。命令最后的版本 <strong>不加 v</strong></p>
+</div>
+</li>
+<li>
+<p><strong>将 Custom.mxtpro 文件复制到 MobaXterm 安装目录下</strong></p>
+<p>找到 MobaXterm 安装目录。可以通过右键桌面 MobaXterm 图标，选择 <strong>打开文件所在的位置。</strong></p>
+<p>将 <code>Custom.mxtpro</code> 文件，复制到 MobaXterm 安装目录下。</p>
+</li>
+<li>
+<p><strong>重启 MobaXterm</strong></p>
+</li>
+</ol>
+<h2> 文件传输报错没有权限</h2>
+<p>文件传输报错 <strong>没有权限</strong>，是因为要上传的目录不是当前 SSH 连接的用户，目录默认只有创建这个目录的用户才有写入的权限，所以报错没有权限。</p>
+<p><strong>解决方法：</strong></p>
+<ul>
+<li><strong>方法一</strong>：使用 <code>chomd</code> 修改目录权限，使其他用户也有写入的权限</li>
+<li><strong>方法二</strong>：将文件传输到当前 SSH 连接的用户主目录下，再将文件通过 <code>mv</code> 移动到指定目录中</li>
+</ul>
+<h2> 快捷键</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">功能描述</th>
+<th style="text-align:left">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">切换全屏模式</td>
+<td style="text-align:left"><kbd>F11</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">清除画面</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>L</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">显示/隐藏侧边栏</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">开始新的远程会话</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">向前切换会话窗口</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>RightArrow</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">向后切换会话窗口</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd></td>
+</tr>
+<tr>
+<td style="text-align:left">在当前会话窗口中查找</td>
+<td style="text-align:left"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+    </item>
     <item>
       <title>数据结构</title>
       <link>https://sankgao.github.io/computers/base/data_structure.html</link>
@@ -6253,7 +6398,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
       <link>https://sankgao.github.io/others/books.html</link>
       <guid>https://sankgao.github.io/others/books.html</guid>
       <source url="https://sankgao.github.io/rss.xml">书籍</source>
-      <description>以下均为电子书籍。 计算机 [x] 《王道 2024 计算机组成原理》; [x] 《王道 2024 操作系统》; [ ] 《王道 2024 计算机网络》; [ ] 《王道 2024 数据结构》; [x] 《零基础学 Python（全彩版）》; [x] 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》; [x] 《漫画算法：小灰的算法之旅（P...</description>
+      <description>以下均为电子书籍。 计算机 [x] 《王道 2024 计算机组成原理》; [x] 《王道 2024 操作系统》; [x] 《王道 2024 计算机网络》; [x] 《王道 2024 数据结构》; [ ] 《计算机组成与设计 硬件软件接口 原书第5版》; [x] 《零基础学 Python（全彩版）》; [x] 《看漫画学 Python：有趣、有料、好玩、...</description>
       <category>其它</category>
       <pubDate>Fri, 15 Sep 2023 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[<p>以下均为电子书籍。</p>
@@ -6261,43 +6406,44 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <ul class="task-list-container">
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> 《王道 2024 计算机组成原理》</label></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> 《王道 2024 操作系统》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 《王道 2024 计算机网络》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 《王道 2024 数据结构》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 《零基础学 Python（全彩版）》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> 《漫画算法：小灰的算法之旅（Python 篇）》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 《王道 2024 计算机网络》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> 《王道 2024 数据结构》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> 《计算机组成与设计 硬件软件接口 原书第5版》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> 《零基础学 Python（全彩版）》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> 《漫画算法：小灰的算法之旅（Python 篇）》</label></li>
 </ul>
 <h2> 文学</h2>
 <ul class="task-list-container">
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> 《活着》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> 《许三观卖血记》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-9" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-9"> 《在细雨中呼喊》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-10" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-10"> 《兄弟》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-11" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-11"> 《酒国》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-12" disabled="disabled"><label class="task-list-item-label" for="task-item-12"> 《朝花夕拾》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> 《活着》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-9" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-9"> 《许三观卖血记》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-10" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-10"> 《在细雨中呼喊》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-11" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-11"> 《兄弟》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-12" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-12"> 《酒国》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-13" disabled="disabled"><label class="task-list-item-label" for="task-item-13"> 《朝花夕拾》</label></li>
 </ul>
 <h2> 小说</h2>
 <ul class="task-list-container">
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-13" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-13"> 《斗罗大陆》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-14" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-14"> 《斗罗大陆Ⅱ绝世唐门》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-15" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-15"> 《斗罗大陆Ⅲ龙王传说》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-16" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-16"> 《斗罗大陆Ⅳ终极斗罗》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-17" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-17"> 《斗罗大陆Ⅴ重生唐三》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-18" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-18"> 《天珠变》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-19" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-19"> 《善良的死神》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-20" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-20"> 《遮天》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-21" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-21"> 《完美世界》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-22" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-22"> 《圣墟》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-23" disabled="disabled"><label class="task-list-item-label" for="task-item-23"> 《神墓》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-24" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-24"> 《凡人修仙传》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-25" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-25"> 《凡人修仙之仙界篇》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-26" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-26"> 《斗破苍穹》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-27" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-27"> 《武动乾坤》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-28" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-28"> 《大主宰》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-29" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-29"> 《元尊》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-30" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-30"> 《仙逆》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-31" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-31"> 《一念永恒》</label></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-32" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-32"> 《绝世武神》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-14" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-14"> 《斗罗大陆》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-15" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-15"> 《斗罗大陆Ⅱ绝世唐门》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-16" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-16"> 《斗罗大陆Ⅲ龙王传说》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-17" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-17"> 《斗罗大陆Ⅳ终极斗罗》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-18" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-18"> 《斗罗大陆Ⅴ重生唐三》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-19" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-19"> 《天珠变》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-20" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-20"> 《善良的死神》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-21" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-21"> 《遮天》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-22" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-22"> 《完美世界》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-23" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-23"> 《圣墟》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-24" disabled="disabled"><label class="task-list-item-label" for="task-item-24"> 《神墓》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-25" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-25"> 《凡人修仙传》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-26" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-26"> 《凡人修仙之仙界篇》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-27" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-27"> 《斗破苍穹》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-28" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-28"> 《武动乾坤》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-29" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-29"> 《大主宰》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-30" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-30"> 《元尊》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-31" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-31"> 《仙逆》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-32" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-32"> 《一念永恒》</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-33" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-33"> 《绝世武神》</label></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -9558,6 +9704,7 @@ M834 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist
 <li><a href="/about/tools/picgo.html" target="blank">PicGo</a></li>
 <li><a href="/about/tools/vscode.html" target="blank">VS Code</a></li>
 <li><a href="/about/tools/ali_cloud_disk.html" target="blank">阿里云盘自动签到</a></li>
+<li><a href="/about/tools/mobaxterm.html" target="blank">MobaXterm</a></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -36580,1823 +36727,6 @@ ROM 和 RAM 都是支持随机访问的存储器，其中 SRAM 和 DRAM 均为�
 <tr>
 <td style="text-align:center">toDataURL()</td>
 <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>字符集</title>
-      <link>https://sankgao.github.io/languages/html5/references/charactersets.html</link>
-      <guid>https://sankgao.github.io/languages/html5/references/charactersets.html</guid>
-      <source url="https://sankgao.github.io/rss.xml">字符集</source>
-      <description>下面为常见的 HTML 字符集，HTML5 中的默认字符集为 UTF-8。 数字 ASCII ANSI 8859-1 UTF-8 描述 :----: :----: :----: :----: :----: :---- 32 space 33 ! ! ! ! exclamation mark 34 &amp;quot; &amp;quot; &amp;quot; &amp;quot; quotation mark 35 # ...</description>
-      <category>Frontend</category>
-      <pubDate>Fri, 12 May 2023 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<p>下面为常见的 HTML 字符集，HTML5 中的默认字符集为 <code>UTF-8</code>。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">数字</th>
-<th style="text-align:center">ASCII</th>
-<th style="text-align:center">ANSI</th>
-<th style="text-align:center">8859-1</th>
-<th style="text-align:center">UTF-8</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">32</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">space</td>
-</tr>
-<tr>
-<td style="text-align:center">33</td>
-<td style="text-align:center">!</td>
-<td style="text-align:center">!</td>
-<td style="text-align:center">!</td>
-<td style="text-align:center">!</td>
-<td style="text-align:left">exclamation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">34</td>
-<td style="text-align:center">"</td>
-<td style="text-align:center">"</td>
-<td style="text-align:center">"</td>
-<td style="text-align:center">"</td>
-<td style="text-align:left">quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">35</td>
-<td style="text-align:center">#</td>
-<td style="text-align:center">#</td>
-<td style="text-align:center">#</td>
-<td style="text-align:center">#</td>
-<td style="text-align:left">number sign</td>
-</tr>
-<tr>
-<td style="text-align:center">36</td>
-<td style="text-align:center">$</td>
-<td style="text-align:center">$</td>
-<td style="text-align:center">$</td>
-<td style="text-align:center">$</td>
-<td style="text-align:left">dollar sign</td>
-</tr>
-<tr>
-<td style="text-align:center">37</td>
-<td style="text-align:center">%</td>
-<td style="text-align:center">%</td>
-<td style="text-align:center">%</td>
-<td style="text-align:center">%</td>
-<td style="text-align:left">percent sign</td>
-</tr>
-<tr>
-<td style="text-align:center">38</td>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:left">ampersand</td>
-</tr>
-<tr>
-<td style="text-align:center">39</td>
-<td style="text-align:center">'</td>
-<td style="text-align:center">'</td>
-<td style="text-align:center">'</td>
-<td style="text-align:center">'</td>
-<td style="text-align:left">apostrophe</td>
-</tr>
-<tr>
-<td style="text-align:center">40</td>
-<td style="text-align:center">(</td>
-<td style="text-align:center">(</td>
-<td style="text-align:center">(</td>
-<td style="text-align:center">(</td>
-<td style="text-align:left">left parenthesis</td>
-</tr>
-<tr>
-<td style="text-align:center">41</td>
-<td style="text-align:center">)</td>
-<td style="text-align:center">)</td>
-<td style="text-align:center">)</td>
-<td style="text-align:center">)</td>
-<td style="text-align:left">right parenthesis</td>
-</tr>
-<tr>
-<td style="text-align:center">42</td>
-<td style="text-align:center">*</td>
-<td style="text-align:center">*</td>
-<td style="text-align:center">*</td>
-<td style="text-align:center">*</td>
-<td style="text-align:left">asterisk</td>
-</tr>
-<tr>
-<td style="text-align:center">43</td>
-<td style="text-align:center">+</td>
-<td style="text-align:center">+</td>
-<td style="text-align:center">+</td>
-<td style="text-align:center">+</td>
-<td style="text-align:left">plus sign</td>
-</tr>
-<tr>
-<td style="text-align:center">44</td>
-<td style="text-align:center">,</td>
-<td style="text-align:center">,</td>
-<td style="text-align:center">,</td>
-<td style="text-align:center">,</td>
-<td style="text-align:left">comma</td>
-</tr>
-<tr>
-<td style="text-align:center">45</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">-</td>
-<td style="text-align:left">hyphen-minus</td>
-</tr>
-<tr>
-<td style="text-align:center">46</td>
-<td style="text-align:center">.</td>
-<td style="text-align:center">.</td>
-<td style="text-align:center">.</td>
-<td style="text-align:center">.</td>
-<td style="text-align:left">full stop</td>
-</tr>
-<tr>
-<td style="text-align:center">47</td>
-<td style="text-align:center">/</td>
-<td style="text-align:center">/</td>
-<td style="text-align:center">/</td>
-<td style="text-align:center">/</td>
-<td style="text-align:left">solidus</td>
-</tr>
-<tr>
-<td style="text-align:center">48</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:center">0</td>
-<td style="text-align:left">digit zero</td>
-</tr>
-<tr>
-<td style="text-align:center">49</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">1</td>
-<td style="text-align:left">digit one</td>
-</tr>
-<tr>
-<td style="text-align:center">50</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:center">2</td>
-<td style="text-align:left">digit two</td>
-</tr>
-<tr>
-<td style="text-align:center">51</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">3</td>
-<td style="text-align:center">3</td>
-<td style="text-align:left">digit three</td>
-</tr>
-<tr>
-<td style="text-align:center">52</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">4</td>
-<td style="text-align:center">4</td>
-<td style="text-align:left">digit four</td>
-</tr>
-<tr>
-<td style="text-align:center">53</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">5</td>
-<td style="text-align:center">5</td>
-<td style="text-align:left">digit five</td>
-</tr>
-<tr>
-<td style="text-align:center">54</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">6</td>
-<td style="text-align:center">6</td>
-<td style="text-align:left">digit six</td>
-</tr>
-<tr>
-<td style="text-align:center">55</td>
-<td style="text-align:center">7</td>
-<td style="text-align:center">7</td>
-<td style="text-align:center">7</td>
-<td style="text-align:center">7</td>
-<td style="text-align:left">digit seven</td>
-</tr>
-<tr>
-<td style="text-align:center">56</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">8</td>
-<td style="text-align:center">8</td>
-<td style="text-align:left">digit eight</td>
-</tr>
-<tr>
-<td style="text-align:center">57</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">9</td>
-<td style="text-align:center">9</td>
-<td style="text-align:left">digit nine</td>
-</tr>
-<tr>
-<td style="text-align:center">58</td>
-<td style="text-align:center">:</td>
-<td style="text-align:center">:</td>
-<td style="text-align:center">:</td>
-<td style="text-align:center">:</td>
-<td style="text-align:left">colon</td>
-</tr>
-<tr>
-<td style="text-align:center">59</td>
-<td style="text-align:center">;</td>
-<td style="text-align:center">;</td>
-<td style="text-align:center">;</td>
-<td style="text-align:center">;</td>
-<td style="text-align:left">semicolon</td>
-</tr>
-<tr>
-<td style="text-align:center">60</td>
-<td style="text-align:center">&lt;</td>
-<td style="text-align:center">&lt;</td>
-<td style="text-align:center">&lt;</td>
-<td style="text-align:center">&lt;</td>
-<td style="text-align:left">less-than sign</td>
-</tr>
-<tr>
-<td style="text-align:center">61</td>
-<td style="text-align:center">=</td>
-<td style="text-align:center">=</td>
-<td style="text-align:center">=</td>
-<td style="text-align:center">=</td>
-<td style="text-align:left">equals sign</td>
-</tr>
-<tr>
-<td style="text-align:center">62</td>
-<td style="text-align:center">&gt;</td>
-<td style="text-align:center">&gt;</td>
-<td style="text-align:center">&gt;</td>
-<td style="text-align:center">&gt;</td>
-<td style="text-align:left">greater-than sign</td>
-</tr>
-<tr>
-<td style="text-align:center">63</td>
-<td style="text-align:center">?</td>
-<td style="text-align:center">?</td>
-<td style="text-align:center">?</td>
-<td style="text-align:center">?</td>
-<td style="text-align:left">question mark</td>
-</tr>
-<tr>
-<td style="text-align:center">64</td>
-<td style="text-align:center">@</td>
-<td style="text-align:center">@</td>
-<td style="text-align:center">@</td>
-<td style="text-align:center">@</td>
-<td style="text-align:left">commercial at</td>
-</tr>
-<tr>
-<td style="text-align:center">65</td>
-<td style="text-align:center">A</td>
-<td style="text-align:center">A</td>
-<td style="text-align:center">A</td>
-<td style="text-align:center">A</td>
-<td style="text-align:left">Latin capital letter A</td>
-</tr>
-<tr>
-<td style="text-align:center">66</td>
-<td style="text-align:center">B</td>
-<td style="text-align:center">B</td>
-<td style="text-align:center">B</td>
-<td style="text-align:center">B</td>
-<td style="text-align:left">Latin capital letter B</td>
-</tr>
-<tr>
-<td style="text-align:center">67</td>
-<td style="text-align:center">C</td>
-<td style="text-align:center">C</td>
-<td style="text-align:center">C</td>
-<td style="text-align:center">C</td>
-<td style="text-align:left">Latin capital letter C</td>
-</tr>
-<tr>
-<td style="text-align:center">68</td>
-<td style="text-align:center">D</td>
-<td style="text-align:center">D</td>
-<td style="text-align:center">D</td>
-<td style="text-align:center">D</td>
-<td style="text-align:left">Latin capital letter D</td>
-</tr>
-<tr>
-<td style="text-align:center">69</td>
-<td style="text-align:center">E</td>
-<td style="text-align:center">E</td>
-<td style="text-align:center">E</td>
-<td style="text-align:center">E</td>
-<td style="text-align:left">Latin capital letter E</td>
-</tr>
-<tr>
-<td style="text-align:center">70</td>
-<td style="text-align:center">F</td>
-<td style="text-align:center">F</td>
-<td style="text-align:center">F</td>
-<td style="text-align:center">F</td>
-<td style="text-align:left">Latin capital letter F</td>
-</tr>
-<tr>
-<td style="text-align:center">71</td>
-<td style="text-align:center">G</td>
-<td style="text-align:center">G</td>
-<td style="text-align:center">G</td>
-<td style="text-align:center">G</td>
-<td style="text-align:left">Latin capital letter G</td>
-</tr>
-<tr>
-<td style="text-align:center">72</td>
-<td style="text-align:center">H</td>
-<td style="text-align:center">H</td>
-<td style="text-align:center">H</td>
-<td style="text-align:center">H</td>
-<td style="text-align:left">Latin capital letter H</td>
-</tr>
-<tr>
-<td style="text-align:center">73</td>
-<td style="text-align:center">I</td>
-<td style="text-align:center">I</td>
-<td style="text-align:center">I</td>
-<td style="text-align:center">I</td>
-<td style="text-align:left">Latin capital letter I</td>
-</tr>
-<tr>
-<td style="text-align:center">74</td>
-<td style="text-align:center">J</td>
-<td style="text-align:center">J</td>
-<td style="text-align:center">J</td>
-<td style="text-align:center">J</td>
-<td style="text-align:left">Latin capital letter J</td>
-</tr>
-<tr>
-<td style="text-align:center">75</td>
-<td style="text-align:center">K</td>
-<td style="text-align:center">K</td>
-<td style="text-align:center">K</td>
-<td style="text-align:center">K</td>
-<td style="text-align:left">Latin capital letter K</td>
-</tr>
-<tr>
-<td style="text-align:center">76</td>
-<td style="text-align:center">L</td>
-<td style="text-align:center">L</td>
-<td style="text-align:center">L</td>
-<td style="text-align:center">L</td>
-<td style="text-align:left">Latin capital letter L</td>
-</tr>
-<tr>
-<td style="text-align:center">77</td>
-<td style="text-align:center">M</td>
-<td style="text-align:center">M</td>
-<td style="text-align:center">M</td>
-<td style="text-align:center">M</td>
-<td style="text-align:left">Latin capital letter M</td>
-</tr>
-<tr>
-<td style="text-align:center">78</td>
-<td style="text-align:center">N</td>
-<td style="text-align:center">N</td>
-<td style="text-align:center">N</td>
-<td style="text-align:center">N</td>
-<td style="text-align:left">Latin capital letter N</td>
-</tr>
-<tr>
-<td style="text-align:center">79</td>
-<td style="text-align:center">O</td>
-<td style="text-align:center">O</td>
-<td style="text-align:center">O</td>
-<td style="text-align:center">O</td>
-<td style="text-align:left">Latin capital letter O</td>
-</tr>
-<tr>
-<td style="text-align:center">80</td>
-<td style="text-align:center">P</td>
-<td style="text-align:center">P</td>
-<td style="text-align:center">P</td>
-<td style="text-align:center">P</td>
-<td style="text-align:left">Latin capital letter P</td>
-</tr>
-<tr>
-<td style="text-align:center">81</td>
-<td style="text-align:center">Q</td>
-<td style="text-align:center">Q</td>
-<td style="text-align:center">Q</td>
-<td style="text-align:center">Q</td>
-<td style="text-align:left">Latin capital letter Q</td>
-</tr>
-<tr>
-<td style="text-align:center">82</td>
-<td style="text-align:center">R</td>
-<td style="text-align:center">R</td>
-<td style="text-align:center">R</td>
-<td style="text-align:center">R</td>
-<td style="text-align:left">Latin capital letter R</td>
-</tr>
-<tr>
-<td style="text-align:center">83</td>
-<td style="text-align:center">S</td>
-<td style="text-align:center">S</td>
-<td style="text-align:center">S</td>
-<td style="text-align:center">S</td>
-<td style="text-align:left">Latin capital letter S</td>
-</tr>
-<tr>
-<td style="text-align:center">84</td>
-<td style="text-align:center">T</td>
-<td style="text-align:center">T</td>
-<td style="text-align:center">T</td>
-<td style="text-align:center">T</td>
-<td style="text-align:left">Latin capital letter T</td>
-</tr>
-<tr>
-<td style="text-align:center">85</td>
-<td style="text-align:center">U</td>
-<td style="text-align:center">U</td>
-<td style="text-align:center">U</td>
-<td style="text-align:center">U</td>
-<td style="text-align:left">Latin capital letter U</td>
-</tr>
-<tr>
-<td style="text-align:center">86</td>
-<td style="text-align:center">V</td>
-<td style="text-align:center">V</td>
-<td style="text-align:center">V</td>
-<td style="text-align:center">V</td>
-<td style="text-align:left">Latin capital letter V</td>
-</tr>
-<tr>
-<td style="text-align:center">87</td>
-<td style="text-align:center">W</td>
-<td style="text-align:center">W</td>
-<td style="text-align:center">W</td>
-<td style="text-align:center">W</td>
-<td style="text-align:left">Latin capital letter W</td>
-</tr>
-<tr>
-<td style="text-align:center">88</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-<td style="text-align:center">X</td>
-<td style="text-align:left">Latin capital letter X</td>
-</tr>
-<tr>
-<td style="text-align:center">89</td>
-<td style="text-align:center">Y</td>
-<td style="text-align:center">Y</td>
-<td style="text-align:center">Y</td>
-<td style="text-align:center">Y</td>
-<td style="text-align:left">Latin capital letter Y</td>
-</tr>
-<tr>
-<td style="text-align:center">90</td>
-<td style="text-align:center">Z</td>
-<td style="text-align:center">Z</td>
-<td style="text-align:center">Z</td>
-<td style="text-align:center">Z</td>
-<td style="text-align:left">Latin capital letter Z</td>
-</tr>
-<tr>
-<td style="text-align:center">91</td>
-<td style="text-align:center">[</td>
-<td style="text-align:center">[</td>
-<td style="text-align:center">[</td>
-<td style="text-align:center">[</td>
-<td style="text-align:left">left square bracket</td>
-</tr>
-<tr>
-<td style="text-align:center">92</td>
-<td style="text-align:center">\</td>
-<td style="text-align:center">\</td>
-<td style="text-align:center">\</td>
-<td style="text-align:center">\</td>
-<td style="text-align:left">reverse solidus</td>
-</tr>
-<tr>
-<td style="text-align:center">93</td>
-<td style="text-align:center">]</td>
-<td style="text-align:center">]</td>
-<td style="text-align:center">]</td>
-<td style="text-align:center">]</td>
-<td style="text-align:left">right square bracket</td>
-</tr>
-<tr>
-<td style="text-align:center">94</td>
-<td style="text-align:center">^</td>
-<td style="text-align:center">^</td>
-<td style="text-align:center">^</td>
-<td style="text-align:center">^</td>
-<td style="text-align:left">circumflex accent</td>
-</tr>
-<tr>
-<td style="text-align:center">95</td>
-<td style="text-align:center">_</td>
-<td style="text-align:center">_</td>
-<td style="text-align:center">_</td>
-<td style="text-align:center">_</td>
-<td style="text-align:left">low line</td>
-</tr>
-<tr>
-<td style="text-align:center">96</td>
-<td style="text-align:center">`</td>
-<td style="text-align:center">`</td>
-<td style="text-align:center">`</td>
-<td style="text-align:center">`</td>
-<td style="text-align:left">grave accent</td>
-</tr>
-<tr>
-<td style="text-align:center">97</td>
-<td style="text-align:center">a</td>
-<td style="text-align:center">a</td>
-<td style="text-align:center">a</td>
-<td style="text-align:center">a</td>
-<td style="text-align:left">Latin small letter a</td>
-</tr>
-<tr>
-<td style="text-align:center">98</td>
-<td style="text-align:center">b</td>
-<td style="text-align:center">b</td>
-<td style="text-align:center">b</td>
-<td style="text-align:center">b</td>
-<td style="text-align:left">Latin small letter b</td>
-</tr>
-<tr>
-<td style="text-align:center">99</td>
-<td style="text-align:center">c</td>
-<td style="text-align:center">c</td>
-<td style="text-align:center">c</td>
-<td style="text-align:center">c</td>
-<td style="text-align:left">Latin small letter c</td>
-</tr>
-<tr>
-<td style="text-align:center">100</td>
-<td style="text-align:center">d</td>
-<td style="text-align:center">d</td>
-<td style="text-align:center">d</td>
-<td style="text-align:center">d</td>
-<td style="text-align:left">Latin small letter d</td>
-</tr>
-<tr>
-<td style="text-align:center">101</td>
-<td style="text-align:center">e</td>
-<td style="text-align:center">e</td>
-<td style="text-align:center">e</td>
-<td style="text-align:center">e</td>
-<td style="text-align:left">Latin small letter e</td>
-</tr>
-<tr>
-<td style="text-align:center">102</td>
-<td style="text-align:center">f</td>
-<td style="text-align:center">f</td>
-<td style="text-align:center">f</td>
-<td style="text-align:center">f</td>
-<td style="text-align:left">Latin small letter f</td>
-</tr>
-<tr>
-<td style="text-align:center">103</td>
-<td style="text-align:center">g</td>
-<td style="text-align:center">g</td>
-<td style="text-align:center">g</td>
-<td style="text-align:center">g</td>
-<td style="text-align:left">Latin small letter g</td>
-</tr>
-<tr>
-<td style="text-align:center">104</td>
-<td style="text-align:center">h</td>
-<td style="text-align:center">h</td>
-<td style="text-align:center">h</td>
-<td style="text-align:center">h</td>
-<td style="text-align:left">Latin small letter h</td>
-</tr>
-<tr>
-<td style="text-align:center">105</td>
-<td style="text-align:center">i</td>
-<td style="text-align:center">i</td>
-<td style="text-align:center">i</td>
-<td style="text-align:center">i</td>
-<td style="text-align:left">Latin small letter i</td>
-</tr>
-<tr>
-<td style="text-align:center">106</td>
-<td style="text-align:center">j</td>
-<td style="text-align:center">j</td>
-<td style="text-align:center">j</td>
-<td style="text-align:center">j</td>
-<td style="text-align:left">Latin small letter j</td>
-</tr>
-<tr>
-<td style="text-align:center">107</td>
-<td style="text-align:center">k</td>
-<td style="text-align:center">k</td>
-<td style="text-align:center">k</td>
-<td style="text-align:center">k</td>
-<td style="text-align:left">Latin small letter k</td>
-</tr>
-<tr>
-<td style="text-align:center">108</td>
-<td style="text-align:center">l</td>
-<td style="text-align:center">l</td>
-<td style="text-align:center">l</td>
-<td style="text-align:center">l</td>
-<td style="text-align:left">Latin small letter l</td>
-</tr>
-<tr>
-<td style="text-align:center">109</td>
-<td style="text-align:center">m</td>
-<td style="text-align:center">m</td>
-<td style="text-align:center">m</td>
-<td style="text-align:center">m</td>
-<td style="text-align:left">Latin small letter m</td>
-</tr>
-<tr>
-<td style="text-align:center">110</td>
-<td style="text-align:center">n</td>
-<td style="text-align:center">n</td>
-<td style="text-align:center">n</td>
-<td style="text-align:center">n</td>
-<td style="text-align:left">Latin small letter n</td>
-</tr>
-<tr>
-<td style="text-align:center">111</td>
-<td style="text-align:center">o</td>
-<td style="text-align:center">o</td>
-<td style="text-align:center">o</td>
-<td style="text-align:center">o</td>
-<td style="text-align:left">Latin small letter o</td>
-</tr>
-<tr>
-<td style="text-align:center">112</td>
-<td style="text-align:center">p</td>
-<td style="text-align:center">p</td>
-<td style="text-align:center">p</td>
-<td style="text-align:center">p</td>
-<td style="text-align:left">Latin small letter p</td>
-</tr>
-<tr>
-<td style="text-align:center">113</td>
-<td style="text-align:center">q</td>
-<td style="text-align:center">q</td>
-<td style="text-align:center">q</td>
-<td style="text-align:center">q</td>
-<td style="text-align:left">Latin small letter q</td>
-</tr>
-<tr>
-<td style="text-align:center">114</td>
-<td style="text-align:center">r</td>
-<td style="text-align:center">r</td>
-<td style="text-align:center">r</td>
-<td style="text-align:center">r</td>
-<td style="text-align:left">Latin small letter r</td>
-</tr>
-<tr>
-<td style="text-align:center">115</td>
-<td style="text-align:center">s</td>
-<td style="text-align:center">s</td>
-<td style="text-align:center">s</td>
-<td style="text-align:center">s</td>
-<td style="text-align:left">Latin small letter s</td>
-</tr>
-<tr>
-<td style="text-align:center">116</td>
-<td style="text-align:center">t</td>
-<td style="text-align:center">t</td>
-<td style="text-align:center">t</td>
-<td style="text-align:center">t</td>
-<td style="text-align:left">Latin small letter t</td>
-</tr>
-<tr>
-<td style="text-align:center">117</td>
-<td style="text-align:center">u</td>
-<td style="text-align:center">u</td>
-<td style="text-align:center">u</td>
-<td style="text-align:center">u</td>
-<td style="text-align:left">Latin small letter u</td>
-</tr>
-<tr>
-<td style="text-align:center">118</td>
-<td style="text-align:center">v</td>
-<td style="text-align:center">v</td>
-<td style="text-align:center">v</td>
-<td style="text-align:center">v</td>
-<td style="text-align:left">Latin small letter v</td>
-</tr>
-<tr>
-<td style="text-align:center">119</td>
-<td style="text-align:center">w</td>
-<td style="text-align:center">w</td>
-<td style="text-align:center">w</td>
-<td style="text-align:center">w</td>
-<td style="text-align:left">Latin small letter w</td>
-</tr>
-<tr>
-<td style="text-align:center">120</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:center">x</td>
-<td style="text-align:left">Latin small letter x</td>
-</tr>
-<tr>
-<td style="text-align:center">121</td>
-<td style="text-align:center">y</td>
-<td style="text-align:center">y</td>
-<td style="text-align:center">y</td>
-<td style="text-align:center">y</td>
-<td style="text-align:left">Latin small letter y</td>
-</tr>
-<tr>
-<td style="text-align:center">122</td>
-<td style="text-align:center">z</td>
-<td style="text-align:center">z</td>
-<td style="text-align:center">z</td>
-<td style="text-align:center">z</td>
-<td style="text-align:left">Latin small letter z</td>
-</tr>
-<tr>
-<td style="text-align:center">123</td>
-<td style="text-align:center">{</td>
-<td style="text-align:center">{</td>
-<td style="text-align:center">{</td>
-<td style="text-align:center">{</td>
-<td style="text-align:left">left curly bracket</td>
-</tr>
-<tr>
-<td style="text-align:center">124</td>
-<td style="text-align:center">|</td>
-<td style="text-align:center">|</td>
-<td style="text-align:center">|</td>
-<td style="text-align:center">|</td>
-<td style="text-align:left">vertical line</td>
-</tr>
-<tr>
-<td style="text-align:center">125</td>
-<td style="text-align:center">}</td>
-<td style="text-align:center">}</td>
-<td style="text-align:center">}</td>
-<td style="text-align:center">}</td>
-<td style="text-align:left">right curly bracket</td>
-</tr>
-<tr>
-<td style="text-align:center">126</td>
-<td style="text-align:center">~</td>
-<td style="text-align:center">~</td>
-<td style="text-align:center">~</td>
-<td style="text-align:center">~</td>
-<td style="text-align:left">tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">127</td>
-<td style="text-align:center">DEL</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left"></td>
-</tr>
-<tr>
-<td style="text-align:center">128</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">€</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">euro sign</td>
-</tr>
-<tr>
-<td style="text-align:center">129</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">NOT USED</td>
-</tr>
-<tr>
-<td style="text-align:center">130</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">‚</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">single low-9 quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">131</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ƒ</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin small letter f with hook</td>
-</tr>
-<tr>
-<td style="text-align:center">132</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">„</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">double low-9 quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">133</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">…</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">horizontal ellipsis</td>
-</tr>
-<tr>
-<td style="text-align:center">134</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">†</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">dagger</td>
-</tr>
-<tr>
-<td style="text-align:center">135</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">‡</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">double dagger</td>
-</tr>
-<tr>
-<td style="text-align:center">136</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ˆ</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">modifier letter circumflex accent</td>
-</tr>
-<tr>
-<td style="text-align:center">137</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">‰</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">per mille sign</td>
-</tr>
-<tr>
-<td style="text-align:center">138</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Š</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin capital letter S with caron</td>
-</tr>
-<tr>
-<td style="text-align:center">139</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">‹</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">single left-pointing angle quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">140</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Œ</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin capital ligature OE</td>
-</tr>
-<tr>
-<td style="text-align:center">141</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">NOT USED</td>
-</tr>
-<tr>
-<td style="text-align:center">142</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ž</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin capital letter Z with caron</td>
-</tr>
-<tr>
-<td style="text-align:center">143</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">NOT USED</td>
-</tr>
-<tr>
-<td style="text-align:center">144</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">NOT USED</td>
-</tr>
-<tr>
-<td style="text-align:center">145</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">‘</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">left single quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">146</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">’</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">right single quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">147</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">“</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">left double quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">148</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">”</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">right double quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">149</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">•</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">bullet</td>
-</tr>
-<tr>
-<td style="text-align:center">150</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">–</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">en dash</td>
-</tr>
-<tr>
-<td style="text-align:center">151</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">—</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">em dash</td>
-</tr>
-<tr>
-<td style="text-align:center">152</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">˜</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">small tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">153</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">™</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">trade mark sign</td>
-</tr>
-<tr>
-<td style="text-align:center">154</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">š</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin small letter s with caron</td>
-</tr>
-<tr>
-<td style="text-align:center">155</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">›</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">single right-pointing angle quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">156</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">œ</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin small ligature oe</td>
-</tr>
-<tr>
-<td style="text-align:center">157</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">NOT USED</td>
-</tr>
-<tr>
-<td style="text-align:center">158</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ž</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin small letter z with caron</td>
-</tr>
-<tr>
-<td style="text-align:center">159</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ÿ</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">Latin capital letter Y with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">160</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-<td style="text-align:left">no-break space</td>
-</tr>
-<tr>
-<td style="text-align:center">161</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¡</td>
-<td style="text-align:center">¡</td>
-<td style="text-align:center">¡</td>
-<td style="text-align:left">inverted exclamation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">162</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¢</td>
-<td style="text-align:center">¢</td>
-<td style="text-align:center">¢</td>
-<td style="text-align:left">cent sign</td>
-</tr>
-<tr>
-<td style="text-align:center">163</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">£</td>
-<td style="text-align:center">£</td>
-<td style="text-align:center">£</td>
-<td style="text-align:left">pound sign</td>
-</tr>
-<tr>
-<td style="text-align:center">164</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¤</td>
-<td style="text-align:center">¤</td>
-<td style="text-align:center">¤</td>
-<td style="text-align:left">currency sign</td>
-</tr>
-<tr>
-<td style="text-align:center">165</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¥</td>
-<td style="text-align:center">¥</td>
-<td style="text-align:center">¥</td>
-<td style="text-align:left">yen sign</td>
-</tr>
-<tr>
-<td style="text-align:center">166</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¦</td>
-<td style="text-align:center">¦</td>
-<td style="text-align:center">¦</td>
-<td style="text-align:left">broken bar</td>
-</tr>
-<tr>
-<td style="text-align:center">167</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">§</td>
-<td style="text-align:center">§</td>
-<td style="text-align:center">§</td>
-<td style="text-align:left">section sign</td>
-</tr>
-<tr>
-<td style="text-align:center">168</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¨</td>
-<td style="text-align:center">¨</td>
-<td style="text-align:center">¨</td>
-<td style="text-align:left">diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">169</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">©</td>
-<td style="text-align:center">©</td>
-<td style="text-align:center">©</td>
-<td style="text-align:left">copyright sign</td>
-</tr>
-<tr>
-<td style="text-align:center">170</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ª</td>
-<td style="text-align:center">ª</td>
-<td style="text-align:center">ª</td>
-<td style="text-align:left">feminine ordinal indicator</td>
-</tr>
-<tr>
-<td style="text-align:center">171</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">«</td>
-<td style="text-align:center">«</td>
-<td style="text-align:center">«</td>
-<td style="text-align:left">left-pointing double angle quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">172</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¬</td>
-<td style="text-align:center">¬</td>
-<td style="text-align:center">¬</td>
-<td style="text-align:left">not sign</td>
-</tr>
-<tr>
-<td style="text-align:center">173</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">­</td>
-<td style="text-align:center">­</td>
-<td style="text-align:center">­</td>
-<td style="text-align:left">soft hyphen</td>
-</tr>
-<tr>
-<td style="text-align:center">174</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">®</td>
-<td style="text-align:center">®</td>
-<td style="text-align:center">®</td>
-<td style="text-align:left">registered sign</td>
-</tr>
-<tr>
-<td style="text-align:center">175</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¯</td>
-<td style="text-align:center">¯</td>
-<td style="text-align:center">¯</td>
-<td style="text-align:left">macron</td>
-</tr>
-<tr>
-<td style="text-align:center">176</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">°</td>
-<td style="text-align:center">°</td>
-<td style="text-align:center">°</td>
-<td style="text-align:left">degree sign</td>
-</tr>
-<tr>
-<td style="text-align:center">177</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">±</td>
-<td style="text-align:center">±</td>
-<td style="text-align:center">±</td>
-<td style="text-align:left">plus-minus sign</td>
-</tr>
-<tr>
-<td style="text-align:center">178</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">²</td>
-<td style="text-align:center">²</td>
-<td style="text-align:center">²</td>
-<td style="text-align:left">superscript two</td>
-</tr>
-<tr>
-<td style="text-align:center">179</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">³</td>
-<td style="text-align:center">³</td>
-<td style="text-align:center">³</td>
-<td style="text-align:left">superscript three</td>
-</tr>
-<tr>
-<td style="text-align:center">180</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">´</td>
-<td style="text-align:center">´</td>
-<td style="text-align:center">´</td>
-<td style="text-align:left">acute accent</td>
-</tr>
-<tr>
-<td style="text-align:center">181</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">µ</td>
-<td style="text-align:center">µ</td>
-<td style="text-align:center">µ</td>
-<td style="text-align:left">micro sign</td>
-</tr>
-<tr>
-<td style="text-align:center">182</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¶</td>
-<td style="text-align:center">¶</td>
-<td style="text-align:center">¶</td>
-<td style="text-align:left">pilcrow sign</td>
-</tr>
-<tr>
-<td style="text-align:center">183</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">·</td>
-<td style="text-align:center">·</td>
-<td style="text-align:center">·</td>
-<td style="text-align:left">middle dot</td>
-</tr>
-<tr>
-<td style="text-align:center">184</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¸</td>
-<td style="text-align:center">¸</td>
-<td style="text-align:center">¸</td>
-<td style="text-align:left">cedilla</td>
-</tr>
-<tr>
-<td style="text-align:center">185</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¹</td>
-<td style="text-align:center">¹</td>
-<td style="text-align:center">¹</td>
-<td style="text-align:left">superscript one</td>
-</tr>
-<tr>
-<td style="text-align:center">186</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">º</td>
-<td style="text-align:center">º</td>
-<td style="text-align:center">º</td>
-<td style="text-align:left">masculine ordinal indicator</td>
-</tr>
-<tr>
-<td style="text-align:center">187</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">»</td>
-<td style="text-align:center">»</td>
-<td style="text-align:center">»</td>
-<td style="text-align:left">right-pointing double angle quotation mark</td>
-</tr>
-<tr>
-<td style="text-align:center">188</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¼</td>
-<td style="text-align:center">¼</td>
-<td style="text-align:center">¼</td>
-<td style="text-align:left">vulgar fraction one quarter</td>
-</tr>
-<tr>
-<td style="text-align:center">189</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">½</td>
-<td style="text-align:center">½</td>
-<td style="text-align:center">½</td>
-<td style="text-align:left">vulgar fraction one half</td>
-</tr>
-<tr>
-<td style="text-align:center">190</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¾</td>
-<td style="text-align:center">¾</td>
-<td style="text-align:center">¾</td>
-<td style="text-align:left">vulgar fraction three quarters</td>
-</tr>
-<tr>
-<td style="text-align:center">191</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">¿</td>
-<td style="text-align:center">¿</td>
-<td style="text-align:center">¿</td>
-<td style="text-align:left">inverted question mark</td>
-</tr>
-<tr>
-<td style="text-align:center">192</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">À</td>
-<td style="text-align:center">À</td>
-<td style="text-align:center">À</td>
-<td style="text-align:left">Latin capital letter A with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">193</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Á</td>
-<td style="text-align:center">Á</td>
-<td style="text-align:center">Á</td>
-<td style="text-align:left">Latin capital letter A with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">194</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Â</td>
-<td style="text-align:center">Â</td>
-<td style="text-align:center">Â</td>
-<td style="text-align:left">Latin capital letter A with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">195</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ã</td>
-<td style="text-align:center">Ã</td>
-<td style="text-align:center">Ã</td>
-<td style="text-align:left">Latin capital letter A with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">196</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ä</td>
-<td style="text-align:center">Ä</td>
-<td style="text-align:center">Ä</td>
-<td style="text-align:left">Latin capital letter A with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">197</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Å</td>
-<td style="text-align:center">Å</td>
-<td style="text-align:center">Å</td>
-<td style="text-align:left">Latin capital letter A with ring above</td>
-</tr>
-<tr>
-<td style="text-align:center">198</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Æ</td>
-<td style="text-align:center">Æ</td>
-<td style="text-align:center">Æ</td>
-<td style="text-align:left">Latin capital letter AE</td>
-</tr>
-<tr>
-<td style="text-align:center">199</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ç</td>
-<td style="text-align:center">Ç</td>
-<td style="text-align:center">Ç</td>
-<td style="text-align:left">Latin capital letter C with cedilla</td>
-</tr>
-<tr>
-<td style="text-align:center">200</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">È</td>
-<td style="text-align:center">È</td>
-<td style="text-align:center">È</td>
-<td style="text-align:left">Latin capital letter E with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">201</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">É</td>
-<td style="text-align:center">É</td>
-<td style="text-align:center">É</td>
-<td style="text-align:left">Latin capital letter E with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">202</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ê</td>
-<td style="text-align:center">Ê</td>
-<td style="text-align:center">Ê</td>
-<td style="text-align:left">Latin capital letter E with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">203</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ë</td>
-<td style="text-align:center">Ë</td>
-<td style="text-align:center">Ë</td>
-<td style="text-align:left">Latin capital letter E with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">204</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ì</td>
-<td style="text-align:center">Ì</td>
-<td style="text-align:center">Ì</td>
-<td style="text-align:left">Latin capital letter I with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">205</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Í</td>
-<td style="text-align:center">Í</td>
-<td style="text-align:center">Í</td>
-<td style="text-align:left">Latin capital letter I with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">206</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Î</td>
-<td style="text-align:center">Î</td>
-<td style="text-align:center">Î</td>
-<td style="text-align:left">Latin capital letter I with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">207</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ï</td>
-<td style="text-align:center">Ï</td>
-<td style="text-align:center">Ï</td>
-<td style="text-align:left">Latin capital letter I with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">208</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ð</td>
-<td style="text-align:center">Ð</td>
-<td style="text-align:center">Ð</td>
-<td style="text-align:left">Latin capital letter Eth</td>
-</tr>
-<tr>
-<td style="text-align:center">209</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ñ</td>
-<td style="text-align:center">Ñ</td>
-<td style="text-align:center">Ñ</td>
-<td style="text-align:left">Latin capital letter N with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">210</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ò</td>
-<td style="text-align:center">Ò</td>
-<td style="text-align:center">Ò</td>
-<td style="text-align:left">Latin capital letter O with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">211</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ó</td>
-<td style="text-align:center">Ó</td>
-<td style="text-align:center">Ó</td>
-<td style="text-align:left">Latin capital letter O with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">212</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ô</td>
-<td style="text-align:center">Ô</td>
-<td style="text-align:center">Ô</td>
-<td style="text-align:left">Latin capital letter O with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">213</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Õ</td>
-<td style="text-align:center">Õ</td>
-<td style="text-align:center">Õ</td>
-<td style="text-align:left">Latin capital letter O with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">214</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ö</td>
-<td style="text-align:center">Ö</td>
-<td style="text-align:center">Ö</td>
-<td style="text-align:left">Latin capital letter O with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">215</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">×</td>
-<td style="text-align:center">×</td>
-<td style="text-align:center">×</td>
-<td style="text-align:left">multiplication sign</td>
-</tr>
-<tr>
-<td style="text-align:center">216</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ø</td>
-<td style="text-align:center">Ø</td>
-<td style="text-align:center">Ø</td>
-<td style="text-align:left">Latin capital letter O with stroke</td>
-</tr>
-<tr>
-<td style="text-align:center">217</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ù</td>
-<td style="text-align:center">Ù</td>
-<td style="text-align:center">Ù</td>
-<td style="text-align:left">Latin capital letter U with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">218</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ú</td>
-<td style="text-align:center">Ú</td>
-<td style="text-align:center">Ú</td>
-<td style="text-align:left">Latin capital letter U with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">219</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Û</td>
-<td style="text-align:center">Û</td>
-<td style="text-align:center">Û</td>
-<td style="text-align:left">Latin capital letter U with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">220</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ü</td>
-<td style="text-align:center">Ü</td>
-<td style="text-align:center">Ü</td>
-<td style="text-align:left">Latin capital letter U with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">221</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Ý</td>
-<td style="text-align:center">Ý</td>
-<td style="text-align:center">Ý</td>
-<td style="text-align:left">Latin capital letter Y with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">222</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">Þ</td>
-<td style="text-align:center">Þ</td>
-<td style="text-align:center">Þ</td>
-<td style="text-align:left">Latin capital letter Thorn</td>
-</tr>
-<tr>
-<td style="text-align:center">223</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ß</td>
-<td style="text-align:center">ß</td>
-<td style="text-align:center">ß</td>
-<td style="text-align:left">Latin small letter sharp s</td>
-</tr>
-<tr>
-<td style="text-align:center">224</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">à</td>
-<td style="text-align:center">à</td>
-<td style="text-align:center">à</td>
-<td style="text-align:left">Latin small letter a with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">225</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">á</td>
-<td style="text-align:center">á</td>
-<td style="text-align:center">á</td>
-<td style="text-align:left">Latin small letter a with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">226</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">â</td>
-<td style="text-align:center">â</td>
-<td style="text-align:center">â</td>
-<td style="text-align:left">Latin small letter a with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">227</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ã</td>
-<td style="text-align:center">ã</td>
-<td style="text-align:center">ã</td>
-<td style="text-align:left">Latin small letter a with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">228</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ä</td>
-<td style="text-align:center">ä</td>
-<td style="text-align:center">ä</td>
-<td style="text-align:left">Latin small letter a with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">229</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">å</td>
-<td style="text-align:center">å</td>
-<td style="text-align:center">å</td>
-<td style="text-align:left">Latin small letter a with ring above</td>
-</tr>
-<tr>
-<td style="text-align:center">230</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">æ</td>
-<td style="text-align:center">æ</td>
-<td style="text-align:center">æ</td>
-<td style="text-align:left">Latin small letter ae</td>
-</tr>
-<tr>
-<td style="text-align:center">231</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ç</td>
-<td style="text-align:center">ç</td>
-<td style="text-align:center">ç</td>
-<td style="text-align:left">Latin small letter c with cedilla</td>
-</tr>
-<tr>
-<td style="text-align:center">232</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">è</td>
-<td style="text-align:center">è</td>
-<td style="text-align:center">è</td>
-<td style="text-align:left">Latin small letter e with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">233</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">é</td>
-<td style="text-align:center">é</td>
-<td style="text-align:center">é</td>
-<td style="text-align:left">Latin small letter e with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">234</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ê</td>
-<td style="text-align:center">ê</td>
-<td style="text-align:center">ê</td>
-<td style="text-align:left">Latin small letter e with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">235</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ë</td>
-<td style="text-align:center">ë</td>
-<td style="text-align:center">ë</td>
-<td style="text-align:left">Latin small letter e with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">236</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ì</td>
-<td style="text-align:center">ì</td>
-<td style="text-align:center">ì</td>
-<td style="text-align:left">Latin small letter i with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">237</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">í</td>
-<td style="text-align:center">í</td>
-<td style="text-align:center">í</td>
-<td style="text-align:left">Latin small letter i with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">238</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">î</td>
-<td style="text-align:center">î</td>
-<td style="text-align:center">î</td>
-<td style="text-align:left">Latin small letter i with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">239</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ï</td>
-<td style="text-align:center">ï</td>
-<td style="text-align:center">ï</td>
-<td style="text-align:left">Latin small letter i with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">240</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ð</td>
-<td style="text-align:center">ð</td>
-<td style="text-align:center">ð</td>
-<td style="text-align:left">Latin small letter eth</td>
-</tr>
-<tr>
-<td style="text-align:center">241</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ñ</td>
-<td style="text-align:center">ñ</td>
-<td style="text-align:center">ñ</td>
-<td style="text-align:left">Latin small letter n with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">242</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ò</td>
-<td style="text-align:center">ò</td>
-<td style="text-align:center">ò</td>
-<td style="text-align:left">Latin small letter o with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">243</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ó</td>
-<td style="text-align:center">ó</td>
-<td style="text-align:center">ó</td>
-<td style="text-align:left">Latin small letter o with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">244</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ô</td>
-<td style="text-align:center">ô</td>
-<td style="text-align:center">ô</td>
-<td style="text-align:left">Latin small letter o with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">245</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">õ</td>
-<td style="text-align:center">õ</td>
-<td style="text-align:center">õ</td>
-<td style="text-align:left">Latin small letter o with tilde</td>
-</tr>
-<tr>
-<td style="text-align:center">246</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ö</td>
-<td style="text-align:center">ö</td>
-<td style="text-align:center">ö</td>
-<td style="text-align:left">Latin small letter o with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">247</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">÷</td>
-<td style="text-align:center">÷</td>
-<td style="text-align:center">÷</td>
-<td style="text-align:left">division sign</td>
-</tr>
-<tr>
-<td style="text-align:center">248</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ø</td>
-<td style="text-align:center">ø</td>
-<td style="text-align:center">ø</td>
-<td style="text-align:left">Latin small letter o with stroke</td>
-</tr>
-<tr>
-<td style="text-align:center">249</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ù</td>
-<td style="text-align:center">ù</td>
-<td style="text-align:center">ù</td>
-<td style="text-align:left">Latin small letter u with grave</td>
-</tr>
-<tr>
-<td style="text-align:center">250</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ú</td>
-<td style="text-align:center">ú</td>
-<td style="text-align:center">ú</td>
-<td style="text-align:left">Latin small letter u with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">251</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">û</td>
-<td style="text-align:center">û</td>
-<td style="text-align:center">û</td>
-<td style="text-align:left">Latin small letter with circumflex</td>
-</tr>
-<tr>
-<td style="text-align:center">252</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ü</td>
-<td style="text-align:center">ü</td>
-<td style="text-align:center">ü</td>
-<td style="text-align:left">Latin small letter u with diaeresis</td>
-</tr>
-<tr>
-<td style="text-align:center">253</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ý</td>
-<td style="text-align:center">ý</td>
-<td style="text-align:center">ý</td>
-<td style="text-align:left">Latin small letter y with acute</td>
-</tr>
-<tr>
-<td style="text-align:center">254</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">þ</td>
-<td style="text-align:center">þ</td>
-<td style="text-align:center">þ</td>
-<td style="text-align:left">Latin small letter thorn</td>
-</tr>
-<tr>
-<td style="text-align:center">255</td>
-<td style="text-align:center"></td>
-<td style="text-align:center">ÿ</td>
-<td style="text-align:center">ÿ</td>
-<td style="text-align:center">ÿ</td>
-<td style="text-align:left">Latin small letter y with diaeresis</td>
 </tr>
 </tbody>
 </table>
