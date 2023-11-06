@@ -9,7 +9,7 @@ tag:
 
 ## VS Code 教程
 
-**[VS Code（Visual Studio Code）](https://code.visualstudio.com/)** 是一个免费的、开源的 **跨平台编辑器**。有 **稳定版** 和 **体验版** 两个版本，根据自己的需求自行下载。
+[VS Code（Visual Studio Code）](https://code.visualstudio.com/) 是一个免费的、开源的 **跨平台编辑器**。有 **稳定版** 和 **体验版** 两个版本，根据自己的需求自行下载。
 
 [VS Code 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)
 
@@ -23,7 +23,7 @@ tag:
 
 `VS Code` 定义和实现跳转。比如：看到某个函数的调用，想要知道这个函数的接口定义是什么样的，它的实现细节是什么样的，这时需要 **直接跳转到定义和实现的位置。**
 
-`VS Code` 引用跳转。很多时候，除了要知道一个函数或者类的定义和实现以外，可能还希望知道它们被谁引用了，以及在哪里被引用了。这时只需要将光标移动到函数或者类上面，然后按下 <kbd>Shift</kbd> + <kbd>F12</kbd>，`VS Code` 就会打开一个 **引用列表** 和一个 **内嵌的编辑器** 。在这个引用列表里，选中某个引用，VS Code 就会把这个引用附近的代码展示在这个内嵌的编辑器里。
+`VS Code` 引用跳转。很多时候，除了要知道一个函数或者类的定义和实现以外，可能还希望知道它们被谁引用了，以及在哪里被引用了。这时只需要将光标移动到函数或者类上面，然后按下 <kbd>Shift</kbd> + <kbd>F12</kbd>，`VS Code` 就会打开一个 **引用列表** 和一个 **内嵌的编辑器**。在这个引用列表里，选中某个引用，VS Code 就会把这个引用附近的代码展示在这个内嵌的编辑器里。
 
 1. 在调用函数的位置
 
@@ -38,7 +38,7 @@ tag:
 
 首先，在 `VS Code` 中打开一个文件夹，此时 `VS Code` 处于一个单文件夹的状态。然后调出命令面板，搜索 “将文件夹添加到工作区” （add folder to workspace）并执行，或者使用菜单，“文件 —> 将文件夹添加到工作区”，之后，选择想要在当前窗口打开的文件夹。
 
-此时在资源管理器里的标题栏里，您能看到 “无标题 （工作区）” 这样的文字，这说明当前的工作区已经有多个文件夹了，只是现在您还没有保存这个多文件工作区，也没有给它指定一个名字。
+此时在资源管理器里的标题栏里，您能看到 “无标题（工作区）” 这样的文字，这说明当前的工作区已经有多个文件夹了，只是现在您还没有保存这个多文件工作区，也没有给它指定一个名字。
 
 要保存这个工作区，接下来您可以调出命令面板，搜索 “将工作区另存为” （save workspace as），`VS Code` 就会为这个工作区创建一个文件，这个文件的后缀名是 `code-workspace`。比如：给这个工作区取名为 `sample`，然后指定在 `Code` 中这个文件夹下保存。这样操作后，`VS Code` 就会在 **Code 文件夹** 下创建一个 `sample.code-workspace` 文件。
 
@@ -128,33 +128,104 @@ tag:
 
 [Chinese (Simplified)](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans) 用于更改 VS Code 本地语言为中文界面。
 
+**使用：**
+
+按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 组合键以显示 **命令面板**，然后键入 `display` 以筛选并显示 `Configure Display Language` 命令，按 <kbd>Enter</kbd>。然后会按区域设置显示安装的语言列表，并突出显示当前语言设置，选择另一个 “语言” 以切换 UI 语言。
+
 ### Makdown Preview Github Styling
 
 [Makdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles) 用于更改 VS Code 的内置 Markdown 预览以匹配 GitHub 的样式。
+
+![Makdown Preview Github Styling](./assets/preview_github.png)
 
 ### Markdown Preview Enhanced
 
 [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) 用于增强 Markdown 预览，提供许多有用的功能。例如：自动滚动同步、数学排版、mermaid、PlantUML、pandoc、PDF 导出、代码块、演示文稿编写器等。
 
+![Markdown Preview Enhanced](./assets/preview_enhanced.jpg)
+
+**使用：**
+
 |  快捷键  |  功能  |
-| :----: | :---- |
-|  <kbd>ctrl</kbd> + <kbd>k</kbd> <kbd>v</kbd>  |  打开侧面预览  |
-|  <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>v</kbd>  |  打开预览  |
+| :---- | :---- |
+|  <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>  |  打开侧面预览  |
+|  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>  |  打开预览  |
 |  <kbd>Esc</kbd>  |  切换侧边栏目录  |
 
-![preview_enhanced](./assets/preview_enhanced.jpg)
+### Markdown All in One
 
-### markdown-formatter
+[Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) 编写 Markdown 所需的一切（键盘快捷键、目录、自动预览等）。
 
-[markdown-formatter](https://marketplace.visualstudio.com/items?itemName=mervin.markdown-formatter) 对用户提供了相对统一的格式，还提供了一些代码片段。
+**使用：**
+
+|  快捷键  |  功能  |
+| :---- | :---- |
+|  <kbd>Ctrl</kbd> + <kbd>B</kbd>  |  粗体  |
+|  <kbd>Ctrl</kbd> + <kbd>I</kbd>  |  斜体  |
+|  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\]</kbd>  |  切换标题（上层）  |
+|  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\[</kbd>  |  切换标题（下层）  |
+|  <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>  |  打开侧面预览  |
+|  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>  |  打开预览  |
 
 ### background-cover
 
 [background-cover](https://marketplace.visualstudio.com/items?itemName=manasxx.background-cover) 用于配置 Markdown 背景图。
 
-- 点击底部切换背景图按钮 / Click the bottom toggle background button
-- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>P</kbd> > "backgroundCover - start"
-- <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>F7</kbd> > "Random update background and restart"
+**使用：**
+
+- 点击 **底部切换背景图按钮** 或按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 组合键以显示 **命令面板**，然后键入 `backgroundCover - start` 命令，按 <kbd>Enter</kbd>。显示配置界面
+
+    ![background-cover](./assets/background-cover.png)
+
+- 按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F7</kbd> 组合键将 **随机更新背景并重启**，需要 **提前添加图片目录**
 - VS Code 更新版本时会导致背景图消失，需要手动重新设置
 
-![switch_background_button](./assets/switch_background_button.jpg)
+### fanyi
+
+[fanyi](https://marketplace.visualstudio.com/items?itemName=wangrongding.fanyi) 一个划词翻译的 VS Code 插件。
+
+**使用：**
+
+通过选中需要的单词或短句后，用鼠标移到上方即可翻译。
+
+![fanyi](./assets/fanyi.png)
+
+### 会了吧
+
+[会了吧](https://marketplace.visualstudio.com/items?itemName=mqycn.huile8) 用于点击源码文件后，会自动分析所有包含的单词，不在 **已掌握单词列表** 中的单词会自动添加到 **陌生单词** 列表。
+
+**使用：**
+
+![会了吧](./assets/tips.gif)
+
+- 单词后面可以显示 **单词解释**
+- 鼠标悬停可以显示 **音标和解释**
+- 点击单词可以朗读本单词
+
+**禅模式**：点击朗读的单词，会自动添加到当日的 **单词列表**，禅模式会循环朗读列表中的参数。
+
+### Prettier - Code formatter
+
+[Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) 支持多种编程语言，如：JavaScript、TypeScript、CSS、HTML、JSON 等，可以自动格式化代码的缩进、空格、换行等，从而使代码更加整洁和易于阅读。
+
+### GitLens — Git supercharged
+
+[GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) 增强 Git 在 VS Code 中的功能
+
+### Live Server
+
+[Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 启动具有静态和动态页面实时重新加载功能的本地开发服务器。
+
+![Live Server Demo](./assets/live_server_demo.gif)
+
+**使用：**
+
+- 打开项目并单击状态栏上的 **Go Live** 来打开/关闭服务器
+
+    ![Live Server](./assets/live_server.jpg)
+
+- 按下 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 组合键以显示 **命令面板**，然后键入 `Live Server: Open With Live Server` 命令，按 <kbd>Enter</kbd>，启动服务器
+
+::: tip
+修改完 HTML 文件，需要保存后，服务器页面才会显示修改后的内容
+:::
