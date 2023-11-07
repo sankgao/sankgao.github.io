@@ -132,7 +132,6 @@ export default hopeTheme({
       imgSize: true,  // 启用图片尺寸支持
       katex: true,  // 使用 KaTeX 启用 TeX 语法支持
       mark: true,  // 启用标记格式支持
-      mathjax: true,  // 使用 mathjax 启用 TeX 语法支持
       mermaid: true,  // 启用 Mermaid 支持
       revealJs: true,  // 启用幻灯片支持
       sub: true,  // 启用下角标格式支持
