@@ -502,11 +502,20 @@ tag:
 - [免费版权图片搜索](https://www.logosc.cn/so/)
 - [故宫壁纸（故宫博物院）](https://www.dpm.org.cn/Home.html)
 - [家具](https://visualhunt.com/)
+- [1200多套装修设计效果图](https://www.aliyundrive.com/s/QzJ13KGC1qH)
 - [阿里云盘 - 老照片大合集（上万张各时代老照片）](https://www.aliyundrive.com/s/ft55gz8SKQq)
 - [阿里云盘 - 4K 动漫壁纸](https://www.aliyundrive.com/s/YMdxzAknhe3)
-- [阿里云盘 - 漫画屋](https://www.aliyundrive.com/s/xgsJrfonUE8)
-- [在线漫画](https://www.xuewailx.com/)
-- [漫画160](https://www.mh160.cc/)
+- 漫画
+  - [阿里云盘 - 漫画屋](https://www.aliyundrive.com/s/xgsJrfonUE8)
+  - [在线漫画 - 学外漫画](https://www.xuewailx.com/)
+  - [在线漫画 - 漫画160](https://www.mh160.cc/)
+  - [在线漫画 - 漫画DB](https://www.manhuadb.com/)
+  - [在线漫画 - 古风漫画](https://www.gufengmh.com/)
+  - [在线漫画 - 拷贝漫画](https://www.mangacopy.com/)
+  - [在线漫画 - MangaDex](https://mangadex.org/)
+  - [Kox.moe - 需要下载观看](https://kox.moe/)
+  - [次元狗漫画 - 需要下载观看](https://www.acgndog.com/category/rec-comic)
+  - [安卓漫画阅读器 - Tachiyomi](https://tachiyomi.org)
 
 ## 视频
 
