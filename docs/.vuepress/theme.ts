@@ -118,7 +118,6 @@ export default hopeTheme({
     // MdEnhance 插件配置
     mdEnhance: {
       align: true,  // 启用自定义对齐格式支持
-      card: true,  // 添加卡片
       chart: true,  // 支持 Chart 图表
       codetabs: true,  // 启用代码组
       container: true,  // 启用自定义容器支持
@@ -153,6 +152,8 @@ export default hopeTheme({
         "Replit",
         "SiteInfo",
         "StackBlitz",
+	"VPBanner",
+        "VPCard",
         "VideoPlayer",
         "YouTube",
       ],
