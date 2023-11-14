@@ -152,7 +152,7 @@ export default hopeTheme({
         "Replit",
         "SiteInfo",
         "StackBlitz",
-	"VPBanner",
+        "VPBanner",
         "VPCard",
         "VideoPlayer",
         "YouTube",
@@ -267,4 +267,5 @@ export default hopeTheme({
     },
   },
 });
+
 

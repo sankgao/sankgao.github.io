@@ -296,7 +296,7 @@ const a = 1;
 
 ## 代码块选项卡
 
-- 将选项卡包装在 `tabs` 容器中
+- 将选项卡包装在 `code-tabs` 容器中
 - 在 `tabs` 容器中添加一个 `id` 后缀，该后缀将用作选项卡 `id`。所有具有相同 `id` 的选项卡将共享相同的切换事件
 - 在这个容器内，使用 `@tab` 标记来标记和分隔选项卡内容
 - 在 `@tab` 标记后，可以添加文本 `:active` 默认激活选项卡，之后的文本将被解析为此选项卡标题
@@ -305,7 +305,7 @@ const a = 1;
 
 相同 `id` 的选项卡：
 
-::: tabs#languages
+::: code-tabs#languages
 
 @tab pnpm
 
@@ -329,7 +329,7 @@ npm i -D vuepress-theme-hope
 
 另一个相同 `id` 的选项卡：
 
-::: tabs#languages
+::: code-tabs#languages
 
 @tab pnpm
 
@@ -353,7 +353,7 @@ npx install
 
 不同 `id` 的选项卡：
 
-::: tabs#language
+::: code-tabs#language
 
 @tab pnpm
 
@@ -456,4 +456,5 @@ npx vp-update
 - **logo**：站点图标
 - **repo**：站点 GitHub 地址
 - **preview**：站点预览图，必须为绝对路径或完整 URL
+
 
