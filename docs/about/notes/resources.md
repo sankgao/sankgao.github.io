@@ -155,6 +155,15 @@ tag:
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
+- [奈斯搜索](https://www.niceso.net/)
+- [易搜](https://yiso.fun/)
+- [千帆搜索 - Telegram](https://tg.qianfan.app/)
+- [UP 云搜](https://www.upyunso.com/)
+- [猫狸盘搜](https://www.alipansou.com/)
+- [超能搜](https://chaonengsou.com/)
+- [云盘4K](https://www.codelicence.cn/)
+- [学霸盘](https://www.xuebapan.com/)
+- [毕方铺](https://www.iizhi.cn/)
 - [云盘狗](https://www.yunpangou.com/)
 - [小白盘](https://www.xiaobaipan.com/)
 - [虫部落（资源搜索）](https://www.chongbuluo.com/)
@@ -198,6 +207,7 @@ tag:
 - [抓鱼鸭标签页](https://www.zhuayuya.com/)
 - [圈子 – Geeker](https://geekerline.com/)
 - [网罗灯下黑-爱折腾 不将就](https://wldxh.com/)
+- [斑点象](https://www.bandianxiang.com/)
 - [酷库博客](https://www.zxki.cn/)
 - [小思科技](https://xiaosikeji.cn/)
 - [鸭先知 - 坚持以不付费的伟大原则获取资源](https://www.yxzhi.com/)
@@ -332,7 +342,11 @@ tag:
 ## 书籍
 
 - [寻书 - 电子书综合搜索平台](https://www.xunshu.xyz/#/)
+- [安娜的档案](https://annas-archive.org)
+    - [镜像地址 1](https://annas-archive.se.976156.xyz)
+    - [镜像地址 2](https://annas-archive.se.412965.xyz)
 - [书栈网](https://www.bookstack.cn/)
+- [知识库](https://www.zhishikoo.com/)
 - [码农书籍网](https://www.manongbook.com/)
 - [码农之家](https://www.xz577.com/)
 - [书格](https://new.shuge.org/)
@@ -374,6 +388,7 @@ tag:
 - [IMGBOT 在线图片处理](https://www.imgbot.ai)
 - [菜鸟工具](https://c.runoob.com/)
 - [网页在线工具汇总](https://iui.su/1492/)
+- [Quicker 您的指尖工具箱](https://getquicker.net/)
 - [在线工具集 - PS](https://www.qtool.net/)
 - [在线工具集](https://lwebapp.com/zh/tools)
 - [在线工具 - 云间](http://www.shulijp.com/index.html)
@@ -381,6 +396,7 @@ tag:
 - [在线工具 - 兔二](https://www.tool2.cn/)
 - [在线工具 - 爱资料](https://www.toolnb.com/)
 - [在线工具 - 神器集](https://hao.logosc.cn/)
+- [在线工具 - 工具达人](https://toolsdar.cn/)
 - [在线工具 - aTool](https://www.atool99.com/)
 - [在线工具 - 工具箱](https://tool.browser.qq.com/)
 - [在线工具 - 流程图思维导图](https://www.processon.com/)
@@ -540,3 +556,4 @@ tag:
 - [阿里云盘 - 美女合集](https://geekerline.com/circle/74708.html)
 - [爽文短剧合集（在线播放）](https://docs.qq.com/document/DT3hLYnpta3ZGSlpZ)
 - [tiktok 视频](https://tik.fail/)
+
