@@ -234,6 +234,7 @@ tag:
 - [昆虫肖像](http://microsculpture.net/)
 - [视频、书籍、图片网站合集](https://geekerline.com/circle/74567.html)
 - [网络流行语知识库](https://www.yougengwa.com)
+- [以玩游戏形式在线编程](https://www.codingame.com/start/)
 
 ## 教程
 
@@ -512,6 +513,8 @@ tag:
 - [中国亲戚关系计算器](https://passer-by.com/relationship/)
 - [V2free 翻墙](https://w1.v2free.top/)
 - [ComicTv - 摸鱼](http://neos55555.gitee.io/comictv/)
+- [HTML5 语法检查工具](https://validator.w3.org/)
+- [CSS3 语法检查工具](https://jigsaw.w3.org/css-validator/)
 
 ## 图片
 
