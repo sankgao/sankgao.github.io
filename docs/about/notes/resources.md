@@ -235,6 +235,7 @@ tag:
 - [视频、书籍、图片网站合集](https://geekerline.com/circle/74567.html)
 - [网络流行语知识库](https://www.yougengwa.com)
 - [以玩游戏形式在线编程](https://www.codingame.com/start/)
+- [趣味网站](https://geekerline.com/circle/75287.html)
 
 ## 教程
 
@@ -261,6 +262,7 @@ tag:
 - [C 语言中文网](http://c.biancheng.net/)
 - [Real Python 教程](https://realpython.com/)
 - [Python 技术站](https://pythonjishu.com/)
+- [zhang_derek Python 教程](https://www.cnblogs.com/derek1184405959/p/8579428.html)
 - [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 - [在线学习 Python、ChatGPT、SQL、Power BI](https://www.datacamp.com/)
 - [How2J 的 Java 教程](https://how2j.cn/)
@@ -370,6 +372,7 @@ tag:
 
 ## 工具
 
+- [在线工具集合-IT Tools](https://it-tools.tech/)
 - [改图鸭](https://www.gaituya.com/)
 - [cloudconvert 各类文档类型转换](https://cloudconvert.com/)
 - [PDF 处理](https://smallpdf.com/cn)
