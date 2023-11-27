@@ -503,6 +503,7 @@ tag:
 - [磁力印象 - 在线查看磁力资源的视频截图](https://alpha.magnet.pics/)
 - [m3u8 在线播放器](https://m3u8-player.com/)
 - [MAGNET VIP - 好用的磁力转种子工具](https://magnet-vip.com/)
+- [直播源m3u集合](https://github.com/Ftindy/IPTV-URL)
 - [WARP CLASH CONFIG](https://www.ahhhhfs.com/46143/)
 - [Txtmoji 在线文本加密到表情符号工具](https://txtmoji.com/)
 - [在线 Latex 工具](https://latex.91maths.com/)
@@ -519,6 +520,8 @@ tag:
 - [ComicTv - 摸鱼](http://neos55555.gitee.io/comictv/)
 - [HTML5 语法检查工具](https://validator.w3.org/)
 - [CSS3 语法检查工具](https://jigsaw.w3.org/css-validator/)
+- [浏览器对 HTML5 的支持情况](https://caniuse.com/)
+- [Statcounter 全球统计使用份额](https://gs.statcounter.com/)
 
 ## 图片
 
@@ -544,6 +547,7 @@ tag:
   - [在线漫画 - 古风漫画](https://www.gufengmh.com/)
   - [在线漫画 - 拷贝漫画](https://www.mangacopy.com/)
   - [在线漫画 - MangaDex](https://mangadex.org/)
+  - [在线漫画 - Komiic](https://komiic.com/)
   - [Kox.moe - 需要下载观看](https://kox.moe/)
   - [次元狗漫画 - 需要下载观看](https://www.acgndog.com/category/rec-comic)
   - [安卓漫画阅读器 - Tachiyomi](https://tachiyomi.org)
