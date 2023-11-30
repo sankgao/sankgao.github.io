@@ -236,6 +236,13 @@ tag:
 - [网络流行语知识库](https://www.yougengwa.com)
 - [以玩游戏形式在线编程](https://www.codingame.com/start/)
 - [趣味网站](https://geekerline.com/circle/75287.html)
+- [在线童年游戏](http://god.fhjo.cn/fc)
+- [你好污啊](https://nihaowua.90so.net/)
+- [工资计算器](https://hizdm.cn/bonus/)
+- [学习做任何事-生活百科](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5)
+- [书法生成器](https://www.shufazi.cn/)
+- [在线-超级马里奥](https://game.ioxapp.com/mario/)
+- [在线-红警](https://cncnet.org/red-alert)
 
 ## 教程
 
@@ -370,6 +377,8 @@ tag:
 - [一个全本小说网](https://www.quanben.io/)
 - [小说电子书存档网站](https://beitai.cc/)
 - [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
+- [金庸小说集](https://www.jinyongshuwu.com/)
+- [四大名著](http://www.sdmzh.com.cn/)
 
 ## 工具
 
@@ -549,6 +558,8 @@ tag:
   - [在线漫画 - MangaDex](https://mangadex.org/)
   - [在线漫画 - Komiic](https://komiic.com/)
   - [Kox.moe - 需要下载观看](https://kox.moe/)
+  - [B 宅网 - 游戏漫画 ACG 精品资源站](https://www.bzhai.com/)
+  - [PixivNow 欣赏 P 站插画](https://moeyy.cn/pixiv/)
   - [次元狗漫画 - 需要下载观看](https://www.acgndog.com/category/rec-comic)
   - [安卓漫画阅读器 - Tachiyomi](https://tachiyomi.org)
 
