@@ -349,6 +349,8 @@ tag:
 - [大学资源网](https://www.dxzy163.com/)
 - [简答题](https://www.jiandati.com/)
 - [初级中药师网课](https://pan666.net/d/60818)
+- [Jenkins workspace @2 问题解决](https://www.jianshu.com/p/7ccdc20c1fa9)
+- [Jenkins 正在删除代理上的工作区](https://www.coder.work/article/7619367)
 
 ## 书籍
 
