@@ -225,6 +225,7 @@ tag:
 - [超多 B 站链接资源](https://pan666.net/d/99194-b)
 - [白手创业网](https://www.heishou.org/)
 - [世界各国网址大全](http://www.world68.com/)
+- [全球高清实况摄像头](https://www.skylinewebcams.com/)
 - [程序员应该访问的最佳网站](https://github.com/sdmg15/Best-websites-a-programmer-should-visit)
 - [网站盒子](https://www.miniits.com/)
 - [国内外 PT 站推荐汇总](https://geekerline.com/59497/.html)
