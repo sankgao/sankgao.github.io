@@ -261,6 +261,7 @@ tag:
 - [W3school 官网](https://www.w3schools.com/)
 - [w3school 中文](https://www.w3school.com.cn/)
 - [w3cschool](https://www.w3cschool.cn/)
+- [ES6 入门教程 - 阮一峰](https://es6.ruanyifeng.com/)
 - [极客对极客](https://www.geeksforgeeks.org/)
 - [极客教程](https://geek-docs.com/)
 - [编程自学之路](https://www.r2coding.com/#/)
