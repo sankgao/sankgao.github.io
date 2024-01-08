@@ -20,7 +20,7 @@ tag:
 - 扫描病毒
 - 验证银行账号
 
-::: danger
+::: caution
 大多数浏览器不再支持 Java Applet 和插件
 
 所有浏览器均不再支持 ActiveX 控件
