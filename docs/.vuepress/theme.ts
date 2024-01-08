@@ -107,6 +107,13 @@ export default hopeTheme({
       category: "Announcements",
       categoryId: "DIC_kwDOJWT44M4CV-wc",
     },
+
+    // DocSearch 搜索
+    docsearch: {
+      appId: "0KZFY2PX1A",
+      apiKey: "26299b05be586e142ecf257f6a6ea1f1",
+      indexName: "sankgaoio",
+    },
     
     // Feed 插件配置
     feed: {
@@ -120,7 +127,7 @@ export default hopeTheme({
       align: true,  // 启用自定义对齐格式支持
       chart: true,  // 支持 Chart 图表
       codetabs: true,  // 启用代码组
-      container: true,  // 启用自定义容器支持
+      hit: true,  // 启用自定义容器支持
       demo: true,  // 启用代码案例支持
       echarts: true,  // 支持 EChart 图表
       figure: true,  // 启用 figure
@@ -144,7 +151,6 @@ export default hopeTheme({
     components: {
       // 你想使用的组件
       components: [
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
@@ -154,8 +160,7 @@ export default hopeTheme({
         "StackBlitz",
         "VPBanner",
         "VPCard",
-        "VideoPlayer",
-        "YouTube",
+	"VidStack",
       ],
     },
     
