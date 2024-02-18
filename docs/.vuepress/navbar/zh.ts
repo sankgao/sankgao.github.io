@@ -30,6 +30,7 @@ export const zhNavbarConfig = navbar([
       { text: "HTML5", icon: "html5", link: "html5/" },
       { text: "CSS3", icon: "css3", link: "css3/" },
       { text: "Python3", icon: "python", link: "python3/" },
+      { text: "C", icon: "c", link: "c/" },
     ],
   },
   {

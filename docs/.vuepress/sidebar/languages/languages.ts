@@ -34,4 +34,11 @@ export const languages = arraySidebar([
       "cases.md",
     ],
   },
+  {
+    text: "C",
+    icon: "c",
+    link: "c/",
+    prefix: "c/",
+    children: [],
+  },
 ]);
