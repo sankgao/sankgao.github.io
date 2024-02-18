@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 import { computers, framework } from "./computers/index.ts";
 import { devops } from "./devops/index.ts";
-import { languages, html5, css3, python3 } from "./languages/index.ts";
+import { languages, html5, css3, python3, c } from "./languages/index.ts";
 import { others } from "./others/index.ts";
 import { about } from "./about.ts";
 
@@ -19,6 +19,7 @@ export const zhSidebarConfig = sidebar({
   "/languages/html5/": html5,
   "/languages/css3/": css3,
   "/languages/python3/": python3,
+  "/languages/c/": c,
   
   "/others/": others,
   
