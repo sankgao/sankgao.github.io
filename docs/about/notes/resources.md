@@ -249,6 +249,7 @@ tag:
 
 - [菜鸟教程](https://www.runoob.com/)
 - [编程宝库](http://www.codebaoku.com/)
+- [C 语言中文网](https://c.biancheng.net/c/)
 - [IT屋](https://www.it1352.com/)
 - [码农教程](http://www.manongjc.com/)
 - [翼狐网](https://www.yiihuu.com/)
