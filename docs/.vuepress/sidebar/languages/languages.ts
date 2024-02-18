@@ -39,5 +39,8 @@ export const languages = arraySidebar([
     icon: "c",
     link: "c/",
     prefix: "c/",
+    children: [
+      "README.md",
+    ],
   },
 ]);
