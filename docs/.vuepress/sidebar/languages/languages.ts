@@ -40,7 +40,7 @@ export const languages = arraySidebar([
     link: "c/",
     prefix: "c/",
     children: [
-      "README.md",
+      "tutorial/",
     ],
   },
 ]);
