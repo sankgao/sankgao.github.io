@@ -72,7 +72,7 @@ MinGW-w64 与 MinGW 的区别在于 MinGW 只能编译生成 32 位可执行程�
 ### 在线安装 MinGW-w64
 
 ::: warning
-在线安装 MinGW-w64 需要从 [SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 该网站上下载文件，由于网络原因导致下载失败，可以选择 [离线安装 MinGW-w64](#离线安装-mingw-w64)
+在线安装 MinGW-w64 需要从 [SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 该网站上下载 MinGW 的相应数据文件，由于网络原因导致下载失败，可以选择 [离线安装 MinGW-w64](#离线安装-mingw-w64)
 :::
 
 在 MinGW-w64 - for 32 and 64 bit Windows Files 下载页面找到 *MinGW-W64 Online Installer*，点击 *MinGW-W64-install.exe。*
