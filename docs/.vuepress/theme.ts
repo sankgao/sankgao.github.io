@@ -20,7 +20,7 @@ export default hopeTheme({
   
   pageInfo: ['Author', 'Date', 'Word', 'ReadingTime', 'PageView', 'Category', 'Tag'],  // 文章信息
   
-  iconAssets: "//at.alicdn.com/t/c/font_4015978_0um981zox32i.css",  // 字体图标资源链接
+  iconAssets: "//at.alicdn.com/t/c/font_4015978_bz6xgij077c.css",  // 字体图标资源链接
   
   displayFooter: true,  // 是否默认显示页脚
   copyright: "Copyright © 2023-present Sankgao",  // 默认的版权信息
@@ -272,5 +272,3 @@ export default hopeTheme({
     },
   },
 });
-
-
