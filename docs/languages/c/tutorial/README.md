@@ -14,3 +14,4 @@ tag:
 ## 基础教程
 
 - [简介](./introduction.md)
+- [安装](./install.md)

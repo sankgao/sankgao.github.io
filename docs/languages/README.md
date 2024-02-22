@@ -30,3 +30,5 @@ tag:
 - [案例](./python3/cases.md)
 
 ## C
+
+- [基础教程](./c/tutorial/)
