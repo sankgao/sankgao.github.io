@@ -8,6 +8,7 @@ export const c = arraySidebar([
     collapsible: true,
     children: [
       "introduction",
+      "install",
     ],
   },
 ]);
