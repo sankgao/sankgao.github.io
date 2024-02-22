@@ -229,3 +229,45 @@ tag:
 ::: tip
 修改完 HTML 文件，需要保存后，服务器页面才会显示修改后的内容
 :::
+
+### Code Runner
+
+![Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner) 运行多种语言的代码片段或代码文件：C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, Scheme, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, Lisp, Kit, V, SCSS, Sass, CUDA, Less, Fortran, Ring, Standard ML, Zig, Mojo 和自定义命令。
+
+**使用：**
+
+|  快捷键  |  功能  |
+| :---- | :---- |
+|  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd>  |  运行代码  |
+|  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd>  |  停止正在运行的代码  |
+|  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd>  |  选择要运行的语言  |
+
+**配置：**
+
+确保在环境变量中设置了每种语言的执行器 PATH。您还可以添加条目 code-runner.executorMap 来设置执行程序路径。例如：设置 ruby​​、php 和 html 的执行器路径：
+
+```json
+{
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "php": "C:\\php\\php.exe",
+        "python": "python",
+        "perl": "perl",
+        "ruby": "C:\\Ruby23-x64\\bin\\ruby.exe",
+        "go": "go run",
+        "html": "\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\"",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+}
+```
+
+**支持自定义参数：**
+
+- **$workspaceRoot**：VS Code中打开的文件夹的路径
+- **$dir**：正在运行的代码文件的目录
+- **$dirWithoutTrailingSlash**：正在运行的代码文件的目录，不带尾部斜杠
+- **$fullFileName**：正在运行的代码文件的全名
+- **$fileName**：正在运行的代码文件的基本名称，即不带目录的文件
+- **$fileNameWithoutExt**：正在运行的代码文件的基本名称，不带扩展名
+- **$driveLetter**：正在运行的代码文件的驱动器号（仅限Windows）
+- **$pythonPath**：Python解释器的路径（通过Python: Select Interpreter命令设置）
