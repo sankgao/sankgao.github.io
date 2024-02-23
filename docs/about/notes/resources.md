@@ -244,6 +244,8 @@ tag:
 - [书法生成器](https://www.shufazi.cn/)
 - [在线-超级马里奥](https://game.ioxapp.com/mario/)
 - [在线-红警](https://cncnet.org/red-alert)
+- [53 报刊 - 报纸在线阅读系统，无论国内和国外](http://www.53bk.com/Baokan/)
+- [The Book of Secret Knowledge - 作者收集的一系列提升效率的清单，包含手册、备忘录、博客、cli/web 工具等](https://github.com/trimstray/the-book-of-secret-knowledge)
 
 ## 教程
 
@@ -387,6 +389,7 @@ tag:
 - [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
 - [金庸小说集](https://www.jinyongshuwu.com/)
 - [四大名著](http://www.sdmzh.com.cn/)
+- [值得一看的技术类书籍列表 - ](https://doocs.github.io/technical-books/#/)
 
 ## 工具
 
@@ -539,6 +542,8 @@ tag:
 - [CSS3 语法检查工具](https://jigsaw.w3.org/css-validator/)
 - [浏览器对 HTML5 的支持情况](https://caniuse.com/)
 - [Statcounter 全球统计使用份额](https://gs.statcounter.com/)
+- [云萌 Windows10+ 激活工具](https://cmwtat.cloudmoe.com/cn.html)
+- [Replace Google CDN - 将 Google CDN 替换为国内镜像，加速网站访问速度。](https://chromewebstore.google.com/detail/replace-google-cdn/kpampjmfiopfpkkepbllemkibefkiice)
 
 ## 图片
 
