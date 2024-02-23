@@ -9,6 +9,8 @@ export const c = arraySidebar([
     children: [
       "introduction",
       "install",
+      "syntax",
+      "datatypes",
     ],
   },
 ]);
