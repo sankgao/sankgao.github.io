@@ -15,3 +15,5 @@ tag:
 
 - [简介](./introduction.md)
 - [安装](./install.md)
+- [基本语法](./install.md)
+- [数据类型](./install.md)
