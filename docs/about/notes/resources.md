@@ -304,6 +304,7 @@ tag:
 - [蓝桥云课](https://www.lanqiao.cn/)
 - [黑马前端](https://pan666.net/d/136569-7065)
 - [B 站网课资源](https://gitmind.cn/app/docs/mpa0m9v0)
+- [开源之家-专注分享各种培训视频、收费教程、破解软件等优质资源的网站](https://www.linuxyz.cn/)
 - [阿里云盘 - linux 黑马程序员学习](https://www.aliyundrive.com/s/NLFdL9ue1MJ)
 - [阿里云盘 - C语言|C#|C++从入门进阶至工程师全套视频课程](https://www.aliyundrive.com/s/DGin5BAgGEp)
 - [阿里云盘 - C语言、Python、GO合集](https://pan666.net/d/75201-cpythongo)
