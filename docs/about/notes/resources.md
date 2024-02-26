@@ -12,6 +12,10 @@ tag:
 
 ## 博客
 
+- [院长技术](https://deanit.cn/#top)
+
+    院长技术官方网站，致力于 DevOps 技术栈发展，让天下没有难做的技术。
+
 - [Bing](https://liubing.me/)
 
     一个基于 VuePress 的个人博客，主要记录日常前端开发问题和一些代码笔记。
