@@ -509,6 +509,7 @@ tag:
 - [CoolAI - 免费 ChatGPT + MidJourney 网站](https://chat.coolai.vip/)
 - [AI GIRL – 一个专注 AI 生成女性角色的网站](https://geekerline.com/circle/61746.html)
 - [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
+- [阿水AI - 首页](https://xiabb.chat/#/home)
 - [生成式 AI 景观](https://ai-collection.org/zh-CN/)
 - [FilePursuit - 一个在线文件搜索引擎](https://filepursuit.com/)
 - [Leap AI – 一个 AI 绘画网站](https://tryleap.ai/)
