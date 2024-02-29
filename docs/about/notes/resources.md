@@ -264,6 +264,7 @@ tag:
 - [奇客谷](https://www.qikegu.com/)
 - [DevOpsCube](https://devopscube.com/)
 - [DevOps 知识库](https://doc.devpod.cn/)
+- [DevOps - Bruceoxl 博文](https://www.u72.net/dev/show-122350.html)
 - [tutorialspoint](https://www.tutorialspoint.com/index.htm)
 - [W3school 官网](https://www.w3schools.com/)
 - [w3school 中文](https://www.w3school.com.cn/)
