@@ -141,9 +141,33 @@ SSH 远程连接会在无操作时自动断开。
 |  功能描述  |  快捷键  |
 |  :----  |  :----  |
 |  切换全屏模式  |  <kbd>F11</kbd>  |
-|  清除画面  |  <kbd>Ctrl</kbd> + <kbd>L</kbd>  |
 |  显示/隐藏侧边栏  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>  |
 |  开始新的远程会话  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>  |
-|  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>  |
-|  向后切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>  |
+|  关闭当前会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd>  |
+|  复制当前会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>  |
+|  当前会话窗口查找  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>  |
+|  显示/隐藏弹出终端  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd>  |
+|  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>RightArrow</kbd>  |
+|  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Tab</kbd> + <kbd>RightArrow</kbd>  |
+|  向后切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>LeftArrow</kbd>  |
+|  向后切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>  |
 |  在当前会话窗口中查找  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>  |
+|  向上滚动一页  |  <kbd>Shift</kbd> + <kbd>PageUp</kbd>  |
+|  向下滚动一页  |  <kbd>Shift</kbd> + <kbd>PageDown</kbd>  |
+|  向上滚动一行  |  <kbd>Shift</kbd> + <kbd>UpArrow</kbd>  |
+|  向下滚动一行  |  <kbd>Shift</kbd> + <kbd>DownArrow</kbd>  |
+|  向上滚动到开始  |  <kbd>Shift</kbd> + <kbd>Home</kbd>  |
+|  向下滚动到末尾  |  <kbd>Shift</kbd> + <kbd>End</kbd>  |
+|  选择指定内容  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>右键选择（Click）</kbd>  |
+|  清除屏幕  |  <kbd>Ctrl</kbd> + <kbd>L</kbd>  |
+|  中断当前程序  |  <kbd>Ctrl</kbd> + <kbd>C</kbd>  |
+|  退出当前 Shell  |  <kbd>Ctrl</kbd> + <kbd>D</kbd>  |
+|  光标移动到行首  |  <kbd>Ctrl</kbd> + <kbd>A</kbd>  |
+|  光标移动到行尾  |  <kbd>Ctrl</kbd> + <kbd>E</kbd>  |
+|  光标移动到单词开头  |  <kbd>Ctrl</kbd> + <kbd>RightArrow</kbd>  |
+|  光标移动到单词末尾  |  <kbd>Ctrl</kbd> + <kbd>LeftArrow</kbd>  |
+|  清除光标前所有字符  |  <kbd>Ctrl</kbd> + <kbd>U</kbd>  |
+|  清除光标后所有字符  |  <kbd>Ctrl</kbd> + <kbd>K</kbd>  |
+|  清除光标到前一个空格的所有字符  |  <kbd>Ctrl</kbd> + <kbd>W</kbd>  |
+|  清除光标当前位置字符  |  <kbd>Ctrl</kbd> + <kbd>D</kbd>  |
+|  清除光标前一个字符  |  <kbd>Ctrl</kbd> + <kbd>H</kbd>  |
