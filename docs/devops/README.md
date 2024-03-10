@@ -14,3 +14,7 @@ tag:
 ## SVN
 
 - [SVN](./svn/svn.md)
+
+## Gerrit
+
+- [基础](./gerrit/tutorial/)
