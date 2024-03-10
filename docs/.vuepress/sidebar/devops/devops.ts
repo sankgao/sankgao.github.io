@@ -10,4 +10,13 @@ export const devops = arraySidebar([
       "svn",
     ],
   },
+  {
+    text: "Gerrit",
+    icon: "gerrit",
+    link: "gerrit/",
+    prefix: "gerrit/",
+    children: [
+      "tutorial/",
+    ],
+  },
 ]);
