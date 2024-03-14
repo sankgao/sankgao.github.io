@@ -9,6 +9,7 @@ export const zhNavbarConfig = navbar([
     children: [
       // activeMatch：项目激活匹配，避免两个菜单链接同时激活
       { text: "计算机", icon: "computer", link: "", activeMatch: "^/computers/$" },
+      { text: "开发环境", icon: "backstage", link: "dev_env/" },
       { text: "架构", icon: "electron-framework", link: "framework/" },
     ],
   },
