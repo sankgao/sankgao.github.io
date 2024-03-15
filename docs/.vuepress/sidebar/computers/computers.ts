@@ -7,10 +7,7 @@ export const computers = arraySidebar([
     link: "base/",
     prefix: "base/",
     children: [
-      "computer_organization",
-      "operating_system",
-      "computer_network",
-      "data_structure",
+      "README",
     ],
   },
   {
@@ -19,8 +16,7 @@ export const computers = arraySidebar([
     link: "windows/",
     prefix: "windows/",
     children: [
-      "site_not_secure",
-      "github_loading",
+      "README",
     ],
   },
   {
@@ -29,16 +25,25 @@ export const computers = arraySidebar([
     link: "linux/",
     prefix: "linux/",
     children: [
-      "banner_message",
-      "command",
-      "error_using_sudo",
-      "hardware_resource",
-      "install_software",
-      "rebound_shell",
-      "reset_root_password",
-      "root_directory",
-      "system_log",
-      "system_service",
+      "README",
+    ],
+  },
+  {
+    text: "开发环境",
+    icon: "backstage",
+    link: "dev_env/",
+    prefix: "dev_env/",
+    children: [
+      "README",
+    ],
+  },
+  {
+    text: "架构",
+    icon: "electron-framework",
+    link: "framework/",
+    prefix: "framework/",
+    children: [
+      "vue3/",
     ],
   },
 ]);

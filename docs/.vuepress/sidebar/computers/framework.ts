@@ -6,6 +6,7 @@ export const framework = arraySidebar([
     icon: "vue3",
     link: "vue3/",
     prefix: "vue3/",
+    collapsible: true,
     children: [
       "introduction",
       "quick_start",
