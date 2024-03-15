@@ -9,4 +9,4 @@ tag:
 
 配置计算机开发环境。
 
-- [JDK 开发环境](./jdk.md)
+- [JDK 和 OpenJDK 安装](./jdk.md)

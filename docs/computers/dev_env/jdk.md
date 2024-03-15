@@ -1,9 +1,10 @@
 ---
-title: OpenJDK 安装
+title: JDK 和 OpenJDK 安装
 icon: java
 date: 2024-02-23
 category: Languages
 tag:
+    - JDK
     - OpenJDK
 ---
 
@@ -142,40 +143,76 @@ tag:
 
 ### Windows 安装
 
-需要配置环境变量。[JDK 下载地址](https://www.oracle.com/java/technologies/downloads/archive/)
+- 使用 `tar.gz` 包安装
+    
+    需要配置环境变量。[JDK 下载地址](https://www.oracle.com/java/technologies/downloads/archive/)
+    
+    将 `jdk-17.0.10_windows-x64_bin.zip` 包解压到您要存放的位置。例如：`E:\Software\JDK\` 文件夹下。
+    
+    按 <kbd>Win</kbd> + <kbd>X</kbd> 键，依次点击 *系统 -> 高级系统设置 -> 环境变量*。
+    
+    在 *系统变量* 中，点击 *新建*，新建以下两个变量：
+    
+    - 变量名：`JAVA_HOME`，变量值：`E:\Software\JDK\jdk-17.0.10`
+        - `JAVA_HOME` 变量值指定解压缩 JDK 的目录
+    
+    - 变量名：`CLASSPATH`，变量值：`.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;`
+        - `CLASSPATH` 变量值指定类文件的位置
+    
+    在 *系统变量* 中，点击 *Path* 变量进行编辑，点击 *新建*，新建以下两个值：
+    
+    - `%JAVA_HOME%\bin`
+    - `%JAVA_HOME%\jre\bin`
+    
+    以上操作完成，依次点击 *确认* 保存。
+    
+    按 <kbd>Win</kbd> + <kbd>R</kbd> 键，在运行中输入 `cmd` 打开终端控制器。
+    
+    在终端控制器中输入 `java -version` 命令，查看 `java` 版本。输入 `javac -version` 命令，查看 `javac` 版本。
+    
+    ```bash
+    C:\Users\user>java -version
+    java version "17.0.10" 2024-01-16 LTS
+    Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
+    Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+    
+    C:\Users\user>javac -version
+    javac 17.0.10
+    ```
 
-将 `jdk-17.0.10_windows-x64_bin.zip` 包解压到您要存放的位置。例如：`E:\Software\JDK\` 文件夹下。
+- 使用 `exe` 或 `msi` 包安装
+    
+    不需要配置环境变量。[JDK 下载地址](https://www.oracle.com/java/technologies/downloads/archive/)
+    
+    双击 `jdk-17.0.10_windows-x64_bin.exe` 或 `jdk-17.0.10_windows-x64_bin.msi` 程序包开始安装。并点击 *下一步*。
+    
+    ![开始安装](./assetes/start_install.jpg)
 
-按 <kbd>Win</kbd> + <kbd>X</kbd> 键，依次点击 *系统 -> 高级系统设置 -> 环境变量*。
+    点击 *更改*，更改 `JDK` 安装位置。并点击 *下一步*。
 
-在 *系统变量* 中，点击 *新建*，新建以下两个变量：
+    ![安装位置](./assetes/install_position.jpg)
 
-- 变量名：`JAVA_HOME`，变量值：`E:\Software\JDK\jdk-17.0.10`
-    - `JAVA_HOME` 变量值指定解压缩 JDK 的目录
+    等待安装，点击 *关闭*，完成 `JDK` 安装。
 
-- 变量名：`CLASSPATH`，变量值：`.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;`
-    - `CLASSPATH` 变量值指定类文件的位置
-
-在 *系统变量* 中，点击 *Path* 变量进行编辑，点击 *新建*，新建以下两个值：
-
-- `%JAVA_HOME%\bin`
-- `%JAVA_HOME%\jre\bin`
-
-以上操作完成，依次点击 *确认* 保存。
-
-按 <kbd>Win</kbd> + <kbd>R</kbd> 键，在运行中输入 `cmd` 打开终端控制器。
-
-在终端控制器中输入 `java -version` 命令，查看 `java` 版本。输入 `javac -version` 命令，查看 `javac` 版本。
-
-```bash
-C:\Users\user>java -version
-java version "17.0.10" 2024-01-16 LTS
-Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
-Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
-
-C:\Users\user>javac -version
-javac 17.0.10
-```
+    ![安装完成](./assetes/install_complete.jpg)
+    
+    ::: info
+    安装完成后，默认在 *Path* 变量中添加 `C:\Program Files\Common Files\Oracle\Java\javapath` 路径值，所以不需要配置环境变量。
+    :::
+    
+    按 <kbd>Win</kbd> + <kbd>R</kbd> 键，在运行中输入 `cmd` 打开终端控制器。
+    
+    在终端控制器中输入 `java -version` 命令，查看 `java` 版本。输入 `javac -version` 命令，查看 `javac` 版本。
+    
+    ```bash
+    C:\Users\user>java -version
+    java version "17.0.10" 2024-01-16 LTS
+    Java(TM) SE Runtime Environment (build 17.0.10+11-LTS-240)
+    Java HotSpot(TM) 64-Bit Server VM (build 17.0.10+11-LTS-240, mixed mode, sharing)
+    
+    C:\Users\user>javac -version
+    javac 17.0.10
+    ```
 
 ## OpenJDK 安装
 
