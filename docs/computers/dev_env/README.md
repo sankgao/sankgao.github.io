@@ -10,3 +10,4 @@ tag:
 配置计算机开发环境。
 
 - [JDK 和 OpenJDK 安装](./jdk.md)
+- [Git 安装](./git.md)
