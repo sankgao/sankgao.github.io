@@ -11,7 +11,7 @@ export const computers = arraySidebar([
       "computer_organization",
       "operating_system",
       "computer_network",
-      "data-type",
+      "data_structure",
     ],
   },
   {
@@ -54,16 +54,6 @@ export const computers = arraySidebar([
     children: [
       "jdk",
       "git",
-    ],
-  },
-  {
-    text: "架构",
-    icon: "electron-framework",
-    link: "framework/",
-    prefix: "framework/",
-    collapsible: true,
-    children: [
-      "vue3/",
     ],
   },
 ]);
