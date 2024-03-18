@@ -128,7 +128,7 @@ tag:
     配置环境变量，使用 `sudo vim /etc/profile` 命令打开文件，并在最后添加以下内容：
     
     ```bash
-    export JAVA_HOME=/opt/jdk/jdk-17
+    export JAVA_HOME=/opt/jdk/jdk-17.0.10
     export CLASSPATH=$:CLASSPATH:$JAVA_HOME/lib/
     export PATH=$PATH:$JAVA_HOME/bin
     ```
@@ -197,7 +197,7 @@ tag:
     ![安装完成](./assetes/jdk_install_complete.jpg)
     
     ::: info
-    安装完成后，默认在 *Path* 变量中添加 `C:\Program Files\Common Files\Oracle\Java\javapath` 路径值，所以不需要配置环境变量。
+    安装完成后，默认已经在 *Path* 变量中添加 `C:\Program Files\Common Files\Oracle\Java\javapath` 路径值，所以不需要配置环境变量。
     :::
     
     按 <kbd>Win</kbd> + <kbd>R</kbd> 键，在运行中输入 `cmd` 打开终端控制器。
