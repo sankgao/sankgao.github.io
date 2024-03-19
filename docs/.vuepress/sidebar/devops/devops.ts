@@ -17,6 +17,7 @@ export const devops = arraySidebar([
     prefix: "gerrit/",
     children: [
       "tutorial/",
+      "problem/",
     ],
   },
 ]);
