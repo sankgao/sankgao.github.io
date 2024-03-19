@@ -14,3 +14,5 @@ tag:
 ## 基础
 
 - [简介](./tutorial/introduction.md)
+- [安装](./tutorial/install.md)
+- [Gerrit 命令](./tutorial/command.md)
