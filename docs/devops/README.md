@@ -18,3 +18,4 @@ tag:
 ## Gerrit
 
 - [基础](./gerrit/tutorial/)
+- [问题](./gerrit/problem/)
