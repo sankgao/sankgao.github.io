@@ -2,9 +2,9 @@
 title: Git 安装
 icon: git
 date: 2024-02-23
-category: Languages
+category: Computer
 tag:
-    - Git
+    - 开发环境
 ---
 
 ## 介绍

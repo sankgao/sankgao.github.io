@@ -2,10 +2,9 @@
 title: JDK 和 OpenJDK 安装
 icon: java
 date: 2024-02-23
-category: Languages
+category: Computer
 tag:
-    - JDK
-    - OpenJDK
+    - 开发环境
 ---
 
 ## 介绍
