@@ -281,6 +281,10 @@ server {
 - **auth_basic_user_file**：HTTP 认证文件地址，用于 Gerrit 登录
 - **proxy_pass**：需要代理 Gerrit 的地址及端口
 
+::: info
+如果使用 Apache2 进行代理，参考 [官网文档](http://gerrit-documentation.storage.googleapis.com/Documentation/3.9.1/config-reverseproxy.html#_apache_2_configuration)
+:::
+
 创建 `/home/gerrit/review_site/etc/.password` 文件，并新增用户密码：
 
 ```bash
@@ -322,7 +326,7 @@ htpasswd -m .password lisi
 
 ```bash
 cd /home/gerrit/review_site/bin
-./gerrit.sh restart
+gerrit.sh restart
 sudo systemctl restart nginx
 ```
 
@@ -371,3 +375,12 @@ failed (13: Permission denied), client: 10.1.1.1, server: localhost, request:
 再次访问 `http://10.1.1.10:8081/` 代理地址：
 
 ![首页](../assets/gerrit_front_page.jpg)
+
+## 启动/停止守护进程
+
+要控制在后台运行的 `Gerrit Code Review` 守护进程，请使用由 `init` 创建的 `rc.d` 样式启动脚本：
+
+- **服务运行**：review_site/bin/gerrit.sh start
+- **服务停止**：review_site/bin/gerrit.sh stop
+- **服务重启**：review_site/bin/gerrit.sh restart
+- **服务状态**：review_site/bin/gerrit.sh status
