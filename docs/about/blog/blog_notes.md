@@ -15,6 +15,7 @@ tag:
 
 - **格式**
     - `:语义化文本:`
+    - `&#xcode;`
 
 - **说明**
     - 用一对 `:` 包裹，里面是 **Emoji** 符号的 **语义化文本**
@@ -22,7 +23,7 @@ tag:
 
 ::: md-demo 示例
 
-:smile: :sweat: :cat: :woman_cartwheeling:
+:smile: :sweat: :cat: :woman_cartwheeling: &#x1F4BB;
 
 :::
 
