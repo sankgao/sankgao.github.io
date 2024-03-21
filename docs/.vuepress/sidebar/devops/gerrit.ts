@@ -10,6 +10,7 @@ export const gerrit = arraySidebar([
     children: [
       "introduction",
       "install",
+      "self_start",
       "command",
     ],
   },

@@ -15,6 +15,7 @@ tag:
 
 - [简介](./tutorial/introduction.md)
 - [安装](./tutorial/install.md)
+- [开机自启](./tutorial/self_start.md)
 - [Gerrit 命令](./tutorial/command.md)
 
 ## 问题
