@@ -35,11 +35,9 @@ tag:
 - [系统根目录](./linux/root_directory.md)
 - [系统日志](./linux/system_log.md)
 - [系统服务命令](./linux/system_service.md)
+- [邮件服务](./linux/mail.md)
 
 ## 开发环境
 
 - [JDK 和 OpenJDK 安装](./dev_env/jdk.md)
-
-## 架构
-
-- [Vue3](./framework/vue3/)
+- [Git 安装](./dev_env/git.md)

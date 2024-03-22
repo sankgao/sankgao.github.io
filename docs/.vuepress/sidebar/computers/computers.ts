@@ -43,6 +43,7 @@ export const computers = arraySidebar([
       "root_directory",
       "system_log",
       "system_service",
+      "mail",
     ],
   },
   {
