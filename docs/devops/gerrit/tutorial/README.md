@@ -14,4 +14,5 @@ tag:
 - [简介](./introduction.md)
 - [安装](./install.md)
 - [开机自启](./self_start.md)
+- [基础操作](./basic_operation.md)
 - [Gerrit 命令](./command.md)

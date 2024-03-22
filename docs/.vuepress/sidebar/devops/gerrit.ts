@@ -11,6 +11,7 @@ export const gerrit = arraySidebar([
       "introduction",
       "install",
       "self_start",
+      "basic_operation",
       "command",
     ],
   },
@@ -24,6 +25,7 @@ export const gerrit = arraySidebar([
       "java_runtime",
       "connection_refused",
       "port_disabled_selinux",
+      "external_id",
     ],
   },
 ]);

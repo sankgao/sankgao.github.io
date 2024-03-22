@@ -16,3 +16,4 @@ tag:
 - [Java 不识别类文件版本](./java_runtime.md)
 - [连接被拒绝](./connection_refused.md)
 - [端口被 SELinux 禁用](./port_disabled_selinux.md)
+- [external ID already in use](./external_id.md)
