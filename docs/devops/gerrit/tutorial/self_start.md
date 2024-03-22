@@ -42,7 +42,7 @@ sudo touch /usr/lib/systemd/system/gerrit.service
 
 在 `gerrit.service` 文件输入以下内容：
 
-```service
+```bash
 [Unit]
 Description=Gerrit Code Review
 After=network.target remote-fs.target nss-lookup.target
