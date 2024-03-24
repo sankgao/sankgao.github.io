@@ -25,3 +25,4 @@ tag:
 - [连接被拒绝](./problem/connection_refused.md)
 - [端口被 SELinux 禁用](./problem/port_disabled_selinux.md)
 - [external ID already in use](./problem/external_id.md)
+- [没有管理员账号](./problem/no_admin_account.md)

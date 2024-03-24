@@ -26,6 +26,7 @@ export const gerrit = arraySidebar([
       "connection_refused",
       "port_disabled_selinux",
       "external_id",
+      "no_admin_account",
     ],
   },
 ]);

@@ -17,3 +17,4 @@ tag:
 - [连接被拒绝](./connection_refused.md)
 - [端口被 SELinux 禁用](./port_disabled_selinux.md)
 - [external ID already in use](./external_id.md)
+- [没有管理员账号](./no_admin_account.md)
