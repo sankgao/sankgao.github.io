@@ -43,14 +43,18 @@ cat .ssh/zhangsan_id_rsa.pub | ssh gerrit gerrit set-account --full-name zhangsa
 
 ## 解决方法
 
-Gerrit 默认项目 `All-User.git` 用于管理用户信息，提供了 `external ID` 的信息。
+Gerrit 默认项目 `All-User.git` 用于管理用户信息，在 gerrit 的帮助中，提供了 `external ID` 的信息。
 
-使用 Gerrit 管理员用户查看 `external-ids` 日志信息，使用 `git clone` 命令拷贝 Gerrit 的 `All-User.git` 项目：
+```bash
+External IDs are stored as Git Notes in the All-Users repository. The name of the notes branch is refs/meta/external-ids.
+```
+
+使用 Gerrit 管理员用户查看 `external-ids` 日志信息，使用 `git clone` 命令克隆 Gerrit 的 `All-User.git` 项目，从裸仓库克隆出一个工作仓库出来：
 
 ```bash
 mkdir project/
 cd project/
-git clone ~/review_site/git/All-Users.git 
+git clone ~/review_site/git/All-Users.git
 
 Cloning into 'All-Users'...
 done.
@@ -72,9 +76,10 @@ Or undo this operation with:
 Turn off this advice by setting config variable advice.detachedHead to false
 ```
 
-使用 `git fetch` 获取 `external-ids` 分支，切换到 `external-ids` 分支：
+使用 `git fetch` 获取并切换到 `external-ids` 分支：
 
 ```bash
+cd All-Users
 git fetch origin refs/meta/external-ids:refs/meta/external-ids
 git checkout refs/meta/external-ids
 
@@ -91,7 +96,7 @@ to do so with:
 HEAD is now at a6dfc98 Create Account via API
 ```
 
-查看 `log`：
+使用 `git log` 命令查看提交记录：
 
 ```bash
 git log
@@ -117,7 +122,7 @@ Date:   Tue Mar 19 14:28:40 2024 +0800
 
 通过 `create-account` 命令创建用户的 `commit id` 为 `a6dfc98ea7c42701f43d99e9c1101e08c16338d8`。
 
-使用 `git show` 命令查看此 `commit id`：
+使用 `git show` 命令查看在此 `commit id` 中有哪些文件产生：
 
 ```bash
 git show a6dfc98ea7c42701f43d99e9c1101e08c16338d8
@@ -147,15 +152,34 @@ index 0000000..2f32b58
 +       accountId = 1000002
 ```
 
+删除在此 `commit id` 中产生的文件：
 
 ```bash
+rm 067ecad3e57b04170c4a24e1e9e5e09b150dfa8c
+rm 13bcf42f9ed6cab205e0437a6d38cb32432dfd12
+```
+
+使用 `git commit` 命令将暂存区的内容添加到本地仓库：
+
+```bash
+git add .
 git commit -am "remove user zhangsan"
 
 [detached HEAD eaae658] remove user zhangsan
  2 files changed, 5 deletions(-)
  delete mode 100644 067ecad3e57b04170c4a24e1e9e5e09b150dfa8c
  delete mode 100644 13bcf42f9ed6cab205e0437a6d38cb32432dfd12
+```
 
+使用 `git update-ref` 命令更新引用，应用到 `NoteDb` 数据库：
+
+```bash
+git update-ref refs/meta/external-ids $(git rev-parse HEAD)
+```
+
+使用 `git push` 命令将本地仓库推送到远程仓库中：
+
+```bash
 git push origin HEAD:refs/meta/external-ids
 
 Enumerating objects: 3, done.
@@ -166,6 +190,6 @@ Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
 Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 To /home/gerrit/project/../review_site/git/All-Users.git/
    a6dfc98..eaae658  HEAD -> refs/meta/external-ids
-
-git update-ref refs/meta/external-ids $(git rev-parse HEAD)
 ```
+
+再次登录 Gerrit 服务器即可。
