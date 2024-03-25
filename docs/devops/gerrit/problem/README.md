@@ -18,3 +18,6 @@ tag:
 - [端口被 SELinux 禁用](./port_disabled_selinux.md)
 - [external ID already in use](./external_id.md)
 - [没有管理员账号](./no_admin_account.md)
+- [没有用户身份信息](./no_author_identity.md)
+- [推送到 Gerrit 特有的分支](./push_gerrit_branch.md)
+- [没有 Change-Id](./no_change_id.md)

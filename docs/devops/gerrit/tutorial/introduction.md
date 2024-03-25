@@ -49,3 +49,9 @@ Change-Id: I9e29f5469142cc7fce9e90b0b09f5d2186ff0990
 因此，如果 `Change-Id` 在提交修改时保持不变，Gerrit 会检测到每个新版本都引用相同的概念更改。Gerrit Web 界面对版本进行分组，以便审阅者可以在代码审阅期间看到您的更改如何演变。
 
 对于 Gerrit 来说，标识符可以是随机的。
+
+## 提交到 Gerrit 特有分支
+
+Gerrit 提供一个特有的分支 `refs/for/*` 用来区分 `commit` 是提交到 Gerrit 服务器进行审核还是直接提交到远程 Git 仓库。
+
+假如一个远程分支为 `master`，只有当代码被提交到 `refs/for/master` 分支时，Gerrit 才会知道，我收到了一个需要审核的代码推送，需要通知审核员来审核代码。当审核通过之后，Gerrit 会自动将这条分支合并到 `master` 主线上，然后邮件通知相关成员，`master` 分支有更新，需要的成员再去 `pull` 就好了。

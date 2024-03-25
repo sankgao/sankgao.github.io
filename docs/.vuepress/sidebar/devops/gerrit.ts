@@ -27,6 +27,9 @@ export const gerrit = arraySidebar([
       "port_disabled_selinux",
       "external_id",
       "no_admin_account",
+      "no_author_identity",
+      "push_gerrit_branch",
+      "no_change_id",
     ],
   },
 ]);
