@@ -106,7 +106,7 @@ ssh gerrit -l gerrit
 Connection to 10.1.1.10 closed.
 ```
 
-## 添加普通用户
+## 添加并修改普通用户
 
 用 `htpasswd` 命令在 `.password` 文件中添加普通用户 HTTP 认证：
 
@@ -114,8 +114,236 @@ Connection to 10.1.1.10 closed.
 htpasswd -m review_site/etc/.password zhangsan
 ```
 
-用命令创建普通用户：
+用以下命令修改普通用户：
 
 ```bash
 cat .ssh/zhangsan_id_rsa.pub | ssh gerrit gerrit set-account --full-name zhangsan --add-email zhangsan@mail.example.com --add-ssh-key - zhangsan
 ```
+
+修改用户所在组：
+
+默认 Gerrit 服务将普通用户加入 `Anonymous Users` 组中。创建 `tests` 组，将 `zhangsan` 加入 `tests` 组中。
+
+依次点击 *BROWSE -> Groups -> CREATE NEW*。
+
+![创建组](../assets/new_group.jpg)
+
+![加入组](../assets/add_group.jpg)
+
+## 新建和修改项目
+
+创建 `test` 项目，依次点击 *BROWSE -> Repositories -> CREATE NEW*。
+
+![创建项目](../assets/new_project.jpg)
+
+- **Repository name**：项目名
+- **Default Branch**：默认分支为 `master`
+- **Rights inherit from**：默认权限继承为 `All-Projects`
+- **Owner**：属主
+- **Create initial empty commit**：是否创建初始空提交
+- **Only serve as parent for other repositories**：是否仅作为其他存储库的父存储库
+
+修改 `test` 项目权限，将 Reference 改为 `refs/*`，添加 `Read` 权限。
+
+依次点击 *BROWSE -> Repositories -> tests -> Access -> EDIT -> ADD REFERENCE*。
+
+`test` 项目默认继承 `All-Projects` 组的权限，在修改权限时不要直接修改 `All-Projects` 组的权限，`All-Projects` 组是所有项目的依赖权限组，修改后所有的项目权限都会跟着改变。
+
+![修改权限](../assets/change_rights.jpg)
+
+将 `Anonymous Users` 组设置为 `DENY`；`tests` 组设置为 `ALLOW`。只有 `tests` 组可以访问，其他组无法访问：
+
+![分组权限](../assets/group_rights.jpg)
+
+## 普通用户测试
+
+### 克隆项目
+
+使用 `zhangsan` 用户登录 Gerrit Web 服务器，查看 `test` 项目的克隆地址。
+
+用 `zhangsan` 用户克隆 `test` 项目。
+
+```bash
+sudo su - zhangsan
+mkdir projects
+cd projects
+git clone "ssh://zhangsan@10.1.1.10:29418/test"
+```
+
+### 推送到本地仓库
+
+添加测试文件并提交到本地仓库：
+
+```bash
+cd test
+git config --global user.name zhangsan
+git config --global user.email zhangsan@mail.example.com
+echo "Hello World!" > test
+git add test
+git commit -m "add test"
+
+[master e33ee12] add test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+```
+
+### 推送到 Gerrit 服务器中
+
+由于需要 Gerrit 进行审核代码，不能直接推送到远程 Git 仓库中，而是推送到 Gerrit 特有的 `refs/for/*` 分支中。修改推送远程的默认分支：
+
+```bash
+git config remote.origin.push refs/heads/*:refs/for/*
+```
+
+推送时需要带有 `Chang-Id`，而当前的提交没有 `Chang-Id`。
+
+根据提示从 Gerrit 服务器上拉取 `hooks` 文件，`hooks` 文件下的 `commit-msg` 脚本会自动生成 `Chang-Id`：
+
+```bash
+gitdir=$(git rev-parse --git-dir); scp -p -P 29418 zhangsan@10.1.1.10:hooks/commit-msg ${gitdir}/hooks/
+```
+
+::: tip
+在第一次克隆项目时，使用提交消息挂钩进行克隆（Clone with commit-msg hook）会直接拉取 `hooks` 文件
+:::
+
+重新 `push` 发现一样的错误，因为当前的 `commit` 没有生成 `Change-Id`。两种方法解决：
+
+1. 使用 `git reset --hard` 命令回退到上一次，重新更新并提交文件。
+    
+    使用 `git log` 查看上一次的 `commit id`：
+    
+    ```bash
+    git log
+    
+    commit e33ee123453bf2572cb903d2b4d026e9be368128 (HEAD -> master)
+    Author: zhangsan <zhangsan@mail.example.com>
+    Date:   Mon Mar 25 14:27:22 2024 +0800
+    
+        add test
+    
+    commit 9cb4e0bbcd27a7f9fb5ff62dc0aca34cdc9c1874 (origin/master, origin/HEAD)
+    Author: gerrit <gerrit@mail.example.com>
+    Date:   Mon Mar 25 14:00:22 2024 +0800
+    
+        Initial empty repository
+    ```
+    
+    使用 `git reset --hard` 命令回退到上一次：
+    
+    ```bash
+    git reset --hard 9cb4e0bbcd27a7f9fb5ff62dc0aca34cdc9c1874
+    
+    HEAD is now at 9cb4e0b Initial empty repository
+    ```
+    
+    重新更新并提交文件：
+    
+    ```bash
+    echo "Hello World!" > test
+    git add test
+    git commit -m "add test"
+    
+    [master e33ee12] add test
+     1 file changed, 1 insertion(+)
+     create mode 100644 test
+    ```
+
+2. 使用 `git commit --amend --no-edit` 命令
+
+    `git commit --amend --no-edit` 命令用于追加提交，且不修改 `message` 信息。
+
+查看本次 `log` 信息是否带 `Change-Id`：
+
+```bash
+git log
+
+commit e564c39767b949b77814ff6ca9fd319d12b43857 (HEAD -> master)
+Author: zhangsan <zhangsan@mail.example.com>
+Date:   Mon Mar 25 15:45:23 2024 +0800
+
+    add test
+
+    Change-Id: Ic8e2f63e1be2a00f42dd97513e91902754a057c7
+
+commit 9cb4e0bbcd27a7f9fb5ff62dc0aca34cdc9c1874 (origin/master, origin/HEAD)
+Author: gerrit <gerrit@mail.example.com>
+Date:   Mon Mar 25 14:00:22 2024 +0800
+
+    Initial empty repository
+```
+
+上传到 Gerrit 服务器中：
+
+```bash
+git push origin master
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Processing changes: refs: 1, new: 1, done
+remote:
+remote: SUCCESS
+remote:
+remote:   http://10.1.1.10:8088/c/test/+/1 add test [NEW]
+remote:
+To ssh://10.1.1.10:29418/test
+ * [new reference]   master -> refs/for/master
+```
+
+### Code-Review 代码审核
+
+使用 `zhangsan` 用户登录 Gerrit Web 服务器，依次点击 *CHANGES -> Open* 即可查看已打开的提交信息：
+
+![提交的信息](../assets/submit_info.jpg)
+
+点击 `add test` 进入到当前事件的详情页面，此页面记录了生成的 `Change-Id`、修改的文件、评论等：
+
+![详情页面](../assets/details_page.jpg)
+
+点击 `Reply` 对此次事件进行打分，`Code-Review` 一共有五个选项：`-2`、`-1`、`0`、`+1` 和 `+2`。普通用户只有 `-1`、`0`、`1` 三个选项，只有管理员有五个选项。
+
+各个选项含义如下：
+
+- **-2**：代码有严重的问题，绝对不可以进行合并。**注意**：Any -2 blocks submit
+- **-1**：代码看上去不太好，但需要其他评审人再次确认
+- **0**：还没仔细去看代码
+- **+1**：代码看上去没问题，但需要其他评审人再次确认
+- **+2**：代码看看上去不错，同意合并。**注意**：Any +2 enables submit
+
+值得注意的是 `Code-Review` 都是针对于评审者自身的意见而言的，并不代表所有人的意见。
+
+添加 `gerrit` 管理审核人员、自己打分、添加评论：
+
+![Reply](../assets/reply.jpg)
+
+使用 `gerrit` 用户登录 Gerrit Web 服务器，进行审核、评论：
+
+![Reply](../assets/reply01.jpg)
+
+### Verified 代码审核
+
+`Verified` 审核，需要安装 `Verified label` 插件。在初始化安装 Gerrit 时，已经安装上了。
+
+使用 `gerrit` 用户登录 Gerrit Web 服务器，依次点击 *BROWSE -> Repositories -> tests -> Access -> EDIT -> ADD REFERENCE*。
+
+在 *Reference: refs/heads/\** 中添加 *Label Verified* 审核，并添加 `tests` 组并保存。
+
+对 `add test` 事件进行 `Verified` 打分：
+
+![Verified](../assets/verified.jpg)
+
+### 提交到主线
+
+`Code-Review` 和 `Verified` 审核结束后，就可以提交到 `master` 分支中。
+
+![提交](../assets/submit.jpg)
+
+### 查看 test 项目
+
+依次点击 *BROWSE -> Repositories -> tests -> browse*，进入 `Gitiles` 浏览页面。`Gitiles` 是 Git 的可视化工具，在初始化安装 Gerrit 时，已经安装上了。
+
+在 `Gitiles` 浏览页面中，即可查看添加到 `master` 分支的 `test` 文件。
+
+![Gitiles](../assets/gitiles.jpg)

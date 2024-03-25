@@ -192,4 +192,10 @@ To /home/gerrit/project/../review_site/git/All-Users.git/
    a6dfc98..eaae658  HEAD -> refs/meta/external-ids
 ```
 
+使用以下命令修改 `zhangsan` 用户信息：
+
+```bash
+cat .ssh/wangwu_id_rsa.pub | ssh gerrit gerrit set-account --full-name zhangsan --add-email zhangsan@mail.example.com --add-ssh-key - wangzhangsanwu
+```
+
 再次登录 Gerrit 服务器即可。
