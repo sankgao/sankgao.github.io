@@ -37,9 +37,9 @@ error: failed to push some refs to 'ssh://10.1.1.10:29418/test'
 
 ## 原因
 
-推送时需要有 `Chang-Id`，而当前的推送没有 `Chang-Id`。
+推送时需要有 `Change-Id`，而当前的推送没有 `Change-Id`。
 
-使用 `git log` 查看 `log` 信息，没有 `Chang-Id`：
+使用 `git log` 查看 `log` 信息，没有 `Change-Id`：
 
 ```bash
 git log
@@ -60,12 +60,12 @@ Date:   Mon Mar 25 14:00:22 2024 +0800
 ## 解决方法
 
 ::: tip
-在第一次克隆项目时，使用提交消息挂钩进行克隆（Clone with commit-msg hook）会直接拉取 `hooks` 文件，之后使用 `git commit` 时会自动生成 `Chang-Id`
+在第一次克隆项目时，使用提交消息挂钩进行克隆（Clone with commit-msg hook）会直接拉取 `hooks` 文件，之后使用 `git commit` 时会自动生成 `Change-Id`
 :::
 
 ### 解决方法1
 
-根据提示从 Gerrit 服务器上拉取 `hooks` 文件。`hooks` 文件下的 `commit-msg` 脚本会自动生成 `Chang-Id`：
+根据提示从 Gerrit 服务器上拉取 `hooks` 文件。`hooks` 文件下的 `commit-msg` 脚本会自动生成 `Change-Id`：
 
 ```bash
 gitdir=$(git rev-parse --git-dir); scp -p -P 29418 zhangsan@10.1.1.10:hooks/commit-msg ${gitdir}/hooks/

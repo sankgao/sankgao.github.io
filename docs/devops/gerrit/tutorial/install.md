@@ -384,3 +384,13 @@ failed (13: Permission denied), client: 10.1.1.1, server: localhost, request:
 - **服务停止**：review_site/bin/gerrit.sh stop
 - **服务重启**：review_site/bin/gerrit.sh restart
 - **服务状态**：review_site/bin/gerrit.sh status
+
+## 查看已安装插件信息
+
+使用 `gerrit` 管理员用户登录 Gerrit Web 服务器，依次点击 *BROWSE -> Plugins*。
+
+在插件页面随便点一个插件名，如出现以下错误：
+
+![找不到页面](../assets/not_found.jpg)
+
+因为访问的 URL 地址没有带端口号，在 URL 地址中添加访问端口即可。例如：原 URL 地址 `http://10.1.1.10/plugins/hooks/Documentation/index.html` 修改后的 URL 地址 `http://10.1.1.10/plugins/hooks/Documentation/index.html`。

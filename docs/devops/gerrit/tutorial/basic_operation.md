@@ -170,21 +170,12 @@ cd projects
 git clone "ssh://zhangsan@10.1.1.10:29418/test"
 ```
 
-### 推送到本地仓库
-
-添加测试文件并提交到本地仓库：
+### 添加用户身份信息
 
 ```bash
 cd test
 git config --global user.name zhangsan
 git config --global user.email zhangsan@mail.example.com
-echo "Hello World!" > test
-git add test
-git commit -m "add test"
-
-[master e33ee12] add test
- 1 file changed, 1 insertion(+)
- create mode 100644 test
 ```
 
 ### 推送到 Gerrit 服务器中
@@ -195,9 +186,11 @@ git commit -m "add test"
 git config remote.origin.push refs/heads/*:refs/for/*
 ```
 
-推送时需要带有 `Chang-Id`，而当前的提交没有 `Chang-Id`。
+### 添加 Change-Id
 
-根据提示从 Gerrit 服务器上拉取 `hooks` 文件，`hooks` 文件下的 `commit-msg` 脚本会自动生成 `Chang-Id`：
+推送时需要带有 `Change-Id`，而当前的提交没有 `Change-Id`。
+
+从 Gerrit 服务器上拉取 `hooks` 文件，`hooks` 文件下的 `commit-msg` 脚本会自动生成 `Change-Id`：
 
 ```bash
 gitdir=$(git rev-parse --git-dir); scp -p -P 29418 zhangsan@10.1.1.10:hooks/commit-msg ${gitdir}/hooks/
@@ -207,51 +200,19 @@ gitdir=$(git rev-parse --git-dir); scp -p -P 29418 zhangsan@10.1.1.10:hooks/comm
 在第一次克隆项目时，使用提交消息挂钩进行克隆（Clone with commit-msg hook）会直接拉取 `hooks` 文件
 :::
 
-重新 `push` 发现一样的错误，因为当前的 `commit` 没有生成 `Change-Id`。两种方法解决：
+### 推送到本地仓库
 
-1. 使用 `git reset --hard` 命令回退到上一次，重新更新并提交文件。
-    
-    使用 `git log` 查看上一次的 `commit id`：
-    
-    ```bash
-    git log
-    
-    commit e33ee123453bf2572cb903d2b4d026e9be368128 (HEAD -> master)
-    Author: zhangsan <zhangsan@mail.example.com>
-    Date:   Mon Mar 25 14:27:22 2024 +0800
-    
-        add test
-    
-    commit 9cb4e0bbcd27a7f9fb5ff62dc0aca34cdc9c1874 (origin/master, origin/HEAD)
-    Author: gerrit <gerrit@mail.example.com>
-    Date:   Mon Mar 25 14:00:22 2024 +0800
-    
-        Initial empty repository
-    ```
-    
-    使用 `git reset --hard` 命令回退到上一次：
-    
-    ```bash
-    git reset --hard 9cb4e0bbcd27a7f9fb5ff62dc0aca34cdc9c1874
-    
-    HEAD is now at 9cb4e0b Initial empty repository
-    ```
-    
-    重新更新并提交文件：
-    
-    ```bash
-    echo "Hello World!" > test
-    git add test
-    git commit -m "add test"
-    
-    [master e33ee12] add test
-     1 file changed, 1 insertion(+)
-     create mode 100644 test
-    ```
+添加测试文件并提交到本地仓库：
 
-2. 使用 `git commit --amend --no-edit` 命令
+```bash
+echo "Hello World!" > test
+git add test
+git commit -m "add test"
 
-    `git commit --amend --no-edit` 命令用于追加提交，且不修改 `message` 信息。
+[master e33ee12] add test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+```
 
 查看本次 `log` 信息是否带 `Change-Id`：
 
@@ -318,7 +279,7 @@ To ssh://10.1.1.10:29418/test
 
 ![Reply](../assets/reply.jpg)
 
-使用 `gerrit` 用户登录 Gerrit Web 服务器，进行审核、评论：
+使用 `gerrit` 管理员用户登录 Gerrit Web 服务器，对 `test` 项目进行审核、评论：
 
 ![Reply](../assets/reply01.jpg)
 
@@ -326,7 +287,7 @@ To ssh://10.1.1.10:29418/test
 
 `Verified` 审核，需要安装 `Verified label` 插件。在初始化安装 Gerrit 时，已经安装上了。
 
-使用 `gerrit` 用户登录 Gerrit Web 服务器，依次点击 *BROWSE -> Repositories -> tests -> Access -> EDIT -> ADD REFERENCE*。
+使用 `gerrit` 管理员用户登录 Gerrit Web 服务器，依次点击 *BROWSE -> Repositories -> All-Projects -> Access -> EDIT*。
 
 在 *Reference: refs/heads/\** 中添加 *Label Verified* 审核，并添加 `tests` 组并保存。
 
