@@ -114,7 +114,9 @@ tag:
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>LeftArrow</kbd>  |  光标单词向左选择  |
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>RightArrow</kbd>  |  光标单词向右选择  |
 |  <kbd>Ctrl</kbd> + <kbd>O</kbd>  |  打开文件  |
+|  <kbd>Ctrl</kbd> + <kbd>E</kbd>  |  搜索文件并打开  |
 |  <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>Ctrl</kbd> + <kbd>O</kbd>  |  打开文件夹  |
+|  <kbd>Ctrl</kbd> + <kbd>R</kbd>  |  搜索文件夹并打开  |
 |  <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd>  |  复制活动文件的路径  |
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>  |  显示所有命令  |
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>  |  新建窗口  |
