@@ -185,15 +185,15 @@ tag:
     
     双击 `jdk-17.0.10_windows-x64_bin.exe` 或 `jdk-17.0.10_windows-x64_bin.msi` 程序包开始安装。并点击 *下一步*。
     
-    ![开始安装](./assetes/jdk_start_install.jpg)
+    ![开始安装](./assets/jdk_start_install.jpg)
     
     点击 *更改*，更改 `JDK` 安装位置。并点击 *下一步*。
     
-    ![安装位置](./assetes/jdk_install_position.jpg)
+    ![安装位置](./assets/jdk_install_position.jpg)
     
     等待安装，点击 *关闭*，完成 `JDK` 安装。
     
-    ![安装完成](./assetes/jdk_install_complete.jpg)
+    ![安装完成](./assets/jdk_install_complete.jpg)
     
     ::: info
     安装完成后，默认已经在 *Path* 变量中添加 `C:\Program Files\Common Files\Oracle\Java\javapath` 路径值，所以不需要配置环境变量。
