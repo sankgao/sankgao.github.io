@@ -29,21 +29,7 @@ C 语言编译器用于把源代码编译成最终的可执行程序。最常用
 
 ## 安装环境
 
-### Linux 系统安装
-
-在 Debian 系统终端中输入：`sudo apt install gcc*` 命令安装。
-
-在 RedHat 系统终端中输入：`sudo yum install gcc*` 命令安装。
-
-执行 `gcc -v` 命令检查 gcc 是否安装成功。
-
-### Mac OS 系统安装
-
-在苹果官网上下载 [Xcode 开发环境](https://developer.apple.com/xcode/)，安装后就可以使用 GCC 编辑器了。
-
-### Windows 系统安装
-
-在 Windiows 中安装 GCC，需要安装 MinGW 工具，具体查看 [MinGW 工具安装](../README.md)。
+在开发环境中查看 [GCC 安装](../../../computers/dev_env/gcc.md)。
 
 ## VS Code 环境配置
 
