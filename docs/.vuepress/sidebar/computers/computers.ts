@@ -55,6 +55,7 @@ export const computers = arraySidebar([
     children: [
       "jdk",
       "git",
+      "gcc",
     ],
   },
 ]);

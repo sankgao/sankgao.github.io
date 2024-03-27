@@ -11,3 +11,4 @@ tag:
 
 - [JDK 和 OpenJDK 安装](./jdk.md)
 - [Git 安装](./git.md)
+- [GCC 安装](./gcc.md)

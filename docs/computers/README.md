@@ -41,3 +41,4 @@ tag:
 
 - [JDK 和 OpenJDK 安装](./dev_env/jdk.md)
 - [Git 安装](./dev_env/git.md)
+- [GCC 安装](./dev_env/gcc.md)
