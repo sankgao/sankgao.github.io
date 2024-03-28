@@ -1,6 +1,6 @@
 ---
 title: GCC 安装
-icon: C
+icon: c
 date: 2024-03-26
 category: Computer
 tag:
@@ -120,6 +120,11 @@ GCC 原名为 **GNU C 语言编译器**（GNU C Compiler），只能处理 C 语
     
     ```bash
     gcc --version
+    
+    gcc (GCC) 13.2.0
+    Copyright (C) 2023 Free Software Foundation, Inc.
+    This is free software; see the source for copying conditions.  There is NO
+    warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
     ```
 
 ## Windows 安装
@@ -141,7 +146,7 @@ MinGW-w64 与 MinGW 的区别在于 MinGW 只能编译生成 32 位可执行程�
 5. 那些著名的开源 IDE 实际只是将 MinGW-w64 封装了起来，使它拥有友好的图形化界面，简化了操作，但内部核心仍然是 MinGW-w64
 6. MinGW-w64 是稳定可靠的、持续更新的 C/C++ 编译器，使用它可以免去很多麻烦，不用担心跟不上时代，也不用担心编译器本身有 bug，可以放心的去编写程序
 
-### 下载和安装 MinGW-w64
+### 下载 MinGW-w64
 
 1. MinGW-w64 下载详情页面
 
@@ -163,10 +168,10 @@ MinGW-w64 与 MinGW 的区别在于 MinGW 只能编译生成 32 位可执行程�
 
     ![SourceForge](./assets/gcc_sourceforge.jpg)
 
-### 在线安装 MinGW-w64
+### 使用 exe 包安装
 
 ::: warning
-在线安装 MinGW-w64 需要从 [SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 该网站上下载 MinGW 的相应数据文件，由于网络原因导致下载失败，可以选择 [离线安装 MinGW-w64](#离线安装-mingw-w64)
+使用 `exe` 包安装 MinGW-w64 需要从 [SourceForge](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/) 该网站上下载 MinGW 的相应数据文件，由于网络原因导致下载失败，可以选择 [使用二进制包安装](#使用二进制包安装)
 :::
 
 在 `MinGW-w64 - for 32 and 64 bit Windows Files` 下载页面找到 *MinGW-W64 Online Installer*，点击 *MinGW-W64-install.exe。*
@@ -204,7 +209,7 @@ MinGW-w64 与 MinGW 的区别在于 MinGW 只能编译生成 32 位可执行程�
 
 点击 *Next*，开始安装。
 
-### 离线安装 MinGW-w64
+### 使用二进制包安装
 
 在 `MinGW-w64 - for 32 and 64 bit Windows Files` 下载页面找到 *MinGW-W64 GCC-8.1.0*，点击 *x86_64-win32-seh。*
 
@@ -232,15 +237,13 @@ MinGW-w64 与 MinGW 的区别在于 MinGW 只能编译生成 32 位可执行程�
 
 [参考文档](https://blog.csdn.net/B11050729/article/details/132176767)
 
-- 从 GitHub 下载
-    - 在线安装
-        - [GitHub 下载地址](https://github.com/Vuniverse0/mingwInstaller/releases)
-    - 离线安装
-        - [GitHub 下载地址1](https://github.com/mmozeiko/build-gcc-mingw/releases)
-        - [GitHub 下载地址2](https://github.com/niXman/mingw-builds-binaries/releases)
+- 使用 `exe` 包安装
+    - [GitHub 下载地址](https://github.com/Vuniverse0/mingwInstaller/releases)
 
-- 从镜像站点下载
-    - [镜像站点](https://files.1f0.de/mingw/)
+- 使用二进制包安装
+    - [镜像站点下载地址](https://files.1f0.de/mingw/)
+    - [GitHub 下载地址1](https://github.com/niXman/mingw-builds-binaries/releases)
+    - [GitHub 下载地址2](https://github.com/mmozeiko/build-gcc-mingw/releases)
 
 ## Mac OS 系统安装
 
