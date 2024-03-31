@@ -42,6 +42,7 @@ export const about = arraySidebar([
       "vscode.md",
       "ali_cloud_disk.md",
       "mobaxterm.md",
+      "vmware.md",
     ],
   },
 ]);
