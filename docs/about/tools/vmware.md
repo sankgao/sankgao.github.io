@@ -69,7 +69,7 @@ VMware Workstation Pro 页面。
 
 ::: tip
 安装后只有 30 天试用期，30 天过后无法使用，永久使用需要输入许可证密钥。
-::
+:::
 
 ![安装结束](./assets/vmware_install_done.jpg)
 
