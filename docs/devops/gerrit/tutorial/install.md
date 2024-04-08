@@ -380,10 +380,10 @@ failed (13: Permission denied), client: 10.1.1.1, server: localhost, request:
 
 要控制在后台运行的 `Gerrit Code Review` 守护进程，请使用由 `init` 创建的 `rc.d` 样式启动脚本：
 
-- **服务运行**：review_site/bin/gerrit.sh start
-- **服务停止**：review_site/bin/gerrit.sh stop
-- **服务重启**：review_site/bin/gerrit.sh restart
-- **服务状态**：review_site/bin/gerrit.sh status
+- **服务运行**：`review_site/bin/gerrit.sh start`
+- **服务停止**：`review_site/bin/gerrit.sh stop`
+- **服务重启**：`review_site/bin/gerrit.sh restart`
+- **服务状态**：`review_site/bin/gerrit.sh status`
 
 ## 查看已安装插件信息
 
@@ -393,4 +393,7 @@ failed (13: Permission denied), client: 10.1.1.1, server: localhost, request:
 
 ![找不到页面](../assets/not_found.jpg)
 
-因为访问的 URL 地址没有带端口号，在 URL 地址中添加访问端口即可。例如：原 URL 地址 `http://10.1.1.10/plugins/hooks/Documentation/index.html` 修改后的 URL 地址 `http://10.1.1.10/plugins/hooks/Documentation/index.html`。
+因为访问的 URL 地址没有带端口号，在 URL 地址中添加访问端口即可。例如：
+
+原 URL 地址：`http://10.1.1.10/plugins/hooks/Documentation/index.html`
+修改后的 URL 地址：`http://10.1.1.10:8081/plugins/hooks/Documentation/index.html`
