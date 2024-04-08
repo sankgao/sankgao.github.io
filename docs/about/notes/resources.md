@@ -261,6 +261,7 @@ tag:
 - [翼狐网](https://www.yiihuu.com/)
 - [编程字典](https://www.codingdict.com/)
 - [立地货 - 随时随地学编程](https://www.lidihuo.com/)
+- [程序员笔记 - 分享程序员的知识字典](https://www.knowledgedict.com/)
 - [奇客谷](https://www.qikegu.com/)
 - [DevOpsCube](https://devopscube.com/)
 - [DevOps 知识库](https://doc.devpod.cn/)
