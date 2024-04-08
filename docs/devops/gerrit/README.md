@@ -15,6 +15,7 @@ tag:
 
 - [简介](./tutorial/introduction.md)
 - [安装](./tutorial/install.md)
+- [Docker 安装](./tutorial/docker_install.md)
 - [开机自启](./tutorial/self_start.md)
 - [基础操作](./tutorial/basic_operation.md)
 - [Gerrit 命令](./tutorial/command.md)
