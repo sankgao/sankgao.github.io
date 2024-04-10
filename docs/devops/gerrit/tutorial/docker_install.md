@@ -60,7 +60,7 @@ sudo mkdir -p /opt/gerrit/ldap/{var,etc}
 
 配置 Gerrit 管理文件：`/opt/gerrit/etc/gerrit.config`。
 
-```bash
+```config
 [gerrit]
   basePath = git
   # 要访问的 Gerrit 的默认 URL。注意端口号要跟 docker-compose 一致
@@ -99,7 +99,7 @@ sudo mkdir -p /opt/gerrit/ldap/{var,etc}
 
 其他邮箱服务配置。例如：配置 163 邮箱服务。
 
-```bash
+```config
 [sendemail]
   smtpServer = smtp.163.com  # SMTP 邮箱地址
   smtpUser = username@163.com  # SMTP 身份验证用户邮箱地址
@@ -116,14 +116,14 @@ sudo mkdir -p /opt/gerrit/ldap/{var,etc}
 
 配置认证文件：`/opt/gerrit/etc/secure.config`。
 
-```bash
+```config
 [ldap]
   password = secret  # ldap 管理员密码
 ```
 
 如果配置的有邮箱，认证文件如下：
 
-```bash
+```config
 [ldap]
   password = secret  # ldap 管理员密码
 [sendemail]
