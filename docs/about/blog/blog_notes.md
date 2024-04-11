@@ -14,8 +14,8 @@ tag:
 使用 Emoji 表情可以使笔记在阅读的时候更加生动，不那么的枯燥。
 
 - **格式**
-    - `:语义化文本:`
-    - `&#xcode;`
+    - **简短代码**：例如：`:语义化文本:`
+    - **字符编码**：例如：`&#xcode;`
 
 - **说明**
     - 用一对 `:` 包裹，里面是 **Emoji** 符号的 **语义化文本**
@@ -23,7 +23,7 @@ tag:
 
 ::: md-demo 示例
 
-:smile: :sweat: :cat: :woman_cartwheeling: &#x1F4BB;
+:smile: :sweat: :cat: :woman_cartwheeling: &#x1F4BB; :computer:
 
 :::
 
