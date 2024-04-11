@@ -1,6 +1,6 @@
 ---
 title: VMware Workstation Pro
-icon: mobaxterm
+icon: VMware
 date: 2024-03-30
 category: About
 tag:
