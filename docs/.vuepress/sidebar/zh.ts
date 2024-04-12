@@ -1,5 +1,5 @@
 import { sidebar } from "vuepress-theme-hope";
-import { computers, framework } from "./computers/index.ts";
+import { computers, productmanage, framework } from "./computers/index.ts";
 import { devops, svn, gerrit } from "./devops/index.ts";
 import { languages, html5, css3, python3, c } from "./languages/index.ts";
 import { others } from "./others/index.ts";
@@ -11,6 +11,7 @@ export const zhSidebarConfig = sidebar({
   
   // 侧边栏配置
   "/computers/": computers,
+  "/computers/productmanage/": productmanage,
   "/computers/framework/": framework,
   
   "/devops/": devops,
