@@ -3,7 +3,7 @@ import { arraySidebar } from "vuepress-theme-hope";
 export const framework = arraySidebar([
   {
     text: "Vue3",
-    icon: "vue3",
+    icon: "vue",
     link: "vue3/",
     prefix: "vue3/",
     collapsible: true,

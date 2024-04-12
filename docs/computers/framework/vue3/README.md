@@ -1,6 +1,6 @@
 ---
 title: Vue3
-icon: vue3
+icon: vue
 date: 2023-08-08
 category: Framework
 tag:
