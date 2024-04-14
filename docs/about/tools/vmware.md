@@ -359,3 +359,23 @@ VMware 注册页面。
 等待系统安装重启。
 
 ![安装服务](./assets/vmware_ubuntu_reboot.jpg)
+
+### 安装后操作
+
+Linux 系统安装完成后的一些操作。
+
+更新本地软件包列表索引，升级所有已安装且可升级到新版本的软件包。
+
+```bash
+sudo yum update && sudo yum upgrade
+# 或
+sudo apt update && sudo apt upgrade
+```
+
+安装一些常用命令。
+
+```bash
+sudo yum install -y net-tools vim lrzsz wget sysstat psmisc bash-completion
+# 或
+sudo apt install -y net-tools vim lrzsz wget sysstat psmisc bash-completion
+```

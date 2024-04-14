@@ -11,6 +11,8 @@ tag:
 
 ## 管理存储库
 
+查看官网 [存储库管理](https://help.sonatype.com/en/repository-management.html) 说明。
+
 在主页点击 *&#x2699;（管理） -> Repository-> Repositories* 进入管理存储库。
 
 ![管理存储库](./assets/manage_repo.jpg)
@@ -27,6 +29,21 @@ Nexus 服务提供了以下默认的 maven2 仓库，可供我们直接使用：
 - **maven-releases**：发布版存储库（Type：`hosted`）。用于组织发布内部版本的存储库
 - **maven-snapshots**：快照版存储库（Type：`hosted`、Version policy：`Snapshot`），用于组织发布内部开发版本的存储库
 - **maven-public**：maven2 存储库集合（Type：`group`），用于整合以上三个仓库，用户可以直接使用集合仓库的地址拉取依赖 jar 包
+
+## Blob Stores
+
+查看官网 [Blob Stores](https://help.sonatype.com/en/storage-planning.html) 说明。
+
+在主页点击 *&#x2699;（管理） -> Repository-> Blob Stores* 进入Blob 存储库。
+
+### Blob 存储类型
+
+Blob 存储类型如下：
+
+- **File**：文件 blob 存储允许 Nexus Repository 将 blob 作为文件存储在目录中。创建 Blob 存储期间提供的参数 Path 确定 Blob 文件的位置
+- **S3**：S3 Blob 存储将 Blob 作为对象保存在 AWS S3 上的 `bucket` 中。仅建议将 S3 Blob 存储用于 AWS 中托管的 Nexus 存储库安装
+
+在创建 repository 之前，还需要先指定文件存储目录，便于统一管理。就需要创建 `Blob Stores`，不创建则使用的是 `default`。
 
 ### 创建其他代理
 

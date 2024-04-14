@@ -21,25 +21,27 @@ Nexus Repository `3.66.0` 及之前版本需要 Java 8 运行时环境（JRE）�
 
 Sonatype Nexus 存储库系统要求 CPU 最小 4 核，[参考官网](https://help.sonatype.com/en/sonatype-nexus-repository-system-requirements.html)。
 
+## Linux 安装
+
+### 创建用户
+
 使用 `nexus` 用户启动 Nexus 服务。创建 `nexus` 用户密码，并加入 `sudoers` 组。
 
 ```bash
 sudo useradd -s /bin/bash -m nexus
-sudo passwd gerrit
+sudo passwd nexus
 
 sudo vim /etc/sudoers  # 以下内容添加到最后
 nexus ALL=(ALL) NOPASSWD:ALL
 ```
 
-切换到 `nexus` 用户，创建挂载点并修改权限。
+切换到 `nexus` 用户，创建安装目录并修改权限。
 
 ```bash
 sudo su - nexus
 sudo mkdir /opt/nexus
 sudo chown -R nexus:nexus /opt/nexus
 ```
-
-## Linux 安装
 
 ### 解压安装包
 
@@ -139,7 +141,7 @@ vim sonatype-work/nexus3/log/nexus.log
 
 ### 配置文件
 
-查看 [官网配置文件](https://help.sonatype.com/en/configuring-the-runtime-environment.html) 说明。
+查看官网 [配置文件](https://help.sonatype.com/en/configuring-the-runtime-environment.html) 说明。
 
 Nexus 服务一些配置文件作用。
 
@@ -162,35 +164,25 @@ Nexus 服务一些配置文件作用。
 docker pull sonatype/nexus3
 ```
 
+### 创建用户
+
+使用 `nexus` 用户启动 Nexus 服务。
+
+创建 `nexus` 用户，用户 UID 和 GID 值为 `200`。因为 Docker `nexus` 容器中 nexus 用户的 UID 和 GID 为 `200`，否则 nexus 容器启动失败。
+
+```bash
+sudo groupadd -g 200 nexus
+sudo useradd -u 200 -g nexus -s /bin/bash -M nexus
+```
+
 ### 创建挂载目录
 
-创建挂载数据存储目录。
+创建挂载数据存储目录，并赋予 `nexus` 用户权限。
 
 ```bash
-cd /opt/nexus
-sudo mkdir nexus-data
+sudo mkdir -p /opt/nexus/nexus-data
+sudo chown -R nexus:nexus /opt/nexus/
 ```
-
-修改目录权限为 `200`，否则 nexus 容器启动失败。因为 Docker `nexus` 容器中 nexus 用户的 UID 和 GID 为 `200`，而当前创建的 nexus 用户 UID 和 GID 不是 `200`。
-
-> 如果在创建 nexus 用户时指定 UID 和 GID 为 `200` 就不用修改
-
-```bash
-sudo chown 200:200 nexus-data
-```
-
-::: tip 不修改挂载目录权限的方法
-
-修改 nexus 用户的 UID 和 GID 为 `200`
-
-```bash
-sudo usermod -u 200 nexus
-sudo groupmod -g 200 nexus
-```
-
-修改完注意检查关于 `nexus` 用户使用的目录权限。例如：`/home/nexus`、`/opt/nexus/nexus-data`
-
-:::
 
 ### 编辑 docker-compose.yaml 文件
 
