@@ -376,6 +376,7 @@ tag:
 - [安娜的档案](https://annas-archive.org)
     - [镜像地址 1](https://annas-archive.se.976156.xyz)
     - [镜像地址 2](https://annas-archive.se.412965.xyz)
+- [24h搜书网](https://24hbook.com/)
 - [书栈网](https://www.bookstack.cn/)
 - [知识库](https://www.zhishikoo.com/)
 - [码农书籍网](https://www.manongbook.com/)
