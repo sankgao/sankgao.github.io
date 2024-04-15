@@ -9,6 +9,8 @@ export const productmanage = arraySidebar([
     collapsible: true,
     children: [
       "install",
+      "basic_operation",
+      "no_anonymouns_access",
     ],
   },
 ]);
