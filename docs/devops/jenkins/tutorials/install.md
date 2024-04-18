@@ -1,0 +1,195 @@
+---
+title: 安装
+icon: install
+date: 2024-04-18
+category: DevOps
+tag:
+    - Jenkins
+---
+
+## 安装环境
+
+长期支持（LTS）版本和定期发布版本支持的 Java 版本：
+
+- **2.361.1（2022 年 9 月）及更高版本**：Java 11 或 Java 17
+- **2.346.1（2022 年 6 月）及更高版本**：Java 8、Java 11 或 Java 17
+- **2.164.1（2019 年 3 月）及更高版本**：Java 8 或 Java 11
+- **2.60.1（2017 年 6 月）及更高版本**：Java 8
+- **1.625.1（2015 年 10 月）及更高版本**：Java 7
+
+- 查看 [Java 安装教程](../../../computers/dev_env/jdk.md)
+
+## WAR 文件安装
+
+Jenkins Web 应用程序 ARchive（WAR）文件捆绑了 [Winstone](https://github.com/jenkinsci/winstone)（一个 [Jetty](https://eclipse.dev/jetty/) servlet 容器包装器），并且可以在具有 Jenkins 支持的 Java 版本的任何操作系统或平台上启动。
+
+- 长期支持（LTS）版本 `jenkins.war` [下载地址](https://get.jenkins.io/war-stable/)
+- 定期发布版本 `jenkins.war` [下载地址](https://get.jenkins.io/war/)
+
+1. 将 Jenkins WAR 文件下载到您机器上的适当目录中
+
+    ```bash
+    cd /opt/jenkins
+    sudo wget https://get.jenkins.io/war-stable/2.440.3/jenkins.war
+    ```
+
+2. 运行命令
+    
+    ```bash
+    suod java -jar jenkins.war
+    
+    # 或
+    
+    suod JENKINS_HOME=my-jenkins-config java -jar jenkins.war --httpPort=9090
+    ```
+    
+    - **JENKINS_HOME**：指定安装目录，默认是运行用户家目录 `.jenkins` 中
+    - **--httpPort**：指定端口，默认是 `8080`
+    
+    有关可以调整 Jenkins 启动的命令行参数的更多详细信息，请使用以下命令：
+    
+    ```bash
+    java -jar jenkins.war --help
+    ```
+
+3. 浏览 `http://localhost:8080` 并等待解锁 Jenkins 页面出现
+4. 配置安装向导
+
+## Linux 安装
+
+### Debian 系统
+
+这是 Jenkins 的 Debian 软件包存储库，用于自动安装和升级。要使用此存储库，请首先将密钥添加到您的系统（对于每周发布行）：
+
+```bash
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+```
+
+然后添加 Jenkins apt 存储库条目：
+
+```bash
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+```
+
+更新本地包索引，然后最后安装 Jenkins：
+
+```bash
+sudo apt-get update
+sudo apt-get install fontconfig openjdk-17-jre
+sudo apt-get install jenkins
+```  
+
+### Redhat 系统
+
+要使用此存储库，请运行以下命令：
+
+```bash
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+```
+
+如果您之前从 Jenkins 导入了密钥，则会 `rpm --import` 失败，因为您已经拥有密钥，请忽略它并继续。
+
+```bash
+sudo yum upgrade
+sudo yum install fontconfig java-17-openjdk
+sudo yum install jenkins
+```
+
+### 控制 Jenkins 服务
+
+- **开机服务运行**：`sudo systemctl enable jenkins`
+- **服务运行**：`sudo systemctl start jenkins`
+- **服务停止**：`sudo systemctl stop jenkins`
+- **服务重启**：`sudo systemctl restart jenkins`
+- **查看服务状态**：`sudo systemctl status jenkins`
+
+配置安装向导。
+
+## Docker 安装 Jenkins
+
+### 安装 Docker
+
+```shell
+sudo apt-get -y install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get -y update
+sudo apt-get -y install docker-ce
+sudo docker -v
+sudo cat > /etc/docker/daemon.json <<EOF
+{
+  "registry-mirrors": ["https://6870dvkt.mirror.aliyuncs.com"]
+}
+EOF
+```
+
+### 启动 Docker
+
+```shell
+sudo systemctl daemon-reload
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+### 安装 Jenkins
+
+从 Docker 仓库下载 Jenkins 镜像。
+
+```bash
+sudo docker pull jenkins/jenkins
+```
+
+创建挂载目录。
+
+```bash
+sudo mkdir /opt/jenkins_home
+```
+
+### 启动 jenkins
+
+::: warning
+避免使用从主机上的文件夹到 `/var/jenkins_home` 的绑定装载，因为这可能会导致文件权限问题（在容器中使用的用户可能没有访问主机上文件夹的权限）。如果您真的需要绑定 `jenkins_home`，请确保容器内的 `jenkins` 用户可以访问主机上的目录（jenkins user uid 1000），或者在 `docker run` 中使用 `-u some_other_user` 参数。
+:::
+
+使用 `docker run` 运行 Jenkins 服务：
+
+```bash
+docker run -d -v /opt/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure -u jenkins jenkins/jenkins:latest
+```
+
+使用 `docker compose` 运行 Jenkins 服务。
+
+- 编写 `docker-compose.yml` 文件
+
+    ```yaml
+    version: '3'
+
+    services:
+      jenkins:
+        restart: always
+        image: jenkins/jenkins
+        container_name: jenkins
+        ports:
+          - 8082:8080
+          - 50000:50000
+        environment:
+          TZ: Asia/Shanghai
+        volumes:
+          - /opt/jenkins/jenkins_home:/var/jenkins_home
+    ```
+
+- 运行 Jenkins 服务
+
+    ```bash
+    sudo docker compose up -d
+    ```
+
+查看 Jenkins 日志。
+
+```bash
+sudo docker logs jenkins
+```
