@@ -2,7 +2,7 @@
 title: 开机自启
 icon: quickstart
 date: 2024-03-21
-category: DevOpos
+category: DevOps
 tag:
     - Gerrit
 ---

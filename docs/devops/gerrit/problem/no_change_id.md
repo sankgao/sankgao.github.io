@@ -3,7 +3,7 @@ title: 没有 Change-Id
 icon: problem
 date: 2024-03-25
 category:
-    - DevOpos
+    - DevOps
     - 问题
 tag:
     - Gerrit

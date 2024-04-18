@@ -3,7 +3,7 @@ title: 推送到 Gerrit 特有的分支
 icon: problem
 date: 2024-03-25
 category:
-    - DevOpos
+    - DevOps
     - 问题
 tag:
     - Gerrit

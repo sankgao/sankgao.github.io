@@ -2,7 +2,7 @@
 title: Docker 安装
 icon: install
 date: 2024-04-08
-category: DevOpos
+category: DevOps
 tag:
     - Gerrit
 ---

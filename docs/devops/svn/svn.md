@@ -2,7 +2,7 @@
 title: SVN
 icon: svn
 date: 2023-07-28
-category: Tools
+category: DevOps
 tag:
     - SVN
 ---

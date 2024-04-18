@@ -3,7 +3,7 @@ title: 端口被 SELinux 禁用
 icon: problem
 date: 2024-03-19
 category: 
-    - DevOpos
+    - DevOps
     - 问题
 tag:
     - Gerrit

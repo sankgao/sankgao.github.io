@@ -2,7 +2,7 @@
 title: 命令
 icon: command
 date: 2024-03-19
-category: DevOpos
+category: DevOps
 tag:
     - Gerrit
 ---

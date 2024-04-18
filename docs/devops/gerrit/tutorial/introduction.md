@@ -2,7 +2,7 @@
 title: 简介
 icon: introduction
 date: 2024-03-10
-category: DevOpos
+category: DevOps
 tag:
     - Gerrit
 ---

@@ -3,7 +3,7 @@ title: 没有管理员账号
 icon: problem
 date: 2024-03-24
 category:
-    - DevOpos
+    - DevOps
     - 问题
 tag:
     - Gerrit

@@ -2,7 +2,7 @@
 title: 基本操作
 icon: tutorial
 date: 2024-03-22
-category: DevOpos
+category: DevOps
 tag:
     - Gerrit
 ---
