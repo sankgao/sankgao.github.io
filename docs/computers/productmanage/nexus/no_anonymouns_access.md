@@ -57,7 +57,7 @@ Nexus 存储库拒绝匿名用户访问。
 
 在主页点击 *&#x2699;（管理） -> Security-> Anonymous Access*。
 
-![允许匿名用户访问](./)
+![允许匿名用户访问](../nexus/assets/allow_anonymous.jpg)
 
 ### 解决方法2
 
