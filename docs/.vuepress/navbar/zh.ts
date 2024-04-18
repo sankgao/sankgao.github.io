@@ -21,6 +21,7 @@ export const zhNavbarConfig = navbar([
       { text: "DevOps", icon: "devops", link: "", activeMatch: "^/devops/$" },
       { text: "SVN", icon: "svn", link: "svn/" },
       { text: "Gerrit", icon: "gerrit", link: "gerrit/" },
+      { text: "Jenkins", icon: "jenkins", link: "jenkins/" },
     ],
   },
   {

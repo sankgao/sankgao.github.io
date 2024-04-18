@@ -20,4 +20,13 @@ export const devops = arraySidebar([
       "problem/",
     ],
   },
+  {
+    text: "Jenkins",
+    icon: "jenkins",
+    link: "jenkins/",
+    prefix: "jenkins/",
+    children: [
+      "tutorials/",
+    ],
+  },
 ]);
