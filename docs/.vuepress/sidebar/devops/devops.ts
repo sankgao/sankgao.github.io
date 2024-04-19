@@ -27,6 +27,7 @@ export const devops = arraySidebar([
     prefix: "jenkins/",
     children: [
       "tutorials/",
+      "problems/",
     ],
   },
 ]);

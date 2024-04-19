@@ -11,4 +11,14 @@ export const jenkins = arraySidebar([
       "install",
     ],
   },
+  {
+    text: "问题",
+    icon: "problem",
+    link: "problems/",
+    prefix: "problems/",
+    collapsible: true,
+    children: [
+      "java_version",
+    ],
+  },
 ]);
