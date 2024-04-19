@@ -11,4 +11,4 @@ tag:
 
 <!-- more -->
 
-<Catalog />
+<AutoCatalog />

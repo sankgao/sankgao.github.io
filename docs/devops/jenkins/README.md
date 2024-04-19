@@ -65,4 +65,4 @@ Jenkins 始于 2004 年 Sun 公司员工（**Kohsuke Kawaguchi**）基于个人�
 - [官方网站](https://www.jenkins.io/)
 - Jenkins 权威指南 [GitHub 地址](https://github.com/wakaleo/jenkins-the-definitive-guide-book) 
 
-<Catalog />
+<AutoCatalog />
