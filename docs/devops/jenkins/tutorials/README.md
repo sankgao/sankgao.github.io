@@ -1,6 +1,6 @@
 ---
-title: Jenkins
-icon: jenkins
+title: 教程
+icon: tutorial
 date: 2024-04-18
 category: DevOps
 tag:

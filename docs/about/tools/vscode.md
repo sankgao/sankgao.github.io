@@ -7,11 +7,49 @@ tag:
     - Tools
 ---
 
+[VS Code](https://code.visualstudio.com/)（Visual Studio Code）是一个免费的、开源的 **跨平台编辑器**。有 **稳定版** 和 **体验版** 两个版本，根据自己的需求自行下载。
+
+## VS Code 安装
+
+下载版本的时候，有 **用户** 和 **系统** 两个版本：
+
+- **User Installer**：用户安装到当前计算机用户目录下，不需要管理员权限即可运行。如果使用另一个用户登陆计算机将无法使用别人安装的 VS Code。这是默认下载的版本
+- **System Installer**：系统安装到系统目录下，需要管理员权限才可运行。系统中任何用户都可以使用。建议使用此版本
+
+![下载版本](./assets/vscode_download.jpg)
+
+下载完成后，双击 `VSCodeSetup-x64-1.88.1.exe` 软件包开始安装，接受许可条款，并点击 *下一步*。
+
+![许可条款](./assets/vscode_license.jpg)
+
+自定义安装，更改 *安装位置*，并点击 *下一步*。
+
+![安装位置](./assets/vscode_install_site.jpg)
+
+在开始菜单文件夹中存放快捷方式，并点击 *下一步*。
+
+![存放快捷方式](./assets/vscode_shortcuts.jpg)
+
+选择附加任务，并点击 *下一步*。
+
+- **将 “通过 Code 打开” 操作添加到 Windows 资源管理器文件上下文菜单**：对文件点击鼠标右键，选择使用 VScode 打开
+- **将 “通过 Code 打开” 操作添加到 Windows 资源管理器目录上下文菜单**：对目录点击鼠标右键，选择使用 VScode 打开
+- **将 Code 注册为受支持的文件类型的编辑器**：让 VScode 支持的代码文件（`txt`、`py`）全部变成 VScode 默认打开，文件图标也会随之更改
+- **添加到 PATH（重启后生效）**：添加到系统 PATH 变量中
+
+![附加任务](./assets/vscode_extras.jpg)
+
+点击 *安装*，开始安装。
+
+![安装](./assets/vscode_install.jpg)
+
+点击 *完成*，安装完成。
+
+![安装完成](./assets/vscode_done.jpg)
+
 ## VS Code 教程
 
-[VS Code（Visual Studio Code）](https://code.visualstudio.com/) 是一个免费的、开源的 **跨平台编辑器**。有 **稳定版** 和 **体验版** 两个版本，根据自己的需求自行下载。
-
-[VS Code 教程](https://geek-docs.com/vscode/vscode-tutorials/what-is-vscode.html)
+[VS Code 教程](https://code.visualstudio.com/docs)
 
 ### 垂直标尺
 
