@@ -30,4 +30,24 @@ export const devops = arraySidebar([
       "problems/",
     ],
   },
+  {
+    text: "GitLab",
+    icon: "gitlab",
+    link: "gitlab/",
+    prefix: "gitlab/",
+    children: [
+      "tutorials/",
+      "problems/",
+    ],
+  },
+  {
+    text: "Docker",
+    icon: "docker",
+    link: "docker/",
+    prefix: "docker/",
+    children: [
+      "tutorials/",
+      "problems/",
+    ],
+  },
 ]);

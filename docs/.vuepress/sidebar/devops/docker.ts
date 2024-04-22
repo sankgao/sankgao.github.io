@@ -1,6 +1,6 @@
 import { arraySidebar } from "vuepress-theme-hope";
 
-export const jenkins = arraySidebar([
+export const docker = arraySidebar([
   {
     text: "教程",
     icon: "tutorial",
@@ -8,7 +8,6 @@ export const jenkins = arraySidebar([
     prefix: "tutorials/",
     collapsible: true,
     children: [
-      "install",
     ],
   },
   {
@@ -18,9 +17,6 @@ export const jenkins = arraySidebar([
     prefix: "problems/",
     collapsible: true,
     children: [
-      "java_version",
-      "docker_run_user",
-      "permission_denied",
     ],
   },
 ]);

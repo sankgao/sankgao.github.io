@@ -1,6 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 import { computers, productmanage, framework } from "./computers/index.ts";
-import { devops, svn, gerrit, jenkins } from "./devops/index.ts";
+import { devops, svn, gerrit, jenkins, gitlab, docker } from "./devops/index.ts";
 import { languages, html5, css3, python3, c } from "./languages/index.ts";
 import { others } from "./others/index.ts";
 import { about } from "./about.ts";
@@ -18,6 +18,8 @@ export const zhSidebarConfig = sidebar({
   "/devops/svn/": svn,
   "/devops/gerrit": gerrit,
   "/devops/jenkins": jenkins,
+  "/devops/gitlab": gitlab,
+  "/devops/docker": docker,
   
   "/languages/": languages,
   "/languages/html5/": html5,
