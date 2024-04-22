@@ -60,7 +60,10 @@ Jenkins 始于 2004 年 Sun 公司员工（**Kohsuke Kawaguchi**）基于个人�
 
 无论使用 Jenkins 还是 Hudson，它们仍然非常类似，绝大多数讨论的技术和技巧都适用于两者。
 
-## 相关信息
+## 相关文档
 
-- [官方网站](https://www.jenkins.io/)
-- Jenkins 权威指南 [GitHub 地址](https://github.com/wakaleo/jenkins-the-definitive-guide-book)
+- [Jenkins 官网](https://www.jenkins.io/)
+- [Jenkins 官网文档](https://www.jenkins.io/doc/)
+- [Jenkins GitHub 地址](https://github.com/jenkinsci/jenkins)
+- [Jenkins Docker GitHub 地址](https://github.com/jenkinsci/docker)
+- 《Jenkins 权威指南》[GitHub 地址](https://github.com/wakaleo/jenkins-the-definitive-guide-book)

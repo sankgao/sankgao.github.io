@@ -11,6 +11,8 @@ tag:
 
 ## 问题
 
+Jenkins 服务启动失败：`jenkins: failed to find a valid Java installation`。
+
 **报错日志如下：**
 
 ```bash
@@ -54,7 +56,7 @@ Jenkins 当前版本依赖的 Java 版本和已安装的 Java 版本不同；或
 
 ### 解决方法 1
 
-安装支持 Jenkins 版本依赖的 Java 版本。
+Jenkins 当前版本依赖的 Java 版本和已安装的 Java 版本不同。安装支持 Jenkins 版本依赖的 Java 版本。例如：
 
 ```bash
 sudo yum install -y java-17-openjdk-devel.x86_64
@@ -62,7 +64,7 @@ sudo yum install -y java-17-openjdk-devel.x86_64
 
 ### 解决方法 2
 
-修改 `jenkins.service` 文件中 `JAVA_HOME` 的值。
+由于 Java 安装在其他位置，Jenkins 服务找不到 Java 位置。修改 `jenkins.service` 文件中 `JAVA_HOME` 的值。例如：
 
 ```bash
 Environment="JAVA_HOME=/opt/jdk/jdk-17.0.10"

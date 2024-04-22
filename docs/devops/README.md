@@ -11,11 +11,4 @@ tag:
 
 <!-- more -->
 
-## SVN
-
-- [SVN](./svn/svn.md)
-
-## Gerrit
-
-- [基础](./gerrit/tutorial/)
-- [问题](./gerrit/problem/)
+<AutoCatalog level="2"/>

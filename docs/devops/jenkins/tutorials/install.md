@@ -19,23 +19,6 @@ tag:
 
 查看 [Java 安装教程](../../../computers/dev_env/jdk.md)。
 
-### 创建用户
-
-创建 `jenkins` 用户密码，并加入 `sudoers` 组。
-
-```bash
-sudo useradd -s /bin/bash -m jenkins
-sudo passwd jenkins
-
-sudo vim /etc/sudoers  # 以下内容添加到最后
-jenkins ALL=(ALL) NOPASSWD:ALL
-
-
-sudo mkdir /opt/jenkins
-sudo useradd jenkins -M -d /opt/jenkins -s /bin/bash
-sudo chown -R jenkins:jenkins /opt/jenkins/
-```
-
 ## WAR 文件安装
 
 Jenkins Web 应用程序 ARchive（WAR）文件捆绑了 [Winstone](https://github.com/jenkinsci/winstone)（一个 [Jetty](https://eclipse.dev/jetty/) servlet 容器包装器），并且可以在具有 Jenkins 支持的 Java 版本的任何操作系统或平台上启动。
@@ -217,12 +200,13 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-### 创建用户
+### 挂载目录权限
+
+修改挂载目录权限为 `1000`，由于容器内 `jenkins` 用户的 UID 和 PID 为 `1000`。
 
 ```bash
 sudo mkdir /opt/jenkins_home
-sudo useradd jenkins -M -d /opt/jenkins_home -s /bin/bash
-sudo chown -R jenkins:jenkins /opt/jenkins_home
+sudo chown -R 1000:1000 /opt/jenkins_home
 ```
 
 ### 拉取镜像
@@ -233,14 +217,10 @@ sudo docker pull jenkins/jenkins
 
 ### 启动 jenkins
 
-::: warning
-避免使用从主机上的文件夹到 `/var/jenkins_home` 的绑定装载，因为这可能会导致文件权限问题（在容器中使用的用户可能没有访问主机上文件夹的权限）。如果您真的需要绑定 `jenkins_home`，请确保容器内的 `jenkins` 用户可以访问主机上的目录（容器内 `jenkins` 用户 UID 是 `1000`），或者在 `docker run` 中使用 `-u some_other_user` 参数。
-:::
-
 1. 使用 `docker run` 运行 Jenkins 服务：
 
     ```bash
-    docker run -d -v /opt/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure -u jenkins jenkins/jenkins:latest
+    sudo docker run -d -v /opt/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure --name jenkins jenkins/jenkins:latest
     ```
 
 2. 使用 `docker compose` 运行 Jenkins 服务。
