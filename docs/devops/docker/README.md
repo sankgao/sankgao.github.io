@@ -15,7 +15,11 @@ tag:
 
 Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux 或 Windows 操作系统的机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。
 
-Docker 是 PaaS 提供商 dotCloud 开源的一个基于 LXC（内核虚拟化）的高级容器引擎，源代码托管在 Github 上，基于 Go 语言并遵从 Apache2.0 协议开源。
+Docker 是 PaaS 提供商 dotCloud 开源的一个基于 LXC（内核虚拟化）的高级容器引擎，源代码托管在 [Github](https://github.com/docker/docs) 上，基于 Go 语言并遵从 Apache2.0 协议开源。
+
+Docker 是一个用于开发、发布和运行应用程序的开放平台。Docker 使您能够将应用程序与基础设施分开，以便您可以快速交付软件。
+
+Docker 允许开发人员使用提供应用程序和服务的本地容器在标准化环境中工作，从而简化了开发生命周期。容器非常适合持续集成和持续交付（CI/CD）工作流程。
 
 ## GitLab 特点
 
@@ -44,14 +48,21 @@ Docker 容器技术与传统虚拟机的特性比较如下：
 
 Docker 使用 **客户端/服务器**（C/S）架构模式，使用远程 API 来管理和创建 Docker 容器。Docker 容器通过 Docker 镜像来创建。容器与镜像的关系类似于面向对象编程中的对象与类。
 
-Docker 采用 C/S 架构 Docker daemon 作为服务端接受来自客户的请求，并处理这些请求（创建、运行、分发容器）。客户端和服务端既可以运行在一个机器上，也可通过 socket 或者 RESTful API 来进行通信。
+Docker daemon 作为服务端接受来自客户的请求，并处理这些请求（创建、运行、分发容器）。客户端和服务端既可以运行在一个机器上，也可通过 socket 或者 RESTful API 来进行通信。
 
-Docker daemon 一般在宿主主机后台运行，等待接收来自客户端的消息。Docker 客户端则为用户提供一系列可执行命令，用户用这些命令实现跟 Docker daemon 交互。
+Docker daemon 一般在宿主主机后台运行，等待接收来自客户端的消息。Docker 客户端则为用户提供一系列可执行命令，用户用这些命令实现跟 Docker daemon 交互。另一个 Docker 客户端是 Docker Compose，它允许您使用由一组容器组成的应用程序。
 
-- **Docker Client**：客户端
-- **Docker Daemon**：守护进程
-- **Docker Image**：镜像
-- **Docker Container**：容器
+![Docker 架构](./assets/docker_architecture.jpg)
+
+- **Docker Client**：Docker 客户端通过命令行或者其他工具使用 [Docker SDK](dehttps://docs.docker.com/velop/sdk/) 与 Docker 的守护进程通信
+- **Docker Hosts**：一个物理或者虚拟的机器用于执行 Docker 守护进程和容器
+- **Docker Daemon**：它是 Docker 架构中的核心部分，负责接收和处理来自 Docker Client 的请求
+- **Docker Image**：Docker 镜像是用于创建 Docker 容器的模板
+- **Docker Container**：Docker 容器是独立运行的一个或一组应用，是镜像运行时的实体
+- **Docker Registries**：Docker 仓库用来保存镜像
+- **Docker Machine**：Docker Machine 是一个简化 Docker 安装的命令行工具，通过一个简单的命令行即可在相应的平台上安装 Docker
+- **Docker Engine**：它执行 Docker 内部的一系列工作，每一项工作都以一个 Job 的形式存在。这些工作包括从 Docker Registry 下载镜像、存储和管理容器、创建和配置网络环境等
+- **libcontainer**：这是一套独立的容器管理解决方案，利用 Linux 内核特性（如：namespace、cgroups 等）来管理容器
 
 ## Docker 原理
 
@@ -79,8 +90,6 @@ Docker 提供了简单的机制来创建和更新现有的镜像，用户也可�
 所创建的每一个容器都是相互隔离、互不可见，以保证安全性的平台。可以将容器看作是一个简易版的 Linux 环境，Docker 利用容器来运行和隔离应用。
 
 ### 仓库（Repository）
-
-仓库可看成一个代码控制中心，用来保存镜像。
 
 Docker 仓库是用来集中保存镜像的地方，当创建了自己的镜像之后，可以使用 `push` 命令将它上传到公有仓库（Public）或者私有仓库（Private）。当下次要在另外一台机器上使用这个镜像时，只需从仓库获取。
 
