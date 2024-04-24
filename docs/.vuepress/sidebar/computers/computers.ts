@@ -44,6 +44,7 @@ export const computers = arraySidebar([
       "system_log",
       "system_service",
       "mail",
+      "rpmdb_damage",
     ],
   },
   {
