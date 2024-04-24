@@ -17,6 +17,7 @@ export const docker = arraySidebar([
     prefix: "problems/",
     collapsible: true,
     children: [
+      "variable_not_set",
     ],
   },
 ]);
