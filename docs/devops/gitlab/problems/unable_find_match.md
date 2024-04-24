@@ -6,7 +6,7 @@ category:
     - DevOps
     - 问题
 tag:
-    - gitlab
+    - GitLab
 ---
 
 ## 问题
