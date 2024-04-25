@@ -35,7 +35,7 @@ tag:
 
 许多这类系统都可以指定和若干不同的远端代码仓库进行交互。籍此，您就可以在同一个项目中，分别和不同工作小组的人相互协作。您可以根据需要设定不同的协作流程，比如：层次模型式的工作流，而这在以前的集中式系统中是无法实现的。
 
-### Git 由来
+## Git 由来
 
 `Linux` 内核开源项目有着为数众多的参与者。绝大多数的 `Linux` 内核维护工作都花在了提交补丁和保存归档的繁琐事务上（`1991~2002` 年间）。到 `2002` 年，整个项目组开始启用一个专有的分布式版本控制系统 `BitKeeper` 来管理和维护代码。
 
@@ -51,15 +51,13 @@ tag:
 
 自诞生于 `2005` 年以来，`Git` 日臻成熟完善，在高度易用的同时，仍然保留着初期设定的目标。它的速度飞快，极其适合管理大项目，有着令人难以置信的非线性分支管理系统。
 
-### Git 介绍
+## Git 介绍
 
-[git 官网](https://git-scm.com/)
-
-`Git` 是一个免费的开源分布式版本控制系统，旨在快速高效地处理从小到大的项目。
+[Git](https://git-scm.com/) 是一个免费的开源分布式版本控制系统，旨在快速高效地处理从小到大的项目。
 
 `Git` 易于学习，占用空间小，性能快如闪电。它凭借廉价的本地分支、方便的暂存区域和多个工作流程等功能，超越了 `Subversion`、`CVS`、`Perforce` 和 `ClearCase` 等 `SCM` 工具。
 
-`Git` 特性：
+### Git 特性
 
 - 直接记录快照，而非差异比较
 - 近乎所有操作都是本地执行
@@ -70,119 +68,123 @@ tag:
     - **已暂存（staged）**：表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中
     - **已提交（committed）**：表示数据已经安全地保存在本地数据库中
 
+### Git 三个阶段
+
 `Git` 的三种状态这会让我们的 `Git` 项目拥有三个阶段：工作区、暂存区以及 `Git` 仓库目录。
 
 - **工作区**：是对项目的某个版本独立提取出来的内容。这些从 `Git` 仓库的压缩数据库中提取出来的文件，放在磁盘上供您使用或修改
 - **暂存区**：是一个文件，保存了下次将要提交的文件列表信息，一般在 `Git` 仓库目录中。按照 `Git` 的术语叫做 “索引”，不过一般说法还是叫 “暂存区”
 - **Git 仓库目录**：是 `Git` 用来保存项目的元数据和对象数据库的地方。这是 `Git` 中最重要的部分，从其它计算机克隆仓库时，复制的就是这里的数据
 
-基本的 `Git` 工作流程如下：
+### 基本 Git 工作流程
 
-- 在工作区中修改文件
-- 将您想要下次提交的更改选择性地暂存，这样只会将更改的部分添加到暂存区
-- 提交更新，找到暂存区的文件，将快照永久性存储到 `Git` 目录
+1. 在工作区中修改文件
+2. 将您想要下次提交的更改选择性地暂存，这样只会将更改的部分添加到暂存区
+3. 提交更新，找到暂存区的文件，将快照永久性存储到 `Git` 目录
 
 如果 `Git` 目录中保存着特定版本的文件，就属于 **已提交** 状态。如果文件已修改并放入暂存区，就属于 **已暂存** 状态。如果自上次检出后，作了修改但还没有放到暂存区域，就是 **已修改** 状态。
 
-## Git 安装
+## Linux 安装
 
-根据您的系统选择需要的软件安装包。
+分别在 Debian/Ubuntu-18.04 和 RedHat/CentOS-Stream-8 系统中安装。
 
-### Linux 安装
+以下两种方法都不需要配置系统环境变量。
 
-- 使用 `YUM` 或 `APT` 安装
-    - RedHat 系统
-        
-        ```bash
-        sudo yum install -y git
-        ```
-        
-        查看 `git` 版本：
-        
-        ```bash
-        git --version
-        
-        git version 2.43.0
-        ```
-    
-    - Debian 系统
-        
-        ```bash
-        sudo apt install -y git
-        ```
-        
-        查看 `git` 版本：
-        
-        ```bash
-        git --version
-        
-        git version 2.17.1
-        ```
+### 使用 APT 或 YUM 安装
 
-- 使用源代码安装
-    
-    从源码安装 `Git` 您能得到最新的版本。二进制安装程序倾向于有一些滞后，当然近几年 `Git` 已经成熟，这个差异不再显著。
-    
-    从源码安装 `Git`，需要安装 `Git` 一些依赖的库。
-    
-    ::: info
-    使用 RedHat 系统，需要安装 [EPEL 库](https://docs.fedoraproject.org/en-US/epel/#How_can_I_use_these_extra_packages.3F) 以便下载 `docbook2X` 等包。
-    
-    `CentOS-Stream-8` 安装 `EPEL` 库：
-    
-    ```bash
-    sudo dnf config-manager --set-enabled powertools
-    sudo dnf install -y epel-release epel-next-release
+- Debian/Ubuntu 系统
+
+    ```shell
+    sudo apt install -y git
     ```
-    :::
-    
-    RedHat 系统：
-    
-    ```bash
+
+    查看 `git` 版本：
+
+    ```shell
+    git --version
+
+    git version 2.17.1
+    ```
+
+- RedHat/CentOS 系统
+
+    ```shell
+    sudo yum install -y git
+    ```
+
+    查看 `git` 版本：
+
+    ```shell
+    git --version
+
+    git version 2.43.0
+    ```
+
+### 使用源代码安装
+
+从源码安装 `Git` 您能得到最新的版本。二进制安装程序倾向于有一些滞后，当然近几年 `Git` 已经成熟，这个差异不再显著。
+
+从源码安装 `Git`，需要安装 `Git` 一些依赖的库。
+
+::: info
+使用 RedHat 系统，需要安装 [EPEL 库](https://docs.fedoraproject.org/en-US/epel/#How_can_I_use_these_extra_packages.3F) 以便下载 `docbook2X` 等包。
+
+`CentOS-Stream-8` 安装 `EPEL` 库：
+
+```shell
+sudo dnf config-manager --set-enabled powertools
+sudo dnf install -y epel-release epel-next-release
+```
+
+:::
+
+- Debian/Ubuntu 系统：
+
+    ```shell
+    sudo apt install -y dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
+    gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info
+    ```
+
+- RedHat/CentOS 系统：
+
+    ```shell
     sudo yum install -y dh-autoreconf curl-devel expat-devel gettext-devel \
     openssl-devel perl-devel zlib-devel asciidoc xmlto docbook2X getopt
     sudo ln -s /usr/bin/db2x_docbook2texi /usr/bin/docbook2x-texi  # 解决二进制文件名的不同
     ```
-    
-    Debian 系统：
-    
-    ```bash
-    sudo apt install -y dh-autoreconf libcurl4-gnutls-dev libexpat1-dev \
-    gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info
-    ```
-    
-    下载 `tar` 包。可以从 [Kernel.org](https://www.kernel.org/pub/software/scm/git) 网站获取，也可以从 [GitHub](https://github.com/git/git/tags) 网站上获得。通常在 `GitHub` 上的是最新版本；`Kernel.org` 上包含有文件下载签名，如果您想验证下载正确性的话会用到。
-    
-    ```bash
-    sudo mkdir /opt/git
-    cd /opt/git
-    sudo tar -zxf git-2.44.0.tar.gz
-    cd git-2.44.0
-    sudo make configure
-    sudo ./configure --prefix=/usr
-    sudo make all doc info
-    sudo make install install-doc install-html install-info
-    ```
-    
-    完成后，您可以使用 `Git` 来获取 `Git` 的更新：
-    
-    ```bash
-    git clone git://git.kernel.org/pub/scm/git/git.git
-    ```
-    
-    查看 Git 版本：
-    
-    ```bash
-    git --version
-    
-    git version 2.44.0
-    ```
 
-### Windows 安装
+下载 `tar` 包。可以从 [Kernel.org](https://www.kernel.org/pub/software/scm/git) 网站获取，也可以从 [GitHub](https://github.com/git/git/tags) 网站上获得。通常在 `GitHub` 上的是最新版本；`Kernel.org` 上包含有文件下载签名，如果您想验证下载正确性的话会用到。
 
-需要配置环境变量。[Git 下载地址](https://git-scm.com/download/win)
+```shell
+sudo mkdir /opt/git
+cd /opt/git
+sudo tar -zxf git-2.44.0.tar.gz
+cd git-2.44.0
+sudo make configure
+sudo ./configure --prefix=/usr
+sudo make all doc info
+sudo make install install-doc install-html install-info
+```
 
-将 `Git-2.44.0-64-bit.exe` 包解压到您要存放的位置。例如：`E:\Software\Git\` 文件夹下。
+完成后，您可以使用 `Git` 来获取 `Git` 的更新：
+
+```shell
+git clone git://git.kernel.org/pub/scm/git/git.git
+```
+
+查看 Git 版本：
+
+```shell
+git --version
+
+git version 2.44.0
+```
+
+## Windows 安装
+
+不需要配置系统环境变量。
+
+将 [Git-2.44.0-64-bit.exe](https://git-scm.com/download/win) 包解压到您要存放的位置。例如：`E:\Software\Git\` 文件夹下。
 
 双击 `Git-2.44.0-64-bit.exe` 程序包开始安装。并点击 *Next*。
 
@@ -297,7 +299,7 @@ tag:
 
 在终端控制器中输入 `git --version` 命令，查看 `Git` 版本。
 
-```bash
+```shell
 C:\Users\user>git --version
 git version 2.44.0.windows.1
 ```

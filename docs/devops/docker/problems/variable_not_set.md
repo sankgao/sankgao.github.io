@@ -13,7 +13,7 @@ tag:
 
 **报错日志如下：**
 
-```bash
+```shell
 sudo docker compose up -d
 
 WARN[0000] The "GITLAB_HOME" variable is not set. Defaulting to a blank string.
@@ -38,14 +38,14 @@ volumes:
 
 在 `.env` 文件中定义变量：
 
-```bash
+```shell
 GITLAB_HOME=/opt/gitlab
 ```
 
 在 `docker-compose.yml` 文件中使用这个变量定义卷。例如：
 
 ```yml
-......
+# ...省略部分内容
 volumes:
   - '${GITLAB_HOME}/config:/etc/gitlab'
   - '${GITLAB_HOME}/logs:/var/log/gitlab'
@@ -58,14 +58,15 @@ volumes:
 
 通过 `docker-compose config` 命令查看环境变量替换后的显示：
 
-```bash
+```shell
 suod docker-compose config
 
+# ...省略部分内容
 volumes:
   - type: bind
     source: /opt/gitlab/config
     target: /etc/gitlab
     bind:
       create_host_path: true
-......
+# ...省略部分内容
 ```

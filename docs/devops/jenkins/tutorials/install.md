@@ -28,7 +28,7 @@ Jenkins Web 应用程序 ARchive（WAR）文件捆绑了 [Winstone](https://gith
 
 ### 创建用户
 
-```bash
+```shell
 sudo mkdir /opt/jenkins
 sudo useradd jenkins -M -d /opt/jenkins -s /bin/bash
 sudo chown -R jenkins:jenkins /opt/jenkins/
@@ -38,14 +38,14 @@ sudo chown -R jenkins:jenkins /opt/jenkins/
 
 将 Jenkins WAR 文件下载到您机器上的适当目录中。
 
-```bash
+```shell
 sudo su - jenkins
 wget https://get.jenkins.io/war-stable/2.440.3/jenkins.war
 ```
 
 用 `java` 命令运行 WAR 文件。
 
-```bash
+```shell
 java -jar jenkins.war &
 # 或
 JENKINS_HOME=/opt/jenkins java -jar jenkins.war --httpPort=9090 &
@@ -56,7 +56,7 @@ JENKINS_HOME=/opt/jenkins java -jar jenkins.war --httpPort=9090 &
 
 有关可以调整 Jenkins 启动的命令行参数的更多详细信息，请使用以下命令：
 
-```bash
+```shell
 java -jar jenkins.war --help
 ```
 
@@ -64,7 +64,7 @@ java -jar jenkins.war --help
 
 在终端中看见以下信息，Jenkins 启动成功。
 
-```bash
+```shell
 Jenkins initial setup is required. An admin user has been created and a password generated.
 Please use the following password to proceed to installation:
 
@@ -110,7 +110,7 @@ WantedBy=multi-user.target
 
 重新加载 systemd 管理器的配置，启用并启动 Jenkins 服务：
 
-```bash
+```shell
 sudo systemctl daemon-reload
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
@@ -118,18 +118,20 @@ sudo systemctl start jenkins
 
 ## Linux 安装
 
-### Debian 系统
+分别在 Debian/Ubuntu-18.04 和 RedHat/CentOS-Stream-8 系统中安装。
+
+### Debian/Ubuntu 系统
 
 添加 LTS 版本密钥：
 
-```bash
+```shell
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 ```
 
 添加 Jenkins 的 Debian 软件包存储库：
 
-```bash
+```shell
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
@@ -137,25 +139,25 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 
 更新本地包索引，然后安装 Jenkins：
 
-```bash
+```shell
 sudo apt update
 sudo apt install -y jenkins
 ```
 
-### Redhat 系统
+### RedHat/CentOS 系统
 
 添加 Jenkins 的 Redhat 软件包存储库，并添加 LTS 版本密钥：
 
-```bash
+```shell
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 ```
 
 如果您之前添加过密钥，则 `rpm --import` 会失败，因为您已经拥有密钥，请忽略它并继续。
 
-```bash
+```shell
 sudo yum update
-sudo yum install jenkins
+sudo yum install -y jenkins
 ```
 
 ### 访问 Jenkins
@@ -168,11 +170,16 @@ sudo yum install jenkins
 
 ### 控制 Jenkins 服务
 
-- **开机服务运行**：`sudo systemctl enable jenkins`
-- **服务运行**：`sudo systemctl start jenkins`
-- **服务停止**：`sudo systemctl stop jenkins`
-- **服务重启**：`sudo systemctl restart jenkins`
-- **查看服务状态**：`sudo systemctl status jenkins`
+使用 `systemd` 控制 GitLab 服务命令：
+
+|  命令  |  描述  |
+|  :----  |  :----  |
+|  `sudo systemctl start jenkins`  |  启动服务  |
+|  `sudo systemctl stop jenkins`  |  停止服务  |
+|  `sudo systemctl restart jenkins`  |  重启服务  |
+|  `sudo systemctl status jenkins`  |  显示所有服务状态  |
+|  `sudo systemctl enable jenkins`  |  开机自启  |
+|  `sudo systemctl disable jenkins`  |  禁止开机自启  |
 
 ## Docker 安装
 
@@ -204,28 +211,28 @@ sudo systemctl enable docker
 
 修改挂载目录权限为 `1000`，由于容器内 `jenkins` 用户的 UID 和 PID 为 `1000`。
 
-```bash
+```shell
 sudo mkdir /opt/jenkins_home
 sudo chown -R 1000:1000 /opt/jenkins_home
 ```
 
 ### 拉取镜像
 
-```bash
+```shell
 sudo docker pull jenkins/jenkins
 ```
 
 ### 启动 jenkins
 
-1. 使用 `docker run` 运行 Jenkins 服务：
+- 使用 Docker Engine 运行 Jenkins 服务
 
-    ```bash
+    ```shell
     sudo docker run -d -v /opt/jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 --restart=on-failure --name jenkins jenkins/jenkins:latest
     ```
 
-2. 使用 `docker compose` 运行 Jenkins 服务。
+- 使用 Docker Compose 运行 Jenkins 服务
 
-    - 编写 `docker-compose.yml` 文件
+    在 `/opt/jenkins_home` 目录中创建一个 `docker-compose.yml` 文件，并输入以下内容：
 
         ```yaml
         version: '3'
@@ -244,45 +251,43 @@ sudo docker pull jenkins/jenkins
               - /opt/jenkins_home:/var/jenkins_home
         ```
 
-    - 运行 Jenkins 服务
+    确保您在与 `docker-compose.yml` 相同的目录下并启动 Jenkins：
 
-        ```bash
-        sudo docker compose up -d
-        ```
+    ```shell
+    sudo docker compose up -d
+    ```
 
 查看 Jenkins 日志。
 
-```bash
-sudo docker logs jenkins
+```shell
+sudo docker logs -f jenkins
 ```
 
 ## 配置安装向导
 
-1. 解锁 Jenkins
+输入管理员密码，解锁 Jenkins。
 
-    输入管理员密码，解锁 Jenkins。
+![解锁 Jenkins](../assets/linux_setup.jpg)
 
-    ![解锁 Jenkins](../assets/linux_setup.jpg)
+自定义 Jenkins。
 
-2. 自定义 Jenkins
+- **安装推荐的插件**：安装推荐的插件集，这些插件基于最常见的用例。默认选择
+- **选择要安装的插件**：自定义需要安装的插件
 
-    - **安装推荐的插件**：安装推荐的插件集，这些插件基于最常见的用例。默认选择
-    - **选择要安装的插件**：自定义需要安装的插件
+![安装插件](../assets/plugins_install.jpg)
 
-    ![安装插件](../assets/plugins_install.jpg)
+![开始安装插件](../assets/plugins_install02.jpg)
 
-    ![开始安装插件](../assets/plugins_install02.jpg)
+创建管理员用户，点击保存并完成。
 
-3. 创建管理员用户，点击保存并完成
+![创建管理员用户](../assets/create_admin.jpg)
 
-    ![创建管理员用户](../assets/create_admin.jpg)
+实例配置，点击保存并完成
 
-4. 实例配置，点击保存并完成
+![实例配置](../assets/config_url.jpg)
 
-    ![实例配置](../assets/config_url.jpg)
+完成配置。
 
-5. 完成配置
+![完成配置](../assets/done_setup.jpg)
 
-    ![完成配置](../assets/done_setup.jpg)
-
-    ![Jenkins 主页](../assets/jenkins_page.jpg)
+![Jenkins 主页](../assets/jenkins_page.jpg)

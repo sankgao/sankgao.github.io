@@ -8,7 +8,7 @@ export const gitlab = arraySidebar([
     prefix: "tutorials/",
     collapsible: true,
     children: [
-        "install",
+      "install",
     ],
   },
   {
@@ -18,7 +18,7 @@ export const gitlab = arraySidebar([
     prefix: "problems/",
     collapsible: true,
     children: [
-        "unable_find_match",
+      "unable_find_match",
     ],
   },
 ]);

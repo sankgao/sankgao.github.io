@@ -34,25 +34,23 @@ RAM（内存）要求取决于用户数量和预期工作负载。您的具体�
 
 ## Linux 安装
 
+分别在 Debian/Ubuntu-18.04 和 RedHat/CentOS-Stream-8 系统中安装。
+
+安装和配置所需的依赖。
+
+- Debian/Ubuntu 系统
+
+    ```shell
+    sudo apt install -y curl openssh-server ca-certificates tzdata perl postfix
+    ```
+
+- RedHat/CentOS 系统
+
+    ```shell
+    sudo yum install -y curl policycoreutils-python3 openssh-server perl postfix
+    ```
+
 ### GitLab EE
-
-安装和配置所需的依赖：
-
-::: code-tabs#shell
-
-@tab apt
-
-```bash
-sudo apt install -y curl openssh-server ca-certificates tzdata perl postfix
-```
-
-@tab yum
-
-```bash
-sudo yum install -y curl policycoreutils-python3 openssh-server perl postfix
-```
-
-:::
 
 访问 [GitLab 包仓库](https://packages.gitlab.com/gitlab)，选择需要安装的 GitLab 版本。
 
@@ -62,21 +60,17 @@ sudo yum install -y curl policycoreutils-python3 openssh-server perl postfix
 
 ![Bash 脚本](../assets/scripts_install.jpg)
 
-::: code-tabs#shell
+- Debian/Ubuntu 系统
 
-@tab apt
+    ```shell
+    curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
+    ```
 
-```bash
-curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
-```
+- RedHat/CentOS 系统
 
-@tab yum
-
-```bash
-curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
-```
-
-:::
+    ```shell
+    curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | sudo bash
+    ```
 
 接下来安装 `gitlab-ee`。此外，还需要通过设置 `EXTERNAL_URL` 环境变量来指定 GitLab EE 实例的 `URL`。如果还要设置初始密码，查看下一步骤。
 
@@ -90,21 +84,17 @@ curl -s https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script
 注意您使用的端口是否和 GitLab 中其他服务默认端口冲突，GitLab 默认会运行很多与 GitLab 相关的其他服务或工具。
 :::
 
-::: code-tabs#shell
+- Debian/Ubuntu 系统
 
-@tab apt
+    ```shell
+    sudo EXTERNAL_URL="http://localhost" apt install -y gitlab-ee
+    ```
 
-```bash
-sudo EXTERNAL_URL="http://localhost" apt install -y gitlab-ee
-```
+- RedHat/CentOS 系统
 
-@tab yum
-
-```bash
-sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-ee
-```
-
-:::
+    ```shell
+    sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-ee
+    ```
 
 **设置初始密码**（引入于 GitLab 14.0），默认情况下，Linux 软件包安装会自动为初始管理员用户账号（`root`）生成密码，并将其存储到 `/etc/gitlab/initial_root_password` 至少 24 小时。出于安全原因，24 小时后，此文件会被第一次 `gitlab-ctl reconfigure` 自动删除。
 
@@ -115,36 +105,31 @@ sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-ee
 要提供自定义初始 `root` 密码，有以下两种方式：
 
 - 如果服务器的主机名设置正确，则将 `GITLAB_ROOT_PASSWORD` 环境变量传递给安装命令
+    - Debian/Ubuntu 系统
 
-    ::: code-tabs#shell
+        ```shell
+        sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" apt install -y gitlab-ee
+        ```
 
-    @tab apt
+    - RedHat/CentOS 系统
 
-    ```bash
-    sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" apt install -y gitlab-ee
-    ```
-
-    @tab yum
-
-    ```bash
-    sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" yum install -y gitlab-ee
-    ```
-
-    :::
+        ```shell
+        sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" yum install -y gitlab-ee
+        ```
 
     如果在安装期间 GitLab 没有自动执行重新配置，则必须将 `GITLAB_ROOT_PASSWORD` 变量传递给第一次运行的 `gitlab-ctl reconfigure`。
 
 - 在第一次重新配置之前，编辑 `/etc/gitlab/gitlab.rb`（如果不存在则创建）并设置：
 
-    ```bash
+    ```shell
     gitlab_rails['initial_root_password'] = '<my_strong_password>'
     ```
 
-这两种方法都仅适用于初始数据库播种设定，发生在第一次重新配置期间。对于后续的重新配置运行，上述方法均无效。在这种情况下，使用 `/etc/gitlab/initial_root_password` 中的随机密码登录，或重置 `root` 密码。
+这两种方法都仅适用于初始数据库播种设定，发生在第一次重新配置期间。对于后续的重新配置运行，上述方法均无效，在这种情况下，使用 `/etc/gitlab/initial_root_password` 中的随机密码登录，或重置 `root` 密码。
 
 出现以下提示说明 GitLab 安装成功：
 
-```bash
+```shell
 It looks like GitLab has not been configured yet; skipping the upgrade script.
 
        *.                  *.
@@ -189,7 +174,7 @@ https://gitlab.fra1.qualtrics.com/jfe/form/SV_6kVqZANThUQ1bZb?installation=omnib
 出于安全原因，24 小时后，`/etc/gitlab/initial_root_password` 会被第一次 `gitlab-ctl reconfigure` 自动删除，因此若使用随机密码登录，建议安装成功初始登录成功之后，立即修改初始密码。
 :::
 
-```bash
+```shell
 sudo cat /etc/gitlab/initial_root_password
 ```
 
@@ -201,27 +186,9 @@ GitLab EE 主页。
 
 ### 极狐GitLab
 
-安装和配置所需的依赖：
-
-::: code-tabs#shell
-
-@tab apt
-
-```bash
-sudo apt install -y curl openssh-server ca-certificates tzdata perl postfix
-```
-
-@tab yum
-
-```bash
-sudo yum install -y curl policycoreutils-python3 openssh-server perl postfix
-```
-
-:::
-
 执行以下命令配置 极狐GitLab 软件源镜像：
 
-```bash
+```shell
 curl -fsSL https://get.gitlab.cn | /bin/bash
 ```
 
@@ -237,21 +204,17 @@ curl -fsSL https://get.gitlab.cn | /bin/bash
 注意您使用的端口是否和 GitLab 中其他服务默认端口冲突，GitLab 默认会运行很多与 GitLab 相关的其他服务或工具。
 :::
 
-::: code-tabs#shell
+- Debian/Ubuntu 系统
 
-@tab apt
+    ```shell
+    sudo EXTERNAL_URL="http://localhost" apt install -y gitlab-jh
+    ```
 
-```bash
-sudo EXTERNAL_URL="http://localhost" apt install -y gitlab-jh
-```
+- RedHat/CentOS 系统
 
-@tab yum
-
-```bash
-sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-jh
-```
-
-:::
+    ```shell
+    sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-jh
+    ```
 
 **设置初始密码**（引入于 极狐GitLab 14.0），默认情况下，Linux 软件包安装会自动为初始管理员用户账号（`root`）生成密码，并将其存储到 `/etc/gitlab/initial_root_password` 至少 24 小时。出于安全原因，24 小时后，此文件会被第一次 `gitlab-ctl reconfigure` 自动删除。
 
@@ -262,36 +225,31 @@ sudo EXTERNAL_URL="http://localhost" yum install -y gitlab-jh
 要提供自定义初始 `root` 密码，您有两个选择：
 
 - 如果服务器的主机名设置正确，则将 `GITLAB_ROOT_PASSWORD` 环境变量传递给安装命令
+    - Debian/Ubuntu 系统
 
-    ::: code-tabs#shell
+        ```shell
+        sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" apt install -y gitlab-jh
+        ```
 
-    @tab apt
+    - RedHat/CentOS 系统
 
-    ```bash
-    sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" apt install -y gitlab-jh
-    ```
-
-    @tab yum
-
-    ```bash
-    sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" yum install -y gitlab-jh
-    ```
-
-    :::
+        ```shell
+        sudo GITLAB_ROOT_PASSWORD="<strongpassword>" EXTERNAL_URL="http://localhost" yum install -y gitlab-jh
+        ```
 
     如果在安装期间 GitLab 没有自动执行重新配置，则必须将 `GITLAB_ROOT_PASSWORD` 变量传递给第一次运行的 `gitlab-ctl reconfigure`。
 
 - 在第一次重新配置之前，编辑 `/etc/gitlab/gitlab.rb`（如果不存在则创建）并设置：
 
-    ```bash
+    ```shell
     gitlab_rails['initial_root_password'] = '<my_strong_password>'
     ```
 
 这两种方法都仅适用于初始数据库播种设定，发生在第一次重新配置期间。对于后续的重新配置运行，上述方法均无效。在这种情况下，使用 `/etc/gitlab/initial_root_password` 中的随机密码登录，或重置 `root` 密码。
 
-出现以下提示说明 GitLab 安装成功：
+出现以下提示说明 极狐GitLab 安装成功：
 
-```bash
+```shell
 Running handlers:
 [2024-04-24T15:50:19+08:00] INFO: Running report handlers
 Running handlers complete
@@ -353,15 +311,42 @@ Complete!
 出于安全原因，24 小时后，`/etc/gitlab/initial_root_password` 会被第一次 `gitlab-ctl reconfigure` 自动删除，因此若使用随机密码登录，建议安装成功初始登录成功之后，立即修改初始密码。
 :::
 
-```bash
+```shell
 sudo cat /etc/gitlab/initial_root_password
 ```
 
-![GitLab EE 登录](../assets/gitlab_ee_login.jpg)
+![极狐GitLab 登录](../assets/jihu_gitlab_login.jpg)
 
-GitLab EE 主页。
+极狐GitLab 主页。
 
-![GitLab EE 主页](../assets/gitlab_ee_page.jpg)
+![极狐GitLab 主页](../assets/jihu_gitlab_page.jpg)
+
+### 控制 GitLab 服务
+
+使用 `gitlab-ctl` 常用命令如下：
+
+|  命令  |  描述  |
+|  :----  |  :----  |
+|  `sudo gitlab-ctl --help`  |  获取 gitlab-ctl 命令帮助  |
+|  `sudo gitlab-ctl start`  |  启动服务  |
+|  `sudo gitlab-ctl stop`  |  停止服务  |
+|  `sudo gitlab-ctl restart`  |  重启服务  |
+|  `sudo gitlab-ctl status`  |  显示所有服务状态  |
+|  `sudo gitlab-ctl reconfigure`  |  更新配置（修改配置后执行）  |
+|  `sudo gitlab-ctl remove-accounts`  |  删除此包使用的所有用户和组  |
+|  `sudo gitlab-ctl uninstall`  |  卸载 gitlab 但会保留您的数据（代码库、数据库、配置）  |
+|  `sudo gitlab-ctl cleanse`  |  卸载 gitlab 删除所有数据  |
+
+使用 `systemd` 控制 GitLab 服务命令：
+
+|  命令  |  描述  |
+|  :----  |  :----  |
+|  `sudo systemctl start gitlab-runsvdir.service`  |  启动服务  |
+|  `sudo systemctl stop gitlab-runsvdir.service`  |  停止服务  |
+|  `sudo systemctl restart gitlab-runsvdir.service`  |  重启服务  |
+|  `sudo systemctl status gitlab-runsvdir.service`  |  显示所有服务状态  |
+|  `sudo systemctl enable gitlab-runsvdir.service`  |  开机自启  |
+|  `sudo systemctl disable gitlab-runsvdir.service`  |  禁止开机自启  |
 
 ## Docker 安装
 
@@ -369,7 +354,7 @@ GitLab Docker 镜像是 GitLab 的整体镜像，在单个容器中运行所有�
 
 Docker 映像不包含邮件传输代理（MTA）。推荐的解决方案是添加在单独容器中运行的 MTA（例如：`Postfix` 或 `Sendmail`）。作为另一种选择，您可以直接在 GitLab 容器中安装 MTA，但这会增加维护开销，因为您可能需要在每次升级或重新启动后重新安装 MTA。
 
-- GitLab CE/EE 官网 [Docker 安装](https://docs.gitlab.com/ee/install/docker.html)
+- GitLab EE 官网 [Docker 安装](https://docs.gitlab.com/ee/install/docker.html)
 - 极狐GitLab 官网 [Docker 安装](https://docs.gitlab.cn/jh/install/docker.html)
 
 ### 配置 SSH 端口
@@ -384,13 +369,13 @@ GitLab 使用 SSH 通过 SSH 与 Git 进行交互。默认情况下，GitLab 使
 
     使用编辑器打开 `/etc/ssh/sshd_config`，然后更改 SSH 端口：
 
-    ```bash
+    ```shell
     Port = 2424
     ```
 
     保存文件并重新启动 SSH 服务：
 
-    ```bash
+    ```shell
     sudo systemctl restart sshd.service
     ```
 
@@ -407,24 +392,30 @@ GitLab 使用 SSH 通过 SSH 与 Git 进行交互。默认情况下，GitLab 使
 
 ### 配置挂载卷
 
+创建挂载目录 `/opt/gitlab`。
+
+```shell
+sudo mkdir /opt/gitlab
+```
+
 配置一个新的环境变量 `$GITLAB_HOME`，指向配置、日志和数据文件所在的目录。将 `$GITLAB_HOME` 环境变量应该附加到您的 shell 的配置文件（`~/.bash_profile`）中，以便它应用于所有未来的终端会话。
 
 在 `~/.bash_profile` 文件最后添加以下内容：
 
-```bash
+```shell
 export GITLAB_HOME=/opt/gitlab
 ```
 
-刷新 `~/.bash_profile` 文件，使配置生效。
+执行 `~/.bash_profile` 文件，使配置立即生效：
 
-```bash
+```shell
 source ~/.bash_profile
 ```
 
 GitLab 容器使用主机安装的卷来存储持久数据：
 
 |  本地位置  |  容器位置  |  用法  |
-|  ----  |  ----  |  ----  |
+|  :----  |  :----  |  :----  |
 |  `$GITLAB_HOME/data`  |  `/var/opt/gitlab`  |  用于存储应用程序数据  |
 |  `$GITLAB_HOME/logs`  |  `/var/log/gitlab`  |  用于存储日志  |
 |  `$GITLAB_HOME/config`  |  `/etc/gitlab`  |  用于存储 GitLab 配置文件  |
@@ -437,7 +428,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
     出于测试目的，您可以使用 `latest` 标签（例如：`gitlab/gitlab-ee:latest`），它指向最新的稳定版本。
 
-    ```bash
+    ```shell
     sudo docker run --detach \
       --hostname gitlab.example.com \
       --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'" \
@@ -453,15 +444,9 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
 - 使用 Docker Compose 安装 GitLab
 
-    创建挂载目录 `/opt/gitlab`。
-
-    ```bash
-    sudo mkdir /opt/gitlab
-    ```
-
     在 `docker-compose.yml` 文件中使用环境变量来定义卷的路径。创建 `.env` 文件，在 `.env` 文件中定义 `GITLAB_HOME` 变量，以在 `docker-compose.yml` 文件中使用。
 
-    ```bash
+    ```shell
     GITLAB_HOME=/opt/gitlab
     ```
 
@@ -493,7 +478,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
     确保您在与 `docker-compose.yml` 相同的目录下并启动 GitLab：
 
-    ```bash
+    ```shell
     sudo docker compose up -d
     ```
 
@@ -503,7 +488,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
     `external_url` 根据您的情况配置。
 
-    ```bash
+    ```shell
     sudo docker run --detach \
       --hostname gitlab.example.com \
       --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'" \
@@ -519,15 +504,9 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
 - 使用 Docker Compose 安装 GitLab
 
-    创建挂载目录 `/opt/gitlab`。
-
-    ```bash
-    sudo mkdir /opt/gitlab
-    ```
-
     在 `docker-compose.yml` 文件中使用环境变量来定义卷的路径。创建 `.env` 文件，在 `.env` 文件中定义 `GITLAB_HOME` 变量，以在 `docker-compose.yml` 文件中使用。
 
-    ```bash
+    ```shell
     GITLAB_HOME=/opt/gitlab
     ```
 
@@ -539,6 +518,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     services:
       web:
         image: 'registry.gitlab.cn/omnibus/gitlab-jh:latest'
+        container_name: gitlab
         restart: always
         hostname: 'gitlab.example.com'
         environment:
@@ -558,7 +538,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
     确保您在与 `docker-compose.yml` 相同的目录下并启动 极狐GitLab：
 
-    ```bash
+    ```shell
     sudo docker compose up -d
     ```
 
@@ -566,7 +546,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
 
 初始化过程可能需要很长时间。您可以通过以下方式跟踪此过程：
 
-```bash
+```shell
 sudo docker logs -f gitlab
 ```
 
@@ -574,7 +554,7 @@ sudo docker logs -f gitlab
 
 访问 GitLab URL，并使用用户名 `root` 和来自以下命令的密码登录：
 
-```bash
+```shell
 sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 
@@ -584,7 +564,7 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 1. 可选。在删除软件包（使用 `apt` 或 `yum`）之前，删除由 Linux 软件包创建的所有用户和群组
 
-    ```bash
+    ```shell
     sudo gitlab-ctl stop && sudo gitlab-ctl remove-accounts
     ```
 
@@ -594,7 +574,7 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
     - 要保留您的数据（代码库、数据库、配置），请停止极狐GitLab 并删除其 supervision 进程
 
-        ```bash
+        ```shell
         sudo systemctl stop gitlab-runsvdir
         sudo systemctl disable gitlab-runsvdir
         sudo rm /usr/lib/systemd/system/gitlab-runsvdir.service
@@ -605,55 +585,24 @@ sudo docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
    - 要删除所有数据
 
-        ```bash
+        ```shell
         sudo gitlab-ctl cleanse && sudo rm -r /opt/gitlab
         ```
 
 3. 卸载软件包
 
-    ::: code-tabs#shell
+    - Debian/Ubuntu 系统
 
-    @tab apt
+        ```shell
+        sudo apt remove gitlab-ee
+        # 或
+        sudo apt remove gitlab-jh
+        ```
 
-    ```bash
-    sudo apt remove gitlab-ee
-    # 或
-    sudo apt remove gitlab-jh
-    ```
+    - RedHat/CentOS 系统
 
-    @tab yum
-
-    ```bash
-    sudo yum remove gitlab-ee
-    # 或
-    sudo yum remove gitlab-jh
-    ```
-
-    :::
-
-## 命令
-
-`gitlab-ctl` 常用命令如下：
-
-|  命令  |  说明  |
-|  ----  |  ----  |
-|  `sudo gitlab-ctl --help`  |  获取 gitlab-ctl 命令帮助  |
-|  `sudo gitlab-ctl start`  |  启动服务  |
-|  `sudo gitlab-ctl stop`  |  停止服务  |
-|  `sudo gitlab-ctl restart`  |  重启服务  |
-|  `sudo gitlab-ctl status`  |  显示所有服务状态  |
-|  `sudo gitlab-ctl reconfigure`  |  更新配置（修改配置后执行）  |
-|  `sudo gitlab-ctl remove-accounts`  |  删除此包使用的所有用户和组  |
-|  `sudo gitlab-ctl uninstall`  |  卸载 gitlab 但会保留您的数据（代码库、数据库、配置）  |
-|  `sudo gitlab-ctl cleanse`  |  卸载 gitlab 删除所有数据  |
-
-`systemd` 控制 GitLab 服务命令：
-
-|  命令  |  说明  |
-|  ----  |  ----  |
-|  `sudo systemctl start gitlab-runsvdir.service`  |  启动服务  |
-|  `sudo systemctl stop gitlab-runsvdir.service`  |  停止服务  |
-|  `sudo systemctl restart gitlab-runsvdir.service`  |  重启服务  |
-|  `sudo systemctl status gitlab-runsvdir.service`  |  显示所有服务状态  |
-|  `sudo systemctl enable gitlab-runsvdir.service`  |  开机自启  |
-|  `sudo systemctl disable gitlab-runsvdir.service`  |  禁止开机自启  |
+        ```shell
+        sudo yum remove gitlab-ee
+        # 或
+        sudo yum remove gitlab-jh
+        ```
