@@ -8,6 +8,7 @@ export const docker = arraySidebar([
     prefix: "tutorials/",
     collapsible: true,
     children: [
+      "install",
     ],
   },
   {
