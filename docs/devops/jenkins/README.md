@@ -66,4 +66,5 @@ Jenkins 始于 2004 年 Sun 公司员工（**Kohsuke Kawaguchi**）基于个人�
 - [Jenkins 官网文档](https://www.jenkins.io/doc/)
 - [Jenkins GitHub 地址](https://github.com/jenkinsci/jenkins)
 - [Jenkins Docker GitHub 地址](https://github.com/jenkinsci/docker)
+- [Jenkins JIRA](https://issues.jenkins.io/secure/Dashboard.jspa)
 - 《Jenkins 权威指南》[GitHub 地址](https://github.com/wakaleo/jenkins-the-definitive-guide-book)
