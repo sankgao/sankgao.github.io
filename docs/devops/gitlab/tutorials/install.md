@@ -431,7 +431,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     ```shell
     sudo docker run --detach \
       --hostname gitlab.example.com \
-      --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'" \
+      --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'; gitlab_rails['time_zone'] = 'Asia/Shanghai'" \
       --publish 443:443 --publish 80:80 --publish 22:22 \
       --name gitlab \
       --restart always \
@@ -465,6 +465,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
           GITLAB_OMNIBUS_CONFIG: |
             # Add any other gitlab.rb configuration here, each on its own line
             external_url 'http://gitlab.example.com'
+            gitlab_rails['time_zone'] = 'Asia/Shanghai'
         ports:
           - '80:80'
           - '443:443'
@@ -491,7 +492,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     ```shell
     sudo docker run --detach \
       --hostname gitlab.example.com \
-      --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'" \
+      --env GITLAB_OMNIBUS_CONFIG="external_url 'http://gitlab.example.com'; gitlab_rails['time_zone'] = 'Asia/Shanghai'" \
       --publish 443:443 --publish 80:80 --publish 22:22 \
       --name gitlab \
       --restart always \
@@ -525,6 +526,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
           GITLAB_OMNIBUS_CONFIG: |
             # Add any other gitlab.rb configuration here, each on its own line
             external_url 'http://gitlab.example.com'
+            gitlab_rails['time_zone'] = 'Asia/Shanghai'
         ports:
           - '80:80'
           - '443:443'
