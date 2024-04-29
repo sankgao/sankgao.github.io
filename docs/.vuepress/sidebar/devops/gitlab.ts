@@ -9,6 +9,7 @@ export const gitlab = arraySidebar([
     collapsible: true,
     children: [
       "install",
+      "basic_operation",
     ],
   },
   {
