@@ -517,7 +517,7 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     version: '3.6'
 
     services:
-      web:
+      gitlab:
         image: 'registry.gitlab.cn/omnibus/gitlab-jh:latest'
         container_name: gitlab
         restart: always
