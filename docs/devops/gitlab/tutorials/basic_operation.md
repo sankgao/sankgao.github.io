@@ -64,7 +64,11 @@ tag:
 
 ## 配置 SMTP
 
+如果您希望通过一个 SMTP 服务器发送应用邮件，而不是通过 Sendmail，需要在 `/etc/gitlab/gitlab.rb` 中添加以下配置信息，并执行 `gitlab-ctl reconfigure` 命令重新配置 GitLab 服务。
+
 参考 极狐GitLab [官网 SMTP 配置](https://docs.gitlab.cn/omnibus/settings/smtp.html)。
+
+### 配置网易 163 邮箱
 
 例如：配置网易 163 邮箱 SMTP 服务，修改 `/etc/gitlab/gitlab.rb` 文件中以下配置信息：
 
@@ -98,6 +102,8 @@ gitlab_rails['gitlab_email_display_name'] = "My GitLab Server"  # 配置 GitLab 
     - **client_once**：检查证书的有效性，并要求客户端证书
     - **fail_if_no_peer_cert**：如果没有收到证书，会断开连接
     - **client_once**：类似 `fail_if_no_peer_cert`，但是如果没有收到证书，会继续连接
+
+执行 `gitlab-ctl reconfigure` 命令重新配置 GitLab 服务。
 
 ### 测试 SMTP 配置
 
@@ -160,6 +166,33 @@ cat ~/.ssh/id_rsa.pub
 
 ## 基本操作
 
+### 创建用户
+
+管理员可以手动创建用户：
+
+在 极狐GitLab 实例页面左侧边栏的底部，选择 *管理中心 -> 用户 -> 新用户*。
+
+![创建用户](../assets/create_new_user01.jpg)
+
+- **名称**：用于 GitLab 页面显示名。例如：`Administrator`
+- **用户名**：用于 GitLab 登录。例如：`root`
+- **电子邮箱**：用于连接用户邮箱
+- **访问级别**：普通、管理员
+
+![创建用户](../assets/create_new_user02.jpg)
+
+![创建用户](../assets/create_new_user03.jpg)
+
+重置链接会发送到用户的电子邮件，他们必须在首次登录时设置密码。
+
+要在不依赖电子邮件确认的情况下设置用户密码，点击 *编辑*，配置用户初始密码。
+
+![创建用户](../assets/create_new_user04.jpg)
+
+配置用户初始密码，点击 *保存更改。*
+
+![创建用户](../assets/create_new_user05.jpg)
+
 ### 创建群组
 
 在 极狐GitLab 实例页面左侧边栏的左上角，选择 *极狐图像 -> 群组 -> 新建群组*。
@@ -214,14 +247,176 @@ cat ~/.ssh/id_rsa.pub
 
 ![创建项目](../assets/create_new_project03.jpg)
 
-### 创建用户
+![创建项目](../assets/create_new_project04.jpg)
 
-- Master（管理员）:除了不能转让组群的拥有权，具有与Owner相同的权限。可以添加和移除组群成员，管理项目等。
-- **Guest（访客）**：可以对组群内的项目进行有限的访问
-- **Reporter（报告者）**：可以提交数据，但不能接收事件，比如问题或合并请求
-- **Developer（开发者）**：可以创建项目、创建新分支、推送代码到远程仓库等
-- **Maintainer（维护者）**：除了不能删除组群，具有 Developer 的所有权限
-- **Owner（拥有者）**：管理组群设置和成员。有完全的访问权限，包括修改组群设置、删除组群等
+::: info 分支保护
+团队开发时为了避免一些重要的开发分支（main）被意外篡改，管理人员需要将这些重要的分支设置分支保护，这样普通开发人员就不能直接对代码进行推送和合并，需要专门的分支管理人员（开发组长）维护重要分支的提交或合并操作。`main` 分支默认受保护。
+:::
+
+### 将用户添加到项目
+
+将用户添加到项目中，以便他们成为成员并有权执行操作。
+
+在 极狐GitLab 实例页面左侧边栏的左上角，选择 *极狐图像 -> 项目 -> 选择要添加用户的项目（例如：test_demo） -> 管理 -> 成员 -> 邀请成员*。
+
+![添加用户](../assets/project_add_user01.jpg)
+
+- **用户名**
+- **选择角色**：角色权限依次递增。访客（`10`） -> 报告者（`20`） -> 开发者（`30`） -> 维护者（`40`） -> 拥有者（`50`）
+    - **Guest（访客）**：可以创建 issue、发表评论，不能访问项目的私有分支和查看代码
+    - **Reporter（报告者）**：可以克隆项目、创建 issue、发表评论，不能推送到非保护分支
+    - **Developer（开发者）**：可以克隆项目、创建 issue、发表评论，可以推送到非保护分支，可以接收已合并的代码
+    - **Maintainer（维护者）**：可以克隆项目、创建 issue、发表评论、推送到非保护分支、接收已合并的代码，还可以推送到保护分支、删除未保护的分支和标签
+    - **Owner（拥有者）**：可以管理项目、包括更改项目设置、删除项目等操作
+
+- **访问到期日期（可选）**
+
+![添加用户](../assets/project_add_user02.jpg)
+
+### 管理员用户上传代码
+
+使用管理员用户（`root`）登录 GitLab 服务器。
+
+将 `test_demo` 项目使用 SSH 克隆到本地。
+
+```bash
+git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
+```
+
+设置 Git 用户和邮箱：
+
+```bash
+cd test_demo
+git config user.name "Administrator"
+git config user.email "root@example.com"
+```
+
+在 `test_demo` 项目中添加文件并上传：
+
+```bash
+touch hello.sh
+echo "echo 'Hello World!'" > hello.sh
+chmod +x hello.sh
+git add hello.sh
+git commit -m "add hello.sh"
+
+vim README.md
+git add README.md
+git commit -m "change README.md"
+
+git push origin main
+```
+
+刷新 GitLab 中 `test_demo` 项目页面，查看上传的文件及脚本。
+
+![上传代码](../assets/upload_code.jpg)
+
+### 普通开发用户上传代码
+
+使用普通开发用户（`zhangsan`）登录 GitLab 服务器。配置普通开发用户（`zhangsan`）[SSH 密钥](#添加-ssh-密钥)。
+
+将 `test_demo` 项目使用 SSH 克隆到本地。
+
+```bash
+git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
+```
+
+设置 Git 用户和邮箱：
+
+```bash
+cd test_demo
+git config user.name "zhangsan"
+git config user.email "zhangsan@example.com"
+```
+
+在 `test_demo` 项目中添加文件并上传：
+
+```bash
+touch test
+echo "test" > test
+git add test
+git commit -m "add test"
+
+git push origin main
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: GitLab: You are not allowed to push code to protected branches on this project.
+To ssh://192.168.52.186:2424/tests/test_demo.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'ssh://git@192.168.52.186:2424/tests/test_demo.git'
+```
+
+普通开发用户（`zhangsan`）无法上传到 `main` 分支，`main` 分支默认受保护。
+
+普通开发用户（`zhangsan`）创建分支，并推送到远程仓库。
+
+```bash
+git branch dev
+git push -u origin dev:dev
+```
+
+在 GitLab 页面，查看 `test_demo` 项目 `dev` 分支。
+
+![查看分支](../assets/branch01.jpg)
+
+创建从 `dev` 到 `main` 合并分支请求，点击 *创建合并请求*。
+
+![创建合并请求](../assets/merge_request01.jpg)
+
+![创建合并请求](../assets/merge_request02.jpg)
+
+使用管理员用户（`root`）登录 GitLab 服务器。查看合并请求，检查代码，没有问题就同意合并请求并删除 `dev` 分支。
+
+![同意合并请求](../assets/merge_request03.jpg)
+
+查看 `test_demo` 项目 `main` 分支，确认已经合并 `dev` 分支。
+
+![查看分支](../assets/branch02.jpg)
+
+刷新 GitLab 中 `test_demo` 项目页面，查看上传的文件及脚本。
+
+![上传代码](../assets/upload_code.jpg)
+
+### 创建标签
+
+在 Git 中，`tag` 是标记存储库历史记录中特定提交的一种方式。`tag` 通常用于标记项目的特定版本。
+
+例如：对于版本 `10.5.7`：
+
+- **10**：代表主要版本。主要版本是 `10.0.0`，但通常称为 `10.0`
+- **5**：代表小版本。次要版本是 `10.5.0`，但通常称为 `10.5`
+- **7**：表示补丁编号
+
+版本号的任何部分都可以是多个数字，例如：`13.10.11`。
+
+可以从命令行或 GitLab 页面创建标签。
+
+- 命令行
+    - 创建轻量级标签，使用 `git tag [TAG_NAME]` 命令，将 `TAG_NAME` 更改为您想要的标签名称
+
+        ```bash
+        git tag v1.0.0
+        git push origin v1.0.0
+        ```
+
+    - 创建注释的标签，使用 `git tag -a [TAG_NAME] -m "Message"` 命令
+
+        ```bash
+        git tag -a v1.0.0 -m "Version v1.0.0"
+        git push origin v1.0.0
+        ```
+
+- GitLab 页面
+    - 在 极狐GitLab 实例页面左侧边栏的左上角，选择 *极狐图像 -> 项目 -> 选择要添加用户的项目（例如：test_demo） -> 代码 -> 标签 -> 新建标签*。
+
+        ![新建标签](../assets/create_new_tag01.jpg)
+
+    - 添加标签名称、选择分支、添加标签消息
+
+        ![新建标签](../assets/create_new_tag02.jpg)
 
 ## 备份 GitLab
 
@@ -273,7 +468,10 @@ cat ~/.ssh/id_rsa.pub
     
     - Docker 安装
 
-        备份存储配置文件的卷。
+        备份存储配置文件的卷。例如：`/opt/gitlab/config`
+
+- Linux 安装：备份位置在 `/var/opt/gitlab/backups` 文件中
+- Docker 安装：备份位置在 `/opt/gitlab/data/backups` 文件中
 
 ### 扩展备份
 

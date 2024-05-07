@@ -45,6 +45,7 @@ export const computers = arraySidebar([
       "system_service",
       "mail",
       "rpmdb_damage",
+      "ping_not_domain_name",
     ],
   },
   {
