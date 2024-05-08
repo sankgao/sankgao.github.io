@@ -111,7 +111,7 @@ gitlab_rails['gitlab_email_display_name'] = "My GitLab Server"  # 配置 GitLab 
 
 在 极狐GitLab 服务器上，执行 `gitlab-rails console` 命令进入控制台。然后，您可以在控制台提示符下输入以下命令，以使系统发送测试电子邮件：
 
-```bash
+```shell
 Notify.test_email('destination_email@address.com', 'Message Subject', 'Message Body').deliver_now
 ```
 
@@ -126,13 +126,13 @@ Notify.test_email('destination_email@address.com', 'Message Subject', 'Message B
 
 1. 编辑加密的 `secret`
 
-    ```bash
+    ```shell
     sudo gitlab-rake gitlab:smtp:secret:edit EDITOR=vim
     ```
 
 2. SMTP secret 的未加密内容应输入如下：
 
-    ```bash
+    ```shell
     user_name: 'smtp user'
     password: 'smtp password'
     ```
@@ -140,7 +140,7 @@ Notify.test_email('destination_email@address.com', 'Message Subject', 'Message B
 3. 编辑 `/etc/gitlab/gitlab.rb` 并删除 `smtp_user_name` 和 `smtp_password` 的设置
 4. 重新配置 极狐GitLab
 
-    ```bash
+    ```shell
     sudo gitlab-ctl reconfigure
     ```
 
@@ -148,7 +148,7 @@ Notify.test_email('destination_email@address.com', 'Message Subject', 'Message B
 
 在 极狐GitLab 服务器中生成 SSH 密钥：
 
-```bash
+```shell
 ssh-keygen -t rsa
 ```
 
@@ -158,7 +158,7 @@ ssh-keygen -t rsa
 
 点击 *添加新密钥*。将刚生成的 SSH 公钥文件（`id_rsa.pub`）内容复制到 GitLab SSH 中。点击 *添加密钥*。
 
-```bash
+```shell
 cat ~/.ssh/id_rsa.pub
 ```
 
@@ -279,13 +279,13 @@ cat ~/.ssh/id_rsa.pub
 
 将 `test_demo` 项目使用 SSH 克隆到本地。
 
-```bash
+```shell
 git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
 ```
 
 设置 Git 用户和邮箱：
 
-```bash
+```shell
 cd test_demo
 git config user.name "Administrator"
 git config user.email "root@example.com"
@@ -293,7 +293,7 @@ git config user.email "root@example.com"
 
 在 `test_demo` 项目中添加文件并上传：
 
-```bash
+```shell
 touch hello.sh
 echo "echo 'Hello World!'" > hello.sh
 chmod +x hello.sh
@@ -317,13 +317,13 @@ git push origin main
 
 将 `test_demo` 项目使用 SSH 克隆到本地。
 
-```bash
+```shell
 git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
 ```
 
 设置 Git 用户和邮箱：
 
-```bash
+```shell
 cd test_demo
 git config user.name "zhangsan"
 git config user.email "zhangsan@example.com"
@@ -331,7 +331,7 @@ git config user.email "zhangsan@example.com"
 
 在 `test_demo` 项目中添加文件并上传：
 
-```bash
+```shell
 touch test
 echo "test" > test
 git add test
@@ -353,7 +353,7 @@ error: failed to push some refs to 'ssh://git@192.168.52.186:2424/tests/test_dem
 
 普通开发用户（`zhangsan`）创建分支，并推送到远程仓库。
 
-```bash
+```shell
 git branch dev
 git push -u origin dev:dev
 ```
@@ -397,14 +397,14 @@ git push -u origin dev:dev
 - 命令行
     - 创建轻量级标签，使用 `git tag [TAG_NAME]` 命令，将 `TAG_NAME` 更改为您想要的标签名称
 
-        ```bash
+        ```shell
         git tag v1.0.0
         git push origin v1.0.0
         ```
 
     - 创建注释的标签，使用 `git tag -a [TAG_NAME] -m "Message"` 命令
 
-        ```bash
+        ```shell
         git tag -a v1.0.0 -m "Version v1.0.0"
         git push origin v1.0.0
         ```
@@ -431,61 +431,149 @@ git push -u origin dev:dev
 
 可以通过包含备份的灾难恢复计划来减轻所有这些风险。
 
-### 简单的备份
+### Linux 安装备份
 
-您只能将备份恢复到与创建备份时完全相同的 GitLab 版本和类型（CE/EE）。
+1. 备份 GitLab 的配置文件
 
-如果您使用数据量少于 100GB，请按照以下步骤操作：
+    使用 `gitlab-ctl backup-etc` 命令用于在进行系统升级或配置更改之前，你可能想要备份当前的配置。GitLab 会将 `/etc/gitlab` 目录下的所有配置文件打包成一个 `.tar` 文件，并将其存储在 `/etc/gitlab/config_backup` 目录下。这个命令不会备份数据库或其他数据，只关注配置文件。
 
-1. 运行备份命令
+    如果您希望备份全部的配置文件到一个指定的目录，您可以使用 `--backup-path <DIRECTORY>` 参数来指定备份文件的保存路径，例如：
 
-    - Linux 安装
+    ```shell
+    sudo gitlab-ctl backup-etc --backup-path /data/gitlab/backups
+    ```
 
-        ```bash
-        sudo gitlab-backup create
-        ```
-    
-    - Docker 安装
+    此外，`backup-etc` 命令不会删除旧的备份文件，除非您使用 `--delete-old-backups` 参数。
 
-        ```bash
-        sudo docker exec -t <container name> gitlab-backup create
-        ```
+2. 备份 GitLab 的数据
 
-2. 备份对象存储（如果适用）
+    使用 `gitlab-backup create` 命令用于恢复整个 GitLab 实例。GitLab 会创建一个包含数据库、上传文件和其他相关数据的完整备份，并将其保存为一个 `.tar` 文件，通常位于 `gitlab_rails['backup_path']` 所指定的路径下，默认是 `/var/opt/gitlab/backups`。
 
-    备份命令不会备份 Linux 包、Docker 或自编译安装上的对象存储中的项目。
+    这个备份文件包含了恢复 GitLab 实例所需的所有数据，包括数据库、附件和配置文件的当前状态。
 
-    备份命令不会备份未存储在文件系统上的 blob。如果您使用对象存储，请务必启用对象存储提供商的备份。
+    ```shell
+    sudo gitlab-backup create
+    ```
 
-3. 手动备份配置文件
+`gitlab-ctl backup-etc` 主要用于备份配置文件，而 `gitlab-backup create` 则用于创建包含数据和配置文件的完整备份。
 
-    您应该备份配置目录。至少，您必须备份：
+### Docker 安装备份
 
-    - Linux 安装
+1. 备份应用程序数据
 
-        - /etc/gitlab/gitlab-secrets.json
-        - /etc/gitlab/gitlab.rb
-    
-    - Docker 安装
+    ```shell
+    sudo docker exec -t <container name> gitlab-backup create
+    ```
 
-        备份存储配置文件的卷。例如：`/opt/gitlab/config`
+2. 备份配置文件和机密
 
-- Linux 安装：备份位置在 `/var/opt/gitlab/backups` 文件中
-- Docker 安装：备份位置在 `/opt/gitlab/data/backups` 文件中
+    ```shell
+    docker exec -t <container name> /bin/sh -c 'gitlab-ctl backup-etc && cd /etc/gitlab/config_backup && cp $(ls -t | head -n1) /data/gitlab/backups/'
+    ```
 
-### 扩展备份
+## 恢复
 
-随着 GitLab 数据量的增长，备份命令的执行时间会变长。并发备份 Git 存储库和增量存储库备份等备份选项有助于减少执行时间。在某些时候，备份命令本身就变得不切实际。例如：可能需要 24 小时或更长时间。
+您只能将备份恢复到与创建备份的 GitLab 版本和类型（CE 或 EE）完全相同的版本。
 
-在某些情况下，可能需要更改架构以允许扩展备份。如果您使用的是 GitLab 参考架构，请参阅备份和恢复大型参考架构。
+如果您的备份与当前安装的版本不同，您必须在恢复备份之前降级或升级 GitLab。
 
-有关详细信息，请参阅替代备份策略。
+### 必须恢复 GitLab 机密
 
-### 哪些数据需要备份
+要恢复备份，您还必须恢复 `GitLab Secrets`。其中包括数据库加密密钥、CI/CD 变量以及用于双因素身份验证的变量。如果没有密钥，就会出现多种问题，包括启用了双因素身份验证的用户失去访问权限，并且 GitLab 运行者无法登录。
 
-- PostgreSQL 数据库
-- Git 存储库
-- Blobs
-- 容器注册中心
-- 配置文件
-- 其他数据
+恢复：
+
+- `/etc/gitlab/gitlab-secrets.json`（Linux 软件包安装）
+- `/home/git/gitlab/.secret`（自行编译安装）
+
+### Linux 安装恢复
+
+此过程假设：
+
+- 您安装的 GitLab 版本和类型（CE/EE）与创建备份时的版本和类型完全相同
+- 至少执行过一次 `sudo gitlab-ctl reconfigure` 命令
+- GitLab 正在运行。如果没有，使用 `sudo gitlab-ctl start` 命令启动
+
+首先确保您的备份 `tar` 文件位于 `gitlab.rb` 配置中描述的 `gitlab_rails['backup_path']` 备份目录中。默认为 `/var/opt/gitlab/backups` 备份文件需要归 `git` 用户所有。
+
+```shell
+sudo cp 1715136572_2024_05_08_16.11.1-jh_gitlab_backup.tar /var/opt/gitlab/backups/
+sudo chown git:git /var/opt/gitlab/backups/1715136572_2024_05_08_16.11.1-jh_gitlab_backup.tar
+```
+
+停止连接到数据库的进程。让 GitLab 的其余部分保持运行：
+
+```shell
+sudo gitlab-ctl stop puma
+sudo gitlab-ctl stop sidekiq
+# 验证
+sudo gitlab-ctl status
+```
+
+接下来，确保您已完成恢复先决条件 `gitlab-ctl reconfigure` 步骤，并在从原始安装复制 GitLab 机密文件后运行。
+
+接下来恢复备份，指定要恢复的备份的 ID：
+
+```shell
+sudo gitlab-backup restore BACKUP=1715136572_2024_05_08_16.11.1-jh
+```
+
+此命令将覆盖 GitLab 数据库的内容，名称中省略了 `_gitlab_backup.tar`。
+
+接下来，重新启动并检查 GitLab：
+
+```shell
+sudo gitlab-ctl restart
+sudo gitlab-rake gitlab:check SANITIZE=true
+```
+
+验证数据库值是否可以解密，特别是在 `/etc/gitlab/gitlab-secrets.json` 已还原的情况下，或者如果还原的目标是不同的服务器。
+
+```shell
+sudo gitlab-rake gitlab:doctor:secrets
+```
+
+为了增加保证，您可以对上传的文件执行完整性检查：
+
+```shell
+sudo gitlab-rake gitlab:artifacts:check
+sudo gitlab-rake gitlab:lfs:check
+sudo gitlab-rake gitlab:uploads:check
+```
+
+### Docker 安装恢复
+
+如果您使用 Docker Swarm，容器可能会在恢复过程中重新启动，因为 Puma 已关闭，因此容器运行状况检查失败。要解决此问题，请暂时禁用运行状况检查机制。
+
+1. 编辑 `docker-compose.yml`
+
+    ```yaml
+    healthcheck:
+      disable: true
+    ```
+
+2. 部署堆栈
+
+    ```shell
+    docker stack deploy --compose-file docker-compose.yml mystack
+    ```
+
+恢复任务可以从主机运行：
+
+```shell
+# 停止连接到数据库的进程
+docker exec -it <container name> gitlab-ctl stop puma
+docker exec -it <container name> gitlab-ctl stop sidekiq
+
+# 继续之前，验证流程是否全部关闭
+docker exec -it <container name> gitlab-ctl status
+
+# 运行恢复。注意：名称中省略了 "_gitlab_backup.tar"
+docker exec -it <container name> gitlab-backup restore BACKUP=1715136572_2024_05_08_16.11.1-jh
+
+# 重新启动 GitLab 容器
+docker restart <container name>
+
+# 检查 GitLab
+docker exec -it <container name> gitlab-rake gitlab:check SANITIZE=true
+```
