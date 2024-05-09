@@ -24,7 +24,7 @@ tag:
 
 ## 示例
 
-### 添加单个文件到暂存区
+### 添加单个文件
 
 例如：添加 `test` 文件到暂存区
 
@@ -32,7 +32,7 @@ tag:
 git add ./test
 ```
 
-### 添加多个文件到暂存区
+### 添加多个文件
 
 例如：添加 `test` 和 `hello.sh` 文件到暂存区
 
@@ -40,7 +40,7 @@ git add ./test
 git add ./test ./hello.sh
 ```
 
-### 添加所有文件到暂存区
+### 添加所有文件
 
 ::: tip
 `git add .` 后有一个 **点**（`.`）不要忘记。
@@ -52,4 +52,5 @@ git add .
 git add -A
 ```
 
-`git add .` 和 `git add -A` 在 git 2.x 版本中没有区别；在 git 1.x 版本中使用 `git add .` 命令不包括已删除的文件。
+- `git add .` 和 `git add -A` 在 git 2.x 版本中没有区别；在 git 1.x 版本中使用 `git add .` 命令不包括已删除的文件。
+- `git add .` 只能添加当前目录及子目录下所有更改的文件；`git add -A` 添加 git 仓库中所有目录更改的文件
