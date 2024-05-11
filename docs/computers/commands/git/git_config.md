@@ -22,8 +22,8 @@ tag:
 - **--global**：对所有仓库生效，使用全局仓库配置文件。例如：用户家目录下的 `~/.gitconfig` 文件
 - **--system**：对所有用户生效，使用系统仓库配置文件。例如：Git 安装目录下的 `/etc/gitconfig` 文件
 - **--worktree**：使用每个工作区配置文件。例如：对于主工作区文件在 `.git/config.worktree`；对于其它工作区文件在 `.git/worktrees/<id>/`。只有在 `extensions.worktreeConfig` 配置后生效，否则该选项就是 `--local`
-- **--file <filename>**：使用指定的配置文件。例如：写到指定的文件 `/data/gitconfig` 中
-- **--blob <blob>**：使用指定的二进制文件。例如：二进制文件 `.gitmodules` 中
+- **--file \<filename\>**：使用指定的配置文件。例如：写到指定的文件 `/data/gitconfig` 中
+- **--blob \<blob\>**：使用指定的二进制文件。例如：二进制文件 `.gitmodules` 中
 
 该命令出错时将以非零状态失败。以下是一些退出代码：
 
