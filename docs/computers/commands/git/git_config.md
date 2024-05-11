@@ -27,14 +27,14 @@ tag:
 
 该命令出错时将以非零状态失败。以下是一些退出代码：
 
-- 该节或键无效（退出代码为 1）
-- 没有提供节或键（退出值为 2）
-- 配置文件无效（退出代码为 3）
-- 配置文件无法写入（退出代码为 4）
-- 试图取消一个不存在的选项（退出代码为 5）
-- 试图取消/设置一个多行匹配的选项（退出代码为 5）
-- 试图使用一个无效的正则表达式（退出代码为 6）
-- 执行成功时，该命令返回退出代码 0
+- 该节或键无效（退出代码为 `1`）
+- 没有提供节或键（退出值为 `2`）
+- 配置文件无效（退出代码为 `3`）
+- 配置文件无法写入（退出代码为 `4`）
+- 试图取消一个不存在的选项（退出代码为 `5`）
+- 试图取消/设置一个多行匹配的选项（退出代码为 `5`）
+- 试图使用一个无效的正则表达式（退出代码为 `6`）
+- 执行成功时，该命令返回退出代码 `0`
 
 所有可用配置变量的列表可以通过 `git help --config` 命令获取。
 
@@ -46,6 +46,7 @@ tag:
 |  `--add`  |  在不改变任何已有的键值情况下添加一行新键值  |
 |  `--get`  |  获取最后一个匹配的键值  |
 |  `--get-all`  |  获取所有匹配的键值  |
+|  `--get-regexp`  |  使用正则表达式获取匹配的键值  |
 |  `--unset`  |  移除一个匹配的键值  |
 |  `--unset-all`  |  移除所有匹配的键值  |
 |  `-z, --null`  |  输出的键值是以 `null` 字符结束，而不是换行符，可用于对输出的安全解析  |
@@ -125,6 +126,14 @@ git config --get user.name
 git config --get-all user.name
 ```
 
+### 匹配所有键值
+
+例如：使用 `--get-regexp` 选项，匹配所有 `user.*` 的键值。
+
+```shell
+git config --get-regexp user.name
+```
+
 ### 移除指定键值
 
 例如：使用 `--unset` 选项，移除指定 `user.name` 为 `tset` 的键值。
@@ -169,7 +178,10 @@ git config core.editor 'vim'
 
 `core.autocrlf` 用于控制 Git 如何处理换行符的转换，特别是在 Windows 和 Unix-like 系统（如：Linux 和 macOS）之间。
 
-Git 默认会尝试自动转换换行符，以确保在不同操作系统之间的一致性。具体来说，当从 Git 仓库检出文件时（即当你查看或修改文件时），Git 会根据 `core.autocrlf` 的设置来决定是否将换行符从 `LF`（Unix-style，\n）转换为 `CRLF`（Windows-style，\r\n）。同样地，当提交文件到 Git 仓库时，Git 会根据这个设置来决定是否将换行符从 `CRLF` 转换回 `LF`。
+Git 默认会尝试自动转换换行符，以确保在不同操作系统之间的一致性。具体来说，当从 Git 仓库检出文件时（即当你查看或修改文件时），Git 会根据 `core.autocrlf` 的设置来决定是否将换行符从 `LF`（Unix-style，`\n`）转换为 `CRLF`（Windows-style，`\r\n`）。同样地，当提交文件到 Git 仓库时，Git 会根据这个设置来决定是否将换行符从 `CRLF` 转换回 `LF`。
+
+- **\n**：为换行符，换行相当于光标跳转到下一行的这个位置
+- **\r**：为回车符，回车相当于光标跳转到当前行的最左边的位置
 
 `core.autocrlf` 可以设置为以下三个值之一：
 
@@ -177,9 +189,58 @@ Git 默认会尝试自动转换换行符，以确保在不同操作系统之间�
 - **input**：当检出代码时，不做任何转换；当提交代码时，将 `CRLF` 转换为 `LF`。这意味着无论你在什么系统上工作，提交到 Git 仓库的代码都将使用 `LF` 换行符。这是 Unix-like 系统上的默认设置
 - **false**：不做任何转换。这意味着无论检出还是提交，Git 都不会更改文件中的换行符。这可能会导致在不同操作系统之间查看文件时出现换行符不一致的问题
 
-例如：要在全局范围内设置 `core.autocrlf` 为 `input`。
+例如：要在全局范围内设置 `core.autocrlf` 为 `true`。
 
 ```shell
-git config --global core.autocrlf input
+git config --global core.autocrlf true
 ```
 
+### 设置别名
+
+使用 `alias.<alias> "command"` 设置别名可以简化常用命令的输入。
+
+例如：将 `git commit` 命令简化为 `git ci`。以后要输入 `git commit` 时，只需要输入 `git ci` 即可。
+
+```shell
+git config --global alias.ci "commit"
+```
+
+常用的别名：
+
+```shell
+git config --global alias.co "checkout"
+git config --global alias.br "branch"
+git config --global alias.ci "commit"
+git config --global alias.st "status"
+```
+
+### 设置代理
+
+有时可能会遇到无法直接连接到远程仓库的情况，这时就需要设置代理服务器来解决问题。
+
+Git 代理设置主要用于配置 Git 使用的 `HTTP` 和 `HTTPS` 代理，代理用户名和密码可以不写。
+
+例如：配置 Git 使用 `HTTP` 代理。
+
+```shell
+git config --global http.proxy http://<proxy_username>:<proxy_password>@<proxy_host>:<proxy_port>
+```
+
+例如：配置 Git 使用 `HTTPS` 代理。
+
+```shell
+git config --global https.proxy https://<proxy_username>:<proxy_password>@<proxy_host>:<proxy_port>
+```
+
+例如：如果不希望通过代理连接到某个特定的服务器，可以使用 `NO_PROXY` 环境变量：
+
+```shell
+export NO_PROXY="<domain1>,<domain2>,..."
+```
+
+例如：取消代理设置。
+
+```shell
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
