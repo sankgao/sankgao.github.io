@@ -26,6 +26,7 @@ tag:
 |  `--porcelain`  |  输出一个简化的格式，通常用于脚本  |
 |  `-v, --verbose`  |  显示详细的输出  |
 |  `--mirror`  |  将本地仓库的所有引用（包括分支和标签）推送到另一个仓库  |
+|  `-q, --quiet`  |  不显示输出内容  |
 
 ## 示例
 
@@ -177,7 +178,7 @@ git push -v origin main
 ```shell
 git clone --bare oldproject.git
 cd oldproject.git
-git push --mirror origin newproject.git
+git push --mirror newproject.git
 ```
 
 ::: tip

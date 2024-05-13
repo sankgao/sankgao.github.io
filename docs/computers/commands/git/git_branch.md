@@ -24,10 +24,12 @@ tag:
 |  `-m, --move`  |  重命名分支  |
 |  `-M`  |  `--move --force` 的快捷方式  |
 |  `-l, --list`  |  列出本地分支  |
-|  `-r`  |  列出或删除（如果与 `-d` 一起使用）远程跟踪的分支  |
+|  `-r, --remotes`  |  列出或删除（如果与 `-d` 一起使用）远程跟踪的分支  |
 |  `-u, --set-upstream-to=<上游仓库>`  |  指定上游（跟踪）分支，如果没有指定分支名，则默认为当前分支  |
 |  `-v, --verbose`  |  显示每个分支当前指向提交的哈希值以及与上游分支的关系（如果有的话）  |
 |  `-vv`  |  `-v` 增强，显示上游分支的名称  |
+|  `-f, --force`  |  强制创建分支；或将分支重置到指定的起点  |
+|  `-q, --quiet`  |  不显示输出内容  |
 
 ## 示例
 
@@ -156,3 +158,90 @@ git branch -vv
 
 - **ahead 2**：表示本地分支 `test` 中有文件 **领先** 远程分支 `test` 中文件 1 个提交记录
 - **behind 21**：表示本地分支 `test` 中有文件 **落后** 远程分支 `test` 中文件 21 个提交记录
+
+### 重置分支起始点
+
+使用 `git branch -f <branch_name> [<star-point>]` 命令，可以将分支名的 `HEAD` 重置到指定的起始点位置。
+
+::: tip
+强制更新的分支，不能是当前分支。
+:::
+
+例如：使用 `-f` 或 `--force` 选项，强制创建 `test` 分支。
+
+```shell
+git branch -f test
+```
+
+例如：将 `test` 分支的 `HEAD` 重置到 `HEAD~3` 的起始点位置。
+
+查看当前 `test` 分支的 `HEAD` 位置：
+
+```shell
+git checkout test
+git log -n5
+
+commit 3fb7399ea8e0f01e2e50ae18f734cd8a5ac64fa9 (HEAD -> test, origin/test)
+Author: Administrator <admin@example.com>
+Date:   Sat May 11 16:54:36 2024 +0800
+
+    change test
+
+commit d4f2393e191cca1bcdf0a74028e9c83c6073bf9a
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 16:43:09 2024 +0800
+
+    change test
+
+commit 6ea5644b0f4c17d5899c6199cb35d12d1ad8ece6
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 16:39:37 2024 +0800
+
+    change test
+
+commit 704cb1c822c3bb3218db55ee88f7126fc89ddefd
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 14:35:15 2024 +0800
+
+    change test
+
+commit bc9fe5f17ff3422cd4abecdf92b8f0ae0a7fb834
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 13:52:37 2024 +0800
+
+    change test
+```
+
+将 `test` 分支的 `HEAD` 重置到 `HEAD~3` 的起始点位置：
+
+```shell
+git checkout main
+git branch -f test HEAD~3
+# 或
+git branch -f test 704cb1c822c3bb3218db55ee88f7126fc89ddefd
+```
+
+再次查看当前 `test` 分支的 `HEAD` 位置：
+
+```shell
+git checkout test
+git log -n3
+
+commit 704cb1c822c3bb3218db55ee88f7126fc89ddefd (HEAD -> test)
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 14:35:15 2024 +0800
+
+    change test
+
+commit bc9fe5f17ff3422cd4abecdf92b8f0ae0a7fb834
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 13:52:37 2024 +0800
+
+    change test
+
+commit 437655a7320a968c5ae61003cde4615739a65c30
+Author: Administrator <admin@sis.sh.cn>
+Date:   Fri May 10 13:49:31 2024 +0800
+
+    change test
+```
