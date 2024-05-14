@@ -109,6 +109,8 @@ git checkout -b test
 
 例如：创建并切换到 `test` 分支，并与远程分支关联。
 
+如果本地文件名有和远程分支名一样，也可以使用此方法切换到远程分支。
+
 ```shell
 git checkout -b test origin/test
 ```
