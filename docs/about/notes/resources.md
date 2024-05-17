@@ -397,6 +397,7 @@ tag:
 - [术语在线](http://www.termonline.cn/)
 - [一个全本小说网](https://www.quanben.io/)
 - [小说电子书存档网站](https://beitai.cc/)
+- [阡陌居](https://www.1000qm.vip/)
 - [鬼怪屋-免费在线鬼故事 恐怖故事大全](https://www.guiguaiwu.com/)
 - [金庸小说集](https://www.jinyongshuwu.com/)
 - [四大名著](http://www.sdmzh.com.cn/)
