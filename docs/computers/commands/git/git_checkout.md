@@ -56,7 +56,7 @@ git checkout dev -- test
 
 如果工作区的文件被修改了但还没有提交到暂存区，可以使用 `git checkout -- <file>` 来恢复这个文件到最新的提交状态，这实际上会丢弃工作区中对这个文件的修改。
 
-例如：放弃对工作区 `test` 文件的修改。在修改工作区文件后和执行 `git checkout -- <file>` 命令后分别用 `git status` 命令查看当前 Git 状态。
+例如：放弃对工作区 `test` 文件的修改。在修改工作区文件后和执行 `git checkout -- <file>` 命令后分别用 [git status](./git_status.md) 命令查看当前 Git 状态。
 
 ```shell
 vim test

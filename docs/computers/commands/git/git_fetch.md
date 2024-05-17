@@ -16,9 +16,9 @@ tag:
 
 `git fetch` 不会改变您当前的工作目录或您所在的分支，它只是更新您的本地引用。
 
-要将获取到的更改合并到您的当前分支，您需要使用 `git merge` 或 `git rebase`。
+要将获取到的更改合并到您的当前分支，您需要使用 [git merge](./git_merge.md) 或 [git rebase](./git_rebase.md)。
 
-与 `git pull` 相比，`git fetch` 更安全，因为它不会直接修改您的工作。您可以首先查看获取到的更改，然后再决定是否合并它们。
+与 [git pull](./git_pull.md) 相比，`git fetch` 更安全，因为它不会直接修改您的工作。您可以首先查看获取到的更改，然后再决定是否合并它们。
 
 ## 选项
 
@@ -165,7 +165,7 @@ From ssh://10.1.1.10/tests/test_demo
 
 ### 查看获取到的提交
 
-使用 `git log` 命令可以查看 `FETCH_HEAD` 中包含的提交。
+使用 [git log](./git_log.md) 命令可以查看 `FETCH_HEAD` 中包含的提交。
 
 ```shell
 git log FETCH_HEAD
@@ -179,7 +179,7 @@ git log origin/dev
 
 ### 与远程仓库同步
 
-`git fetch` 通常与 `git merge` 或 `git rebase` 结合使用，以便将远程仓库的更新合并或重基于您的当前分支。例如：
+`git fetch` 通常与 [git merge](./git_merge.md) 或 [git rebase](./git_rebase.md) 结合使用，以便将远程仓库的更新合并或重基于您的当前分支。例如：
 
 ```shell
 git fetch origin

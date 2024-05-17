@@ -10,6 +10,8 @@ tag:
 
 记录一些 Git 命令集。
 
+交互式 Git 分支可视化教程及练习地址：<https://learngitbranching.js.org/>
+
 <!-- more -->
 
 <AutoCatalog />
