@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper-x3n3nnut.js";import{r as t,o as a,c as n,a as c,d as r,b as s}from"./app-5UY3ibF1.js";const l={},_=s("p",null,"记录一些命令集。",-1);function m(d,i){const e=t("AutoCatalog");return a(),n("div",null,[_,c(" more "),r(e,{level:"1"})])}const u=o(l,[["render",m],["__file","index.html.vue"]]);export{u as default};
