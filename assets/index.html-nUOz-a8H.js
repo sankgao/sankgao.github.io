@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper-x3n3nnut.js";import{r as t,o as a,c as n,a as c,d as r,b as s}from"./app-2v6zNUCE.js";const _={},l=s("p",null,"记录一些 GitLab 教程相关的信息。",-1);function m(d,i){const e=t("AutoCatalog");return a(),n("div",null,[l,c(" more "),r(e)])}const u=o(_,[["render",m],["__file","index.html.vue"]]);export{u as default};
