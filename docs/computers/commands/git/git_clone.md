@@ -104,7 +104,7 @@ git clone --bare ssh://git@10.1.1.10/tests/test_demo.git
     git log
 
     commit a925932f970ea8dc91d8225883c17a4b39e6dc2b (HEAD -> master)
-    Author: Administrator <admin@sis.sh.cn>
+    Author: Administrator <admin@example.com>
     Date:   Mon May 13 17:24:06 2024 +0800
 
         add test.txt

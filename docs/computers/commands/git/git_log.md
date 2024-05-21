@@ -372,8 +372,8 @@ git log --format=<format>
     git log -3 --pretty=format:"作者：%an 邮箱：%ae"
 
     作者：Administrator 邮箱：admin@example.com
-    作者：Administrator 邮箱：Administrator@sis.sh.cn
-    作者：Administrator 邮箱：Administrator@sis.sh.cn
+    作者：Administrator 邮箱：Administrator@example.com
+    作者：Administrator 邮箱：Administrator@example.com
     ```
 
 `--pretty=format:"<format-string>` 中常用占位符列表如下：

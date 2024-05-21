@@ -188,25 +188,25 @@ Date:   Sat May 11 16:54:36 2024 +0800
     change test
 
 commit d4f2393e191cca1bcdf0a74028e9c83c6073bf9a
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 16:43:09 2024 +0800
 
     change test
 
 commit 6ea5644b0f4c17d5899c6199cb35d12d1ad8ece6
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 16:39:37 2024 +0800
 
     change test
 
 commit 704cb1c822c3bb3218db55ee88f7126fc89ddefd
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 14:35:15 2024 +0800
 
     change test
 
 commit bc9fe5f17ff3422cd4abecdf92b8f0ae0a7fb834
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 13:52:37 2024 +0800
 
     change test
@@ -228,19 +228,19 @@ git checkout test
 git log -n3
 
 commit 704cb1c822c3bb3218db55ee88f7126fc89ddefd (HEAD -> test)
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 14:35:15 2024 +0800
 
     change test
 
 commit bc9fe5f17ff3422cd4abecdf92b8f0ae0a7fb834
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 13:52:37 2024 +0800
 
     change test
 
 commit 437655a7320a968c5ae61003cde4615739a65c30
-Author: Administrator <admin@sis.sh.cn>
+Author: Administrator <admin@example.com>
 Date:   Fri May 10 13:49:31 2024 +0800
 
     change test
