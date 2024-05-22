@@ -38,6 +38,21 @@ tag:
 
 ## 示例
 
+### 将提交记录复制到另一个分支
+
+例如：将 `dev` 分支上的所有提交，复制到 `main` 分支下。
+
+```shell
+git checkout dev
+git rebase main dev
+```
+
+例如：将 `dev` 分支下的某一个提交记录，复制到 `main` 分支下。
+
+```shell
+git rebase main <commit>
+```
+
 ### 继续变基操作
 
 例如：当遇到冲突，`git rebase` 变基操作停止，手动解决冲突后，继续变基操作。
