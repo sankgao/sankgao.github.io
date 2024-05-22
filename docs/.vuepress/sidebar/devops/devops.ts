@@ -6,15 +6,24 @@ export const devops = arraySidebar([
     icon: "svn",
     link: "svn/",
     prefix: "svn/",
+    collapsible: true,
     children: [
       "svn.md",
     ],
+  },
+  {
+    text: "Git",
+    icon: "git",
+    link: "git/",
+    prefix: "svn/",
+    collapsible: true,
   },
   {
     text: "Gerrit",
     icon: "gerrit",
     link: "gerrit/",
     prefix: "gerrit/",
+    collapsible: true,
     children: [
       "tutorial/",
       "problem/",
@@ -25,6 +34,7 @@ export const devops = arraySidebar([
     icon: "jenkins",
     link: "jenkins/",
     prefix: "jenkins/",
+    collapsible: true,
     children: [
       "tutorials/",
       "problems/",
@@ -35,6 +45,7 @@ export const devops = arraySidebar([
     icon: "gitlab",
     link: "gitlab/",
     prefix: "gitlab/",
+    collapsible: true,
     children: [
       "tutorials/",
       "problems/",
@@ -45,6 +56,7 @@ export const devops = arraySidebar([
     icon: "docker",
     link: "docker/",
     prefix: "docker/",
+    collapsible: true,
     children: [
       "tutorials/",
       "problems/",

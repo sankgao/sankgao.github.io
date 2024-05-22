@@ -20,6 +20,7 @@ export const zhSidebarConfig = sidebar({
   
   "/devops/": devops,
   "/devops/svn/": svn,
+  "/devops/git/": "structure",
   "/devops/gerrit": gerrit,
   "/devops/jenkins": jenkins,
   "/devops/gitlab": gitlab,
