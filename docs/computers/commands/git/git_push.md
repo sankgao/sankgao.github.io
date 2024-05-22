@@ -57,10 +57,16 @@ git push origin main
 
 当前的本地分支与远程分支不同名，需要指定远程分支。
 
-例如：推送本地仓库的 `main` 分支到远程仓库的 `test` 分支。
+例如：推送本地仓库的 `main` 分支到远程仓库的 `test` 分支。如果指定的远程分支不存在，则远程仓库会自动创建此分支。
 
 ```shell
 git push origin main:tset
+```
+
+例如：推送指定 `commit id` 到远程仓库的 `test` 分支。
+
+```shell
+git push origin <commit id>:tset
 ```
 
 ### 推送所有分支

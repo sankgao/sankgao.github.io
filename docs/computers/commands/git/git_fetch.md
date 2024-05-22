@@ -38,12 +38,12 @@ tag:
 
 ### 更新远程追踪的分支
 
-例如：获取所有远程分支的更新。
+例如：获取所有远程（`origin`）分支的最新提交到本地。`origin` 是远程仓库的默认名称。
 
 ```shell
-git fetch --dry-run origin
+git fetch origin
 # 或
-git fetch --dry-run --all
+git fetch --all
 
 From ssh://10.1.1.10/tests/test_demo
  * [new branch]      dev        -> origin/dev
@@ -54,16 +54,31 @@ From ssh://10.1.1.10/tests/test_demo
  * [new tag]         v1.0.1     -> v1.0.1
 ```
 
-`origin` 是远程仓库的默认名称，这条命令会下载 `origin` 仓库中所有分支的最新提交。
-
-例如：获取指定 `dev` 分支的更新。只下载 `origin` 仓库中 `dev` 分支的最新提交。
+例如：获取指定远程 `dev` 分支的最新提交到本地 `dev` 分支。只下载 `origin` 仓库中 `dev` 分支的最新提交。
 
 ```shell
-git fetch --dry-run origin dev
+git checkout dev
+git fetch origin dev
 
 From ssh://10.1.1.10/tests/test_demo
  * branch            dev        -> FETCH_HEAD
  * [new branch]      dev        -> origin/dev
+```
+
+例如：获取指定远程 `dev` 分支的最新提交到本地 `main` 分支。
+
+```shell
+git fetch origin dev:main
+
+From ssh://10.1.1.10/tests/test_demo
+ * branch            dev        -> FETCH_HEAD
+ * [new branch]      dev        -> origin/dev
+```
+
+如果不指定远程 `dev` 分支，只指定本地 `test` 分支且本地没有 `test` 分支，将创建本地分支。
+
+```shell
+git fetch origin :test
 ```
 
 ### 只显示更新内容
@@ -103,7 +118,7 @@ git fetch --dry-run --porcelain
 例如：远程没有 `test01` 分支，删除本地的 `remotes/origin/test01` 远程跟踪引用。
 
 ```shell
-git fetch --dry-run -p
+git fetch -p
 
 From ssh://10.1.1.10/tests/test_demo
  - [deleted]         (none)     -> origin/test01
@@ -116,7 +131,7 @@ From ssh://10.1.1.10/tests/test_demo
 例如：远程没有 `v1.0.1` 和 `v1.1.0` 标签，删除本地的 `v1.0.1` 和 `v1.1.0` 标签。
 
 ```shell
-git fetch --dry-run -p -P
+git fetch -p -P
 
 From ssh://10.1.1.10/tests/test_demo
  - [deleted]         (none)     -> v1.0.1
@@ -130,7 +145,7 @@ From ssh://10.1.1.10/tests/test_demo
 例如：使用 `-n` 或 `--no-tags` 选项，禁用从远程仓库获取对象标签。
 
 ```shell
-git fetch --dry-run -n
+git fetch -n
 
 From ssh://10.1.1.10/tests/test_demo
  * [new branch]      dev        -> origin/dev
@@ -150,7 +165,7 @@ git fetch --set-upstream
 例如：使用 `-v` 或 `--verbose` 选项，输出详细日志。
 
 ```shell
-git fetch --dry-run -v
+git fetch -v
 
 From ssh://10.1.1.10/tests/test_demo
    a6c6aa9..a159da1  main       -> origin/main
@@ -161,7 +176,6 @@ From ssh://10.1.1.10/tests/test_demo
  * [new tag]         v1.0.0     -> v1.0.0
  * [new tag]         v1.0.1     -> v1.0.1
 ```
-
 
 ### 查看获取到的提交
 

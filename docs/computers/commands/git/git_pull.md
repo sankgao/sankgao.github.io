@@ -26,6 +26,9 @@ tag:
 
 如果任何远程修改与本地未提交的修改重叠，合并将被自动取消，工作目录树不会被改动。一般来说，最好是在拉取之前把任何本地的修改弄到工作状态，或者用 [git stash](./git_stash.md) 把它们贮藏起来。
 
+- `git pull` 命令，就是先执行 [git fetch](./git_fetch.md) 再执行 [git merge](./git_merge.md) 命令
+- `git pull --rebase` 命令，就是先执行 [git fetch](./git_fetch.md) 再执行 [git rebase](./git_rebase.md) 命令
+
 ## 选项
 
 |  选项  |  描述  |
@@ -33,6 +36,7 @@ tag:
 |  `--all`  |  获取所有远程控制  |
 |  `-q, --quiet`  |  不显示输出内容  |
 |  `-v, --verbose`  |  显示详细输出  |
+|  `-r, --rebase`  |  在获取最新远程分支后，将当前分支变基到远程分支之上  |
 
 ## 示例
 
@@ -98,8 +102,24 @@ git pull
 
 ### 更新指定远程分支
 
-例如：更新指定远程分支 `dev` 到当前分支 `main`。
+例如：将远程 `dev` 分支的最新提交并 `merge` 到本地 `main` 分支。
 
 ```shell
+git checkout main
 git pull origin dev
+```
+
+例如：将远程 `dev` 分支的最新提交并 `merge` 到本地 `test` 分支。如果本地没有 `test` 分支，先创建 `test` 分支后再获取远程 `dev` 分支的最新提交并 `merge` 到本地 `test` 分支中。
+
+```shell
+git pull origin dev:test
+```
+
+### 更新指定远程提交
+
+例如：将远程 `commit id` 的提交并 `merge` 到本地 `main` 分支。
+
+```shell
+git checkout main
+git pull origin <commit id>
 ```

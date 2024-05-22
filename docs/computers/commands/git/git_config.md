@@ -116,6 +116,8 @@ git config --add user.name 'test'
 
 ```shell
 git config --get user.name
+# 或
+git config user.name
 ```
 
 ### 匹配所有键值
