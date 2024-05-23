@@ -82,6 +82,34 @@ git config user.email 'admin@example.com'
 git config --global user.name 'admin@example.com'
 ```
 
+例如：配置 `vim` 文本编辑器。`nano` 是默认文本编辑器。
+
+```shell
+git config --global core.editor vim
+```
+
+`core.editor` 设置命令列表：
+
+|  编辑器  |  设置命令  |
+|  :----:  |  :----  |
+|  nano  |  `git config --global core.editor "nano -w"`  |
+|  Vim  |  `git config --global core.editor "vim"`  |
+|  VS Code  |  `git config --global core.editor "code --wait"`  |
+|  Notepad (Windows 64-bit)  |  `git config core.editor notepad"`  |
+|  Notepad++ (Windows 64-bit)  |  `git config --global core.editor "'C:/Program Files/Notepad/notepad.exe' -multiInst -notabbar -nosession -noPlugin"`  |
+|  Emacs  |  `git config --global core.editor emacs`  |
+|  Atom  |  `git config --global core.editor "atom --wait"`  |
+|  BBEdit (Mac, with command line tools)  |  `git config --global core.editor "bbedit -w"`  |
+|  Gedit (Linux)  |  `git config --global core.editor "gedit --wait --new-window"`  |
+|  Sublime Text (macOS)  |  `git config --global core.editor "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl --new-window --wait"`  |
+|  Sublime Text (Windows 64-bit)  |  `git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w"`  |
+|  TextEdit (macOS)  |  `git config --global --add core.editor "open -W -n"`  |
+|  Textmate  |  `git config --global core.editor "mate -w"`  |
+
+::: info
+如果您在 64 位 Windows 系统上安装了 32 位的编辑器，那么它会被安装在 `C:\Program Files (x86)\` 而非上表中所写的 `C:\Program Files\` 中。
+:::
+
 ### 显示所有配置
 
 例如：使用 `-l` 或 `--list` 选项，显示所有本地配置文件。

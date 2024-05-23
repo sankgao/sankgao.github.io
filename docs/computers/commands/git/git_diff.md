@@ -51,9 +51,9 @@ cat test02.txt
 test02
 ```
 
-### 查看工作区已修改文件的差异
+### 查看工作区与暂存区文件之间的差异
 
-查看工作区已修改（包括已修改的文件或已删除的文件，不包括新文件）但未暂存（[git add](./git_add.md)）到暂存区文件的差异。
+查看工作区已修改（包括已修改的文件或已删除的文件，不包括新文件）但未暂存（[git add](./git_add.md)）到暂存区文件与暂存区文件之间的差异。
 
 1. 删除 `test02.txt` 文件，修改 `test01.txt` 文件，添加新 `test03.txt` 文件
 
@@ -117,26 +117,26 @@ test02
     - **原文件和修改后文件合并显示**：`-` 表示删除行；`+` 表示添加行
     - **deleted file mode 100644**：表示删除文件
 
-### 查看工作区已暂存文件的差异
+### 查看暂存区与最后一次提交文件之间的差异
 
-使用 `--cached` 或 `--staged` 选项，查看工作区通过 [git add](./git_add.md) 添加到暂存区（包括已修改的文件、已删除的文件或新文件）文件的差异。不包括未添加到暂存区文件。
+使用 `--cached` 或 `--staged` 选项，查看工作区已暂存（包括已修改的文件、已删除的文件或新文件）到暂存区文件与最后一次提交（[git commit](./git_commit.md)）文件之间的差异。
 
 1. 将上面的更改都添加到暂存区并查看 `git` 状态
 
-```shell
-git add .
-git status
+    ```shell
+    git add .
+    git status
 
-On branch main
-Your branch is up to date with 'origin/main'.
+    On branch main
+    Your branch is up to date with 'origin/main'.
 
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+    Changes to be committed:
+      (use "git reset HEAD <file>..." to unstage)
 
-        modified:   test01.txt
-        deleted:    test02.txt
-        new file:   test03.txt
-```
+            modified:   test01.txt
+            deleted:    test02.txt
+            new file:   test03.txt
+    ```
 
 2. 查看工作区已暂存文件的差异
 
