@@ -116,6 +116,10 @@ tag:
 
     一份涵盖 Java、MySQL、Redis、C 语言、C++、Python、Go、操作系统、前端、数据结构与算法、蓝桥杯、大数据、Android、.NET 的全方位编程学习路线！
 
+- [芒果文档](https://www.imangodoc.com/)
+
+    前端语言 HTML、CSS、JavaScript 等；Web 前端框架 Vue、React JQuery 等；Web 后端框架 Flask、Django、Spring Boot 等教程。
+
 - [A 姐分享](https://www.ahhhhfs.com/)
 
     分享资源、影视、软件和福利等有趣的东西。
