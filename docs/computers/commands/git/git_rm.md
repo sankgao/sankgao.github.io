@@ -68,9 +68,9 @@ git rm -f demo
 rm 'demo'
 ```
 
-### 删除跟踪文件
+### 删除对文件的跟踪
 
-例如：从 Git 版本控制中删除对 `test01.txt` 文件的跟踪，但保留在工作区中。
+例如：使用 `--cached` 选项，从 Git 版本控制中删除对 `test01.txt` 文件的跟踪。
 
 ```shell
 git rm --cached test01.txt
@@ -78,7 +78,7 @@ git rm --cached test01.txt
 rm 'test01.txt'
 ```
 
-查看文件状态：
+查看此时文件状态，下次提交（`git commit`）时会删除暂存区 `test01.txt` 文件，Git 不再跟踪此文件，但 `test01.txt` 文件会保存在本地（当前工作区）中。
 
 ```shell
 git status
