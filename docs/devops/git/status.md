@@ -2,7 +2,7 @@
 title: 查看仓库文件状态
 icon: status
 date: 2024-05-23
-order: 3
+order: 5
 category: DevOps
 tag:
     - Git
@@ -69,7 +69,7 @@ Changes to be committed:
         new file:   README.md
 ```
 
-显示 `README.md` 文件是已暂存文件。只要在 `Changes to be committed` 这行下面的文件，就是已暂存状态。
+显示 `README.md` 文件是已暂存文件。只要在 `Changes to be committed` 这行下面的文件，就是 **已暂存状态**（对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中）。
 
 `git add` 命令后面参数既可以是文件也可以是目录，如果参数是目录，则该命令将递归跟踪该目录下的所有文件及目录。
 
@@ -92,7 +92,7 @@ Changes not staged for commit:
         modified:   test01.txt
 ```
 
-显示已暂存的 `test01.txt` 文件内容已修改，但还没放到暂存区。只要在 `Changes not staged for commit` 这行下面的文件，就是已跟踪文件的内容发生了变化，但还没有放到暂存区。
+显示已暂存的 `test01.txt` 文件内容已修改，但还没放到暂存区。只要在 `Changes not staged for commit` 这行下面的文件，就是 **已修改状态**（已跟踪文件的内容发生了变化，但还没有放到暂存区）。
 
 将暂存已修改的 `test01.txt` 文件，放到暂存区后，再查看文件状态。
 
@@ -202,7 +202,7 @@ index 4c19859..fea590a 100644
 
 ## 提交更新
 
-现在的暂存区已经准备就绪，可以提交了。在此之前，请务必确认还有什么已修改或新建的文件还没有 `git add` 过，否则提交的时候不会记录这些尚未暂存的变化。这些已修改但未暂存的文件只会保留在本地磁盘。所以，每次准备提交前，先用 `git status` 看下，您所需要的文件是不是都已暂存起来了，然后再运行 `git commit` 命令提交。
+现在的暂存区已经准备就绪，可以提交了。在此之前，请务必确认还有什么已修改或新建的文件还没有暂存（`git add`）过，否则提交的时候不会记录这些尚未暂存的文件，这些已修改但未暂存的文件只会保留在本地磁盘。所以，每次准备提交前，先查看下当前文件状态（`git status`），确认您所需要的文件是不是都已暂存起来了，然后再运行 `git commit` 命令提交。
 
 查看当前文件状态：
 
@@ -223,6 +223,8 @@ Changes not staged for commit:
 
 只有 `test01.txt` 文件尚未暂存，暂且先不暂存，直接使用 `git commit` 命令提交。
 
+`git commit` 命令可以给定多个 `-m` 选项，第一个 `-m` 值为 **标题行**，后面的 `-m` 值为单独段落串联起来的提交信息。
+
 ```shell
 git commit -m 'change file' -m 'add README.md' -m 'modified test01.txt'
 
@@ -231,9 +233,7 @@ git commit -m 'change file' -m 'add README.md' -m 'modified test01.txt'
  create mode 100644 README.md
 ```
 
-`git commit` 命令可以给定多个 `-m` 选项，第一个 `-m` 值为 **标题行**，后面的 `-m` 值为单独段落串联起来的提交信息。
-
-提交后它会告诉你，当前是在哪个分支（`main`）提交的，本次提交的完整 SHA-1 校验和是什么（`2326575`），以及在本次提交中，有多少文件修订过，多少行添加和删改过。
+提交后它会告诉您，当前是在哪个分支（`main`）提交的，本次提交的完整 SHA-1 校验和是什么（`2326575`），以及在本次提交中，有多少文件修订过，多少行添加和删改过。通过提交（`git commit`）后，已暂存的文件状态变成 **已提交状态**（数据已经安全地保存在本地数据库中）。
 
 提交时记录的是放在暂存区域的快照。任何还未暂存文件的仍然保持已修改状态，可以在下次提交时纳入版本管理。每一次运行提交操作，都是对您项目作一次快照，以后可以回到这个状态，或者进行比较。
 
@@ -356,7 +356,9 @@ Date:   Thu May 23 10:17:40 2024 +0800
 
 ## 删除文件
 
-要从 Git 中删除某个文件，就必须要从已跟踪文件清单中删除（确切地说，是从暂存区删除），然后提交。可以用 [git rm](../../computers/commands/git/git_rm.md) 命令完成此项工作，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。例如：
+### 从工作区和暂存区中删除文件
+
+要从 Git 中删除某个文件，就必须要从已跟踪文件清单中删除（确切地说，是从暂存区删除）然后提交。可以用 [git rm](../../computers/commands/git/git_rm.md) 命令，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。例如：
 
 ```shell
 git rm test01.txt
@@ -368,7 +370,17 @@ Changes to be committed:
         deleted:    test01.txt
 ```
 
-如果只是简单地从工作目录中手工删除文件，运行 `git status` 时就会在 `Changes not staged for commit` 部分（也就是 **未暂存清单**）看到该文件。例如：
+### 从工作区中手动删除文件
+
+由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
+
+```shell
+git restore -SW .
+```
+
+如果只是简单地从工作目录中手动删除文件，运行 `git status` 时就会在 `Changes not staged for commit` 部分（也就是 **未暂存清单**）看到该文件。
+
+从工作目录中手动删除 `test01.txt` 文件，并查看当前文件状态。
 
 ```shell
 rm test01.txt
@@ -383,7 +395,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-然后再运行 `git rm` 记录此次移除文件的操作：
+然后再运行 `git rm` 命令，记录此次移除文件的操作：
 
 ```shell
 git rm test01.txt
@@ -402,36 +414,18 @@ Changes to be committed:
         deleted:    test01.txt
 ```
 
-如果想让文件保留在本地磁盘，但是并不想让 Git 继续跟踪。可以使用 `--cached` 选项：
-
-```shell
-git rm --cached README.md
-
-rm 'README.md'
-```
-
-查看此时文件状态，下次提交（`git commit`）时会删除暂存区 `README.md` 文件，Git 不在跟踪此文件，但 `README.md` 文件保存在本地（当前工作区）中。
-
-```shell
-git status
-
-On branch main
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        deleted:    README.md
-        deleted:    test01.txt
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        README.md
-```
-
 ## 移动或重命名文件
 
-要在 Git 中对文件改名，使用 [git mv](../../computers/commands/git/git_mv.md) 命令。例如：
+由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
 
 ```shell
-git mv file_from file_to
+git restore -SW .
+```
+
+要在 Git 中对文件改名，使用 [git mv](../../computers/commands/git/git_mv.md) 命令。例如：重命名 `test01.txt` 文件为 `test02.txt` 文件。
+
+```shell
+git mv test01.txt test02.txt
 ```
 
 查看文件状态：
@@ -454,3 +448,13 @@ git add README
 ```
 
 如此分开操作，Git 也会意识到这是一次重命名，所以不管何种方式结果都一样。
+
+将此次修改提交到本地仓库中：
+
+```shell
+git commit -m "将 test01.txt 重命名为 test02.txt"
+
+[main 7df306b] 将 test01.txt 重命名为 test02.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename test01.txt => test02.txt (100%)
+```

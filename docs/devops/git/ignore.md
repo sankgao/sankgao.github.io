@@ -53,7 +53,7 @@ cat .gitignore
 # 忽略所有的 .a 文件
 *.a
 
-# 但跟踪所有的 lib.a，即便你在前面忽略了 .a 文件
+# 但跟踪所有的 lib.a，即便您在前面忽略了 .a 文件
 !lib.a
 
 # 只忽略当前目录下的 TODO 文件，而不忽略 subdir/TODO
