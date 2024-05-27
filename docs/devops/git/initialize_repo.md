@@ -13,7 +13,9 @@ tag:
 如果您有一个当前未受版本控制的项目目录或一个空目录，并且想要开始使用 Git 控制它，则首先需要转到该项目的目录。
 
 ```shell
-cd /opt/git_tutorials
+cd ~/projects/
+mkdir git_tutorials
+cd git_tutorials
 ```
 
 使用 [git init](../../computers/commands/git/git_init.md) 命令将此项目目录，初始化为 Git 仓库。

@@ -75,7 +75,7 @@ Git 用以计算校验和的机制叫做 SHA-1 散列（hash，哈希），也�
 Git 中使用这种哈希值的情况很多，您将经常看到这种哈希值。实际上，Git 数据库中保存的信息都是以文件内容的哈希值来索引，而不是文件名。
 
 ### Git 特性
-
+s
 - 直接记录快照，而非差异比较
 - 近乎所有操作都是本地执行
 - `Git` 保证完整性
@@ -100,3 +100,12 @@ Git 中使用这种哈希值的情况很多，您将经常看到这种哈希值�
 3. 提交更新，找到暂存区的文件，将快照永久性存储到 `Git` 目录
 
 如果 `Git` 目录中保存着特定版本的文件，就属于 **已提交** 状态。如果文件已修改并放入暂存区，就属于 **已暂存** 状态。如果自上次检出后，作了修改但还没有放到暂存区域，就是 **已修改** 状态。
+
+## 相关文档
+
+- [Git 官网](https://git-scm.com/)
+- [Git 官网 Pro Git 书籍教程](https://git-scm.com/book/zh/v2)
+- [Git 官网参考手册](https://git-scm.com/docs)
+- [Git 官网下载](https://git-scm.com/downloads)
+- [GitHub](https://github.com/git/git)
+- [在线交互式 Git 分支可视化教程及练习](https://learngitbranching.js.org/)
