@@ -25,7 +25,7 @@ tag:
 |  `add`  |  添加远程仓库，并为远程仓库起一个别名  |
 |  `rm, remove`  |  删除远程仓库  |
 |  `rename`  |  重命名远程仓库  |
-|  `get-url`  |  获取远程仓库 `<alias>` 的 URL  |
+|  `get-url`  |  获取指定远程仓库 `<alias>` 的 URL  |
 |  `set-url`  |  更改远程仓库 `<alias>` 的 URL  |
 |  `show`  |  提供关于远程仓库 `<alias>` 的一些信息  |
 |  `prune`  |  删除任何不再存在于远程的远程跟踪引用  |
@@ -42,9 +42,9 @@ git remote
 origin
 ```
 
-### 查看远程仓库的详细信息
+### 查看远程仓库 URL
 
-例如：列出远程仓库的别名以及它们对应的 URL，包括用于拉取（fetch）和推送（push）的 URL。
+例如：列出与当前本地仓库关联的所有远程仓库的别名以及它们对应的 URL，包括用于拉取（fetch）和推送（push）的 URL。
 
 ```shell
 git remote -v
@@ -53,7 +53,7 @@ origin  ssh://git@10.1.1.10/tests/test_demo.git (fetch)
 origin  ssh://git@10.1.1.10/tests/test_demo.git (push)
 ```
 
-### 查看远程仓库的 URL
+### 查看指定远程仓库 URL
 
 例如：查看别名为 `origin` 远程仓库的 URL。
 
@@ -61,6 +61,31 @@ origin  ssh://git@10.1.1.10/tests/test_demo.git (push)
 git remote get-url origin
 
 ssh://git@10.1.1.10/tests/test_demo.git
+```
+
+### 查看远程仓库详细信息
+
+例如：提供关于远程仓库 `<alias>` 的一些信息。
+
+```shell
+git remote show origin
+
+* remote origin
+  Fetch URL: ssh://git@10.1.1.10/tests/test_demo.git
+  Push  URL: ssh://git@10.1.1.10/tests/test_demo.git
+  HEAD branch: main
+  Remote branches:
+    dev  tracked
+    main tracked
+    test tracked
+  Local branches configured for 'git pull':
+    dev  merges with remote dev
+    main merges with remote main
+    test merges with remote test
+  Local refs configured for 'git push':
+    dev  pushes to dev  (up to date)
+    main pushes to main (local out of date)
+    test pushes to test (up to date)
 ```
 
 ### 添加远程仓库

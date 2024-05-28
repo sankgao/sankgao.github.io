@@ -19,6 +19,7 @@ Git 支持 `ssh`、`git`、`http` 和 `https` 协议（此外，可以使用 `ft
 |  选项  |  描述  |
 |  :----:  |  :----  |
 |  `-b, --branch`  |  克隆指定分支  |
+|  `-o <name>, --origin <name>`  |  使用指定远程名称 `<name>` 来跟踪上游存储库  |
 |  `-q, --quiet`  |  不显示输出内容  |
 |  `--bare`  |  创建裸仓库  |
 |  `--mirror`  |  创建镜像仓库（也是裸仓库）  |
@@ -52,6 +53,14 @@ git clone ssh://git@10.1.1.10/tests/test_demo.git .
 
 ```shell
 git clone -b dev ssh://git@10.1.1.10/tests/test_demo.git
+```
+
+### 克隆指定远程名称
+
+例如：从远程仓库 `test_demo.git` 中克隆克隆代码库到本地，并指定 `test_demo` 为远程名称。
+
+```shell
+git clone -o test_demo ssh://git@10.1.1.10/tests/test_demo.git
 ```
 
 ### 创建裸仓库
