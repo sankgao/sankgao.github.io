@@ -37,7 +37,7 @@ Date:   Thu May 23 16:28:25 2024 +0800
 修改 `test02.txt` 文件内容，并添加到暂存区。
 
 ```shell
-echo 'test02' > test02.txt
+echo 'test02.txt' > test02.txt
 git add test02.txt
 ```
 
