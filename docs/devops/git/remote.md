@@ -20,14 +20,14 @@ tag:
 
 ### 添加本地远程仓库
 
-首先在本地创建一个 **裸仓库：**
+首先在本地创建一个 [裸仓库](../../computers/commands/git/git_clone.md#创建裸仓库)：
 
 ```shell
 mkdir ~/projects/git_tutorials.git
 cd ./projects/git_tutorials.git
 git init --bare
 
-Initialized empty Git repository in /home/qingshan/projects/test.git/
+Initialized empty Git repository in /home/sankgao/projects/test.git/
 ```
 
 `git init` 默认分支名是 `master`，修改分支名为 `main`：
@@ -80,8 +80,8 @@ origin
 ```shell
 git remote -v
 
-origin  /home/qingshan/projects/git_tutorials.git (fetch)
-origin  /home/qingshan/projects/git_tutorials.git (push)
+origin  /home/sankgao/projects/git_tutorials.git (fetch)
+origin  /home/sankgao/projects/git_tutorials.git (push)
 ```
 
 例如：`git_tutorials.git` 是 GitLab 仓库。

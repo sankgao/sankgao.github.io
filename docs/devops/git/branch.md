@@ -265,7 +265,7 @@ git log -2 --oneline
 7333fb5 (origin/main) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
 ```
 
-关于这个紧急问题的解决方案发布之后，您准备回到被打断之前时的工作中。然而，您应该先删除 `hotfix` 分支，因为您已经不再需要它了，`main` 分支已经指向了同一个位置。您可以使用带 `-d` 选项的 `git branch` 命令来删除分支。
+关于这个紧急问题的解决方案发布之后，您准备回到被打断之前时的工作中。然而，您应该先删除 `hotfix` 分支，因为您已经不再需要它了，`main` 分支已经指向了同一个位置。您可以使用带 `-d` 选项的 [git branch](../../computers/commands/git/git_branch.md) 命令来删除分支。
 
 ```shell
 git branch -d hotfix
@@ -309,7 +309,7 @@ CONFLICT (content): Merge conflict in test02.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-此时 Git 做了合并，但是没有自动地创建一个新的合并提交。Git 会暂停下来，等待您去解决合并产生的冲突。在合并冲突后使用 `git status` 命令来查看那些因包含合并冲突而处于未合并（`unmerged`）状态的文件。
+此时 Git 做了合并，但是没有自动地创建一个新的合并提交。Git 会暂停下来，等待您去解决合并产生的冲突。在合并冲突后使用 [git status](../../computers/commands/git/git_status.md) 命令来查看那些因包含合并冲突而处于未合并（`unmerged`）状态的文件。
 
 ```shell
 git status
@@ -347,7 +347,7 @@ test02
 test02test02
 ```
 
-上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 `git add` 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
+上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
 
 ```shell
 git add test02.txt
@@ -399,7 +399,7 @@ Deleted branch dev (was ad6950e).
 
 ## 分支管理
 
-`git branch` 命令不只是可以创建与删除分支。如果不加任何参数运行它，会得到当前所有分支的一个列表：
+[git branch](../../computers/commands/git/git_branch.md) 命令不只是可以创建与删除分支。如果不加任何参数运行它，会得到当前所有分支的一个列表：
 
 ```shell
 git branch
@@ -421,11 +421,17 @@ git branch -v
 
 ## 远程分支
 
-远程引用是对远程仓库的引用（指针），包括分支、标签等等。通过 `git ls-remote <remote>` 命令来显式地获得远程引用的完整列表，或者通过 `git remote show <remote>` 获得远程分支的更多信息。然而，一个更常见的做法是利用 远程跟踪 分支。
+远程引用是对远程仓库的引用（指针），包括分支、标签等等。使用 [git ls-remote <remote>](../../computers/commands/git/git_ls-remote.md) 命令来获取远程引用的完整列表，或者通过 [git remote show <remote>](../../computers/commands/git/git_remote.md) 获得远程分支的更多信息。然而，一个更常见的做法是利用 **远程跟踪分支。**
 
-远程跟踪分支是远程分支状态的引用。它们是您无法移动的本地引用。一旦您进行了网络通信，Git 就会为您移动它们以精确反映远程仓库的状态。请将它们看做书签，这样可以提醒您该分支在远程仓库中的位置就是您最后一次连接到它们的位置。
+远程跟踪分支是远程分支状态的引用。远程跟踪分支是您无法移动的本地引用。一旦您进行了网络通信，Git 就会为您移动远程跟踪分支以精确反映远程仓库的状态，远程跟踪分支以 `<remote>/<branch>` 的形式命名。
 
-它们以 `<remote>/<branch>` 的形式命名，例如：如果您想要看您最后一次与远程仓库 `origin` 通信时 `main` 分支的状态，您可以查看 `origin/main` 分支。您与同事合作解决一个问题并且他们推送了一个 `dev` 分支，您可能有自己的本地 `dev` 分支，然而在服务器上的分支会以 `origin/dev` 来表示。
+例如：上面创建分支时，查看的提交对象指针。本地分支（`main`、`dev`）和远程分支（`origin/main`）都指向 `7333fb5` 提交对象。
+
+```shell
+git log -1 --oneline
+
+7333fb5 (HEAD -> main, origin/main, dev) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
+```
 
 ::: info
 远程仓库名字 `origin` 与分支名字 `main` 一样，在 Git 中并没有任何特别的含义一样。同时 `main` 是当您运行 `git init` 时默认的起始分支名字，原因仅仅是它的广泛使用，`origin` 是当您运行 `git clone` 时默认的远程仓库名字。如果您运行 `git clone -o booyah`，那么您默认的远程分支名字将会是 `booyah/main`。
@@ -433,4 +439,337 @@ git branch -v
 
 如果您在本地的 `main` 分支做了一些工作，在同一段时间内有其他人推送提交到远程 `main` 分支（`origin/main`）并且更新了它的 `main` 分支，这就是说您们的提交历史已走向不同的方向。即便这样，只要您保持不与 `origin` 服务器连接（并拉取数据），您的 `origin/master` 指针就不会移动。
 
-如果要与给定的远程仓库同步数据，运行 `git fetch <remote>` 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
+例如：查看当前提交对象。本地分支（`main`）指向 `4b0390e`，而远程分支（`origin/main`）依然指向 `7333fb5`。
+
+```shell
+git log -5 --oneline
+
+4b0390e (HEAD -> main) merge dev
+ad6950e modified test02.txt
+6a63f37 modified test02.txt
+0f59771 add test01.txt
+7333fb5 (origin/main) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
+```
+
+如果要与给定的远程仓库同步数据，运行 [git fetch <remote>](../../computers/commands/git/git_fetch.md) 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
+
+### 推送
+
+当您想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。本地的分支并不会自动与远程仓库同步——您必须显式地推送想要分享的分支。这样，您就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支。运行 `git push <remote> <branch>` 命令，将本地指定分支推送到远程仓库中。
+
+例如：使用 [git push](../../computers/commands/git/git_push.md) 命令，推送本地 `main` 分支到远程仓库的 `origin/main` 分支中。
+
+```shell
+git push origin main
+
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (11/11), 899 bytes | 899.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+To /home/sankgao/projects/git_tutorials.git
+   7333fb5..4b0390e  main -> main
+```
+
+再次查看提交对象，本地分支（`main`）和远程分支（`origin/main`）都指向 `4b0390e`。
+
+```shell
+git log -5 --oneline
+
+4b0390e (HEAD -> main, origin/main) merge dev
+ad6950e modified test02.txt
+6a63f37 modified test02.txt
+0f59771 add test01.txt
+7333fb5 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
+```
+
+### 跟踪分支
+
+从一个远程跟踪分支检出一个本地分支会自动创建所谓的 **跟踪分支**（它跟踪的分支叫做 **上游分支**），跟踪分支是与远程分支有直接关系的本地分支。如果在一个跟踪分支上输入 `git pull`，Git 能自动地识别去哪个服务器上抓取、合并到哪个分支。
+
+当前远程只有 `origin/main` 分支，先创建远程 `origin/dev` 和 `origin/test` 分支：
+
+```shell
+git checkout -b dev
+git push origin dev
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To /home/sankgao/projects/git_tutorials.git
+ * [new branch]      dev -> dev
+
+
+git checkout main
+git checkout -b test
+git push origin test
+
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To /home/sankgao/projects/git_tutorials.git
+ * [new branch]      test -> test
+```
+
+查看本地和远程跟踪分支：
+
+```shell
+git branch -a
+
+  dev
+  main
+* test
+  remotes/origin/dev
+  remotes/origin/main
+  remotes/origin/test
+```
+
+删除本地 `dev` 和 `test` 分支，并查看本地和远程跟踪分支：
+
+```shell
+git checkout main
+git branch -d dev
+git branch -d test
+git branch -a
+
+* main
+  remotes/origin/dev
+  remotes/origin/main
+  remotes/origin/test
+```
+
+当克隆一个仓库时，它通常会自动地创建一个跟踪 `origin/main` 的 `main` 分支。然而，如果您愿意的话可以设置其它的跟踪分支，或是一个在其它远程仓库上的跟踪分支，又或者不跟踪 `main` 分支。最简单的方式就是运行 `git checkout -b <branch> <remote>/<branch>` 命令。这是一个十分常用的操作所以 Git 提供了 `--track` 快捷方式，这两种方式前提是远程分支已存在。
+
+```shell
+git checkout --track origin/test
+
+branch 'test' set up to track 'origin/test'.
+Switched to a new branch 'test'
+```
+
+由于这个操作太常用了，该捷径本身还有一个捷径。如果要切换的本地分支（`dev`）不存在但在远程分支（`origin/dev`）存在，那么 Git 就会创建一个跟踪分支：
+
+```shell
+git checkout dev
+
+branch 'dev' set up to track 'origin/dev'.
+Switched to a new branch 'dev'
+```
+
+如果想要将本地分支与远程分支设置为不同的名字，可以使用 `git checkout -b` 命令增加一个不同名字的本地分支：
+
+```shell
+git checkout -b develop origin/dev
+
+branch 'develop' set up to track 'origin/dev'.
+Switched to a new branch 'develop'
+```
+
+现在，本地分支 `develop` 会自动从 `origin/dev` 拉取。
+
+设置已有的本地分支跟踪一个刚刚拉取下来的远程分支，或者想要修改正在跟踪的上游分支，您可以在任意时间使用 `-u` 或 `--set-upstream-to` 选项运行 `git branch` 来显式地设置。
+
+```shell
+git branch -u origin/dev
+
+branch 'develop' set up to track 'origin/dev'.
+```
+
+### 拉取
+
+当 [git fetch](../../computers/commands/git/git_fetch.md) 命令从服务器上抓取本地没有的数据时，它并不会修改工作目录中的内容。它只会获取数据然后让您自己合并。而 [git pull](../../computers/commands/git/git_pull.md) 命令在大多数情况下它的含义是一个 [git fetch](../../computers/commands/git/git_fetch.md) 紧接着一个 [git merge](../../computers/commands/git/git_merge.md) 命令。 如果有一个设置好的跟踪分支，不管它是显式地设置还是通过 `clone` 或 `checkout` 命令为您创建的，`git pull` 都会查找当前分支所跟踪的服务器与分支，从服务器上抓取数据然后尝试合并入那个远程分支。
+
+由于 [git pull](../../computers/commands/git/git_pull.md) 的魔法经常令人困惑所以通常单独显式地使用 `fetch` 与 `merge` 命令会更好一些。
+
+### 删除远程分支
+
+假设您已经通过远程分支做完所有的工作了——也就是说您和您的协作者已经完成了一个特性，并且将其合并到了远程仓库的 `main` 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 [git push](../../computers/commands/git/git_pull.md) 命令来删除一个远程分支。
+
+例如：如果从服务器上删除 `test` 分支，运行下面的命令：
+
+```shell
+git push origin --delete test
+
+To /home/sankgao/projects/git_tutorials.git
+ - [deleted]         test
+```
+
+基本上这个命令做的只是从服务器上移除这个指针。Git 服务器通常会保留数据一段时间直到垃圾回收运行，所以如果不小心删除掉了，通常是很容易恢复的。
+
+## 变基
+
+在 Git 中整合来自不同分支的修改主要有两种方法：合并（`merge`）和变基（`rebase`）。
+
+整合分支最容易的方法是 `merge` 命令。它会把两个分支的最新快照以及二者最近的共同祖先进行三方合并，合并的结果是生成一个新的快照（并提交）。
+
+- **合并**：使用 `merge` 命令，会把两个分支的最新快照以及二者最近的共同祖先进行三方合并，合并的结果是生成一个新的快照（并提交）
+- **变基**：使用 `rebase` 命令，将提交到某一分支上的所有修改都移至另一分支上，就好像 “重新播放” 一样
+
+还有一种方法：您可以提取在 C4 中引入的补丁和修改，然后在 C3 的基础上应用一次。在 Git 中，这种操作就叫做 **变基**（`rebase`）。您可以使用 rebase 命令将提交到某一分支上的所有修改都移至另一分支上，就好像 “重新播放” 一样。
+
+例如：将 `dev` 分支变基到 `main` 分支上。
+
+先在 `dev` 分支上提交信息：
+
+```shell
+git checkout dev
+echo 'test01test01' >> test01.txt
+echo 'test02' >> test02.txt
+git commit -am 'modified file all'
+
+[dev 835d939] modified file all
+ 2 files changed, 2 insertions(+)
+```
+
+在 `main` 分支上提交信息：
+
+```shell
+git checkout main
+echo 'test01' >> test01.txt
+git commit -am 'modified test01.txt'
+
+[main 5a1d206] modified test01.txt
+ 1 file changed, 1 insertion(+)
+```
+
+使用 `git log -5 --oneline --graph --all` 命令查看分叉历史，显示所有分支中前五个提交记录，并以简短的 ASCII 图形的方式显示。
+
+```shell
+git log -5 --oneline --graph --all
+
+* 5a1d206 (HEAD -> main) modified test01.txt
+| * 835d939 (dev) modified file all
+|/
+*   4b0390e (origin/main, origin/dev, test, develop) merge dev
+|\
+| * ad6950e modified test02.txt
+| * 0f59771 add test01.txt
+```
+
+将 `dev` 分支变基到 `main` 分支上：
+
+```shell
+git checkout dev
+git rebase main
+
+Auto-merging test01.txt
+CONFLICT (content): Merge conflict in test01.txt
+error: could not apply 835d939... modified file all
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 835d939... modified file all
+```
+
+提示 `test01.txt` 文件合并冲突，也可以通过 [git status](../../computers/commands/git/git_status.md) 命令查看：
+
+```shell
+git status
+
+interactive rebase in progress; onto 5a1d206
+Last command done (1 command done):
+   pick 835d939 modified file all
+No commands remaining.
+You are currently rebasing branch 'dev' on '5a1d206'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   test02.txt
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   test01.txt
+```
+
+任何因包含合并冲突而有待解决的文件，都会以未合并状态标识出来。`test01.txt` 冲突的文件内容如下：
+
+```shell
+test01
+<<<<<<< HEAD
+test01
+=======
+test01test01
+>>>>>>> 835d939 (modified file all)
+```
+
+将文件改为以下内容解决冲突：
+
+```shell
+test01
+test01test01
+```
+
+上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
+
+将冲突文件 `test01.txt` 暂存，并继续变基：
+
+```shell
+git add test01.txt
+git rebase --continue
+
+[detached HEAD d624805] modified file all, dev rebase main
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+Successfully rebased and updated refs/heads/dev.
+```
+
+使用 `git log -5 --oneline --graph --all` 命令查看分叉历史，显示所有分支中前五个提交记录，并以简短的 ASCII 图形的方式显示。
+
+```shell
+git log -5 --oneline --graph --all
+
+* d624805 (HEAD -> dev) modified file all, dev rebase main
+* 5a1d206 (main) modified test01.txt
+*   4b0390e (origin/main, origin/dev, test, develop) merge dev
+|\
+| * ad6950e modified test02.txt
+| * 0f59771 add test01.txt
+```
+
+查看当前的分支：
+
+```shell
+git branch
+
+* dev
+  develop
+  main
+  test
+```
+
+**变基原理** 是首先找到这两个分支（即当前分支 `dev`、变基操作的目标基底分支 `main`）的最近共同祖先 `4b0390e`，然后对比当前分支相对于该祖先的历次提交，提取相应的修改并存为临时文件，然后将当前分支指向目标基底 `5a1d206`，最后以此将之前另存为临时文件的修改依序应用。
+
+现在回到 `main` 分支，进行一次快进合并。
+
+```shell
+git checkout main
+git merge dev
+
+Updating 5a1d206..d624805
+Fast-forward
+ test01.txt | 2 +-
+ test02.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+```
+
+使用 `git log -5 --oneline --graph --all` 命令查看分叉历史，显示所有分支中前五个提交记录，并以简短的 ASCII 图形的方式显示。
+
+```shell
+git log -5 --oneline --graph --all
+
+* d624805 (HEAD -> main, dev) modified file all, dev rebase main
+* 5a1d206 modified test01.txt
+*   4b0390e (origin/main, origin/dev, test, develop) merge dev
+|\
+| * ad6950e modified test02.txt
+| * 0f59771 add test01.txt
+```
+
+这两种整合方法的最终结果没有任何区别，但是变基使得提交历史更加整洁。您在查看一个经过变基的分支的历史记录时会发现，尽管实际的开发工作是并行的，但它们看上去就像是串行的一样，提交历史是一条直线没有分叉。
+
+一般我们这样做的目的是为了确保在向远程分支推送时能保持提交历史的整洁——例如：向某个其他人维护的项目贡献代码时。在这种情况下，您首先在自己的分支里进行开发，当开发完成时您需要先将您的代码变基到 `origin/main` 上，然后再向主项目提交修改。这样的话，该项目的维护者就不再需要进行整合工作，只需要快进合并便可。
+
+无论是通过变基，还是通过三方合并，整合的最终结果所指向的快照始终是一样的，只不过提交历史不同罢了。变基是将一系列提交按照原有次序依次应用到另一分支上，而合并是把最终结果合在一起。
+
+**变基遵守一条准则**：如果提交存在于您的仓库之外，而别人可能基于这些提交进行开发，那么不要执行变基。

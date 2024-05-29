@@ -81,7 +81,6 @@ git clone --bare ssh://git@10.1.1.10/tests/test_demo.git
 1. 创建 `test_demo.git` 裸仓库
 
     ```shell
-
     mkdir /projects/test_demo.git
     cd /projects/test_demo.git
     git init --bare
