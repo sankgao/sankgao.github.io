@@ -2,6 +2,7 @@
 title: 安装
 icon: install
 date: 2024-04-23
+order: 1
 category: DevOps
 tag:
     - GitLab

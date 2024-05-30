@@ -2,6 +2,7 @@
 title: 基本操作
 icon: tutorial
 date: 2024-04-29
+order: 2
 category: DevOps
 tag:
     - GitLab
