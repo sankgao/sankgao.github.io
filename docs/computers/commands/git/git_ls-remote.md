@@ -30,40 +30,53 @@ tag:
 ```shell
 git ls-remote
 
-From https://github.com/schacon/ticgit.git
-847256809a3d518cd36b8f81859401416fe8d945        HEAD
-847256809a3d518cd36b8f81859401416fe8d945        refs/heads/master
-c6edfec5c46cc0d7447d6d6db388a76d56ad3342        refs/heads/ticgit
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/10/head
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/11/head
-af5d713ba28c4ae79c6d324b638b8495488c66f9        refs/pull/13/merge
-c6edfec5c46cc0d7447d6d6db388a76d56ad3342        refs/pull/20/head
-8d04e20c1cb0be8852f3be28a7b1d99962841354        refs/pull/20/merge
+From /home/qingshan/projects/git_tutorials.git
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        HEAD
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        refs/heads/dev
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        refs/heads/main
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.0
+cdb44ad37126f01cd0cd3bfbfd5c6c52ec9ba6c0        refs/tags/v1.0.1
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.1^{}
 ```
 
 例如：列出指定仓库的所有分支和标签及其最新的提交哈希值。
 
 ```shell
-git ls-remote https://github.com/schacon/ticgit.git
+git ls-remote /home/qingshan/projects/git_tutorials.git
 
-847256809a3d518cd36b8f81859401416fe8d945        HEAD
-847256809a3d518cd36b8f81859401416fe8d945        refs/heads/master
-c6edfec5c46cc0d7447d6d6db388a76d56ad3342        refs/heads/ticgit
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/10/head
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/11/head
-af5d713ba28c4ae79c6d324b638b8495488c66f9        refs/pull/13/merge
-c6edfec5c46cc0d7447d6d6db388a76d56ad3342        refs/pull/20/head
-8d04e20c1cb0be8852f3be28a7b1d99962841354        refs/pull/20/merge
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        HEAD
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        refs/heads/dev
+4b0390e8a8a24305d1a54fb8c2c2b1b06b7f78af        refs/heads/main
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.0
+cdb44ad37126f01cd0cd3bfbfd5c6c52ec9ba6c0        refs/tags/v1.0.1
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.1^{}
 ```
 
 例如：列出指定仓库与给定模式匹配的所有引用。
 
 ```shell
-git ls-remote https://github.com/schacon/ticgit.git master 20 *head
+git ls-remote /home/qingshan/projects/git_tutorials.git *}
 
-847256809a3d518cd36b8f81859401416fe8d945        HEAD
-847256809a3d518cd36b8f81859401416fe8d945        refs/heads/master
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/10/head
-e2a0853642175388ab282d8b64a14ef24c6b8d29        refs/pull/11/head
-c6edfec5c46cc0d7447d6d6db388a76d56ad3342        refs/pull/20/head
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.1^{}
+```
+
+例如：列出存储在 `refs/tags` 中的引用。
+
+```shell
+git ls-remote -t
+
+From /home/qingshan/projects/git_tutorials.git
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.0
+cdb44ad37126f01cd0cd3bfbfd5c6c52ec9ba6c0        refs/tags/v1.0.1
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.1^{}
+```
+
+例如：列出存储在 `refs/tags` 中的引用，但不显示剥离的标签或像 HEAD 这样的伪引用。
+
+```shell
+git ls-remote -t --refs
+
+From /home/qingshan/projects/git_tutorials.git
+d624805693044bc4921d1224327638549231e616        refs/tags/v1.0.0
+cdb44ad37126f01cd0cd3bfbfd5c6c52ec9ba6c0        refs/tags/v1.0.1
 ```

@@ -16,11 +16,13 @@ tag:
 
 如果在本地初始化一个 Git 仓库，需要将本地的 Git 仓库与远程仓库进行关联，这样您本地仓库和远程仓库就可以实现同步，又可以让其他人协作管理此仓库。可以使用 `git remote add <ailas> <repo>` 命令。
 
+一个远程仓库通常只是一个裸仓库（bare repository）——即一个没有当前工作目录的仓库。因为该仓库仅仅作为合作媒介，不需要从磁盘检查快照；存放的只有 Git 的资料。简单的说，裸仓库就是您工程目录内的 `.git` 子目录内容，不包含其它资料。
+
 例如：添加一个别名为 `origin` 的远程仓库，并指向 `git_tutorials.git` 仓库。
 
 ### 添加本地远程仓库
 
-首先在本地创建一个 [裸仓库](../../computers/commands/git/git_clone.md#创建裸仓库)：
+首先在本地创建一个裸仓库：
 
 ```shell
 mkdir ~/projects/git_tutorials.git
