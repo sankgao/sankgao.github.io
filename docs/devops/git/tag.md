@@ -163,7 +163,7 @@ Enumerating objects: 1, done.
 Counting objects: 100% (1/1), done.
 Writing objects: 100% (1/1), 163 bytes | 163.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To /home/qingshan/projects/git_tutorials.git
+To /home/sankgao/projects/git_tutorials.git
  * [new tag]         v1.0 -> v1.0
 ```
 
@@ -178,7 +178,7 @@ Delta compression using up to 2 threads
 Compressing objects: 100% (5/5), done.
 Writing objects: 100% (8/8), 779 bytes | 779.00 KiB/s, done.
 Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To /home/qingshan/projects/git_tutorials.git
+To /home/sankgao/projects/git_tutorials.git
  * [new tag]         v1.0.0 -> v1.0.0
  * [new tag]         v1.0.1 -> v1.0.1
 ```
@@ -214,7 +214,7 @@ Deleted tag 'v1.0' (was 5a893e8)
 ```shell
 git push origin :refs/tags/v1.0
 
-To /home/qingshan/projects/git_tutorials.git
+To /home/sankgao/projects/git_tutorials.git
  - [deleted]         v1.0
 ```
 

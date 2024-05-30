@@ -421,7 +421,7 @@ git branch -v
 
 ## 远程分支
 
-远程引用是对远程仓库的引用（指针），包括分支、标签等等。使用 [git ls-remote <remote>](../../computers/commands/git/git_ls-remote.md) 命令来获取远程引用的完整列表，或者通过 [git remote show <remote>](../../computers/commands/git/git_remote.md) 获得远程分支的更多信息。然而，一个更常见的做法是利用 **远程跟踪分支。**
+远程引用是对远程仓库的引用（指针），包括分支、标签等等。使用 [git ls-remote \<remote\>](../../computers/commands/git/git_ls-remote.md) 命令来获取远程引用的完整列表，或者通过 [git remote show \<remote\>](../../computers/commands/git/git_remote.md) 获得远程分支的更多信息。然而，一个更常见的做法是利用 **远程跟踪分支。**
 
 远程跟踪分支是远程分支状态的引用。远程跟踪分支是您无法移动的本地引用。一旦您进行了网络通信，Git 就会为您移动远程跟踪分支以精确反映远程仓库的状态，远程跟踪分支以 `<remote>/<branch>` 的形式命名。
 
@@ -451,7 +451,7 @@ ad6950e modified test02.txt
 7333fb5 (origin/main) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
 ```
 
-如果要与给定的远程仓库同步数据，运行 [git fetch <remote>](../../computers/commands/git/git_fetch.md) 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
+如果要与给定的远程仓库同步数据，运行 [git fetch \<remote\>](../../computers/commands/git/git_fetch.md) 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
 
 ### 推送
 
