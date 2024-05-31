@@ -192,6 +192,7 @@ tag:
 - [51CTO](https://blog.51cto.com/)
 - [bilibili](www.bilibili.com)
 - [知乎](https://www.zhihu.com/)
+- [吾爱破解](https://www.52pojie.cn/)
 - [QA Stack](https://qastack.cn/)
 - [技术分享平台](https://www.saoniuhuo.com/)
 - [计算机面试求职网站](https://top.interviewguide.cn/)
