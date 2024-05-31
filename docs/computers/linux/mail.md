@@ -31,6 +31,37 @@ STARTTLS 是一种协议命令，用于将已有的非安全连接升级为安�
 
 简而言之，SSL、TLS 和 STARTTLS 都是用于网络通信加密的协议，但它们的应用场景和目的有所不同。SSL 和 TLS 主要用于整个通信过程的加密，而 STARTTLS 则用于在通信过程中将非安全连接升级为安全连接。
 
+## MTA/MUA/MDA 区别
+
+### MTA
+
+邮件传输代理（Mail Transfer Agent，MTA），基于 SMTP 协议（简单邮件传输协议）的服务端，例如：Postfix、Exim、Sendmail 等。SMTP 服务端彼此之间进行相互通信。
+
+MTA 是用在邮件主机上的软件，主要的邮件服务器。MTA 负责用户寄信与收信，MTA 的功能如下：
+
+- 接收外部主机寄来的邮件：既然是邮件主机，接收邮件自然是主要功能，只要这个邮件里有 MTA 内部账号，这封信就会被 MTA 收下来
+- 帮用户发（寄出）信：利用这台 MTA 主机把信传送出去！不过要注意，MTA 会将邮件送给目的地的 MTA 而不是目的地的 MUA
+
+::: tip
+用户使用的是 MUA，而邮件仅会送达 MTA 主机上，收、发邮件时，都需要通过 MTA 帮忙处理，所以，用户在使用邮件编辑器 MUA 将数据编辑完毕之后，按下送出，并且成功送到 MTA 之后，接下来的事情就是 MTA 的工作了，跟用户的 Client 端计算机没有关系。 
+:::
+
+用户收自己的信：用户可以将放置在邮件主机的邮件收到自己的个人计算机上。
+
+### MUA
+
+邮件用户代理（Mail User Agent，MUA）本地的邮件客户端，例如：Evolution、Claws Mail、postfix、Foxmail、outlook 等。
+
+MUA 是用在客户端的软件，客户端的计算机无法直接收发邮件，需要通过 MUA 传递邮件，通过各个操作系统提供的 MUA 才能够使用邮件系统。
+
+MUA 主要的功能就是接收邮件主机的电子邮件，并提供用户浏览与编写邮件的功能。
+
+### MDA
+
+邮件投递代理（Mail Delivery Agent，MDA），例如：procmail、dropmail 等。
+
+将 MTA 接收的邮件依照邮件的流向（送到哪里）将该邮件放置到本机账户下的邮件文件中（收件箱），或者再经由 MTA 将邮件送到下个 MTA。如果邮件的流向是到本机，这个邮件代理的功能就不只是将由 MTA 传来的邮件放置到每个用户的收件箱，它还可以具有邮件过滤（filtering），可以通过 MDA 邮件分析功能，将邮件丢弃。让邮件主机在别人给你发信时自动回复一封，让寄件人知道你在忙碌中。
+
 ## 邮件协议
 
 邮件协议是指用户在客户端计算机上可以通过哪些方式进行电子邮件的发送和接收。常见的协议有 SMTP、POP3 和 IMAP，这几种协议都是由 TCP/IP 协议族定义的。
@@ -152,22 +183,44 @@ IMAP 协议使用的主要端口是 `143`（未加密）和 `993`（加密）。
 
 安装 `postfix` 服务和 `mailx` 命令：
 
-```bash
+```shell
+sudo apt install -y postfix mailutils
+# 或
 sudo yum install -y postfix mailx
 ```
 
 开启 `postfix` 服务，并设置开机自启：
 
-```bash
+```shell
 sudo systemctl start postfix
 sudo systemctl enable postfix
 ```
+
+在配置过程中，选择 *Internet Site* 并使用完整的域名（例如：`mail.example.com`）：
+
+如果在安装过程没有出现交互的配置窗口，则在上面的安装操作完成后执行以下操作来配置基本的参数，这对于我们开始学习的人来说极其重要。
+
+```shell
+sudo dpkg-reconfigure postfix
+```
+
+配置交互中的各项信息：
+
+- 邮件配置的一般类型：Internet 站点
+- 系统邮件名称：`example.com`（不是 `mail.example.com`）
+- Root 和 postmaster 邮件收件人：您的主要 Linux 帐户的用户名（也就是你正在使用的登录 ubuntu 系统的用户名，用 root 权限的用户名）
+- 其他接收邮件的目的地：`$myhostname, example.com, mail.example.com, localhost.example.com, localhost`，这个目的地就是能代表我们服务器网络地址的域名和本地主机名
+- 强制同步更新邮件队列？：否
+- 本地网络：`127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128`
+- 邮箱大小限制：`0 `（0 代表不限制）
+- 本地地址扩展字符：`+`
+- 要使用的互联网协议：`all`
 
 ### 修改配置文件
 
 修改 Postfix 邮件配置文件 `/etc/postfix/main.cf` 以下内容：
 
-```bash
+```shell
 myhostname = mail.example.com  # 修改邮件服务器的主机名，使用 FQDN
 mydomain = example.com  # 修改邮件服务器的域名
 myorigin = $mydomain  # 修改发件人所显示的域名
@@ -179,7 +232,7 @@ relay_domains = $mydestination  # 去掉注释。指定可转发的邮件域名
 
 重启 `postfix` 服务：
 
-```bash
+```shell
 sudo systemctl restart postfix
 ```
 
@@ -187,7 +240,7 @@ sudo systemctl restart postfix
 
 新建两个测试用户：
 
-```bash
+```shell
 sudo useradd -m -s /bin/bash zhangsan
 sudo passwd zhangsan
 sudo useradd -m -s /bin/bash lisi
@@ -196,7 +249,7 @@ sudo passwd lisi
 
 使用 `zhangsan` 给 `lisi` 发送邮件：
 
-```bash
+```shell
 sudo su - zhangsan
 mail to lisi@mail.example.com
 
@@ -210,7 +263,7 @@ EOT
 
 或使用以下命令发送邮件：
 
-```bash
+```shell
 echo "nihao" | mail -s "test2" lisi@mail.example.com
 ```
 
@@ -218,7 +271,7 @@ echo "nihao" | mail -s "test2" lisi@mail.example.com
 
 登录 `lisi` 用户，使用 `mail` 命令查看邮件：
 
-```bash
+```shell
 sudo su - lisi
 mail
 
