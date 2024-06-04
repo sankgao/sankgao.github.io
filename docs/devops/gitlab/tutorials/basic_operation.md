@@ -281,7 +281,7 @@ cat ~/.ssh/id_rsa.pub
 将 `test_demo` 项目使用 SSH 克隆到本地。
 
 ```shell
-git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
+git clone ssh://git@10.1.1.10/tests/test_demo.git
 ```
 
 设置 Git 用户和邮箱：
@@ -319,7 +319,7 @@ git push origin main
 将 `test_demo` 项目使用 SSH 克隆到本地。
 
 ```shell
-git clone ssh://git@192.168.52.186:2424/tests/test_demo.git
+git clone ssh://git@10.1.1.10/tests/test_demo.git
 ```
 
 设置 Git 用户和邮箱：
@@ -345,9 +345,9 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 remote: GitLab: You are not allowed to push code to protected branches on this project.
-To ssh://192.168.52.186:2424/tests/test_demo.git
+To ssh://10.1.1.10/tests/test_demo.git
  ! [remote rejected] main -> main (pre-receive hook declined)
-error: failed to push some refs to 'ssh://git@192.168.52.186:2424/tests/test_demo.git'
+error: failed to push some refs to 'ssh://git@10.1.1.10/tests/test_demo.git'
 ```
 
 普通开发用户（`zhangsan`）无法上传到 `main` 分支，`main` 分支默认受保护。

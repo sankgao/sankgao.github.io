@@ -484,6 +484,10 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     sudo docker compose up -d
     ```
 
+::: tip
+如果更改访问端口，需要在 `/etc/gitlab/gitlab.rb` 配置文件中修改 `external_url` 的值，例如：`external_url "http://gitlab.example.com:8929"`。
+:::
+
 ### 极狐Gitlab
 
 - 使用 Docker Engine 安装 极狐GitLab
@@ -544,6 +548,10 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     ```shell
     sudo docker compose up -d
     ```
+
+::: tip
+如果更改访问端口，需要在 `/etc/gitlab/gitlab.rb` 配置文件中修改 `external_url` 的值，例如：`external_url "http://gitlab.example.com:8929"`。
+:::
 
 ### 查看 gitlab 容器日志
 
