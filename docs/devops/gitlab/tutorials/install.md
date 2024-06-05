@@ -485,7 +485,17 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     ```
 
 ::: tip
-如果更改访问端口，需要在 `/etc/gitlab/gitlab.rb` 配置文件中修改 `external_url` 的值，例如：`external_url "http://gitlab.example.com:8929"`。
+如果更改访问端口，需要修改 `external_url` 和 `ports` 的值，例如：
+
+```shell
+external_url "http://gitlab.example.com:8929"
+
+ports:
+  - '8929:8929'
+```
+
+查看官网 [使用 Docker Compose 安装](https://docs.gitlab.com/ee/install/docker.html#install-gitlab-using-docker-compose) Gitlab EE。
+
 :::
 
 ### 极狐Gitlab
@@ -550,7 +560,17 @@ GitLab 容器使用主机安装的卷来存储持久数据：
     ```
 
 ::: tip
-如果更改访问端口，需要在 `/etc/gitlab/gitlab.rb` 配置文件中修改 `external_url` 的值，例如：`external_url "http://gitlab.example.com:8929"`。
+如果更改访问端口，需要修改 `external_url` 和 `ports` 的值，例如：
+
+```shell
+external_url "http://gitlab.example.com:8929"
+
+ports:
+  - '8929:8929'
+```
+
+查看官网 [使用 Docker Compose 安装](https://docs.gitlab.cn/jh/install/docker.html#%E4%BD%BF%E7%94%A8-docker-compose-%E5%AE%89%E8%A3%85%E6%9E%81%E7%8B%90gitlab) 极狐 Gitlab。
+
 :::
 
 ### 查看 gitlab 容器日志

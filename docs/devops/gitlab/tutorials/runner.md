@@ -177,7 +177,7 @@ VERSION:
     sudo docker run -d --name gitlab-runner --restart always \
       -v /srv/gitlab-runner/config:/etc/gitlab-runner \
       -v /var/run/docker.sock:/var/run/docker.sock \
-      gitlab/gitlab-runner:latest
+      gitlab/gitlab-runner:v16.11.1
     ```
 
     在 macOS 上，使用 `/Users/Shared` 而不是 `/srv`。
@@ -198,20 +198,8 @@ VERSION:
     sudo docker run -d --name gitlab-runner --restart always \
         -v /var/run/docker.sock:/var/run/docker.sock \
         -v gitlab-runner-config:/etc/gitlab-runner \
-        gitlab/gitlab-runner:latest
+        gitlab/gitlab-runner:v16.11.1
     ```
-
-```shell
-# 文件映射与gitlab一致，可自行修改
-docker run -d  --privileged=true  --name runner --restart always -v /home/www/gitlab-runner/config:/etc/gitlab-runner -v /home/www/gitlab-runner/run/docker.sock:/var/run/docker.sock -v /home/www/gitlab-runner/bin/docker:/usr/bin/docker gitlab/gitlab-runner
-
-
-sudo docker run -d --privileged=true --name gitlab-runner --restart always \
-    -v /opt/gitlab-runner/config:/etc/gitlab-runner \
-    -v /opt/gitlab-runner/run/docker.sock:/var/run/docker.sock \
-    -v /opt/gitlab-runner/bin/docker:/usr/bin/docker \
-    gitlab/gitlab-runner:latest
-```
 
 ## 注册 Runner
 
@@ -240,41 +228,12 @@ Runner 注册是将 Runner 与一个或多个 极狐GitLab 实例连接起来的
     sudo -E gitlab-runner register
     ```
 
-2. 输入您的 极狐GitLab 实例 URL（例如：`https://gitlab.com`）
-
-    ```shell
-    http://10.1.1.10:8888
-    ```
-
-3. 输入注册 Runner 时获取的令牌
-
-    ```shell
-    GR1348941RRhU8LyzLxXEJsFxBza4
-    ```
-
-4. 输入 Runner 描述。您可以在 极狐GitLab UI 中进行变更
-
-    ```shell
-    test gitlab runner
-    ```
-
-5. 输入以逗号隔开的与 Runner 有关的标签，您可以后续在 极狐GitLab UI 中进行变更
-
-    ```shell
-    [docker, shell]
-    ```
-
-6. 为 Runner 输入可选的维护记录
-
-    ```shell
-    runner
-    ```
-
-7. 提供 Runner 执行器。输入 `shell`
-
-    ```shell
-    shell
-    ```
+2. 输入您的 极狐GitLab 实例 URL。例如：`http://10.1.1.10:8888`
+3. 输入注册 Runner 时获取的令牌。例如：使用共享令牌 `fpbUZKthyn1y93CFEarG`
+4. 输入 Runner 描述，也是 Runner 的名称，您可以在 极狐GitLab UI 中进行变更。例如：`test gitlab runner`
+5. 输入以逗号隔开的与 Runner 有关的标签，您可以在 极狐GitLab UI 中进行变更。例如：`docker, shell`
+6. 为 Runner 输入可选的维护记录。例如：`runner`
+7. 提供 Runner 执行器。例如：`shell`
 
 ### Docker
 
@@ -297,138 +256,54 @@ Runner 注册是将 Runner 与一个或多个 极狐GitLab 实例连接起来的
     - 对于 Docker 卷挂载：
 
         ```shell
-        sudo docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:latest register
+        sudo docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:v16.11.1 register
+        ```
+    
+        ::: details 基于挂载类型运行注册命令
+
+        ```shell
+        docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:v16.11.1 register
+
+        Runtime platform                                    arch=amd64 os=linux pid=6 revision=535ced5f version=16.11.1
+        Running in system-mode.
+
+        Enter the GitLab instance URL (for example, https://gitlab.com/):
+        http://192.168.52.186:8888
+        Enter the registration token:
+        fpbUZKthyn1y93CFEarG
+        Enter a description for the runner:
+        [dd5c1e8f4040]: test docker runner
+        Enter tags for the runner (comma-separated):
+        docker, shell
+        Enter optional maintenance note for the runner:
+        runner
+        WARNING: Support for registration tokens and runner parameters in the 'register' command has been deprecated in GitLab Runner 15.6 and will be replaced with support for authentication tokens. For more information, see https://docs.gitlab.com/ee/ci/runners/new_creation_workflow
+        Registering runner... succeeded                     runner=fpbUZKth
+        Enter an executor: virtualbox, docker-windows, kubernetes, docker-autoscaler, instance, custom, shell, ssh, parallels, docker, docker+machine:
+        docker
+        Enter the default Docker image (for example, ruby:2.7):
+        docker:latest
+        Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
+
+        Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
         ```
 
-```shell
-sudo docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:latest register
+        :::
 
-sudo docker run --rm -it -v /opt/gitlab-runner/config:/etc/gitlab-runner register
-```
+2. 输入您的 极狐GitLab 实例 URL。例如：`http://10.1.1.10:8888`
+3. 输入注册 Runner 时获取的令牌。例如：使用共享令牌 `fpbUZKthyn1y93CFEarG`
 
-```shell
-buildadmin@buildsvr186:/opt/gitlab-runner$ sudo docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:latest register
+    ::: warning
+    传递 Runner 注册令牌的功能以及对某些配置参数的支持废弃于 15.6 版本。您应该使用身份验证令牌来注册 runner，注册令牌和对某些配置参数的支持将在 16.6 版本，引入功能标志来禁用，并在 17.0 版本中删除。查看官网 [如何生成身份验证令牌](https://docs.gitlab.cn/jh/ci/runners/register_runner.html#%E7%94%9F%E6%88%90%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E4%BB%A4%E7%89%8C)。
+    :::
 
-Runtime platform                                    arch=amd64 os=linux pid=6 revision=44feccdf version=17.0.0
-Running in system-mode.
+4. 输入 Runner 描述，也是 Runner 的名称，您可以在 极狐GitLab UI 中进行变更。例如：`test gitlab runner`
+5. 输入以逗号隔开的与 Runner 有关的标签，您可以在 极狐GitLab UI 中进行变更。例如：`docker, shell`
+6. 为 Runner 输入可选的维护记录。例如：`runner`
+7. 提供 Runner 执行器。例如：`docker`
+8. 如果您输入 `docker` 作为执行器。对于在 `.gitlab-ci.yml` 中没有定义镜像的项目，系统会要求您使用默认镜像。例如：`docker:latest`
 
-Enter the GitLab instance URL (for example, https://gitlab.com/):
-http://192.168.52.186:8888
-Enter the registration token:
-GR1348941RRhU8LyzLxXEJsFxBza4
-Enter a description for the runner:
-[5de1a4f62450]: test gitlab runner
-Enter tags for the runner (comma-separated):
-[docker, shell]
-Enter optional maintenance note for the runner:
-runner
-WARNING: Support for registration tokens and runner parameters in the 'register' command has been deprecated in GitLab Runner 15.6 and will be replaced with support for authentication tokens. For more information, see https://docs.gitlab.com/ee/ci/runners/new_creation_workflow
-Registering runner... succeeded                     runner=GR1348941RRhU8Lyz
-Enter an executor: kubernetes, instance, docker-windows, docker+machine, ssh, parallels, virtualbox, docker, docker-autoscaler, custom, shell:
-docker
-Enter the default Docker image (for example, ruby:2.7):
-
-Enter the default Docker image (for example, ruby:2.7):
-docker:26.1.0
-Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
-
-Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
-```
-
-```shell
-root@361e089524a0:/# gitlab-runner register
-
-Runtime platform                                    arch=amd64 os=linux pid=34 revision=44feccdf version=17.0.0
-Running in system-mode.
-
-Enter the GitLab instance URL (for example, https://gitlab.com/):
-http://192.168.52.186:8888
-Enter the registration token:
-glrt-GdWPzx5jgyKUxYWJjePu
-Verifying runner... is valid                        runner=GdWPzx5jg
-Enter a name for the runner. This is stored only in the local config.toml file:
-[361e089524a0]: test gitlab runner
-Enter an executor: virtualbox, docker-windows, kubernetes, docker-autoscaler, instance, custom, shell, docker, docker+machine, ssh, parallels:
-docker
-Enter the default Docker image (for example, ruby:2.7):
-docker:26.1.0
-Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
-
-Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
-```
-
-1. 输入您的 极狐GitLab 实例 URL（例如：`https://gitlab.com`）
-
-    ```shell
-    http://10.1.1.10:8888
-    ```
-
-2. 输入注册 Runner 时获取的令牌（例如：使用共享注册令牌）
-
-    ```shell
-    fpbUZKthyn1y93CFEarG
-    ```
-
-::: warning
-传递 runner 注册令牌的功能以及对某些配置参数的支持废弃于 15.6 版本。您应该使用身份验证令牌来注册 runner，注册令牌和对某些配置参数的支持将在 16.6 版本，引入功能标志来禁用，并在 17.0 版本中删除。查看官网 [如何生成身份验证令牌](https://docs.gitlab.cn/jh/ci/runners/register_runner.html#%E7%94%9F%E6%88%90%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E4%BB%A4%E7%89%8C)。
-:::
-
-3. 输入 Runner 描述，也是 runner 的名称。您可以在 极狐GitLab UI 中进行变更
-
-    ```shell
-    test docker runner
-    ```
-
-4. 输入以逗号隔开的与 Runner 有关的标签，您可以后续在 极狐GitLab UI 中进行变更
-
-    ```shell
-    [docker, shell]
-    ```
-
-5. 为 Runner 输入可选的维护记录
-
-    ```shell
-    runner
-    ```
-
-6. 提供 Runner 执行器。对于大多数用例来说，输入 `docker`
-
-    ```shell
-    docker
-    ```
-
-7. 如果您输入 `docker` 作为执行器。对于在 `.gitlab-ci.yml` 中没有定义镜像的项目，系统会要求您使用默认镜像
-
-    ```shell
-    docker:latest
-    ```
-
-```shell
-docker run --rm -it -v gitlab-runner-config:/etc/gitlab-runner gitlab/gitlab-runner:v16.11.1 register
-
-Runtime platform                                    arch=amd64 os=linux pid=6 revision=535ced5f version=16.11.1
-Running in system-mode.
-
-Enter the GitLab instance URL (for example, https://gitlab.com/):
-http://192.168.52.186:8888
-Enter the registration token:
-fpbUZKthyn1y93CFEarG
-Enter a description for the runner:
-[dd5c1e8f4040]: test docker runner
-Enter tags for the runner (comma-separated):
-[docker, shell]
-Enter optional maintenance note for the runner:
-runner
-WARNING: Support for registration tokens and runner parameters in the 'register' command has been deprecated in GitLab Runner 15.6 and will be replaced with support for authentication tokens. For more information, see https://docs.gitlab.com/ee/ci/runners/new_creation_workflow
-Registering runner... succeeded                     runner=fpbUZKth
-Enter an executor: virtualbox, docker-windows, kubernetes, docker-autoscaler, instance, custom, shell, ssh, parallels, docker, docker+machine:
-docker
-Enter the default Docker image (for example, ruby:2.7):
-docker:latest
-Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded!
-
-Configuration (with the authentication token) was saved in "/etc/gitlab-runner/config.toml"
-```
+![共享 runner](../assets/share_runner.jpg)
 
 runner 的所有配置保存在一个名为 `config.toml` 的文件中，默认位置存放在 `/etc/gitlab-runner/config.toml`。查看 [官网](https://docs.gitlab.cn/runner/configuration/advanced-configuration.html) 对 `config.toml` 文件中各参数的描述。
 
@@ -448,16 +323,22 @@ runner 的所有配置保存在一个名为 `config.toml` 的文件中，默认�
 ```yaml
 build-job:
   stage: build
+  tags:
+    - "shell"
   script:
     - echo "Hello, $GITLAB_USER_LOGIN!"
 
 test-job1:
   stage: test
+  tags:
+    - "shell"
   script:
     - echo "This job tests something"
 
 test-job2:
   stage: test
+  tags:
+    - "shell"
   script:
     - echo "This job tests something, but takes more time than test-job1."
     - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
@@ -466,14 +347,33 @@ test-job2:
 
 deploy-prod:
   stage: deploy
+  tags:
+    - "shell"
   script:
     - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
   environment: production
 ```
 
+查看构建流水线结果：
+
+![构建流水线](../assets/build_pipeline.jpg)
+
+### pipeline 状态
+
+- 已创建（create）
+- 等待中（pending）
+- 运行中（running）
+- 已通过（passed）
+- 失败（failed）
+- 手动（hand）
+- 已取消（canceled）
+- 已跳过（skip）
+
+![pipeline 状态](../assets/pipeline_status.jpg)
+
 ## gitlab-runner 命令
 
-gitlab-runner 常用命令：
+`gitlab-runner` 常用命令：
 
 |  命令  |  描述  |
 |  :----  |  :----  |
@@ -486,4 +386,4 @@ gitlab-runner 常用命令：
 |  `gitlab-runner unregister --url http://gitlab.example.com/ --token t0k3n`  |  通过 URL 和令牌，取消注册 Runner，会更新配置文件  |
 |  `gitlab-runner unregister --name test-runner`  |  通过名称，取消注册 Runner，会更新配置文件  |
 
-查看网官 [gitlab-runner](https://docs.gitlab.cn/runner/commands/) 命令。
+查看官网 [gitlab-runner](https://docs.gitlab.cn/runner/commands/) 命令。
