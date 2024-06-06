@@ -160,9 +160,11 @@ job2:
 
 ## script
 
-使用 `script` 指定 Runner 要执行的命令。
+使用 `script` 指定 Runner 要执行的命令。除了 `trigger` 之外的所有作业都需要一个 `script` 关键字。
 
-除了 `trigger` 之外的所有作业都需要一个 `script` 关键字。
+使用 `before_script` 定义在每个作业的 `script` 命令之前运行，但在 `artifacts` 恢复之后。
+
+使用 `after_script` 定义在每个作业之后运行的命令，包括失败的作业。
 
 - **关键字类型**：作业关键字。您只能将其用作作业的一部分
 - **可能的输入**：一个数组，包括：
@@ -180,11 +182,31 @@ job2:
   script:
     - uname -a
     - bundle exec rspec
+
+job3:
+  before_script:
+    - echo "Execute this command before any 'script:' commands."
+  script:
+    - echo "This command executes after the job's 'before_script' commands."
+    - echo "An example script section."
+  after_script:
+    - echo "Execute this command after the `script` section completes."
 ```
 
 **额外细节：**
 
 - 当您使用 `script` 中的特殊字符时，必须使用单引号（`'`）或双引号（`"`）
+- 您在 `before_script` 中指定的脚本与您在主 `script` 中指定的任何脚本连接在一起。组合脚本在单个 `shell` 中一起执行
+- 不推荐在 [default](#default) 中使用 `before_script` 和 `after_script`
+- 您在 `after_script` 中指定的脚本在一个新的 `shell` 中执行，与任何 `before_script` 或 `script` 命令分开。结果：
+    - 将当前工作目录设置回默认值（根据定义运行程序如何处理 Git 请求的变量）
+    - 无权访问由 `before_script` 或 `script` 中定义的命令完成的更改，包括
+        - 在 `script` 脚本中导出的命令别名和变量
+        - 作业树之外的更改（取决于 runner），例如：由 `before_script` 或 `script` 脚本安装的软件
+    - 有一个单独的超时，它被硬编码为 `5` 分钟
+    - 不要影响作业的退出代码。如果 `script` 部分成功并且 `after_script` 超时或失败，作业将退出，代码为 0（Job Succeeded）
+
+如果作业超时或被取消，则不会执行 `after_script` 命令。存在一个问题，即为超时或取消的作业添加对执行 `after_script` 命令的支持。
 
 ## cache
 
@@ -201,3 +223,56 @@ job2:
 
 - 使用 `default` 定义的默认缓存
 - 添加了 `include` 的作业的配置
+
+### cache:key
+
+使用 `cache:key` 关键字为每个缓存提供唯一的标识键。使用相同缓存键的所有作业都使用相同的缓存，包括在不同的流水线中。
+
+如果未设置，则默认键为 `default`。所有带有 `cache` 关键字但没有 `cache:key` 的作业共享 `default` 缓存。
+
+必须与 [cache:paths](#cachepaths) 一起使用，否则不会缓存任何内容。
+
+- **关键字类型**：作业关键字。您只能将其用作作业的一部分或在 [default](#default) 部分中使用
+- **可能的输入：**
+    - 一个字符串
+    - 预定义变量
+    - 两者的结合
+
+例如：
+
+```yaml
+cache-job:
+  script:
+    - echo "This job uses a cache."
+  cache:
+    key: binaries-cache-$CI_COMMIT_REF_SLUG
+    paths:
+      - binaries/
+```
+
+**额外细节：**
+
+- 如果你使用 `Windows Batch` 运行你的 `shell` 脚本，你需要用 `%` 替换 `$`。例如：`key：%CI_COMMIT_REF_SLUG%`
+- `cache:key` 值不能包含：
+    - `/` 字符，或等效的 URI 编码的 `%2F`
+    - 只有 `.` 字符（任何数字），或等效的 URI 编码的 `%2E`
+- 缓存在作业之间共享，因此如果您为不同的作业使用不同的路径，您还应该设置不同的 `cache:key`，否则缓存内容可能会被覆盖
+
+### cache:paths
+
+缓存 `binaries` 中以 `.apk` 和 `.config` 文件结尾的所有文件：
+
+```yaml
+rspec:
+  script:
+    - echo "This job uses a cache."
+  cache:
+    key: binaries-cache
+    paths:
+      - binaries/*.apk
+      - .config
+```
+
+**额外细节：**
+
+- `cache:paths` 关键字包括文件，即使它们未被跟踪或在您的 `.gitignore` 文件中。
