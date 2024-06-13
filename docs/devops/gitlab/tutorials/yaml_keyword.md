@@ -282,7 +282,7 @@ rspec:
 
 - `cache:paths` 关键字包括文件，即使它们未被跟踪或在您的 `.gitignore` 文件中。
 
-### cache:key:file
+### cache\:key\:file
 
 使用 `cache:key:files` 关键字在一两个特定文件更改时生成新密钥。`cache:key:files` 可让您重用一些缓存，并减少重建它们的频率，从而加快后续流水线运行的速度。
 

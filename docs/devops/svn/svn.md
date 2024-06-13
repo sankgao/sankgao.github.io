@@ -168,7 +168,7 @@ tag:
 
 ### 浏览仓库
 
-1. 点击鼠标右键，选择 **TortoiseSVN -> Repo-browser**
+1. 点击鼠标右键，选择 *TortoiseSVN -> Repo-browser*
 
     ![tortoisesvn_06](./assets/tortoisesvn_06.jpg)
 
@@ -214,7 +214,7 @@ tag:
 
 2. 添加文件
 
-    选中添加的文件，右键选择 **TortoiseSVN -> Add。**
+    选中添加的文件，右键选择 *TortoiseSVN -> Add*。
 
     ![tortoisesvn_14](./assets/tortoisesvn_14.jpg)
 
@@ -243,17 +243,16 @@ tag:
 `checkout` 仓库到本地后，每次操作这个仓库前都需要 `Update` 一下，将 SVN 服务器上的内容更新到本地。
 
 ::: warning
-如果不进行 `Update` 操作，如果修改文件时，可能会将其它人做过的修改进行覆盖
+如果不进行 `Update` 操作，进行修改文件并上传文件时，可能会将其它人做过的修改进行覆盖。
 :::
 
 ### Delete 操作
 
-选择要删除的文件或文件夹，右键选择 **TortoiseSVN -> Delete** 标记删除，这时只是在本地文件删除，还需要进行 `commit` 操作，SVN 服务端上文件才会删除。
+选择要删除的文件或文件夹，右键选择 *TortoiseSVN -> Delete* 标记删除，这时只是在本地文件删除，还需要进行 `commit` 操作，SVN 服务端上文件才会删除。
 
 ### 提交冲突
 
-当多个用户同时操作同一个文件，其他人比自己先 `commit` 到 SVN 服务器上，自己再 `commit` 时
-当多个用户同时操作同一个文件，自己进行 `commit` 到 SVN 服务器上，但有其他人提前进行 `commit` 操作时，就会产生冲突情况。
+当多个用户同时操作同一个文件，当您要 `commit` 到 SVN 服务器上，但有其他人提前进行 `commit` 操作时，就会产生冲突。
 
 这时可以采用手动 `Merge`，解决冲突后，重新进行 `commit` 操作。
 
@@ -264,47 +263,45 @@ tag:
 - **text.txt.r4**：修改前的文件
 - **text.txt.r5**：其他人修改后的文件
 
-选择产生冲突的文件，右键选择 **TortoiseSVN -> Edit conflicts**，手动 `merge` 后再次 `commit`。
+选择产生冲突的文件，右键选择 *TortoiseSVN -> Edit conflicts*，手动 `merge` 后再次 `commit`。
 
 ### 查看 log 日志
 
-选中仓库，或仓库中的某个文件，右键选择 **TortoiseSVN -> Show log。**
+选中仓库，或仓库中的某个文件，右键选择 *TortoiseSVN -> Show log。*
 
 ### 回退版本
 
-如果想要回退到之前的版本，选中要回退的文件，右键选择 **TortoiseSVN -> Update to revision**，点击 `Show log` 查看具体要回退到哪个版本。
+如果想要回退到之前的版本，选中要回退的文件，右键选择 *TortoiseSVN -> Update to revision*，点击 `Show log` 查看具体要回退到哪个版本。
 
 ## VS Code 配置 SVN
 
 1. 本地提前安装 [TortoiseSVN](#安装客户端) 客户端
-
 2. `VS Code` 安装 SVN 插件
-
 3. 配置 SVN 路径
 
     打开 `VS Code` 设置或使用快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 打开。
 
-    在搜索框中输入 `svn:path`，在 `settin.json` 文件中修改。将本地安装的 `TortoiseSVN` 路径输入到对应的位置。
+    在搜索框中输入 `svn:path`，在 `settin.json` 文件中修改。将本地安装的 `TortoiseSVN` 路径输入到对应的位置。例如：
 
     ```json
     "svn.path": "E:\\Software\\TortoiseSVN\\bin\\svn.exe",
     ```
 
     ::: tip
-    如果在本地安装的 `TortoiseSVN\bin` 下找不到 `svn.exe` 文件。找到 `TortoiseSVN` 包进行 `Modify` 修改包，如果
+    如果在本地安装的 `TortoiseSVN\bin` 目录下找不到 `svn.exe` 文件。则找到 `TortoiseSVN` 包进行 `Modify` 修改包。
 
-    依次点击 **控制面板 -> 程序和功能**，找到 `TortoiseSVN` 包进行 `Modify` 修改，修改 `Command line tools` 选项。参考：[安装客户端中的第三项（3.）](#安装客户端)
+    依次点击 *控制面板 -> 程序和功能*，找到 `TortoiseSVN` 包进行 `Modify` 修改，修改 `Command line tools` 选项。参考：[安装客户端中的第三项（3.）](#安装客户端)
     :::
 
 4. 重新打开 `VS Code`，SVN 配置生效
 
-### SVN 命令
+## SVN 命令
 
 1. 将仓库 `checkout` 到本地
 
     `svn checkout <URL>`。简写：`svn co <URL>`
     
-    `URL`：仓库地址。
+    - **URL**：仓库地址
 
 2. 添加新文件或文件夹
 
@@ -314,7 +311,7 @@ tag:
 
     `svn commit -m "messages"`。简写：`svn ci -m "messages"`
 
-    `messages`：描述信息。
+    - **messages**：描述信息
 
 4. 删除文件或文件夹
 
@@ -332,7 +329,7 @@ tag:
 
     `svn log -v -r <num> <file/dir>` 显示文件或文件夹某个版本的修改记录详细信息。
 
-    `num`：版本号。
+    - **num**：版本号
 
 7. 查看文件或文件夹详细信息
 
@@ -344,10 +341,10 @@ tag:
 
     `svn diff -r <num:num> <file/dir>` 比较本地文件或文件夹和某两个版本之间的差异。
 
-    `num`：版本号。
+    - `num`：版本号
 
 9. 查看仓库下的文件和目录列表
 
     `svn list <URL>`。
 
-    `URL`：仓库地址。
+    - **URL**：仓库地址

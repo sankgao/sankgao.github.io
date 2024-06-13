@@ -153,3 +153,14 @@ git clone --mirror ssh://git@10.1.1.10/tests/test_demo.git
 ```shell
 git clone --depth=2 ssh://git@10.1.1.10/tests/test_demo.git
 ```
+
+### 备份克隆
+
+例如：对项目做备份。
+
+```shell
+git clone test_demo test_demo-backup
+
+Cloning into '.\test_demo-backup'...
+done.
+```
