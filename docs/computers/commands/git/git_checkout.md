@@ -52,6 +52,16 @@ git checkout -
 git checkout dev -- test
 ```
 
+::: tip
+为避免引用（或者提交 ID）和路径同名而发生冲突，可以在 `<path>` 前用两个连续的短线（`--`）作为分隔。
+:::
+
+例如：从历史（前一次提交）中恢复 `welcome.txt` 文件到当前工作区中。
+
+```shell
+git checkout HEAD~1 -- welcome.txt
+```
+
 ### 恢复工作区文件
 
 如果工作区的文件被修改了但还没有提交到暂存区，可以使用 `git checkout -- <file>` 来恢复这个文件到最新的提交状态，这实际上会丢弃工作区中对这个文件的修改。
@@ -69,6 +79,8 @@ git status
 
 ```shell
 git checkout -- .
+# 或
+git checkout .
 ```
 
 ### 恢复工作区和暂存区文件

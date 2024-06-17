@@ -135,6 +135,8 @@ no changes added to commit (use "git add" and/or "git commit -a")
 git checkout -- README.md
 ```
 
+为避免引用（或者提交 ID）和路径同名而发生冲突，可以在 `<path>` 前用两个连续的短线（`--`）作为分隔。
+
 :::
 
 ## 撤销已暂存的文件

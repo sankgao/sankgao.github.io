@@ -43,6 +43,8 @@ committer Sank Gao <sankgao@163.com> 1718332249 +0800
     which version checked in?
 ```
 
+### 查看仓库对象类型
+
 例如：查看 `<对象>` 的类型。
 
 ```shell
@@ -50,6 +52,8 @@ git cat-file -t ffda3db
 
 commit
 ```
+
+### 查看仓库对象内容
 
 例如：查看 `commit` 对象内容。
 
@@ -92,4 +96,12 @@ git cat-file -p fd3c069
 
 Hello.
 Nice to meet you.
+```
+
+### 从历史中恢复文件
+
+例如：从历史（前一次提交）中恢复 `welcome.txt` 文件到当前工作区中。
+
+```shell
+git cat-file -p HEAD~1:welcome.txt > welcome.txt
 ```

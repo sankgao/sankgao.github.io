@@ -125,3 +125,11 @@ git show v1.0.0
 ```shell
 git show --stat 52e58a
 ```
+
+### 从历史中恢复文件
+
+例如：从历史（前一次提交）中恢复 `welcome.txt` 文件到当前工作区中。
+
+```shell
+git show HEAD~1:welcome.txt > welcome.txt
+```

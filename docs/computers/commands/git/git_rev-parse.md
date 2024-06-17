@@ -86,12 +86,21 @@ refs/heads/main
 
 ### 获取 Git 目录的路径
 
-例如：返回 Git 仓库的 `.git` 目录的路径。
+例如：在根目录下，返回 Git 仓库的 `.git` 目录的路径。
 
 ```shell
 git rev-parse --git-dir
 
 .git
+```
+
+例如：在非根目录下，返回 Git 仓库的 `.git` 目录的路径。
+
+```shell
+cd a/b/c
+git rev-parse --git-dir
+
+/opt/projects/test_demo/.git
 ```
 
 ### 获取工作区的绝对路径
@@ -102,6 +111,26 @@ git rev-parse --git-dir
 git rev-parse --show-toplevel
 
 /opt/projects/test_demo
+```
+
+### 获取工作区的相对目录
+
+例如：获取相对于工作区根目录的相对目录。
+
+```shell
+git rev-parse --show-prefix
+
+a/b/c
+```
+
+### 获取工作区的相对目录
+
+例如：获取从当前目录（`cd`）后退到工作区的根的深度。
+
+```shell
+git rev-parse --show-cdup
+
+../../../
 ```
 
 ### 验证引用是否存在
