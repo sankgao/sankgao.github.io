@@ -50,16 +50,16 @@ glob 模式是指 shell 所使用的简化了的正则表达式。
 ```gitignore
 cat .gitignore
 
-# 忽略所有的 .a 文件
+# 忽略所有以 .a 结尾的文件
 *.a
 
 # 但跟踪所有的 lib.a，即便您在前面忽略了 .a 文件
 !lib.a
 
-# 只忽略当前目录下的 TODO 文件，而不忽略 subdir/TODO
+# 只忽略当前目录下的 TODO 文件，而不忽略子目录中的 TODO 文件。例如：subdir/TODO
 /TODO
 
-# 忽略任何目录下名为 build 的文件夹
+# 忽略所有 build 目录下的文件
 build/
 
 # 忽略 doc/notes.txt，但不忽略 doc/server/arch.txt
@@ -67,4 +67,30 @@ doc/*.txt
 
 # 忽略 doc/ 目录及其所有子目录下的 .pdf 文件
 doc/**/*.pdf
+```
+
+## 共享式和独享式忽略文件
+
+忽略文件 `.gitignore` 有 **共享式** 和 **独享式。**
+
+### 共享式
+
+`.gitignore` 被添加到版本库后成为了版本库的一部分，当版本库共享给他人（克隆），或者把版本库推送（push）到集中式的服务器（或他人的版本库）时，这个忽略文件就会出现在他人的工作区中，文件忽略在他人的工作区中同样生效。
+
+### 独享式
+
+独享式忽略就是不会因为版本库共享，或者版本库之间的推送传递给他人的文件忽略。
+
+独享式忽略有两种方式：
+
+- 一种是针对 **具体版本库** 的独享式忽略。即在版本库 `.git` 目录下的一个文件 `.git/info/exclude` 来设置文件忽略
+- 另外一种是 **全局** 的独享式忽略。即通过 Git 的配置变量 `core.excludesfile` 指定的一个忽略文件，其设置的忽略对所有本地版本库均有效
+
+例如：本地设置一个全局的独享文件忽略列表（这个文件名可以随意设置）。
+
+```shell
+git config --global core.excludesfile /home/sankgao/.gitignore
+git config core.excludesfile
+
+/home/sankgao/.gitignore
 ```
