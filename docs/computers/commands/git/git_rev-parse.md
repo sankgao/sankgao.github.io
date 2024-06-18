@@ -17,7 +17,12 @@ tag:
 |  选项  |  描述  |
 |  :----:  |  :----  |
 |  `--abbrev-ref`  |  获取当前所在分支名，不包括命名空间  |
+|  `--symbolic`  |  通常情况下，对象名称以 SHA-1 形式输出（可能带有 `^` 前缀）；该选项使其输出形式尽可能接近原始输入  |
 |  `--symbolic-full-name`  |  输出完全限定的引用名，包括命名空间  |
+|  `--all`  |  显示在 `refs/` 中找到的所有引用  |
+|  `--branches[=pattern]`  |  显示在 `refs/heads` 中找到的所有分支引用  |
+|  `--tags[=pattern]`  |  显示在 `refs/tags` 中找到的所有标签引用  |
+|  `--remotes[=pattern]`  |  显示在 `refs/remotes` 中找到的所有远程跟踪分支引用  |
 |  `--git-dir`  |  获取 `.git` 目录的相对路径  |
 |  `--absolute-git-dir`  |  获取 `.git` 目录的绝对路径  |
 |  `--show-toplevel`  |  获取工作区的绝对路径  |
@@ -165,4 +170,14 @@ git rev-parse --verify v1.0.0
 git rev-parse --verify refs/tags/v1.0.0
 
 4637c7d9d5ed2aa5695366d1daa011bd57fc4fe9
+```
+
+### 显示分支引用
+
+例如：显示在 `refs/heads` 中找到的所有分支引用。
+
+```shell
+git rev-parse --symbolic --branches
+
+main
 ```
