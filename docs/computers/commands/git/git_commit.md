@@ -22,6 +22,9 @@ tag:
 |  `-a`  |  `-a` 选项相当于 `git add -A` 命令（将所有 **已跟踪的文件** 提交到暂存区）  |
 |  `--amend`  |  通过创建一个新的提交来修改最后一次提交信息，通常与 `-m` 选项一起使用  |
 |  `--author="username <username@example.com>"`  |  设置提交者的姓名和邮箱地址  |
+|  `-C <commit>, --reuse-message=<commit>`  |  取一个现有的提交对象，并在创建提交时重新使用日志信息和作者信息（包括时间戳）  |
+|  `-c <commit>, --reedit-message=<commit>`  |  和 `-C` 一样，但用 `-c` 会调用编辑器，这样用户可以进一步编辑提交信息  |
+|  `--allow-empty`  |  生成空提交  |
 |  `-q, --quiet`  |  不显示输出内容  |
 |  `-v, --verbose`  |  将 `git diff` 输出呈现在编辑器中  |
 

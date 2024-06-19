@@ -1,6 +1,6 @@
 ---
 title: git archive
-icon: file-zip
+icon: command
 date: 2024-06-18
 category: About
 tag:

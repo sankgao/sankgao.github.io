@@ -87,3 +87,17 @@ v1.0.0          Version 1.0.0
 v1.0.1          Version 1.0.1
 v1.1.0          add test02.txt
 ```
+
+### 指定提交创建标签
+
+例如：为前一个提交，创建标签。
+
+```shell
+git tag v1.1 HEAD^
+```
+
+例如：为第五个提交，创建标签。
+
+```shell
+git tag v1.0 HEAD~5
+```
