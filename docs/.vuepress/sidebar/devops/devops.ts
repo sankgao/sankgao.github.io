@@ -17,6 +17,10 @@ export const devops = arraySidebar([
     link: "git/",
     prefix: "svn/",
     collapsible: true,
+    children: [
+      "tutorials/",
+      "problems/",
+    ],
   },
   {
     text: "Gerrit",
