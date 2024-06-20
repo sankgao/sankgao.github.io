@@ -2,7 +2,6 @@
 title: error unknown switch `e'
 icon: problem
 date: 2024-06-14
-order: 20
 category: 
     - DevOps
     - 问题
@@ -14,8 +13,9 @@ tag:
 
 在 VSCode 中，使用 `git reset --hard HEAD@{5}` 命令时，出现以下错误：
 
-```shell
+```powershell
 PS E:\SourceCode\Github\project-demo\git\demo> git reset --hard HEAD@{5}
+
 error: unknown switch `e'
 usage: git reset [--mixed | --soft | --hard | --merge | --keep] [-q] [<commit>]
    or: git reset [-q] [<tree-ish>] [--] <pathspec>...
