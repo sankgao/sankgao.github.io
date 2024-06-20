@@ -26,10 +26,10 @@ Docker 安装 GitLab 时，自定义访问端口（如：`8888`），使用 HTTP
 修改 `docker-compose.yml` 文件中 `external_url` 和 `ports` 的值：
 
 ```shell
-external_url "http://gitlab.example.com:8929"
+external_url "http://gitlab.example.com:8888"
 
 ports:
-  - '8929:8929'
+  - '8888:8888'
 ```
 
 查看官网 [使用 Docker Compose 安装](https://docs.gitlab.cn/jh/install/docker.html#%E4%BD%BF%E7%94%A8-docker-compose-%E5%AE%89%E8%A3%85%E6%9E%81%E7%8B%90gitlab) 极狐 Gitlab。
