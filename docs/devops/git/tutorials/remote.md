@@ -65,7 +65,7 @@ git remote add origin git@github.com:sankgao/git_tutorials.git
 
 ## 查看远程仓库
 
-如果想查看您已经配置的远程仓库服务器，可以运行 [git remote](../../computers/commands/git/git_remote.md) 命令，它会列出您指定的每一个远程服务器的简写。如果您已经克隆了自己的仓库，那么至少应该能看到 `origin`，这是 Git 给您克隆的仓库服务器的默认名字。
+如果想查看您已经配置的远程仓库服务器，可以运行 [git remote](../../../computers/commands/git/git_remote.md) 命令，它会列出您指定的每一个远程服务器的简写。如果您已经克隆了自己的仓库，那么至少应该能看到 `origin`，这是 Git 给您克隆的仓库服务器的默认名字。
 
 例如：查看刚添加的 `git_tutorials.git` 远程仓库。
 
@@ -106,7 +106,7 @@ origin  https://github.com/sankgao/git_tutorials.git (push)
 
 ## 从远程仓库中抓取与拉取
 
-使用 [git fetch](../../computers/commands/git/git_fetch.md) 命令，从远程仓库中获得数据。
+使用 [git fetch](../../../computers/commands/git/git_fetch.md) 命令，从远程仓库中获得数据。
 
 ```shell
 git fetch origin
@@ -120,7 +120,7 @@ git fetch origin
 `git fetch` 命令只会将数据下载到您的本地仓库——它并不会自动合并或修改您当前的工作。当准备好时您必须手动将其合并入您的工作。
 :::
 
-如果您的当前分支设置了跟踪远程分支，那么可以用 [git pull](../../computers/commands/git/git_pull.md) 命令来自动抓取后合并该远程分支到当前分支，这或许是个更加简单舒服的工作流程。默认情况下，[git clone](../../computers/commands/git/git_clone.md) 命令会自动设置本地 `main` 分支跟踪克隆远程仓库的 `main` 分支（或其它名字的默认分支）。运行 `git pull` 通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支。
+如果您的当前分支设置了跟踪远程分支，那么可以用 [git pull](../../../computers/commands/git/git_pull.md) 命令来自动抓取后合并该远程分支到当前分支，这或许是个更加简单舒服的工作流程。默认情况下，[git clone](../../../computers/commands/git/git_clone.md) 命令会自动设置本地 `main` 分支跟踪克隆远程仓库的 `main` 分支（或其它名字的默认分支）。运行 `git pull` 通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支。
 
 ## 推送到远程仓库
 

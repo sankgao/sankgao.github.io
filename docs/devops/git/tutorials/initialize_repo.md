@@ -18,7 +18,7 @@ mkdir git_tutorials
 cd git_tutorials
 ```
 
-使用 [git init](../../computers/commands/git/git_init.md) 命令将此项目目录，初始化为 Git 仓库。
+使用 [git init](../../../computers/commands/git/git_init.md) 命令将此项目目录，初始化为 Git 仓库。
 
 ```shell
 git init -b main
@@ -29,7 +29,7 @@ git init -b main
 `-b` 指定初始分支名为 `main`，如果没有指定 `-b` 选项，则默认使用 `master` 分支名。
 
 ::: info
-Git 低版本的 `git init` 命令没有 `-b` 选项，如果要修改初始分支，使用 [git branch](../../computers/commands/git/git_branch.md) 命令的 `-m` 选项重命名当前分支。例如：
+Git 低版本的 `git init` 命令没有 `-b` 选项，如果要修改初始分支，使用 [git branch](../../../computers/commands/git/git_branch.md) 命令的 `-m` 选项重命名当前分支。例如：
 
 ```shell
 git init
@@ -64,7 +64,7 @@ refs/
 
 ## 初始化配置
 
-初始化配置 Git 环境。使用 [git config](../../computers/commands/git/git_config.md) 命令设置 Git 外观和行为的配置变量。这些变量存储在三个不同的位置：
+初始化配置 Git 环境。使用 [git config](../../../computers/commands/git/git_config.md) 命令设置 Git 外观和行为的配置变量。这些变量存储在三个不同的位置：
 
 1. `/etc/gitconfig` 文件：对系统上每一个用户及他们仓库生效。传递 `--system` 选项，那么它就会读写该文件中的配置变量。由于它是系统配置文件，因此需要管理员或超级用户权限来修改它。
 2. `~/.gitconfig` 或 `~/.config/git/config` 文件：只对当前用户生效。传递 `--global` 选项让 Git 读写此文件，这会对您系统上所有的仓库生效。
@@ -131,7 +131,7 @@ git config --global core.editor vim
 
 ## 初始化提交
 
-如果在一个已存在文件的目录（而非空目录）中进行版本控制，应该开始跟踪这些文件并进行初始提交。可以通过 [git add](../../computers/commands/git/git_add.md) 命令来指定所需的文件来进行跟踪，然后执行 [git commit](../../computers/commands/git/git_commit.md) 命令进行提交。
+如果在一个已存在文件的目录（而非空目录）中进行版本控制，应该开始跟踪这些文件并进行初始提交。可以通过 [git add](../../../computers/commands/git/git_add.md) 命令来指定所需的文件来进行跟踪，然后执行 [git commit](../../../computers/commands/git/git_commit.md) 命令进行提交。
 
 如果是空目录，则在该目录中创建文件后再开始跟踪这些文件并进行初始提交。
 
@@ -148,7 +148,7 @@ git commit -m 'add test01.txt'
 - `git add` 将 `test01.txt` 文件从工作区添加到暂存区
 - `git commit` 将 `test01.txt` 文件从暂存区提交到本地仓库，`-m` 选项添加描述信息
 
-此时 Git 版本控制会生成一个记录，存放此次提交的信息（如：`commit id`、用户信息、时间、描述信息等）。使用 [git log](../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
+此时 Git 版本控制会生成一个记录，存放此次提交的信息（如：`commit id`、用户信息、时间、描述信息等）。使用 [git log](../../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
 
 ```shell
 git log

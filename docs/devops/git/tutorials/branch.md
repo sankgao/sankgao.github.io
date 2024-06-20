@@ -72,7 +72,7 @@ git ls-tree 53f69acb505bf9bfce1a4d9299b79df6d2e1c6be
 Git 的分支，其实本质上仅仅是指向提交对象的可变指针。Git 的默认分支名字是 `main` 或 `master`。在多次提交操作之后，您其实已经有一个指向最后那个提交对象的 `master` 分支。`master` 分支会在每次提交时自动向前移动。
 
 ::: info
-Git 的 `master` 分支并不是一个特殊分支，它跟其它分支完全没有区别。之所以几乎每一个仓库都有 `master` 分支，是因为 [git init](../../computers/commands/git/git_init.md) 命令默认创建它，并且大多数人都懒得去改动它。
+Git 的 `master` 分支并不是一个特殊分支，它跟其它分支完全没有区别。之所以几乎每一个仓库都有 `master` 分支，是因为 [git init](../../../computers/commands/git/git_init.md) 命令默认创建它，并且大多数人都懒得去改动它。
 :::
 
 ## 分支规范
@@ -128,7 +128,7 @@ Git 的 `master` 分支并不是一个特殊分支，它跟其它分支完全没
 
 ## 创建分支
 
-分支只是为您创建了一个可以移动的新的指针。使用 [git branch](../../computers/commands/git/git_branch.md) 命令，创建一个新分支，这会在当前所在的提交对象上创建一个指针。
+分支只是为您创建了一个可以移动的新的指针。使用 [git branch](../../../computers/commands/git/git_branch.md) 命令，创建一个新分支，这会在当前所在的提交对象上创建一个指针。
 
 例如：要开发一个新功能，一般会以主分支（`main`）为基础，创建一个新分支（`dev`），并在新分支中开发新功能。
 
@@ -150,7 +150,7 @@ Git 有一个名为 HEAD 的特殊指针。请注意它和许多其它版本控�
 
 ### HEAD 指向当前所在的分支
 
-使用 [git checkout](../../computers/commands/git/git_checkout.md) 或 [git switch](../../computers/commands/git/git_switch.md) 命令，将切换到已存在的其它分支，HEAD 也会指向指定的分支。分支切换会改变您工作目录中的文件。
+使用 [git checkout](../../../computers/commands/git/git_checkout.md) 或 [git switch](../../../computers/commands/git/git_switch.md) 命令，将切换到已存在的其它分支，HEAD 也会指向指定的分支。分支切换会改变您工作目录中的文件。
 
 例如：切换到新创建的 `dev` 分支，且 HEAD 指针指向 `dev` 分支。
 
@@ -293,7 +293,7 @@ git log -5 --oneline --graph --all
 
 ### 快进合并
 
-您可以运行您的测试，确保您的修改是正确的。使用 [git merge](../../computers/commands/git/git_merge.md) 命令将 `hotfix` 分支合并到 `main` 分支来部署到线上。
+您可以运行您的测试，确保您的修改是正确的。使用 [git merge](../../../computers/commands/git/git_merge.md) 命令将 `hotfix` 分支合并到 `main` 分支来部署到线上。
 
 ```shell
 git checkout main
@@ -316,7 +316,7 @@ git log -2 --oneline
 7333fb5 (origin/main) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
 ```
 
-关于这个紧急问题的解决方案发布之后，您准备回到被打断之前时的工作中。然而，您应该先删除 `hotfix` 分支，因为您已经不再需要它了，`main` 分支已经指向了同一个位置。您可以使用带 `-d` 选项的 [git branch](../../computers/commands/git/git_branch.md) 命令来删除分支。
+关于这个紧急问题的解决方案发布之后，您准备回到被打断之前时的工作中。然而，您应该先删除 `hotfix` 分支，因为您已经不再需要它了，`main` 分支已经指向了同一个位置。您可以使用带 `-d` 选项的 [git branch](../../../computers/commands/git/git_branch.md) 命令来删除分支。
 
 ```shell
 git branch -d hotfix
@@ -360,7 +360,7 @@ CONFLICT (content): Merge conflict in test02.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-此时 Git 做了合并，但是没有自动地创建一个新的合并提交。Git 会暂停下来，等待您去解决合并产生的冲突。在合并冲突后使用 [git status](../../computers/commands/git/git_status.md) 命令来查看那些因包含合并冲突而处于未合并（`unmerged`）状态的文件。
+此时 Git 做了合并，但是没有自动地创建一个新的合并提交。Git 会暂停下来，等待您去解决合并产生的冲突。在合并冲突后使用 [git status](../../../computers/commands/git/git_status.md) 命令来查看那些因包含合并冲突而处于未合并（`unmerged`）状态的文件。
 
 ```shell
 git status
@@ -391,14 +391,14 @@ test02
 >>>>>>> dev
 ```
 
-这表示 HEAD 所指示的版本（也就是您 `main` 分支所在的位置，因为您在运行 `merge` 命令的时候已经检出到了这个分支）在这个区段的上半部分（`=======` 的上半部分），而 `dev` 分支所指示的版本在 `=======` 的下半部分。为了解决冲突，您必须选择使用由 `=======` 分割的两部分中的一个，或者您也可以自行合并这些内容。例如：您可以通过把这段内容换成下面的样子来解决冲突。
+特殊标识 `<<<<<<< HEAD` 和 `=======` 之间的内容是当前分支（`main`）所更改的内容；特殊标识`=======` 和 `>>>>>>> dev` 之间的内容是所合并的版本分支（`dev`）更改的内容。为了解决冲突，您必须选择使用由 `=======` 分割的两部分中的一个，或者您也可以自行合并这些内容。例如：您可以通过把这段内容换成下面的样子来解决冲突。
 
 ```shell
 test02
 test02test02
 ```
 
-上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
+上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
 
 ```shell
 git add test02.txt
@@ -450,7 +450,7 @@ Deleted branch dev (was ad6950e).
 
 ## 分支管理
 
-[git branch](../../computers/commands/git/git_branch.md) 命令不只是可以创建与删除分支。如果不加任何参数运行它，会得到当前所有分支的一个列表：
+[git branch](../../../computers/commands/git/git_branch.md) 命令不只是可以创建与删除分支。如果不加任何参数运行它，会得到当前所有分支的一个列表：
 
 ```shell
 git branch
@@ -472,7 +472,7 @@ git branch -v
 
 ## 远程分支
 
-远程引用是对远程仓库的引用（指针），包括分支、标签等等。使用 [git ls-remote \<remote\>](../../computers/commands/git/git_ls-remote.md) 命令来获取远程引用的完整列表，或者通过 [git remote show \<remote\>](../../computers/commands/git/git_remote.md) 获得远程分支的更多信息。然而，一个更常见的做法是利用 **远程跟踪分支。**
+远程引用是对远程仓库的引用（指针），包括分支、标签等等。使用 [git ls-remote \<remote\>](../../../computers/commands/git/git_ls-remote.md) 命令来获取远程引用的完整列表，或者通过 [git remote show \<remote\>](../../../computers/commands/git/git_remote.md) 获得远程分支的更多信息。然而，一个更常见的做法是利用 **远程跟踪分支。**
 
 远程跟踪分支是远程分支状态的引用。远程跟踪分支是您无法移动的本地引用。一旦您进行了网络通信，Git 就会为您移动远程跟踪分支以精确反映远程仓库的状态，远程跟踪分支以 `<remote>/<branch>` 的形式命名。
 
@@ -502,13 +502,13 @@ ad6950e modified test02.txt
 7333fb5 (origin/main) 将 test01.txt 文件重命名为 test02.txt，并修改文件内容
 ```
 
-如果要与给定的远程仓库同步数据，运行 [git fetch \<remote\>](../../computers/commands/git/git_fetch.md) 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
+如果要与给定的远程仓库同步数据，运行 [git fetch \<remote\>](../../../computers/commands/git/git_fetch.md) 命令（在本例中为 `git fetch origin`）。这个命令查找 `origin` 是哪一个服务器（在本例中，它是 `/home/sankgao/projects/git_tutorials.git`），从中抓取本地没有的数据，并且更新本地数据库，移动 `origin/main` 指针到更新之后的位置。
 
 ### 推送
 
 当您想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。本地的分支并不会自动与远程仓库同步——您必须显式地推送想要分享的分支。这样，您就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支。运行 `git push <remote> <branch>` 命令，将本地指定分支推送到远程仓库中。
 
-例如：使用 [git push](../../computers/commands/git/git_push.md) 命令，推送本地 `main` 分支到远程仓库的 `origin/main` 分支中。
+例如：使用 [git push](../../../computers/commands/git/git_push.md) 命令，推送本地 `main` 分支到远程仓库的 `origin/main` 分支中。
 
 ```shell
 git push origin main
@@ -625,13 +625,13 @@ branch 'develop' set up to track 'origin/dev'.
 
 ### 拉取
 
-当 [git fetch](../../computers/commands/git/git_fetch.md) 命令从服务器上抓取本地没有的数据时，它并不会修改工作目录中的内容。它只会获取数据然后让您自己合并。而 [git pull](../../computers/commands/git/git_pull.md) 命令在大多数情况下它的含义是一个 [git fetch](../../computers/commands/git/git_fetch.md) 紧接着一个 [git merge](../../computers/commands/git/git_merge.md) 命令。 如果有一个设置好的跟踪分支，不管它是显式地设置还是通过 `clone` 或 `checkout` 命令为您创建的，`git pull` 都会查找当前分支所跟踪的服务器与分支，从服务器上抓取数据然后尝试合并入那个远程分支。
+当 [git fetch](../../../computers/commands/git/git_fetch.md) 命令从服务器上抓取本地没有的数据时，它并不会修改工作目录中的内容。它只会获取数据然后让您自己合并。而 [git pull](../../../computers/commands/git/git_pull.md) 命令在大多数情况下它的含义是一个 [git fetch](../../../computers/commands/git/git_fetch.md) 紧接着一个 [git merge](../../../computers/commands/git/git_merge.md) 命令。 如果有一个设置好的跟踪分支，不管它是显式地设置还是通过 `clone` 或 `checkout` 命令为您创建的，`git pull` 都会查找当前分支所跟踪的服务器与分支，从服务器上抓取数据然后尝试合并入那个远程分支。
 
-由于 [git pull](../../computers/commands/git/git_pull.md) 的魔法经常令人困惑所以通常单独显式地使用 `fetch` 与 `merge` 命令会更好一些。
+由于 [git pull](../../../computers/commands/git/git_pull.md) 的魔法经常令人困惑所以通常单独显式地使用 `fetch` 与 `merge` 命令会更好一些。
 
 ### 删除远程分支
 
-假设您已经通过远程分支做完所有的工作了——也就是说您和您的协作者已经完成了一个特性，并且将其合并到了远程仓库的 `main` 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 [git push](../../computers/commands/git/git_pull.md) 命令来删除一个远程分支。
+假设您已经通过远程分支做完所有的工作了——也就是说您和您的协作者已经完成了一个特性，并且将其合并到了远程仓库的 `main` 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 [git push](../../../computers/commands/git/git_pull.md) 命令来删除一个远程分支。
 
 例如：如果从服务器上删除 `test` 分支，运行下面的命令：
 
@@ -710,7 +710,7 @@ hint: To abort and get back to the state before "git rebase", run "git rebase --
 Could not apply 835d939... modified file all
 ```
 
-提示 `test01.txt` 文件合并冲突，也可以通过 [git status](../../computers/commands/git/git_status.md) 命令查看：
+提示 `test01.txt` 文件合并冲突，也可以通过 [git status](../../../computers/commands/git/git_status.md) 命令查看：
 
 ```shell
 git status
@@ -752,7 +752,7 @@ test01
 test01test01
 ```
 
-上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
+上述的冲突解决方案仅保留了其中一个分支的修改，并且 `<<<<<<<` 、`=======` 和 `>>>>>>>` 这些行被完全删除了。在您解决了所有文件里的冲突之后，对每个文件使用 [git add](../../../computers/commands/git/git_add.md) 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，Git 就会将它们标记为冲突已解决。
 
 将冲突文件 `test01.txt` 暂存，并继续变基：
 

@@ -19,7 +19,7 @@ tag:
 
 ## 查看当前文件状态
 
-使用 [git status](../../computers/commands/git/git_status.md) 命令查看哪些文件处于什么状态。如果在克隆仓库后立即使用此命令，会看到类似这样的输出：
+使用 [git status](../../../computers/commands/git/git_status.md) 命令查看哪些文件处于什么状态。如果在克隆仓库后立即使用此命令，会看到类似这样的输出：
 
 ```shell
 $ git status
@@ -52,7 +52,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ## 跟踪新文件
 
-使用 [git add](../../computers/commands/git/git_add.md) 命令跟踪 `README.md` 文件到暂存区。
+使用 [git add](../../../computers/commands/git/git_add.md) 命令跟踪 `README.md` 文件到暂存区。
 
 ```shell
 git add README.md
@@ -135,7 +135,7 @@ M  test01.txt
 
 ## 查看已暂存和未暂存的修改
 
-虽然 [git status](../../computers/commands/git/git_status.md) 已经通过在相应栏下列出当前做的哪些更新尚未暂存、有哪些更新已暂存并准备好下次提交，但 [git diff](../../computers/commands/git/git_diff.md) 能通过文件补丁的格式更加具体地显示哪些行发生了改变。
+虽然 [git status](../../../computers/commands/git/git_status.md) 已经通过在相应栏下列出当前做的哪些更新尚未暂存、有哪些更新已暂存并准备好下次提交，但 [git diff](../../../computers/commands/git/git_diff.md) 能通过文件补丁的格式更加具体地显示哪些行发生了改变。
 
 再次修改 `README.md` 文件后暂存，然后编辑 `test01.txt` 文件后先不暂存，然后运行 `git status` 命令。
 
@@ -251,7 +251,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-使用 [git log](../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
+使用 [git log](../../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
 
 ```shell
 git log
@@ -326,7 +326,7 @@ git commit -am 'modified test01.txt'
  1 file changed, 1 insertion(+)
 ```
 
-使用 [git log](../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
+使用 [git log](../../../computers/commands/git/git_log.md) 命令查看 Git 历史记录。
 
 ```shell
 git log
@@ -358,7 +358,7 @@ Date:   Thu May 23 10:17:40 2024 +0800
 
 ### 从工作区和暂存区中删除文件
 
-要从 Git 中删除某个文件，就必须要从已跟踪文件清单中删除（确切地说，是从暂存区删除）然后提交。可以用 [git rm](../../computers/commands/git/git_rm.md) 命令，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。例如：
+要从 Git 中删除某个文件，就必须要从已跟踪文件清单中删除（确切地说，是从暂存区删除）然后提交。可以用 [git rm](../../../computers/commands/git/git_rm.md) 命令，并连带从工作目录中删除指定的文件，这样以后就不会出现在未跟踪文件清单中了。例如：
 
 ```shell
 git rm test01.txt
@@ -372,7 +372,7 @@ Changes to be committed:
 
 ### 从工作区中手动删除文件
 
-由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
+由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
 
 ```shell
 git restore -SW .
@@ -416,13 +416,13 @@ Changes to be committed:
 
 ## 移动或重命名文件
 
-由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
+由于上面删除了 `test01.txt` 文件并在已暂存清单中，首先使用 [git restore](../../../computers/commands/git/git_restore.md) 命令同时撤销对工作区和暂存区所有文件的修改。
 
 ```shell
 git restore -SW .
 ```
 
-要在 Git 中对文件改名，使用 [git mv](../../computers/commands/git/git_mv.md) 命令。例如：重命名 `test01.txt` 文件为 `test02.txt` 文件。
+要在 Git 中对文件改名，使用 [git mv](../../../computers/commands/git/git_mv.md) 命令。例如：重命名 `test01.txt` 文件为 `test02.txt` 文件。
 
 ```shell
 git mv test01.txt test02.txt

@@ -10,7 +10,7 @@ tag:
 
 如果使用压缩工具（`tar`、`7zip`、`winzip`、`rar` 等）将工作区文件归档，一不小心会把版本库（`.git` 目录）包含其中，甚至将工作区中的忽略文件、临时文件也包含其中。
 
-Git 提供了一个归档命令 [git archive](../../computers/commands/git/git_archive.md)，可以对任意提交对应的目录树建立归档。
+Git 提供了一个归档命令 [git archive](../../../computers/commands/git/git_archive.md)，可以对任意提交对应的目录树建立归档。
 
 例如：基于最新提交建立归档文件 `latest.zip`。
 

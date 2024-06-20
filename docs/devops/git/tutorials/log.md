@@ -8,7 +8,7 @@ tag:
     - Git
 ---
 
-在提交了若干更新，或者克隆了某个项目之后，如果想回顾提交历史。可以使用 [git log](../../computers/commands/git/git_log.md) 命令。例如：
+在提交了若干更新，或者克隆了某个项目之后，如果想回顾提交历史。可以使用 [git log](../../../computers/commands/git/git_log.md) 命令。例如：
 
 ```shell
 git log
