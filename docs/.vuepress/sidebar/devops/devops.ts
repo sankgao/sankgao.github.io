@@ -15,7 +15,7 @@ export const devops = arraySidebar([
     text: "Git",
     icon: "git",
     link: "git/",
-    prefix: "svn/",
+    prefix: "git/",
     collapsible: true,
     children: [
       "tutorials/",
