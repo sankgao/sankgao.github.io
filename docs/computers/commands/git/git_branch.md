@@ -37,10 +37,16 @@ tag:
 
 ### 创建分支
 
-例如：创建 `test` 分支。
+例如：基于当前头指针（HEAD）指向的提交创建分支，创建 `test` 分支。
 
 ```shell
 git branch test
+```
+
+例如：以特定的提交创建一个新分支并切换。
+
+```shell
+git branch test <commit id>
 ```
 
 ### 列出本地和远程分支
