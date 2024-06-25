@@ -278,3 +278,147 @@ Switched to a new branch 'version2'
 ```
 
 如果在这之后又进行了一次提交，`version2` 分支就会因为这个改动向前移动，此时它就会和 `v2.0.0` 标签稍微有些不同，这时就要当心了。
+
+## 创建带签名的标签
+
+带签名的标签和带描述的标签本质上是一样的，都是在创建标签的时候在 Git 对象库中生成一个 tag 对象，只不过带签名的标签多做了一个工作：为标签对象添加 GnuPG 签名。
+
+创建带签名的标签也非常简单，使用参数 `-s` 或 `-u <key-id>` 即可。还可以使用 `-m <msg>` 参数直接在命令行中提供标签的描述。创建带签名标签的一个前提是需要安装 GnuPG，并且建立相应的公钥/私钥对。
+
+GnuPG 可以在各个平台上安装。
+
+- 在 Debian/Ubuntu 上安装，执行：
+
+    ```shell
+    sudo aptitude install -y gnupg
+    ```
+
+- 在 ReadHat/CentOS 上安装，执行：
+
+    ```shell
+    sudo yum install -y gnupg
+    ```
+
+- 在 Mac OS X 上，可以通过 Homebrew 安装：
+
+    ```shell
+    brew install gnupg
+    ```
+
+- 在 Windows 上可以通过 cygwin 安装 gnupg
+
+直接创建一个带签名的标签 `v3.0.0` 很可能会失败：
+
+```shell
+git tag -s -m "GPG-signed tag.." v3.0.0
+
+error: gpg failed to sign the data:
+gpg: directory '/home/sankgao/.gnupg' created
+gpg: keybox '/home/sankgao/.gnupg/pubring.kbx' created
+gpg: skipped "zhangsan <zhangsan@example.com>": No secret key
+[GNUPG:] INV_SGNR 9 zhangsan <zhangsan@example.com>
+[GNUPG:] FAILURE sign 17
+gpg: signing failed: No secret key
+
+error: unable to sign the tag
+The tag message has been left in .git/TAG_EDITMSG
+```
+
+之所以签名失败，是因为找不到签名可用的公钥/私钥对。使用下面的命令可以查看当前可用的 GnuPG公钥。
+
+```shell
+gpg --list-keys
+
+gpg: /home/sankgao/.gnupg/trustdb.gpg: trustdb created
+```
+
+可以看到 GnuPG 的公钥链（pubring）中没有一个用户的公钥。
+
+实际上在创建带签名的标签时，并非一定要使用邮件名匹配的公钥/私钥对进行签名，使用 `-u <key-id>` 参数调用就可以用指定的公钥/私钥对进行签名。但如果没有可用的公钥/私钥对，或者希望使用提交者本人的公钥/私钥对进行签名，就需要为提交者 `zhangsan <zhangsan@example.com>` 创建对应的公钥/私钥对。
+
+使用命令 `gpg --gen-key` 来创建公钥/私钥对。
+
+::: details 创建公钥/私钥对
+
+```shell
+gpg --gen-key
+
+gpg (GnuPG) 2.2.20; Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Note: Use "gpg --full-generate-key" for a full featured key generation dialog.
+
+GnuPG needs to construct a user ID to identify your key.
+
+Real name: zhangsan
+Email address: zhangsan@example.com
+You selected this USER-ID:
+    "zhangsan <zhangsan@example.com>"
+
+Change (N)ame, (E)mail, or (O)kay/(Q)uit? o
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: key DEE43202523B1835 marked as ultimately trusted
+gpg: directory '/home/sankgao/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/home/sankgao/.gnupg/openpgp-revocs.d/152CC437FCE6EC964E67BD33DEE43202523B1835.rev'
+public and secret key created and signed.
+
+pub   rsa2048 2024-06-25 [SC] [expires: 2026-06-25]
+      152CC437FCE6EC964E67BD33DEE43202523B1835
+uid                      zhangsan <zhangsan@example.com>
+sub   rsa2048 2024-06-25 [E] [expires: 2026-06-25]
+```
+
+:::
+
+按照提示一步一步操作即可。需要注意的有：
+
+- 在创建公钥/私钥对时，会提示输入用户名，输入 `zhangsan`，提示输入邮件地址，输入 `zhangsan@example.com`，其他可以采用默认值
+- 在提示输入密码时，为了简单起见可以直接按下回车，即使用空口令
+
+创建完毕，再查看一下公钥链：
+
+```shell
+gpg --list-keys
+
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: next trustdb check due at 2026-06-25
+/home/sankgao/.gnupg/pubring.kbx
+---------------------------------
+pub   rsa2048 2024-06-25 [SC] [expires: 2026-06-25]
+      152CC437FCE6EC964E67BD33DEE43202523B1835
+uid           [ultimate] zhangsan <zhangsan@example.com>
+sub   rsa2048 2024-06-25 [E] [expires: 2026-06-25]
+```
+
+很显然用户 zhangsan 的公钥私钥对已经建立。现在就可以直接使用 `-s` 参数来创建带签名标签了。
+
+```shell
+git tag -s -m "GPG-signed tag.." v3.0.0
+```
+
+验证标签签名的有效性：
+
+```shell
+git tag -v v3.0.0
+
+object 435f67c85d077d2ea31b4b0a3ea17ca0118194a5
+type commit
+tag v3.0.0
+tagger zhangsan <zhangsan@example.com> 1719298048 +0800
+
+GPG-signed tag..
+gpg: Signature made Tue 25 Jun 2024 02:47:28 PM CST
+gpg:                using RSA key 152CC437FCE6EC964E67BD33DEE43202523B1835
+gpg:                issuer "zhangsan@example.com"
+gpg: Good signature from "zhangsan <zhangsan@example.com>" [ultimate]
+```
