@@ -180,6 +180,8 @@ tag:
 - [QuickSo-快点搜](https://quickso.cn/)
 - [趣盘搜](https://pan.funletu.com/#/)
 - [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
+- [秘塔AI搜索](https://metaso.cn/)
+- [AI天工](https://www.tiangong.cn/)
 
 ## 网站
 
@@ -278,6 +280,7 @@ tag:
 - [w3cschool](https://www.w3cschool.cn/)
 - [ES6 入门教程 - 阮一峰](https://es6.ruanyifeng.com/)
 - [Git 权威指南](https://www.worldhello.net/gotgit/)
+- [编程导航](https://www.code-nav.cn/)
 - [极客对极客](https://www.geeksforgeeks.org/)
 - [极客教程](https://geek-docs.com/)
 - [编程自学之路](https://www.r2coding.com/#/)
