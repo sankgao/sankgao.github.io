@@ -7,9 +7,6 @@ export const devops = arraySidebar([
     link: "svn/",
     prefix: "svn/",
     collapsible: true,
-    children: [
-      "svn.md",
-    ],
   },
   {
     text: "Git",
