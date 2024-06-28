@@ -1,15 +1,12 @@
 ---
-title: SVN
-icon: svn
+title: 安装
+icon: install
 date: 2023-07-28
+order: 2
 category: DevOps
 tag:
     - SVN
 ---
-
-## 简介
-
-**[SVN（Subversion）](https://subversion.apache.org/)** 是一个自由开源的版本控制系统。SVN 采用客户端/服务器体系，项目的各种版本都存储在服务器上，程序开发人员首先将从服务器上获得一份项目的最新版本，并将其复制到本机，然后在此基础上，每个开发人员可以在自己的客户端进行独立的开发工作，并且可以随时将新代码提交给服务器。当然也可以通过更新操作获取服务器上的最新代码，从而保持与其他开发者所使用版本的一致性。
 
 ## VisualSVN
 
@@ -295,56 +292,65 @@ tag:
 
 4. 重新打开 `VS Code`，SVN 配置生效
 
-## SVN 命令
+## Ubuntu 安装
 
-1. 将仓库 `checkout` 到本地
+大多数 GNU/Linux 发行版系统自带了 Subversion，所以它很有可能已经安装在您的系统上了。可以使用下面命令检查是否安装：
 
-    `svn checkout <URL>`。简写：`svn co <URL>`
-    
-    - **URL**：仓库地址
+```shell
+svn --version
+```
 
-2. 添加新文件或文件夹
+如果 Subversion 客户端没有安装，命令将报告 `svn` 命令找不到的错误。
 
-    `svn add <file/dir>`。
+```shell
+svn --version
 
-3. 提交到 SVN 服务器
+bash: svn: command not found
+```
 
-    `svn commit -m "messages"`。简写：`svn ci -m "messages"`
+可以使用以下命令进行安装。
 
-    - **messages**：描述信息
+```shell
+sudo yum install -y subversion
+```
 
-4. 删除文件或文件夹
+安装成功之后，执行 `svn --version` 命令，查看 SVN 版本。
 
-    `svn delete <file/dir>`。
+```shell
+svn --version
 
-5. 更新仓库
+svn, version 1.9.7 (r1800392)
+   compiled May 21 2022, 07:24:25 on x86_64-pc-linux-gnu
+```
 
-    `svn update`。
+## CentOS 安装
 
-6. 查看 log 日志
+大多数 GNU/Linux 发行版系统自带了 Subversion，所以它很有可能已经安装在您的系统上了。可以使用下面命令检查是否安装：
 
-    `svn log <file/dir>` 显示文件或文件夹所有修改记录。
+```shell
+svn --version
+```
 
-    `svn log -v <file/dir>` 显示文件或文件夹所有修改记录详细信息。
+如果 Subversion 客户端没有安装，命令将报告 `svn` 命令找不到的错误。
 
-    `svn log -v -r <num> <file/dir>` 显示文件或文件夹某个版本的修改记录详细信息。
+```shell
+svn --version
 
-    - **num**：版本号
+The program 'svn' is currently not installed. You can install it by typing:
+apt-get install subversion
+```
 
-7. 查看文件或文件夹详细信息
+可以使用以下命令进行安装。
 
-    `svn info <file/dir>`。
+```shell
+sudo apt install -y subversion
+```
 
-8. 比较差异
+安装成功之后，执行 `svn --version` 命令，查看 SVN 版本。
 
-    `svn diff -r <num> <file/dir>` 比较本地文件或文件夹和某个版本之间的差异。
+```shell
+svn --version
 
-    `svn diff -r <num:num> <file/dir>` 比较本地文件或文件夹和某两个版本之间的差异。
-
-    - `num`：版本号
-
-9. 查看仓库下的文件和目录列表
-
-    `svn list <URL>`。
-
-    - **URL**：仓库地址
+svn, version 1.10.2 (r1835932)
+   compiled May 12 2022, 15:12:27 on x86_64-redhat-linux-gnu
+```

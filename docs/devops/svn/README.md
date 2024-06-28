@@ -11,6 +11,4 @@ tag:
 
 <!-- more -->
 
-## SVN
-
-- [SVN](./svn.md)
+<AutoCatalog />
