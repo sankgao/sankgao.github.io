@@ -110,6 +110,6 @@ Git 中使用这种哈希值的情况很多，您将经常看到这种哈希值�
 - [Git 官网 Pro Git 书籍教程](https://git-scm.com/book/zh/v2)
 - [Git 官网参考手册](https://git-scm.com/docs)
 - [Git 官网下载](https://git-scm.com/downloads)
-- [GitHub](https://github.com/git/git)
+- [Git GitHub 地址](https://github.com/git/git)
 - [在线交互式 Git 分支可视化教程及练习](https://learngitbranching.js.org/)
 - 《Git 权威指南》 [GitHub 地址](https://github.com/gotgit/gotgit/tree/master)
