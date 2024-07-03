@@ -26,8 +26,8 @@ export const devops = arraySidebar([
     prefix: "gerrit/",
     collapsible: true,
     children: [
-      "tutorial/",
-      "problem/",
+      "tutorials/",
+      "problems/",
     ],
   },
   {

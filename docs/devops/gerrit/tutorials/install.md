@@ -2,6 +2,7 @@
 title: 安装
 icon: install
 date: 2024-03-19
+order: 1
 category: DevOps
 tag:
     - Gerrit
