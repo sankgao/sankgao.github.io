@@ -25,6 +25,7 @@ tag:
 |  `-C <commit>, --reuse-message=<commit>`  |  取一个现有的提交对象，并在创建提交时重新使用日志信息和作者信息（包括时间戳）  |
 |  `-c <commit>, --reedit-message=<commit>`  |  和 `-C` 一样，但用 `-c` 会调用编辑器，这样用户可以进一步编辑提交信息  |
 |  `--allow-empty`  |  生成空提交  |
+|  `--no-edit`  |  不改变提交信息  |
 |  `-q, --quiet`  |  不显示输出内容  |
 |  `-v, --verbose`  |  将 `git diff` 输出呈现在编辑器中  |
 
