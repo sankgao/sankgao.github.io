@@ -212,6 +212,7 @@ tag:
 - [趣导航](https://qssily.com/)
 - [小呆导航](https://www.webjike.com/index.html)
 - [书签导航](https://nav.xybin.top/)
+- [一糖导航](https://iitang.com/)
 - [192link](https://www.192link.com/)
 - [简法主页](http://www.jianfast.com/)
 - [KIM 主页](https://kim.plopco.com/)
@@ -258,6 +259,8 @@ tag:
 - [53 报刊 - 报纸在线阅读系统，无论国内和国外](http://www.53bk.com/Baokan/)
 - [The Book of Secret Knowledge - 作者收集的一系列提升效率的清单，包含手册、备忘录、博客、cli/web 工具等](https://github.com/trimstray/the-book-of-secret-knowledge)
 - [TeHub - 专业的技术知识社区 - T站](https://tehub.com/)
+- [允梦网络 - 提供绿色软件、游戏源码、软件源码、技术教程](https://www.mengdo.cn/)
+- [互联网档案馆](https://web.archive.org/)
 
 ## 教程
 
@@ -611,6 +614,9 @@ tag:
 - [七号影视](www.num7.xyz)
 - [嘶哩嘶哩(S站) - 在线动漫番剧资源](https://www.silisilifun.com)
 - [APP 影院](https://app.movie)
+- 艾兔影院
+    - [地址1](https://atym.app/)
+    - [地址2](http://172.247.189.146:8001/)
 - [电视眼](http://www.tvyan.com/)
 - [阿里云盘 - 西游记英文版](https://www.aliyundrive.com/s/xoG4N1zBxHB)
 - [阿里云盘 - 四大名著](https://www.aliyundrive.com/s/K7eMj7Kt8Rq)
