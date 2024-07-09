@@ -11,10 +11,10 @@ export const zhSidebarConfig = sidebar({
   
   // 侧边栏配置
   "/computers/": "structure",
-  "/computers/commands/": commands,
-  "/computers/commands/linux/": "structure",
-  "/computers/commands/git/": "structure",
-  "/computers/commands/docker/": "structure",
+  "/computers/commands/": "structure",
+  // "/computers/commands/linux/": "structure",
+  // "/computers/commands/git/": "structure",
+  // "/computers/commands/docker/": "structure",
   "/computers/productmanage/": productmanage,
   "/computers/framework/": framework,
   
