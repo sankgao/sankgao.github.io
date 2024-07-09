@@ -10,7 +10,7 @@ export const zhSidebarConfig = sidebar({
   // "/": ["", "note/", "code/", "software/", "about/"],
   
   // 侧边栏配置
-  "/computers/": computers,
+  "/computers/": "structure",
   "/computers/commands/": commands,
   "/computers/commands/linux/": "structure",
   "/computers/commands/git/": "structure",
