@@ -160,6 +160,10 @@ tag:
 
     提供 Windows 10、Win11、Office 2019 注册、Office 2021 激活，最新版软件下载。
 
+- [风君子博客](https://www.fengjun.wang/)
+
+    关注 IT 技术分享的科技博客。
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
@@ -261,6 +265,7 @@ tag:
 - [TeHub - 专业的技术知识社区 - T站](https://tehub.com/)
 - [允梦网络 - 提供绿色软件、游戏源码、软件源码、技术教程](https://www.mengdo.cn/)
 - [互联网档案馆](https://web.archive.org/)
+- [系统极客 - 专注操作系统及软件使用技能](https://www.sysgeek.cn/)
 
 ## 教程
 
@@ -442,6 +447,9 @@ tag:
 - [菜鸟工具](https://c.runoob.com/)
 - [网页在线工具汇总](https://iui.su/1492/)
 - [Quicker 您的指尖工具箱](https://getquicker.net/)
+- [免费在线流程图思维导图](https://www.processon.com/)
+- [在线工具集 - PDF 百宝箱](https://pdf.fj.cn/)
+- [在线工具集 - CDKM](https://cdkm.com/cn/)
 - [在线工具集 - PS](https://www.qtool.net/)
 - [在线工具集](https://lwebapp.com/zh/tools)
 - [在线工具 - 云间](http://www.shulijp.com/index.html)
@@ -573,6 +581,7 @@ tag:
 - [Statcounter 全球统计使用份额](https://gs.statcounter.com/)
 - [云萌 Windows10+ 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 - [Replace Google CDN - 将 Google CDN 替换为国内镜像，加速网站访问速度。](https://chromewebstore.google.com/detail/replace-google-cdn/kpampjmfiopfpkkepbllemkibefkiice)
+- [兔小乖字帖](http://www.tuxiaoguai.com/)
 
 ## 图片
 
