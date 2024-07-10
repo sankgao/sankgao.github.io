@@ -1,7 +1,9 @@
 ---
-title: Git 命令集
+title: Git
 icon: git
 date: 2024-04-26
+dir:
+    link: true
 category: About
 tag:
     - 命令

@@ -1,7 +1,9 @@
 ---
-title: Linux 命令集
+title: Linux
 icon: linux
 date: 2024-04-26
+dir:
+    link: true
 category: About
 tag:
     - 命令

@@ -1,7 +1,9 @@
 ---
-title: CMD 命令集
+title: CMD
 icon: command
 date: 2024-07-09
+dir:
+    link: true
 category: About
 tag:
     - 命令
