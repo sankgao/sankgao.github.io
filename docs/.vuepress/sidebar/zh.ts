@@ -1,7 +1,5 @@
 import { sidebar } from "vuepress-theme-hope";
-// import { computers, commands, productmanage, framework } from "./computers/index.ts";
 import { computers } from "./computers.ts";
-// import { commands } from "./commands.ts";
 import { productmanage } from "./productmanage.ts";
 import { framework } from "./framework.ts";
 import { devops, jenkins, docker } from "./devops/index.ts";
@@ -17,11 +15,6 @@ export const zhSidebarConfig = sidebar({
   "/computers/": computers,
 
   "/commands/": "structure",
-  // "/commands/cmd/": "structure",
-  // "/commands/powershell/": "structure",
-  // "/commands/git/": "structure",
-  // "/commands/linux/": "structure",
-  // "/commands/docker/": "structure",
 
   "/productmanage/": productmanage,
   
