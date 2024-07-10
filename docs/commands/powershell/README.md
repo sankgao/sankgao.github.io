@@ -2,11 +2,11 @@
 title: PowerShell
 icon: command
 date: 2024-07-09
+order: 2
 dir:
     link: true
-category: About
+category: 命令集
 tag:
-    - 命令
     - PowerShell
 ---
 

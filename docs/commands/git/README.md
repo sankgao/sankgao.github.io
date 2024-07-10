@@ -2,11 +2,11 @@
 title: Git
 icon: git
 date: 2024-04-26
+order: 3
 dir:
     link: true
-category: About
+category: 命令集
 tag:
-    - 命令
     - Git
 ---
 

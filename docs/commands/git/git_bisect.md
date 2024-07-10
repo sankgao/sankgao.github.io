@@ -2,9 +2,8 @@
 title: git bisect
 icon: command
 date: 2024-06-19
-category: About
+category: 命令集
 tag:
-    - 命令
     - Git
 ---
 

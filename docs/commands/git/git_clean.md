@@ -2,9 +2,8 @@
 title: git clean
 icon: command
 date: 2024-05-20
-category: About
+category: 命令集
 tag:
-    - 命令
     - Git
 ---
 

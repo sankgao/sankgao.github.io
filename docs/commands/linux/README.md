@@ -2,11 +2,11 @@
 title: Linux
 icon: linux
 date: 2024-04-26
+order: 4
 dir:
     link: true
-category: About
+category: 命令集
 tag:
-    - 命令
     - Linux
 ---
 
