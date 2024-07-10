@@ -15,7 +15,7 @@ export const zhSidebarConfig = sidebar({
   
   // 侧边栏配置
   "/computers/": computers,
-  
+
   "/commands/": commands,
   "/commands/cmd/": "structure",
   "/commands/powershell/": "structure",
@@ -26,12 +26,6 @@ export const zhSidebarConfig = sidebar({
   "/productmanage/": productmanage,
   
   "/framework/": framework,
-  // "/computers/commands/": "structure",
-  // "/computers/commands/linux/": "structure",
-  // "/computers/commands/git/": "structure",
-  // "/computers/commands/docker/": "structure",
-  // "/computers/productmanage/": productmanage,
-  // "/computers/framework/": framework,
   
   "/devops/": devops,
   "/devops/svn/": "structure",
