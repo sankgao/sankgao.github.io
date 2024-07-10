@@ -2,8 +2,8 @@
 title: PowerShell
 icon: command
 date: 2024-07-09
-order: 2
 dir:
+    order: 2
     link: true
 category: 命令集
 tag:

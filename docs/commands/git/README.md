@@ -2,8 +2,8 @@
 title: Git
 icon: git
 date: 2024-04-26
-order: 3
 dir:
+    order: 3
     link: true
 category: 命令集
 tag:

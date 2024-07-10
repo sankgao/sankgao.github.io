@@ -2,8 +2,8 @@
 title: CMD
 icon: command
 date: 2024-07-09
-order: 1
 dir:
+    order: 1
     link: true
 category: 命令集
 tag:

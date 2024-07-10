@@ -2,8 +2,8 @@
 title: Linux
 icon: linux
 date: 2024-04-26
-order: 4
 dir:
+    order: 4
     link: true
 category: 命令集
 tag:
