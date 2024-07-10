@@ -11,8 +11,4 @@ tag:
 
 <!-- more -->
 
-## Windows
-
-- [网页提示此站点不安全](./site_not_secure.md)
-- [加载 GitHub 问题](./github_loading.md)
-- [exe 和 msi 区别](./exe_msi_diff.md)
+<AutoCatalog />
