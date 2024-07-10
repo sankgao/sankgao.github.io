@@ -1,6 +1,10 @@
 import { sidebar } from "vuepress-theme-hope";
-import { computers, commands, productmanage, framework } from "./computers/index.ts";
-import { devops, svn, gerrit, jenkins, gitlab, docker } from "./devops/index.ts";
+// import { computers, commands, productmanage, framework } from "./computers/index.ts";
+import { computers } from "./computers.ts";
+import { commands } from "./commands.ts";
+import { productmanage } from "./productmanage.ts";
+import { framework } from "./framework.ts";
+import { devops, jenkins, docker } from "./devops/index.ts";
 import { languages, html5, css3, python3, c } from "./languages/index.ts";
 import { others } from "./others/index.ts";
 import { about } from "./about.ts";
@@ -10,13 +14,24 @@ export const zhSidebarConfig = sidebar({
   // "/": ["", "note/", "code/", "software/", "about/"],
   
   // 侧边栏配置
-  "/computers/": "structure",
-  "/computers/commands/": "structure",
+  "/computers/": computers,
+  
+  "/commands/": commands,
+  "/commands/cmd/": "structure",
+  "/commands/powershell/": "structure",
+  "/commands/git/": "structure",
+  "/commands/linux/": "structure",
+  "/commands/docker/": "structure",
+
+  "/productmanage/": productmanage,
+  
+  "/framework/": framework,
+  // "/computers/commands/": "structure",
   // "/computers/commands/linux/": "structure",
   // "/computers/commands/git/": "structure",
   // "/computers/commands/docker/": "structure",
-  "/computers/productmanage/": productmanage,
-  "/computers/framework/": framework,
+  // "/computers/productmanage/": productmanage,
+  // "/computers/framework/": framework,
   
   "/devops/": devops,
   "/devops/svn/": "structure",
