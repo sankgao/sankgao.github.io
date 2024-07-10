@@ -13,6 +13,7 @@ export const zhSidebarConfig = sidebar({
   
   // 侧边栏配置
   "/computers/": computers,
+  "/computers/windows/": "structure",
 
   "/commands/": "structure",
 

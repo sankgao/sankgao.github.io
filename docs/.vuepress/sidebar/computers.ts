@@ -14,7 +14,8 @@ export const computers = arraySidebar([
       "data_structure",
     ],
   },
-  {
+  "windows/",
+  /* {
     text: "Windows",
     icon: "windows",
     link: "windows/",
@@ -25,7 +26,7 @@ export const computers = arraySidebar([
       "github_loading",
       "exe_msi_diff",
     ],
-  },
+  }, */
   {
     text: "Linux",
     icon: "linux",
