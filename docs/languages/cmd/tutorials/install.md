@@ -2,6 +2,7 @@
 title: 安装
 icon: install
 date: 2024-07-11
+order: 1
 category: 编程语言
 tag:
     - CMD

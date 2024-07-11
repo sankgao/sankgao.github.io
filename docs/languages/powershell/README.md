@@ -2,6 +2,9 @@
 title: PowerShell
 icon: command
 date: 2024-07-11
+dir:
+    order: 2
+    link: true
 category: 编程语言
 tag:
     - PowerShell

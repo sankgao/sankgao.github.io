@@ -2,6 +2,9 @@
 title: CMD
 icon: command
 date: 2024-07-11
+dir:
+    order: 1
+    link: true
 category: 编程语言
 tag:
     - CMD
