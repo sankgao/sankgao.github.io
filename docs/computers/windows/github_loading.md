@@ -2,7 +2,7 @@
 title: 加载 GitHub 问题
 icon: problem
 date: 2023-10-09
-category: Computer
+category: 计算机
 tag:
     - Windows
 ---

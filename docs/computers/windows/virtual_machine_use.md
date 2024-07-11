@@ -3,7 +3,7 @@ title: 该虚拟机似乎正在使用中
 icon: problem
 date: 2024-05-13
 category: 
-    - Computer
+    - 计算机
     - 问题
 tag:
     - Windows

@@ -2,7 +2,7 @@
 title: Windows
 icon: windows
 date: 2023-08-08
-category: Computer
+category: 计算机
 tag:
     - Windows
 ---

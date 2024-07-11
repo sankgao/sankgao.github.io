@@ -2,7 +2,7 @@
 title: exe 和 msi 区别
 icon: application
 date: 2024-03-14
-category: Computer
+category: 计算机
 tag:
     - Windows
 ---
