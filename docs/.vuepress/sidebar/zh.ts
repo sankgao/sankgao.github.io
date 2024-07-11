@@ -30,6 +30,8 @@ export const zhSidebarConfig = sidebar({
   "/devops/docker": docker,
   
   "/languages/": languages,
+  "/languages/cmd/": "structure",
+  "/languages/powershell/": "structure",
   "/languages/html5/": html5,
   "/languages/css3/": css3,
   "/languages/python3/": python3,

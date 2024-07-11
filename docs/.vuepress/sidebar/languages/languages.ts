@@ -2,6 +2,28 @@ import { arraySidebar } from "vuepress-theme-hope";
 
 export const languages = arraySidebar([
   {
+    text: "CMD",
+    icon: "command",
+    link: "cmd/",
+    prefix: "cmd/",
+    collapsible: true,
+    children: [
+      "tutorials/",
+      "problems/",
+    ],
+  },
+  {
+    text: "PowerShell",
+    icon: "command",
+    link: "powershell/",
+    prefix: "powershell/",
+    collapsible: true,
+    children: [
+      "tutorials/",
+      "problems/",
+    ],
+  },
+  {
     text: "HTML5",
     icon: "html5",
     link: "html5/",
