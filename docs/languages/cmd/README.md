@@ -21,9 +21,10 @@ Windows 操作系统提供了两种主要的命令行界面：**命令 Shell** �
 
 这两个命令行工具都是 Windows 系统内置的，用户可以根据需要选择使用哪一个。PowerShell 通常被认为是更现代、更强大的工具，适合需要执行高级任务的用户，而命令 Shell 则更适合那些只需要执行基本命令的用户。可以在 PowerShell 中运行 cmd 命令，但在 cmd 中不能运行 PowerShell 命令。
 
-批处理文件用 `.bat` 或 `.cmd` 为后缀名，`.bat` 是老版本的后缀，`.cmd` 是新版本的后缀。
+批处理文件用 `.bat` 或 `.cmd` 为后缀名，`.bat` 是早期版本的 Windows 操作系统（如：Windows 95、Windows XP）中使用的批处理格式；`.cmd` 是 Windows NT 系列操作系统（如：Windows 7、Windows 10）中使用的批处理格式。
 
 ## 相关文档
 
 - [CMD 官网](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)
-- [CMD 教程](https://steve-jansen.github.io/guides/windows-batch-scripting/index.html)
+- [Windows 批处理脚本指南](https://steve-jansen.github.io/guides/windows-batch-scripting/index.html)
+- [Windows 批处理学习](https://blog.51cto.com/akudy/category2.html)
