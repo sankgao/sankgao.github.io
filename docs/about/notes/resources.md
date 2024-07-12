@@ -266,6 +266,8 @@ tag:
 - [允梦网络 - 提供绿色软件、游戏源码、软件源码、技术教程](https://www.mengdo.cn/)
 - [互联网档案馆](https://web.archive.org/)
 - [系统极客 - 专注操作系统及软件使用技能](https://www.sysgeek.cn/)
+- [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
+- [村雨遥的好物周刊](https://cunyu1943.github.io/weekly/)
 
 ## 教程
 
@@ -298,10 +300,13 @@ tag:
 - [FAUN](https://faun.dev/c/)
 - [代码学院](https://www.codecademy.com/learn)
 - [freeCodeCamp 免费学习编程](https://www.freecodecamp.org/chinese/learn)
+- [LearnKu 终身编程者的知识社区](https://learnku.com/)
+- [Node.js 中文资料导航](https://github.com/youyudehexie/node123)
 - [C 语言中文网](http://c.biancheng.net/)
 - [C/C++ 入门、进阶学习](https://github.com/GrindGold/CppGuide)
 - [Real Python 教程](https://realpython.com/)
 - [Python 技术站](https://pythonjishu.com/)
+- [Python 学习之路](https://learnku.com/docs/python-learning)
 - [zhang_derek Python 教程](https://www.cnblogs.com/derek1184405959/p/8579428.html)
 - [python3-cookbook](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 - [在线学习 Python、ChatGPT、SQL、Power BI](https://www.datacamp.com/)
@@ -420,6 +425,7 @@ tag:
 - [金庸小说集](https://www.jinyongshuwu.com/)
 - [四大名著](http://www.sdmzh.com.cn/)
 - [值得一看的技术类书籍列表 - ](https://doocs.github.io/technical-books/#/)
+- [学习资源合集，主要包含大数据、Java、Python、JavaScript、PHP、网络、数据库、Linux 电子书等资源](https://github.com/wususu/effective-resourses)
 
 ## 工具
 
@@ -582,6 +588,9 @@ tag:
 - [云萌 Windows10+ 激活工具](https://cmwtat.cloudmoe.com/cn.html)
 - [Replace Google CDN - 将 Google CDN 替换为国内镜像，加速网站访问速度。](https://chromewebstore.google.com/detail/replace-google-cdn/kpampjmfiopfpkkepbllemkibefkiice)
 - [兔小乖字帖](http://www.tuxiaoguai.com/)
+- [在线管理自己的书籍](https://github.com/Librum-Reader/Librum)
+- [输入你想要的域名，即可实现搜索，注册，比价](https://namebeta.com/)
+- [丁香园用药助手-靠谱的临床诊疗顾问](https://drugs.dxy.cn/pc)
 
 ## 图片
 
