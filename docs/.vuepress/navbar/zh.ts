@@ -34,6 +34,8 @@ export const zhNavbarConfig = navbar([
     prefix: "/languages/",
     children: [
       { text: "编程语言", icon: "backstage", link: "", activeMatch: "^/languages/$" },
+      { text: "CMD", icon: "command", link: "cmd/" },
+      { text: "PowerShell", icon: "command", link: "powershell/" },
       { text: "HTML5", icon: "html5", link: "html5/" },
       { text: "CSS3", icon: "css3", link: "css3/" },
       { text: "Python3", icon: "python", link: "python3/" },
