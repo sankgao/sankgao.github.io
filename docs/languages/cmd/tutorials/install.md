@@ -8,13 +8,11 @@ tag:
     - CMD
 ---
 
-使用 <kbd>Win</kbd> + <kbd>R</kbd> 键打开 *运行* 窗口，输入 `cmd` 打开命令提示符。
-
-![命令提示符](../assets/cmd.jpg)
+- [官网 Windows 终端程序教程](https://learn.microsoft.com/zh-cn/windows/terminal/)
 
 ## 安装终端
 
-Windows 10 系统中默认的命令提示符（cmd）如下：
+使用 <kbd>Win</kbd> + <kbd>R</kbd> 键打开 *运行* 窗口，输入 `cmd` 打开命令提示符。Windows 10 系统中默认的命令提示符（cmd）如下：
 
 ![命令提示符](../assets/cmd.jpg)
 
@@ -26,13 +24,13 @@ Windows 10 系统中默认的命令提示符（cmd）如下：
 Windows 11 系统默认已经安装 *Windows Terminal* 程序。
 :::
 
-安装后，在 *运行* 窗口中输入 `cmd` 打开依旧是系统默认的命令提示符。在 *开始* 菜单中找到 *终端* 程序，这个才是刚才安装的 *Windows Terminal* 程序。
+安装后在 *运行* 窗口中输入 `cmd` 打开依旧是系统默认的命令提示符。在 *开始* 菜单中找到 *终端* 程序，这个才是刚才安装的 *Windows Terminal* 程序。
 
 ![开始菜单](../assets/menu.jpg)
 
-点击打开 *终端* 程序。
+点击打开 *终端* 程序，默认打开的是 PowerShell 界面。
 
-![Windows 终端](../assets/terminal.jpg)
+![Windows 终端](../assets/powershell.jpg)
 
 ## 配置默认终端
 
@@ -40,6 +38,10 @@ Windows 11 系统默认已经安装 *Windows Terminal* 程序。
 
 ![设置](../assets/set01.jpg)
 
-将默认终端应用程序设置为 *Windows 终端* 并保存，这样以后在 *运行* 窗口中输入 `cmd` 打开的就是 *Windows 终端* 程序。
+将默认终端应用程序设置为 *Windows 终端* 并保存。
 
-![Windows 终端](../assets/set02.jpg)
+![设置](../assets/set02.jpg)
+
+以后在 *运行* 窗口中输入 `cmd` 打开的就是 *Windows 终端* 程序，而且是 CMD 界面。
+
+![Windows 终端](../assets/terminal.jpg)
