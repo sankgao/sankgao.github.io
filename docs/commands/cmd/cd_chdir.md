@@ -9,7 +9,7 @@ tag:
 
 ## 描述
 
-`cd` 或 `chdir` 用于显示当前目录的名称或更改当前目录。如果仅与驱动器号一起使用（例如：cd C:），cd 将显示指定驱动器中当前目录的名称。如果使用时不带参数，cd 将显示当前驱动器和目录。
+`cd` 或 `chdir` 用于显示当前目录的名称或更改当前目录。如果仅与磁盘号一起使用（例如：`cd C:`），cd 将显示指定磁盘中当前目录的名称。如果使用时不带参数，cd 将显示当前磁盘和目录。
 
 ## 选项
 
@@ -20,35 +20,43 @@ tag:
 
 ## 示例
 
-例如：显示当前驱动器和目录。
+### 只显示当前磁盘和目录
 
-```shell
+例如：显示当前磁盘和目录。
+
+```cmd
 C:\Users\user>cd
 C:\Users\user
 
 C:\Users\user>
 ```
 
+### 切换磁盘
+
 例如：从 C 盘切换到 E 盘。
 
-```shell
+```cmd
 C:\Users\user>e:
 
 E:\>
 ```
 
+### 显示指定磁盘中当前目录的名称
+
 例如：显示指定磁盘中当前目录的名称。
 
-```shell
+```cmd
 E:\>cd c:
 C:\Users\user
 
 E:\>
 ```
 
+### 切换到指定目录
+
 例如：切换到 `E:\test\test 03` 目录中。
 
-```shell
+```cmd
 E:\>cd "test\test 03"
 
 E:\test\test 03>
@@ -56,7 +64,7 @@ E:\test\test 03>
 
 Windows 系统不会将空格视为分隔符，因此路径中可以包含不带引号的空格。例如：`cd test\test 03`。
 
-```shell
+```cmd
 E:\>cd test\test 03
 
 E:\test\test 03>
@@ -64,7 +72,7 @@ E:\test\test 03>
 
 例如：切换到上一级目录。
 
-```shell
+```cmd
 E:\test\test 03>cd ..
 
 E:\test>
@@ -72,7 +80,7 @@ E:\test>
 
 例如：切换到磁盘的根目录。
 
-```shell
+```cmd
 E:\test>cd \
 
 E:\>
