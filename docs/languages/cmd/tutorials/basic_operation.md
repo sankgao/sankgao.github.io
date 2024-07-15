@@ -197,7 +197,7 @@ E:\test>
     E:\test>
     ```
 
-- 使用 [copy con](../../../commands/cmd/copy.md) 命令创建文件，此命令可以直接输入文件内容，输入完后执行 <kbd>Ctrl</kbd> + <kbd>Z</kdb> 命令，再按 <kbd>Enter</kbd> 回车键结束。
+- 使用 [copy con](../../../commands/cmd/copy.md) 命令创建文件，此命令可以直接输入文件内容，输入完后执行 <kbd>Ctrl</kbd> + <kbd>Z</kbd> 命令，再按 <kbd>Enter</kbd> 回车键结束
 
     ```cmd
     E:\test>copy con file03.txt
