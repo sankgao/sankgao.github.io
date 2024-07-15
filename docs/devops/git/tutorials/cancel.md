@@ -71,7 +71,7 @@ Date:   Thu May 23 16:28:25 2024 +0800
     modified test01.txt
 ```
 
-现在您有了一个新的提交，它有一个新的 `commit id`，而旧的提交则保留在仓库的引用日志中，可以通过 [git reflog](../../../computers/commands/git/git_reflog.md) 命令查看。
+现在您有了一个新的提交，它有一个新的 `commit id`，而旧的提交则保留在仓库的引用日志中，可以通过 [git reflog](../../../commands/git/git_reflog.md) 命令查看。
 
 ::: tip
 `--amend` 选项可以和 `-m` 选项一起使用，这样就不用在文本编辑器中修改提交信息。例如：
@@ -84,7 +84,7 @@ git commit --amend -m "将 test01.txt 文件重命名为 test02.txt，并修改�
 
 ## 撤销已修改的文件
 
-如果工作区的文件被修改了但还没有提交到暂存区，但又不想保存工作区的修改，可以使用 [git restore](../../../computers/commands/git/git_restore.md) 命令撤销对指定文件的修改。
+如果工作区的文件被修改了但还没有提交到暂存区，但又不想保存工作区的修改，可以使用 [git restore](../../../commands/git/git_restore.md) 命令撤销对指定文件的修改。
 
 例如：修改 `test02.txt` 文件，并删除 `README.md` 文件。
 
@@ -108,7 +108,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-根据提示，可以使用 [git restore](../../../computers/commands/git/git_restore.md) 命令撤销对指定文件的修改。例如：撤销对 `README.md` 文件的修改。
+根据提示，可以使用 [git restore](../../../commands/git/git_restore.md) 命令撤销对指定文件的修改。例如：撤销对 `README.md` 文件的修改。
 
 ```shell
 git restore README.md
@@ -129,7 +129,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 ::: tip
-[git restore](../../../computers/commands/git/git_restore.md) 这个命令在 Git V2.23 版本以后被引入，如果在 Git V2.23 版本之前，则使用 [git checkout](../../../computers/commands/git/git_checkout.md) 命令撤销已修改的文件。例如：
+[git restore](../../../commands/git/git_restore.md) 这个命令在 Git V2.23 版本以后被引入，如果在 Git V2.23 版本之前，则使用 [git checkout](../../../commands/git/git_checkout.md) 命令撤销已修改的文件。例如：
 
 ```shell
 git checkout -- README.md
@@ -141,7 +141,7 @@ git checkout -- README.md
 
 ## 撤销已暂存的文件
 
-如果工作区的文件还没修改完就被提交到暂存区，可以使用 [git restore](../../../computers/commands/git/git_restore.md) 命令撤销对指定文件的暂存。
+如果工作区的文件还没修改完就被提交到暂存区，可以使用 [git restore](../../../commands/git/git_restore.md) 命令撤销对指定文件的暂存。
 
 ### 依次撤销
 
@@ -164,7 +164,7 @@ Changes to be committed:
         modified:   test02.txt
 ```
 
-根据提示，可以使用 [git restore](../../../computers/commands/git/git_restore.md) 命令的 `--staged` 选项撤销对指定文件的暂存。例如：撤销对 `test02.txt` 文件的暂存。
+根据提示，可以使用 [git restore](../../../commands/git/git_restore.md) 命令的 `--staged` 选项撤销对指定文件的暂存。例如：撤销对 `test02.txt` 文件的暂存。
 
 ```shell
 git restore --staged test02.txt
@@ -185,7 +185,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
 ::: tip
-[git restore](../../../computers/commands/git/git_restore.md) 这个命令在 Git V2.23 版本以后被引入，如果在 Git V2.23 版本之前，则使用 [git reset](../../../computers/commands/git/git_reset.md) 命令撤销已暂存的文件。例如：
+[git restore](../../../commands/git/git_restore.md) 这个命令在 Git V2.23 版本以后被引入，如果在 Git V2.23 版本之前，则使用 [git reset](../../../commands/git/git_reset.md) 命令撤销已暂存的文件。例如：
 
 ```shell
 git reset HEAD test02.txt

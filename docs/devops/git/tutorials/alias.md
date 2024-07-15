@@ -8,7 +8,7 @@ tag:
     - Git
 ---
 
-Git 别名是一种自定义命令的方式，可以简化常用的 Git 命令，提高开发效率。您可以使用 [git config](../../../computers/commands/git/git_config.md) 命令来设置别名，或者在 Git 配置文件中直接编辑。
+Git 别名是一种自定义命令的方式，可以简化常用的 Git 命令，提高开发效率。您可以使用 [git config](../../../commands/git/git_config.md) 命令来设置别名，或者在 Git 配置文件中直接编辑。
 
 ```shell
 git config --global alias.co checkout

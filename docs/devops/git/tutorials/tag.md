@@ -44,7 +44,7 @@ git tag -a v1.0.1 -m 'Version 1.0.1'
 
 ## 查看标签
 
-在 Git 中列出已有的标签非常简单，只需要输入 [git tag](../../../computers/commands/git/git_tag.md) 命令（可带上可选的 `-l, --list` 选项）。例如：查看当前仓库标签列表。
+在 Git 中列出已有的标签非常简单，只需要输入 [git tag](../../../commands/git/git_tag.md) 命令（可带上可选的 `-l, --list` 选项）。例如：查看当前仓库标签列表。
 
 ```shell
 git tag
@@ -63,7 +63,7 @@ git tag -l '*1'
 v1.0.1
 ```
 
-通过使用 [git show](../../../computers/commands/git/git_show.md) 命令可以看到标签信息和与之对应的提交信息。
+通过使用 [git show](../../../commands/git/git_show.md) 命令可以看到标签信息和与之对应的提交信息。
 
 - 查看轻量标签，不会看到额外的标签信息，只显示提交信息
 
@@ -152,7 +152,7 @@ Date:   Tue May 28 09:56:52 2024 +0800
 
 ## 共享标签
 
-默认情况下，[git push](../../../computers/commands/git/git_push.md) 命令并不会传送标签到远程仓库服务器上。在创建完标签后您必须显式地用 `git push origin <tagname>` 命令推送标签到共享服务器上。
+默认情况下，[git push](../../../commands/git/git_push.md) 命令并不会传送标签到远程仓库服务器上。在创建完标签后您必须显式地用 `git push origin <tagname>` 命令推送标签到共享服务器上。
 
 例如：指定推送 `v1.0` 标签。
 
