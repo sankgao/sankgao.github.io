@@ -19,6 +19,59 @@ tag:
 - 命令行的执行快捷键是 <kbd>Enter</kbd> 键，强制终止的快捷键是 <kbd>Ctrl</kbd> + <kbd>C</kbd> 键
 :::
 
+## 常用命令
+
+### 文件夹管理
+
+|  命令  |  描述  |
+|  :----:  |  :----  |
+|  [cd 或 chdir](../../../commands/cmd/cd_chdir.md)  |  显示当前目录名或改变当前目录  |
+|  [md 或 mkdir](../../../commands/cmd/md_mkdir.md)  |  创建目录  |
+|  [rd 或 rmdir](../../../commands/cmd/rd_rmdir.md)  |  删除一个目录  |
+|  [dir](../../../commands/cmd/dir.md)  |  显示目录中的文件和子目录列表  |
+|  [tree](../../../commands/cmd/tree.md)  |  以图形显示驱动器或路径的文件夹结构  |
+|  [path](../../..//commands/cmd/path.md)  |  为可执行文件显示或设置一个搜索路径  |
+|  [xcopy](../../../commands/cmd/xcopy.md)  |  复制文件和目录树  |
+
+### 文件管理
+
+|  命令  |  描述  |
+|  :----:  |  :----  |
+|  [type](../../../commands/cmd/type.md)  |  显示文本文件的内容  |
+|  [copy](../../../commands/cmd/copy.md)  |  将一份或多份文件复制到另一个位置  |
+|  [del 或 erase](../../../commands/cmd/del_erase.md)  |  删除一个或数个文件  |
+|  [move](../../../commands/cmd/move.md)  |  移动文件并重命名文件和目录。（Windows XP Home Edition 中没有）|
+|  [ren 或 rename](../../../commands/cmd/ren_rename.md)  |  重命名文件  |
+|  `replace`  |  替换文件  |
+|  `attrib`  |  显示或更改文件属性  |
+|  `find`  |  搜索字符串  |
+|  `fc`  |  比较两个文件或两个文件集并显示它们之间的不同  |
+
+### 网络命令
+
+|  命令  |  描述  |
+|  :----:  |  :----  |
+|  [ping](../../../commands/cmd/ping.md)  |  进行网络连接测试、名称解析  |
+|  `ftp`  |  文件传输  |
+|  `net`  |  网络命令集及用户管理  |
+|  `telnet`  |  远程登陆  |
+|  [ipconfig](../../../commands/cmd/ipconfig.md)  |  显示、修改 TCP/IP 设置  |
+|  `msg`  |  给用户发送消息  |
+|  `arp`  |  显示、修改局域网的 IP 地址-物理地址映射列表  |
+
+### 系统管理
+
+|  命令  |  描述  |
+|  :----:  |  :----  |
+|  `at`  |  安排在特定日期和时间运行命令和程序  |
+|  [shutdown](../../../commands/cmd/shutdown.md)  |  立即或定时关机或重启  |
+|  `tskill`  |  结束进程  |
+|  `taskkill`  |  结束进程（比 `tskill` 高级，但 Win XP Home 版中无该命令）  |
+|  `tasklist`  |  显示进程列表（Windows XP Home Edition 中没有）  |
+|  `sc`  |  系统服务设置与控制  |
+|  `reg`  |  注册表控制台工具  |
+|  `powercfg`  |  控制系统上的电源设置  |
+
 ## 切换磁盘
 
 默认刚打开的 `cmd` 所在目录是当前用户的家目录，当前用户的家目录在 C 盘中。
@@ -69,9 +122,13 @@ E:\test>cd ..
 E:\>
 ```
 
-在资源管理器中，定位到要切换的目录中，在路径中输入 `cmd` 或在目录空白地方，右键选择 *在终端中打开（T）*，也可以切换到指定目录。
+在资源管理器中，定位到要切换的目录中，在路径中输入 `cmd`。
 
-![资源管理器中](../assets/change_dir.jpg)
+![资源管理器中](../assets/change_dir01.jpg)
+
+或在目录空白地方，右键选择 *在终端中打开（T）*，也可以切换到指定目录。
+
+![资源管理器中](../assets/change_dir02.jpg)
 
 ## 查看目录列表
 
