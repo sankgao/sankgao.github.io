@@ -305,6 +305,7 @@ tag:
 - [Node.js 中文资料导航](https://github.com/youyudehexie/node123)
 - [C 语言中文网](http://c.biancheng.net/)
 - [C/C++ 入门、进阶学习](https://github.com/GrindGold/CppGuide)
+- [PHP 中文网](https://www.php.cn/)
 - [Real Python 教程](https://realpython.com/)
 - [Python 技术站](https://pythonjishu.com/)
 - [Python 学习之路](https://learnku.com/docs/python-learning)
