@@ -20,7 +20,9 @@ Windows 中快捷键如下表所示，也可以查看 [官网](https://learn.mic
 |  :----:  |  :----  |
 |  <kbd>Ctrl</kbd> + <kbd>C</kbd>  |  复制  |
 |  <kbd>Ctrl</kbd> + <kbd>V</kbd>  |  粘贴  |
+|  <kbd>Ctrl</kbd> + <kbd>X</kbd>  |  剪切  |
 |  <kbd>Win</kbd> + <kbd>U</kbd>  |  打开辅助工具管理窗口  |
+|  <kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd>  |  自定义区域截图    |
 |  <kbd>Alt</kbd> + <kbd>F4</kbd>  |  关闭应用程序；在桌面使用可以弹出关机对话框  |
 |  <kbd>Win</kbd>  |  打开开始屏幕  |
 |  <kbd>Ctrl</kbd> + <kbd>Esc</kbd>  |  打开开始屏幕  |
