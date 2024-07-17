@@ -42,17 +42,18 @@ tag:
 |  [del 或 erase](../../../commands/cmd/del_erase.md)  |  删除一个或数个文件  |
 |  [move](../../../commands/cmd/move.md)  |  移动文件并重命名文件和目录。（Windows XP Home Edition 中没有）|
 |  [ren 或 rename](../../../commands/cmd/ren_rename.md)  |  重命名文件  |
-|  `replace`  |  替换文件  |
-|  `attrib`  |  显示或更改文件属性  |
-|  `find`  |  搜索字符串  |
-|  `fc`  |  比较两个文件或两个文件集并显示它们之间的不同  |
+|  [replace](../../../commands/cmd/replace.md)  |  替换文件  |
+|  [attrib](../../../commands/cmd/attrib.md)  |  显示或更改文件属性  |
+|  [find](../../../commands/cmd/find.md)  |  搜索字符串  |
+|  [findstr](../../../commands/cmd/findstr.md)  |  搜索文件中的文本模式  |
+|  [fc](../../../commands/cmd/fc.md)  |  比较两个文件或两个文件集并显示它们之间的不同  |
 
 ### 网络命令
 
 |  命令  |  描述  |
 |  :----:  |  :----  |
 |  [ping](../../../commands/cmd/ping.md)  |  进行网络连接测试、名称解析  |
-|  `ftp`  |  文件传输  |
+|  [ftp](../../../commands/cmd/ftp.md)  |  文件传输  |
 |  `net`  |  网络命令集及用户管理  |
 |  `telnet`  |  远程登陆  |
 |  [ipconfig](../../../commands/cmd/ipconfig.md)  |  显示、修改 TCP/IP 设置  |
