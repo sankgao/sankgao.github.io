@@ -72,7 +72,7 @@ E:\test>
 
 ### 搜索结果存储到其它文件
 
-例如：列出要在文本文件中搜索的确切文件，请使用文件 `stringlist.txt` 中的搜索条件，搜索在 `filelist.txt` 中列出的文件，然后将结果存储在文件 `results.out` 中。
+例如：列出要在文本文件中搜索的确切文件，请使用文件 `stringlist.txt` 中的搜索条件，搜索在 `filelist.txt` 中列出的文件，然后将结果存储在文件 `results.txt` 中。
 
 ```cmd
 E:\test>type stringlist.txt
@@ -80,7 +80,7 @@ hello
 test
 E:\test>type filelist.txt
 hello.txt
-E:\test>findstr /g:stringlist.txt /f:filelist.txt > results.out
+E:\test>findstr /g:stringlist.txt /f:filelist.txt > results.txt
 
 E:\test>type results.txt
 hello.txt:hello world
