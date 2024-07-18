@@ -43,6 +43,7 @@ tag:
 |  `fsmgmt.msc`  |  打开共享文件夹管理器窗口  |
 |  `gpedit.msc`  |  打开组策略窗口  |
 |  `inetcpl.cpl`  |  打开 Internet 属性窗口  |
+|  `inetmgr.exe`  |  打开 IIS 管理器窗口  |
 |  `logoff`  |  注销命令  |
 |  `lusrmgr.msc`  |  打开本地用户和组窗口  |
 |  `notepad.exe`  |  打开记事本程序  |
