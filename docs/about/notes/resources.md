@@ -269,6 +269,7 @@ tag:
 - [系统极客 - 专注操作系统及软件使用技能](https://www.sysgeek.cn/)
 - [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
 - [村雨遥的好物周刊](https://cunyu1943.github.io/weekly/)
+- [探索 3000 多个免费 UI 元素：CSS 和 Tailwind](https://uiverse.io/)
 
 ## 教程
 
