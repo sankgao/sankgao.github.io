@@ -961,9 +961,9 @@ E:\test>
 
 ### rename
 
-重命名远程文件。
+重命名 FTP 远程服务器指定文件。
 
-例如：将远程 `hello01.txt` 文件重命名为 `hello02.txt`。
+例如：将远程服务器根目录下的 `file.txt` 文件重命名为 `file01.txt`。
 
 查看远程服务器根目录：
 
@@ -984,155 +984,137 @@ ftp: 收到 250 字节，用时 0.01秒 35.71千字节/秒。
 ftp> 
 ```
 
-将远程 `hello01.txt` 文件重命名为 `hello02.txt`。
+将远程服务器根目录下的 `file.txt` 文件重命名为 `file01.txt`：
 
 ```cmd
-ftp> rename hello01.txt hello02.txt
+ftp> rename file.txt file01.txt
 350 Requested file action pending further information.
 250 RNTO command successful.
 ftp> 
 ```
 
-再次查看 FTP 当前目录，`hello01.txt` 文件已重命名为 `hello02.txt`：
+再次查看远程服务器根目录，`file.txt` 文件已重命名为 `file01.txt`：
 
 ```cmd
+ftp> pwd
+257 "/" is current directory.
+ftp>
 ftp> dir
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-07-15-24  10:50AM       <DIR>          a
-07-17-24  02:24PM                    9 filelist.txt
-07-18-24  02:26PM                   66 hello.txt
-07-17-24  02:43PM                   23 hello02.txt
-07-17-24  02:25PM                   66 results.txt
-07-17-24  02:23PM                   11 stringlist.txt
-07-18-24  04:54PM       <DIR>          test01
-07-18-24  04:23PM       <DIR>          test02
+07-19-24  06:07PM                  146 dirlist01.txt
+07-19-24  04:46PM                    4 file01.txt
+07-19-24  06:55PM                   15 hello.txt
+07-19-24  06:33PM       <DIR>          test01
+07-19-24  06:44PM       <DIR>          test02
 226 Transfer complete.
-ftp: 收到 401 字节，用时 0.01秒 44.56千字节/秒。
+ftp: 收到 252 字节，用时 0.01秒 36.00千字节/秒。
 ftp> 
 ```
 
 ### delete
 
-::: tip
-如果 `delete` 命令后跟多个文件，也只会删除第一个文件，其它文件不会删除。
-:::
+删除 FTP 远程服务器中的指定文件。
 
-例如：删除 FTP 远程服务器的 `test01` 目录中 `test02.txt` 文件。
+- 一次只能删除一个文件
+- 如果删除多个文件（如：`delete a b c`），只会删除第一个文件（`a`），其它文件（`b 和 c`）不会删除
 
-查看 FTP 远程服务器的 `test01` 目录：
+例如：删除远程服务器 `test02` 工作目录下的 `dirlist.txt` 文件。
+
+查看远程服务器 `test02` 工作目录：
 
 ```cmd
-ftp> cd test01
-250 CWD command successful.
-ftp> ls
+ftp> dir test02
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-test01.txt
-test02
-test02.txt
+07-19-24  06:44PM                  146 dirlist.txt
+07-19-24  06:44PM                   35 lslist.txt
 226 Transfer complete.
-ftp: 收到 35 字节，用时 0.00秒 35.00千字节/秒。
+ftp: 收到 106 字节，用时 0.00秒 35.33千字节/秒。
 ftp> 
 ```
 
-删除 FTP 远程服务器的 `test01` 目录中 `test02.txt` 文件：
+删除远程服务器 `test02` 工作目录下的 `dirlist.txt` 文件：
 
 ```cmd
-ftp>
-ftp> delete test02.txt
+ftp> delete test02/dirlist.txt
 250 DELE command successful.
 ftp> 
 ```
 
-再次查看 FTP 远程服务器的 `test01` 目录，`test02.txt` 文件已删除：
+再次查看远程服务器 `test02` 工作目录，`dirlist.txt` 文件已删除：
 
 ```cmd
-ftp> ls
+ftp> dir test02
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-test01.txt
-test02
+07-19-24  06:44PM                   35 lslist.txt
 226 Transfer complete.
-ftp: 收到 23 字节，用时 0.00秒 23.00千字节/秒。
+ftp: 收到 54 字节，用时 0.00秒 54.00千字节/秒。
 ftp> 
 ```
 
 ### mdelete
 
-例如：删除 FTP 远程服务器 `test01` 目录中 `dirlist.txt` 和 `lslist.txt` 文件。
+删除 FTP 远程服务器中的指定文件。
 
-查看远程 `test01` 目录：
+- 可以一次删除多个文件
+- 可以指定远程工作目录（如：`mdelete test01/`），指定远程工作目录时，可以对目录中的文件依次选择是否要删除
+- 不能指定远程工作目录下的某一个文件（如：`mdelete test01/dirlist.txt`）
+
+例如：删除远程服务器 `test01` 工作目录下的 `dirlist.txt` 和 `test.txt` 文件和 `test02` 工作目录下的 `lslist.txt` 文件。
+
+查看远程 `test01` 和 `test02` 工作目录：
 
 ```cmd
-ftp> dir test01
+ftp> mdir test01/ test02/ -
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-07-18-24  03:22PM                  351 dirlist.txt
-07-18-24  03:22PM                   20 lslist.txt
-07-18-24  10:30AM                   22 test01.txt
-07-16-24  06:22PM       <DIR>          test02
+07-19-24  06:33PM                  146 dirlist.txt
+07-19-24  06:33PM                    4 test.txt
+07-19-24  04:46PM                    6 test01.txt
+07-19-24  04:47PM                    6 test02.txt
 226 Transfer complete.
-ftp: 收到 204 字节，用时 0.01秒 40.80千字节/秒。
-ftp> 
-```
-
-先切换到远程 `test01` 目录中：
-
-```cmd
-ftp> cd test01
-250 CWD command successful.
-ftp> 
-ftp> pwd
-257 "/test01" is current directory.
-ftp> 
-```
-
-删除 FTP 远程服务器的 `dirlist.txt` 和 `lslist.txt` 文件：
-
-```cmd
-ftp> mdelete dirlist.txt lslist.txt
-200 Type set to A.
-mdelete dirlist.txt? y
-250 DELE command successful.
-mdelete lslist.txt? y
-250 DELE command successful.
-ftp> 
-```
-
-再次查看远程 `test01` 目录：
-
-```cmd
-ftp> dir ./
+ftp: 收到 206 字节，用时 0.01秒 34.33千字节/秒。
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-07-18-24  10:30AM                   22 test01.txt
-07-16-24  06:22PM       <DIR>          test02
+07-19-24  06:44PM                   35 lslist.txt
 226 Transfer complete.
-ftp: 收到 101 字节，用时 0.00秒 33.67千字节/秒。
+ftp: 收到 54 字节，用时 0.00秒 27.00千字节/秒。
 ftp> 
 ```
 
-::: warning
-如果使用 `mdelete` 命令删除其它目录下的文件，则会报以下错误：
+删除远程服务器 `test01` 工作目录下的 `dirlist.txt` 和 `test.txt` 文件和 `test02` 工作目录下的 `lslist.txt` 文件：
 
 ```cmd
-ftp> mdelete test01\dirlist.txt test01\lslist.txt
+ftp> mdelete test01/ test02/
 200 Type set to A.
-mdelete dirlist.txt? y
-550-The system cannot find the file specified.
- Win32 error:   The system cannot find the file specified.
- Error details: File system returned an error.
-550 End
-mdelete lslist.txt? y
-550-The system cannot find the file specified.
- Win32 error:   The system cannot find the file specified.
- Error details: File system returned an error.
-550 End
+mdelete test01/dirlist.txt? y
+250 DELE command successful.
+mdelete test01/test.txt? y
+250 DELE command successful.
+mdelete test01/test01.txt? n
+mdelete test01/test02.txt? n
+mdelete test02/lslist.txt? y
+250 DELE command successful.
 ftp> 
 ```
 
-:::
+再次查看远程 `test01` 和 `test02` 工作目录，文件都已删除：
+
+```cmd
+ftp> mdir test01/ test02/ -
+200 PORT command successful.
+125 Data connection already open; Transfer starting.
+07-19-24  04:46PM                    6 test01.txt
+07-19-24  04:47PM                    6 test02.txt
+226 Transfer complete.
+ftp: 收到 105 字节，用时 0.00秒 26.25千字节/秒。
+200 PORT command successful.
+125 Data connection already open; Transfer starting.
+226 Transfer complete.
+ftp> 
+```
 
 ### rmdir
 
