@@ -54,11 +54,11 @@ tag:
 |  :----:  |  :----  |
 |  [ping](../../../commands/cmd/ping.md)  |  进行网络连接测试、名称解析  |
 |  [ftp](../../../commands/cmd/ftp.md)  |  文件传输  |
-|  `net`  |  网络命令集及用户管理  |
-|  `telnet`  |  远程登陆  |
+|  [net](../../../commands/cmd/net.md)  |  网络命令集及用户管理  |
+|  [telnet](../../../commands/cmd/telnet.md)  |  远程登陆  |
 |  [ipconfig](../../../commands/cmd/ipconfig.md)  |  显示、修改 TCP/IP 设置  |
-|  `msg`  |  给用户发送消息  |
-|  `arp`  |  显示、修改局域网的 IP 地址-物理地址映射列表  |
+|  [msg](../../../commands/cmd/msg.md)  |  给用户发送消息  |
+|  [arp](../../../commands/cmd/arp.md)  |  显示、修改局域网的 IP 地址-物理地址映射列表  |
 
 ### 系统管理
 

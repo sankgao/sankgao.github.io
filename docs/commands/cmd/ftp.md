@@ -21,46 +21,50 @@ tag:
 |  选项  |  描述  |
 |  :----:  |  :----  |
 |  `-a`  |  指定在绑定 FTP 数据连接时可以使用任何本地接口  |
-|  `-i`  |  关闭多文件传输过程中的交互式提示  |
-|  `-n`  |  以匿名身份登录到 FTP 远程服务器  |
+|  `-d`  |  启用调试，显示在 FTP 客户端和 FTP 服务器之间传递的所有命令  |
+|  `-i`  |  在多个文件传输过程中禁用交互式提示  |
+|  `-n`  |  禁止在初始连接时自动登录  |
 |  `-v`  |  禁止显示远程服务器响应  |
-|  `-v`  |  禁止显示远程服务器响应  |
-|  `-s:filename`  |  指定包含 `ftp` 命令的文本文件；命令在 FTP 服务启动后自动运行  |
+|  `-s:filename`  |  指定包含 `ftp` 命令的文本文件，命令在 FTP 服务启动后自动运行  |
+|  `-A`  |  以匿名身份登录到 FTP 服务器  |
+|  `<host>`  |  指定要连接的 FTP 服务器的计算机名称、IP 地址或 IPv6 地址。如果指定了主机名或地址，则必须是该行的最后一个参数  |
 |  `/?`  |  在命令提示符下显示帮助  |
 
 ## 命令
 
+在 FTP 环境中使用的命令如下表所示：
+
 |  命令  |  描述  |
 |  :----:  |  :----  |
-|  [append](#append)  |  将本地文件内容追加到远程服务器指定文件中  |
-|  [bye 或 quit](#bye-或-quit)  |  结束远程服务器上的 FTP 会话，然后退出  |
-|  [cd](#cd)  |  更改远程服务器上的工作目录  |
-|  [close](#close)  |  结束与远程服务器的 FTP 会话并保持在 `ftp>` 提示符处  |
-|  [debug](#debug)  |  切换调试模式。默认情况下，调试模式处于关闭状态。如果 “调试模式”处于打开状态，您将看到每个命令都发送到远程服务器，前面带 `>` 字符  |
-|  [delete](#delete)  |  删除远程服务器上的文件，一次只能删除一个文件  |
-|  [dir](#dir)  |  显示 FTP 远程服务器指定目录中文件和子目录的详细列表，只能指定一个目录  |
-|  [disconnect](#disconnect)  |  断开与远程服务器的连接，并留在 `ftp>` 提示符  |
-|  [get 或 recv](#get-或-recv)  |  使用当前文件传输类型将远程文件复制到本地计算机，一次只能复制一个文件  |
-|  [lcd](#lcd)  |  更改本地计算机上的工作目录。默认情况下，工作目录是启动 `ftp` 命令的目录  |
-|  [ls](#ls)  |  显示 FTP 远程服务器指定目录中文件和子目录的缩略列表  |
-|  [mdelete](#mdelete)  |  删除远程服务器上的文件。可以一次删除多个文件，只能删除当前目录下的文件  |
-|  [mdir](#mdir)  |  显示 FTP 远程服务器指定目录中文件和子目录的详细列表。可以一次显示一个或多个目录，如果不将结果保存到本地文件中，必须以连字符（`-`）结尾  |
-|  [mget](#mget)  |  使用当前文件传输类型将远程文件复制到本地计算机。可以一次复制一个或多个文件，但需要提前切换到要复制的本地目录中，且不能修改文件名  |
-|  [mkdir](#mkdir)  |  在 FTP 远程服务器中创建目录，一次只能创建一个目录  |
-|  [mls](#mls)  |  显示 FTP 远程服务器指定目录中文件和子目录的缩略列表。可以一次显示一个或多个目录，如果不将结果保存到本地文件中，必须以连字符（`-`）结尾  |
-|  [mput](#mput)  |  使用当前文件传输类型将本地文件复制到远程服务器。可以一次复制一个或多个文件，但需要提前切换到要复制的远程服务器目录中，且不能修改文件名  |
-|  [open](#open)  |  连接到指定的 FTP 远程服务器  |
-|  [prompt](#prompt)  |  打开和关闭 “提示” 模式。默认情况下，“提示” 模式处于打开状态。如果打开 “提示” 模式，`ftp` 命令会在传输多个文件期间提示，允许您有选择性地检索或存储文件  |
-|  [put 或 send](#put-或-send)  |  使用当前文件传输类型将本地文件复制到远程服务器。一次只能复制一个文件  |
-|  [pwd](#pwd)  |  显示当前远程服务器目录  |
-|  [remotehelp](#remotehelp)  |  显示远程命令的帮助  |
-|  [rename](#rename)  |  重命名远程文件  |
-|  [rmdir](#rmdir)  |  删除远程目录，只能删除空目录  |
-|  [status](#status)  |  显示 FTP 连接的当前状态  |
+|  [append](#append)  |  将本地文件内容追加到 FTP 远程服务器指定文件中  |
+|  [bye 或 quit](#bye-或-quit)  |  结束 FTP 远程服务器上的会话，然后退出 FTP 子环境  |
+|  [cd](#cd)  |  更改 FTP 远程服务器中的工作目录  |
+|  [close](#close)  |  结束与 FTP 远程服务器的会话并保持在 `ftp>` 提示符处  |
+|  [debug](#debug)  |  切换调试模式  |
+|  [delete](#delete)  |  删除 FTP 远程服务器中的指定文件  |
+|  [dir](#dir)  |  显示 FTP 远程服务器指定工作目录中文件和子目录的详细列表  |
+|  [disconnect](#disconnect)  |  断开与 FTP 远程服务器的连接并留在 `ftp>` 提示符处  |
+|  [get 或 recv](#get-或-recv)  |  使用当前文件传输类型将 FTP 远程服务器中的指定文件复制到本地指定工作目录中  |
+|  [lcd](#lcd)  |  更改本地工作目录  |
+|  [ls](#ls)  |  显示 FTP 远程服务器指定工作目录中文件和子目录的缩略列表  |
+|  [mdelete](#mdelete)  |  删除 FTP 远程服务器中的指定文件  |
+|  [mdir](#mdir)  |  显示 FTP 远程服务器指定工作目录中文件和子目录的详细列表  |
+|  [mget](#mget)  |  使用当前文件传输类型将 FTP 远程服务器中的指定文件复制到本地指定工作目录中  |
+|  [mkdir](#mkdir)  |  在 FTP 远程服务器中创建工作目录  |
+|  [mls](#mls)  |  显示 FTP 远程服务器指定工作目录中文件和子目录的缩略列表  |
+|  [mput](#mput)  |  使用当前文件传输类型将本地工作目录中指定文件复制到 FTP 远程服务器指定工作目录中  |
+|  [open](#open)  |  连接到指定 FTP 远程服务器  |
+|  [prompt](#prompt)  |  打开和关闭 “提示” 模式  |
+|  [put 或 send](#put-或-send)  |  使用当前文件传输类型将本地工作目录中指定文件复制到 FTP 远程服务器指定工作目录中  |
+|  [pwd](#pwd)  |  显示当前 FTP 远程服务器工作目录  |
+|  [remotehelp](#remotehelp)  |  显示远程命令列表及帮助信息  |
+|  [rename](#rename)  |  重命名 FTP 远程服务器指定文件  |
+|  [rmdir](#rmdir)  |  删除 FTP 远程服务器中指定工作目录，只能删除空工作目录  |
+|  [status](#status)  |  显示 FTP 远程服务器连接的当前状态  |
 |  [type](#type)  |  设置或显示文件传输类型  |
 |  [user](#user)  |  指定远程服务器的用户及密码  |
-|  [verbose](#verbose)  |  切换详细模式。默认情况下，详细模式处于打开状态。启用详细模式时，将显示所有 `ftp` 命令响应。当文件传输完成时，还会显示有关传输效率的统计信息  |
-|  [help](#help)  |  显示 `ftp` 命令的帮助  |
+|  [verbose](#verbose)  |  切换详细模式  |
+|  [help](#help)  |  显示 `ftp` 命令列表及帮助信息  |
 
 ## 示例
 
@@ -113,6 +117,8 @@ ftp>
 
 ### user
 
+指定 FTP 远程服务器的用户及密码。
+
 例如：如果已经连接到远程服务器，但还没有登录，可以使用 `user` 命令进行登录。
 
 ```cmd
@@ -141,7 +147,9 @@ ftp>
 
 ### status
 
-例如：显示 ftp 连接的当前状态。
+显示 FTP 远程服务器连接的当前状态。
+
+例如：显示当前远程服务器连接状态。
 
 ```cmd
 ftp> status
@@ -153,7 +161,7 @@ ftp>
 
 ### type
 
-ftp 命令支持 ASCII（默认）和二进制（`binary`）映像文件传输类型：
+设置或显示文件传输类型。`ftp` 命令支持 ASCII（默认）和二进制（`binary`）映像文件传输类型：
 
 - 建议在传输文本文件时使用 ASCII。在 ASCII 模式下，将执行与网络标准字符集之间的字符转换。例如：根据目标操作系统，在必要时转换行尾字符
 - 建议在传输可执行文件时使用二进制。在二进制模式下，文件以单字节为单位传输
@@ -1118,60 +1126,28 @@ ftp>
 
 ### rmdir
 
-例如：删除远程 `test03` 空目录。
+删除 FTP 远程服务器中指定工作目录，只能删除空工作目录。
 
-创建 `test03` 目录：
-
-```cmd
-ftp> mkdir test03
-257 "test03" directory created.
-ftp> 
-```
-
-查看 FTP 当前目录：
+例如：删除远程服务器根目录下的 `test02` 空工作目录。
 
 ```cmd
-ftp> dir
-200 PORT command successful.
-125 Data connection already open; Transfer starting.
-07-15-24  10:50AM       <DIR>          a
-07-17-24  02:24PM                    9 filelist.txt
-07-18-24  02:26PM                   66 hello.txt
-07-17-24  02:43PM                   23 hello02.txt
-07-17-24  02:25PM                   66 results.txt
-07-17-24  02:23PM                   11 stringlist.txt
-07-18-24  04:54PM       <DIR>          test01
-07-18-24  04:23PM       <DIR>          test02
-07-18-24  05:37PM       <DIR>          test03
-226 Transfer complete.
-ftp: 收到 448 字节，用时 0.01秒 37.33千字节/秒。
-ftp> 
-```
-
-删除远程 `test03` 空目录：
-
-```cmd
-ftp> rmdir test03
+ftp> rmdir test02
 250 XRMD command successful.
 ftp> 
 ```
 
-再次查看 FTP 当前目录：
+再次查看远程服务器根目录：
 
 ```cmd
 ftp> dir
 200 PORT command successful.
 125 Data connection already open; Transfer starting.
-07-15-24  10:50AM       <DIR>          a
-07-17-24  02:24PM                    9 filelist.txt
-07-18-24  02:26PM                   66 hello.txt
-07-17-24  02:43PM                   23 hello02.txt
-07-17-24  02:25PM                   66 results.txt
-07-17-24  02:23PM                   11 stringlist.txt
-07-18-24  04:54PM       <DIR>          test01
-07-18-24  04:23PM       <DIR>          test02
+07-19-24  06:07PM                  146 dirlist01.txt
+07-19-24  04:46PM                    4 file01.txt
+07-19-24  06:55PM                   15 hello.txt
+07-19-24  07:28PM       <DIR>          test01
 226 Transfer complete.
-ftp: 收到 448 字节，用时 0.01秒 37.33千字节/秒。
+ftp: 收到 205 字节，用时 0.00秒 51.25千字节/秒。
 ftp> 
 ```
 
@@ -1179,17 +1155,19 @@ ftp>
 如果使用 `rmdir` 命令删除的不是远程空目录，则会报以下错误：
 
 ```cmd
-ftp> rmdir test02
+ftp> rmdir test01
 550-The directory is not empty.
  Win32 error:   The directory is not empty.
  Error details: File system returned an error.
 550 End
-ftp>
+ftp> 
 ```
 
 :::
 
 ### close
+
+结束与 FTP 远程服务器的会话并保持在 `ftp>` 提示符处。
 
 例如：结束与远程服务器的 ftp 会话并保持在 `ftp>` 提示符处。
 
@@ -1201,6 +1179,8 @@ ftp>
 
 ### disconnect
 
+断开与 FTP 远程服务器的连接并留在 `ftp>` 提示符处。
+
 例如：断开与远程服务器的连接，并留在 `ftp>` 提示符。
 
 ```cmd
@@ -1211,35 +1191,34 @@ ftp>
 
 ### bye 或 quit
 
+结束 FTP 远程服务器上的会话，然后退出 FTP 子环境。
+
 例如：使用 `bye` 命令退出 FTP 会话。
 
 ```cmd
-ftp> quit
+ftp> bye
 221 Goodbye.
 
-E:\test>
-```
-
-或使用 `quit` 命令退出 FTP 会话。
-
-```cmd
-ftp> quit
-221 Goodbye.
-
-E:\test>
+E:\ftp>
 ```
 
 ### debug
 
-例如：开启调试模式。
+切换调试模式。默认情况下，调试模式处于关闭状态。如果 “调试模式” 处于打开状态，您将看到每个命令都发送到远程服务器，前面带 `>` 字符。
+
+例如：开启调试模式时，显示当前远程服务器工作目录。
 
 ```cmd
 ftp> debug
 调试 开 。
 ftp> 
+ftp> pwd
+---> XPWD
+257 "/" is current directory.
+ftp> 
 ```
 
-例如：关闭调试模式。
+例如：关闭调试模式时，显示当前远程服务器工作目录。
 
 ```cmd
 ftp> debug
@@ -1247,9 +1226,23 @@ ftp> debug
 ftp> 
 ```
 
+显示当前远程服务器工作目录。
+
+```cmd
+ftp> pwd
+---> XPWD
+257 "/" is current directory.
+ftp> 
+ftp> pwd
+257 "/" is current directory.
+ftp> 
+```
+
 ### verbose
 
-例如：关闭详细模式。
+切换详细模式。默认情况下，详细模式处于打开状态。启用详细模式时，将显示所有 `ftp` 命令响应。当文件传输完成时，还会显示有关传输效率的统计信息。
+
+例如：关闭详细模式时，显示远程服务器根目录。
 
 ```cmd
 ftp> verbose
@@ -1257,19 +1250,30 @@ ftp> verbose
 ftp> 
 ```
 
-例如：开启详细模式。
+例如：开启详细模式时，显示远程服务器根目录。
 
 ```cmd
 ftp> verbose
 详细模式 开 。
 ftp> 
+ftp> dir
+200 PORT command successful.
+125 Data connection already open; Transfer starting.
+07-19-24  06:07PM                  146 dirlist01.txt
+07-19-24  04:46PM                    4 file01.txt
+07-19-24  06:55PM                   15 hello.txt
+07-19-24  07:28PM       <DIR>          test01
+226 Transfer complete.
+ftp: 收到 205 字节，用时 0.00秒 51.25千字节/秒。
+ftp> 
 ```
 
 ### remotehelp
 
-::: tip
-`remotehelp` 命令只能对以下远程命令的列表中的命令提供帮助，且命令不能写错。
-:::
+显示远程命令列表及帮助信息。
+
+- 只能对以下远程命令列表中的命令提供帮助
+- 远程命令列表中的命令不能写错
 
 例如：显示所有远程命令的列表。
 
@@ -1343,9 +1347,9 @@ ftp>
 
 ### help
 
-显示对 ftp 命令的帮助信息。
+显示 `ftp` 命令列表及帮助信息。
 
-例如：显示所有 ftp 命令的列表。
+例如：显示所有 `ftp` 命令的列表。
 
 ```cmd
 ftp> help
@@ -1369,4 +1373,49 @@ ftp>
 ftp> help delete
 delete          删除远程文件
 ftp> 
+```
+
+### 使用 ftp 命令文本文件
+
+指定包含 `ftp` 命令的文本文件。这些命令在 `ftp` 启动后自动运行。此参数不允许使用空格。请使用此参数，而不要使用重定向（`<`）。
+
+::: tip
+在 Windows 8 和 Windows Server 2012 或更高版本的操作系统中，文本文件必须以 UTF-8 格式编写。
+:::
+
+例如：查看远程服务器根目录详细列表。
+
+创建 `FtpDirList.txt` 文件，并写入以下内容：
+
+```txt
+open 192.168.10.10
+user username password
+dir
+bye
+```
+
+使用 `ftp` 命令执行此文件：
+
+```cmd
+E:\ftp>ftp -n -s:FtpDirList.txt
+ftp> open 192.168.10.10
+连接到 192.168.10.10。
+220 Microsoft FTP Service
+200 OPTS UTF8 command successful - UTF8 encoding now ON.
+ftp> user user abcd.1234
+331 Password required
+230 User logged in.
+ftp> dir
+200 PORT command successful.
+125 Data connection already open; Transfer starting.
+07-19-24  06:07PM                  146 dirlist01.txt
+07-19-24  04:46PM                    4 file01.txt
+07-19-24  06:55PM                   15 hello.txt
+07-19-24  07:28PM       <DIR>          test01
+226 Transfer complete.
+ftp: 收到 205 字节，用时 0.00秒 51.25千字节/秒。
+ftp> bye
+221 Goodbye.
+
+E:\ftp>
 ```
