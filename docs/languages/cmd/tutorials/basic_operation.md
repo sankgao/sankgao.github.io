@@ -64,14 +64,14 @@ tag:
 
 |  命令  |  描述  |
 |  :----:  |  :----  |
-|  `at`  |  安排在特定日期和时间运行命令和程序  |
+|  [at](../../../commands/cmd/at.md)  |  安排在特定日期和时间运行命令和程序，已弃用  |
+|  [schtasks](../../../commands/cmd/schtasks.md)  |  安排在特定日期和时间运行命令和程序  |
 |  [shutdown](../../../commands/cmd/shutdown.md)  |  立即或定时关机或重启  |
-|  `tskill`  |  结束进程  |
-|  `taskkill`  |  结束进程（比 `tskill` 高级，但 Win XP Home 版中无该命令）  |
-|  `tasklist`  |  显示进程列表（Windows XP Home Edition 中没有）  |
-|  `sc`  |  系统服务设置与控制  |
-|  `reg`  |  注册表控制台工具  |
-|  `powercfg`  |  控制系统上的电源设置  |
+|  [tskill](../../../commands/cmd/tskill.md)  |  结束进程  |
+|  [taskkill](../../../commands/cmd/taskkill.md)  |  结束进程（比 `tskill` 高级，但 Win XP Home 版中无该命令）  |
+|  [tasklist](../../../commands/cmd/tasklist.md)  |  显示进程列表（Windows XP Home Edition 中没有）  |
+|  [sc](../../../commands/cmd/sc.md)  |  系统服务设置与控制  |
+|  [reg](../../../commands/cmd/reg.md)  |  注册表控制台工具  |
 
 ## 切换磁盘
 
