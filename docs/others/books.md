@@ -19,26 +19,29 @@ tag:
 - [x] 《王道 2024 数据结构》
 - [ ] 《计算机组成与设计 硬件软件接口 原书第5版》
 
-### 前端
+### DevOps
 
-- [x] 《Head First HTML 与 CSS（第2版）》
-- [ ] 《HTML5 秘籍（第2版）》
+- Git
+    - [x] 《Git 权威指南》
 
-### Python
+- Jenkins
+    - [x] 《Jenkins 权威指南》
+    - [ ] 《Jenkins 2.x 实践指南》
+    - [ ] 《Jenkins 2 权威指南》
 
-- [x] 《零基础学 Python（全彩版）》
-- [x] 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》
-- [x] 《漫画算法：小灰的算法之旅（Python 篇）》
+### 编程语言
 
-### Jenkins
+- CMD
+    - [ ] 《精通 windows server 2008 命令行与 powershell》
 
-- [x] 《Jenkins 权威指南》
-- [ ] 《Jenkins 2.x 实践指南》
-- [ ] 《Jenkins 2 权威指南》
+- HTML
+    - [x] 《Head First HTML 与 CSS（第2版）》
+    - [ ] 《HTML5 秘籍（第2版）》
 
-### Git
-
-- [x] 《Git 权威指南》
+- Python
+    - [x] 《零基础学 Python（全彩版）》
+    - [ ] 《看漫画学 Python：有趣、有料、好玩、好用（全彩版）》
+    - [ ] 《漫画算法：小灰的算法之旅（Python 篇）》
 
 ## 文学
 
