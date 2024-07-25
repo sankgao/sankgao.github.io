@@ -34,3 +34,14 @@ E:\test>find /n "hello" hello.txt
 
 E:\test>
 ```
+
+例如：查看已输出的列表文件 `dir.lst` 中包含有哪些文件夹。
+
+```cmd
+E:\test>dir > dir.lst
+
+E:\test>find "<DIR>" < dir.lst
+2024/07/25  14:34    <DIR>          .
+2024/07/25  14:34    <DIR>          ..
+2024/07/24  15:19    <DIR>          test01
+```
