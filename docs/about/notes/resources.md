@@ -326,6 +326,7 @@ tag:
 - [编程开发](https://pan.quark.cn/s/d9abda715244#/list/share)
 - [Java 程序员的系列教程](https://github.com/crisxuan/bestJavaer)
 - [Java 全栈知识体系](https://www.pdai.tech/)
+- [二哥的 Java 进阶之路](https://javabetter.cn/)
 - [最新技术开发教程](https://geekerline.com/circle/13264.html)
 - [编程集教程](https://geekerline.com/circle/44550.html)
 - [综合资源教程](https://geekerline.com/circle/12921.html)
