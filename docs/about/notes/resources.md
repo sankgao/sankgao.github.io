@@ -270,6 +270,7 @@ tag:
 - [清华大学计算机系课程攻略](https://github.com/PKUanonym/REKCARC-TSC-UHT)
 - [村雨遥的好物周刊](https://cunyu1943.github.io/weekly/)
 - [探索 3000 多个免费 UI 元素：CSS 和 Tailwind](https://uiverse.io/)
+- [雨云 - 免费二级域名](https://app.rainyun.com/dashboard)
 
 ## 教程
 
