@@ -431,6 +431,7 @@ tag:
 - [四大名著](http://www.sdmzh.com.cn/)
 - [值得一看的技术类书籍列表 - ](https://doocs.github.io/technical-books/#/)
 - [学习资源合集，主要包含大数据、Java、Python、JavaScript、PHP、网络、数据库、Linux 电子书等资源](https://github.com/wususu/effective-resourses)
+- [IT 文库](https://wenku.it/)
 
 ## 工具
 
