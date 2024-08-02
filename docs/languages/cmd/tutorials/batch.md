@@ -24,24 +24,21 @@ tag:
 - **echo**：用于显示消息或者打开或关闭命令回显功能
     - 如果不结合任何参数使用，`echo` 会显示当前回显设置
     - 命令回显功能默认已打开
-    - `echo.` 命令用于显示空白行
+    - `echo.` 命令用于显示空白行；`.` 也可以用 `,`、`:`、`;`、`/`、`\`、`[`、`]`、`+` 符号代替
+    - `echo` 后显示消息如果放在双引号（`"`）中，输出时双引号也会输出显示
 
 - **@**：用于关闭本行命令的回显
     - 无论此时当前 `echo` 命令回显功能是否打开，都将关闭本行命令的回显
     - `@echo off` 命令用于关闭 `echo off` 命令的回显
 
-例如：创建一个 `echo.cmd` 脚本，显示当前回显状态及输出指定文本。内容如下：
-
-```cmd
-echo
-echo "Hello, World! 01"
-```
-
-执行 `echo.cmd` 脚本：
+例如：显示当前回显状态及输出指定文本。
 
 ```cmd
 E:\batch>echo
-ECHO 处于打开状态。
+ECHO is on.
+
+E:\batch>echo Hello, World!
+Hello, World!
 
 E:\batch>echo "Hello, World! 01"
 "Hello, World! 01"
@@ -49,18 +46,17 @@ E:\batch>echo "Hello, World! 01"
 E:\batch>
 ```
 
-例如：创建一个 `echo.cmd` 脚本，显示空白行。内容如下：
+::: info
+命令回显功能打开时：
+
+- 代码页编码为 `936`（简体中文）时，`echo` 命令显示的提示内容为 `ECHO 处于打开状态。`
+- 代码页编码为 `65001`（UTF-8）时，`echo` 命令显示的提示内容为 `ECHO is on.`
+:::
+
+例如：显示空白行。
 
 ```cmd
-echo.
-```
-
-执行 `echo.cmd` 脚本：
-
-```cmd
-E:\batch>echo.cmd
-
-E:\batch>echo.
+E:\batch>echo. 
 
 
 E:\batch>
@@ -69,8 +65,8 @@ E:\batch>
 例如：创建一个 `echo.cmd` 脚本，使用 `@` 符号，关闭本行命令的回显。内容如下：
 
 ```cmd
-echo "Hello, World! 02"
-@echo "Hello, World! 03"
+echo Hello, World! 02
+@echo Hello, World! 03
 ```
 
 执行 `echo.cmd` 脚本：
@@ -78,9 +74,9 @@ echo "Hello, World! 02"
 ```cmd
 E:\batch>echo.cmd
 
-E:\batch>echo "Hello, World! 02"
-"Hello, World! 02"
-"Hello, World! 03"
+E:\batch>echo Hello, World! 02
+Hello, World! 02
+Hello, World! 03
 
 E:\batch>
 ```
@@ -89,7 +85,7 @@ E:\batch>
 
 ```cmd
 echo off
-echo "Hello, World! 04"
+echo Hello, World! 04
 ```
 
 执行 `echo.cmd` 脚本：
@@ -98,7 +94,7 @@ echo "Hello, World! 04"
 E:\batch>echo.cmd
 
 E:\batch>echo off
-"Hello, World! 04"
+Hello, World! 04
 
 E:\batch>
 ```
@@ -107,14 +103,14 @@ E:\batch>
 
 ```cmd
 @echo off
-echo "Hello, World! 05"
+echo Hello, World! 05
 ```
 
 执行 `echo.cmd` 脚本：
 
 ```cmd
 E:\batch>echo.cmd
-"Hello, World! 05"
+Hello, World! 05
 
 E:\batch>
 ```
@@ -133,25 +129,25 @@ E:\batch>
     - 可以在 `::` 中使用重定向（`<`、`>`）或管道（`|`）字符
 
 ::: info
-`::` 可以起到注释作用是因为，任何以冒号（`:`）开头的字符行，在批处理中都被视作 **标号**，而直接忽略其后的所有内容。
+`::` 可以起到注释作用是因为，任何以冒号（`:`）开头的字符行，在批处理中都被视作 **标签**，而直接忽略其后的所有内容。
 
-- **有效标号**：冒号后紧跟一个以字母数字开头的字符串，goto 语句可以识别
-- **无效标号**：冒号后紧跟一个非字母数字的一个特殊符号，goto 无法识别的标号，可以起到注释作用，所以 `::` 常被用作注释符号，其实 `:+` 也可起注释作用
+- **有效标签**：冒号后紧跟一个以字母数字开头的字符串，`goto` 语句可以识别
+- **无效标签**：冒号后紧跟一个非字母数字的一个特殊符号，`goto` 无法识别的标号，可以起到注释作用，所以 `::` 常被用作注释符号，其实 `:+` 也可起注释作用
 :::
 
 例如：创建一个 `rem.cmd` 脚本，分别使用 `rem` 和 `::` 命令在回显功能打开或关闭时进行注释。内容如下：
 
 ```cmd
-echo on
+@echo on
 echo
-:: 示例 1：命令回显功能打开时，不会显示 :: 注释内容
-rem 示例 2：命令回显功能打开时，会显示 rem 注释内容
-@rem 示例 3：在 rem 命令前添加 @ 字符，计算命令回显功能打开，也不会显示 rem 注释内容
+:: 示例 1：命令回显功能打开时，不会显示 :: 命令后面的注释内容 
+rem 示例 2：命令回显功能打开时，会显示 rem 命令后面的注释内容 
+@rem 示例 3：在 rem 命令前添加 @ 字符，计算命令回显功能打开，也不会显示 rem 命令后面的注释内容
 
-echo off
+@echo off
 echo
-:: 示例 3：命令回显功能关闭时，不会显示 :: 注释内容
-rem 示例 4：命令回显功能关闭时，不会显示 rem 注释内容
+:: 示例 4：命令回显功能关闭时，不会显示 :: 命令后面的注释内容 
+rem 示例 5：命令回显功能关闭时，不会显示 rem 命令后面的注释内容
 ```
 
 执行 `rem.cmd` 脚本：
@@ -159,14 +155,10 @@ rem 示例 4：命令回显功能关闭时，不会显示 rem 注释内容
 ```cmd
 E:\batch>rem.cmd
 
-E:\batch>echo on
-
 E:\batch>echo
 ECHO is on.
 
-E:\batch>rem 示例 2：命令回显功能打开时，会显示 rem 注释内容
-
-E:\batch>echo off
+E:\batch>rem 示例 2：命令回显功能打开时，会显示 rem 命令后面的注释内容
 ECHO is off.
 
 E:\batch>
@@ -181,20 +173,18 @@ E:\batch>chcp
 
 E:\batch>rem.cmd
 
-E:\batch>echo on
-
 E:\batch>echo
 ECHO 处于打开状态。
 
-E:\batch>rem 绀轰緥 2锛氬懡浠ゅ洖鏄惧姛鑳芥墦寮€鏃讹紝浼氭樉绀?rem 娉ㄩ噴鍐呭
-
-E:\batch>echo off
+E:\batch>rem 绀轰緥 2锛氬懡浠ゅ洖鏄惧姛鑳芥墦寮€鏃讹紝浼氭樉绀?rem 鍛戒护鍚庨潰鐨勬敞閲婂唴瀹?
 ECHO 处于关闭状态。
 
 E:\batch>
 ```
 
-将代码页编码设置为 `65001`（UTF-8）即可解决中文乱码：
+这是因为 `rem.cmd` 脚本中的内容由 UTF-8 字符编写（代码页编码为 `65001`），而 CMD 默认的代码页编码为 `936`（简体中文），不同代码页编码之间相互解析，所以会出现乱码。将代码页编码设置为同种类型即可解决中文乱码。
+
+本例将代码页编码设置为 `65001`（UTF-8）即可解决中文乱码：
 
 ```cmd
 chcp 65001
@@ -202,73 +192,56 @@ chcp 65001
 
 :::
 
-例如：创建一个 `rem.cmd` 脚本，使用 `rem` 命令进行多行注释。内容如下：
+例如：创建一个 `rem.cmd` 脚本，使用 `rem` 或 `::` 命令进行多行注释。内容如下：
 
 ```cmd
-rem 方法 1：使用 rem/||() 命令
+@echo on
+:: 方法 1：使用 rem/||() 将多行注释写到 () 括号中。 
+:: 命令回显功能打开时，需要在 rem/||() 前面添加 @ 符号； 
+:: 命令回显功能关闭时，不需要在 rem/||() 前面添加 @ 符号。
 @rem/||(
     这是一行注释
     这是另一行注释
 )
 
-rem 方法 2：使用双引号 "" 将内容引起来
-@rem "这是一行注释"
-@rem "这是另一行注释"
-
-rem 方法 3：使用小括号 () 将内容引起来
-@rem (这是一行注释)
-@rem (这是另一行注释)
-
-rem 方法 4：使用 rem 命令将内容隔开
-@rem 这是一行注释
-@rem
+rem 方法 2：使用多个 rem 命令 
+@rem 这是一行注释 
 @rem 这是另一行注释
 
-rem ":: 命令除了 rem 方法 1 不能使用，其它使用方法和 rem 一样"
-:: "这是一行注释"
-:: "这是另一行注释"
-
-:: (这是一行注释)
-:: (这是另一行注释)
-
-:: 这是一行注释
-:: 
+rem 方法 3：使用多个 :: 命令 
+:: 这是一行注释 
 :: 这是另一行注释
 ```
 
 执行 `rem.cmd` 脚本：
 
 ```cmd
-E:\batch>test.cmd
+E:\batch>rem.cmd
 
-E:\batch>rem 方法 1：使用 rem/||() 将多行注释写到 () 括号中
+E:\batch>rem 方法 2：使用多个 rem 命令
 
-E:\batch>rem 方法 2：使用双引号 "" 将内容引起来
-
-E:\batch>rem 方法 3：使用小括号 () 将内容引起来
-
-E:\batch>rem 方法 4：使用 rem 命令将内容隔开
-
-E:\batch>rem ":: 命令除了 rem 方法 1 不能使用，其它使用方法和 rem 一样"
+E:\batch>rem 方法 3：使用多个 :: 命令
 E:\batch>
 ```
 
 ### pause
-
-`pause` 用于指定在某一位置暂停批处理程序的处理，显示 `Press any key to continue . . .`（或：请按任意键继续. . .）提示内容。
-
-在双击执行 `bat` 或 `cmd` 脚本的时候，如果脚本中没有 `pause` 命令，执行脚本时桌面会出现一闪而过的 CMD 控制台窗口，不知道执行的是什么就结束了；如果脚本中有 `pause` 命令，执行脚本在结束时将停留在 CMD 控制台窗口中，并提示 `Press any key to continue . . .`，也可以更改提示内容。
 
 ::: info
 - 代码页编码为 `936`（简体中文）时，`pause` 命令显示的提示内容为 `请按任意键继续. . .`
 - 代码页编码为 `65001`（UTF-8）时，`pause` 命令显示的提示内容为 `Press any key to continue . . .`
 :::
 
-例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo "Hello, World!` 命令后暂停。内容如下：
+`pause` 用于指定在某一位置暂停批处理程序的处理，显示 `Press any key to continue . . .`（或：请按任意键继续. . .）提示内容。
+
+在双击执行 `bat` 或 `cmd` 脚本的时候，如果脚本中没有 `pause` 命令，执行脚本时桌面会出现一闪而过的【命令提示符】窗口，不知道执行的是什么就结束了；如果脚本中有 `pause` 命令，执行脚本在结束时将停留在【命令提示符】窗口中，并提示 `Press any key to continue . . .`，也可以更改提示内容。
+
+如果用 <kbd>Ctrl</kbd> + <kbd>C</kbd> 键停止批处理程序，则会显示 `Terminate batch job (Y/N)?`（或：终止批处理操作吗(Y/N)?）提示内容。
+
+例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo Hello, World!` 命令后暂停。内容如下：
 
 ```cmd
 @echo off
-echo "Hello, World!"
+echo Hello, World!
 pause
 ```
 
@@ -276,31 +249,31 @@ pause
 
 ```cmd
 E:\batch>pause.cmd
-"Hello, World!"
+Hello, World!
 Press any key to continue . . . 
 ```
 
-例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo "Hello, World!` 命令后暂停，但不显示提示内容。内容如下：
+例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo Hello, World!` 命令后暂停，但不显示提示内容。内容如下：
 
 ```cmd
 @echo off
-echo "Hello, World!"
-pause > null
+echo Hello, World!
+pause > nul
 ```
 
 执行 `pause.cmd` 脚本：
 
 ```cmd
 E:\batch>pause.cmd
-"Hello, World!"
+Hello, World!
 
 ```
 
-例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo "Hello, World!` 命令后暂停，并修改提示内容为 `按任意键继续或退出此脚本. . .`。内容如下：
+例如：创建一个 `pause.cmd` 脚本，使用 `pause` 命令使批处理程序在执行完 `echo Hello, World!` 命令后暂停，并修改提示内容为 `按任意键继续或退出此脚本. . .`。内容如下：
 
 ```cmd
 @echo off
-echo "Hello, World!"
+echo Hello, World!
 echo 按任意键继续或退出此脚本. . . & pause > nul
 ```
 
@@ -308,8 +281,9 @@ echo 按任意键继续或退出此脚本. . . & pause > nul
 
 ```cmd
 E:\batch>pause.cmd
-"Hello, World!"
+Hello, World!
 按任意键继续或退出此脚本. . .
+
 ```
 
 ### call
@@ -317,7 +291,7 @@ E:\batch>pause.cmd
 `call` 用于从另一个批处理程序调用一个批处理程序，而不停止父批处理程序。`call` 命令接受标签作为调用的目标。
 
 ::: tip
-在脚本或批处理文件外部使用 call 时，它在命令提示符下不起作用。
+在脚本或批处理文件外部使用 call 时，它在【命令提示符】下不起作用。
 :::
 
 **批处理参数：**
@@ -360,52 +334,62 @@ echo 脚本名为：%0
 echo 第一个参数为：%1
 echo 第二个参数为：%2
 
-echo "脚本名为：%0，第一个参数为：%1，第二个参数为：%2"
+echo 脚本名为：%0，第一个参数为：%~1，第二个参数为：%2
 ```
 
-使用 `call` 命令执行 `call.cmd` 脚本，并添加两个参数：
+执行 `call.cmd` 脚本，并添加两个参数：
 
 ```cmd
-E:\batch>call call.cmd "Hello" "World"
+E:\batch>call.cmd "Hello" "World"
 脚本名为：call.cmd
 第一个参数为："Hello"
 第二个参数为："World"
-"脚本名为：call.cmd，第一个参数为："Hello"，第二个参数为："World""
+脚本名为：call.cmd，第一个参数为：Hello，第二个参数为："World"
 
 E:\batch>
 ```
 
 ### start
 
-`start` 用于在单独 CMD 控制台窗口中运行指定的程序或命令。批处理中调用外部程序命令（该外部程序在新的窗口中运行，批处理程序继续往下执行，不理会外部程序执行的情况），如果直接运行外部程序则必须等待外部程序完成后才可以继续执行剩余的指令。
+`start` 用于在单独【命令提示符】窗口中运行指定的程序或命令。批处理中调用外部程序命令，该外部程序在新的窗口中运行，批处理程序继续往下执行，不理会外部程序执行的情况；如果直接运行外部程序则必须等待外部程序完成后才可以继续执行剩余的指令。
 
-例如：创建一个 `start.cmd` 脚本，启动单独的命令提示符窗口以运行指定的程序或命令。内容如下：
+例如：创建一个 `start.cmd` 脚本，启动单独的【命令提示符】窗口以运行指定的程序或命令。内容如下：
 
 ```cmd
 @echo off
-echo "在新 CMD 控制台窗口中查看 D:\ 盘目录"
+echo 在新【命令提示符】窗口中查看 D:\ 盘根目录信息。
 start dir D:\
 
-echo "运行计算器程序，等程序启动后再执行下面的命令. . ."
+echo 运行计算器程序，等程序启动后再执行下面的命令. . .
 start /wait calc.exe
+echo 程序成功启动，执行下面的命令。
 
-echo "程序成功启动，执行下面的命令"
-echo "Hello, World!"
+echo Hello, World!
 ```
 
 执行 `start.cmd` 脚本：
 
 ```cmd
 E:\batch>start.cmd
-"在新 CMD 控制台窗口中查看 D:\ 盘目录"
-"运行计算器程序，等程序启动后再执行下面的命令. . ."
-"程序成功启动，执行下面的命令"
-"Hello, World!"
+在新【命令提示符】窗口中查看 D:\ 盘根目录信息。
+运行计算器程序，等程序启动后再执行下面的命令. . .
+程序成功启动，执行下面的命令。
+Hello, World!
 
 E:\batch>
 ```
 
-### goto
+### goto 和 :
+
+- `goto label` 用于从当前位置跳转到指定的标签行，从标签位置继续向下执行。
+- `:` 用于指定标签
+
+为 `label` 指定的值必须与批处理程序中的标签匹配。批处理程序中的标签必须以冒号（`:`）开头。如果某行以冒号开头，则系统会将此行视为标签，并忽略此行中的任何命令。如果批处理程序不包含您在 `label` 参数中指定的标签，则批处理程序将停止并显示 `Label not found` 提示信息。
+
+可以在 `label` 参数中使用空格，但不能包含其他分隔符（例如：`;` 或 `=`）。
+
+如果启用了命令扩展名（默认设置），并且您将 `goto` 命令与目标标签 `:EOF` 一起使用，则可以将控制权转移到当前批处理脚本文件的末尾，并且可以在不定义标签的情况下退出批处理脚本文件。将此命令与 `:EOF` 标签一起使用时，必须在标签前插入冒号。例如：`goto:EOF`。
+
 ### set
 ### assoc
 
