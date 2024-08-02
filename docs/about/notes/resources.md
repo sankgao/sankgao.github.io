@@ -397,6 +397,14 @@ tag:
 - [初级中药师网课](https://pan666.net/d/60818)
 - [Jenkins workspace @2 问题解决](https://www.jianshu.com/p/7ccdc20c1fa9)
 - [Jenkins 正在删除代理上的工作区](https://www.coder.work/article/7619367)
+- [Maven 手册](https://www.yuque.com/inuter/bc7ikc/ngeqot)
+- [Linux 内核教学](https://linux-kernel-labs-zh.xyz/index.html)
+- [Go 学习路线](https://github.com/yongxinz/gopher)
+- [Golang 100 天从新手到大师](https://github.com/rubyhan1314/Golang-100-Days)
+- [go-tutorial](https://github.com/jincheng9/go-tutorial)
+- [Golang学习+面试指南](https://github.com/mao888/golang-guide)
+- [GolangStudy](https://github.com/cnymw/GolangStudy)
+- [吴恩达老师的机器学习课程个人笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 
 ## 书籍
 
