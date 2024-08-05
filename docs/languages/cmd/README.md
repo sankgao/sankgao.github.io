@@ -26,11 +26,13 @@ Windows 操作系统提供了两种主要的命令行界面：**命令 Shell** �
 ## 相关文档
 
 - [CMD 官网](https://learn.microsoft.com/zh-cn/windows-server/administration/windows-commands/windows-commands)
-- [Windows 批处理脚本指南](https://steve-jansen.github.io/guides/windows-batch-scripting/index.html)
-- [Windows 批处理学习](https://blog.51cto.com/akudy/category2.html)
-- [Windows 批处理：bat 文件学习](https://blog.csdn.net/baomingshu/article/details/136365867)
 - [Windows 下 CMD 操作常用指令详解](https://zhuanlan.zhihu.com/p/687626530)
-- [Windows 批处理脚本（bat脚本指令）](https://blog.csdn.net/Hellomino_/article/details/136683131)
+- [Windows 批处理学习](https://blog.51cto.com/akudy/category2.html)
+- [BAT（批处理）学习笔记总结](https://zhuanlan.zhihu.com/p/523558706)
+- [windows批处理指令(.bat)](https://www.zhihu.com/column/c_1538489550271193088)
+- [bat脚本语法与实战](https://blog.csdn.net/weixin_47465999/article/details/130704447)
 - [批处理脚本（bat 脚本）用法总结](https://blog.csdn.net/hfy1237/article/details/130123285)
+- [Windows 批处理：bat 文件学习](https://blog.csdn.net/baomingshu/article/details/136365867)
 - [BAT 批处理脚本教程](https://www.cnblogs.com/YangGC/p/6345551.html)
 - [批处理基本知识以及进阶 V2.0](https://www.cnblogs.com/YangGC/p/6380216.html)
+- [Windows 批处理脚本指南](https://steve-jansen.github.io/guides/windows-batch-scripting/index.html)
