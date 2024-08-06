@@ -75,6 +75,7 @@ tag:
 |  `sfc /scannow`  |  扫描错误并复原  |
 |  `shrpubw.exe`  |  打开创建共享文件夹程序  |
 |  `sigverif.exe`  |  打开文件签名验证程序  |
+|  `sysdm.cpl`  |  打开系统属性设置窗口  |
 |  `taskmgr.exe`  |  打开任务管理器程序  |
 |  `UserAccountControlSettings.exe`  |  打开更改用户账户控制设置程序  |
 |  `utilman.exe`  |  打开辅助工具管理程序  |
