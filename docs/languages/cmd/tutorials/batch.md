@@ -395,20 +395,22 @@ E:\batch>
 
 如果仅为 `set` 命令指定变量和等号（没有 `<string>`），则会清除与变量关联的 `<string>` 值（就好像变量不存在一样）。
 
-如果从命令脚本外部的命令行运行 set /a，则会显示表达式的最终值。
+如果从命令脚本外部的命令行运行 `set /a`，则会显示表达式的最终值。
 
 默认情况下禁用延迟环境变量扩展支持，但可以使用 `cmd /v` 启用或禁用它。
 
-创建批处理文件时，可以使用 `set` 来创建变量，然后以与使用编号变量` %0` 到 `%9` 相同的方式使用它们。还可以使用变量 `%0` 到 `%9` 作为 `set` 的输入。
+创建批处理文件时，可以使用 `set` 来创建变量，然后以与使用编号变量 `%0` 到 `%9` 相同的方式使用它们。还可以使用变量 `%0` 到 `%9` 作为 `set` 的输入。
 
 如果调用批处理文件中的变量值，请将值用百分比符号（`%`）括起来。例如：如果批处理程序创建名为 `BAUD` 的环境变量，则可以通过在命令提示符下键入 `%baud%`，将与 BAUD 关联的字符串用作可替换参数。
 
-例如：创建一个 `set.cmd` 脚本，将变量的值设置为计算的数值表达式。内容如下：
+例如：创建一个 `set.cmd` 脚本，将变量的值设置为计算的数值表达式，并在计算后删除变量。内容如下：
 
 ```cmd
 @echo off
 set /a sum=4 + 5
 echo %sum%
+
+set sum=
 ```
 
 执行 `set.cmd` 脚本：
@@ -420,12 +422,13 @@ E:\batch>set.cmd
 E:\batch>
 ```
 
-例如：创建一个 `set.cmd` 脚本，将变量的值设置为由用户输入的一行输入，并指定提示用户输入的消息。内容如下：
+例如：创建一个 `set.cmd` 脚本，将变量的值设置为由用户输入的一行输入，在计算后删除变量，并指定提示用户输入的消息。内容如下：
 
 ```cmd
 @echo off
 set /p num=请输入一个数字：
 echo %num%
+set num=
 ```
 
 执行 `set.cmd` 脚本：
@@ -463,10 +466,12 @@ goto:EOF
 
 :dog
 echo 狗
+set animal=
 goto:EOF
 
 :cat
 echo 猫
+set animal=
 goto:EOF
 ```
 
@@ -490,11 +495,14 @@ E:\batch>
 :nums
 set /p num=请输入 0~10 以内的数字（输入 exit 退出，否则一直输入）：
 if %num% LSS 10 (
+    set num=
     goto nums
 ) else if "%num%" == "exit" (
+    set num=
     goto:EOF
 ) else (
     echo 输入的不是 10 以内的数字！
+    set num=
     goto nums
 )
 ```
@@ -603,7 +611,7 @@ E:\batch>ftype PerlScript=perl.exe %1 %*
 E:\batch>
 ```
 
-## pushd 和 popd
+### pushd 和 popd
 
 `pushd` 用于存储当前目录供 `popd` 命令使用，然后更改为指定目录。
 
