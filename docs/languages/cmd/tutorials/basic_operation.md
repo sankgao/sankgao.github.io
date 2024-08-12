@@ -249,7 +249,7 @@ E:\test>
 - 使用 [type](../../../commands/cmd/type.md) 命令创建文件
 
     ```cmd
-    E:\test>type null > file02.txt
+    E:\test>type nul > file02.txt
     系统找不到指定的文件。
 
     E:\test>
