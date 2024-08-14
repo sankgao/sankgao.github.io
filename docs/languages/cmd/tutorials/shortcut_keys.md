@@ -23,6 +23,7 @@ CMD 中快捷键如下表所示：
 |  <kbd>UpArrow</kbd>  |  查看上一个命令  |
 |  <kbd>DownArrow</kbd>  |  查看下一个命令  |
 |  <kbd>Ctrl</kbd> + <kbd>C</kbd>  |  终止命令  |
+|  <kbd>Alt</kbd> + <kbd>右键选择（Click）</kbd>  |  选择指定内容  |
 |  <kbd>Tab</kbd>  |  切换当前路径下目录及文件，不包括子目录  |
 |  <kbd>Tab</kbd> + <kbd>Shift</kbd>  |  反向切换当前路径下目录及文件，不包括子目录  |
 |  <kbd>Esc</kbd>  |  清除当前命令行  |
