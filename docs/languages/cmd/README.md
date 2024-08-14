@@ -38,3 +38,4 @@ Windows 操作系统提供了两种主要的命令行界面：**命令 Shell** �
 - [Windows 批处理脚本指南](https://steve-jansen.github.io/guides/windows-batch-scripting/index.html)
 - [Windows CMD Shell 操作指南和示例](https://ss64.com/nt/syntax.html)
 - [从零开始学 Windows 批处理(Batch)编程系列教程](https://mp.weixin.qq.com/mp/appmsgalbum)
+- [批处理中延迟变量](https://blog.51cto.com/u_15170706/6308452)
