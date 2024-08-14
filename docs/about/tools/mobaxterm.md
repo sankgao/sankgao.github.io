@@ -148,7 +148,7 @@ SSH 远程连接会在无操作时自动断开。
 |  当前会话窗口查找  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>  |
 |  显示/隐藏弹出终端  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd>  |
 |  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>RightArrow</kbd>  |
-|  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Tab</kbd> + <kbd>RightArrow</kbd>  |
+|  向前切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Tab</kbd>  |
 |  向后切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>LeftArrow</kbd>  |
 |  向后切换会话窗口  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd>  |
 |  在当前会话窗口中查找  |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd>  |
@@ -158,7 +158,7 @@ SSH 远程连接会在无操作时自动断开。
 |  向下滚动一行  |  <kbd>Shift</kbd> + <kbd>DownArrow</kbd>  |
 |  向上滚动到开始  |  <kbd>Shift</kbd> + <kbd>Home</kbd>  |
 |  向下滚动到末尾  |  <kbd>Shift</kbd> + <kbd>End</kbd>  |
-|  选择指定内容  |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>右键选择（Click）</kbd>  |
+|  选择指定内容  |  <kbd>Alt</kbd> + <kbd>右键选择（Click）</kbd>  |
 |  清除屏幕  |  <kbd>Ctrl</kbd> + <kbd>L</kbd>  |
 |  中断当前程序  |  <kbd>Ctrl</kbd> + <kbd>C</kbd>  |
 |  退出当前 Shell  |  <kbd>Ctrl</kbd> + <kbd>D</kbd>  |
