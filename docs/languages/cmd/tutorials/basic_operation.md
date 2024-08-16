@@ -255,7 +255,7 @@ E:\test>
     E:\test>
     ```
 
-- 使用 [copy con](../../../commands/cmd/copy.md) 命令创建文件，此命令可以直接输入文件内容，输入完后执行 <kbd>Ctrl</kbd> + <kbd>Z</kbd> 命令，再按 <kbd>Enter</kbd> 回车键结束
+- 使用 [copy con](../../../commands/cmd/copy.md) 命令创建文件，此命令可以直接输入文件内容，输入完后执行 <kbd>Ctrl</kbd> + <kbd>Z</kbd> 命令，它会发送文件结束（`EOF`）字符，再按 <kbd>Enter</kbd> 回车键结束。`con` 是计算机屏幕
 
     ```cmd
     E:\test>copy con file03.txt
