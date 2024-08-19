@@ -628,6 +628,8 @@ tag:
   - [在线漫画 - 学外漫画](https://www.xuewailx.com/)
   - [在线漫画 - 漫画160](https://www.mh160.cc/)
   - [在线漫画 - 漫画DB](https://www.manhuadb.com/)
+  - [在线漫画 - 滴答漫画](https://www.didamh.com/)
+  - [在线漫画 - 漫画屋](https://www.mhw1.com/)
   - [在线漫画 - 古风漫画](https://www.gufengmh.com/)
   - [在线漫画 - 拷贝漫画](https://www.mangacopy.com/)
   - [在线漫画 - MangaDex](https://mangadex.org/)
