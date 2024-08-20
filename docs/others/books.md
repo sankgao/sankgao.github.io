@@ -32,7 +32,7 @@ tag:
 ### 编程语言
 
 - CMD
-    - [ ] 《精通 windows server 2008 命令行与 powershell》
+    - [x] 《精通 windows server 2008 命令行与 powershell》
 
 - HTML
     - [x] 《Head First HTML 与 CSS（第2版）》
