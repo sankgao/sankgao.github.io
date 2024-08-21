@@ -344,7 +344,7 @@ E:\test>
 ## 删除目录
 
 ::: info
-删除目录使用 [rd](../../../commands/cmd/rd_rmdir.md) 或 [erase](../../../commands/cmd/rd_rmdir.md) 效果一样。
+删除目录使用 [rd](../../../commands/cmd/rd_rmdir.md) 或 [rmdir](../../../commands/cmd/rd_rmdir.md) 效果一样。
 
 使用 `rd` 或 `rmdir` 从磁盘中删除某个目录，则无法检索该目录（即回收站中没有此目录）。
 :::

@@ -234,22 +234,22 @@ sudo docker pull jenkins/jenkins
 
     在 `/opt/jenkins_home` 目录中创建一个 `docker-compose.yml` 文件，并输入以下内容：
 
-        ```yaml
-        version: '3'
+    ```yaml
+    version: '3'
 
-        services:
-          jenkins:
-            restart: always
-            image: jenkins/jenkins
-            container_name: jenkins
-            ports:
-              - 8080:8080
-              - 50000:50000
-            environment:
-              TZ: Asia/Shanghai
-            volumes:
-              - /opt/jenkins_home:/var/jenkins_home
-        ```
+    services:
+      jenkins:
+        restart: always
+        image: jenkins/jenkins
+        container_name: jenkins
+        ports:
+          - 8080:8080
+          - 50000:50000
+        environment:
+          TZ: Asia/Shanghai
+        volumes:
+          - /opt/jenkins_home:/var/jenkins_home
+    ```
 
     确保您在与 `docker-compose.yml` 相同的目录下并启动 Jenkins：
 
