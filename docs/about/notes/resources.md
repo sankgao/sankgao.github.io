@@ -271,6 +271,7 @@ tag:
 - [村雨遥的好物周刊](https://cunyu1943.github.io/weekly/)
 - [探索 3000 多个免费 UI 元素：CSS 和 Tailwind](https://uiverse.io/)
 - [雨云 - 免费二级域名](https://app.rainyun.com/dashboard)
+- [推理学院](https://www.tuilixy.net/)
 
 ## 教程
 
