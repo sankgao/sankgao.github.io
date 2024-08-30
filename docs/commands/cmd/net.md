@@ -85,3 +85,29 @@ NET HELP 命令 | MORE 显示帮助，一次显示一屏。
 
 C:\Users\user>
 ```
+
+### net user
+
+例如：列出所有用户账户。
+
+```cmd
+C:\Users\user>net user
+```
+
+例如：创建新用户。
+
+```cmd
+C:\Users\user>net user newuser password /add
+```
+
+例如：修改用户属性（禁用账户）。
+
+```cmd
+C:\Users\user>net user newuser /active:no
+```
+
+例如：重置用户密码。
+
+```cmd
+C:\Users\user>net user newuser * /passwordchg:no
+```
