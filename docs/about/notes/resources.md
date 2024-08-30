@@ -272,6 +272,7 @@ tag:
 - [探索 3000 多个免费 UI 元素：CSS 和 Tailwind](https://uiverse.io/)
 - [雨云 - 免费二级域名](https://app.rainyun.com/dashboard)
 - [推理学院](https://www.tuilixy.net/)
+- [山海之花一个集网络众多资源于一体的宝藏网站！](https://cbge.top/)
 
 ## 教程
 
