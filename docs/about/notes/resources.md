@@ -167,25 +167,52 @@ tag:
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
-- [奈斯搜索](https://www.niceso.net/)
+- [虫部落（资源搜索）](https://www.chongbuluo.com/)
+- [偷渡鱼](https://touduyu.com/)
+- [谷粉学术](https://gfsoso.99lb.net/scholar.html)
+- [QuickSo-快点搜](https://quickso.cn/)
+- [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
+- [秘塔AI搜索](https://metaso.cn/)
+- [AI天工](https://www.tiangong.cn/)
+- 数据搜索
+    - [数据搜索1](http://mx771.cn/app/index.html?id=test)
+    - [数据搜索2](http://kkszn.com/app/index.html?id=test)
+    - [数据搜索3](http://s.kkkob.com/apps/index.html?id=211229kl)
+
+
+网盘资源搜索引擎：
+
+- [毕方铺](https://www.iizhi.cn/)
+- [秒搜](https://miaosou.fun/)
+- [学霸盘](https://www.xuebapan.com/)
 - [易搜](https://yiso.fun/)
 - [千帆搜索 - Telegram](https://tg.qianfan.app/)
 - [UP 云搜](https://www.upyunso.com/)
 - [猫狸盘搜](https://www.alipansou.com/)
 - [超能搜](https://chaonengsou.com/)
 - [云盘4K](https://www.codelicence.cn/)
-- [学霸盘](https://www.xuebapan.com/)
-- [毕方铺](https://www.iizhi.cn/)
 - [云盘狗](https://www.yunpangou.com/)
 - [小白盘](https://www.xiaobaipan.com/)
-- [虫部落（资源搜索）](https://www.chongbuluo.com/)
-- [偷渡鱼](https://touduyu.com/)
-- [谷粉学术](https://gfsoso.99lb.net/scholar.html)
-- [QuickSo-快点搜](https://quickso.cn/)
+- [PanSearch](https://www.pansearch.me/)
+- [YaPan](https://yapan.io/)
+- [西瓜搜搜](http://www.xgsoso.com/)
+- [兄弟盘](https://xiongdipan.com/)
+- [网盘之家](https://www.wowenda.com/)
+- [盘友圈](https://panyq.com/)
+- [皮卡搜索](https://www.pikaso.top/)
 - [趣盘搜](https://pan.funletu.com/#/)
-- [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
-- [秘塔AI搜索](https://metaso.cn/)
-- [AI天工](https://www.tiangong.cn/)
+- [小鸟搜索](https://www.birdiesearch.com/#/)
+- [捕娱兔](https://www.buyutu.com/)
+
+论坛性质资源搜索网站：
+
+- [51影源网](https://51vde.com/)
+- [AQ网盘资源社区](https://wpzy.cc/)
+- [网盘资源分享社](https://bbs.dybqr.com/)
+- [影视网盘资源分享网](https://77zys.com/)
+- [搜资源-资源搜索平台](https://www.sziyuan.cn/)
+- [阿里云盘网](http://www.alypw.cn/)
+- [阿里云盘资源共享站](https://pan666.net/)
 
 ## 网站
 
@@ -228,8 +255,6 @@ tag:
 - [酷库博客](https://www.zxki.cn/)
 - [小思科技](https://xiaosikeji.cn/)
 - [鸭先知 - 坚持以不付费的伟大原则获取资源](https://www.yxzhi.com/)
-- [阿里云盘网](http://www.alypw.cn/)
-- [阿里云盘资源共享站](https://pan666.net/)
 - [个人收集资源2](https://pan666.net/d/164012-2)
 - [各种资源链接 - 电影、学习等](https://docs.qq.com/sheet/DRXp5WGdhRklkc2hk?tab=BB08J2)
 - [300T 网盘资源](https://pan666.net/d/199069-300t)
