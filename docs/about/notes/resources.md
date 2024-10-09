@@ -164,6 +164,10 @@ tag:
 
     关注 IT 技术分享的科技博客。
 
+- [芋道源码 —— 纯源码解析博客](https://www.iocoder.cn/)
+
+    Java,架构,后端,服务端,RocketMQ,MyCAT,分布式消息队列,分布式存储,技术博客,Sharding-JDBC,分库分表。
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
