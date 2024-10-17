@@ -434,6 +434,7 @@ tag:
 - [Golang 100 天从新手到大师](https://github.com/rubyhan1314/Golang-100-Days)
 - [go-tutorial](https://github.com/jincheng9/go-tutorial)
 - [Golang学习+面试指南](https://github.com/mao888/golang-guide)
+- [Go 个人学习笔记](https://www.topgoer.com/)
 - [GolangStudy](https://github.com/cnymw/GolangStudy)
 - [吴恩达老师的机器学习课程个人笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 - [迹忆客](https://www.jiyik.com/)
