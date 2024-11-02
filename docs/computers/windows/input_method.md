@@ -29,4 +29,4 @@ tag:
 
 开启 **v 模式：v + 算式**，例如：想要计算 “v10*10+10” 的值，在中文状态下，输入 `v10*10+10`，算式结果就出来了。
 
-![v 模式](./assets/v_sum_number_mode.jpg)
+![v 模式](./assets/v_sum_mode.jpg)
