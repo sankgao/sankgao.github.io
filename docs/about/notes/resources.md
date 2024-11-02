@@ -168,7 +168,7 @@ tag:
 
     Java,架构,后端,服务端,RocketMQ,MyCAT,分布式消息队列,分布式存储,技术博客,Sharding-JDBC,分库分表。
 
-- [Json.cn](https://www.json.cn/)
+- [Json](https://www.json.cn/)
 
     Json 工具、技术教程、字典、AI 导航等。
 
@@ -186,7 +186,6 @@ tag:
     - [数据搜索1](http://mx771.cn/app/index.html?id=test)
     - [数据搜索2](http://kkszn.com/app/index.html?id=test)
     - [数据搜索3](http://s.kkkob.com/apps/index.html?id=211229kl)
-
 
 网盘资源搜索引擎：
 
