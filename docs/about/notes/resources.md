@@ -441,6 +441,9 @@ tag:
 - [GolangStudy](https://github.com/cnymw/GolangStudy)
 - [吴恩达老师的机器学习课程个人笔记](https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes)
 - [迹忆客](https://www.jiyik.com/)
+- [51CTO软考-软考在线教育培训](https://rk.51cto.com/download)
+- [39 套 K8S 云原生教程视频](https://www.soft1188.com/javajg/4178.html)
+- [kubernetes k8s+DevOps云原生全栈技术 视频教程](http://www.java1234.com/a/javaziliao/javabase/2024/0609/25425.html)
 
 ## 书籍
 
@@ -476,6 +479,8 @@ tag:
 - [值得一看的技术类书籍列表 - ](https://doocs.github.io/technical-books/#/)
 - [学习资源合集，主要包含大数据、Java、Python、JavaScript、PHP、网络、数据库、Linux 电子书等资源](https://github.com/wususu/effective-resourses)
 - [IT 文库](https://wenku.it/)
+- [搜书吧](http://www.soushu2030.com/)
+- [IT 熊猫](https://www.itpanda.net/book/)
 
 ## 工具
 
