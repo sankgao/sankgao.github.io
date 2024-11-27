@@ -305,6 +305,7 @@ tag:
 - [雨云 - 免费二级域名](https://app.rainyun.com/dashboard)
 - [推理学院](https://www.tuilixy.net/)
 - [山海之花一个集网络众多资源于一体的宝藏网站！](https://cbge.top/)
+- [Go服务器开发-Go项目实战（网站有 ChatGPT）](https://golang.0voice.com/)
 
 ## 教程
 
