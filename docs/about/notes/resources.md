@@ -172,6 +172,8 @@ tag:
 
     Json 工具、技术教程、字典、AI 导航等。
 
+- [我的小米粥分你一半](https://corvo.myseu.cn/)
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
@@ -306,6 +308,7 @@ tag:
 - [推理学院](https://www.tuilixy.net/)
 - [山海之花一个集网络众多资源于一体的宝藏网站！](https://cbge.top/)
 - [Go服务器开发-Go项目实战（网站有 ChatGPT）](https://golang.0voice.com/)
+- [OneCompiler-免费在线编译器及教程](https://onecompiler.com/)
 
 ## 教程
 
