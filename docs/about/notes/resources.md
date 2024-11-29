@@ -174,6 +174,10 @@ tag:
 
 - [我的小米粥分你一半](https://corvo.myseu.cn/)
 
+- [mafeifan 的编程技术分享](https://mafeifan.com/)
+
+    DevOps,K8s,云原生,Prometheus,Terraform,Laravel,Jenkins系列教程,Docker系列教程
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
