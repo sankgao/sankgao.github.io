@@ -66,6 +66,10 @@ global:Registered-Users                         Registered Users
 
 使用 `git fetch` 获取并切换到 `Administrators` 群组的 `UUID` 分支：
 
+::: tip
+`refs/groups/dd/` 中的 `dd` 是根据您自己 `UUID` 的前两个字符。
+:::
+
 ```bash
 git fetch origin refs/groups/dd/dd67898a2a89433ad8b9145f9e0f60f8de580c7b:refs/groups/dd/dd67898a2a89433ad8b9145f9e0f60f8de580c7b
 git checkout refs/groups/dd/dd67898a2a89433ad8b9145f9e0f60f8de580c7b
