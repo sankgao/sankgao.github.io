@@ -453,6 +453,7 @@ tag:
 - [39 套 K8S 云原生教程视频](https://www.soft1188.com/javajg/4178.html)
 - [kubernetes k8s+DevOps云原生全栈技术 视频教程](http://www.java1234.com/a/javaziliao/javabase/2024/0609/25425.html)
 - [edX 提供在线课程和计划，为你做好职业生涯的每一个准备](https://www.edx.org/)
+- [Linux Foundation开源软件学园-Linux_云技术_Kubernetes专业考试认证_K8s_CKA_CKS](https://training.linuxfoundation.cn/)
 
 ## 书籍
 
