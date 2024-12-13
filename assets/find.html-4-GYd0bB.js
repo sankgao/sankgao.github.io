@@ -1,0 +1,14 @@
+import{_ as n}from"./plugin-vue_export-helper-x3n3nnut.js";import{r as l,o as i,c as s,b as t,e,d as a,w as c,f as r}from"./app-uytyrile.js";const o={},u=t("h2",{id:"描述",tabindex:"-1"},[t("a",{class:"header-anchor",href:"#描述","aria-hidden":"true"},"#"),e(" 描述")],-1),h=t("code",null,"find",-1),m=t("code",null,"*",-1),v=t("code",null,"?",-1),g=t("strong",null,"注意",-1),_=t("code",null,'"',-1),f=r(`<h2 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h2><table><thead><tr><th style="text-align:center;">选项</th><th style="text-align:left;">描述</th></tr></thead><tbody><tr><td style="text-align:center;"><code>/c</code></td><td style="text-align:left;">对包含指定 <code>&lt;string&gt;</code> 的行进行计数，并显示总计</td></tr><tr><td style="text-align:center;"><code>/i</code></td><td style="text-align:left;">指定搜索不区分大小写</td></tr><tr><td style="text-align:center;"><code>/n</code></td><td style="text-align:left;">每行前面都有文件的行号</td></tr><tr><td style="text-align:center;"><code>/v</code></td><td style="text-align:left;">显示不包含指定 <code>&lt;string&gt;</code> 的所有行</td></tr><tr><td style="text-align:center;"><code>/?</code></td><td style="text-align:left;">在命令提示符下显示帮助</td></tr></tbody></table><h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例" aria-hidden="true">#</a> 示例</h2><p>例如：显示在 <code>hello.txt</code> 文件中包含字符串 <code>hello</code> 的所有行，并显示行号。</p><div class="language-cmd line-numbers-mode" data-ext="cmd"><pre class="language-cmd"><code>E:\\test&gt;find /n &quot;hello&quot; hello.txt
+
+---------- HELLO.TXT
+[1]hello world
+[6]aaahelloaaa
+
+E:\\test&gt;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>例如：查看已输出的列表文件 <code>dir.lst</code> 中包含有哪些文件夹。</p><div class="language-cmd line-numbers-mode" data-ext="cmd"><pre class="language-cmd"><code>E:\\test&gt;dir &gt; dir.lst
+
+E:\\test&gt;find &quot;&lt;DIR&gt;&quot; &lt; dir.lst
+2024/07/25  14:34    &lt;DIR&gt;          .
+2024/07/25  14:34    &lt;DIR&gt;          ..
+2024/07/24  15:19    &lt;DIR&gt;          test01
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,7);function b(x,p){const d=l("RouterLink");return i(),s("div",null,[u,t("p",null,[h,e(" 用于在一个或多个文件中搜索文本字符串，并显示包含指定字符串的文本行。搜索的字符串中不得出现通配符（"),m,e(" 和 "),v,e("），若要搜索具有通配符和正则表达式模式的字符串，可以使用 "),a(d,{to:"/commands/cmd/findstr.html"},{default:c(()=>[e("findstr")]),_:1}),e(" 命令，"),g,e("：搜索的正则表达式要用双引号（"),_,e("）引起来。")]),f])}const R=n(o,[["render",b],["__file","find.html.vue"]]);export{R as default};
