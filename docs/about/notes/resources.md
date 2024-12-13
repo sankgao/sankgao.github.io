@@ -459,6 +459,8 @@ tag:
 - [edX 提供在线课程和计划，为你做好职业生涯的每一个准备](https://www.edx.org/)
 - [Linux Foundation开源软件学园-Linux_云技术_Kubernetes专业考试认证_K8s_CKA_CKS](https://training.linuxfoundation.cn/)
 - [在线教程及在线实验环境](https://killercoda.com/)
+- [shell POSIX 基础规范第 8 期](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/contents.html)
+- [GNU Bash 参考手册](https://www.gnu.org/software/bash/)
 
 ## 书籍
 
