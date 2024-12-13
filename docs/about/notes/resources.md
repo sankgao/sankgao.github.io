@@ -423,6 +423,10 @@ tag:
 - [阿里云盘 - 驾照](https://www.aliyundrive.com/s/NdY55k1aCHh)
 - [阿里云盘 - 武术体育健身](https://www.aliyundrive.com/s/t7THyHZAVWX)
 - [在线学习，考证书](https://www.coursera.org/)
+    - [美式英语的发音 专项课程](https://www.coursera.org/specializations/american-english-pronunciation)
+    - [美式英语发音中的辅音](https://www.coursera.org/learn/american-english-pronunciation-consonant-sounds)
+    - [美式英语的元音发音](https://www.coursera.org/learn/american-english-pronunciation-vowel-sounds)
+    - [IBM DevOps 和软件工程 专业证书](https://www.coursera.org/professional-certificates/devops-and-software-engineering)
 - [TED（最优质的演讲）](https://www.ted.com/)
 - [网易公开课](https://open.163.com/ted/)
 - [网易云课堂](https://study.163.com/)
@@ -454,6 +458,7 @@ tag:
 - [kubernetes k8s+DevOps云原生全栈技术 视频教程](http://www.java1234.com/a/javaziliao/javabase/2024/0609/25425.html)
 - [edX 提供在线课程和计划，为你做好职业生涯的每一个准备](https://www.edx.org/)
 - [Linux Foundation开源软件学园-Linux_云技术_Kubernetes专业考试认证_K8s_CKA_CKS](https://training.linuxfoundation.cn/)
+- [在线教程及在线实验环境](https://killercoda.com/)
 
 ## 书籍
 
