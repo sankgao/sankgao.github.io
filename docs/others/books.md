@@ -34,7 +34,7 @@ tag:
     - [ ] 《Jenkins 2 权威指南》
 
 - Docker
-    - [ ] 《Docker 从入门到实战》
+    - [x] 《Docker 从入门到实战》
     - [ ] 《Docker 技术入门到实战（第3版）》
 
 ### 编程语言
