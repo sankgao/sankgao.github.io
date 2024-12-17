@@ -36,6 +36,8 @@ tag:
 - Docker
     - [x] 《Docker 从入门到实战》
     - [ ] 《Docker 技术入门到实战（第3版）》
+    - [ ] 《深入浅出 Docker》
+    - [ ] 《Docker 实践》
 
 ### 编程语言
 
