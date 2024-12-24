@@ -44,6 +44,11 @@ tag:
 - CMD
     - [x] 《精通 windows server 2008 命令行与 powershell》
 
+- Shell
+    - [x] 《Shell 脚本编程实战100例》
+    - [ ] 《Linux命令行与shell脚本编程大全（第4版）》
+    - [ ] 《Shell脚本实战（第2版）》
+
 - HTML
     - [x] 《Head First HTML 与 CSS（第2版）》
     - [ ] 《HTML5 秘籍（第2版）》
