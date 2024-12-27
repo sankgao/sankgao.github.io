@@ -178,6 +178,10 @@ tag:
 
     DevOps,K8s,云原生,Prometheus,Terraform,Laravel,Jenkins系列教程,Docker系列教程
 
+- [三峡星河](https://kangaroogao.github.io/)
+
+    冷静地思考，热情地生活。
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
