@@ -471,6 +471,7 @@ tag:
 ## 书籍
 
 - [寻书 - 电子书综合搜索平台](https://www.xunshu.xyz/#/)
+- [图灵社区-书籍源代码](https://www.ituring.com.cn/)
 - [安娜的档案](https://annas-archive.org)
     - [镜像地址 1](https://annas-archive.se.976156.xyz)
     - [镜像地址 2](https://annas-archive.se.412965.xyz)
