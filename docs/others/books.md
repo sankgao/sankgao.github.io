@@ -46,7 +46,7 @@ tag:
 
 - Shell
     - [x] 《Shell 脚本编程实战100例》
-    - [ ] 《Linux命令行与shell脚本编程大全（第4版）》
+    - [x] 《Linux命令行与shell脚本编程大全（第4版）》
     - [ ] 《Shell脚本实战（第2版）》
 
 - HTML
