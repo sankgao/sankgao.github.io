@@ -190,9 +190,14 @@ tag:
 - [谷粉学术](https://gfsoso.99lb.net/scholar.html)
 - [QuickSo-快点搜](https://quickso.cn/)
 - [AI 相关的搜索引擎合集](https://geekerline.com/circle/61747.html)
-- [秘塔AI搜索](https://metaso.cn/)
-- [AI天工](https://www.tiangong.cn/)
-- [小浣熊-AI 智能助手](https://www.xiaohuanxiong.com/)
+
+- 大模型
+    - [Kimi 月之暗面 - 帮你看更大的世界](https://kimi.moonshot.cn/)
+    - [DeepSeek 深度求索](https://www.deepseek.com/)
+    - [小浣熊-AI 智能助手](https://www.xiaohuanxiong.com/)
+    - [秘塔AI搜索](https://metaso.cn/)
+    - [AI天工](https://www.tiangong.cn/)
+
 - 数据搜索
     - [数据搜索1](http://mx771.cn/app/index.html?id=test)
     - [数据搜索2](http://kkszn.com/app/index.html?id=test)
