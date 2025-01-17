@@ -324,6 +324,7 @@ tag:
 - [Go服务器开发-Go项目实战（网站有 ChatGPT）](https://golang.0voice.com/)
 - [OneCompiler-免费在线编译器及教程](https://onecompiler.com/)
 - [论坛-Chinaunix](http://bbs.chinaunix.net/)
+- [电信网码号资源使用和调整审批系统](https://nac.miit.gov.cn/#/notice/gxb)
 
 ## 教程
 
