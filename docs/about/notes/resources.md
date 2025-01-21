@@ -473,6 +473,8 @@ tag:
 - [在线教程及在线实验环境](https://killercoda.com/)
 - [shell POSIX 基础规范第 8 期](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/contents.html)
 - [GNU Bash 参考手册](https://www.gnu.org/software/bash/)
+- [编程导航](https://www.codefather.cn/)
+- [在线 Python3 模块练习](https://pymotw.com/3/#)
 
 ## 书籍
 
@@ -678,6 +680,7 @@ tag:
 - [输入你想要的域名，即可实现搜索，注册，比价](https://namebeta.com/)
 - [丁香园用药助手-靠谱的临床诊疗顾问](https://drugs.dxy.cn/pc)
 - [基于「Docker」/「青龙面板」/「群晖」/「本地」的每日签到脚本](https://sitoi.github.io/dailycheckin/)
+- [免费 PDF 翻译工具](https://github.com/Byaidu/PDFMathTranslate)
 
 ## 图片
 
