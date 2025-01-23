@@ -518,6 +518,7 @@ tag:
 
 - [在线工具集合-IT Tools](https://it-tools.tech/)
 - [改图鸭](https://www.gaituya.com/)
+- [将任何文件转换为Markdown](https://www.getmarkdown.com/)
 - [cloudconvert 各类文档类型转换](https://cloudconvert.com/)
 - [PDF 处理](https://smallpdf.com/cn)
 - [PDF 处理 - PDF 派](https://www.pdfpai.com/)
