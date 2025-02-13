@@ -182,6 +182,10 @@ tag:
 
     冷静地思考，热情地生活。
 
+- [博客-阅读室](https://www.cnblogs.com/hui-tong/p/18059789)
+
+    一星残月拂柳丝。 一个积极的悲观主义者!
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
@@ -483,6 +487,7 @@ tag:
 - [安娜的档案](https://annas-archive.org)
     - [镜像地址 1](https://annas-archive.se.976156.xyz)
     - [镜像地址 2](https://annas-archive.se.412965.xyz)
+- [八零电子书](https://wap.txt80.com/)
 - [24h搜书网](https://24hbook.com/)
 - [书栈网](https://www.bookstack.cn/)
 - [知识库](https://www.zhishikoo.com/)
