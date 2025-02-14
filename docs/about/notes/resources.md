@@ -198,6 +198,7 @@ tag:
 - 大模型
     - [Kimi 月之暗面 - 帮你看更大的世界](https://kimi.moonshot.cn/)
     - [DeepSeek 深度求索](https://www.deepseek.com/)
+    - [问小白](http://wenxiaobai.com/)
     - [小浣熊-AI 智能助手](https://www.xiaohuanxiong.com/)
     - [秘塔AI搜索](https://metaso.cn/)
     - [AI天工](https://www.tiangong.cn/)
