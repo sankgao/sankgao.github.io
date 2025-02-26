@@ -67,6 +67,7 @@ tag:
 
     - 使用 <kbd>F12</kbd> 或 <kbd>Ctrl</kbd> + <kbd>鼠标左键</kbd> 可以直接跳转到函数定义的位置
     - 使用 <kbd>Shift</kbd> + <kbd>F12</kbd> 可以打开函数引用预览
+    - 使用 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>鼠标左键</kbd> 打开拆分编辑器并跳转到函数定义的位置
 
 2. 在定义函数的位置
 
