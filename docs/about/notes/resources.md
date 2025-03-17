@@ -241,6 +241,7 @@ tag:
 - [搜资源-资源搜索平台](https://www.sziyuan.cn/)
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://pan666.net/)
+- [理想的论坛社区](https://linux.do/)
 
 ## 网站
 
