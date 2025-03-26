@@ -331,6 +331,8 @@ tag:
 - [OneCompiler-免费在线编译器及教程](https://onecompiler.com/)
 - [论坛-Chinaunix](http://bbs.chinaunix.net/)
 - [电信网码号资源使用和调整审批系统](https://nac.miit.gov.cn/#/notice/gxb)
+- [SegmentFault 思否](https://segmentfault.com/)
+- [Stack Overflow - 开发人员学习、分享和建立职业生涯的地方](https://stackoverflow.com/)
 
 ## 教程
 
