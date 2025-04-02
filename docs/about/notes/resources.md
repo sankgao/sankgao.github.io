@@ -524,6 +524,7 @@ tag:
 
 ## 工具
 
+- [IT 人必备工具箱](https://666666.dev/)
 - [在线工具集合-IT Tools](https://it-tools.tech/)
 - [改图鸭](https://www.gaituya.com/)
 - [将任何文件转换为Markdown](https://www.getmarkdown.com/)
