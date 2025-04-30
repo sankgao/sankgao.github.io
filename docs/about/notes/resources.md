@@ -691,6 +691,7 @@ tag:
 - [丁香园用药助手-靠谱的临床诊疗顾问](https://drugs.dxy.cn/pc)
 - [基于「Docker」/「青龙面板」/「群晖」/「本地」的每日签到脚本](https://sitoi.github.io/dailycheckin/)
 - [免费 PDF 翻译工具](https://github.com/Byaidu/PDFMathTranslate)
+- [Python-Tutor - 适用于 Python、Java、C、C++ 和 JavaScript 的在线编译器、AI Tutor 和可视化调试器](https://pythontutor.com/)
 
 ## 图片
 
