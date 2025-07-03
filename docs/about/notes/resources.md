@@ -483,6 +483,7 @@ tag:
 - [GNU Bash 参考手册](https://www.gnu.org/software/bash/)
 - [编程导航](https://www.codefather.cn/)
 - [在线 Python3 模块练习](https://pymotw.com/3/#)
+- [语雀——崔亮](https://www.yuque.com/cuiliang0302)
 
 ## 书籍
 
