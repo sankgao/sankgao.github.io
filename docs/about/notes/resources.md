@@ -186,6 +186,10 @@ tag:
 
     一星残月拂柳丝。 一个积极的悲观主义者!
 
+- [乔克的SRE视界](https://jokerbai.com)
+
+    乔克的SRE视界 - LONG LIVE SRE | CLOUDNATIVE | KUBERNETES | DOCKER | PROMETHEUS ...
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
