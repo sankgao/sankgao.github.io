@@ -488,6 +488,9 @@ tag:
 - [编程导航](https://www.codefather.cn/)
 - [在线 Python3 模块练习](https://pymotw.com/3/#)
 - [语雀——崔亮](https://www.yuque.com/cuiliang0302)
+- [Linux、DevOps 和网络安全免费实验 - LabEx](https://labex.io/zh)
+- [Go 语言课程项目源码](https://gitee.com/infraboard/go-course)
+- [马哥 go 七期](https://pan.baidu.com/s/1_lf36D7rCJll9lJn9YawNA?pwd=cemg)
 
 ## 书籍
 
@@ -698,6 +701,7 @@ tag:
 - [免费 PDF 翻译工具](https://github.com/Byaidu/PDFMathTranslate)
 - [Python-Tutor - 适用于 Python、Java、C、C++ 和 JavaScript 的在线编译器、AI Tutor 和可视化调试器](https://pythontutor.com/)
 - [正则表达式测试工具](http://tool.oschina.net/regex)
+- [免费代理列表](https://proxylister.com/zh/)
 
 ## 图片
 
