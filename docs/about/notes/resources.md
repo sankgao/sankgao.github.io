@@ -337,6 +337,8 @@ tag:
 - [电信网码号资源使用和调整审批系统](https://nac.miit.gov.cn/#/notice/gxb)
 - [SegmentFault 思否](https://segmentfault.com/)
 - [Stack Overflow - 开发人员学习、分享和建立职业生涯的地方](https://stackoverflow.com/)
+- [CNCF（原生计算基金会）的云原生全景图](https://landscape.cncf.io/)
+- [Java 学习书籍](https://www.jiagoujishu.cn/blogs/book.html)
 
 ## 教程
 
@@ -491,6 +493,7 @@ tag:
 - [Linux、DevOps 和网络安全免费实验 - LabEx](https://labex.io/zh)
 - [Go 语言课程项目源码](https://gitee.com/infraboard/go-course)
 - [马哥 go 七期](https://pan.baidu.com/s/1_lf36D7rCJll9lJn9YawNA?pwd=cemg)
+- [云原生实战](https://www.kubesphere.io/zh/learn/)
 
 ## 书籍
 
