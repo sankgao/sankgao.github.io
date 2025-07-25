@@ -246,6 +246,7 @@ tag:
 - [阿里云盘网](http://www.alypw.cn/)
 - [阿里云盘资源共享站](https://pan666.net/)
 - [理想的论坛社区](https://linux.do/)
+- [瑞客论坛 - IT教程在线学习，IT教学视频下载，精品软件，综合资源技术学习分享论坛 -  Powered by Discuz!](https://www.ruike1.com/)
 
 ## 网站
 
@@ -338,6 +339,7 @@ tag:
 - [SegmentFault 思否](https://segmentfault.com/)
 - [Stack Overflow - 开发人员学习、分享和建立职业生涯的地方](https://stackoverflow.com/)
 - [CNCF（原生计算基金会）的云原生全景图](https://landscape.cncf.io/)
+- [DevOps 工具元素周期表 - Ledge DevOps 知识平台](https://devops.phodal.com/home)
 - [Java 学习书籍](https://www.jiagoujishu.cn/blogs/book.html)
 
 ## 教程
@@ -494,6 +496,8 @@ tag:
 - [Go 语言课程项目源码](https://gitee.com/infraboard/go-course)
 - [马哥 go 七期](https://pan.baidu.com/s/1_lf36D7rCJll9lJn9YawNA?pwd=cemg)
 - [云原生实战](https://www.kubesphere.io/zh/learn/)
+- [谷粒学苑](https://www.gulixueyuan.com/)
+- [学驰资源-教程免费下载](https://www.xuechi.cc/)
 
 ## 书籍
 
