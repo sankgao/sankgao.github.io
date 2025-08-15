@@ -498,6 +498,7 @@ tag:
 - [云原生实战](https://www.kubesphere.io/zh/learn/)
 - [谷粒学苑](https://www.gulixueyuan.com/)
 - [学驰资源-教程免费下载](https://www.xuechi.cc/)
+- [For技术栈](https://foooor.com/)
 
 ## 书籍
 
