@@ -190,6 +190,18 @@ tag:
 
     乔克的SRE视界 - LONG LIVE SRE | CLOUDNATIVE | KUBERNETES | DOCKER | PROMETHEUS ...
 
+- [张洪Heo - 分享设计与科技生活](https://blog.zhheo.com/)
+
+    设计,开发,UI,Swift,PS,AI,Sketch,产品设计,交互设计
+
+- [全栈编程知识体系](https://docs.zhengxinonly.com/)
+
+    正心全栈编程，一个基于 Python 与前端的全栈开发笔记站点。可以帮助你搭建属于自己的知识体系。
+
+- [小薛博客-助力人人成为架构师](https://xiaoxueblog.com/)
+
+    JAVA,AI,AI 大模型,LLM,Spring,SpringBoot,Redis,小薛博客,架构师,MQ
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
@@ -499,6 +511,11 @@ tag:
 - [谷粒学苑](https://www.gulixueyuan.com/)
 - [学驰资源-教程免费下载](https://www.xuechi.cc/)
 - [For技术栈](https://foooor.com/)
+- [云图 -- 云计算图志](https://cloud-atlas.readthedocs.io/zh-cn/latest/index.html)
+- [Kubernetes修仙](https://www.qidian.com/book/1040992354/)
+- [DevOps学习指南：从基础到专家](https://blog.csdn.net/benshu_001/article/details/138255034)
+- [CNCF](https://landscape.cncf.io/)
+- [Kubernetes 社区的知识图谱](https://github.com/yangchuansheng/k8s-knowledge)
 
 ## 书籍
 
