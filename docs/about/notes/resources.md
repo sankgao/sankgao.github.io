@@ -202,6 +202,10 @@ tag:
 
     JAVA,AI,AI 大模型,LLM,Spring,SpringBoot,Redis,小薛博客,架构师,MQ
 
+- [Maxbit - 互联通达 修身精技](https://cakepanit.com/)
+
+    专业的DevOps教程网站,学习记录DevOps工作心得。为广大的IT从业者提供最新最全DevOps文档,让DevOps学习不再晦涩难懂!
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
@@ -516,6 +520,7 @@ tag:
 - [DevOps学习指南：从基础到专家](https://blog.csdn.net/benshu_001/article/details/138255034)
 - [CNCF](https://landscape.cncf.io/)
 - [Kubernetes 社区的知识图谱](https://github.com/yangchuansheng/k8s-knowledge)
+- [编程导航 零基础编程教程 C、C++、Python、Go、JS、HTML、Vue、Node.js、Linux、Git、SQL、Nginx](https://www.codefather.cn/essay/1953733233031684098)
 
 ## 书籍
 
