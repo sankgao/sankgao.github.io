@@ -1,9 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as d,f as a}from"./app-iuUKtJ3F.js";const i={},n=a(`<h2 id="描述" tabindex="-1"><a class="header-anchor" href="#描述" aria-hidden="true">#</a> 描述</h2><p><code>timeout</code> 用于将命令处理器暂停指定的秒数。此命令通常用于批处理文件。</p><h2 id="选项" tabindex="-1"><a class="header-anchor" href="#选项" aria-hidden="true">#</a> 选项</h2><table><thead><tr><th style="text-align:center;">选项</th><th style="text-align:left;">描述</th></tr></thead><tbody><tr><td style="text-align:center;"><code>/t</code></td><td style="text-align:left;">指定命令处理器继续处理之前需等待的十进制秒数（介于 <code>-1~99999</code> 之间）。值为 <code>-1</code> 会导致计算机无限期地等待击键</td></tr><tr><td style="text-align:center;"><code>/nobreak</code></td><td style="text-align:left;">指定此项会忽略用户击键</td></tr><tr><td style="text-align:center;"><code>/?</code></td><td style="text-align:left;">在命令提示符下显示帮助</td></tr></tbody></table><h2 id="示例" tabindex="-1"><a class="header-anchor" href="#示例" aria-hidden="true">#</a> 示例</h2><p>例如：将命令处理器暂停 <code>10</code> 秒钟。</p><div class="language-cmd line-numbers-mode" data-ext="cmd"><pre class="language-cmd"><code>E:\\test&gt;timeout /t 10
-等待 10 秒，按一个键继续 ...
-
-E:\\test&gt;
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>例如：将命令处理器暂停 <code>10</code> 秒并忽略任何击键。</p><div class="language-cmd line-numbers-mode" data-ext="cmd"><pre class="language-cmd"><code>E:\\test&gt;timeout /t 10 /nobreak
-等待 10 秒，按 CTRL+C 退出 ...
-
-E:\\test&gt;
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,9),c=[n];function l(s,r){return t(),d("div",null,c)}const h=e(i,[["render",l],["__file","timeout.html.vue"]]);export{h as default};
