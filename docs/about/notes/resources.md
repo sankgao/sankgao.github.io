@@ -521,6 +521,7 @@ tag:
 - [CNCF](https://landscape.cncf.io/)
 - [Kubernetes 社区的知识图谱](https://github.com/yangchuansheng/k8s-knowledge)
 - [编程导航 零基础编程教程 C、C++、Python、Go、JS、HTML、Vue、Node.js、Linux、Git、SQL、Nginx](https://www.codefather.cn/essay/1953733233031684098)
+- [小牛知识库-海量知识，包含C++、Java、Php、Python等语言以及互联网名企笔试面试题](https://www.xnip.cn/)
 
 ## 书籍
 
