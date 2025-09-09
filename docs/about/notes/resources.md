@@ -544,6 +544,7 @@ tag:
 - [八零电子书](https://wap.txt80.com/)
 - [24h搜书网](https://24hbook.com/)
 - [书栈网](https://www.bookstack.cn/)
+- [极客文档专注于用户使用手册、帮助文档以及入门教程的创作与分享](https://geekdaxue.co/)
 - [知识库](https://www.zhishikoo.com/)
 - [码农书籍网](https://www.manongbook.com/)
 - [码农之家](https://www.xz577.com/)
