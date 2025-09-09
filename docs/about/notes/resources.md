@@ -206,6 +206,18 @@ tag:
 
     专业的DevOps教程网站,学习记录DevOps工作心得。为广大的IT从业者提供最新最全DevOps文档,让DevOps学习不再晦涩难懂!
 
+- [roc 云原生](https://imroc.cc/)
+
+    云原生老司机一枚，热爱开源和分享，欢迎一起交流。
+
+- [Jimmy Song 的博客 - Jimmy Song](https://jimmysong.io/)
+
+    从云原生迈向 AI 原生、AI 资源大全、图书与教程资源
+
+- [极客时间文档](https://uaxe.github.io/geektime-docs)
+
+    AI-大数据、产品-运营、前端-移动、后端-架构、管理-成长、计算机基础、运维-测试
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
