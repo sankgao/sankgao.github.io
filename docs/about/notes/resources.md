@@ -218,6 +218,10 @@ tag:
 
     AI-大数据、产品-运营、前端-移动、后端-架构、管理-成长、计算机基础、运维-测试
 
+- [Kubernetes、Golang、Python 学习笔记](https://www.huweihuang.com/kubernetes-notes/)
+
+    容器云（Docker、Kubernetes等）相关生态技术研究。
+
 ## 搜索
 
 - [开发百度](https://kaifa.baidu.com/)
