@@ -577,6 +577,7 @@ tag:
 - [IT 文库](https://wenku.it/)
 - [搜书吧](http://www.soushu2030.com/)
 - [IT 熊猫](https://www.itpanda.net/book/)
+- [读书馆](https://www.dushuguan.com/)
 
 ## 工具
 
