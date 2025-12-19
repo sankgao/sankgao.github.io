@@ -186,6 +186,10 @@ tag:
 
     一星残月拂柳丝。 一个积极的悲观主义者!
 
+- [运维开发故事](https://www.devopstory.cn/)
+
+    运维开发故事由一群志同道合的小伙伴共同维护，有运维也有开发，内容不限于Linux运维，devops工具链，k8s容器化技术，监控，日志收集，网络安全，Python或GO开发，团队成员有乔克、wanger、冬哥、素心、华仔、郑哥、姜总、夏老师
+
 - [乔克的SRE视界](https://jokerbai.com)
 
     乔克的SRE视界 - LONG LIVE SRE | CLOUDNATIVE | KUBERNETES | DOCKER | PROMETHEUS ...
@@ -221,6 +225,10 @@ tag:
 - [Kubernetes、Golang、Python 学习笔记](https://www.huweihuang.com/kubernetes-notes/)
 
     容器云（Docker、Kubernetes等）相关生态技术研究。
+
+- [廖思睿的个人博客](https://blog.liaosirui.com/index.html)
+
+    a devops coder and focus on golang and k8s.
 
 ## 搜索
 
