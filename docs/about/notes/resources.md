@@ -547,6 +547,7 @@ tag:
 - [Kubernetes 社区的知识图谱](https://github.com/yangchuansheng/k8s-knowledge)
 - [编程导航 零基础编程教程 C、C++、Python、Go、JS、HTML、Vue、Node.js、Linux、Git、SQL、Nginx](https://www.codefather.cn/essay/1953733233031684098)
 - [小牛知识库-海量知识，包含C++、Java、Php、Python等语言以及互联网名企笔试面试题](https://www.xnip.cn/)
+- [DDKK.COM 提供程序员技术教程和资料](https://www.ddkk.com/)
 
 ## 书籍
 
@@ -587,6 +588,7 @@ tag:
 - [搜书吧](http://www.soushu2030.com/)
 - [IT 熊猫](https://www.itpanda.net/book/)
 - [读书馆](https://www.dushuguan.com/)
+- [金屋电子书](https://pdfs.top/)
 
 ## 工具
 
